@@ -1,0 +1,26 @@
+@import '../../styles/mixins';
+
+.applications {
+  @include sectionBorder();
+
+  &__content {
+    width: 40%;
+    margin-left: 50%; 
+    margin-top: 150px;
+    margin-bottom: 440px;
+    line-height: 1.8;
+
+    & > div {
+      margin-bottom: 165px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    margin: 20px 0;
+  }
+}

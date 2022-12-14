@@ -1,0 +1,12 @@
+@import '../../styles/mixins';
+
+.proposal {
+  @include sectionBorder();
+
+  &__content {
+    margin-top: 170px;
+    width: 40%;
+    margin-left: 50%;
+    line-height: 1.8;
+  }
+}

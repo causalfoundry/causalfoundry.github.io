@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'NeueMachina';
+  src: url('../assets/fonts/NeueMachina/NeueMachina-Regular.woff2') format('woff2'),  /* Super Modern Browsers */
+       url('../assets/fonts/NeueMachina/NeueMachina-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/NeueMachina/NeueMachina-Regular.ttf') format('truetype');  /* Safari, Android, iOS */ 
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../assets/fonts/NotoSans/NotoSans.woff2') format('woff2'),  /* Super Modern Browsers */
+       url('../assets/fonts/NotoSans/NotoSans.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/NotoSans/NotoSans.ttf') format('truetype');  /* Safari, Android, iOS */ 
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../assets/fonts/WorkSans/WorkSans.woff2') format('woff2'),  /* Super Modern Browsers */
+       url('../assets/fonts/WorkSans/WorkSans.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/WorkSans/WorkSans.ttf') format('truetype');  /* Safari, Android, iOS */ 
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
