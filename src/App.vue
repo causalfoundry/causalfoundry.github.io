@@ -1,6 +1,6 @@
 <template>
-    <img src="./assets/gradient-top-yellow.svg" class="app__gradient-top-yellow" />
-    <img src="./assets/gradient-top-blue.svg" class="app__gradient-top-blue" />
+    <img src="./assets/gradient-top-yellow.png" class="app__gradient-top-yellow" />
+    <img src="./assets/gradient-top-blue.png" class="app__gradient-top-blue" />
 
     <app-header />
     <landing />
@@ -19,8 +19,8 @@
 
     <app-footer />
 
-    <img src="./assets/gradient-bottom-yellow.svg" class="app__gradient-bottom-yellow" />
-    <img src="./assets/gradient-bottom-blue.svg" class="app__gradient-bottom-blue" />
+    <img src="./assets/gradient-bottom-yellow.png" class="app__gradient-bottom-yellow" />
+    <img src="./assets/gradient-bottom-blue.png" class="app__gradient-bottom-blue" />
 </template>
 
 <script lang="ts" setup>

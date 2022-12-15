@@ -15,7 +15,7 @@
     <transition name="fade" appear>
       <div>
         <img src="../../assets/pattern-circle.png" class="landing__pattern-circle" />
-        <img src="../../assets/gradient-right-yellow.svg" class="landing__gradient" />
+        <img src="../../assets/gradient-right-yellow.png" class="landing__gradient" />
       </div>
     </transition>
   </main>
