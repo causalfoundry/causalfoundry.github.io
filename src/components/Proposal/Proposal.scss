@@ -13,10 +13,13 @@
     h3 {
       font-weight: bold;
       font-size: 32px;
-      margin: 20px 0;
+      margin-top: 40px;
+      margin-bottom: 20px;
 
       @include respond('tablet') {
         font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 15px;
       }
     }
 

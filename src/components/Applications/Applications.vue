@@ -1,6 +1,6 @@
 <template>
   <section class="applications">
-    <section-header>Applications - Personalized Interventions</section-header>
+    <section-header>Personalized Interventions</section-header>
     <div class="applications__wrapper">
       <img src="../../assets/pattern-hex.png" class="applications__pattern-hex" />
       <img src="../../assets/gradient-left-blue.png" class="applications__gradient" />
