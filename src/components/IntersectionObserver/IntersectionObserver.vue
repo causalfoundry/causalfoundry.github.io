@@ -29,7 +29,7 @@ onMounted(() => {
     },
     {
       root: null,
-      rootMargin: '50px',
+      rootMargin: '30px',
       threshold: props.threshold
     })
 

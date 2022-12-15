@@ -1,6 +1,6 @@
 <template>
-  <footer>
-    <p>© 2023 CausalFoundry, Inc.</p>
+  <footer class="footer">
+    <p class="footer__copyright">© 2023 CausalFoundry, Inc.</p>
     <a :href="`mailto:${email}`">{{ email }}</a>
   </footer>
 </template>

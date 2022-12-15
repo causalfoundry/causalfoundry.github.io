@@ -1,14 +1,18 @@
-@import '../../styles/mixins';
-
 .problem {
   @include sectionBorder();
 
   &__description {
-    font-size: 24px;
     line-height: 1.8;
     width: 40%;
     margin-left: 50%; 
     margin-top: 160px;
     margin-bottom: 430px;
+
+    @include respond('tablet') {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 80px;
+      margin-bottom: 150px;
+    }
   }
 }

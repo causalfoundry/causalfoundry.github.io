@@ -1,4 +1,12 @@
 .section-header {
-  font-family: 'NeueMachina';
+  font-family: 'NeueMachinaRegular';
   font-size: 44px;
+
+  @include respond('tablet') {
+    font-size: 40px;
+  }
+
+  @include respond('mobile') {
+    font-size: 32px;
+  }
 }

@@ -4,3 +4,39 @@
 @import "transitions";
 @import "variables";
 @import "mixins";
+
+#app {
+  position: relative;
+}
+
+.app {
+  &__gradient-bottom-yellow,
+  &__gradient-bottom-blue {
+    position: absolute;
+    right: -$app-side-padding-desktop;
+    bottom: 0;
+
+    @include respond('tablet') {
+      right: -$app-side-padding-tablet;
+    }
+
+    @include respond('mobile') {
+      right: -$app-side-padding-mobile;
+    }
+  }
+
+  &__gradient-top-yellow, 
+  &__gradient-top-blue {
+    position: absolute;
+    top: 0;
+    left: -$app-side-padding-desktop;
+
+    @include respond('tablet') {
+      left: -$app-side-padding-tablet;
+    }
+
+    @include respond('mobile') {
+      left: -$app-side-padding-mobile;
+    }
+  }
+}

@@ -1,11 +1,33 @@
-footer {
+.footer {
+  font-family: 'WorkSans';
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   padding-bottom: 60px;
+  position: relative;
+  z-index: 100;
+
+  @include respond('tablet') {
+    flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
 
   a {
     text-decoration: none;
     color: #fff;
+    font-weight: bold;
+
+    @include respond('tablet') {
+      margin-bottom: 24px;
+    }
+  }
+
+  a, &__copyright {
+    font-size: 18px;
+
+    @include respond('tablet') {
+      font-size: 14px;
+    }
   }
 }

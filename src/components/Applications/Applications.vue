@@ -1,10 +1,14 @@
 <template>
   <section class="applications">
     <section-header>Applications</section-header>
-    <div class="applications__content">
-      <div v-for="(application, index) in applications" :key="index">
-        <h3 class="applications__title"><app-title>{{ application.title.toUpperCase() }}</app-title></h3>
-        <p class="applications__desc">{{ application.description }}</p>
+    <div class="applications__wrapper">
+      <img src="../../assets/pattern-hex.png" class="applications__pattern-hex" />
+      <img src="../../assets/gradient-left-blue.svg" class="applications__gradient" />
+      <div class="applications__content">
+        <div v-for="(application, index) in applications" :key="index">
+          <h3 class="applications__title"><app-title>{{ application.title.toUpperCase() }}</app-title></h3>
+          <p class="applications__desc">{{ application.description }}</p>
+        </div>
       </div>
     </div>
   </section>

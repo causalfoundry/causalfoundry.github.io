@@ -1,16 +1,74 @@
 .landing {
-  padding-bottom: 530px;
+  padding-bottom: 600px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 55vw;
+
+  @include respond('tablet') {
+    display: block;
+    padding-bottom: 200px;
+  }
 
   &__header {
-    font-family: 'NeueMachina';
+    font-family: 'NeueMachinaMedium';
     font-size: 58px;
     line-height: 1.3;
     margin-top: 480px;
     margin-bottom: 100px;
+
+    @include respond('tablet') {
+      width: 100%;
+      margin-top: 150px;
+      font-size: 40px;
+    }
+
+    @include respond('mobile') {
+      margin-top: 150px;
+      font-size: 32px;
+    }
   }
 
   &__desc {
-    width: 30%;
     line-height: 1.8;
+
+    @include respond('tablet') {
+      width: 100%;
+    }
+
+    @include respond('mobile') {
+      width: 90%;
+    }
+  }
+
+  &__pattern-circle {
+    position: relative;
+    width: 70vw;
+    left: 20vw;
+    top: 5vw;
+
+    @include respond('tablet') {
+      width: 100vw;
+      left: 50vw;
+    }
+
+    @include respond('mobile') {
+      width: 120vw;
+      left: 40vw;
+    }
+  }
+
+  &__gradient {
+    position: absolute;
+    top: 30%;
+    right: -$app-side-padding-desktop;
+
+    @include respond('tablet') {
+      right: -$app-side-padding-tablet;
+      top: 0;
+    }
+
+    @include respond('mobile') {
+      right: -$app-side-padding-mobile;
+    }
   }
 }

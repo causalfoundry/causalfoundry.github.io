@@ -1,19 +1,26 @@
 <template>
-  <app-header />
-  <landing />
+    <img src="./assets/gradient-top-yellow.svg" class="app__gradient-top-yellow" />
+    <img src="./assets/gradient-top-blue.svg" class="app__gradient-top-blue" />
 
-  <intersection-observer @intersect="handleIntersect(Section.Problem, $event)">
-    <problem />
-  </intersection-observer>
+    <app-header />
+    <landing />
+    
+    <intersection-observer @intersect="handleIntersect(Section.Problem, $event)">
+      <problem />
+    </intersection-observer>
 
-  <intersection-observer @intersect="handleIntersect(Section.Applications, $event)">
-    <applications />
-  </intersection-observer>
-  
-  <intersection-observer @intersect="handleIntersect(Section.Proposal, $event)">
-    <proposal />
-  </intersection-observer>
-  <app-footer />
+    <intersection-observer @intersect="handleIntersect(Section.Applications, $event)">
+      <applications />
+    </intersection-observer>
+
+    <intersection-observer @intersect="handleIntersect(Section.Proposal, $event)">
+      <proposal />
+    </intersection-observer>
+
+    <app-footer />
+
+    <img src="./assets/gradient-bottom-yellow.svg" class="app__gradient-bottom-yellow" />
+    <img src="./assets/gradient-bottom-blue.svg" class="app__gradient-bottom-blue" />
 </template>
 
 <script lang="ts" setup>

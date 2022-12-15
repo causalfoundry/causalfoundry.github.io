@@ -1,26 +1,82 @@
-@import '../../styles/mixins';
-
 .applications {
   @include sectionBorder();
+  position: relative;
+  margin-bottom: 400px;
+
+  @include respond('mobile') {
+    margin-bottom: 200px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    @include respond('tablet') {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__pattern-hex {
+    position: relative;
+    width: 90%;
+    right: 45%;
+    top: 15%;
+
+    @include respond('mobile') {
+      width: 150%;
+      right: 70%;
+    }
+  }
+
+  &__gradient {
+    position: absolute;
+    top: -40vh;
+    left: -$app-side-padding-desktop;
+
+    @include respond('tablet') {
+      left: -$app-side-padding-tablet;
+      top: unset;
+      bottom: -90vh;
+    }
+
+    @include respond('mobile') {
+      left: -$app-side-padding-mobile;
+    }
+  }
 
   &__content {
-    width: 40%;
-    margin-left: 50%; 
-    margin-top: 150px;
-    margin-bottom: 440px;
+    margin-top: 200px;
     line-height: 1.8;
+    margin-left: -40%;
+    width: 90%;
+
+    @include respond('tablet') {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 80px;
+    }
 
     & > div {
       margin-bottom: 165px;
+
+      @include respond('tablet') {
+        margin-bottom: 80px;
+      }
     }
   }
 
   &__title {
     font-size: 28px;
     margin-bottom: 40px;
+
+    @include respond('tablet') {
+      margin-bottom: 27px;
+      font-size: 20px;
+    }
   }
 
   &__desc {
-    margin: 20px 0;
+    margin-bottom: 20px;
   }
 }

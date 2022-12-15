@@ -2,3 +2,17 @@
   border-top: 1px solid #fff;
   padding-top: 48px;
 }
+
+@mixin respond ($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+}

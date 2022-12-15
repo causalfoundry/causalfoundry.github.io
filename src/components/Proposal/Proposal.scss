@@ -1,12 +1,50 @@
-@import '../../styles/mixins';
-
 .proposal {
   @include sectionBorder();
+  position: relative;
+  margin-bottom: 250px;
 
   &__content {
     margin-top: 170px;
     width: 40%;
     margin-left: 50%;
     line-height: 1.8;
+    margin-bottom: 150px;
+
+    @include respond('tablet') {
+      width: 100%;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      margin-left: 0;
+    }
+  }
+
+  &__methods {
+    width: 30%;
+    margin-left: 55%;
+
+    li {
+      margin-bottom: 30px;
+      line-height: 1.8;
+
+      @include respond('tablet') {
+        margin-left: $app-side-padding-tablet;
+      }
+
+      @include respond('mobile') {
+        margin-left: $app-side-padding-mobile;
+      }
+    }
+
+    @include respond('tablet') {
+      width: 100%;
+      margin-left: unset;
+    }
+  }
+
+  &__pattern-wave {
+    position: relative;
+    width: 130%;
+    right: 12vw;
+    transform: rotate(-12deg);
   }
 }

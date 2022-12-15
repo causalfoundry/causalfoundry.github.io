@@ -1,7 +1,13 @@
 .header {
   padding: 40px 0; 
+  position: relative;
+  z-index: 100;
 
   &__logo {
     width: 300px;
+    
+    @include respond('tablet') {
+      width: 150px;
+    }
   }
 }
