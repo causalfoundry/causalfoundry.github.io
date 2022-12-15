@@ -1,9 +1,9 @@
 .applications {
   @include sectionBorder();
   position: relative;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
 
-  @include respond('mobile') {
+  @include respond('tablet') {
     margin-bottom: 200px;
   }
 

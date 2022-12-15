@@ -11,7 +11,7 @@ const targetEl = ref()
 
 const emit = defineEmits(['intersect'])
 const props = defineProps({
-  threshold: { type: Number, default: 0.2 }
+  threshold: { type: Number, default: 0.1 }
 })
 
 const observer: Ref<IntersectionObserver | undefined> = ref(undefined)
@@ -29,7 +29,7 @@ onMounted(() => {
     },
     {
       root: null,
-      rootMargin: '30px',
+      rootMargin: '0px',
       threshold: props.threshold
     })
 
