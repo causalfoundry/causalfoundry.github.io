@@ -10,6 +10,26 @@
     line-height: 1.8;
     margin-bottom: 150px;
 
+    h3 {
+      font-weight: bold;
+      font-size: 32px;
+      margin: 20px 0;
+
+      @include respond('tablet') {
+        font-size: 28px;
+      }
+    }
+
+    h4 {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 20px;
+
+      @include respond('tablet') {
+        font-size: 24px;
+      }
+    }
+
     @include respond('tablet') {
       width: 100%;
       margin-top: 80px;

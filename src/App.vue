@@ -24,6 +24,8 @@
 </template>
 
 <script lang="ts" setup>
+// import { onMounted, onBeforeUnmount, ref } from 'vue'
+
 import AppHeader from '@/components/AppHeader'
 import Landing from '@/components/Landing'
 import Problem from '@/components/Problem'
@@ -48,4 +50,27 @@ const handleIntersect = (section: Section, intersectEvent: IntersectionObserverE
   document.querySelector(`.${section}`)?.classList.add('hide')
   document.querySelector(`.${section}`)?.classList.remove('show')
 }
+
+// const parallaxEls = ref([])
+// const parallax = () => {
+//   const els = document.querySelectorAll('.parallax')
+
+//   for (let i = 0; i < els.length; i++) {
+//     const yPos = 0 - window.scrollY / 30
+//     const test = parallaxEls.value[i] - window.scrollY / 30
+//     console.log('==> top', test, `${yPos}%`)
+//     els[i].style.top = `${yPos}%`
+//   }
+// }
+
+// onMounted(() => {
+//   const els = [...document.querySelectorAll('.parallax')]
+//   parallaxEls.value = els.map(el => +getComputedStyle(el).top.split('px')[0])
+
+//   window.addEventListener('scroll', parallax)
+// })
+
+// onBeforeUnmount(() => {
+//   window.removeEventListener('scroll', parallax)
+// })
 </script>

@@ -1,6 +1,6 @@
 <template>
   <section class="applications">
-    <section-header>Applications</section-header>
+    <section-header>Applications - Personalized Interventions</section-header>
     <div class="applications__wrapper">
       <img src="../../assets/pattern-hex.png" class="applications__pattern-hex" />
       <img src="../../assets/gradient-left-blue.png" class="applications__gradient" />
@@ -20,16 +20,16 @@ import AppTitle from '@/components/AppTitle'
 
 const applications = [
   {
-    title: 'Clinical trial',
-    description: 'Clinical studies that engage patients and put their needs first will see meaningful participation and improved retention rates reducing significantly trials costs and the robustness of the study.'
+    title: 'Clinical trials',
+    description: 'With clinical trial decentralization, the trials move the research into patients\' homes and real-world medical settings.  Clinical studies that engage patients and put their needs first will see meaningful participation and improved retention rates, significantly reducing trial costs and the robustness of the study.'
   },
   {
-    title: 'MHealth and wellness',
-    description: 'Mobile health technology can be used to assist physicians in diagnosis, decision-making, and treatment personalization, as well as help individuals, make informed decisions and stick to their plans.'
+    title: 'Mobile health',
+    description: 'The availability of wearables, mobile applications, and portable devices is opening up new opportunities for daily self-management of our own health and well-being and are key technologies to promote public health. AI technology can assist physicians in diagnosis, decision-making, and treatment personalization, as well as help individuals, make informed decisions.'
   },
   {
     title: 'Global health',
-    description: 'Given both the immense disease burdens borne by low- and middle- income countries and the increasing smartphone penetration in those regions, the use of adaptive interventions to improve health outcomes for globally under-served communities is highly promising.'
+    description: 'Improving the engagement of patients and providers with AI-based products and digital apps by putting the patient and the data in the center. Delivering personalized recommendations and adaptive interventions to improve adherence to treatment, increase testing and surveillance, measure provider skills, manage chronic diseases, and reduce drug stockouts in pharmacies and clinics.'
   }
 ]
 </script>

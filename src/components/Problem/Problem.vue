@@ -1,10 +1,11 @@
 <template>
   <section class="problem">
     <section-header>Problem</section-header>
-    <p class="problem__description">Most of the products and apps are not ready to provide personalized recommendations and experiences to their users. 
-      <br />
-      Rapid testing of new features and recommendation algorithms allows organizations to innovate more quickly as well as customize their services to the needs of individuals.
-    </p>
+    <div class="problem__description">
+      <p>Delivering Personalization in Healthcare and Medicine</p>
+      <p>Personalize every patient journey step with adaptive interventions, incentives, and recommendations.</p>
+      <p>Our ambition in personalized medicine is to design and optimize the pathway for diagnosis, therapeutic intervention, and prognosis by using multidimensional biological datasets that capture individual variability in genes, function, and environment.</p>
+    </div>
   </section>
 </template>
 
