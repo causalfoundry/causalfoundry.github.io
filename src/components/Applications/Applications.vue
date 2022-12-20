@@ -1,6 +1,6 @@
 <template>
   <section class="applications">
-    <section-header>Precision Nudging</section-header>
+    <section-header>Adaptive Interventions</section-header>
     <div class="applications__wrapper">
       <img src="../../assets/pattern-hex.png" class="applications__pattern-hex" />
       <img src="../../assets/gradient-left-blue.png" class="applications__gradient" />
@@ -21,7 +21,7 @@ import AppTitle from '@/components/AppTitle'
 const applications = [
   {
     title: 'Clinical trials',
-    description: 'With clinical trial decentralization, the trials move the research into patients\' homes and real-world medical settings \n \n Clinical studies can engage patients, putting their needs first,  to have meaningful participation and improved retention rates, reducing trial costs and the robustness of the study'
+    description: 'With clinical trial decentralization, the trials move the research into patients\' homes and real-world medical settings \n \n Clinical studies can engage patients to have meaningful participation and improve retention rates, significantly reducing trial costs and the robustness of the study'
   },
   {
     title: 'Mobile health',

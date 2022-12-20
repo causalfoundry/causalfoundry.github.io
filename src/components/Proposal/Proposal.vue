@@ -2,7 +2,7 @@
   <section class="proposal">
     <section-header>Personalized Medicine</section-header>
     <div class="proposal__content">
-      <p>Our vision is to tailor interventions — whether treatment or preventative in nature—to each individual patient</p>
+      <p>Our vision is to tailor interventions — whether treatment or preventative — to each individual patient</p>
 
       <div>
         <h3><app-title>{{ `Immunotherapy`.toUpperCase() }}</app-title></h3>
