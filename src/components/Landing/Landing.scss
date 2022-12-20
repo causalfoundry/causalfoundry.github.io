@@ -2,7 +2,7 @@
   padding-bottom: 400px;
   position: relative;
   display: grid;
-  grid-template-columns: 60vw 40vw;
+  grid-template-columns: 70vw 30vw;
 
   @include respond('tablet') {
     display: block;
