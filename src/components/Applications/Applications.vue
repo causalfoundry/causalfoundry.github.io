@@ -21,15 +21,15 @@ import AppTitle from '@/components/AppTitle'
 const applications = [
   {
     title: 'Clinical trials',
-    description: 'With clinical trial decentralization, the trials move the research into patients\' homes and real-world medical settings.  Clinical studies that engage patients and put their needs first will see meaningful participation and improved retention rates, significantly reducing trial costs and the robustness of the study.'
+    description: 'With clinical trial decentralization, the trials move the research into patients\' homes and real-world medical settings \n \n Clinical studies can engage patients, putting their needs first,  to have meaningful participation and improved retention rates, reducing trial costs and the robustness of the study'
   },
   {
     title: 'Mobile health',
-    description: 'The availability of wearables, mobile applications, and portable devices is opening up new opportunities for daily self-management of our own health and well-being and are key technologies to promote public health. AI technology can assist physicians in diagnosis, decision-making, and treatment personalization, as well as help individuals, make informed decisions.'
+    description: 'The availability of wearables, mobile applications, and portable devices is opening up new opportunities for daily self-management of our own health and well-being and are key technologies to promote public health \n \n AI technology can assist physicians in diagnosis, decision-making, and treatment personalization, as well as help individuals, make informed decisions'
   },
   {
     title: 'Global health',
-    description: 'Improving the engagement of patients and providers with AI-based products and digital apps by putting the patient and the data in the center. Delivering personalized recommendations and adaptive interventions to improve adherence to treatment, increase testing and surveillance, measure provider skills, manage chronic diseases, and reduce drug stockouts in pharmacies and clinics.'
+    description: 'Improving the engagement of patients and providers with AI-based products and digital apps by putting the patient and the data in the center \n \n Delivering personalized recommendations and adaptive interventions to improve adherence to treatment, increase testing and surveillance, measure provider skills, manage chronic diseases, and reduce drug stockouts in pharmacies and clinics'
   }
 ]
 </script>

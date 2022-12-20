@@ -9,7 +9,7 @@
         </h1>
       </transition>
       <transition name="fade" appear>
-        <p class="landing__desc">Democratizing Reinforcement Learning, Machine Learning, and Adaptive Experimentation.</p>
+        <p class="landing__desc">Democratizing Reinforcement Learning, Machine Learning, and Adaptive Experimentation</p>
       </transition>
     </div>
 

@@ -1,10 +1,10 @@
 .applications {
   @include sectionBorder();
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 
   @include respond('tablet') {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
   &__wrapper {
@@ -19,13 +19,17 @@
 
   &__pattern-hex {
     position: relative;
-    width: 90%;
-    right: 45%;
+    width: 200%;
+    right: 125%;
     top: 15%;
 
+    @include respond('tablet') {
+      width: 100%;
+      right: 50%;
+    }
+
     @include respond('mobile') {
-      width: 150%;
-      right: 70%;
+      width: 120%;
     }
   }
 
@@ -58,17 +62,17 @@
     }
 
     & > div {
-      margin-bottom: 165px;
+      margin-bottom: 100px;
 
       @include respond('tablet') {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
       }
     }
   }
 
   &__title {
     font-size: 28px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     @include respond('tablet') {
       margin-bottom: 27px;
@@ -78,5 +82,7 @@
 
   &__desc {
     margin-bottom: 20px;
+    white-space: pre-line;
+    font-size: 20px;
   }
 }

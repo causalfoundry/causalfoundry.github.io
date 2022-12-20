@@ -19,6 +19,7 @@
       @include respond('tablet') {
         margin-top: 30px;
         margin-bottom: 15px;
+        font-size: 24px;
       }
     }
 
@@ -26,6 +27,19 @@
       font-weight: 700;
       font-size: 26px;
       margin-bottom: 20px;
+
+      @include respond('tablet') {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 22px;
+      padding-bottom: 15px;
+
+      @include respond('tablet') {
+        font-size: 18px;
+      }
     }
 
     @include respond('tablet') {
