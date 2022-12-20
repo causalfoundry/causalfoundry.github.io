@@ -2,7 +2,7 @@
   padding-bottom: 400px;
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 55vw;
+  grid-template-columns: 60vw 40vw;
 
   @include respond('tablet') {
     display: block;
@@ -30,6 +30,7 @@
 
   &__desc {
     line-height: 1.8;
+    width: 70%;
 
     @include respond('tablet') {
       width: 100%;
@@ -43,7 +44,7 @@
   &__pattern-circle {
     position: relative;
     width: 70vw;
-    left: 20vw;
+    left: -5vw;
     top: 5vw;
 
     @include respond('tablet') {

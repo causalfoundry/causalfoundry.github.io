@@ -4,7 +4,8 @@
       <transition name="fade" appear>
         <h1 class="landing__header">
           <app-title>Personalization</app-title>
-          to solve the greatest challenges in healthcare
+          to solve the greatest challenges 
+          <br />in healthcare
         </h1>
       </transition>
       <transition name="fade" appear>
