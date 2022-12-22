@@ -1,5 +1,5 @@
 .header {
-  padding: 40px 0; 
+  padding: 60px 0; 
   position: relative;
   z-index: 100;
 
@@ -7,7 +7,7 @@
     width: 300px;
     
     @include respond('tablet') {
-      width: 150px;
+      width: 250px;
     }
   }
 }

@@ -4,37 +4,27 @@
   margin-bottom: 250px;
 
   &__content {
-    margin-top: 170px;
+    margin-top: 160px;
     width: 40%;
     margin-left: 50%;
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 150px;
 
     h3 {
-      font-weight: bold;
-      font-size: 28px;
+      font-family: 'NotoSansRegular';
+      font-size: 26px;
       margin-top: 50px;
       margin-bottom: 20px;
 
       @include respond('tablet') {
         margin-top: 30px;
         margin-bottom: 15px;
-        font-size: 24px;
-      }
-    }
-
-    h4 {
-      font-weight: 700;
-      font-size: 26px;
-      margin-bottom: 20px;
-
-      @include respond('tablet') {
-        font-size: 20px;
+        font-size: 22px;
       }
     }
 
     p {
-      font-size: 22px;
+      font-size: 24px;
       padding-bottom: 15px;
 
       @include respond('tablet') {
@@ -56,7 +46,7 @@
 
     li {
       margin-bottom: 30px;
-      line-height: 1.8;
+      line-height: 1.6;
 
       @include respond('tablet') {
         margin-left: $app-side-padding-tablet;

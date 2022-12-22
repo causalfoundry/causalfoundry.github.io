@@ -3,7 +3,9 @@
     <img src="./assets/gradient-top-blue.png" class="app__gradient-top-blue" />
 
     <app-header />
-    <landing />
+    <intersection-observer @intersect="handleIntersect(Section.Landing, $event)">
+      <landing />
+    </intersection-observer>
     
     <intersection-observer @intersect="handleIntersect(Section.Problem, $event)">
       <problem />
@@ -24,7 +26,7 @@
 </template>
 
 <script lang="ts" setup>
-// import { onMounted, onBeforeUnmount, ref } from 'vue'
+import { onMounted, onBeforeUnmount, ref } from 'vue'
 
 import AppHeader from '@/components/AppHeader'
 import Landing from '@/components/Landing'
@@ -35,42 +37,60 @@ import AppFooter from '@/components/AppFooter'
 import IntersectionObserver from '@/components/IntersectionObserver'
 
 enum Section {
+  Landing = 'landing',
   Problem = 'problem',
   Applications = 'applications',
   Proposal = 'proposal',
 }
 
+const isSectionVisible = ref({
+  [Section.Landing]: true,
+  [Section.Problem]: false,
+  [Section.Applications]: false,
+  [Section.Proposal]: false
+})
+
 const handleIntersect = (section: Section, intersectEvent: IntersectionObserverEntry) => {  
   if (intersectEvent.isIntersecting) {
     document.querySelector(`.${section}`)?.classList.add('show')
     document.querySelector(`.${section}`)?.classList.remove('hide')
+
+    isSectionVisible.value[section] = true
     return
   }
 
   document.querySelector(`.${section}`)?.classList.add('hide')
   document.querySelector(`.${section}`)?.classList.remove('show')
+
+  isSectionVisible.value[section] = false
 }
 
 // const parallaxEls = ref([])
-// const parallax = () => {
-//   const els = document.querySelectorAll('.parallax')
+const parallax = () => {
+  const els = document.querySelectorAll('.parallax')
 
-//   for (let i = 0; i < els.length; i++) {
-//     const yPos = 0 - window.scrollY / 30
-//     const test = parallaxEls.value[i] - window.scrollY / 30
-//     console.log('==> top', test, `${yPos}%`)
-//     els[i].style.top = `${yPos}%`
-//   }
-// }
+  for (let i = 0; i < els.length; i++) {
+    const matchedParallaxSection = els[i].classList.value.match(/(?<=parallax--).*/g)?.[0] as Section
+    const currentElScrollHeight = document.querySelector(`.${matchedParallaxSection}`)?.scrollHeight || 0
 
-// onMounted(() => {
-//   const els = [...document.querySelectorAll('.parallax')]
-//   parallaxEls.value = els.map(el => +getComputedStyle(el).top.split('px')[0])
+    if (matchedParallaxSection === Section.Landing) {
+      const yPos = 0 - window.scrollY / 50
+      els[i].style.top = `${yPos}%`
+    }
 
-//   window.addEventListener('scroll', parallax)
-// })
+    if (isSectionVisible.value[matchedParallaxSection] && currentElScrollHeight <= window.scrollY) {
+      const root =  window.scrollY - currentElScrollHeight
+      const yPos = 0 - root / 50
+      els[i].style.top = `${yPos}%`
+    }
+  }
+}
 
-// onBeforeUnmount(() => {
-//   window.removeEventListener('scroll', parallax)
-// })
+onMounted(() => {
+  window.addEventListener('scroll', parallax)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', parallax)
+})
 </script>
