@@ -21,7 +21,7 @@ import AppTitle from '@/components/AppTitle'
 const applications = [
   {
     title: 'Clinical trials',
-    description: 'We build products that make better clinical trials. Engaging patients to have meaningful participation, improving retention rates, making them closer to real-world situations, with recruitment based on the likelihood of ending the clinical trial and improving the robustness of the study'
+    description: 'We build products that make better clinical trials. Engaging patients to have meaningful participation, improving retention rates, making them closer to real-world situations, with recruitment based on the likelihood of ending the clinical trial and improving the robustness of the study.'
   },
   {
     title: 'Mobile health',
