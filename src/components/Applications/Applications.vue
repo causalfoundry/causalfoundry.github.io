@@ -21,15 +21,15 @@ import AppTitle from '@/components/AppTitle'
 const applications = [
   {
     title: 'Clinical trials',
-    description: 'We build products that make better clinical trials. Engaging patients to have meaningful participation, improving retention rates, making them closer to real-world situations, with recruitment based on the likelihood of ending the clinical trial and improving the robustness of the study.'
+    description: 'We build products that make better clinical trials. Engaging patients to have meaningful participation, improving retention rates, making them closer to real-world situations, with recruitment based on the likelihood of ending the clinical trial and improving the robustness of the study'
   },
   {
     title: 'Mobile health',
-    description: 'Our software predicts behaviors to deploy interventions to improve engagement elements through tailor-made recommendations and incentives. Organizing and using data from wearables, mobile applications, and portable devices to personalize daily self-management of our health and well-being. AI technology assists physicians in diagnosis, decision-making, and treatment personalization, as well as helps individuals make informed decisions.'
+    description: 'Our software predicts behaviors to deploy interventions to improve engagement elements through tailor-made recommendations and incentives. Organizing and using data from wearables, mobile applications, and portable devices to personalize daily self-management of our health and well-being. AI technology assists physicians in diagnosis, decision-making, and treatment personalization, as well as helps individuals make informed decisions'
   },
   {
     title: 'Global health',
-    description: 'Delivering personalized recommendations and adaptive interventions through mobile applications to improve adherence to treatment, increase testing and surveillance, measure provider skills, manage chronic diseases, and reduce drug stockouts in pharmacies and clinics.'
+    description: 'Delivering personalized recommendations and adaptive interventions through mobile applications to improve adherence to treatment, increase testing and surveillance, measure provider skills, manage chronic diseases, and reduce drug stockouts in pharmacies and clinics'
   }
 ]
 </script>
