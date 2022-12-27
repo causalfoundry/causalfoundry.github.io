@@ -4,6 +4,12 @@
 }
 
 @mixin respond ($breakpoint) {
+  @if $breakpoint == smallDesktop {
+    @media only screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == tablet {
     @media only screen and (max-width: 1024px) {
       @content;
