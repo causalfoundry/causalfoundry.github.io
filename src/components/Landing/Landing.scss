@@ -44,8 +44,12 @@
   &__pattern-circle {
     position: relative;
     width: 1500px;
-    left: -25vw;
+    left: -15vw;
     z-index: 1;
+
+    @include respond('bigDesktop') {
+      left: -25vw;
+    }
 
     @include respond('tablet') {
       width: 100vw;
