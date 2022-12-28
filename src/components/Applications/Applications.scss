@@ -1,7 +1,6 @@
 .applications {
   @include sectionBorder();
   position: relative;
-  margin-bottom: 250px;
 
   @include respond('tablet') {
     margin-bottom: 100px;
@@ -9,7 +8,7 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 40vw 60vw;
     margin-top: 300px;
 
     @include respond('tablet') {
@@ -19,11 +18,20 @@
     }
   }
 
+  &__patterns {
+    @include respond('tablet') {
+      margin-top: 100px;
+    }  
+
+    @include respond('mobile') {
+      margin-top: 50px;
+    }  
+  }
+
   &__pattern-hex {
     position: relative;
-    width: 115%;
-    right: 65%;
-    // top: 15%;
+    width: 100vw;
+    right: 70vw;
 
     @include respond('tablet') {
       width: 100%;
@@ -53,17 +61,18 @@
 
   &__content {
     line-height: 1.6;
-    margin-left: -40%;
-    width: 130%;
-    height: -150px;
+    width: 60%;
+    height: fit-content;
+    margin-bottom: 300px;
 
     @include respond('tablet') {
       width: 100%;
       margin-left: 0;
       margin-top: 80px;
+      margin-bottom: unset;
     }
 
-    & > div {
+    & > div:not(:last-of-type) {
       margin-bottom: 160px;
 
       @include respond('tablet') {

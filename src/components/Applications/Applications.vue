@@ -2,8 +2,10 @@
   <section class="applications">
     <section-header>Personalized Interventions</section-header>
     <div class="applications__wrapper">
-      <img src="../../assets/pattern-hex.png" class="applications__pattern-hex parallax parallax--applications" />
-      <img src="../../assets/gradient-left-blue.png" class="applications__gradient" />
+      <div class="applications__patterns">
+        <img src="../../assets/pattern-hex.png" class="applications__pattern-hex parallax parallax--applications" />
+        <img src="../../assets/gradient-left-blue.png" class="applications__gradient" />
+      </div>
       <div class="applications__content">
         <div v-for="(application, index) in applications" :key="index">
           <h3 class="applications__title"><app-title>{{ application.title.toUpperCase() }}</app-title></h3>
