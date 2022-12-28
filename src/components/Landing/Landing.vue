@@ -15,7 +15,6 @@
     <transition name="fade" appear>
       <div>
         <img src="../../assets/pattern-circle.png" class="landing__pattern-circle parallax parallax--landing" />
-        <img src="../../assets/gradient-right-yellow.png" class="landing__gradient" />
       </div>
     </transition>
   </main>

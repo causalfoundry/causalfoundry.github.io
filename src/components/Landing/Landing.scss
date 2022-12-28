@@ -2,10 +2,10 @@
   position: relative;
   display: grid;
   grid-template-columns: 65vw 35vw;
-  margin-bottom: 100px;
+  margin-bottom: -250px;
 
   @include respond('smallDesktop') {
-    margin-bottom: 300px;
+    margin-bottom: 100px;
   }
 
   @include respond('tablet') {
@@ -17,7 +17,7 @@
     font-family: 'NeueMachinaMedium';
     font-size: 58px;
     line-height: 1.3;    
-    margin-top: 280px;
+    margin-top: 330px;
     margin-bottom: 30px;
 
     @include respond('tablet') {
@@ -47,8 +47,8 @@
 
   &__pattern-circle {
     position: relative;
-    width: 70vw;
-    left: -7vw;
+    width: 1500px;
+    left: -25vw;
 
     @include respond('tablet') {
       width: 100vw;
@@ -58,20 +58,6 @@
     @include respond('mobile') {
       width: 120vw;
       left: 40vw;
-    }
-  }
-
-  &__gradient {
-    position: absolute;
-    top: 0;
-    right: -$app-side-padding-desktop;
-
-    @include respond('tablet') {
-      right: -$app-side-padding-tablet;
-    }
-
-    @include respond('mobile') {
-      right: -$app-side-padding-mobile;
     }
   }
 }
