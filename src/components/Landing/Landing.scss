@@ -2,11 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 65vw 35vw;
-  margin-bottom: -250px;
-
-  @include respond('smallDesktop') {
-    margin-bottom: 100px;
-  }
+  margin-bottom: -300px;
 
   @include respond('tablet') {
     display: block;
@@ -49,6 +45,7 @@
     position: relative;
     width: 1500px;
     left: -25vw;
+    z-index: 1;
 
     @include respond('tablet') {
       width: 100vw;

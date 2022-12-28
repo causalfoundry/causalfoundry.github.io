@@ -1,5 +1,7 @@
 .problem {
   @include sectionBorder();
+  z-index: 2;
+  position: relative;
 
   &__description {
     line-height: 1.6;
