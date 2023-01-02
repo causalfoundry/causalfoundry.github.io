@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <img src="./assets/gradient-top-yellow.png" class="app__gradient-top-yellow" />
     <img src="./assets/gradient-top-blue.png" class="app__gradient-top-blue" />
 
@@ -68,19 +68,19 @@ const handleIntersect = (section: Section, intersectEvent: IntersectionObserverE
 // const parallaxEls = ref([])
 const parallax = () => {
   const els = document.querySelectorAll('.parallax')
-  
+
   for (let i = 0; i < els.length; i++) {
     const matchedParallaxSection = els[i].classList.value.match(/parallax--(.*)/g)?.[0].split('--')[1] as Section
     const currentElScrollHeight = document.querySelector(`.${matchedParallaxSection}`)?.scrollHeight || 0
 
     if (matchedParallaxSection === Section.Landing) {
-      const yPos = 0 - window.scrollY / 150
+      const yPos = 0 - window.scrollY / 50
       els[i].style.top = `${yPos}%`
     }
 
     if (isSectionVisible.value[matchedParallaxSection] && currentElScrollHeight <= window.scrollY) {
       const root =  window.scrollY - currentElScrollHeight
-      const yPos = 0 - root / 150
+      const yPos = 0 - root / 50
       els[i].style.top = `${yPos}%`
     }
   }
@@ -93,20 +93,4 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', parallax)
 })
-</script> -->
-
-<template>
-  <router-view ref="viewRef" v-slot="{ Component }">
-    <transition name="fade" mode="out-in">
-      <component :is="Component" :key="route.fullPath" />
-    </transition>
-  </router-view>
-</template>
-
-<script lang="ts" setup>
-import { ref } from 'vue'
-import { useRoute } from 'vue-router'
-
-const viewRef = ref(null)
-const route = useRoute()
 </script>
