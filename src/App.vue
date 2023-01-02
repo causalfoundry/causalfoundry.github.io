@@ -70,7 +70,7 @@ const parallax = () => {
   const els = document.querySelectorAll('.parallax')
 
   for (let i = 0; i < els.length; i++) {
-    const matchedParallaxSection = els[i].classList.value.match(/(?<=parallax--).*/g)?.[0] as Section
+    const matchedParallaxSection = els[i].classList.value.match(/parallax--(.*)/g)?.[0].split('--')[1] as Section
     const currentElScrollHeight = document.querySelector(`.${matchedParallaxSection}`)?.scrollHeight || 0
 
     if (matchedParallaxSection === Section.Landing) {
