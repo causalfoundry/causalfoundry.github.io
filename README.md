@@ -1,7 +1,13 @@
-# Vue 3 + Vite
+# Causal Foundry Website
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Development
 
-## Recommended IDE Setup
+This is a Vue project with Vite as the bundler. To start developing locally, run `yarn dev`.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Build
+
+To build the project, run `yarn build` and to preview the build run `yarn preview`.
+
+## Deploy
+
+This website is hosted on Github Pages that's tied to this repository. The deploy to Github Pages is triggered when we push to the `main` branch which is triggered by `build-and-deploy.yml` github action workflow. To check the status of this project's Github Pages, you can go to the repository's _Settings_ > _Pages_
