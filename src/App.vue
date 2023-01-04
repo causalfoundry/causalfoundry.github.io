@@ -80,7 +80,7 @@ const parallax = () => {
 
     if (isSectionVisible.value[matchedParallaxSection] && currentElScrollHeight <= window.scrollY) {
       const root =  window.scrollY - currentElScrollHeight
-      const yPos = 0 - root / 50
+      const yPos = 0 - root / 130
       els[i].style.top = `${yPos}%`
     }
   }
