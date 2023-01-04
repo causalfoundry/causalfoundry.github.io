@@ -74,13 +74,13 @@ const parallax = () => {
     const currentElScrollHeight = document.querySelector(`.${matchedParallaxSection}`)?.scrollHeight || 0
 
     if (matchedParallaxSection === Section.Landing) {
-      const yPos = 0 - window.scrollY / 40
+      const yPos = 0 - window.scrollY / 45
       els[i].style.top = `${yPos}%`
     }
 
     if (isSectionVisible.value[matchedParallaxSection] && currentElScrollHeight <= window.scrollY) {
       const root =  window.scrollY - currentElScrollHeight
-      const yPos = 0 - root / 40
+      const yPos = 0 - root / 45
       els[i].style.top = `${yPos}%`
     }
   }
