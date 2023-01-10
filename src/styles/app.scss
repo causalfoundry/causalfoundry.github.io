@@ -40,3 +40,13 @@
     }
   }
 }
+
+.header {
+  &__slot {
+    display: none;
+    
+    @include respond('mobile') {
+      display: block;
+    }
+  }
+}

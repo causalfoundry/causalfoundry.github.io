@@ -2,12 +2,18 @@
   padding: 60px 0; 
   position: relative;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
 
   &__logo {
     width: 300px;
     
     @include respond('tablet') {
       width: 250px;
+    }
+
+    @include respond('mobile') {
+      width: 200px;
     }
   }
 }

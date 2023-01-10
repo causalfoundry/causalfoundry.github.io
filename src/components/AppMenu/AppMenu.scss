@@ -1,0 +1,56 @@
+.app-menu {
+  &__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__close {
+    position: absolute;
+    top: $app-header-padding;
+    right: $app-side-padding-mobile;
+  }
+
+  &__nav {
+    width: 90%;
+    
+    ul {
+      list-style: none;
+      font-family: 'NeueMachinaRegular';
+      font-size: 32px;
+      text-align: center;
+
+      li {
+        margin-bottom: 48px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+          transition: all .5ms ease-in-out;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+    
+  &__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+      transition: all .5ms ease-in-out;
+    }
+  }
+}

@@ -2,21 +2,24 @@
     <img src="./assets/gradient-top-yellow.png" class="app__gradient-top-yellow" />
     <img src="./assets/gradient-top-blue.png" class="app__gradient-top-blue" />
 
-    <app-header />
+    <app-header>
+      <app-menu />
+    </app-header>
+
     <intersection-observer @intersect="handleIntersect(Section.Landing, $event)">
       <landing />
     </intersection-observer>
     
     <intersection-observer @intersect="handleIntersect(Section.Problem, $event)">
-      <problem />
+      <problem :id="Section.Problem" />
     </intersection-observer>
 
     <intersection-observer @intersect="handleIntersect(Section.Applications, $event)">
-      <applications />
+      <applications :id="Section.Applications" />
     </intersection-observer>
 
     <intersection-observer @intersect="handleIntersect(Section.Proposal, $event)">
-      <proposal />
+      <proposal :id="Section.Proposal" />
     </intersection-observer>
 
     <app-footer />
@@ -29,6 +32,7 @@
 import { onMounted, onBeforeUnmount, ref } from 'vue'
 
 import AppHeader from '@/components/AppHeader'
+import AppMenu from '@/components/AppMenu'
 import Landing from '@/components/Landing'
 import Problem from '@/components/Problem'
 import Applications from '@/components/Applications'
@@ -36,12 +40,7 @@ import Proposal from '@/components/Proposal'
 import AppFooter from '@/components/AppFooter'
 import IntersectionObserver from '@/components/IntersectionObserver'
 
-enum Section {
-  Landing = 'landing',
-  Problem = 'problem',
-  Applications = 'applications',
-  Proposal = 'proposal',
-}
+import { Section } from '@/typings/section'
 
 const isSectionVisible = ref({
   [Section.Landing]: true,

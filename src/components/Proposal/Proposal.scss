@@ -1,14 +1,18 @@
 .proposal {
   @include sectionBorder();
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 350px;
+
+  @include respond('tablet') {
+    margin-bottom: 200px;
+  }
 
   &__content {
     margin-top: 160px;
     width: 75%;
     margin-left: 25%;
     line-height: 1.6;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 
     h3 {
       font-family: 'NotoSansRegular';
@@ -65,8 +69,8 @@
 
   &__pattern-wave {
     position: relative;
-    width: 150%;
-    right: 20vw;
-    transform: rotate(-8deg);
+    width: 200%;
+    right: 30vw;
+    transform: rotate(-10deg);
   }
 }
