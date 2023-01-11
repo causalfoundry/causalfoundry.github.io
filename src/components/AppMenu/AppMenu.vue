@@ -3,7 +3,7 @@
     <hamburger-menu-icon />
   </button>
   
-  <div v-if="open" class="app-menu__content">
+  <div :class="['app-menu__content', { 'app-menu__content--open': open }]">
     <button class="app-menu__close app-menu__button" @click="open = false">
       <cross-icon />
     </button>
