@@ -8,7 +8,7 @@
         </h1>
       </transition>
       <transition name="fade" appear>
-        <p class="landing__desc">Democratizing reinforcement learning, machine learning, and adaptive experimentation to personalize medicine and improve health outcomes</p>
+        <p class="landing__desc">Democratizing reinforcement learning and adaptive interventions to personalize medicine, healthcare delivery, and patient support for improved health outcomes</p>
       </transition>
     </div>
 

@@ -2,7 +2,7 @@
   @include sectionBorder();
   position: relative;
 
-  @include respond('tablet') {
+  @include respond("tablet") {
     margin-bottom: 100px;
   }
 
@@ -11,7 +11,7 @@
     grid-template-columns: 40vw 60vw;
     margin-top: 300px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       margin-top: 0;
       display: flex;
       flex-direction: column-reverse;
@@ -19,13 +19,13 @@
   }
 
   &__patterns {
-    @include respond('tablet') {
+    @include respond("tablet") {
       margin-top: 100px;
-    }  
+    }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       margin-top: 50px;
-    }  
+    }
   }
 
   &__pattern-hex {
@@ -33,12 +33,12 @@
     width: 100vw;
     right: 70vw;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       width: 100%;
       right: 50%;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       width: 120%;
     }
   }
@@ -48,24 +48,24 @@
     top: -40vh;
     left: -$app-side-padding-desktop;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       left: -$app-side-padding-tablet;
       top: unset;
       bottom: -90vh;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       left: -$app-side-padding-mobile;
     }
   }
 
   &__content {
     line-height: 1.6;
-    width: 60%;
+    width: 75%;
     height: fit-content;
     margin-bottom: 300px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       width: 100%;
       margin-left: 0;
       margin-top: 80px;
@@ -75,9 +75,13 @@
     & > div:not(:last-of-type) {
       margin-bottom: 160px;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         margin-bottom: 80px;
       }
+    }
+
+    &__item {
+      width: 75%;
     }
   }
 
@@ -86,7 +90,7 @@
     margin-bottom: 30px;
     letter-spacing: 0.08em;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       margin-bottom: 27px;
       font-size: 20px;
     }
