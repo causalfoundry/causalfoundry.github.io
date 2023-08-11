@@ -9,7 +9,7 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 40vw 60vw;
-    margin-top: 300px;
+    margin-top: 160px;
 
     @include respond("tablet") {
       margin-top: 0;
@@ -61,7 +61,8 @@
 
   &__content {
     line-height: 1.6;
-    width: 75%;
+    width: 100%;
+    margin-left: -31%;
     height: fit-content;
     margin-bottom: 300px;
 
@@ -81,7 +82,8 @@
     }
 
     &__item {
-      width: 75%;
+      width: 60%;
+      margin-left: 30%;
     }
   }
 

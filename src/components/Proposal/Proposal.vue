@@ -13,13 +13,15 @@
           door to a new era of evidence-based, individualized clinical practice
         </p>
       </div>
-    </div>
-    <div class="proposal__items">
-      <div v-for="(application, index) in applications" :key="index">
+      <div
+        v-for="(application, index) in applications"
+        :key="index"
+        class="proposal__content__item"
+      >
         <h3 class="applications__title">
           <app-title>{{ application.title.toUpperCase() }}</app-title>
         </h3>
-        <p class="applications__desc">{{ application.description }}</p>
+        <p class="proposal__desc">{{ application.description }}</p>
       </div>
     </div>
     <img src="../../assets/pattern-wave.png" class="proposal__pattern-wave" />

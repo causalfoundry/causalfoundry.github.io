@@ -5,8 +5,8 @@
 
   &__description {
     line-height: 1.6;
-    width: 60%;
-    margin-left: 40%; 
+    width: 75%;
+    margin-left: 25%;
     margin-top: 160px;
     margin-bottom: 350px;
 
@@ -14,7 +14,7 @@
       margin-bottom: 20px;
     }
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       width: 100%;
       margin-left: 0;
       margin-top: 80px;
