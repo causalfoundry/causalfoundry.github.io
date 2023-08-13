@@ -36,7 +36,7 @@ const applications = [
   {
     title: "Clinician software",
     description:
-      "Our products connect to medical equipment and triage and patient management software to provide clinicians with decision architectures in which optimal clinical actions for each patient at each time are suggested based on their history of clinical manifestations and treatment, genome, epigenome, microbiome, exposome, and other contextual and healthcare information. We use deep reinforcement learning to optimize sequential decision-making and dynamic treatment regimes",
+      "Our products connect to medical equipment and patient management software to provide clinicians with decision architectures in which optimal clinical actions for each patient at each time are suggested. Recommendations are based on their history of clinical manifestations and treatment, genome, epigenome, microbiome, exposome, and other contextual and healthcare information. We use deep reinforcement learning to optimize sequential decision-making and dynamic treatment regimes",
   },
   {
     title: "FROM BIOMARKER DISCOVERY TO PERSONALIZED DRUG DEVELOPMENT",
