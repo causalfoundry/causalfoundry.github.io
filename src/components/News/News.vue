@@ -31,7 +31,9 @@ const news = [
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7082414780497502209",
     linkText: "Read more on Linkedin",
     date: "2023-06-23",
-    text: "some text here1 some text here1 some text here1 some text here1 some text here1 some text here1 some text here1 ",
+    text: `We are thrilled to work with AIDE CHEMISTS LTD
+     to build together an AI-native e-pharmacy application
+      to revolutionize access to medications and medical advice.`,
     image: "src/assets/news/CFxAC1_1.png",
   },
   {
