@@ -24,7 +24,6 @@
         <p class="proposal__desc">{{ application.description }}</p>
       </div>
     </div>
-    <img src="../../assets/pattern-wave.png" class="proposal__pattern-wave" />
   </section>
 </template>
 

@@ -1,11 +1,13 @@
 .news {
   @include sectionBorder();
   z-index: 2;
+  margin-bottom: 350px;
+
   position: relative;
 
   &__items {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     flex-wrap: wrap;
     line-height: 1.6;
     margin-top: 160px;
@@ -47,5 +49,12 @@
       font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
     }
+  }
+
+  &__pattern-wave {
+    position: relative;
+    width: 200%;
+    right: 30vw;
+    transform: rotate(-10deg);
   }
 }
