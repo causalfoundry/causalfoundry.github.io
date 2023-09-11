@@ -1,0 +1,51 @@
+.news {
+  @include sectionBorder();
+  z-index: 2;
+  position: relative;
+
+  &__items {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    line-height: 1.6;
+    margin-top: 160px;
+    margin-bottom: 350px;
+
+    & .news__content__item {
+      max-width: 370px;
+    }
+
+    & > p {
+      margin-bottom: 20px;
+    }
+
+    @include respond("tablet") {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 80px;
+      margin-bottom: 150px;
+    }
+
+    & .image {
+      img {
+        max-width: 370px;
+      }
+    }
+
+    & .date {
+      font-weight: 600;
+      font-size: 16px;
+      color: #ffffff99;
+    }
+
+    & .description {
+      font-size: 18px;
+    }
+
+    & .link {
+      font-size: 18px;
+      font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    }
+  }
+}

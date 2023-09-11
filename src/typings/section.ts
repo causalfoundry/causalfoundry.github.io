@@ -1,6 +1,7 @@
 export enum Section {
-  Landing = 'landing',
-  Problem = 'problem',
-  Applications = 'applications',
-  Proposal = 'proposal'
+  Landing = "landing",
+  Problem = "problem",
+  Applications = "applications",
+  Proposal = "proposal",
+  News = "news",
 }
