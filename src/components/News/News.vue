@@ -34,10 +34,10 @@ const news = [
     link: "https://twitter.com/Causal_Foundry/status/1701606748568822099?s=20",
     linkText: "Read more on X",
     date: dayjs("2023-09-12").format("DD MMM YYYY"),
-    text: `We're excited to be a recipient of the <a href="http://Google.org">Google.org</a> AI
-      for the Global Goals Grant Portfolio. Thrilled to build an AI-enabled
-      patient care application to support frontline workers in Africa. 
-      Learn more about the other recipients here: <a href="http://g.co/ai/globalgoals">http://g.co/ai/globalgoals </a>`,
+    text: `We're excited to be a recipient of the <a href="http://Google.org">Google.org</a> AI for the Global Goals Grant Portfolio.
+           Causal Foundry will build an AI-enabled patient care application to support frontline workers
+           in Africa. Learn more about the other recipients here:
+           <a href="http://g.co/ai/globalgoals">http://g.co/ai/globalgoals </a>`,
     image: "src/assets/news/UNGA_Causal Foundry_FeatureCard.jpg",
   },
   {
@@ -54,10 +54,9 @@ const news = [
     link: "https://www.linkedin.com/posts/medtronic-labs_medtronic-labs-causal-foundry-revolutionizing-activity-7052612498365038592-stCO",
     linkText: "Read more on Linkedin",
     date: dayjs("2023-04-15").format("DD MMM YYYY"),
-    text: `Exciting news! Medtronic LABS is thrilled to announce a new partnership
-     with Causal Foundry, an #AI organization with a proven track record of building
-      cutting-edge reinforcement learning tools. Our goal is to work together to revolutionize
-       #healthcaredelivery models in low and middle-income countries through data-driven insights.`,
+    text: `Excited to announce our partnership with <a href="https://www.medtroniclabs.org/">Medtronic Labs</a>. 
+           Our goal is to work together to revolutionize healthcare delivery
+           models in low and middle-income countries through AI and data-driven insights`,
     image: "src/assets/news/medtronics.png",
   },
 ];
