@@ -25,17 +25,9 @@
 
 <script lang="ts" setup>
 import SectionHeader from "@/components/SectionHeader";
+import dayjs from "dayjs";
 
 const news = [
-  {
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7082414780497502209",
-    linkText: "Read more on Linkedin",
-    date: "2023-06-23",
-    text: `We are thrilled to work with AIDE CHEMISTS LTD
-     to build together an AI-native e-pharmacy application
-      to revolutionize access to medications and medical advice.`,
-    image: "src/assets/news/CFxAC1_1.png",
-  },
   {
     link: "https://www.linkedin.com/posts/causal-foundry_we-are-thrilled-to-work-with-aide-chemists-activity-7082414780497502209-4-na?utm_source=share&utm_medium=member_desktop",
     linkText: "Read more on Linkedin",
@@ -46,11 +38,20 @@ const news = [
   {
     link: "https://twitter.com/Causal_Foundry/status/1700848478895652960",
     linkText: "Read more on X",
-    date: "2023-06-23",
+    date: dayjs("2023-07-11").format("DD MMM YYYY"),
     text: `Very proud that @galileoeni data scientist at @Causal_Foundry 
     has been awarded with the first prize at @instadeepai @DeepIndaba 
     hackathon competition! Congratulations 🎉`,
     image: "src/assets/news/eniola_square.png",
+  },
+  {
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7082414780497502209",
+    linkText: "Read more on Linkedin",
+    date: dayjs("2023-09-10").format("DD MMM YYYY"),
+    text: `We are thrilled to work with AIDE CHEMISTS LTD
+     to build together an AI-native e-pharmacy application
+      to revolutionize access to medications and medical advice.`,
+    image: "src/assets/news/CFxAC1_1.png",
   },
 ];
 </script>
