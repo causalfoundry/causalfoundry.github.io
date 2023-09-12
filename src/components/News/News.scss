@@ -30,6 +30,10 @@
     }
 
     & .image {
+      display: flex;
+      align-items: center;
+      height: 370px;
+
       img {
         max-width: 370px;
       }

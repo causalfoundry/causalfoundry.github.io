@@ -31,30 +31,34 @@ import { parseTwitter } from "./helper";
 
 const news = [
   {
-    link: "https://www.linkedin.com/posts/causal-foundry_we-are-thrilled-to-work-with-aide-chemists-activity-7082414780497502209-4-na?utm_source=share&utm_medium=member_desktop",
-    linkText: "Read more on Linkedin",
-    date: "2023-06-23",
-    text: "some text here",
-    image: "src/assets/news/UNGA_Causal Foundry_FeatureCard.jpg",
-  },
-  {
-    link: "https://twitter.com/Causal_Foundry/status/1700848478895652960",
+    link: "https://twitter.com/Causal_Foundry/status/1701606748568822099?s=20",
     linkText: "Read more on X",
-    date: dayjs("2023-07-11").format("DD MMM YYYY"),
-    text: parseTwitter(`Very proud that @galileoeni data scientist at @Causal_Foundry
-    has been awarded with the first prize at @instadeepai @DeepIndaba
-    hackathon competition! Congratulations 🎉`),
-    image: "src/assets/news/eniola_square.png",
+    date: dayjs("2023-09-12").format("DD MMM YYYY"),
+    text: `We're excited to be a recipient of the <a href="http://Google.org">Google.org</a> AI
+      for the Global Goals Grant Portfolio. Thrilled to build an AI-enabled
+      patient care application to support frontline workers in Africa. 
+      Learn more about the other recipients here: <a href="http://g.co/ai/globalgoals">http://g.co/ai/globalgoals </a>`,
+    image: "src/assets/news/UNGA_Causal Foundry_FeatureCard.jpg",
   },
   {
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7082414780497502209",
     linkText: "Read more on Linkedin",
-    date: dayjs("2023-09-10").format("DD MMM YYYY"),
-    text: `We are thrilled to work with 
+    date: dayjs("2023-08-04").format("DD MMM YYYY"),
+    text: `We are thrilled to work with
     <a href="https://www.linkedin.com/company/aide-chemists-ltd/">AIDE CHEMISTS LTD</a>
      to build together an AI-native e-pharmacy application
       to revolutionize access to medications and medical advice.`,
     image: "src/assets/news/CFxAC1_1.png",
+  },
+  {
+    link: "https://www.linkedin.com/posts/medtronic-labs_medtronic-labs-causal-foundry-revolutionizing-activity-7052612498365038592-stCO",
+    linkText: "Read more on Linkedin",
+    date: dayjs("2023-04-15").format("DD MMM YYYY"),
+    text: `Exciting news! Medtronic LABS is thrilled to announce a new partnership
+     with Causal Foundry, an #AI organization with a proven track record of building
+      cutting-edge reinforcement learning tools. Our goal is to work together to revolutionize
+       #healthcaredelivery models in low and middle-income countries through data-driven insights.`,
+    image: "src/assets/news/medtronics.png",
   },
 ];
 </script>
