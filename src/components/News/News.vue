@@ -50,7 +50,8 @@ const news = [
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7082414780497502209",
     linkText: "Read more on Linkedin",
     date: dayjs("2023-09-10").format("DD MMM YYYY"),
-    text: `We are thrilled to work with AIDE CHEMISTS LTD
+    text: `We are thrilled to work with 
+    <a href="https://www.linkedin.com/company/aide-chemists-ltd/">AIDE CHEMISTS LTD</a>
      to build together an AI-native e-pharmacy application
       to revolutionize access to medications and medical advice.`,
     image: "src/assets/news/CFxAC1_1.png",
