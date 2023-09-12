@@ -8,7 +8,7 @@
   &__items {
     display: flex;
     column-gap: 16px;
-    row-gap: 34px;
+    row-gap: 24px;
     flex-wrap: wrap;
     line-height: 1.6;
     margin-top: 160px;
@@ -50,7 +50,7 @@
       font-size: 18px;
       font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
-      color: #8cdfd9;
+      color: #60878e;
 
       :visited {
         color: #8cdfd9;
