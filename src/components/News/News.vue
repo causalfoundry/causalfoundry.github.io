@@ -13,7 +13,7 @@
           </a>
         </div>
         <div class="date">{{ news_item.date }}</div>
-        <div class="description">{{ news_item.text }}</div>
+        <div class="description" v-html="news_item.text"></div>
         <div class="link">
           <a :href="news_item.link"> {{ news_item.linkText }} </a>
         </div>
@@ -27,6 +27,8 @@
 import SectionHeader from "@/components/SectionHeader";
 import dayjs from "dayjs";
 
+import { parseTwitter } from "./helper";
+
 const news = [
   {
     link: "https://www.linkedin.com/posts/causal-foundry_we-are-thrilled-to-work-with-aide-chemists-activity-7082414780497502209-4-na?utm_source=share&utm_medium=member_desktop",
@@ -39,9 +41,9 @@ const news = [
     link: "https://twitter.com/Causal_Foundry/status/1700848478895652960",
     linkText: "Read more on X",
     date: dayjs("2023-07-11").format("DD MMM YYYY"),
-    text: `Very proud that @galileoeni data scientist at @Causal_Foundry 
-    has been awarded with the first prize at @instadeepai @DeepIndaba 
-    hackathon competition! Congratulations 🎉`,
+    text: parseTwitter(`Very proud that @galileoeni data scientist at @Causal_Foundry
+    has been awarded with the first prize at @instadeepai @DeepIndaba
+    hackathon competition! Congratulations 🎉`),
     image: "src/assets/news/eniola_square.png",
   },
   {
