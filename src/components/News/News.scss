@@ -33,6 +33,7 @@
     }
 
     & .image {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -44,6 +45,9 @@
       }
 
       .credits {
+        position: absolute;
+        bottom: 0px;
+
         display: flex;
         align-items: center;
         align-content: center;
