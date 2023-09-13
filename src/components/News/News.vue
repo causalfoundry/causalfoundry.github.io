@@ -1,6 +1,6 @@
 <template>
   <section class="news">
-    <section-header>News</section-header>
+    <section-header>Latest News</section-header>
     <div class="news__items">
       <div
         v-for="(news_item, index) in news"
