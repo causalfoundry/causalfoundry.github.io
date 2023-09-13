@@ -1,7 +1,7 @@
 .news {
   @include sectionBorder();
   z-index: 2;
-  margin-bottom: 350px;
+  margin-bottom: 150px;
 
   position: relative;
 
@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     line-height: 1.6;
     margin-top: 104px;
-    margin-bottom: 350px;
+    margin-bottom: 50px;
 
     & .news__content__item {
       max-width: 340px;
