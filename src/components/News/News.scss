@@ -16,6 +16,9 @@
 
     & .news__content__item {
       max-width: 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 
     & > p {
@@ -33,11 +36,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 370px;
       gap: 0px;
 
       img {
         max-width: 340px;
+        display: block;
       }
 
       .credits {
@@ -62,7 +65,7 @@
 
     & .date {
       font-family: "Noto Sans", sans-serif;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 16px;
       color: #ffffff99;
     }

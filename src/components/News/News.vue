@@ -43,7 +43,7 @@ const news = [
            Causal Foundry will build an AI-enabled patient care application to support frontline workers
            in Africa. Learn more about the other recipients here:
            <a href="http://g.co/ai/globalgoals">http://g.co/ai/globalgoals </a>`,
-    image: "/images/news/UNGA_Causal Foundry_FeatureCard.jpg",
+    image: "/images/news/google.png",
     credits: "Photo by E. Nsapu",
   },
   {
@@ -54,7 +54,7 @@ const news = [
     <a href="https://www.linkedin.com/company/aide-chemists-ltd/" target="_blank">AIDE CHEMISTS LTD</a>
      to build together an AI-native e-pharmacy application
       to revolutionize access to medications and medical advice.`,
-    image: "/images/news/CFxAC1_1.png",
+    image: "/images/news/aidechemist.png",
   },
   {
     link: "https://www.linkedin.com/posts/medtronic-labs_medtronic-labs-causal-foundry-revolutionizing-activity-7052612498365038592-stCO",
