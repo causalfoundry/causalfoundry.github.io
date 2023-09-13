@@ -11,6 +11,9 @@
           <a :href="news_item.link">
             <img :src="`${news_item.image}`" />
           </a>
+          <div v-if="news_item.credits" class="credits">
+            {{ news_item.credits }}
+          </div>
         </div>
         <div class="date">{{ news_item.date }}</div>
         <div class="description" v-html="news_item.text"></div>
@@ -39,6 +42,7 @@ const news = [
            in Africa. Learn more about the other recipients here:
            <a href="http://g.co/ai/globalgoals">http://g.co/ai/globalgoals </a>`,
     image: "/images/news/UNGA_Causal Foundry_FeatureCard.jpg",
+    credits: "Photo by E. Nsapu",
   },
   {
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7082414780497502209",
