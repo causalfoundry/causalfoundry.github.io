@@ -41,8 +41,7 @@ const news = [
     date: dayjs("2023-09-12").format("DD MMM YYYY"),
     text: `We're excited to be a recipient of the <a href="http://Google.org" target="_blank">Google.org</a> AI for the Global Goals Grant Portfolio.
            Causal Foundry will build an AI-enabled patient care application to support frontline workers
-           in Africa. Learn more about the other recipients here:
-           <a href="http://g.co/ai/globalgoals">http://g.co/ai/globalgoals </a>`,
+           in Africa. Learn more about the other recipients  <a href="http://g.co/ai/globalgoals">here</a>`,
     image: "/images/news/google.png",
     credits: "Photo by E. Nsapu",
   },
