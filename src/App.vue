@@ -31,6 +31,10 @@
     <news :id="Section.News" />
   </intersection-observer>
 
+  <intersection-observer @intersect="handleIntersect(Section.FundedBy, $event)">
+    <funded-by :id="Section.FundedBy" />
+  </intersection-observer>
+
   <app-footer />
 
   <img
@@ -55,6 +59,7 @@ import Applications from "@/components/Applications";
 import Proposal from "@/components/Proposal";
 import AppFooter from "@/components/AppFooter";
 import IntersectionObserver from "@/components/IntersectionObserver";
+import FundedBy from "@/components/FundedBy";
 
 import { Section } from "@/typings/section";
 
@@ -64,6 +69,7 @@ const isSectionVisible = ref({
   [Section.Applications]: false,
   [Section.Proposal]: false,
   [Section.News]: false,
+  [Section.FundedBy]: false,
 });
 
 const handleIntersect = (
