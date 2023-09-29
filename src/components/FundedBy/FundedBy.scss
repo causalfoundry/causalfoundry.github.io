@@ -1,0 +1,50 @@
+.funded-by {
+  padding-top: 160px;
+
+  &__header {
+    border-top: 1px solid #FFFFFF;
+    padding-top: 30px;
+    font-family: 'NeueMachinaRegular';
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0.03em;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 100px 0;
+
+    @include respond("tablet") {
+      flex-direction: column;
+      padding: 60px 30px 0;
+      gap: 50px;
+    }
+  }
+
+  &__logo {
+    &-bill {
+      height: 110px;
+      object-fit: contain;
+    }
+
+    &-google {
+      height: 90px;
+      object-fit: contain;
+    }
+  }
+  
+  &__pattern-wave {
+    position: relative;
+    z-index: -10;
+    width: 200%;
+    bottom: 200px;
+    left: -30vw;
+    transform: rotate(-10deg);
+
+    @include respond("tablet") {
+      bottom: 30px;
+    }
+  }
+}

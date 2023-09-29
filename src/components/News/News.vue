@@ -24,15 +24,12 @@
         </div>
       </div>
     </div>
-    <img src="../../assets/pattern-wave.png" class="news__pattern-wave" />
   </section>
 </template>
 
 <script lang="ts" setup>
 import SectionHeader from "@/components/SectionHeader";
 import dayjs from "dayjs";
-
-import { parseTwitter } from "./helper";
 
 const news = [
   {

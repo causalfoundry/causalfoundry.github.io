@@ -4,4 +4,5 @@ export enum Section {
   Applications = "applications",
   Proposal = "proposal",
   News = "news",
+  FundedBy = "funded-by",
 }
