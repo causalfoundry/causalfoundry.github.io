@@ -1,5 +1,4 @@
 .footer {
-  font-family: 'WorkSans';
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -8,26 +7,77 @@
   position: relative;
   z-index: 100;
 
-  @include respond('tablet') {
-    flex-direction: column-reverse;
-    padding-bottom: 100px;
+  &__description {
+    padding-top: 12px;
+    padding-bottom: 16px;
+    font-family: 'NotoSansLight';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: left;
   }
 
-  a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+  &__copyright {
+    color: #9E9E9E;
+    font-family: 'NotoSansRegular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
 
-    @include respond('tablet') {
-      margin-bottom: 24px;
+    &__mobile {
+      display: none;
     }
   }
 
-  a, &__copyright {
+  &__email {
+    font-family: 'WorkSans';
+    color: #FFFFFF;
     font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: right;
+  }
 
-    @include respond('tablet') {
+  &__links {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    padding-bottom: 25px;
+  }
+
+  @include respond('tablet') {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 150px;
+
+    &__left, &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__description {
       font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+    }
+
+    &__copyright {
+      display: none;
+
+      &__mobile {
+        display: flex;
+        color: #9E9E9E;
+        font-family: 'NotoSansRegular';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        text-align: left;
+      }
     }
   }
 }
