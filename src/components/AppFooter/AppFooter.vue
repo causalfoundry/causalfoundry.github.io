@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer__left">
       <img class="footer__logo" src="../../assets/footer-logo.png"/>
-      <div class="footer__description">Personalization to solve the most significant challenges in healthcare</div>
+      <div class="footer__description">AI & personalization to solve the most significant challenges in healthcare</div>
       <p class="footer__copyright">© 2023 CausalFoundry, Inc.</p>
     </div>
    
