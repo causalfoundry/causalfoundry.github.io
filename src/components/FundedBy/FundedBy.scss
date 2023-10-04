@@ -46,5 +46,9 @@
     @include respond("tablet") {
       bottom: 30px;
     }
+
+    @include respond("smallDesktop") {
+      bottom: 0px;
+    }
   }
 }

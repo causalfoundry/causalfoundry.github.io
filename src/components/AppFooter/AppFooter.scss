@@ -80,4 +80,8 @@
       }
     }
   }
+
+  @include respond('smallDesktop') {
+    margin-top: 150px;
+  }
 }
