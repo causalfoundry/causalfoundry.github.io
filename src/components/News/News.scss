@@ -2,28 +2,63 @@
   @include sectionBorder();
   z-index: 2;
   margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .controls {
+    display: flex;
+    gap: 24px;
+
+    @include respond("tablet") {
+      display: none;
+    }
+
+    .arrow {
+      cursor: pointer;
+
+      &.left {
+        transform: rotateZ(180deg);
+      }
+
+      &.disabled {
+        opacity: 0.4;
+      }
+    }
+  }
 
   position: relative;
 
   &__items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     column-gap: 32px;
     row-gap: 24px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     line-height: 1.6;
     margin-top: 104px;
     margin-bottom: 50px;
-
-    @include respond("tablet") {
-      grid-template-columns: 1fr;
-    }
+    width: 100%;
+    overflow: hidden;
 
     & .news__content__item {
-      width: 100%;
+      min-width: calc(33% - 16px);
       display: flex;
       flex-direction: column;
       gap: 16px;
+      transition: 0.1s;
+    }
+
+    @include respond("tablet") {
+      flex-direction: column;
+
+      & .news__content__item {
+        min-width: 100%;
+        transform: none;
+      }
     }
 
     & > p {
