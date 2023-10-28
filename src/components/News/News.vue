@@ -47,7 +47,7 @@ const news = [
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7120780440478584834/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7120780440478584834%29",
     linkText: "Read more on Linkedin",
     date: dayjs("2023-10-12").format("DD MMM YYYY"),
-    text: `I am deeply honored to present the keynote at the 40th Takemi Symposium in International Health in Harvard on October 21, on “Digital Health: Opportunities and Challenges for Global Health.”`,
+    text: `Africa Perianez, co-founder and CEO of Causal Foundry, Inc delivered the keynote at the 40th Takemi Symposium in International Health in Harvard on October 21, on “Digital Health: Opportunities and Challenges for Global Health.”`,
     image: "/images/news/how-ai.png",
   },
   {
