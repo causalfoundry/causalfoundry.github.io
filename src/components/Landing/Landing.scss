@@ -42,6 +42,8 @@
   }
 
   &__pattern-circle {
+    pointer-events: none;
+    user-select: none;
     position: relative;
     width: 1500px;
     left: -15vw;

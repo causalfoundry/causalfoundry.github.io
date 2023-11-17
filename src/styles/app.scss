@@ -12,6 +12,8 @@
 .app {
   &__gradient-bottom-yellow,
   &__gradient-bottom-blue {
+    pointer-events: none;
+    user-select: none;
     position: absolute;
     right: -$app-side-padding-desktop;
     bottom: 0;
@@ -27,6 +29,8 @@
 
   &__gradient-top-yellow, 
   &__gradient-top-blue {
+    pointer-events: none;
+    user-select: none;
     position: absolute;
     top: 0;
     left: -$app-side-padding-desktop;

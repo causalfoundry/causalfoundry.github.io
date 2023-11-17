@@ -29,6 +29,8 @@
   }
 
   &__pattern-hex {
+    pointer-events: none;
+    user-select: none;
     position: relative;
     width: 100vw;
     right: 70vw;
@@ -44,6 +46,8 @@
   }
 
   &__gradient {
+    pointer-events: none;
+    user-select: none;
     position: absolute;
     top: -40vh;
     left: -$app-side-padding-desktop;
