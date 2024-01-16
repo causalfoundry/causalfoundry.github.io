@@ -4,17 +4,15 @@
       <app-menu />
     </app-header>
 
-    <intersection-observer @intersect="handleIntersect(Section.Jumbotron, $event)">
       <div class="jumbotron">
-        <div class="jumbotron__title">Join our team</div>
+        <div class="jumbotron__title">AI for Equity: Build the Unbuilt with Us</div>
         <div class="jumbotron__description">
-          Join our mission of democratizing adaptive interventions and experimentation
-          for all. We research and build ML software to advance global equity.
+          We are at the forefront of crafting advanced machine learning software
+          to reshape global equity. Join us to pioneer new frontiers and shape
+          a future where technology empowers all.
         </div>
       </div>
-    </intersection-observer>
 
-    <intersection-observer @intersect="handleIntersect(Section.Jobs, $event)">
       <div class="jobs">
         <div class="jobs__title">Current Job Openings</div>
 
@@ -48,47 +46,43 @@
           </div>
         </div>
       </div>
-    </intersection-observer>
     <app-footer />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
-import IntersectionObserver from "@/components/IntersectionObserver";
-
 // import jobs from '../../data/jobs';
 
 import './Careers.scss';
 
-enum Section {
-  Jumbotron = "jumbotron",
-  Jobs = "jobs",
-}
+// enum Section {
+//   Jumbotron = "jumbotron",
+//   Jobs = "jobs",
+// }
 
-const isSectionVisible = ref({
-  [Section.Jumbotron]: true,
-  [Section.Jobs]: false,
-});
+// const isSectionVisible = ref({
+//   [Section.Jumbotron]: true,
+//   [Section.Jobs]: false,
+// });
 
-const handleIntersect = (
-  section: Section,
-  intersectEvent: IntersectionObserverEntry
-) => {
-  if (intersectEvent.isIntersecting) {
-    document.querySelector(`.${section}`)?.classList.add("show");
-    document.querySelector(`.${section}`)?.classList.remove("hide");
+// const handleIntersect = (
+//   section: Section,
+//   intersectEvent: IntersectionObserverEntry
+// ) => {
+//   if (intersectEvent.isIntersecting) {
+//     document.querySelector(`.${section}`)?.classList.add("show");
+//     document.querySelector(`.${section}`)?.classList.remove("hide");
 
-    isSectionVisible.value[section] = true;
-    return;
-  }
+//     isSectionVisible.value[section] = true;
+//     return;
+//   }
 
-  document.querySelector(`.${section}`)?.classList.add("hide");
-  document.querySelector(`.${section}`)?.classList.remove("show");
+//   document.querySelector(`.${section}`)?.classList.add("hide");
+//   document.querySelector(`.${section}`)?.classList.remove("show");
 
-  isSectionVisible.value[section] = false;
-};
+//   isSectionVisible.value[section] = false;
+// };
 </script>
