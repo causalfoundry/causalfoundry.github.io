@@ -18,7 +18,7 @@
       <div class="jobs">
         <div class="jobs__title">Current Job Openings</div>
 
-        <div class="job" v-for="job in jobs">
+        <!-- <div class="job" v-for="job in jobs">
           <div class="job__titles">
             <div class="job__title">{{ job.title }}</div>
             <div class="job__sub-title">{{ job.subTitle }}</div>
@@ -28,10 +28,27 @@
             <div class="job__description">{{ job.description }}</div>
             <router-link :to="`/careers/${job.key}`"><div class="job__link">Learn more</div></router-link>
           </div>
+        </div> -->
+
+        <div class="job">
+          <div class="job__titles">
+            <div class="job__title">Senior Software Engineer (Data/ML)</div>
+            <div class="job__sub-title">Barcelona, Full-time</div>
+          </div>
+          
+          <div class="job__info">
+            <div class="job__description">
+              We are looking for software engineers with a solid Go/SQL/Python background to
+              join our engineering team to build our data infrastructure. You will have
+              the rare opportunity to build resilient and scalable machine learning products
+              from scratch, together with other talented engineers, to achieve equity in
+              health for all people worldwide via cutting-edge ML algorithms.
+            </div>
+            <a target="_blank" href="https://candy-silica-cf0.notion.site/Senior-Software-Engineer-Data-ML-c25aa672855c42c7b079f938d0a8fd11"><div class="job__link">Learn more</div></a>
+          </div>
         </div>
       </div>
     </intersection-observer>
-
     <app-footer />
   </div>
 </template>
@@ -43,7 +60,7 @@ import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 import IntersectionObserver from "@/components/IntersectionObserver";
 
-import jobs from '../../data/jobs';
+// import jobs from '../../data/jobs';
 
 import './Careers.scss';
 
