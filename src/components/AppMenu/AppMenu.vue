@@ -27,7 +27,8 @@ import { EMAIL } from '@/data'
 const MENU_ITEMS = [
   { title: 'Mission', href: `#${Section.Problem}` }, 
   { title: 'Personalized Interventions', href: `#${Section.Applications}` }, 
-  { title: 'Personalized Medicine', href: `#${Section.Proposal}` }, 
+  { title: 'Personalized Medicine', href: `#${Section.Proposal}` },
+  { title: 'Careers', href: '/careers' },
   { title: 'Contact', href: `mailto:${EMAIL}` }
 ]
 

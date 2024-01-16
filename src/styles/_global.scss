@@ -17,27 +17,6 @@ html, body {
   overflow-x: hidden;
 }
 
-body {
-  scroll-behavior: smooth;
-  padding-left: $app-side-padding-desktop;
-  padding-right: $app-side-padding-desktop;
-  color: #fff;
-  font-size: 24px;
-  background: #000;
-
-  @include respond('tablet') {
-    font-size: 20px;
-    padding-left: $app-side-padding-tablet;
-    padding-right: $app-side-padding-tablet;
-  }
-
-  @include respond('mobile') {
-    font-size: 18px;
-    padding-left: $app-side-padding-mobile;
-    padding-right: $app-side-padding-mobile;
-  }
-}
-
 a {
   cursor: pointer;
 }

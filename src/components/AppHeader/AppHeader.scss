@@ -16,4 +16,17 @@
       width: 200px;
     }
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__item {
+    color: var(--white, #FFF);
+    font-family: 'NotoSansLight';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }

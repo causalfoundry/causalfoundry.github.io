@@ -1,0 +1,161 @@
+.careers {
+  background: #0C0904;
+
+  position: relative;
+  overflow: hidden;
+
+  .header {
+    background: #000;
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-bottom: 20px;
+  }
+
+  .jumbotron {
+    padding: 261px 520.467px 122px 121px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 152px;
+      right: -505px;
+      width: 1500px;
+      height: 100%;
+      background-image: url(../../assets/pattern-circle.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
+    &__title {
+      color: var(--white, #FFF);
+      font-family: 'NeueMachinaRegular';
+      font-size: 58px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%; /* 63.8px */
+      letter-spacing: 0.58px;
+    }
+
+    &__description {
+      width: 691px;
+      color: var(--white, #FFF);
+
+      /* Desktop/Text Large */
+      font-family: Noto Sans;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 39px */
+    }
+  }
+
+  .jobs {
+    position: relative;
+    padding: 160px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    &__title {
+      padding-top: 30px;
+      border-top: 1px solid #FFF;
+      margin-bottom: 60px;
+
+      color: var(--white, #FFF);
+
+      /* Desktop/Header 2 */
+      font-family: 'NeueMachinaRegular';
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 52.8px */
+      letter-spacing: 1.32px;
+    }
+
+    .job {
+      // width: 1200px;
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+
+      &__titles {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding-top: 8px;
+      }
+
+      &__title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: 'NeueMachinaRegular';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 33.6px */
+        letter-spacing: 2.24px;
+        text-transform: uppercase;
+
+        background: var(--Gradient-1, linear-gradient(145deg, #FFF625 -13.26%, #CBEA7F 15.7%, #A7E2BE 55.24%, #98DED9 93.66%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &__sub-title {
+        color: var(--white, #FFF);
+        font-family: Noto Sans;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 39px */
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      &__description {
+        width: 786px;
+
+        color: var(--white, #FFF);
+
+        /* Desktop/Text Large */
+        font-family: Noto Sans;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 39px */
+      }
+
+      a {
+        align-self: flex-start;
+        text-decoration: none;
+      }
+
+      &__link {
+        padding: 8px 24px;
+
+        border-radius: 36px;
+        border: 1px solid var(--Grey, #9E9E9E);
+
+        color: var(--white, #FFF);
+        font-family: Noto Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%; /* 36px */
+      }
+    }
+  }
+
+  .footer {
+    padding: 107px 70px 80px;
+  }
+}

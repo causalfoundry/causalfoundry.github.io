@@ -12,7 +12,8 @@
   "dependencies": {
     "dayjs": "^1.11.9",
     "sass": "^1.56.2",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

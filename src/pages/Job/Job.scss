@@ -1,0 +1,164 @@
+.job-page {
+  background: #0C0904;
+
+  position: relative;
+  overflow: hidden;
+
+  .header {
+    background: #000;
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-bottom: 20px;
+  }
+
+  main {
+    padding: 160px 120px;
+  }
+
+  &__header {
+    border-top: 1px solid #FFF;
+    padding-top: 30px;
+    display: flex;
+    margin-bottom: 160px;
+    justify-content: space-between;
+  }
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+
+    color: var(--white, #FFF);
+
+    /* Desktop/Header 2 */
+    font-family: 'NeueMachinaRegular';
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 52.8px */
+    letter-spacing: 1.32px;
+  }
+
+  &__sub-title {
+    color: var(--white, #FFF);
+    font-family: Noto Sans;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 39px */
+  }
+
+  &__socials {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__sections {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: 'NeueMachinaRegular';
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 33.6px */
+      letter-spacing: 2.24px;
+      text-transform: uppercase;
+
+      background: var(--Gradient-1, linear-gradient(145deg, #FFF625 -13.26%, #CBEA7F 15.7%, #A7E2BE 55.24%, #98DED9 93.66%));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &__text {
+      width: 786px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      color: var(--white, #FFF);
+
+      /* Desktop/Text Large */
+      font-family: Noto Sans;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 39px */
+    }
+
+    &__points {
+      max-width: 786px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+
+  &__point {
+    &__title {
+      color: var(--white, #FFF);
+
+      font-family: Noto Sans;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 39px */
+    }
+
+    &__items {
+      max-width: 786px;
+      padding-left: 40px;
+    }
+
+    &__item {
+      width: 786px;
+      color: var(--white, #FFF);
+      /* Desktop/Text Large */
+      font-family: Noto Sans;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+
+  &__link {
+    align-self: flex-start;
+    text-decoration: none;
+    padding: 8px 24px;
+
+    border-radius: 36px;
+    border: 1px solid var(--Grey, #9E9E9E);
+
+    color: var(--white, #FFF);
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 36px */
+  }
+
+  .footer {
+    padding: 107px 70px 80px;
+  }
+}
