@@ -33,4 +33,9 @@
       display: none;
     }
   }
+
+  &__links {
+    display: flex;
+    gap: 24px;
+  }
 }
