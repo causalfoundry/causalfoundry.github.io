@@ -9,6 +9,11 @@
     padding-left: 140px;
     padding-right: 140px;
     margin-bottom: 20px;
+
+    @include respond('mobile') {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }
 
   .jumbotron {
@@ -17,6 +22,14 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include respond('tablet') {
+      padding: 261px 121px 122px 121px;
+    }
+
+    @include respond('mobile') {
+      padding: 261px 32px 122px 32px;
+    }
 
     &::before {
       position: absolute;
@@ -28,6 +41,12 @@
       background-image: url(../../assets/pattern-circle.png);
       background-repeat: no-repeat;
       background-size: contain;
+
+      @include respond('mobile') {
+        font-size: 32px;
+        top: 600px;
+      }
+      
     }
     
     &__title {
@@ -38,10 +57,16 @@
       font-weight: 400;
       line-height: 110%; /* 63.8px */
       letter-spacing: 0.58px;
+
+      z-index: 1;
+
+      @include respond('mobile') {
+        font-size: 32px;
+      }
     }
 
     &__description {
-      width: 691px;
+      max-width: 691px;
       color: var(--white, #FFF);
 
       /* Desktop/Text Large */
@@ -50,6 +75,13 @@
       font-style: normal;
       font-weight: 400;
       line-height: 150%; /* 39px */
+
+      z-index: 1;
+
+      @include respond('mobile') {
+        width: unset;
+        font-size: 18px;
+      }
     }
   }
 
@@ -59,6 +91,10 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
+
+    @include respond('mobile') {
+      padding: 160px 32px;
+    }
 
     &__title {
       padding-top: 30px;
@@ -74,6 +110,11 @@
       font-weight: 400;
       line-height: 120%; /* 52.8px */
       letter-spacing: 1.32px;
+
+      @include respond('mobile') {
+        font-size: 32px;
+      }
+  
     }
 
     .job {
@@ -81,6 +122,11 @@
       display: flex;
       gap: 32px;
       justify-content: space-between;
+
+      
+      @include respond('mobile') {
+        flex-direction: column;
+      }
 
       &__titles {
         display: flex;
@@ -104,6 +150,10 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @include respond('mobile') {
+          font-size: 18px;
+        }
       }
 
       &__sub-title {
@@ -113,6 +163,10 @@
         font-style: normal;
         font-weight: 500;
         line-height: 150%; /* 39px */
+
+        @include respond('mobile') {
+          font-size: 16px;
+        }
       }
 
       &__info {
@@ -122,7 +176,7 @@
       }
 
       &__description {
-        width: 786px;
+        max-width: 786px;
 
         color: var(--white, #FFF);
 
@@ -132,6 +186,12 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%; /* 39px */
+
+        
+        @include respond('mobile') {
+          width: unset;
+          font-size: 16px;
+        }
       }
 
       a {
@@ -151,6 +211,11 @@
         font-style: normal;
         font-weight: 300;
         line-height: 150%; /* 36px */
+
+        @include respond('mobile') {
+          width: unset;
+          font-size: 14px;
+        }
       }
     }
   }
