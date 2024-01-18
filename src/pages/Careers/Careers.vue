@@ -46,6 +46,10 @@
           </div>
         </div>
       </div>
+      <div class="careers__culture">
+        Discover Our Interview Approach and Culture Overview
+        <a target="_blank" href="https://candy-silica-cf0.notion.site/Our-Interview-Process-1e8f13ac941043e59dd28506712a967f">here</a>
+      </div>
     <app-footer />
   </div>
 </template>
