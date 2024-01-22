@@ -29,7 +29,7 @@ const MENU_ITEMS = [
   { title: 'Personalized Interventions', href: `#${Section.Applications}` }, 
   { title: 'Personalized Medicine', href: `#${Section.Proposal}` },
   { title: 'Docs', href: 'https://docs.causalfoundry.ai/' },
-  { title: 'Careers', href: '/#/careers' },
+  { title: 'Careers', href: '/careers' },
   { title: 'Contact', href: `mailto:${EMAIL}` }
 ]
 
