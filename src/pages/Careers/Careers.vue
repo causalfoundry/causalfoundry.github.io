@@ -10,6 +10,7 @@
       <app-menu />
     </app-header>
 
+    <!-- <intersection-observer @intersect="handleIntersect(Section.Jumbotron, $event)"> -->
       <div class="jumbotron">
         <div class="jumbotron__title">AI for Equity: Build the Unbuilt with Us</div>
         <div class="jumbotron__description">
@@ -17,11 +18,10 @@
           to reshape global equity. Join us to pioneer new frontiers and shape
           a future where technology empowers all.
         </div>
-        <div class="careers__culture">
-          Discover Our <a target="_blank" href="https://candy-silica-cf0.notion.site/Our-Interview-Process-1e8f13ac941043e59dd28506712a967f">Interview Approach and Culture Overview</a>
-        </div>
       </div>
+    <!-- </intersection-observer> -->
 
+    <!-- <intersection-observer @intersect="handleIntersect(Section.Jobs, $event)"> -->
       <div class="jobs">
         <div class="jobs__title">Current Job Openings</div>
 
@@ -55,6 +55,12 @@
           </div>
         </div>
       </div>
+    <!-- </intersection-observer> -->
+
+    <div class="careers__culture">
+      Discover Our <a target="_blank" href="https://candy-silica-cf0.notion.site/Our-Interview-Process-1e8f13ac941043e59dd28506712a967f">Interview Approach and Culture Overview</a>
+    </div>
+
     <app-footer />
 
     <img
@@ -72,9 +78,11 @@
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
+// import { onBeforeUnmount, onMounted, ref } from 'vue';
 // import jobs from '../../data/jobs';
 
 import './Careers.scss';
+
 
 // enum Section {
 //   Jumbotron = "jumbotron",
@@ -103,4 +111,38 @@ import './Careers.scss';
 
 //   isSectionVisible.value[section] = false;
 // };
+
+// const parallax = () => {
+//   const els = document.querySelectorAll<HTMLElement>(".parallax");
+
+//   for (let i = 0; i < els.length; i++) {
+//     const matchedParallaxSection = els[i].classList.value
+//       .match(/parallax--(.*)/g)?.[0]
+//       .split("--")[1] as Section;
+//     const currentElScrollHeight =
+//       document.querySelector(`.${matchedParallaxSection}`)?.scrollHeight || 0;
+
+//     if (matchedParallaxSection === Section.Jumbotron) {
+//       const yPos = 0 - window.scrollY / 45;
+//       els[i].style.top = `${yPos}%`;
+//     }
+
+//     if (
+//       isSectionVisible.value[matchedParallaxSection] &&
+//       currentElScrollHeight <= window.scrollY
+//     ) {
+//       const root = window.scrollY - currentElScrollHeight;
+//       const yPos = 0 - root / 45;
+//       els[i].style.top = `${yPos}%`;
+//     }
+//   }
+// };
+
+// onMounted(() => {
+//   window.addEventListener("scroll", parallax);
+// });
+
+// onBeforeUnmount(() => {
+//   window.removeEventListener("scroll", parallax);
+// });
 </script>

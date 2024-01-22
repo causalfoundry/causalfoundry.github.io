@@ -4,7 +4,7 @@
       <img src="../../assets/logo.png" class="header__logo" />
     </a>
     <div class="header__links">
-      <a href="https://docs.causalfoundry.ai/"><div class="header__item">Docs</div></a>
+      <a target="_blank" href="https://docs.causalfoundry.ai/"><div class="header__item">Docs</div></a>
       <router-link to="/careers"><div :class="`header__item ${active === 'careers' ? 'active' : ''}`">Careers</div></router-link>
     </div>
     <div class="header__slot">

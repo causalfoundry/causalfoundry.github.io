@@ -10,7 +10,7 @@
     <nav class="app-menu__nav">
       <ul v-for="item in MENU_ITEMS" :key="item.title">
         <li>
-          <a :href="item.href" @click="open = false">{{ item.title }}</a>
+          <a :target="item.target" :href="item.href" @click="open = false">{{ item.title }}</a>
         </li>
       </ul>
     </nav>
@@ -28,7 +28,7 @@ const MENU_ITEMS = [
   { title: 'Mission', href: `/#${Section.Problem}` }, 
   { title: 'Personalized Interventions', href: `/#${Section.Applications}` }, 
   { title: 'Personalized Medicine', href: `/#${Section.Proposal}` },
-  { title: 'Docs', href: 'https://docs.causalfoundry.ai/' },
+  { title: 'Docs', href: 'https://docs.causalfoundry.ai/', target: '_blank' },
   { title: 'Careers', href: '/careers' },
   { title: 'Contact', href: `mailto:${EMAIL}` }
 ]
