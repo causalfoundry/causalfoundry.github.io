@@ -25,9 +25,9 @@ import { Section } from '@/typings/section'
 import { EMAIL } from '@/data'
 
 const MENU_ITEMS = [
-  { title: 'Mission', href: `#${Section.Problem}` }, 
-  { title: 'Personalized Interventions', href: `#${Section.Applications}` }, 
-  { title: 'Personalized Medicine', href: `#${Section.Proposal}` },
+  { title: 'Mission', href: `/#${Section.Problem}` }, 
+  { title: 'Personalized Interventions', href: `/#${Section.Applications}` }, 
+  { title: 'Personalized Medicine', href: `/#${Section.Proposal}` },
   { title: 'Docs', href: 'https://docs.causalfoundry.ai/' },
   { title: 'Careers', href: '/careers' },
   { title: 'Contact', href: `mailto:${EMAIL}` }
