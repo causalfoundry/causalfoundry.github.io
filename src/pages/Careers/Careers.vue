@@ -16,7 +16,7 @@
         <div class="jumbotron__description">
           We are at the forefront of crafting advanced machine learning software
           to reshape global equity. Join us to pioneer new frontiers and shape
-          a future where technology empowers all.
+          a future where technology empowers all
         </div>
       </div>
     <!-- </intersection-observer> -->
