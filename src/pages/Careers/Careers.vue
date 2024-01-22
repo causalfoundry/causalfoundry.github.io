@@ -59,6 +59,11 @@
 
     <div class="careers__culture">
       Discover Our <a target="_blank" href="https://candy-silica-cf0.notion.site/Our-Interview-Process-1e8f13ac941043e59dd28506712a967f">Interview Approach and Culture Overview</a>
+      <div class="careers__culture__info">
+        To apply, please email us your CV in PDF format along with a brief statement explaining your
+        interest in working with our team to
+        <a href="mailto:hello@causalfoundry.ai">hello@causalfoundry.ai</a>
+      </div>
     </div>
 
     <app-footer />
