@@ -49,6 +49,14 @@
 }
 
 @font-face {
+  font-family: 'NotoSansItalic';
+  src: url('../assets/fonts/NotoSansItalic/NotoSansItalic.ttf') format('truetype');  /* Safari, Android, iOS */ 
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'WorkSans';
   src: url('../assets/fonts/WorkSans/WorkSans.woff2') format('woff2'),  /* Super Modern Browsers */
        url('../assets/fonts/WorkSans/WorkSans.woff') format('woff'), /* Pretty Modern Browsers */

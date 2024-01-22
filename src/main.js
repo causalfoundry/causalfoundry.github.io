@@ -1,5 +1,5 @@
 import { createApp, h } from 'vue';
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 
 import Landing from './pages/Landing/Landing.vue';
 import Careers from './pages/Careers/Careers.vue';
@@ -20,7 +20,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     // always scroll to top

@@ -1,6 +1,12 @@
 <template>
   <div class="careers">
-    <app-header>
+    <img
+      src="../../assets/gradient-top-yellow.png"
+      class="app__gradient-top-yellow"
+    />
+    <img src="../../assets/gradient-top-blue.png" class="app__gradient-top-blue" />
+
+    <app-header current-page="careers">
       <app-menu />
     </app-header>
 
@@ -10,6 +16,9 @@
           We are at the forefront of crafting advanced machine learning software
           to reshape global equity. Join us to pioneer new frontiers and shape
           a future where technology empowers all.
+        </div>
+        <div class="careers__culture">
+          Discover Our <a target="_blank" href="https://candy-silica-cf0.notion.site/Our-Interview-Process-1e8f13ac941043e59dd28506712a967f">Interview Approach and Culture Overview</a>
         </div>
       </div>
 
@@ -46,11 +55,16 @@
           </div>
         </div>
       </div>
-      <div class="careers__culture">
-        Discover Our Interview Approach and Culture Overview
-        <a target="_blank" href="https://candy-silica-cf0.notion.site/Our-Interview-Process-1e8f13ac941043e59dd28506712a967f">here</a>
-      </div>
     <app-footer />
+
+    <img
+      src="../../assets/gradient-bottom-yellow.png"
+      class="app__gradient-bottom-yellow"
+    />
+    <img
+      src="../../assets/gradient-bottom-blue.png"
+      class="app__gradient-bottom-blue"
+    />
   </div>
 </template>
 

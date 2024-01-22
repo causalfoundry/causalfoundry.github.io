@@ -1,6 +1,6 @@
 <template>
   <div class="job-page">
-    <app-header>
+    <app-header current-page="careers">
       <app-menu />
     </app-header>
 
@@ -70,7 +70,7 @@ import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 
-import jobs from '../../jobs';
+import jobs from '../../data/jobs';
 
 import './Job.scss';
 

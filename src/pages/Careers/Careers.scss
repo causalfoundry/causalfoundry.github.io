@@ -1,14 +1,12 @@
 .careers {
-  background: #0C0904;
+  background: #000;
+
 
   position: relative;
   overflow: hidden;
 
   .header {
-    background: #000;
-    padding-left: 140px;
-    padding-right: 140px;
-    margin-bottom: 20px;
+    padding: 60px 140px 40px 140px;
 
     @include respond('mobile') {
       padding-left: 32px;
@@ -17,7 +15,7 @@
   }
 
   .jumbotron {
-    padding: 261px 520.467px 122px 121px;
+    padding: 261px 502.467px 56px 139px;
 
     display: flex;
     flex-direction: column;
@@ -70,10 +68,10 @@
       color: var(--white, #FFF);
 
       /* Desktop/Text Large */
-      font-family: Noto Sans;
+      font-family: NotoSansLight;
       font-size: 26px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 150%; /* 39px */
 
       z-index: 1;
@@ -87,7 +85,7 @@
 
   .jobs {
     position: relative;
-    padding: 160px 120px;
+    padding: 160px 140px;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -139,11 +137,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
         font-family: 'NeueMachinaRegular';
-        font-size: 28px;
+        font-size: 26px;
         font-style: normal;
         font-weight: 400;
         line-height: 120%; /* 33.6px */
-        letter-spacing: 2.24px;
+        letter-spacing: 1.56px;
         text-transform: uppercase;
 
         background: var(--Gradient-1, linear-gradient(145deg, #FFF625 -13.26%, #CBEA7F 15.7%, #A7E2BE 55.24%, #98DED9 93.66%));
@@ -158,10 +156,10 @@
 
       &__sub-title {
         color: var(--white, #FFF);
-        font-family: Noto Sans;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 500;
+        font-family: 'NotoSansItalic';
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
         line-height: 150%; /* 39px */
 
         @include respond('mobile') {
@@ -182,7 +180,7 @@
 
         /* Desktop/Text Large */
         font-family: Noto Sans;
-        font-size: 26px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: 150%; /* 39px */
@@ -207,10 +205,11 @@
 
         color: var(--white, #FFF);
         font-family: Noto Sans;
-        font-size: 24px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 300;
-        line-height: 150%; /* 36px */
+        line-height: 160%;  /* 28.8px */
+        letter-spacing: 0.18px;
 
         @include respond('mobile') {
           width: unset;
@@ -221,18 +220,16 @@
   }
 
   &__culture {
-    border-top: 1px solid #FFF;
-
-    padding: 30px 0 160px;
-    margin: 0 120px;
     color: var(--white, #FFF);
 
     /* Desktop/Text Large */
-    font-family: Noto Sans;
+    font-family: NotoSansLight;
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 39px */
+
+    z-index: 1;
 
     @include respond('mobile') {
       font-size: 14px;

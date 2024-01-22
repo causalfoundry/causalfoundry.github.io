@@ -6,7 +6,7 @@
   />
   <img src="../../assets/gradient-top-blue.png" class="app__gradient-top-blue" />
 
-  <app-header>
+  <app-header current-page="main">
     <app-menu />
   </app-header>
 
