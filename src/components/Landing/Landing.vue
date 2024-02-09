@@ -3,7 +3,7 @@
     <div>
       <transition name="fade" appear>
         <h1 class="landing__header">
-          <app-title>Personalization DEV</app-title>
+          <app-title>Personalization</app-title>
           to solve the greatest <br />challenges in healthcare
         </h1>
       </transition>
