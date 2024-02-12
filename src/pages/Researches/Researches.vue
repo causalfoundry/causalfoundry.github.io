@@ -30,7 +30,7 @@
         are pioneering methods for AI to learn and adapt from environmental interactions,
         enhancing decision-making processes.
       </div>
-      <div class="paragraph big">
+      <div class="paragraph">
         Our research is not just theoretical but is readily available as a service,
         enabling our partners to harness data-driven insights and optimize operations.
       </div>
