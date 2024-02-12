@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import Landing from './pages/Landing/Landing.vue';
 import Careers from './pages/Careers/Careers.vue';
+import Research from './pages/Researches/Researches.vue';
 // import Job from './pages/Job/Job.vue';
 
 import App from './App.vue';
@@ -14,6 +15,7 @@ import './styles/app.scss';
 const routes = [
   { path: '/', component: Landing },
   { path: '/careers', component: Careers },
+  { path: '/research', component: Research },
   // ...jobs.map((job) => ({
   //   path: `/careers/${job.key}`, component: Job, props: { jobDetails: job },
   // }))
