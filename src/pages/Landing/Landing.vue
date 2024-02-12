@@ -1,53 +1,51 @@
 <template>
   <div class="_landing">
-    <div class="container">
-      <img
-        src="../../assets/gradient-top-yellow.png"
-        class="app__gradient-top-yellow"
-      />
-      <img src="../../assets/gradient-top-blue.png" class="app__gradient-top-blue" />
+    <img
+      src="../../assets/gradient-top-yellow.png"
+      class="app__gradient-top-yellow"
+    />
+    <img src="../../assets/gradient-top-blue.png" class="app__gradient-top-blue" />
 
-      <app-header current-page="main">
-        <app-menu />
-      </app-header>
+    <app-header current-page="main">
+      <app-menu />
+    </app-header>
 
-      <intersection-observer @intersect="handleIntersect(Section.Landing, $event)">
-        <landing />
-      </intersection-observer>
+    <intersection-observer @intersect="handleIntersect(Section.Landing, $event)">
+      <landing />
+    </intersection-observer>
 
-      <intersection-observer @intersect="handleIntersect(Section.Problem, $event)">
-        <problem :id="Section.Problem" />
-      </intersection-observer>
+    <intersection-observer @intersect="handleIntersect(Section.Problem, $event)">
+      <problem :id="Section.Problem" />
+    </intersection-observer>
 
-      <intersection-observer
-        @intersect="handleIntersect(Section.Applications, $event)"
-      >
-        <applications :id="Section.Applications" />
-      </intersection-observer>
+    <intersection-observer
+      @intersect="handleIntersect(Section.Applications, $event)"
+    >
+      <applications :id="Section.Applications" />
+    </intersection-observer>
 
-      <intersection-observer @intersect="handleIntersect(Section.Proposal, $event)">
-        <proposal :id="Section.Proposal" />
-      </intersection-observer>
+    <intersection-observer @intersect="handleIntersect(Section.Proposal, $event)">
+      <proposal :id="Section.Proposal" />
+    </intersection-observer>
 
-      <intersection-observer @intersect="handleIntersect(Section.News, $event)">
-        <news :id="Section.News" />
-      </intersection-observer>
+    <intersection-observer @intersect="handleIntersect(Section.News, $event)">
+      <news :id="Section.News" />
+    </intersection-observer>
 
-      <intersection-observer @intersect="handleIntersect(Section.FundedBy, $event)">
-        <funded-by :id="Section.FundedBy" />
-      </intersection-observer>
+    <intersection-observer @intersect="handleIntersect(Section.FundedBy, $event)">
+      <funded-by :id="Section.FundedBy" />
+    </intersection-observer>
 
-      <app-footer />
+    <app-footer />
 
-      <img
-        src="../../assets/gradient-bottom-yellow.png"
-        class="app__gradient-bottom-yellow"
-      />
-      <img
-        src="../../assets/gradient-bottom-blue.png"
-        class="app__gradient-bottom-blue"
-      />
-    </div>
+    <img
+      src="../../assets/gradient-bottom-yellow.png"
+      class="app__gradient-bottom-yellow"
+    />
+    <img
+      src="../../assets/gradient-bottom-blue.png"
+      class="app__gradient-bottom-blue"
+    />
   </div>
 </template>
 

@@ -5,26 +5,18 @@
   color: #fff;
   font-size: 24px;
   background: #000;
+  padding-left: $app-side-padding-desktop;
+  padding-right: $app-side-padding-desktop;
 
-  display: flex;
-  justify-content: center;
+  @include respond('tablet') {
+    font-size: 20px;
+    padding-left: $app-side-padding-tablet;
+    padding-right: $app-side-padding-tablet;
+  }
 
-  .container {
-    width: 1440px;
-    box-sizing: border-box;
-    padding-left: $app-side-padding-desktop;
-    padding-right: $app-side-padding-desktop;
-
-    @include respond('tablet') {
-      font-size: 20px;
-      padding-left: $app-side-padding-tablet;
-      padding-right: $app-side-padding-tablet;
-    }
-  
-    @include respond('mobile') {
-      font-size: 18px;
-      padding-left: $app-side-padding-mobile;
-      padding-right: $app-side-padding-mobile;
-    }
+  @include respond('mobile') {
+    font-size: 18px;
+    padding-left: $app-side-padding-mobile;
+    padding-right: $app-side-padding-mobile;
   }
 }
