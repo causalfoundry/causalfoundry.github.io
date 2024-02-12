@@ -32,7 +32,7 @@
       </div>
       <div class="paragraph big">
         Our research is not just theoretical but is readily available as a service,
-        enabling our partners to <span class="bold">harness data-driven insights and optimize operations.</span>
+        enabling our partners to harness data-driven insights and optimize operations.
       </div>
       <div class="diagram__image">
         <img src="../../assets/research_diagram.png" />
@@ -49,10 +49,10 @@
       </div>
     </div>
 
-    <div class="posts">
+    <!-- <div class="posts">
       <div class="controls">
         <input v-model="searchQuery" placeholder="Search" type="text" class="search-field">
-        <!-- <div class="control filter">Filter</div> -->
+        <div class="control filter">Filter</div>
         <div class="control view" @click="toggleView">View</div>
       </div>
 
@@ -83,7 +83,7 @@
         <div :class="`prev ${currentPage === 0  ? 'disabled' : ''}`" @click="prevPage">Previous page</div>
         <div :class="`next ${currentPage >= maxPage  ? 'disabled' : ''}`" @click="nextPage">Next page</div>
       </div>
-    </div>
+    </div> -->
 
     <app-footer />
 
