@@ -35,7 +35,7 @@
         enabling our partners to <span class="bold">harness data-driven insights and optimize operations.</span>
       </div>
       <div class="diagram__image">
-        <img src="../../assets/research_diagram.svg" />
+        <img src="../../assets/research_diagram.png" />
       </div>
 
       <div class="paragraph">
