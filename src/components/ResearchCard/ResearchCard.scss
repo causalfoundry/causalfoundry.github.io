@@ -1,0 +1,92 @@
+.research-card {
+  display: flex;
+  flex-direction: column;
+  width: 378px;
+  height: 482px;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  background-color: #141C26;
+  overflow: hidden;
+
+  &__image {
+    height: 216px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  &__tag {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    padding: 2px 10px;
+    border-radius: 6px;
+
+    &.ai {
+      color: #B4C6FC;
+      background-color: #362F78;
+    }
+
+    &.data-science {
+      color: #FACA15;
+      background-color: #633112;
+    }
+  }
+
+  &__title {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #fff;
+
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #D1D5DB;
+
+    margin-bottom: 24px;
+  }
+
+  &__date {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #D1D5DB;
+  }
+}

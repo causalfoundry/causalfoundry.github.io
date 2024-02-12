@@ -1,8 +1,13 @@
 .research {
   background: #000;
-
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1440px;
+  }
 
   .header {
     padding: 60px 140px 40px 140px;
@@ -14,7 +19,8 @@
   }
 
   .jumbotron {
-    padding: 330px 502.467px 340px 139px;
+    position: relative;
+    padding: 240px 121px 320px 121px;
 
     display: flex;
     flex-direction: column;
@@ -31,11 +37,13 @@
     &::before {
       position: absolute;
       content: '';
-      top: 109px;
-      right: -66%;
-      width: 100%;
-      height: 1250px;
-      background-image: url(../../assets/pattern-circle.png);
+
+      top: 90px;
+      right: -40%;
+      width: 881px;
+      height: 930px;
+      transform: rotate(128deg);
+      background-image: url(../../assets/pattern-hex.png);
       background-repeat: no-repeat;
       background-size: contain;
 
@@ -85,7 +93,7 @@
 
   .diagram {
     position: relative;
-    padding: 160px 140px;
+    padding: 80px 140px 320px 140px;
     display: flex;
     flex-direction: column;
 
@@ -94,9 +102,11 @@
     }
 
     &__title {
+      width: 947px;
+      
       padding-top: 30px;
       border-top: 1px solid #FFF;
-      margin-bottom: 24px;
+      margin-bottom: 80px;
 
       color: var(--white, #FFF);
 
@@ -114,18 +124,41 @@
   
     }
 
-    &__description {
+    .paragraph {
       font-family: Noto Sans;
-      font-size: 26px;
+      font-size: 20px;
       font-weight: 400;
-      line-height: 39px;
+      line-height: 30px;
       letter-spacing: 0em;
       text-align: left;
-      color: #BEBEBE;
+
+      color: #D1D5DB;
+
+      padding-left: 293px;
+      margin-bottom: 48px;
+
+      &.big {
+        font-family: 'NeueMachinaRegular';
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .bold {
+        font-family: 'NeueMachinaRegular';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
     }
 
     &__image {
-      margin-top: 80px;
+      margin: 48px 0;
+      padding: 40px 0;
 
       img {
         width: 100%;
@@ -134,7 +167,7 @@
   }
 
   .posts {
-    padding: 15px 120px 160px 120px;
+    padding: 80px 120px 320px 120px;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -165,6 +198,8 @@
         border-radius: 40px;
 
         background-position: 670px 22px;
+
+        margin-right: auto;
       }
 
       .filter {
@@ -183,7 +218,8 @@
         background-position: 58px 0;
 
         margin-right: 24px;
-        margin-left: auto;
+
+        cursor: pointer;
       }
 
       .view {
@@ -202,6 +238,8 @@
         background-position: 54px 0;
 
         margin-right: 24px;
+
+        cursor: pointer;
       }
     }
 
@@ -226,6 +264,8 @@
         align-items: center;
         padding: 24px 0;
         border-top: 1px solid #fff;
+
+        cursor: pointer;
 
         .date {
           font-family: Noto Sans;
@@ -255,6 +295,25 @@
           background-position: 100% center;
         }
       }
+    }
+
+    .view-cards {
+      display: flex;
+      gap: 32px;
+    }
+
+    .no-results {
+      display: flex;
+      justify-content: center;
+
+      font-family: Noto Sans;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      color: #fff;
     }
 
     .pagination {
@@ -291,6 +350,10 @@
         cursor: pointer;
         margin-right: 24px;
 
+        &.disabled {
+          opacity: .4;
+        }
+
         &::before {
           content: '';
           position: absolute;
@@ -320,6 +383,10 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+
+        &.disabled {
+          opacity: .4;
+        }
 
         &::before {
           content: '';

@@ -17,6 +17,13 @@
 }
 
 @font-face {
+  font-family: 'NeueMachinaRegular';
+  src: url('../assets/fonts/NeueMachinaBold/NeueMachina-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'NotoSansLight';
   src: url('../assets/fonts/NotoSansLight/NotoSansLight.woff2') format('woff2'),  /* Super Modern Browsers */
        url('../assets/fonts/NotoSansLight/NotoSansLight.woff') format('woff'), /* Pretty Modern Browsers */

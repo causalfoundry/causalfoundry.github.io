@@ -1,9 +1,14 @@
 .careers {
   background: #000;
-
-
   position: relative;
   overflow: hidden;
+  
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1440px;
+  }
 
   .header {
     padding: 60px 140px 40px 140px;
