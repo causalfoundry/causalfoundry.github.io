@@ -100,56 +100,56 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref, watch } from 'vue';
+// import { computed, ref, watch } from 'vue';
 
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
-import ResearchCard from '@/components/ResearchCard';
+// import ResearchCard from '@/components/ResearchCard';
 
-import data from '@/data/researchPapers';
+// import data from '@/data/researchPapers';
 
 import './Researches.scss';
 
-const searchQuery = ref('');
+// const searchQuery = ref('');
 
-const listView = ref(false);
+// const listView = ref(false);
 
-function toggleView() {
-  listView.value = !listView.value;
-}
+// function toggleView() {
+//   listView.value = !listView.value;
+// }
 
-const filtered = computed(() => 
-  data.filter(({ title }) => title.toLocaleLowerCase().includes(searchQuery.value.toLocaleLowerCase())));
-const total = computed(() => filtered.value.length);
-const currentPage = ref(0);
-const pageSize = computed(() => listView.value ? 4 : 3);
-const startRange = computed(() => currentPage.value * pageSize.value + 1);
-const endRange = computed(() => Math.min(currentPage.value * pageSize.value + pageSize.value, total.value));
-const toRender = computed(() => filtered.value.slice(
-  currentPage.value * pageSize.value,
-  currentPage.value * pageSize.value + pageSize.value
-));
-const maxPage = computed(() => Math.ceil(total.value / pageSize.value - 1));
+// const filtered = computed(() => 
+//   data.filter(({ title }) => title.toLocaleLowerCase().includes(searchQuery.value.toLocaleLowerCase())));
+// const total = computed(() => filtered.value.length);
+// const currentPage = ref(0);
+// const pageSize = computed(() => listView.value ? 4 : 3);
+// const startRange = computed(() => currentPage.value * pageSize.value + 1);
+// const endRange = computed(() => Math.min(currentPage.value * pageSize.value + pageSize.value, total.value));
+// const toRender = computed(() => filtered.value.slice(
+//   currentPage.value * pageSize.value,
+//   currentPage.value * pageSize.value + pageSize.value
+// ));
+// const maxPage = computed(() => Math.ceil(total.value / pageSize.value - 1));
 
-watch(listView, () => {
-  currentPage.value = 0;
-});
+// watch(listView, () => {
+//   currentPage.value = 0;
+// });
 
-watch(searchQuery, () => {
-  currentPage.value = 0;
-});
+// watch(searchQuery, () => {
+//   currentPage.value = 0;
+// });
 
-function nextPage() {
-  if (currentPage.value < maxPage.value) {
-    currentPage.value++;
-  }
-}
+// function nextPage() {
+//   if (currentPage.value < maxPage.value) {
+//     currentPage.value++;
+//   }
+// }
 
-function prevPage() {
-  if (currentPage.value > 0) {
-    currentPage.value--;
-  }
-}
+// function prevPage() {
+//   if (currentPage.value > 0) {
+//     currentPage.value--;
+//   }
+// }
 
 </script>
