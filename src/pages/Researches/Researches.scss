@@ -43,9 +43,9 @@
       width: 881px;
       height: 930px;
       transform: rotate(128deg);
-      background-image: url(../../assets/pattern-hex.png);
-      background-repeat: no-repeat;
+      background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(../../assets/pattern-hex.png) no-repeat;
       background-size: contain;
+
 
       @include respond('mobile') {
         font-size: 32px;
@@ -93,9 +93,11 @@
 
   .diagram {
     position: relative;
-    padding: 80px 140px 320px 140px;
+    padding-bottom: 320px;
+    margin: 80px 140px 0 140px;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid #FFF;
 
     @include respond('mobile') {
       padding: 160px 32px;
@@ -105,7 +107,6 @@
       width: 947px;
       
       padding-top: 30px;
-      border-top: 1px solid #FFF;
       margin-bottom: 80px;
 
       color: var(--white, #FFF);
