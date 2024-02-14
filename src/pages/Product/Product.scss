@@ -414,4 +414,84 @@
       top: 5350px;
     }
   }
+
+  .top-gradients {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+    &::before {
+      content: '';
+      left: -140px;
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: calc(100% + 140px);
+      background-image: url(../../assets/gradient-top-blue.png);
+      background-repeat: no-repeat;
+
+      @include respond('tablet') {
+        left: -50px;
+      }
+    
+      @include respond('mobile') {
+        left: -32px;
+      }
+    }
+
+    &::after {
+      content: '';
+      left: -140px;
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: calc(100% + 140px);
+      background-image: url(../../assets/gradient-top-yellow.png);
+      background-repeat: no-repeat;
+
+      @include respond('tablet') {
+        left: -50px;
+      }
+    
+      @include respond('mobile') {
+        left: -32px;
+      }
+    }
+  }
+
+  .bottom-gradients {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+    &::before {
+      content: '';
+      right: -140px;
+      bottom: 0;
+      display: block;
+      position: absolute;
+      width: 1440px;
+      height: 860px;
+      background-image: url(../../assets/gradient-bottom-blue.png);
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: '';
+      right: -140px;
+      bottom: 0;
+      display: block;
+      position: absolute;
+      width: 953px;
+      height: 1796px;
+      background-image: url(../../assets/gradient-bottom-yellow.png);
+      background-repeat: no-repeat;
+    }
+  }
 }

@@ -3,6 +3,8 @@
     <div class="container">
       <AppHeader current-page="products"><AppMenu /></AppHeader>
 
+      <div class="top-gradients"></div>
+
       <div class="jumbotron">
         <div class="title">Our Platform</div>
         <div class="description">
@@ -241,6 +243,8 @@
       <div class="circle bottom">
         <img src="../../assets/pattern-circle.png" alt="" />
       </div>
+
+      <div class="bottom-gradients"></div>
 
       <AppFooter />
     </div>
