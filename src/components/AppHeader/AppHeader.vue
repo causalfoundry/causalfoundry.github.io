@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  currentPage: 'careers' | 'main' | 'research';
+  currentPage: 'landing' | 'careers' | 'research';
 }>();
 
 const active = props.currentPage;

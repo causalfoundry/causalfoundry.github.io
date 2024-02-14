@@ -1,0 +1,410 @@
+.landing2 {
+  background: #000;
+  color: #fff;
+  scroll-behavior: smooth;
+  font-size: 24px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .top-gradients {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+    &::before {
+      content: '';
+      left: -140px;
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: calc(100% + 140px);
+      background-image: url(../../assets/gradient-top-blue.png);
+      background-repeat: no-repeat;
+
+      @include respond('tablet') {
+        left: -50px;
+      }
+    
+      @include respond('mobile') {
+        left: -32px;
+      }
+    }
+
+    &::after {
+      content: '';
+      left: -140px;
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: calc(100% + 140px);
+      background-image: url(../../assets/gradient-top-yellow.png);
+      background-repeat: no-repeat;
+
+      @include respond('tablet') {
+        left: -50px;
+      }
+    
+      @include respond('mobile') {
+        left: -32px;
+      }
+    }
+  }
+
+  .jumbotron {
+    position: relative;
+    padding: 255px 140px 122px;
+
+    padding-left: $app-side-padding-desktop;
+    padding-right: $app-side-padding-desktop;
+
+    @include respond('tablet') {
+      padding-top: 150px;
+      padding-bottom: 900px;
+      font-size: 20px;
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-top: 150px;
+      font-size: 18px;
+      padding-bottom: 366px;
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+    }
+    
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      pointer-events: none;
+      width: 1346px;
+      height: 1366px;
+      top: -200px;
+      right: -900px;
+      background-image: url(../../assets/pattern-circle.png);
+      background-repeat: no-repeat;
+
+      @include respond('tablet') {
+        transform: scale(0.75);
+        top: 50px;
+        right: -700px;
+      }
+    
+      @include respond('mobile') {
+        transform: scale(0.37);
+      }
+    }
+
+    .title {
+      width: 800px;
+      margin-bottom: 32px;
+
+      font-family: 'NeueMachinaMedium';
+      font-size: 58px;
+      font-weight: 400;
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+      text-align: left;
+
+      @include respond('tablet') {
+        width: 100%;
+        font-size: 40px;
+      }
+  
+      @include respond('mobile') {
+        font-size: 32px;
+      }
+    }
+
+    .description {
+      width: 691px;
+
+      font-family: 'NotoSansLight';
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 39px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      @include respond('tablet') {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 24px;
+      }
+  
+      @include respond('mobile') {
+        width: 90%;
+        line-height: 1.6;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .mission {
+    position: relative;
+    z-index: 1;
+    margin: 0 140px;
+    margin-top: 160px;
+    padding-bottom: 160px;
+    border-top: 1px solid #fff;
+
+    @include respond('tablet') {
+      margin-left: $app-side-padding-tablet;
+      margin-right: $app-side-padding-tablet;
+      padding-bottom: 75px;
+    }
+  
+    @include respond('mobile') {
+      margin-left: $app-side-padding-mobile;
+      margin-right: $app-side-padding-mobile;
+    }
+
+    .title {
+      margin-top: 30px;
+
+      font-family: 'NeueMachinaRegular';
+      font-size: 44px;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      text-align: left;
+
+      @include respond('tablet') {
+        font-size: 40px;
+      }
+    
+      @include respond('mobile') {
+        font-size: 32px;
+      }
+    }
+
+    .paragraph {
+      margin-top: 80px;
+      padding-left: 304px;
+
+      font-family: 'NotoSansLight';
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 39px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      @include respond('tablet') {
+        font-size: 20px;
+        line-height: 32px;
+        padding-left: 0;
+      }
+    
+      @include respond('mobile') {
+        font-size: 18px;
+        line-height: 28.8px;
+      }
+    }
+  }
+
+  .personalized {
+    position: relative;
+    z-index: 1;
+    margin: 0 140px;
+    margin-top: 160px;
+    padding-bottom: 160px;
+    border-top: 1px solid #fff;
+
+    @include respond('tablet') {
+      margin-left: $app-side-padding-tablet;
+      margin-right: $app-side-padding-tablet;
+      padding-bottom: 75px;
+    }
+  
+    @include respond('mobile') {
+      margin-left: $app-side-padding-mobile;
+      margin-right: $app-side-padding-mobile;
+    }
+
+    &.hex {
+      &::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-image: url(../../assets/gradient-left-blue.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        @include respond('tablet') {
+          top: 600px;
+          left: -50px;
+        }
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        height: 1350px;
+        width: 1350px;
+        background-image: url(../../assets/pattern-hex.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -750px;
+        top: 365px;
+        transform: scale(.9);
+
+        @include respond('tablet') {
+          transform: scale(.6);
+          left: -675px;
+          top: 900px;
+        }
+      }
+
+      @include respond('tablet') {
+        padding-bottom: 800px;
+      }
+    }
+
+    .title {
+      margin-top: 30px;
+
+      font-family: 'NeueMachinaRegular';
+      font-size: 44px;
+      font-weight: 400;
+      text-align: left;
+
+      @include respond('tablet') {
+        font-size: 40px;
+        line-height: 1;
+      }
+    
+      @include respond('mobile') {
+        
+      }
+    }
+
+    .paragraph {
+      margin: 160px 0;
+      padding-left: 304px;
+
+      font-family: 'NotoSansLight';
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 39px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      @include respond('tablet') {
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding-left: 0;
+      }
+    
+      @include respond('mobile') {
+        
+      }
+    }
+
+    .small-title {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      padding-left: 728px;
+
+      font-family: 'NeueMachinaRegular';
+      letter-spacing: 1.6px;
+      font-size: 28px;
+      font-weight: 400;
+
+      @include respond('tablet') {
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 80px;
+        padding-left: 0;
+        margin-bottom: 27px;
+      }
+    
+      @include respond('mobile') {
+        
+      }
+    }
+
+    .small-paragraph {
+      margin-bottom: 160px;
+      padding-left: 728px;
+      width: 473px;
+
+      font-family: 'NotoSansLight';
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      @include respond('tablet') {
+        font-size: 18px;
+        line-height: 28.8px;
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 80px;
+      }
+
+      @include respond('mobile') {
+        
+      }
+    }
+  }
+
+  .news-land {
+    padding: 0 140px;
+  }
+
+  .funded-land {
+    padding: 0 140px;
+  }
+
+  .bottom-gradients {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+    &::before {
+      content: '';
+      right: -140px;
+      bottom: 0;
+      display: block;
+      position: absolute;
+      width: 1440px;
+      height: 860px;
+      background-image: url(../../assets/gradient-bottom-blue.png);
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: '';
+      right: -140px;
+      bottom: 0;
+      display: block;
+      position: absolute;
+      width: 953px;
+      height: 1796px;
+      background-image: url(../../assets/gradient-bottom-yellow.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+

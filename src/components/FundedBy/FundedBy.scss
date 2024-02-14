@@ -1,5 +1,7 @@
 .funded-by {
+  position: relative;
   padding-top: 160px;
+  height: 1060px;
 
   &__header {
     border-top: 1px solid #FFFFFF;
@@ -36,10 +38,10 @@
   }
   
   &__pattern-wave {
-    position: relative;
+    position: absolute;
     width: 200%;
     bottom: 200px;
-    left: -30vw;
+    right: -50%;
     transform: rotate(-10deg);
 
     @include respond("tablet") {

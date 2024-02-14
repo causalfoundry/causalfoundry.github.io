@@ -1,9 +1,17 @@
 .header {
-  padding: 60px 0; 
+  padding: 60px 140px; 
   position: relative;
   z-index: 100;
   display: flex;
   justify-content: space-between;
+
+  @include respond('tablet') {
+    padding: 60px 50px;
+  }
+
+  @include respond('mobile') {
+    padding: 60px 32px;
+  }
 
   &__logo {
     width: 300px;
