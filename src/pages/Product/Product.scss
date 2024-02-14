@@ -1,0 +1,417 @@
+.products {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1440px;
+  }
+
+  .jumbotron {
+    position: relative;
+    z-index: 1;
+    padding: 336px 121px 320px;
+
+    .title {
+      margin-bottom: 32px;
+
+      font-family: 'NeueMachinaMedium';
+      font-size: 58px;
+      font-weight: 400;
+      line-height: 64px;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+
+    .description {
+      width: 691px;
+
+      font-family: 'NotoSansRegular';
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 39px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  .features {
+    position: relative;
+    z-index: 1;
+    padding: 80px 120px 320px;
+
+    .image {
+      margin-bottom: 80px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .list {
+      display: flex;
+      gap: 60px;
+
+      .item {
+        padding-top: 24px;
+        border-top: 2px solid #fff;
+        
+        &.active {
+          border-top: 4px solid #8CDFD9;
+        }
+
+        .title {
+          font-family: Inter;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          margin-bottom: 12px;
+        }
+
+        .description {
+          // TODO
+          font-family: 'NotoSansRegular';
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          color: #D1D5DB;
+        }
+      }
+    }
+  }
+
+  .analytics, .models, .interventions {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid #fff;
+    margin: 80px 120px 320px;
+
+    .title {
+      font-family: 'NeueMachinaMedium';
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 53px;
+      letter-spacing: 0.03em;
+      text-align: left;
+
+      color: #fff;
+      margin-top: 30px;
+      margin-bottom: 80px;
+    }
+
+    .section {
+      display: flex;
+      gap: 64px;
+
+      .image {
+        img: {
+          width: 100%;
+        }
+      }
+
+      .inner-section {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-family: 'NeueMachinaMedium';
+          font-size: 36px;
+          font-weight: 400;
+          line-height: 45px;
+          letter-spacing: -0.01em;
+          text-align: left;
+
+          margin-top: 0;
+          margin-bottom: 16px;
+        }
+
+        .description {
+          font-family: 'NotoSansRegular';
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          color: #D1D5DB;
+
+          margin-bottom: 80px;
+        }
+
+        .list {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+
+          .item {
+            min-height: 32px;
+            display: flex;
+            flex-direction: column;
+
+            padding-left: 48px;
+
+            background-image: url(../../assets/lock_icon.png);
+            background-repeat: no-repeat;
+
+            &:nth-child(2) {
+              background-image: url(../../assets/stats_icon.png);
+            }
+
+            &:nth-child(3) {
+              background-image: url(../../assets/code_icon.png);
+            }
+
+            .title {
+              font-family: Inter;
+              font-size: 22px;
+              font-weight: 600;
+              line-height: 27px;
+              letter-spacing: 0em;
+              text-align: left;
+
+              margin: 0;
+              padding: 0;
+            }
+
+            .description {
+              font-family: 'NotoSansRegular';
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 30px;
+              letter-spacing: 0em;
+              text-align: left;
+    
+              color: #D1D5DB;
+
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid #fff;
+    margin: 80px 120px 320px;
+
+    .title {
+      font-family: 'NeueMachinaMedium';
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 53px;
+      letter-spacing: 0.03em;
+      text-align: left;
+
+      color: #fff;
+      margin-top: 30px;
+      margin-bottom: 80px;
+    }
+
+    .comments {
+      display: flex;
+      gap: 24px;
+
+      .comment {
+        display: flex;
+        flex-direction: column;
+        background-color: #141C26;
+        border: 1.5px solid #9CA3AF;
+        border-radius: 8px;
+
+        padding: 40px 80px;
+
+        gap: 30px;
+
+        .body {
+          font-family: 'NeueMachinaMedium';
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 38px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          color: #fff;
+        }
+
+        .user {
+          display: flex;
+          gap: 23px;
+
+          .avatar {
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            background-color: #D9D9D9;
+          }
+
+          .info {
+            display: flex;
+            flex-direction: column;
+            
+            .name {
+              font-family: Inter;
+              font-size: 22px;
+              font-weight: 600;
+              line-height: 27px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+
+            .role {
+              font-family: Inter;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 22px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .demo {
+    display: flex;
+    padding: 80px 120px 353px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 5244px;
+      height: 1341px;
+      bottom: -500px;
+      left: -1860px;
+      background-image: url(../../assets/pattern-wave.png);
+      background-repeat: no-repeat;
+      transform: scale(0.5);
+    }
+
+    .image {
+      width : 50%;
+      
+      img {
+        width : 100%;
+      }
+    }
+
+    .form {
+      background-color: #fff;
+      color: #000;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+      overflow: hidden;
+
+      width : 50%;
+
+      gap: 37px;
+
+      .title {
+        font-family: 'NeueMachinaMedium';
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 53px;
+        letter-spacing: 0.03em;
+        text-align: left;
+      }
+      
+      .input {
+        display: flex;
+        gap: 16px;
+
+        input {
+          width: 320px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          color: #0D0E14;
+          padding: 16px;
+
+          border: 2px solid #A1AEBF;
+
+          border-radius: 30px;
+
+          text-decoration: underline;
+        }
+
+        .button {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          background-color: #000;
+          color: #fff;
+
+          padding: 12px 24px;
+
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 180px 70px 80px;
+  }
+
+  .hex {
+    position: absolute;
+    top: 3000px;
+    left: -750px;
+    transform: rotate(-65.66deg);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      transform: rotate(-65.66deg);
+    }
+  }
+
+  .circle {
+    position: absolute;
+    right: -670px;
+
+    &.top {
+      top: 100px;
+    }
+
+    &.bottom {
+      transform: rotate(-47deg);
+      top: 5350px;
+    }
+  }
+}
