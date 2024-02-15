@@ -1,7 +1,7 @@
 import { createApp, h } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Landing from './pages/Landing2/Landing.vue';
+import Landing from './pages/Landing/Landing.vue';
 import Careers from './pages/Careers/Careers.vue';
 import Research from './pages/Researches/Researches.vue';
 import Product from './pages/Product/Product.vue';
