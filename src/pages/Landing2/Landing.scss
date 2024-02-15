@@ -14,63 +14,41 @@
     max-width: 1440px;
   }
 
-  .top-gradients {
+  .circle {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
+    top: 0px;
+    left: 45vw;
 
-    &::before {
-      content: '';
-      left: -140px;
-      display: block;
-      position: absolute;
-      height: 100%;
-      width: calc(100% + 140px);
-      background-image: url(../../assets/gradient-top-blue.png);
-      background-repeat: no-repeat;
+    @include respond('tablet') {
+      top: 500px;
+      right: -540px;
 
-      @include respond('tablet') {
-        left: -50px;
-      }
-    
-      @include respond('mobile') {
-        left: -32px;
+      img {
+        width: 930px;
       }
     }
+  
+    @include respond('mobile') {
+      top: unset;
+      left: 50vw;
 
-    &::after {
-      content: '';
-      left: -140px;
-      display: block;
-      position: absolute;
-      height: 100%;
-      width: calc(100% + 140px);
-      background-image: url(../../assets/gradient-top-yellow.png);
-      background-repeat: no-repeat;
-
-      @include respond('tablet') {
-        left: -50px;
-      }
-    
-      @include respond('mobile') {
-        left: -32px;
+      img {
+        width: 100vw;
       }
     }
   }
 
   .jumbotron {
     position: relative;
-    padding: 255px 140px 122px;
+    z-index: 1;
+    padding: 255px 140px 400px;
 
     padding-left: $app-side-padding-desktop;
-    padding-right: $app-side-padding-desktop;
+    padding-right: 375px;
 
     @include respond('tablet') {
       padding-top: 150px;
-      padding-bottom: 900px;
+      padding-bottom: 800px;
       font-size: 20px;
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
@@ -79,36 +57,13 @@
     @include respond('mobile') {
       padding-top: 150px;
       font-size: 18px;
-      padding-bottom: 366px;
+      padding-bottom: calc(100vw - 160px);
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
-    
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      pointer-events: none;
-      width: 1346px;
-      height: 1366px;
-      top: -200px;
-      right: -900px;
-      background-image: url(../../assets/pattern-circle.png);
-      background-repeat: no-repeat;
-
-      @include respond('tablet') {
-        transform: scale(0.75);
-        top: 50px;
-        right: -700px;
-      }
-    
-      @include respond('mobile') {
-        transform: scale(0.37);
-      }
-    }
 
     .title {
-      width: 800px;
+      max-width: 800px;
       margin-bottom: 32px;
 
       font-family: 'NeueMachinaMedium';
@@ -129,7 +84,9 @@
     }
 
     .description {
-      width: 691px;
+      position: relative;
+      z-index: 1;
+      max-width: 691px;
 
       font-family: 'NotoSansLight';
       font-size: 26px;
@@ -232,45 +189,36 @@
       margin-right: $app-side-padding-mobile;
     }
 
-    &.hex {
-      &::before {
-        content: '';
-        display: block;
-        height: 100%;
-        width: 100%;
-        background-image: url(../../assets/gradient-left-blue.png);
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        @include respond('tablet') {
-          top: 600px;
-          left: -50px;
-        }
-      }
-
-      &::after {
-        content: '';
-        display: block;
-        height: 1350px;
-        width: 1350px;
-        background-image: url(../../assets/pattern-hex.png);
-        background-repeat: no-repeat;
-        position: absolute;
-        left: -750px;
-        top: 365px;
-        transform: scale(.9);
-
-        @include respond('tablet') {
-          transform: scale(.6);
-          left: -675px;
-          top: 900px;
-        }
-      }
+    .gradient-blue {
+      position: absolute;
+      left: 0;
+      top: -50px;
+      pointer-events: none;
 
       @include respond('tablet') {
-        padding-bottom: 800px;
+        top: unset;
+        bottom: -40%;
+      }
+    }
+
+    .hex {
+      img {
+        width: min(1367px, 100vw);
+      }
+      position: absolute;
+      pointer-events: none;
+      user-select: none;
+      top: 200px;
+      width: max(1367px, 100vw);
+      left: min(-900px, -50vw);
+
+      @include respond('tablet') {
+        position: relative;
+        top: unset;
+        left: unset;
+        width: 100%;
+        right: 50%;
+        margin-bottom: -160px;
       }
     }
 
@@ -319,7 +267,7 @@
     .small-title {
       text-transform: uppercase;
       margin-bottom: 30px;
-      padding-left: 728px;
+      padding-left: 500px;
 
       font-family: 'NeueMachinaRegular';
       letter-spacing: 1.6px;
@@ -341,8 +289,8 @@
 
     .small-paragraph {
       margin-bottom: 160px;
-      padding-left: 728px;
-      width: 473px;
+      padding-left: 500px;
+      max-width: 100%;
 
       font-family: 'NotoSansLight';
       font-size: 18px;
@@ -367,42 +315,29 @@
 
   .news-land {
     padding: 0 140px;
+
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+    }
   }
 
   .funded-land {
     padding: 0 140px;
-  }
 
-  .bottom-gradients {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-
-    &::before {
-      content: '';
-      right: -140px;
-      bottom: 0;
-      display: block;
-      position: absolute;
-      width: 1440px;
-      height: 860px;
-      background-image: url(../../assets/gradient-bottom-blue.png);
-      background-repeat: no-repeat;
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
     }
-
-    &::after {
-      content: '';
-      right: -140px;
-      bottom: 0;
-      display: block;
-      position: absolute;
-      width: 953px;
-      height: 1796px;
-      background-image: url(../../assets/gradient-bottom-yellow.png);
-      background-repeat: no-repeat;
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
     }
   }
 }

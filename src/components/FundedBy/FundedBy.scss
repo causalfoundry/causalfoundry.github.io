@@ -15,8 +15,8 @@
 
   &__logos {
     display: flex;
-    justify-content: space-between;
-    padding: 140px 100px 0;
+    justify-content: space-around;
+    padding-top: 140px;
 
     @include respond("tablet") {
       flex-direction: column;
