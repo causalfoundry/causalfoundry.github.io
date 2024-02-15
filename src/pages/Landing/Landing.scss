@@ -340,6 +340,18 @@
       padding-right: $app-side-padding-mobile;
     }
   }
+
+  .footer {
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+    }
+  }
 }
 
 

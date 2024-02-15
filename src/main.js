@@ -19,7 +19,7 @@ const routes = [
   { path: '/careers', component: Careers },
   { path: '/research', component: Research },
   { path: '/products', component: Product },
-  { path: '/privacy-policy', component: PrivacyPolicy },
+  { path: '/privacy', component: PrivacyPolicy },
   // ...jobs.map((job) => ({
   //   path: `/careers/${job.key}`, component: Job, props: { jobDetails: job },
   // }))
