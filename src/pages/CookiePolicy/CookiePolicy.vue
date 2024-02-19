@@ -142,33 +142,42 @@
 
         <ul>
           <li>
-            <a href="https://support.google.com/accounts/answer/61416?hl=en"
+            <a
+              href="https://support.google.com/accounts/answer/61416?hl=en"
+              target="_blank"
               >Google Chrome</a
             >
           </li>
           <li>
             <a
               href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we"
+              target="_blank"
               >Mozilla Firefox</a
             >
           </li>
           <li>
             <a
               href="http://windows.microsoft.com/en-en/windows-vista/block-or-allow-cookies"
+              target="_blank"
               >Internet Explorer</a
             >
           </li>
           <li>
-            <a href="https://support.apple.com/en-en/guide/safari/sfri11471/mac"
+            <a
+              href="https://support.apple.com/en-en/guide/safari/sfri11471/mac"
+              target="_blank"
               >Safari Desktop</a
             >
           </li>
           <li>
-            <a href="https://support.apple.com/en-en/HT201265">Safari IOS</a>
+            <a href="https://support.apple.com/en-en/HT201265" target="_blank"
+              >Safari IOS</a
+            >
           </li>
           <li>
             <a
               href="https://support.google.com/chrome/answer/114662?hl=en&visit_id=637305965473283725-2638447116&rd=1"
+              target="_blank"
               >Chrome on Android</a
             >
           </li>
@@ -199,11 +208,13 @@
           contextualize and personalize the ads of its advertising network. For
           more information on the privacy practices of Google, please visit
           theGoogle Privacy Terms web page:
-          <a href="https://policies.google.com/privacy?hl=en"
+          <a href="https://policies.google.com/privacy?hl=en" target="_blank"
             >https://policies.google.com/privacy?hl=en</a
           >. We also encourage you to review Google’s policy for safeguarding
           your data:
-          <a href="https://support.google.com/analytics/answer/6004245"
+          <a
+            href="https://support.google.com/analytics/answer/6004245"
+            target="_blank"
             >https://support.google.com/analytics/answer/6004245</a
           >.
         </p>
