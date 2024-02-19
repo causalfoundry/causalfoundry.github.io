@@ -3,19 +3,24 @@
     <hamburger-menu-icon />
   </button>
 
-  <div :class="['app-menu__content', { 'app-menu__content--open': open }]">
-    <button class="app-menu__close app-menu__button" @click="open = false">
-      <cross-icon />
-    </button>
-    <nav class="app-menu__nav">
-      <ul v-for="item in MENU_ITEMS" :key="item.title">
-        <li>
-          <a :target="item.target" :href="item.href" @click="open = false">{{
-            item.title
-          }}</a>
-        </li>
-      </ul>
-    </nav>
+  <div
+    :class="['app-menu__wrapper', { 'app-menu__wrapper--open': open }]"
+    @click="handleClick"
+  >
+    <div class="app-menu__content">
+      <button class="app-menu__close app-menu__button" @click="open = false">
+        <cross-icon />
+      </button>
+      <nav class="app-menu__nav">
+        <ul v-for="item in MENU_ITEMS" :key="item.title">
+          <li>
+            <a :target="item.target" :href="item.href" @click="open = false">{{
+              item.title
+            }}</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </template>
 
@@ -38,4 +43,12 @@ const MENU_ITEMS = [
 ];
 
 const open = ref(false);
+
+function handleClick(e: MouseEvent) {
+  const asDiv = e.target as HTMLDivElement;
+
+  if (asDiv.classList?.contains("app-menu__wrapper")) {
+    open.value = false;
+  }
+}
 </script>
