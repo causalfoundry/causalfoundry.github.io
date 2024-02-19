@@ -7,6 +7,7 @@ import Research from './pages/Researches/Researches.vue';
 import Product from './pages/Product/Product.vue';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.vue';
 import About from './pages/About/About.vue';
+import CookiePolicy from './pages/CookiePolicy/CookiePolicy.vue';
 // import Job from './pages/Job/Job.vue';
 
 import App from './App.vue';
@@ -22,6 +23,7 @@ const routes = [
   { path: '/products', component: Product },
   { path: '/privacy', component: PrivacyPolicy },
   { path: '/about', component: About },
+  { path: '/cookies', component: CookiePolicy },
   // ...jobs.map((job) => ({
   //   path: `/careers/${job.key}`, component: Job, props: { jobDetails: job },
   // }))

@@ -42,7 +42,8 @@ const props = defineProps<{
     | "research"
     | "products"
     | "privacy-policy"
-    | "about";
+    | "about"
+    | "cookie-policy";
 }>();
 
 const active = props.currentPage;

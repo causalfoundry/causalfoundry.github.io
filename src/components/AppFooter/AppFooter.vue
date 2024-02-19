@@ -28,8 +28,13 @@
         <router-link to="/careers"
           ><div class="footer__menu__item">Careers</div></router-link
         >
+      </div>
+      <div class="footer__menu__row">
         <router-link to="/privacy"
           ><div class="footer__menu__item">Privacy</div></router-link
+        >
+        <router-link to="/cookies"
+          ><div class="footer__menu__item">Cookies</div></router-link
         >
       </div>
     </div>
