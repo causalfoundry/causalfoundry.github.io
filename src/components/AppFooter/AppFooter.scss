@@ -137,4 +137,15 @@
       }
     }
   }
+
+  @include respond('mobile') {
+    &__menu {
+      flex-direction: column;
+      gap: 16px;
+
+      &__row {
+        gap: 16px;
+      }
+    }
+  }
 }

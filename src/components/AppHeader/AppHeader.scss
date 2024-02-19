@@ -47,7 +47,7 @@
 
     text-transform: uppercase;
 
-    @include respond('mobile') {
+    @include respond('tablet') {
       display: none;
     }
 

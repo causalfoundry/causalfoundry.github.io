@@ -49,7 +49,7 @@
   &__slot {
     display: none;
     
-    @include respond('mobile') {
+    @include respond('tablet') {
       display: block;
     }
   }

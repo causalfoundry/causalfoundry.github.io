@@ -342,6 +342,9 @@
   }
 
   .footer {
+    padding-left: $app-side-padding-desktop;
+    padding-right: $app-side-padding-desktop;
+
     @include respond('tablet') {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;

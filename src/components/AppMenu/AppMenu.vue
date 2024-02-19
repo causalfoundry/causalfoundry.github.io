@@ -2,7 +2,7 @@
   <button v-if="!open" class="app-menu__button" @click="open = true">
     <hamburger-menu-icon />
   </button>
-  
+
   <div :class="['app-menu__content', { 'app-menu__content--open': open }]">
     <button class="app-menu__close app-menu__button" @click="open = false">
       <cross-icon />
@@ -10,7 +10,9 @@
     <nav class="app-menu__nav">
       <ul v-for="item in MENU_ITEMS" :key="item.title">
         <li>
-          <a :target="item.target" :href="item.href" @click="open = false">{{ item.title }}</a>
+          <a :target="item.target" :href="item.href" @click="open = false">{{
+            item.title
+          }}</a>
         </li>
       </ul>
     </nav>
@@ -18,20 +20,22 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-import HamburgerMenuIcon from '@/assets/hamburger-menu.svg'
-import CrossIcon from '@/assets/cross.svg'
-import { Section } from '@/typings/section'
-import { EMAIL } from '@/data'
+import { ref } from "vue";
+import HamburgerMenuIcon from "@/assets/hamburger-menu.svg";
+import CrossIcon from "@/assets/cross.svg";
+import { Section } from "@/typings/section";
+import { EMAIL } from "@/data";
 
 const MENU_ITEMS = [
-  { title: 'Mission', href: `/#${Section.Problem}` }, 
-  { title: 'Personalized Interventions', href: `/#${Section.Applications}` }, 
-  { title: 'Personalized Medicine', href: `/#${Section.Proposal}` },
-  { title: 'Docs', href: 'https://docs.causalfoundry.ai/', target: '_blank' },
-  { title: 'Careers', href: '/careers' },
-  { title: 'Contact', href: `mailto:${EMAIL}` }
-]
+  { title: "Mission", href: `/#${Section.Problem}` },
+  { title: "Personalized Interventions", href: `/#${Section.Applications}` },
+  { title: "Personalized Medicine", href: `/#${Section.Proposal}` },
+  { title: "Products", href: "/products" },
+  { title: "Research", href: "/research" },
+  { title: "Docs", href: "https://docs.causalfoundry.ai/", target: "_blank" },
+  { title: "Careers", href: "/careers" },
+  { title: "Contact", href: `mailto:${EMAIL}` },
+];
 
-const open = ref(false)
+const open = ref(false);
 </script>

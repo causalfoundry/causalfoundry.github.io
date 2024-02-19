@@ -14,6 +14,8 @@
     position: relative;
     z-index: 1;
     padding: 336px 121px 320px;
+    display: flex;
+    flex-direction: column;
 
     .title {
       margin-bottom: 32px;
@@ -27,7 +29,8 @@
     }
 
     .description {
-      width: 691px;
+      max-width: 691px;
+      width: 100%;
 
       font-family: 'NotoSansRegular';
       font-size: 26px;
@@ -36,6 +39,37 @@
       letter-spacing: 0em;
       text-align: left;
     }
+
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+
+      padding-top: 120px;
+      padding-bottom: 560px;
+
+      .title {
+        font-family: 'NeueMachinaMedium';
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0.01em;
+        text-align: left;
+      }
+
+      .description {
+        font-family: 'NotoSansRegular';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 29px;
+        letter-spacing: 0.01em;
+        text-align: left;
+      }
+    }
   }
 
   .features {
@@ -43,11 +77,35 @@
     z-index: 1;
     padding: 80px 120px 320px;
 
-    .image {
-      margin-bottom: 80px;
+    .images {
+      position: relative;
+      padding: 0 120px;
+      margin-bottom: 120px;
+      display: flex;
+    }
 
-      img {
-        width: 100%;
+    .image {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: 0.2s ease-in-out;
+      z-index: -1;
+      display: flex;
+      justify-content: center;
+
+      &.active {
+        opacity: 1;
+        position: relative;
+        left: 0;
+        display: block;
+        z-index: 1;
+
+        img {
+          width: 100%;
+        }
       }
     }
 
@@ -56,15 +114,18 @@
       gap: 60px;
 
       .item {
-        padding-top: 24px;
-        border-top: 2px solid #fff;
+        max-width: 360px;
+        padding-top: 16px;
+        border-top: 1px solid #fff;
+        cursor: pointer;
         
         &.active {
-          border-top: 4px solid #8CDFD9;
+          padding-top: 15px;
+          border-top: 2px solid #8CDFD9;
         }
 
         .title {
-          font-family: Inter;
+          font-family: Noto Sans;
           font-size: 22px;
           font-weight: 600;
           line-height: 27px;
@@ -75,7 +136,6 @@
         }
 
         .description {
-          // TODO
           font-family: 'NotoSansRegular';
           font-size: 16px;
           font-weight: 600;
@@ -87,6 +147,47 @@
         }
       }
     }
+
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+
+      box-sizing: border-box;
+
+      .item {
+        display: none;
+      }
+
+      .images {
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+
+      .image {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .analytics:nth-child(odd), .models:nth-child(odd), .interventions:nth-child(odd) {
+    .section {
+      grid-template-areas: "section image";
+    }
+  }
+
+  .analytics:nth-child(even), .models:nth-child(even), .interventions:nth-child(even) {
+    .section {
+      grid-template-areas: "image section";
+    }
   }
 
   .analytics, .models, .interventions {
@@ -94,6 +195,17 @@
     z-index: 1;
     border-top: 1px solid #fff;
     margin: 80px 120px 320px;
+    padding-bottom: 80px;
+
+    @include respond('tablet') {
+      margin-left: $app-side-padding-tablet;
+      margin-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      margin-left: $app-side-padding-mobile;
+      margin-right: $app-side-padding-mobile;
+    }
 
     .title {
       font-family: 'NeueMachinaMedium';
@@ -105,20 +217,43 @@
 
       color: #fff;
       margin-top: 30px;
+      margin-bottom: 16px;
+    }
+
+    .description {
+      font-family: 'NotoSansRegular';
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      color: #D1D5DB;
+
       margin-bottom: 80px;
     }
 
     .section {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 64px;
 
+      @include respond('smallDesktop') {
+        flex-direction: column;
+        align-items: center;
+      }
+
       .image {
-        img: {
+        grid-area: image;
+
+        img {
           width: 100%;
         }
       }
 
       .inner-section {
+        grid-area: section;
+
         display: flex;
         flex-direction: column;
 
@@ -134,21 +269,9 @@
           margin-bottom: 16px;
         }
 
-        .description {
-          font-family: 'NotoSansRegular';
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 30px;
-          letter-spacing: 0em;
-          text-align: left;
-
-          color: #D1D5DB;
-
-          margin-bottom: 80px;
-        }
-
         .list {
           display: flex;
+          display: grid;
           flex-direction: column;
           gap: 32px;
 
@@ -180,6 +303,7 @@
 
               margin: 0;
               padding: 0;
+              margin-bottom: 12px;
             }
 
             .description {
@@ -192,8 +316,57 @@
     
               color: #D1D5DB;
 
-              margin: 0;
+              margin-bottom: 0;
               padding: 0;
+            }
+          }
+        }
+      }
+    }
+
+    @include respond('mobile') {
+      .section {
+        align-items: flex-start;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "image" "section" !important;
+        width: 100%;
+
+        .inner-section {
+          width: 100%;
+
+          .list {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            flex-direction: row;
+
+            .item {
+              flex-shrink: 0;
+              position: relative;
+              width: 100%;
+              padding-top: 48px;
+              padding-left: 0;
+    
+              .title {
+                font-size: 20px;
+              }
+
+              .description {
+                font-size: 14px;
+                line-height: 21px;
+              }
+
+              // &:nth-child(1) {
+              //   width: 100%;
+              //   left: -200%;
+              // }
+
+              &:nth-child(2) {
+                width: 100%;
+                left: 0;
+                // left: -200%;
+              }
             }
           }
         }
@@ -206,6 +379,16 @@
     z-index: 1;
     border-top: 1px solid #fff;
     margin: 80px 120px 320px;
+
+    @include respond('tablet') {
+      margin-left: $app-side-padding-tablet;
+      margin-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      margin-left: $app-side-padding-mobile;
+      margin-right: $app-side-padding-mobile;
+    }
 
     .title {
       font-family: 'NeueMachinaMedium';
@@ -285,94 +468,114 @@
   }
 
   .demo {
+    z-index: 1;
     display: flex;
-    padding: 80px 120px 353px;
     position: relative;
+    padding: 80px 120px 320px;
 
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 5244px;
-      height: 1341px;
-      bottom: -500px;
-      left: -1860px;
-      background-image: url(../../assets/pattern-wave.png);
-      background-repeat: no-repeat;
-      transform: scale(0.5);
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
     }
 
-    .image {
-      width : 50%;
-      
-      img {
-        width : 100%;
-      }
-    }
-
-    .form {
-      background-color: #fff;
-      color: #000;
-
+    .card {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid #9CA3AF;
+      background: linear-gradient(93.24deg,
+        rgb(10,3,48) -8.68%, 
+        rgb(17,17,47) 11.72%, 
+        rgb(23,30,45) 38.64%, 
+        rgb(27,37,44) 65.85%, 
+        rgb(30,44,43) 87.98%);
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      padding: 113px 0;
+      flex-direction: column;
+    }
 
-      border-top-left-radius: 16px;
-      border-bottom-left-radius: 16px;
-      overflow: hidden;
+    .title {
+      font-family: 'NeueMachinaMedium';
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 53px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      color: #fff;
+      margin-bottom: 37px;
+    }
+    
+    .input {
+      display: flex;
+      gap: 16px;
 
-      width : 50%;
-
-      gap: 37px;
-
-      .title {
-        font-family: 'NeueMachinaMedium';
-        font-size: 44px;
+      input {
+        width: 320px;
+        font-family: Open Sans;
+        font-size: 16px;
         font-weight: 400;
-        line-height: 53px;
-        letter-spacing: 0.03em;
+        line-height: 22px;
+        letter-spacing: 0em;
         text-align: left;
+
+        color: #0D0E14;
+        padding: 16px;
+
+        border: 2px solid #A1AEBF;
+
+        border-radius: 30px;
+
+        text-decoration: underline;
       }
+
+      .button {
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        border: none;
+
+        background-color: #8CDFD9;
+        color: #000;
+
+        padding: 12px 24px;
+
+        border-radius: 100px;
+      }
+    }
+
+    @include respond('mobile') {
+      margin-left: $app-side-padding-mobile;
+      margin-right: $app-side-padding-mobile;
       
+      .title {
+        font-size: 32px;
+        text-align: center;
+      }
+
+      .card {
+        padding: 32px;
+      }
+
       .input {
-        display: flex;
-        gap: 16px;
+        flex-direction: column;
+        width: 100%;
 
         input {
-          width: 320px;
-          font-family: Inter;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22px;
-          letter-spacing: 0em;
-          text-align: left;
-
-          color: #0D0E14;
-          padding: 16px;
-
-          border: 2px solid #A1AEBF;
-
-          border-radius: 30px;
-
-          text-decoration: underline;
+          width: 100%;
+          box-sizing: border-box;
         }
 
-        .button {
-          font-family: Inter;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 22px;
-          letter-spacing: 0em;
-          text-align: left;
-
-          background-color: #000;
-          color: #fff;
-
-          padding: 12px 24px;
-
-          border-radius: 100px;
+        button {
+          margin: 0 auto;
         }
       }
     }
@@ -380,13 +583,23 @@
 
   .footer {
     padding: 180px 70px 80px;
+
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+    }
   }
 
   .hex {
     position: absolute;
-    top: 3000px;
+    top: 2700px;
     left: -750px;
-    transform: rotate(-65.66deg);
+    transform: rotate(-87.67deg);
 
     &::before {
       position: absolute;
@@ -411,87 +624,63 @@
 
     &.bottom {
       transform: rotate(-47deg);
-      top: 5350px;
+      top: unset;
+      bottom: 900px;
     }
   }
+}
 
-  .top-gradients {
-    position: absolute;
-    top: 0;
-    left: 0;
+.swiper {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  // CSS Grid/Flexbox bug size workaround
+  // @see https://github.com/kenwheeler/slick/issues/982
+  // @see https://github.com/nolimits4web/swiper/issues/3599
+  min-height: 0;
+  min-width: 0;
+  position: relative;
+
+  &-slide {
+    width: auto;
+    flex-shrink: 0;
+    display: block;
     height: 100%;
-    width: 100%;
-    pointer-events: none;
-
-    &::before {
-      content: '';
-      left: -140px;
-      display: block;
-      position: absolute;
-      height: 100%;
-      width: calc(100% + 140px);
-      background-image: url(../../assets/gradient-top-blue.png);
-      background-repeat: no-repeat;
-
-      @include respond('tablet') {
-        left: -50px;
-      }
-    
-      @include respond('mobile') {
-        left: -32px;
-      }
-    }
-
-    &::after {
-      content: '';
-      left: -140px;
-      display: block;
-      position: absolute;
-      height: 100%;
-      width: calc(100% + 140px);
-      background-image: url(../../assets/gradient-top-yellow.png);
-      background-repeat: no-repeat;
-
-      @include respond('tablet') {
-        left: -50px;
-      }
-    
-      @include respond('mobile') {
-        left: -32px;
-      }
-    }
+    max-height: 100%;
   }
 
-  .bottom-gradients {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  &-wrapper {
+    max-height: 100%;
     height: 100%;
-    width: 100%;
-    pointer-events: none;
+    display: flex;
+  }
+}
 
-    &::before {
-      content: '';
-      right: -140px;
-      bottom: 0;
-      display: block;
-      position: absolute;
-      width: 1440px;
-      height: 860px;
-      background-image: url(../../assets/gradient-bottom-blue.png);
-      background-repeat: no-repeat;
-    }
+.bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #4B5563;
+  opacity: 1;
+}
 
-    &::after {
-      content: '';
-      right: -140px;
-      bottom: 0;
-      display: block;
-      position: absolute;
-      width: 953px;
-      height: 1796px;
-      background-image: url(../../assets/gradient-bottom-yellow.png);
-      background-repeat: no-repeat;
-    }
+.swiper-pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+
+  &-bullet {
+    position: relative;
+    top: -30px;
+    margin: 0;
+
+    width: 12px;
+    height: 12px;
+    background-color: #4B5563;
+    opacity: 1;
+  }
+
+  &-bullet-active {
+    background-color: #fff;
   }
 }

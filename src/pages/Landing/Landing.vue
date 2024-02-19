@@ -12,9 +12,9 @@
       <AppHeader current-page="landing"><AppMenu /></AppHeader>
 
       <IntersectionObserver
-        @intersect="handleIntersect(Section.FundedBy, $event)"
+        @intersect="handleIntersect(Section.Landing, $event)"
       >
-        <div class="jumbotron landing">
+        <div class="jumbotron landing" :id="Section.Landing">
           <div class="title">
             <AppTitle>Personalization</AppTitle>
             to solve the greatest <br />challenges in healthcare
@@ -33,7 +33,7 @@
       <IntersectionObserver
         @intersect="handleIntersect(Section.Problem, $event)"
       >
-        <div class="mission problem">
+        <div class="mission problem" :id="Section.Problem">
           <div class="title">Mission</div>
           <div class="paragraph">
             We believe in personalized clinical and behavioral interventions
@@ -49,7 +49,7 @@
       <IntersectionObserver
         @intersect="handleIntersect(Section.Applications, $event)"
       >
-        <div class="personalized hex applications">
+        <div class="personalized hex applications" :id="Section.Applications">
           <div class="title">Precision Nudging</div>
 
           <div class="paragraph">
@@ -104,7 +104,7 @@
       <IntersectionObserver
         @intersect="handleIntersect(Section.Proposal, $event)"
       >
-        <div class="personalized proposal">
+        <div class="personalized proposal" :id="Section.Proposal">
           <div class="title">Precision Medicine</div>
 
           <div class="paragraph">
@@ -149,7 +149,7 @@
       </IntersectionObserver>
 
       <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">
-        <div class="news-land">
+        <div class="news-land" :id="Section.News">
           <News />
         </div>
       </IntersectionObserver>
@@ -157,7 +157,7 @@
       <IntersectionObserver
         @intersect="handleIntersect(Section.FundedBy, $event)"
       >
-        <div class="funded-land">
+        <div class="funded-land" :id="Section.FundedBy">
           <FundedBy />
         </div>
       </IntersectionObserver>

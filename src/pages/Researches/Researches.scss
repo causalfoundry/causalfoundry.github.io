@@ -12,6 +12,11 @@
   .header {
     padding: 60px 140px 40px 140px;
 
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+
     @include respond('mobile') {
       padding-left: 32px;
       padding-right: 32px;
@@ -27,32 +32,33 @@
     gap: 32px;
 
     @include respond('tablet') {
-      padding: 330px 121px 340px 121px;
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
     }
 
     @include respond('mobile') {
       padding: 330px 32px 340px 32px;
     }
 
-    &::before {
-      position: absolute;
-      content: '';
+    // &::before {
+    //   position: absolute;
+    //   content: '';
 
-      top: 90px;
-      right: -40%;
-      width: 881px;
-      height: 930px;
-      transform: rotate(128deg);
-      background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(../../assets/pattern-hex.png) no-repeat;
-      background-size: contain;
+    //   top: 90px;
+    //   right: -40%;
+    //   width: 881px;
+    //   height: 930px;
+    //   transform: rotate(128deg);
+    //   background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(../../assets/pattern-hex.png) no-repeat;
+    //   background-size: contain;
 
 
-      @include respond('mobile') {
-        font-size: 32px;
-        top: 700px;
-      }
+    //   @include respond('mobile') {
+    //     font-size: 32px;
+    //     top: 700px;
+    //   }
       
-    }
+    // }
     
     &__title {
       max-width: 798.533px;;
@@ -65,6 +71,10 @@
       letter-spacing: 0.58px;
 
       z-index: 1;
+
+      @include respond('tablet') {
+        font-size: 40px;
+      }
 
       @include respond('mobile') {
         font-size: 32px;
@@ -84,6 +94,11 @@
 
       z-index: 1;
 
+      @include respond('tablet') {
+        line-height: 1.6;
+        font-size: 24px;
+      }
+
       @include respond('mobile') {
         width: unset;
         font-size: 18px;
@@ -99,12 +114,18 @@
     flex-direction: column;
     border-top: 1px solid #FFF;
 
+    @include respond('tablet') {
+      margin-left: $app-side-padding-tablet;
+      margin-right: $app-side-padding-tablet;
+    }
+  
     @include respond('mobile') {
-      padding: 160px 32px;
+      margin-left: $app-side-padding-mobile;
+      margin-right: $app-side-padding-mobile;
     }
 
     &__title {
-      width: 947px;
+      max-width: 947px;
       
       padding-top: 30px;
       margin-bottom: 80px;
@@ -137,6 +158,10 @@
 
       padding-left: 293px;
       margin-bottom: 48px;
+
+      @include respond('tablet') {
+        padding-left: 0;
+      }
 
       &.big {
         font-family: 'NeueMachinaRegular';
