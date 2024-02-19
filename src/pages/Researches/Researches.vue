@@ -23,6 +23,9 @@
           frontier. Robust data is the core of the products we build. We
           organize data to be AI-ready and deploy Models and AI systems safely.
         </div>
+        <div class="hex">
+          <img src="../../assets/pattern-hex.png" alt="" />
+        </div>
       </div>
 
       <div class="diagram">
