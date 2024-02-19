@@ -161,6 +161,12 @@
         img {
           width: 100%;
           height: auto;
+
+          @include respond('mobile') {
+            object-fit: cover;
+            object-position: top;
+            max-height: 424px;
+          }
         }
       }
 
@@ -171,6 +177,10 @@
         line-height: 31px;
         letter-spacing: 0em;
         text-align: left;
+
+        @include respond('mobile') {
+          font-size: 20px;
+        }
       }
 
       .role {
@@ -182,11 +192,22 @@
         text-align: left;
 
         margin-bottom: 24px;
+
+        @include respond('mobile') {
+          font-size: 14px;
+        }
       }
 
       .links {
         display: flex;
         gap: 16px;
+
+        img {
+          @include respond('mobile') {
+            width: 30px;
+            height: 30px;
+          }
+        }
       }
 
       .description {
