@@ -1,0 +1,235 @@
+.about {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+
+  .container {
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .jumbotron {
+    position: relative;
+    z-index: 1;
+    padding: 240px 140px 320px;
+    margin-bottom: 80px;
+
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+      padding-bottom: calc(100vw - 0px);
+    }
+
+    .hex {
+      position: absolute;
+      left: 55vw;
+      bottom: -5vw;
+      transform: rotate(128.4deg);
+
+      img {
+        max-width: 931.54px;
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+
+      @include respond('mobile') {
+        top: unset;
+        bottom: -15vw;
+        left: 50vw;
+  
+        img {
+          width: 100vw;
+        }
+      }
+    }
+
+    .title {
+      font-family: 'NeueMachinaRegular';
+      font-size: 58px;
+      font-weight: 400;
+      line-height: 64px;
+      letter-spacing: 0.01em;
+      text-align: left;
+
+      @include respond('tablet') {
+        font-size: 40px;
+      }
+    
+      @include respond('mobile') {
+        font-size: 32px;
+      }
+    }
+
+    .description {
+      font-family: 'NotoSansLight';
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+      max-width: 691px;
+      
+      margin-top: 32px;
+
+      @include respond('tablet') {
+        font-size: 20px;
+        line-height: 32px;
+        padding-left: 0;
+      }
+    
+      @include respond('mobile') {
+        font-size: 18px;
+        line-height: 28.8px;
+      }
+    }
+  }
+
+  .team {
+    position: relative;
+    z-index: 1;
+    padding: 0 140px 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+    }
+
+    .title {
+      padding-top: 30px;
+      max-width: 100%;
+      border-top: 1px solid #fff;
+
+      font-family: 'NeueMachinaRegular';
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 53px;
+      letter-spacing: 0.03em;
+      text-align: left;
+
+      @include respond('tablet') {
+        font-size: 40px;
+      }
+    
+      @include respond('mobile') {
+        font-size: 32px;
+      }
+    }
+
+    .members {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 80px 32px;
+    }
+
+    .member {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .info {
+        padding: 16px;
+      }
+
+      .avatar {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .name {
+        font-family: Noto Sans;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .role {
+        font-family: Noto Sans;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        margin-bottom: 24px;
+      }
+
+      .links {
+        display: flex;
+        gap: 16px;
+      }
+
+      .description {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        padding: 27px 15px 64px 25px;
+        background-color: #141C26D9;
+        box-sizing: border-box;
+        transition: 0.3s opacity ease-in-out;
+
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+      
+        @include respond('mobile') {
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+
+      &:hover .description {
+        opacity: 1;
+      }
+    }
+  }
+
+  .footer {
+    padding-left: $app-side-padding-desktop;
+    padding-right: $app-side-padding-desktop;
+
+    @include respond('tablet') {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+  
+    @include respond('mobile') {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+    }
+  }
+}

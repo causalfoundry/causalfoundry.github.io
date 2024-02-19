@@ -17,6 +17,11 @@
       <a target="_blank" href="https://docs.causalfoundry.ai/"
         ><div class="header__item">Docs</div></a
       >
+      <router-link to="/about"
+        ><div :class="`header__item ${active === 'about' ? 'active' : ''}`">
+          About
+        </div></router-link
+      >
       <router-link to="/careers"
         ><div :class="`header__item ${active === 'careers' ? 'active' : ''}`">
           Careers
@@ -36,7 +41,8 @@ const props = defineProps<{
     | "careers"
     | "research"
     | "products"
-    | "privacy-policy";
+    | "privacy-policy"
+    | "about";
 }>();
 
 const active = props.currentPage;

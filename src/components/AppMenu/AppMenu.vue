@@ -38,6 +38,7 @@ const MENU_ITEMS = [
   { title: "Products", href: "/products" },
   { title: "Research", href: "/research" },
   { title: "Docs", href: "https://docs.causalfoundry.ai/", target: "_blank" },
+  { title: "About", href: "/about" },
   { title: "Careers", href: "/careers" },
   { title: "Contact", href: `mailto:${EMAIL}` },
 ];

@@ -6,6 +6,7 @@ import Careers from './pages/Careers/Careers.vue';
 import Research from './pages/Researches/Researches.vue';
 import Product from './pages/Product/Product.vue';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.vue';
+import About from './pages/About/About.vue';
 // import Job from './pages/Job/Job.vue';
 
 import App from './App.vue';
@@ -20,6 +21,7 @@ const routes = [
   { path: '/research', component: Research },
   { path: '/products', component: Product },
   { path: '/privacy', component: PrivacyPolicy },
+  { path: '/about', component: About },
   // ...jobs.map((job) => ({
   //   path: `/careers/${job.key}`, component: Job, props: { jobDetails: job },
   // }))

@@ -162,8 +162,6 @@
         </div>
       </IntersectionObserver>
 
-      <div class="bottom-gradients"></div>
-
       <AppFooter />
 
       <img
