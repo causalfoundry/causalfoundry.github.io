@@ -3,6 +3,7 @@
   color: #fff;
   position: relative;
 
+
   display: flex;
   justify-content: center;
 
@@ -178,19 +179,74 @@
     }
   }
 
-  .analytics:nth-child(odd), .models:nth-child(odd), .interventions:nth-child(odd) {
-    .section {
-      grid-template-areas: "section image";
+  .swiper {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    // CSS Grid/Flexbox bug size workaround
+    // @see https://github.com/kenwheeler/slick/issues/982
+    // @see https://github.com/nolimits4web/swiper/issues/3599
+    min-height: 0;
+    min-width: 0;
+    position: relative;
+
+    &-slide {
+      width: auto;
+      flex-shrink: 0;
+      display: block;
+      height: 100%;
+      max-height: 100%;
+    }
+
+    &-wrapper {
+      max-height: 100%;
+      height: 100%;
+      display: flex;
     }
   }
 
-  .analytics:nth-child(even), .models:nth-child(even), .interventions:nth-child(even) {
-    .section {
-      grid-template-areas: "image section";
+  .bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #4B5563;
+    opacity: 1;
+  }
+
+  .swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+
+    &-bullet {
+      position: relative;
+      top: -30px;
+      margin: 0;
+
+      width: 12px;
+      height: 12px;
+      background-color: #4B5563;
+      opacity: 1;
+    }
+
+    &-bullet-active {
+      background-color: #fff;
     }
   }
 
-  .analytics, .models, .interventions {
+  // .analytics:nth-child(odd), .models:nth-child(odd), .interventions:nth-child(odd) {
+  //   .section {
+  //     grid-template-areas: "section image";
+  //   }
+  // }
+
+  // .analytics:nth-child(even), .models:nth-child(even), .interventions:nth-child(even) {
+  //   .section {
+  //     grid-template-areas: "image section";
+  //   }
+  // }
+
+  .section {
     position: relative;
     z-index: 1;
     border-top: 1px solid #fff;
@@ -233,146 +289,140 @@
       margin-bottom: 80px;
     }
 
-    .section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
+    .desktop-body {
+      // display: flex;
+      // gap: 64px;
 
-      @include respond('smallDesktop') {
-        flex-direction: column;
-        align-items: center;
-      }
+      // @include respond('smallDesktop') {
+      //   flex-direction: column;
+      //   align-items: center;
+      // }
 
       .image {
-        grid-area: image;
+        max-width: 696px;
+        max-height: 680px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
 
         img {
-          width: 100%;
+          max-width: 100%;
+          max-height: 100%;
+          height: 100%;
+          object-fit: contain;
         }
       }
 
-      .inner-section {
-        grid-area: section;
-
+      .features {
         display: flex;
+        display: grid;
         flex-direction: column;
+        gap: 32px;
 
-        .title {
-          font-family: 'NeueMachinaMedium';
-          font-size: 36px;
-          font-weight: 400;
-          line-height: 45px;
-          letter-spacing: -0.01em;
-          text-align: left;
-
-          margin-top: 0;
-          margin-bottom: 16px;
-        }
-
-        .list {
+        .item {
+          min-height: 32px;
           display: flex;
-          display: grid;
           flex-direction: column;
-          gap: 32px;
 
-          .item {
-            min-height: 32px;
-            display: flex;
-            flex-direction: column;
+          padding-left: 48px;
 
-            padding-left: 48px;
+          background-image: url(../../assets/lock_icon.png);
+          background-repeat: no-repeat;
 
-            background-image: url(../../assets/lock_icon.png);
-            background-repeat: no-repeat;
+          &:nth-child(2) {
+            background-image: url(../../assets/stats_icon.png);
+          }
 
-            &:nth-child(2) {
-              background-image: url(../../assets/stats_icon.png);
-            }
+          &:nth-child(3) {
+            background-image: url(../../assets/code_icon.png);
+          }
 
-            &:nth-child(3) {
-              background-image: url(../../assets/code_icon.png);
-            }
+          .title {
+            font-family: Inter;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
 
-            .title {
-              font-family: Inter;
-              font-size: 22px;
-              font-weight: 600;
-              line-height: 27px;
-              letter-spacing: 0em;
-              text-align: left;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 12px;
+          }
 
-              margin: 0;
-              padding: 0;
-              margin-bottom: 12px;
-            }
+          .description {
+            font-family: 'NotoSansRegular';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+  
+            color: #D1D5DB;
 
-            .description {
-              font-family: 'NotoSansRegular';
-              font-size: 20px;
-              font-weight: 400;
-              line-height: 30px;
-              letter-spacing: 0em;
-              text-align: left;
-    
-              color: #D1D5DB;
-
-              margin-bottom: 0;
-              padding: 0;
-            }
+            margin-bottom: 0;
+            padding: 0;
           }
         }
       }
     }
 
-    @include respond('mobile') {
-      .section {
-        align-items: flex-start;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-        grid-template-areas: "image" "section" !important;
-        width: 100%;
+    // @include respond('mobile') {
+    //   .section {
+    //     align-items: flex-start;
+    //     grid-template-rows: auto;
+    //     grid-template-columns: 1fr;
+    //     grid-template-areas: "image" "section" !important;
+    //     width: 100%;
 
-        .inner-section {
-          width: 100%;
+    //     .inner-section {
+    //       width: 100%;
 
-          .list {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            flex-direction: row;
+    //       .list {
+    //         position: relative;
+    //         overflow: hidden;
+    //         width: 100%;
+    //         flex-direction: row;
 
-            .item {
-              flex-shrink: 0;
-              position: relative;
-              width: 100%;
-              padding-top: 48px;
-              padding-left: 0;
+    //         .item {
+    //           flex-shrink: 0;
+    //           position: relative;
+    //           width: 100%;
+    //           padding-top: 48px;
+    //           padding-left: 0;
     
-              .title {
-                font-size: 20px;
-              }
+    //           .title {
+    //             font-size: 20px;
+    //           }
 
-              .description {
-                font-size: 14px;
-                line-height: 21px;
-              }
+    //           .description {
+    //             font-size: 14px;
+    //             line-height: 21px;
+    //           }
 
-              // &:nth-child(1) {
-              //   width: 100%;
-              //   left: -200%;
-              // }
+    //           // &:nth-child(1) {
+    //           //   width: 100%;
+    //           //   left: -200%;
+    //           // }
 
-              &:nth-child(2) {
-                width: 100%;
-                left: 0;
-                // left: -200%;
-              }
-            }
-          }
-        }
-      }
-    }
+    //           &:nth-child(2) {
+    //             width: 100%;
+    //             left: 0;
+    //             // left: -200%;
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
+
+  .mobile-body {
+    display: none;
+  };
 
   .testimonials {
     position: relative;
@@ -627,60 +677,5 @@
       top: unset;
       bottom: 900px;
     }
-  }
-}
-
-.swiper {
-  width: 100%;
-  max-width: 100%;
-  max-height: 100vh;
-  // CSS Grid/Flexbox bug size workaround
-  // @see https://github.com/kenwheeler/slick/issues/982
-  // @see https://github.com/nolimits4web/swiper/issues/3599
-  min-height: 0;
-  min-width: 0;
-  position: relative;
-
-  &-slide {
-    width: auto;
-    flex-shrink: 0;
-    display: block;
-    height: 100%;
-    max-height: 100%;
-  }
-
-  &-wrapper {
-    max-height: 100%;
-    height: 100%;
-    display: flex;
-  }
-}
-
-.bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #4B5563;
-  opacity: 1;
-}
-
-.swiper-pagination {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 24px;
-
-  &-bullet {
-    position: relative;
-    top: -30px;
-    margin: 0;
-
-    width: 12px;
-    height: 12px;
-    background-color: #4B5563;
-    opacity: 1;
-  }
-
-  &-bullet-active {
-    background-color: #fff;
   }
 }

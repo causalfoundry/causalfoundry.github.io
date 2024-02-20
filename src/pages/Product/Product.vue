@@ -68,7 +68,58 @@
         </div>
       </div>
 
-      <div class="analytics">
+      <div v-for="section of sections" class="section">
+        <div class="title">{{ section.title }}</div>
+        <div class="description">{{ section.description }}</div>
+
+        <div class="desktop-body">
+          <div class="images">
+            <Swiper :modules="modules" :slides-per-view="1" :pagination="true">
+              <SwiperSlide v-for="imageUrl of section.imageUrls">
+                <div class="image">
+                  <img :src="imageUrl" alt="" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <div class="features">
+            <div v-for="feature of section.features" class="item">
+              <div class="title">{{ feature.title }}</div>
+              <div class="description">
+                {{ feature.description }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-body">
+          <div class="images">
+            <Swiper :modules="modules" :slides-per-view="1" :pagination="true">
+              <SwiperSlide v-for="imageUrl of section.imageUrls">
+                <div class="image">
+                  <img :src="imageUrl" alt="" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <div class="features">
+            <Swiper :modules="modules" :slides-per-view="1" :pagination="true">
+              <SwiperSlide v-for="feature of section.features">
+                <div class="item">
+                  <div class="title">{{ feature.title }}</div>
+                  <div class="description">
+                    {{ feature.description }}
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="analytics">
         <div class="title">Analytics</div>
         <div class="description">
           Visualize your data to understand behavioral and clinical trends, and
@@ -131,9 +182,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="models">
+      <!-- <div class="models">
         <div class="title">Models</div>
         <div class="description">
           Easily deploy predictive and recommendation machine learning models to
@@ -196,7 +247,7 @@
             <img src="../../assets/fpo.png" alt="" />
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- <div class="interventions">
         <div class="title">Interventions</div>
@@ -400,7 +451,6 @@ import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 
 import "./Product.scss";
-import { onBeforeMount, onMounted } from "vue";
 
 const modules = [Pagination];
 
@@ -409,7 +459,10 @@ const sections = [
     title: "Analytics",
     description:
       "Visualize your data to understand behavioral and clinical trends, and to assess risk and performance",
-    imageUrl: "",
+    imageUrls: [
+      "/images/products/analytics1.gif",
+      "/images/products/analytics2.gif",
+    ],
     features: [
       {
         title: "Use-case specific",
@@ -429,67 +482,4 @@ const sections = [
     ],
   },
 ];
-
-// const indexMap = {
-//   first: 0,
-//   second: 1,
-//   third: 2,
-// };
-
-// let items: HTMLDivElement[] = [];
-// let images: HTMLDivElement[] = [];
-
-// let timerId: number;
-// let currentIndex = 0;
-
-// const carouselTimer = 5000;
-
-// function clearActive() {
-//   for (let item of items) {
-//     item.classList.remove("active");
-//   }
-
-//   for (let image of images) {
-//     image.classList.remove("active");
-//   }
-// }
-
-// function clickHandler(this: HTMLDivElement) {
-//   clearActive();
-
-//   this.classList.add("active");
-//   images[indexMap[this.classList[1] as keyof typeof indexMap]].classList.add(
-//     "active"
-//   );
-
-//   clearInterval(timerId);
-// }
-
-// onMounted(() => {
-//   items = Array.from(document.querySelectorAll<HTMLDivElement>(".item"));
-//   images = Array.from(
-//     document.querySelectorAll<HTMLDivElement>(".features .images .image")
-//   );
-
-//   for (let item of items) {
-//     item.addEventListener("click", clickHandler);
-//   }
-
-//   timerId = setInterval(() => {
-//     clearActive();
-
-//     const nextIndex = currentIndex++ % 3;
-
-//     items[nextIndex].classList.add("active");
-//     images[nextIndex].classList.add("active");
-//   }, carouselTimer);
-// });
-
-// onBeforeMount(() => {
-//   for (let item of items) {
-//     item.removeEventListener("click", clickHandler);
-//   }
-
-//   clearInterval(timerId);
-// });
 </script>
