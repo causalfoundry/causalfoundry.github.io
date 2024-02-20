@@ -8,6 +8,8 @@ import Product from './pages/Product/Product.vue';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.vue';
 import About from './pages/About/About.vue';
 import CookiePolicy from './pages/CookiePolicy/CookiePolicy.vue';
+
+import CookiePageWrapper from './components/CookiePageWrapper/CookiePageWrapper.vue';
 // import Job from './pages/Job/Job.vue';
 
 import App from './App.vue';
@@ -17,13 +19,19 @@ import './styles/app.scss';
 // import jobs from './data/jobs';
 
 const routes = [
-  { path: '/', component: Landing },
-  { path: '/careers', component: Careers },
-  { path: '/research', component: Research },
-  { path: '/products', component: Product },
-  { path: '/privacy', component: PrivacyPolicy },
-  { path: '/about', component: About },
-  { path: '/cookies', component: CookiePolicy },
+  {
+    path: '/',
+    component: CookiePageWrapper,
+    children: [
+      { path: '/', component: Landing },
+      { path: '/careers', component: Careers },
+      { path: '/research', component: Research },
+      { path: '/products', component: Product },
+      { path: '/privacy', component: PrivacyPolicy },
+      { path: '/about', component: About },
+      { path: '/cookies', component: CookiePolicy },
+    ],
+  },
   // ...jobs.map((job) => ({
   //   path: `/careers/${job.key}`, component: Job, props: { jobDetails: job },
   // }))
