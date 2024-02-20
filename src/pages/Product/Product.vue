@@ -404,6 +404,32 @@ import { onBeforeMount, onMounted } from "vue";
 
 const modules = [Pagination];
 
+const sections = [
+  {
+    title: "Analytics",
+    description:
+      "Visualize your data to understand behavioral and clinical trends, and to assess risk and performance",
+    imageUrl: "",
+    features: [
+      {
+        title: "Use-case specific",
+        description:
+          "Causal Foundry data pipelines will turn incoming tool usage information into functionality specific traits characterizing meaningful quantities well suited to tackle use cases for patient and condition management, clinical decision support, capacity building and medical supply chain tools",
+      },
+      {
+        title: "Cohorts",
+        description:
+          "Use the resulting traits to easily define cohorts of interest of the different relevant subjects (healthcare facilities and personel, patients, drugs or tests) that will be available throughout the platform to act as basic units of aggregate inspection, modeling and intervention",
+      },
+      {
+        title: "Dashboards",
+        description:
+          "Customize your dashboard to track the evolution of what matters most to you. We provide ways of visualizing data that will allow you to easily compare different cohorts, extract meaning, and guide evidence based decisions, with a strong focus in the dynamic nature of clinical and behavioral traits",
+      },
+    ],
+  },
+];
+
 // const indexMap = {
 //   first: 0,
 //   second: 1,

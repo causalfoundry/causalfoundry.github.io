@@ -64,6 +64,14 @@
         </div>
       </div>
 
+      <div class="diagram">
+        <div class="diagram__title">Large Landuage Models</div>
+
+        <div class="diagram__image">
+          <img src="../../assets/research_diagram_2.png" />
+        </div>
+      </div>
+
       <!-- <div class="posts">
       <div class="controls">
         <input v-model="searchQuery" placeholder="Search" type="text" class="search-field">
