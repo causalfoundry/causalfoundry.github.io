@@ -17,7 +17,7 @@
       <!-- <intersection-observer @intersect="handleIntersect(Section.Jumbotron, $event)"> -->
       <div class="jumbotron">
         <div class="jumbotron__title">
-          AI for Equity: Build the Unbuilt with Us
+          <app-title>AI for Equity:</app-title> Build the Unbuilt with Us
         </div>
         <div class="jumbotron__description">
           We are at the forefront of crafting advanced machine learning software
@@ -103,6 +103,7 @@
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
+import AppTitle from "@/components/AppTitle";
 // import { onBeforeUnmount, onMounted, ref } from 'vue';
 // import jobs from '../../data/jobs';
 
