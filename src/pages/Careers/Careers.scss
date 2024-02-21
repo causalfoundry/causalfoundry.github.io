@@ -247,6 +247,7 @@
       font-family: 'NotoSansRegular';
       font-size: 20px;
       color: #D1D5DB;
+      line-height: 30px;
     }
 
     @include respond('mobile') {

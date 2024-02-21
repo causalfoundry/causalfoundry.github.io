@@ -60,7 +60,7 @@
     }
   
     @include respond('mobile') {
-      padding-top: 150px;
+      padding-top: 120px;
       font-size: 18px;
       padding-bottom: calc(100vw - 160px);
       padding-left: $app-side-padding-mobile;
@@ -108,8 +108,8 @@
   
       @include respond('mobile') {
         width: 90%;
-        line-height: 1.6;
-        font-size: 18px;
+        line-height: 32px;
+        font-size: 20px;
       }
     }
   }
@@ -166,11 +166,6 @@
         font-size: 20px;
         line-height: 32px;
         padding-left: 0;
-      }
-    
-      @include respond('mobile') {
-        font-size: 18px;
-        line-height: 28.8px;
       }
     }
   }
@@ -229,7 +224,6 @@
 
     .title {
       margin-top: 30px;
-
       font-family: 'NeueMachinaMedium';
       font-size: 44px;
       font-weight: 400;
@@ -241,7 +235,7 @@
       }
     
       @include respond('mobile') {
-        
+        font-size: 32px;
       }
     }
 

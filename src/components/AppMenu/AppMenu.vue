@@ -28,13 +28,10 @@
 import { ref } from "vue";
 import HamburgerMenuIcon from "@/assets/hamburger-menu.svg";
 import CrossIcon from "@/assets/cross.svg";
-import { Section } from "@/typings/section";
 import { EMAIL } from "@/data";
 
 const MENU_ITEMS = [
-  { title: "Mission", href: `/#${Section.Problem}` },
-  { title: "Personalized Interventions", href: `/#${Section.Applications}` },
-  { title: "Personalized Medicine", href: `/#${Section.Proposal}` },
+  { title: "Home", href: `/` },
   { title: "Products", href: "/products" },
   { title: "Research", href: "/research" },
   { title: "Docs", href: "https://docs.causalfoundry.ai/", target: "_blank" },

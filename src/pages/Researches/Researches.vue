@@ -29,43 +29,48 @@
       </div>
 
       <div class="diagram">
-        <div class="diagram__title">
-          Causality and Reinforcement Learning as a Service
-        </div>
+        <div class="diagram__title">Reinforcement Learning</div>
         <div class="paragraph">
-          We focus on advancing artificial intelligence through Causal Inference
-          and Reinforcement Learning research. Through our work in Causality, we
-          enable AI systems not just to predict outcomes, but to understand the
-          underlying reasons behind these outcomes, paving the way for more
-          accurate and reliable predictions in complex environments. In
-          Reinforcement Learning, we are pioneering methods for AI to learn and
-          adapt from environmental interactions, enhancing decision-making
-          processes.
-        </div>
-        <div class="paragraph">
-          Our research is not just theoretical but is readily available as a
-          service, enabling our partners to harness data-driven insights and
-          optimize operations.
+          We focus on advancing artificial intelligence through causal inference
+          and reinforcement learning. Through our work in Causality, we enableAI
+          systems not just to predict outcomes, but to understand the underlying
+          reasons behind these outcomes, paving the way for more accurate and
+          reliable predictions in complex environments.Reinforcement learning is
+          a computational approach to understanding and automating goal-directed
+          learning and decision-making without requiring exemplary supervision
+          or complete models of an environment in order to achieve long-term
+          goals. We implemented in-production methods like linear or neural
+          (subspace bandits or limited memory neural linear) bandits or restless
+          bandits (for resource allocation) to learn and adapt to environmental
+          interactions.
         </div>
         <div class="diagram__image">
           <img src="../../assets/research_diagram.png" />
         </div>
+      </div>
+
+      <div class="diagram">
+        <div class="diagram__title">Embeddings</div>
 
         <div class="paragraph">
-          The application of AI methodologies to extract and predict valuable
-          information to inform intervention design lies at the core of the
-          software we build. As is generally the case, no single model is best
-          across all datasets and use cases, and frequently, no single model is
-          best across all time horizons within a single dataset. This presents a
-          challenge to standard methods of model selection or ensemble creation.
-          Our team has a broad knowledge of AI techniques, bringing extensive
-          expertise around the cornerstones of our research and development,
-          illustrated above.
+          Embeddings are numerical representations of items, users, or behaviors
+          in a high-dimensional space. These representations capture the
+          essential characteristics and relationships of the data. They can be
+          used to profile the clinical and behavioral aspects of users and help
+          with personalized predictions and tailored recommendations.
         </div>
       </div>
 
       <div class="diagram">
         <div class="diagram__title">Large Language Models</div>
+
+        <div class="paragraph">
+          Deeper analytics insights can be extracted with LLMs. They can help to
+          communicate prediction results or the status of recommendations
+          directly to users in their applications or in the Causal Foundry
+          outcomes. We research and implement LLMs in our products to facilitate
+          access to the information.
+        </div>
 
         <div class="diagram__image">
           <img src="../../assets/research_diagram_2.png" />
