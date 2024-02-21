@@ -11,6 +11,8 @@
 
   @include respond('mobile') {
     padding: 60px 32px;
+    height: 25px;
+    align-items: center;
   }
 
   &__logo {

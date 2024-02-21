@@ -69,7 +69,7 @@
     }
 
     @include respond('mobile') {
-      padding: 330px 32px 340px 32px;
+      padding: 120px 32px 340px 32px;
       padding-bottom: calc(100vw);
     }
     
@@ -114,7 +114,8 @@
 
       @include respond('mobile') {
         width: unset;
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 32px;
       }
     }
   }
@@ -133,6 +134,7 @@
     }
   
     @include respond('mobile') {
+      padding-bottom: 160px;
       margin-left: $app-side-padding-mobile;
       margin-right: $app-side-padding-mobile;
     }
@@ -198,6 +200,14 @@
     &__image {
       margin: 48px 0;
       padding: 40px 120px;
+
+      @include respond('tablet') {
+        padding: 20px 60px;
+      }
+    
+      @include respond('mobile') {
+        padding: 0;
+      }
 
       img {
         width: 100%;

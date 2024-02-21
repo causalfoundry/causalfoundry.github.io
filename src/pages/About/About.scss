@@ -22,6 +22,7 @@
     }
   
     @include respond('mobile') {
+      padding-top: 120px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
       padding-bottom: calc(100vw - 0px);
@@ -94,8 +95,8 @@
       }
     
       @include respond('mobile') {
-        font-size: 18px;
-        line-height: 28.8px;
+        font-size: 20px;
+        line-height: 32px;
       }
     }
   }
@@ -114,6 +115,7 @@
     }
   
     @include respond('mobile') {
+      padding-bottom: 30px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
@@ -226,7 +228,7 @@
         line-height: 24px;
         letter-spacing: 0em;
         text-align: left;
-      
+              
         @include respond('mobile') {
           font-size: 14px;
           line-height: 21px;
