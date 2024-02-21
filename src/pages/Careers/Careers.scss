@@ -55,7 +55,7 @@
     &__title {
       max-width: 798.533px;;
       color: var(--white, #FFF);
-      font-family: 'NeueMachinaRegular';
+      font-family: 'NeueMachinaMedium';
       font-size: 58px;
       font-style: normal;
       font-weight: 400;
@@ -108,7 +108,7 @@
       color: var(--white, #FFF);
 
       /* Desktop/Header 2 */
-      font-family: 'NeueMachinaRegular';
+      font-family: 'NeueMachinaMedium';
       font-size: 44px;
       font-style: normal;
       font-weight: 400;
@@ -234,7 +234,7 @@
     color: var(--white, #FFF);
 
     /* Desktop/Text Large */
-    font-family: NotoSansLight;
+    font-family: 'NotoSansRegular';
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
@@ -244,6 +244,9 @@
 
     &__info {
       margin-top: 30px;
+      font-family: 'NotoSansRegular';
+      font-size: 20px;
+      color: #D1D5DB;
     }
 
     @include respond('mobile') {
