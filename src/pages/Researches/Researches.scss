@@ -163,9 +163,9 @@
 
     .paragraph {
       font-family: Noto Sans;
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 400;
-      line-height: 30px;
+      line-height: 36px;
       letter-spacing: 0em;
       text-align: left;
 
@@ -199,10 +199,10 @@
 
     &__image {
       margin: 48px 0;
-      padding: 40px 120px;
+      padding: 40px 80px;
 
       @include respond('tablet') {
-        padding: 20px 60px;
+        padding: 20px 40px;
       }
     
       @include respond('mobile') {

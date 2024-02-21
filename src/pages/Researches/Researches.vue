@@ -16,12 +16,13 @@
 
       <div class="jumbotron">
         <div class="jumbotron__title">
-          We research and build AI products and deploy them reliably
+          We research to build AI products and deploy them reliably
         </div>
         <div class="jumbotron__description">
-          We develop AI systems and technology to move healthcare to the next
-          frontier. Robust data is the core of the products we build. We
-          organize data to be AI-ready and deploy Models and AI systems safely
+          We develop AI systems and technology based on Reinforcement
+          Learning,Causal Inference, and deep and ensemble learning. Robust data
+          is the core of our products. We organize data to be AI-ready and
+          deploy models and AI systems safely
         </div>
         <div class="hex">
           <img src="../../assets/pattern-hex.png" alt="" />
