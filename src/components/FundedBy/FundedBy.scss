@@ -39,13 +39,15 @@
   
   &__pattern-wave {
     position: absolute;
-    width: 200%;
-    bottom: 200px;
-    right: -50%;
+    width: 150vw;
+    bottom: 150px;
+    right: -55vw;
     transform: rotate(-10deg);
 
     @include respond("tablet") {
       bottom: 30px;
+      width: 200%;
+      right: -55%;
     }
 
     @include respond("smallDesktop") {
