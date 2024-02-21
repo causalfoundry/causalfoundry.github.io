@@ -26,8 +26,7 @@
           tools such as personalized recommendations, reminders, incentives, or
           integrated content and workflows within the applications. Our goal is
           to ensure that each intervention is not just effective but also
-          specifically tailored to the needs and circumstances of each
-          recipient.
+          specifically tailored to the needs and circumstances of each recipient
         </div>
       </div>
 
