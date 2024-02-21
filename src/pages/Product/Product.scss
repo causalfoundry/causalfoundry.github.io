@@ -566,7 +566,13 @@
     }
 
     @include respond('mobile') {
-      display: none;
+      width: 100vw;
+      left: -55vw;
+      top: 4450px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -594,7 +600,11 @@
       bottom: 700px;
 
       @include respond('mobile') {
-        display: none;
+        // display: none;
+        transform: rotate(0deg);
+        left: -25vw;
+        width: 75vw;
+        bottom: 600px;
       }
     }
   }
