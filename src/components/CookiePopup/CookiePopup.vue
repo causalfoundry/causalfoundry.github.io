@@ -31,30 +31,25 @@ function initGA() {
 }
 
 function onAccepted() {
-  document.cookie += "cookie:accepted=true";
+  localStorage.setItem("cookie:accepted", "true");
   initGA();
   show.value = false;
 }
 
 function onDeclined() {
-  document.cookie += "cookie:accepted=false";
+  localStorage.setItem("cookie:accepted", "false");
   show.value = false;
 }
 
 onMounted(() => {
   setTimeout(() => {
-    const cookieConsent = document.cookie
-      .split(";")
-      .find((cookie) => cookie.includes("cookie:accepted"));
+    const cookieConsent = localStorage.getItem("cookie:accepted");
 
     if (!cookieConsent) {
       show.value = true;
     }
 
-    const cookieValue = cookieConsent?.split("=")[1] === "true";
-
-    if (cookieValue) {
-      console.log(1);
+    if (cookieConsent === "true") {
       initGA();
     }
   }, 1000);
