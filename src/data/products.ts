@@ -50,7 +50,7 @@ export const sections = [
     features: [
       {
         title: "Define and deploy models",
-        imageUrl: "/images/products/models3.gif",
+        imageUrl: "/images/products/models2.gif",
         description:
           "Create, compare and deploy recommendation (collaborative filtering with neural embeddings) and user (censoring models) and demand (probabilistic time series) machine learning models. Access state-of-the-art algorithms through our UI in a few steps and deploy them with one click without writing a single line of code",
       },
