@@ -29,18 +29,6 @@
           specifically tailored to the needs and circumstances of each
           recipient.
         </div>
-        <div class="description">
-          Our work at Causal Foundry involves leveraging behavioral and clinical
-          data from digital health solutions, along with other relevant
-          contextual information. This approach allows us to provide adaptive
-          interventions to a wide range of healthcare professionals and their
-          patients. These interventions are distributed directly through digital
-          tools as personalized recommendations, reminders, incentives, or
-          integrated content and workflows within the app. Our goal is to ensure
-          that each intervention is not just effective but also specifically
-          tailored to the needs and circumstances of each recipient, enhancing
-          the overall healthcare experience
-        </div>
       </div>
 
       <div class="team">
