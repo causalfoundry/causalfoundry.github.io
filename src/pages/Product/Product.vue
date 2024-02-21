@@ -19,51 +19,50 @@
           extraction and adaptive interventions to improve health outcomes for
           all
         </div>
+        <div class="circle top">
+          <img src="../../assets/pattern-circle.png" alt="" />
+        </div>
       </div>
 
       <div class="features">
-        <div class="images">
-          <div class="image first active">
-            <img src="../../assets/preview.png" alt="" />
+        <div class="desktop-body">
+          <div class="images">
+            <div class="image">
+              <img src="../../assets/preview.png" alt="" />
+            </div>
           </div>
-          <div class="image second">
-            <img src="../../assets/preview.png" alt="" />
-          </div>
-          <div class="image third">
-            <img src="../../assets/preview.png" alt="" />
+
+          <div class="list">
+            <div
+              v-for="item of features"
+              :class="[`item`, { active: item.active }]"
+            >
+              <div class="title">{{ item.title }}</div>
+              <div class="description">
+                {{ item.description }}
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="list">
-          <div class="item first active">
-            <div class="title">Track and label</div>
-            <div class="description">
-              Our machine learning purposed SDK integrates into provider- and
-              patient-facing mobile health apps and platforms and ensures all
-              the rich behavioral and clinical information latent in their usage
-              is adequately tracked and labeled, it is AI-ready
+        <div class="mobile-body">
+          <div class="images">
+            <div class="image">
+              <img src="../../assets/preview.png" alt="" />
             </div>
           </div>
 
-          <div class="item second">
-            <div class="title">Learn</div>
-            <div class="description">
-              Our use case specific data pipelines and models transform incoming
-              data into insights to help understand the past and predict the
-              future, allowing to better understand provider and patient
-              evolving needs and context
-            </div>
-          </div>
-
-          <div class="item third">
-            <div class="title">Nudge</div>
-            <div class="description">
-              Use all that knowledge to take action through personalized
-              recommendations, incentives, content and workflows to empower your
-              users and provide them with additional support precisely how and
-              when they need it, delivered to them directly in their devices
-              through our SDK
-            </div>
+          <div class="list">
+            <Carousel :items-to-show="1">
+              <Slide v-for="item of features" :key="item.title" class="slide">
+                <div class="item active">
+                  <div class="title">{{ item.title }}</div>
+                  <div class="description">
+                    {{ item.description }}
+                  </div>
+                </div>
+              </Slide>
+            </Carousel>
           </div>
         </div>
       </div>
@@ -95,26 +94,26 @@
 
         <div class="mobile-body">
           <div class="images">
-            <Swiper :modules="modules" :slides-per-view="1" :pagination="true">
-              <SwiperSlide v-for="imageUrl of section.imageUrls">
+            <Carousel :items-to-show="1">
+              <Slide v-for="imageUrl of section.imageUrls" :key="imageUrl">
                 <div class="image">
                   <img :src="imageUrl" alt="" />
                 </div>
-              </SwiperSlide>
-            </Swiper>
+              </Slide>
+            </Carousel>
           </div>
 
-          <div class="features">
-            <Swiper :modules="modules" :slides-per-view="1" :pagination="true">
-              <SwiperSlide v-for="feature of section.features">
+          <div class="features-list">
+            <Carousel :items-to-show="1">
+              <Slide v-for="feature of section.features" :key="feature.title">
                 <div class="item">
                   <div class="title">{{ feature.title }}</div>
                   <div class="description">
                     {{ feature.description }}
                   </div>
                 </div>
-              </SwiperSlide>
-            </Swiper>
+              </Slide>
+            </Carousel>
           </div>
         </div>
       </div>
@@ -176,15 +175,9 @@
         <img src="../../assets/pattern-hex.png" alt="" />
       </div>
 
-      <div class="circle top">
-        <img src="../../assets/pattern-circle.png" alt="" />
-      </div>
-
       <div class="circle bottom">
         <img src="../../assets/pattern-circle.png" alt="" />
       </div>
-
-      <div class="bottom-gradients"></div>
 
       <AppFooter />
 
@@ -201,12 +194,8 @@
 </template>
 
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from "swiper/vue";
-
 import "swiper/css";
 import "swiper/css/pagination";
-
-import { Pagination } from "swiper/modules";
 
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
@@ -214,12 +203,27 @@ import AppFooter from "@/components/AppFooter";
 
 import "./Product.scss";
 
-const modules = [Pagination];
-
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide } from "vue3-carousel";
 
-// import { Carousel, Slide } from "vue-carousel";
+const features = [
+  {
+    active: true,
+    title: "Track and label",
+    description:
+      "Our machine learning purposed SDK integrates into provider- and patient-facing mobile health apps and platforms and ensures all the rich behavioral and clinical information latent in their usage is adequately tracked and AI-ready",
+  },
+  {
+    title: "Learn",
+    description:
+      "Our use case specific data pipelines and models transform incoming data into insights to help understand the past and predict the future, allowing to better understand provider and patient evolving needs and context",
+  },
+  {
+    title: "Nudge",
+    description:
+      "Use all that knowledge to take action through personalized recommendations, incentives, content and workflows to empower your users and provide them with additional support precisely how and when they need it, delivered to them directly in their devices through our SDK",
+  },
+];
 
 const sections = [
   {
