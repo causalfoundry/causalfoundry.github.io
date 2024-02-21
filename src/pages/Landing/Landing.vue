@@ -49,7 +49,7 @@
       <IntersectionObserver
         @intersect="handleIntersect(Section.Applications, $event)"
       >
-        <div class="personalized hex applications" :id="Section.Applications">
+        <div class="personalized applications" :id="Section.Applications">
           <div class="title">Precision Nudging</div>
 
           <div class="paragraph">

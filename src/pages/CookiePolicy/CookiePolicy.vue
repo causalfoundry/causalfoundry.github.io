@@ -15,7 +15,7 @@
       </AppHeader>
 
       <div class="content">
-        <h1 style="margin-bottom: 80px">Privacy Policy</h1>
+        <h1 style="margin-bottom: 80px">Cookie Setting</h1>
 
         <h2>
           How do we use cookies and other methods to collect data about the use

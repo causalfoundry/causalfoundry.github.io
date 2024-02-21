@@ -74,13 +74,13 @@
 
         <div class="desktop-body">
           <div class="images">
-            <Swiper :modules="modules" :slides-per-view="1" :pagination="true">
-              <SwiperSlide v-for="imageUrl of section.imageUrls">
+            <Hooper>
+              <Slide v-for="imageUrl of section.imageUrls">
                 <div class="image">
                   <img :src="imageUrl" alt="" />
                 </div>
-              </SwiperSlide>
-            </Swiper>
+              </Slide>
+            </Hooper>
           </div>
 
           <div class="features">
@@ -453,6 +453,8 @@ import AppFooter from "@/components/AppFooter";
 import "./Product.scss";
 
 const modules = [Pagination];
+
+import { Hooper, Slide } from "hooper";
 
 const sections = [
   {
