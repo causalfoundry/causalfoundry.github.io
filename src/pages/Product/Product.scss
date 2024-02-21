@@ -586,4 +586,25 @@
       }
     }
   }
+
+  .carousel__pagination {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+
+    &-button {
+      width: 12px;
+      height: 12px;
+      background-color: #4B5563;
+      border-radius: 50%;
+  
+      &::after {
+        display: none;
+      }
+
+      &--active {
+        background-color: #fff;
+      }
+    }
+  }
 }

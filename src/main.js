@@ -10,6 +10,8 @@ import About from './pages/About/About.vue';
 import CookiePolicy from './pages/CookiePolicy/CookiePolicy.vue';
 
 import CookiePageWrapper from './components/CookiePageWrapper/CookiePageWrapper.vue';
+
+import "vue3-carousel/dist/carousel.css";
 // import Job from './pages/Job/Job.vue';
 
 // import VueCarousel from 'vue-carousel';
