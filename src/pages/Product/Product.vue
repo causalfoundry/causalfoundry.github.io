@@ -53,7 +53,7 @@
           </div>
 
           <div class="list">
-            <Carousel :items-to-show="1" pause-autoplay-on-hover :autoplay="5">
+            <Carousel :items-to-show="1">
               <Slide v-for="item of features" :key="item.title" class="slide">
                 <div class="item active">
                   <div class="title">{{ item.title }}</div>
@@ -77,7 +77,7 @@
 
         <div class="desktop-body">
           <div class="images">
-            <Carousel :items-to-show="1" pause-autoplay-on-hover :autoplay="5">
+            <Carousel :items-to-show="1">
               <Slide v-for="imageUrl of section.imageUrls" :key="imageUrl">
                 <div class="image">
                   <img :src="imageUrl" alt="" />
@@ -102,7 +102,7 @@
 
         <div class="mobile-body">
           <div class="images">
-            <Carousel :items-to-show="1" pause-autoplay-on-hover :autoplay="5">
+            <Carousel :items-to-show="1">
               <Slide v-for="imageUrl of section.imageUrls" :key="imageUrl">
                 <div class="image">
                   <img :src="imageUrl" alt="" />
@@ -116,7 +116,7 @@
           </div>
 
           <div class="features-list">
-            <Carousel :items-to-show="1" pause-autoplay-on-hover :autoplay="5">
+            <Carousel :items-to-show="1">
               <Slide v-for="feature of section.features" :key="feature.title">
                 <div class="item">
                   <div class="title">{{ feature.title }}</div>
