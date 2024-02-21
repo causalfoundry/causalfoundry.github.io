@@ -201,6 +201,14 @@
       color: #fff;
       margin-top: 30px;
       margin-bottom: 16px;
+
+      @include respond('tablet') {
+        font-size: 40px;
+      }
+
+      @include respond('mobile') {
+        font-size: 32px;
+      }
     }
 
     .description {
@@ -446,6 +454,7 @@
     }
   
     @include respond('mobile') {
+      padding-bottom: 160px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
