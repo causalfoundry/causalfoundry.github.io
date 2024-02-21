@@ -78,9 +78,13 @@
         <div class="desktop-body">
           <div class="images">
             <Carousel :items-to-show="1">
-              <Slide v-for="imageUrl of section.imageUrls" :key="imageUrl">
+              <Slide
+                v-for="feature of section.features"
+                :key="feature.imageUrl"
+                class="slide"
+              >
                 <div class="image">
-                  <img :src="imageUrl" alt="" />
+                  <img :src="feature.imageUrl" alt="" />
                 </div>
               </Slide>
 
@@ -101,27 +105,22 @@
         </div>
 
         <div class="mobile-body">
-          <div class="images">
-            <Carousel :items-to-show="1">
-              <Slide v-for="imageUrl of section.imageUrls" :key="imageUrl">
-                <div class="image">
-                  <img :src="imageUrl" alt="" />
-                </div>
-              </Slide>
-
-              <template #addons>
-                <Pagination />
-              </template>
-            </Carousel>
-          </div>
-
           <div class="features-list">
             <Carousel :items-to-show="1">
-              <Slide v-for="feature of section.features" :key="feature.title">
-                <div class="item">
-                  <div class="title">{{ feature.title }}</div>
-                  <div class="description">
-                    {{ feature.description }}
+              <Slide
+                v-for="feature of section.features"
+                :key="feature.title"
+                class="slide"
+              >
+                <div class="mobile-slide">
+                  <div class="image">
+                    <img :src="feature.imageUrl" alt="" />
+                  </div>
+                  <div class="item">
+                    <div class="title">{{ feature.title }}</div>
+                    <div class="description">
+                      {{ feature.description }}
+                    </div>
                   </div>
                 </div>
               </Slide>

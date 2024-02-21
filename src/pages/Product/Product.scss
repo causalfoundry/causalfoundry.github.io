@@ -293,6 +293,11 @@
       display: none;
       flex-direction: column;
 
+      .slide {
+        display: flex;
+        align-items: flex-start;
+      }
+
       .image {
         overflow: hidden;
         border-radius: 16px;
@@ -313,6 +318,12 @@
       .mobile-body {
         display: flex;
       }
+    }
+
+    .mobile-slide {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
     }
   }
 
