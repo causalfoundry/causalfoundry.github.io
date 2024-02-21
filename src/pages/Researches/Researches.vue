@@ -77,6 +77,29 @@
         </div>
       </div>
 
+      <div class="diagram">
+        <div class="diagram__title">Survival Analysis</div>
+
+        <div class="paragraph">
+          Survival analysis, often referred to as time-to-event analysis, is
+          dedicated to studying the time period leading up to the occurrence of
+          certain events. Our research is centered on merging individual-level
+          survival analysis predictions with reinforcement learning algorithms
+          as contextual information, including the uncertainty associated with
+          these survival predictions. Other research areas lie in understanding
+          how these event times are influenced by different covariates, such as
+          individual patient characteristics. This approach is instrumental in
+          identifying risk factors that impact survival or engagement, comparing
+          risks among different individuals at specific times, and making
+          informed decisions about cost-effective information gathering, like
+          cancer screening.
+        </div>
+
+        <div class="diagram__image">
+          <img src="../../assets/research_diagram_3.png" />
+        </div>
+      </div>
+
       <!-- <div class="posts">
       <div class="controls">
         <input v-model="searchQuery" placeholder="Search" type="text" class="search-field">
