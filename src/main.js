@@ -12,6 +12,8 @@ import CookiePolicy from './pages/CookiePolicy/CookiePolicy.vue';
 import CookiePageWrapper from './components/CookiePageWrapper/CookiePageWrapper.vue';
 // import Job from './pages/Job/Job.vue';
 
+// import VueCarousel from 'vue-carousel';
+
 import App from './App.vue';
 
 import './styles/app.scss';
@@ -51,4 +53,5 @@ const app = createApp({
 });
 
 app.use(router);
+// app.use(VueCarousel);
 app.mount('#app');
