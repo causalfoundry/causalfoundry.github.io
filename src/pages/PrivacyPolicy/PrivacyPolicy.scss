@@ -21,6 +21,7 @@
     }
   
     @include respond('mobile') {
+      padding-top: 120px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
