@@ -21,7 +21,7 @@
 
         <div class="description">
           Seamlessly integrate your digital tool to the Causal Foundry platform
-          and unlock the key to personalization.
+          and unlock the key to personalization
         </div>
         <div class="circle top">
           <img src="../../assets/pattern-circle.png" alt="" />
