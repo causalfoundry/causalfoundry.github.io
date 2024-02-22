@@ -39,7 +39,6 @@ export const sections = [
       },
       {
         title: "Dashboards",
-        imageUrl: "/images/products/analytics2.gif",
         icon: "/images/products/analytics_dashboard.png",
         description:
           "Customize your dashboard to track the evolution of what matters most to you. We provide ways of visualizing data that will allow you to easily compare different cohorts, extract meaning, and guide evidence based decisions, with a strong focus in the dynamic nature of clinical and behavioral traits",
