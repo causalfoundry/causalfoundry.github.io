@@ -2,7 +2,7 @@
   background: #000;
   position: relative;
   overflow: hidden;
-  
+
   display: flex;
   justify-content: center;
 
@@ -32,7 +32,7 @@
         width: 930px;
       }
     }
-  
+
     @include respond('mobile') {
       top: unset;
       bottom: -160px;
@@ -59,7 +59,7 @@
     @include respond('mobile') {
       padding: 120px 32px 340px 32px;
     }
-    
+
     &__title {
       max-width: 798.533px;;
       color: var(--white, #FFF);
@@ -127,7 +127,7 @@
       @include respond('mobile') {
         font-size: 32px;
       }
-  
+
     }
 
     .job {
@@ -136,7 +136,7 @@
       gap: 32px;
       justify-content: space-between;
 
-      
+
       @include respond('mobile') {
         flex-direction: column;
       }
@@ -200,7 +200,7 @@
         font-weight: 400;
         line-height: 150%; /* 39px */
 
-        
+
         @include respond('mobile') {
           width: unset;
           font-size: 16px;
@@ -231,6 +231,28 @@
           font-size: 14px;
         }
       }
+    }
+  }
+
+  .pattern-wave {
+    padding-top: 70px;
+    position: absolute;
+    bottom: 250px;
+    width: 140vw;
+    right: -35vw;
+    transform: rotate(-5deg);
+
+    @include respond('tablet') {
+      padding: 0;
+    }
+
+    @include respond('mobile') {
+      padding: 0;
+      bottom: 620px;
+    }
+
+    img {
+      width: 100%;
     }
   }
 
