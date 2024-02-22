@@ -19,21 +19,25 @@ export default [
     },
   },
   {
+    imageUrl: "/images/team/enric.png",
+    name: "Enric Jané",
+    role: "CSO",
+    descritpion: `Dr. Enric Jané has over 15 years of experience in global health. In his previous role at the Gates Foundation, Dr. Jané worked on improving primary health care, expanding community health worker systems, utilizing information technologies, and increasing funding for child survival strategies. With a diverse background, including roles in Mozambique and Spain, Dr. Jané holds an MD, BSc in Physics, PhD from the University of Barcelona, and an MSc in Biomedical Engineering from Columbia University.`,
+    links: {
+      linkedin: "https://www.linkedin.com/in/enricjane/",
+    },
+  },
+];
+
+/*
+
+{
     imageUrl: "/images/team/sumiko.png",
     name: "Sumiko Tanaka Pusch",
     role: "COO",
     descritpion: `Sumiko is the COO at Causal Foundry. She brings extensive experience in working globally with international institutions, nonprofit organizations, and corporate businesses. Her focus includes ensuring the effective implementation of projects and programs, and the successful management of partnerships. She holds a BA in International Relations from the University of Washington and a dual master’s degree in strategic negotiations at Paris-Sud University..`,
     links: {
       linkedin: "https://www.linkedin.com/in/sumiko-tanaka-pusch/",
-    },
-  },
-  {
-    imageUrl: "/images/team/enric.png",
-    name: "Enric Jané",
-    role: "CSO",
-    descritpion: `Dr. Enric Jané has over 15 years of experience in global health, working in consulting, academic, and donor organizations. Currently involved with the Bill & Melinda Gates Foundation, Gates Ventures, and Terre des hommes, he focuses on innovative projects to enhance health systems in low- and middle-income countries. In his recent role at the Gates Foundation, Dr. Jané worked on improving primary health care, expanding community health worker systems, utilizing information technologies, and increasing funding for child survival strategies. With a diverse background, including roles in Mozambique and Spain, Dr. Jané holds an MD, BSc in Physics, PhD from the University of Barcelona, and an MSc in Biomedical Engineering from Columbia University.`,
-    links: {
-      linkedin: "https://www.linkedin.com/in/enricjane/",
     },
   },
   {
@@ -54,4 +58,5 @@ export default [
       linkedin: "https://www.linkedin.com/in/barryruth/",
     },
   },
-];
+
+*/
