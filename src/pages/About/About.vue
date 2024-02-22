@@ -15,7 +15,9 @@
         <div class="hex">
           <img src="../../assets/pattern-hex.png" alt="" />
         </div>
-        <div class="title">About</div>
+        <div class="title">
+          On a Mission to <br /><AppTitle>Deliver AI for All</AppTitle>
+        </div>
         <div class="description">
           We are a public benefit corporation that researches and builds AI
           software. Our platform and models predict clinical and behavioral
@@ -86,6 +88,7 @@
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
+import AppTitle from "@/components/AppTitle";
 
 import team from "@/data/team";
 
