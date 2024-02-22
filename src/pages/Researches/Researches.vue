@@ -2,68 +2,73 @@
   <div class="research">
     <div class="container">
       <img
-        src="../../assets/gradient-top-yellow.png"
-        class="app__gradient-top-yellow"
+          src="../../assets/gradient-top-yellow.png"
+          class="app__gradient-top-yellow"
       />
       <img
-        src="../../assets/gradient-top-blue.png"
-        class="app__gradient-top-blue"
+          src="../../assets/gradient-top-blue.png"
+          class="app__gradient-top-blue"
       />
 
       <app-header current-page="research">
-        <app-menu />
+        <app-menu/>
       </app-header>
 
       <div class="jumbotron">
         <div class="jumbotron__title">
           Our research to
-          <AppTitle>
-            build<br />
-            and deploy reliable AI <br />
-            products</AppTitle
+          <AppTitle> build and deploy reliable AI products
+          </AppTitle
           >
         </div>
         <div class="jumbotron__description">
-          We develop AI systems and technology based on Reinforcement
-          Learning,Causal Inference, and deep and ensemble learning. Robust data
-          is the core of our products. We organize data to be AI-ready and
-          deploy models and AI systems safely
+          Our research integrates advanced AI algorithms, including reinforcement learning, causal
+          inference, and survival analysis, with robust data frameworks to develop data-driven
+          decision-making strategies and deploy reliable products for predictive analytics.
         </div>
         <div class="hex">
-          <img src="../../assets/pattern-hex.png" alt="" />
+          <img src="../../assets/pattern-hex.png" alt=""/>
         </div>
       </div>
 
       <div class="diagram">
         <div class="diagram__title">Reinforcement Learning</div>
         <div class="paragraph">
-          We focus on advancing artificial intelligence through causal inference
-          and reinforcement learning. Through our work in Causality, we enableAI
-          systems not just to predict outcomes, but to understand the underlying
-          reasons behind these outcomes, paving the way for more accurate and
-          reliable predictions in complex environments.Reinforcement learning is
-          a computational approach to understanding and automating goal-directed
-          learning and decision-making without requiring exemplary supervision
-          or complete models of an environment in order to achieve long-term
-          goals. We implemented in-production methods like linear or neural
-          (subspace bandits or limited memory neural linear) bandits or restless
-          bandits (for resource allocation) to learn and adapt to environmental
-          interactions.
+          Reinforcement learning is a computational approach to understanding and automating goal-directed learning and
+          decision-making without requiring exemplary supervision or complete models of an environment in order to
+          achieve long-term goals.
+          <br><br>
+          The principal direction of our research focuses on designing methods and mechanisms for optimizing digital
+          products experience and user outcomes. This includes approaches from reinforcement learning with emphasis on
+          sample efficiency, and explainable AI including causal inference. Examples include feature space pruning for
+          linear and deep contextual bandits, and restless bandits for outcome optimization in applications with strong
+          budget constraints. This allows us to develop practical solutions that make optimizing choices in dynamic
+          complex scenarios, based on feedback, select contextual data and forecasts of alternative outcomes.
         </div>
         <div class="diagram__image">
-          <img src="../../assets/research_diagram.png" />
+          <img src="../../assets/research_diagram.png"/>
         </div>
+        <div class="circle">
+          <img src="../../assets/pattern-circle.png" alt=""/>
+        </div>
+
       </div>
 
       <div class="diagram">
-        <div class="diagram__title">Embeddings</div>
+        <div class="diagram__title">Behavioral and Clinical Embeddings</div>
 
         <div class="paragraph">
-          Embeddings are numerical representations of items, users, or behaviors
-          in a high-dimensional space. These representations capture the
-          essential characteristics and relationships of the data. They can be
-          used to profile the clinical and behavioral aspects of users and help
-          with personalized predictions and tailored recommendations.
+          Embeddings are numerical representations of items, users, or behaviors in a high-dimensional space. These
+          representations capture the essential characteristics and relationships of the data. They can be used to
+          profile the clinical and behavioral aspects of users and help with personalized predictions and tailored
+          recommendations.
+          <br><br>
+          Our second research direction aims at leveraging the data curated on our platform to learn rich
+          representations that encapsulate the key patterns useful for profiling clinical and behavioral dimensions of
+          users, and personalized recommendations and predictions. Specifically, we use semi-supervised methods to map
+          entities such as products and user's behavior into numerical vectors in a high-dimensional space, that retain
+          semantic relations and bring utility to downstream tasks.
+
         </div>
       </div>
 
@@ -71,38 +76,39 @@
         <div class="diagram__title">Large Language Models</div>
 
         <div class="paragraph">
-          Deeper analytics insights can be extracted with LLMs. They can help to
-          communicate prediction results or the status of recommendations
-          directly to users in their applications or in the Causal Foundry
-          outcomes. We research and implement LLMs in our products to facilitate
-          access to the information.
+          This budding research direction examines the use of Large Language Models (LLMs) to streamline access to
+          pertinent analytical information on our platform. We experiment with the reasoning and tool use capabilities
+          of generalist LLMs endowed with curated data access in order to improve experience for uses on both ends:
+          better personalized recommendations for the application user, and enhanced discovery of deeper insights into
+          the data for the analyst.
         </div>
 
         <div class="diagram__image">
-          <img src="../../assets/research_diagram_2.png" />
+          <img src="../../assets/research_diagram_2.png"/>
+        </div>
+
+        <div class="hex bottom">
+          <img src="../../assets/pattern-hex.png" alt=""/>
         </div>
       </div>
 
-      <div class="diagram">
+      <div class="diagram survival">
         <div class="diagram__title">Survival Analysis</div>
 
         <div class="paragraph">
-          Survival analysis, often referred to as time-to-event analysis, is
-          dedicated to studying the time period leading up to the occurrence of
-          certain events. Our research is centered on merging individual-level
-          survival analysis predictions with reinforcement learning algorithms
-          as contextual information, including the uncertainty associated with
-          these survival predictions. Other research areas lie in understanding
-          how these event times are influenced by different covariates, such as
-          individual patient characteristics. This approach is instrumental in
-          identifying risk factors that impact survival or engagement, comparing
-          risks among different individuals at specific times, and making
-          informed decisions about cost-effective information gathering, like
-          cancer screening.
+          Survival analysis, often referred to as time-to-event analysis, is dedicated to studying the time period
+          leading up to the occurrence of certain events and event-risk factor identification. Our research is centered
+          on merging individual-level survival analysis predictions with reinforcement learning algorithms as contextual
+          information, including the uncertainty associated with these survival predictions.
+          <br><br>
+          The findings are integrated into our platform in both behavioral and clinical embedding training and design of
+          timely and adaptive decision-making system. Furthermore, risk-based early-warning signals and continuous
+          cross-validation enable efficient data collection, increased responsiveness and richer feature representation.
+
         </div>
 
         <div class="diagram__image">
-          <img src="../../assets/research_diagram_3.png" />
+          <img src="../../assets/research_diagram_3.png"/>
         </div>
       </div>
 
@@ -125,7 +131,7 @@
       <div v-if="!listView" class="view-cards">
         <research-card
           v-for="card of toRender"
-          :imageUrl="card.imageUrl" 
+          :imageUrl="card.imageUrl"
           :title="card.title"
           :description="card.description"
           :tags="card.tags"
@@ -142,15 +148,18 @@
       </div>
     </div> -->
 
-      <app-footer />
-
+      <div class="spacer" ></div>
+      <div class="pattern-wave">
+        <img src="../../assets/pattern-wave.png"/>
+      </div>
+      <app-footer/>
       <img
-        src="../../assets/gradient-bottom-yellow.png"
-        class="app__gradient-bottom-yellow"
+          src="../../assets/gradient-bottom-yellow.png"
+          class="app__gradient-bottom-yellow"
       />
       <img
-        src="../../assets/gradient-bottom-blue.png"
-        class="app__gradient-bottom-blue"
+          src="../../assets/gradient-bottom-blue.png"
+          class="app__gradient-bottom-blue"
       />
     </div>
   </div>
@@ -165,9 +174,7 @@ import AppFooter from "@/components/AppFooter";
 import AppTitle from "@/components/AppTitle";
 
 // import ResearchCard from '@/components/ResearchCard';
-
 // import data from '@/data/researchPapers';
-
 import "./Researches.scss";
 
 // const searchQuery = ref('');

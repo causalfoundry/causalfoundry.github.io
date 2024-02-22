@@ -33,7 +33,7 @@
       }
     }
 
-    @include respond("mobile") {
+    @include respond('mobile') {
       top: unset;
       bottom: -160px;
       left: 50vw;
@@ -135,7 +135,7 @@
       gap: 32px;
       justify-content: space-between;
 
-      @include respond("mobile") {
+      @include respond('mobile') {
         flex-direction: column;
       }
 
@@ -207,7 +207,7 @@
         font-weight: 400;
         line-height: 150%; /* 39px */
 
-        @include respond("mobile") {
+        @include respond('mobile') {
           width: unset;
           font-size: 16px;
         }
@@ -237,6 +237,28 @@
           font-size: 14px;
         }
       }
+    }
+  }
+
+  .pattern-wave {
+    padding-top: 70px;
+    position: absolute;
+    bottom: 250px;
+    width: 140vw;
+    right: -35vw;
+    transform: rotate(-5deg);
+
+    @include respond('tablet') {
+      padding: 0;
+    }
+
+    @include respond('mobile') {
+      padding: 0;
+      bottom: 620px;
+    }
+
+    img {
+      width: 100%;
     }
   }
 

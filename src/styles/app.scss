@@ -27,7 +27,7 @@
     }
   }
 
-  &__gradient-top-yellow, 
+  &__gradient-top-yellow,
   &__gradient-top-blue {
     pointer-events: none;
     user-select: none;
@@ -43,12 +43,35 @@
       left: -$app-side-padding-mobile;
     }
   }
+
+  .pattern-wave {
+    padding-top: 70px;
+    position: absolute;
+    bottom: 250px;
+    width: 140vw;
+    right: -35vw;
+    transform: rotate(-5deg);
+
+    @include respond('tablet') {
+      padding: 0;
+    }
+
+    @include respond('mobile') {
+      padding: 0;
+      bottom: 620px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
 }
 
 .header {
   &__slot {
     display: none;
-    
+
     @include respond('tablet') {
       display: block;
     }
