@@ -3,7 +3,6 @@
   color: #fff;
   position: relative;
 
-
   display: flex;
   justify-content: center;
 
@@ -21,7 +20,7 @@
     .title {
       margin-bottom: 32px;
 
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 58px;
       font-weight: 400;
       line-height: 64px;
@@ -33,7 +32,7 @@
       max-width: 691px;
       width: 100%;
 
-      font-family: 'NotoSansLight';
+      font-family: "NotoSansLight";
       font-size: 26px;
       font-weight: 400;
       line-height: 39px;
@@ -41,12 +40,12 @@
       text-align: left;
     }
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
 
@@ -54,7 +53,7 @@
       padding-bottom: 560px;
 
       .title {
-        font-family: 'NeueMachinaMedium';
+        font-family: "NeueMachinaMedium";
         font-size: 32px;
         font-weight: 400;
         line-height: 38px;
@@ -62,7 +61,7 @@
       }
 
       .description {
-        font-family: 'NotoSansLight';
+        font-family: "NotoSansLight";
         font-size: 20px;
         line-height: 32px;
         font-weight: 300;
@@ -97,11 +96,10 @@
         padding-top: 16px;
         border-top: 1px solid #fff;
         cursor: pointer;
-        
-        
+
         &.active {
           padding-top: 15px;
-          border-top: 2px solid #8CDFD9;
+          border-top: 2px solid #8cdfd9;
         }
 
         .title {
@@ -116,18 +114,18 @@
         }
 
         .description {
-          font-family: 'NotoSansRegular';
+          font-family: "NotoSansRegular";
           font-size: 16px;
           font-weight: 600;
           line-height: 22px;
           letter-spacing: 0em;
           text-align: left;
 
-          color: #D1D5DB;
+          color: #d1d5db;
         }
       }
     }
-    
+
     .mobile-body {
       display: none;
       flex-direction: column;
@@ -142,18 +140,18 @@
       }
     }
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-bottom: 160px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       .desktop-body {
         display: none;
       }
@@ -171,12 +169,12 @@
     margin: 80px 120px 320px;
     padding-bottom: 80px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       margin-left: $app-side-padding-tablet;
       margin-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       margin-bottom: 160px;
       margin-left: $app-side-padding-mobile;
       margin-right: $app-side-padding-mobile;
@@ -189,7 +187,7 @@
     }
 
     .title {
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 44px;
       font-weight: 400;
       line-height: 53px;
@@ -200,29 +198,30 @@
       margin-top: 30px;
       margin-bottom: 16px;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         font-size: 40px;
       }
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         font-size: 32px;
       }
     }
 
     .description {
-      font-family: 'NotoSansRegular';
+      font-family: "NotoSansRegular";
       font-size: 20px;
       font-weight: 400;
       line-height: 30px;
       letter-spacing: 0em;
       text-align: left;
 
-      color: #D1D5DB;
+      color: #d1d5db;
 
       margin-bottom: 80px;
     }
 
-    .desktop-body, .mobile-body {
+    .desktop-body,
+    .mobile-body {
       display: flex;
       gap: 56px;
 
@@ -231,7 +230,7 @@
         border-radius: 16px;
         max-height: 680px;
         max-width: 696px;
-        border: 1.5px solid #4B5563;
+        border: 1.5px solid #4b5563;
         box-sizing: border-box;
 
         img {
@@ -255,17 +254,20 @@
 
           padding-top: 48px;
 
-          background-image: url(../../assets/lock_icon.png);
+          //background-image: url(../../assets/lock_icon.png);
           background-repeat: no-repeat;
 
           &:nth-child(2) {
-            background-image: url(../../assets/stats_icon.png);
+            // background-image: url(../../assets/stats_icon.png);
           }
 
           &:nth-child(3) {
-            background-image: url(../../assets/code_icon.png);
+            //  background-image: url(../../assets/code_icon.png);
           }
 
+          .item-icon {
+            width: 28px;
+          }
           .title {
             font-family: Noto Sans;
             font-size: 24px;
@@ -280,14 +282,14 @@
           }
 
           .description {
-            font-family: 'NotoSansRegular';
+            font-family: "NotoSansRegular";
             font-size: 16px;
             font-weight: 400;
             line-height: 30px;
             letter-spacing: 0em;
             text-align: left;
-  
-            color: #9CA3AF;
+
+            color: #9ca3af;
 
             margin-bottom: 0;
             padding: 0;
@@ -316,13 +318,14 @@
           width: 100%;
         }
       }
-    };
+    }
 
-    @include respond('tablet') {
-      &:nth-child(odd), & {
+    @include respond("tablet") {
+      &:nth-child(odd),
+      & {
         .desktop-body {
           flex-direction: column;
-  
+
           .features-list {
             max-width: 100%;
           }
@@ -330,7 +333,7 @@
       }
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       .desktop-body {
         display: none;
       }
@@ -353,18 +356,18 @@
     border-top: 1px solid #fff;
     margin: 80px 120px 320px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       margin-left: $app-side-padding-tablet;
       margin-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       margin-left: $app-side-padding-mobile;
       margin-right: $app-side-padding-mobile;
     }
 
     .title {
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 44px;
       font-weight: 400;
       line-height: 53px;
@@ -383,8 +386,8 @@
       .comment {
         display: flex;
         flex-direction: column;
-        background-color: #141C26;
-        border: 1.5px solid #9CA3AF;
+        background-color: #141c26;
+        border: 1.5px solid #9ca3af;
         border-radius: 8px;
 
         padding: 40px 80px;
@@ -392,7 +395,7 @@
         gap: 30px;
 
         .body {
-          font-family: 'NeueMachinaMedium';
+          font-family: "NeueMachinaMedium";
           font-size: 28px;
           font-weight: 400;
           line-height: 38px;
@@ -410,13 +413,13 @@
             border-radius: 100%;
             width: 50px;
             height: 50px;
-            background-color: #D9D9D9;
+            background-color: #d9d9d9;
           }
 
           .info {
             display: flex;
             flex-direction: column;
-            
+
             .name {
               font-family: Inter;
               font-size: 22px;
@@ -446,12 +449,12 @@
     position: relative;
     padding: 80px 120px 320px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-bottom: 160px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
@@ -460,13 +463,15 @@
     .card {
       width: 100%;
       border-radius: 16px;
-      border: 1.5px solid #4B5563;
-      background: linear-gradient(93.24deg,
-        rgb(10,3,48) -8.68%, 
-        rgb(17,17,47) 11.72%, 
-        rgb(23,30,45) 38.64%, 
-        rgb(27,37,44) 65.85%, 
-        rgb(30,44,43) 87.98%);
+      border: 1.5px solid #4b5563;
+      background: linear-gradient(
+        93.24deg,
+        rgb(10, 3, 48) -8.68%,
+        rgb(17, 17, 47) 11.72%,
+        rgb(23, 30, 45) 38.64%,
+        rgb(27, 37, 44) 65.85%,
+        rgb(30, 44, 43) 87.98%
+      );
       display: flex;
       justify-content: center;
       align-items: center;
@@ -475,7 +480,7 @@
     }
 
     .title {
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 44px;
       font-weight: 400;
       line-height: 53px;
@@ -484,7 +489,7 @@
       color: #fff;
       margin-bottom: 37px;
     }
-    
+
     .input {
       display: flex;
       gap: 16px;
@@ -499,7 +504,7 @@
         color: #000;
         padding: 7px 24px;
 
-        border: 1px solid #9E9E9E;
+        border: 1px solid #9e9e9e;
 
         border-radius: 30px;
 
@@ -512,9 +517,9 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
-        border: 1px solid #9E9E9E;
+        border: 1px solid #9e9e9e;
 
-        background-color: #8CDFD9;
+        background-color: #8cdfd9;
         color: #000;
 
         padding: 7px 24px;
@@ -523,7 +528,7 @@
       }
     }
 
-    @include respond('mobile') {      
+    @include respond("mobile") {
       .title {
         font-size: 32px;
         text-align: center;
@@ -552,12 +557,12 @@
   .footer {
     padding: 180px 70px 80px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
@@ -574,15 +579,19 @@
       position: absolute;
       top: 0;
       left: 0;
-      content: '';
+      content: "";
       display: block;
       width: 100vw;
       height: 100vw;
-      background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      );
       transform: rotate(-87.67deg);
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       width: 100vw;
       left: -55vw;
       top: 4450px;
@@ -600,7 +609,7 @@
     &.top {
       top: 100px;
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         top: unset;
         bottom: -15vw;
         left: 15vw;
@@ -616,7 +625,7 @@
       top: unset;
       bottom: 700px;
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         // display: none;
         transform: rotate(0deg);
         left: -25vw;
@@ -634,9 +643,9 @@
     &-button {
       width: 12px;
       height: 12px;
-      background-color: #4B5563;
+      background-color: #4b5563;
       border-radius: 50%;
-  
+
       &::after {
         display: none;
       }

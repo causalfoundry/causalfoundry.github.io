@@ -99,6 +99,7 @@
 
           <div class="features-list">
             <div v-for="feature of section.features" class="item">
+              <img class="item-icon" :src="feature.icon" />
               <div class="title">{{ feature.title }}</div>
               <div class="description">
                 {{ feature.description }}
