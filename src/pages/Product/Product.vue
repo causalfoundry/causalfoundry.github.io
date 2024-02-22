@@ -2,28 +2,29 @@
   <div class="products">
     <div class="container">
       <img
-          src="../../assets/gradient-top-yellow.png"
-          class="app__gradient-top-yellow"
+        src="../../assets/gradient-top-yellow.png"
+        class="app__gradient-top-yellow"
       />
       <img
-          src="../../assets/gradient-top-blue.png"
-          class="app__gradient-top-blue"
+        src="../../assets/gradient-top-blue.png"
+        class="app__gradient-top-blue"
       />
       <AppHeader current-page="products">
-        <AppMenu/>
+        <AppMenu />
       </AppHeader>
 
       <div class="jumbotron">
         <div class="title">
-          <AppTitle>Reinforcement Learning<br>and AI</AppTitle>
+          <AppTitle>Reinforcement Learning<br />and AI</AppTitle>
           as a Service
         </div>
 
         <div class="description">
-          Seamlessly integrate your digital tool to the Causal Foundry platform and unlock the key to personalization.
+          Seamlessly integrate your digital tool to the Causal Foundry platform
+          and unlock the key to personalization
         </div>
         <div class="circle top">
-          <img src="../../assets/pattern-circle.png" alt=""/>
+          <img src="../../assets/pattern-circle.png" alt="" />
         </div>
       </div>
 
@@ -31,15 +32,15 @@
         <div class="desktop-body">
           <div class="images">
             <div class="image">
-              <img src="../../assets/preview.png" alt=""/>
+              <img src="../../assets/preview.png" alt="" />
             </div>
           </div>
 
           <div class="list">
             <div
-                v-for="(item, index) in state.features"
-                :key="index"
-                :class="[`item`, { active: item.active }]"
+              v-for="(item, index) in state.features"
+              :key="index"
+              :class="[`item`, { active: item.active }]"
             >
               <div class="title" @click="handleItemClick(index)">
                 {{ item.title }}
@@ -54,7 +55,7 @@
         <div class="mobile-body">
           <div class="images">
             <div class="image">
-              <img src="../../assets/preview.png" alt=""/>
+              <img src="../../assets/preview.png" alt="" />
             </div>
           </div>
 
@@ -70,7 +71,7 @@
               </Slide>
 
               <template #addons>
-                <Pagination/>
+                <Pagination />
               </template>
             </Carousel>
           </div>
@@ -85,26 +86,26 @@
           <div class="images">
             <Carousel :items-to-show="1">
               <Slide
-                  v-for="feature of section.features.filter(
+                v-for="feature of section.features.filter(
                   (feat) => feat.imageUrl !== undefined
                 )"
-                  :key="feature.imageUrl"
-                  class="slide"
+                :key="feature.imageUrl"
+                class="slide"
               >
                 <div class="image">
-                  <img :src="feature.imageUrl" alt=""/>
+                  <img :src="feature.imageUrl" alt="" />
                 </div>
               </Slide>
 
               <template #addons>
-                <Pagination/>
+                <Pagination />
               </template>
             </Carousel>
           </div>
 
           <div class="features-list">
             <div v-for="feature of section.features" class="item">
-              <img class="item-icon" :src="feature.icon"/>
+              <img class="item-icon" :src="feature.icon" />
               <div class="title">{{ feature.title }}</div>
               <div class="description">
                 {{ feature.description }}
@@ -117,13 +118,13 @@
           <div class="features-list">
             <Carousel :items-to-show="1">
               <Slide
-                  v-for="feature of section.features"
-                  :key="feature.title"
-                  class="slide"
+                v-for="feature of section.features"
+                :key="feature.title"
+                class="slide"
               >
                 <div class="mobile-slide">
                   <div class="image">
-                    <img :src="feature.imageUrl" alt=""/>
+                    <img :src="feature.imageUrl" alt="" />
                   </div>
                   <div class="item">
                     <div class="title">{{ feature.title }}</div>
@@ -135,7 +136,7 @@
               </Slide>
 
               <template #addons>
-                <Pagination/>
+                <Pagination />
               </template>
             </Carousel>
           </div>
@@ -156,7 +157,7 @@
 
             <div class="user">
               <div class="avatar">
-                <img src="" alt=""/>
+                <img src="" alt="" />
               </div>
               <div class="info">
                 <div class="name">Client Name</div>
@@ -174,7 +175,7 @@
 
             <div class="user">
               <div class="avatar">
-                <img src="" alt=""/>
+                <img src="" alt="" />
               </div>
               <div class="info">
                 <div class="name">Client Name</div>
@@ -188,49 +189,60 @@
       <div class="demo">
         <div class="card">
           <div class="title">Request a Demo</div>
-          <div class="input">
-            <input type="text" placeholder="Your email"/>
-            <button class="button">Send</button>
-          </div>
+          <form ref="form" @submit.prevent="handleSendEmail">
+            <div class="input">
+              <input
+                ref="email"
+                type="email"
+                name="user_email"
+                placeholder="Your email"
+              />
+              <button class="button" type="submit">Send</button>
+            </div>
+          </form>
         </div>
       </div>
 
       <div class="hex">
-        <img src="../../assets/pattern-hex.png" alt=""/>
+        <img src="../../assets/pattern-hex.png" alt="" />
       </div>
 
       <div class="circle bottom">
-        <img src="../../assets/pattern-circle.png" alt=""/>
+        <img src="../../assets/pattern-circle.png" alt="" />
       </div>
 
-      <AppFooter/>
+      <AppFooter />
 
       <img
-          src="../../assets/gradient-bottom-yellow.png"
-          class="app__gradient-bottom-yellow"
+        src="../../assets/gradient-bottom-yellow.png"
+        class="app__gradient-bottom-yellow"
       />
       <img
-          src="../../assets/gradient-bottom-blue.png"
-          class="app__gradient-bottom-blue"
+        src="../../assets/gradient-bottom-blue.png"
+        class="app__gradient-bottom-blue"
       />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {Carousel, Pagination, Slide} from "vue3-carousel";
+import { Carousel, Pagination, Slide } from "vue3-carousel";
 
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 import AppTitle from "@/components/AppTitle";
 
-import {features, sections} from "@/data/products";
+import { features, sections } from "@/data/products";
+
+import { reactive, ref } from "vue";
+import emailjs from "@emailjs/browser";
 
 import "./Product.scss";
-import {reactive, ref} from "vue";
 
 const featuresRef = ref(features);
+const form = ref(null);
+const email = ref("");
 
 const state = reactive({
   features: [...features],
@@ -240,5 +252,28 @@ const handleItemClick = (index: number) => {
   state.features.forEach((feature, i) => {
     feature.active = i === index;
   });
+};
+
+const handleSendEmail = () => {
+  console.log("value: ", email.value.value);
+
+  emailjs
+    .send(
+      "cf_product_demo",
+      "cf_product_demo_template",
+      { from_email: email.value ? email.value.value : "" },
+      {
+        publicKey: "C6aUCbUsTMSCimd_x",
+      }
+    )
+    .then(
+      () => {
+        console.log("SUCCESS!");
+        email.value.value = "";
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+      }
+    );
 };
 </script>

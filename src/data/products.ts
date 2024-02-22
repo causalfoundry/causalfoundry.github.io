@@ -41,7 +41,7 @@ export const sections = [
                 title: "Dashboards",
                 icon: "/images/products/analytics_dashboard.png",
                 description:
-                    "Customize your dashboard to track the evolution of what matters most to you. We provide ways of visualizing data that will allow you to easily compare different cohorts, extract meaning, and guide evidence based decisions, with a strong focus in the dynamic nature of clinical and behavioral traits",
+                    "Customize your dashboard to track the evolution of what matters most to you. We provide ways of visualizing data that will allow you to easily compare different cohorts, extract meaning, and guide evidence based decisions, with a strong focus in the dynamic nature of clinical and behavioral traits.",
             },
         ],
     },
@@ -52,7 +52,7 @@ export const sections = [
         features: [
             {
                 title: "Advanced AI at your fingertips",
-                imageUrl: "/images/products/models2.gif",
+                imageUrl: "/images/products/models1.gif",
                 icon: "/images/products/models_define.png",
                 description:
                     "Access state-of the-art algorithms through your platform profile and deploy them with one click without writing one single line of code. Create, compare and deploy recommendation (collaborative filtering with neural embeddings), user (censoring models) and demand (probabilistic time series) machine learning models.",
@@ -66,7 +66,7 @@ export const sections = [
             },
             {
                 title: "Constant improvement",
-                imageUrl: "/images/products/models1.gif",
+                imageUrl: "/images/products/models3.gif",
                 icon: "/images/products/models_traits.png",
                 description:
                     "New traits are being offered regularly. The more our models are used, the better we can characterize recommendations, predictions and uncertainty for you to improve your outcomes.",
@@ -83,18 +83,17 @@ export const sections = [
                 imageUrl: "/images/products/interventions1.gif",
                 icon: "/images/products/intervention_icon.png",
                 description:
-                    "Quickly craft content and message interventions and choose delivery mechanisms from a range of RL-based algorithms tailored to your personalization needs (neural bandits), knowledge extraction (linear bandits), or resource allocation (restless bandits). Deploying user nudges is just minutes away with the Causal Foundry platform",
+                    "Quickly craft content and message interventions and choose delivery mechanisms from a range of RL-based algorithms tailored to your personalization needs (neural bandits), knowledge extraction (linear bandits), or resource allocation (restless bandits). Deploying user nudges is just minutes away with the Causal Foundry platform.",
             },
             {
                 title: "Experimentation",
                 imageUrl: "/images/products/interventions2.gif",
                 icon: "/images/products/intervention_experimentation.png",
                 description:
-                    "What used to take months if not years to prepare, can now be done in a matter of minutes. Our platform facilitates various designs: fully randomized or adaptive, single or multiple assignments per subject, cluster randomization and pairwise matching. Utilize our platform's algorithmic capabilities for digital trials that minimize risk and maximize statistical power\n",
+                    "What used to take months if not years to prepare, can now be done in a matter of minutes. Our platform facilitates various designs: fully randomized or adaptive, single or multiple assignments per subject, cluster randomization and pairwise matching. Utilize our platform's algorithmic capabilities for digital trials that minimize risk and maximize statistical power.",
             },
             {
                 title: "Measure and track impact",
-                imageUrl: "/images/products/interventions3.gif",
                 icon: "/images/products/intervention_metrics.png",
                 description:
                     "Experiments and interventions come with near real time monitoring and thorough statistical analyses to measure and track impact.",
@@ -104,21 +103,21 @@ export const sections = [
     {
         title: "Large Language Models",
         description:
-            "Access your data, intervention results, predictions, and insights with the LLM-based assistant that allows you to query any information. You can even send interventions with a sentence",
+            "Query any of your data on our platform with our LLM-based assistant. You can even send interventions typing one sentence.",
         features: [
             {
                 title: "LLM-based assistant for patients and providers",
                 imageUrl: "/images/products/llm1.gif",
                 icon: "/images/products/llm_icon_1.png",
                 description:
-                    "Large Language Models can also be integrated within digital applications to support patients and providers with trustful and real-time information. They can access data about  their own health and support the self-management of diseases or to providers to get information about their patients and help prioritize within a chatbot format, as well as  to get access to workflow procedures information or public health policies",
+                    "Give patients and providers the power of access to their own data and standards of care. Our large language models can be integrated to digital applications to support self-management, workflows and improve general/specialized knowledge.",
             },
             {
                 title: "Speech-to-Text Hands-Free Assistant",
                 imageUrl: "/images/products/llm2.gif",
                 icon: "/images/products/speech_to_text.png",
                 description:
-                    "MedScribe, our LLM-based product, seamlessly integrates into electronic health records and digital tools, enhancing patient-provider conversations with data like clinic visits and diagnostic codes. Providers initiate deviceless interactions with patient consent, enabling a personalized connection, with conversations transcribed, merged with Causal Foundry data, and processed by an LLM to generate a summary reviewed and edited by the provider. Additionally, the system creates simplified summaries and care plan takeaways, communicated to patients via SMS or WhatsApp, promoting patient engagement and health management.",
+                    "MedScribe, our LLM-based product, seamlessly integrates into electronic health records and digital tools, enhancing patient-provider conversations with data like clinic visits and diagnostic codes. Providers initiate device-less interactions with patient consent, enabling a personalized connection, with conversations transcribed, merged with Causal Foundry data, and processed by an LLM to generate a summary reviewed and edited by the provider. Additionally, the system creates simplified summaries and care plan takeaways, communicated to patients via SMS or WhatsApp, promoting patient engagement and health management.",
             },
         ],
     },

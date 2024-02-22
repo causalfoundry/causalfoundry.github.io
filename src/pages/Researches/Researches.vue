@@ -55,14 +55,12 @@
 
         <div class="paragraph">
           Embeddings are numerical representations of items, users, or behaviors in a high-dimensional space. These
-          representations capture the essential characteristics and relationships of the data. They can be used to
-          profile the clinical and behavioral aspects of users and help with personalized predictions and tailored
-          recommendations.
+          representations capture the essential characteristics and relationships of the data.
           <br><br>
           Our second research direction aims at leveraging the data curated on our platform to learn rich
           representations that encapsulate the key patterns useful for profiling clinical and behavioral dimensions of
           users, and personalized recommendations and predictions. Specifically, we use semi-supervised methods to map
-          entities such as products and user's behavior into numerical vectors in a high-dimensional space, that retain
+          entities such as products, clinical and user's behavior into numerical vectors in a high-dimensional space, that retain
           semantic relations and bring utility to downstream tasks.
 
         </div>
@@ -72,7 +70,7 @@
         <div class="diagram__title">Large Language Models</div>
 
         <div class="paragraph">
-          This budding research direction examines the use of Large Language Models (LLMs) to streamline access to
+          This research direction examines the use of Large Language Models (LLMs) to streamline access to
           pertinent analytical information on our platform. We experiment with the reasoning and tool use capabilities
           of generalist LLMs endowed with curated data access in order to improve experience for uses on both ends:
           better personalized recommendations for the application user, and enhanced discovery of deeper insights into
