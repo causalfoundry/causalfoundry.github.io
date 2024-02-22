@@ -15,11 +15,7 @@
       </app-header>
 
       <div class="jumbotron">
-        <div class="jumbotron__title">
-          Our research to
-          <AppTitle> build and deploy reliable AI products
-          </AppTitle
-          >
+        <div class="jumbotron__title">We research to<AppTitle>  build and deploy reliable AI</AppTitle>
         </div>
         <div class="jumbotron__description">
           Our research integrates advanced AI algorithms, including reinforcement learning, causal
