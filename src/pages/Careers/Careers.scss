@@ -2,7 +2,7 @@
   background: #000;
   position: relative;
   overflow: hidden;
-  
+
   display: flex;
   justify-content: center;
 
@@ -13,7 +13,7 @@
   .header {
     padding: 60px 140px 40px 140px;
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       padding-left: 32px;
       padding-right: 32px;
     }
@@ -24,7 +24,7 @@
     top: 0px;
     left: 45vw;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       top: 500px;
       right: -540px;
 
@@ -32,8 +32,8 @@
         width: 930px;
       }
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       top: unset;
       bottom: -160px;
       left: 50vw;
@@ -52,18 +52,18 @@
     flex-direction: column;
     gap: 32px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding: 330px 121px 340px 121px;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       padding: 120px 32px 340px 32px;
     }
-    
+
     &__title {
-      max-width: 798.533px;;
-      color: var(--white, #FFF);
-      font-family: 'NeueMachinaMedium';
+      max-width: 798.533px;
+      color: var(--white, #fff);
+      font-family: "NeueMachinaMedium";
       font-size: 58px;
       font-style: normal;
       font-weight: 400;
@@ -72,25 +72,25 @@
 
       z-index: 1;
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         font-size: 32px;
       }
     }
 
     &__description {
       max-width: 691px;
-      color: var(--white, #FFF);
+      color: var(--white, #fff);
 
       /* Desktop/Text Large */
       font-family: NotoSansLight;
-      font-size: 26px;
+      font-size: 24px;
       font-style: normal;
       font-weight: 300;
       line-height: 150%; /* 39px */
 
       z-index: 1;
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         width: unset;
         line-height: 32px;
         font-size: 20px;
@@ -105,29 +105,28 @@
     flex-direction: column;
     gap: 100px;
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       padding: 160px 32px;
     }
 
     &__title {
       padding-top: 30px;
-      border-top: 1px solid #FFF;
+      border-top: 1px solid #fff;
       margin-bottom: 60px;
 
-      color: var(--white, #FFF);
+      color: var(--white, #fff);
 
       /* Desktop/Header 2 */
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 44px;
       font-style: normal;
       font-weight: 400;
       line-height: 120%; /* 52.8px */
       letter-spacing: 1.32px;
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         font-size: 32px;
       }
-  
     }
 
     .job {
@@ -136,8 +135,7 @@
       gap: 32px;
       justify-content: space-between;
 
-      
-      @include respond('mobile') {
+      @include respond("mobile") {
         flex-direction: column;
       }
 
@@ -151,7 +149,7 @@
       &__title {
         overflow: hidden;
         text-overflow: ellipsis;
-        font-family: 'NeueMachinaRegular';
+        font-family: "NeueMachinaRegular";
         font-size: 26px;
         font-style: normal;
         font-weight: 400;
@@ -159,25 +157,34 @@
         letter-spacing: 1.56px;
         text-transform: uppercase;
 
-        background: var(--Gradient-1, linear-gradient(145deg, #FFF625 -13.26%, #CBEA7F 15.7%, #A7E2BE 55.24%, #98DED9 93.66%));
+        background: var(
+          --Gradient-1,
+          linear-gradient(
+            145deg,
+            #fff625 -13.26%,
+            #cbea7f 15.7%,
+            #a7e2be 55.24%,
+            #98ded9 93.66%
+          )
+        );
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        @include respond('mobile') {
+        @include respond("mobile") {
           font-size: 18px;
         }
       }
 
       &__sub-title {
-        color: var(--white, #FFF);
-        font-family: 'NotoSansItalic';
+        color: var(--white, #fff);
+        font-family: "NotoSansItalic";
         font-size: 20px;
         font-style: italic;
         font-weight: 400;
         line-height: 150%; /* 39px */
 
-        @include respond('mobile') {
+        @include respond("mobile") {
           font-size: 16px;
         }
       }
@@ -191,7 +198,7 @@
       &__description {
         max-width: 786px;
 
-        color: var(--white, #FFF);
+        color: var(--white, #fff);
 
         /* Desktop/Text Large */
         font-family: Noto Sans;
@@ -200,8 +207,7 @@
         font-weight: 400;
         line-height: 150%; /* 39px */
 
-        
-        @include respond('mobile') {
+        @include respond("mobile") {
           width: unset;
           font-size: 16px;
         }
@@ -216,17 +222,17 @@
         padding: 8px 24px;
 
         border-radius: 36px;
-        border: 1px solid var(--Grey, #9E9E9E);
+        border: 1px solid var(--Grey, #9e9e9e);
 
-        color: var(--white, #FFF);
+        color: var(--white, #fff);
         font-family: Noto Sans;
         font-size: 18px;
         font-style: normal;
         font-weight: 300;
-        line-height: 160%;  /* 28.8px */
+        line-height: 160%; /* 28.8px */
         letter-spacing: 0.18px;
 
-        @include respond('mobile') {
+        @include respond("mobile") {
           width: unset;
           font-size: 14px;
         }
@@ -240,10 +246,10 @@
     padding: 30px 0 160px;
     margin: 160px 140px 428px;
 
-    color: var(--white, #FFF);
+    color: var(--white, #fff);
 
     /* Desktop/Text Large */
-    font-family: 'NotoSansRegular';
+    font-family: "NotoSansRegular";
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
@@ -253,13 +259,13 @@
 
     &__info {
       margin-top: 30px;
-      font-family: 'NotoSansRegular';
+      font-family: "NotoSansRegular";
       font-size: 20px;
-      color: #D1D5DB;
+      color: #d1d5db;
       line-height: 30px;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       margin: 0px 32px;
       font-size: 18px;
 

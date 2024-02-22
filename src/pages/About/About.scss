@@ -83,7 +83,7 @@
 
     .description {
       font-family: "NotoSansLight";
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 300;
       line-height: 36px;
       letter-spacing: 0em;
@@ -91,6 +91,9 @@
       max-width: 691px;
 
       margin-top: 70px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
 
       @include respond("tablet") {
         font-size: 20px;
