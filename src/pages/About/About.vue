@@ -41,7 +41,7 @@
       </div>
 
       <div class="team">
-        <div class="title">Our team</div>
+        <div class="title">Our Executive Team</div>
         <div class="members">
           <div v-for="member of team" class="member">
             <div class="avatar">
