@@ -12,7 +12,10 @@
       <AppHeader current-page="products"><AppMenu /></AppHeader>
 
       <div class="jumbotron">
-        <div class="title">Our Products</div>
+        <div class="title">
+          <AppTitle>Reinforcement learning</AppTitle><br />and AI as a Service
+        </div>
+
         <div class="description">
           The Causal Foundry platform seamlessly integrates into healthcare
           digital tools and uses AI to unlock the power of data-driven knowledge
@@ -214,6 +217,7 @@ import { Carousel, Slide, Pagination } from "vue3-carousel";
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
+import AppTitle from "@/components/AppTitle";
 
 import { features, sections } from "@/data/products";
 
