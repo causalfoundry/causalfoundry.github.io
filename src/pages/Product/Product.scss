@@ -251,7 +251,7 @@
           min-height: 32px;
           display: flex;
           flex-direction: column;
-
+          gap: 12px;
           padding-top: 48px;
 
           //background-image: url(../../assets/lock_icon.png);
@@ -278,7 +278,7 @@
 
             margin: 0;
             padding: 0;
-            margin-bottom: 12px;
+            //margin-bottom: 12px;
           }
 
           .description {
