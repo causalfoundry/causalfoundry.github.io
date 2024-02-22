@@ -39,7 +39,7 @@
               <div class="job__title">{{ job.title }}</div>
               <div class="job__sub-title">{{ job.subTitle }}</div>
             </div>
-            
+
             <div class="job__info">
               <div class="job__description">{{ job.description }}</div>
               <router-link :to="`/careers/${job.key}`"><div class="job__link">Learn more</div></router-link>
@@ -83,6 +83,10 @@
           statement explaining your interest in working with our team to
           <a href="mailto:hello@causalfoundry.ai">hello@causalfoundry.ai</a>
         </div>
+      </div>
+
+      <div class="pattern-wave">
+        <img src="../../assets/pattern-wave.png"/>
       </div>
 
       <app-footer />

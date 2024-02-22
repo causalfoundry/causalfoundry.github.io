@@ -41,14 +41,10 @@
       display: block;
       width: 100%;
       height: 100%;
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 1) 100%
-      );
+      background: linear-gradient(218deg, #000 15.86%, rgba(0, 0, 0, 0.00) 75.4%);
     }
 
-    @include respond("mobile") {
+    @include respond('mobile') {
       top: unset;
       bottom: -15vw;
       left: 50vw;
@@ -57,11 +53,57 @@
         width: 100vw;
       }
     }
+
+    &.bottom {
+      top: 1200px;
+      bottom: unset;
+      left: 50vw;
+      background: linear-gradient(118deg, #000 45.75%, rgba(0, 0, 0, 0.00) 93.11%);
+      transform: rotate(-172.798deg);
+
+      @include respond("mobile") {
+        margin-top: 350px;
+        position: absolute;
+        transform: rotate(-173deg);
+        left: 45vw;
+        bottom: 600px;
+      }
+    }
+
+  }
+
+  .circle {
+    position: absolute;
+    top: 600px;
+    left: -1100px;
+    transform: rotate(-48.62deg);
+    width: 100vw;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(112deg, #000 44.77%, rgba(0, 0, 0, 0.00) 77.44%);
+    }
+
+    @include respond("mobile") {
+      top: 1600px;
+      width: 100%;
+      left: -55vw;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .jumbotron {
     position: relative;
-    padding: 240px 121px 320px 121px;
+    padding: 240px 121px 250px 121px;
 
     display: flex;
     flex-direction: column;
@@ -78,9 +120,9 @@
     }
 
     &__title {
-      max-width: 798.533px;
-      color: var(--white, #fff);
-      font-family: "NeueMachinaMedium";
+      max-width: 746px;
+      color: var(--white, #FFF);
+      font-family: 'NeueMachinaMedium';
       font-size: 58px;
       font-style: normal;
       font-weight: 400;
@@ -96,6 +138,7 @@
       @include respond("mobile") {
         font-size: 32px;
       }
+
     }
 
     &__description {
@@ -126,18 +169,27 @@
 
   .diagram {
     position: relative;
-    padding-bottom: 320px;
-    margin: 80px 140px 0 140px;
+    padding-bottom: 180px;
+    margin: 20px 140px 0 140px;
     display: flex;
     flex-direction: column;
     border-top: 1px solid #fff;
+    &.survival {
+      margin-top: 200px;
 
-    @include respond("tablet") {
+      @include respond("mobile") {
+        margin-top: 140px;
+        padding-bottom: 70px;
+      }
+
+    }
+
+    @include respond('tablet') {
       margin-left: $app-side-padding-tablet;
       margin-right: $app-side-padding-tablet;
     }
 
-    @include respond("mobile") {
+    @include respond('mobile') {
       padding-bottom: 160px;
       margin-left: $app-side-padding-mobile;
       margin-right: $app-side-padding-mobile;
@@ -145,7 +197,6 @@
 
     &__title {
       max-width: 947px;
-
       padding-top: 30px;
       margin-bottom: 80px;
 
@@ -208,13 +259,42 @@
         padding: 20px 40px;
       }
 
-      @include respond("mobile") {
+      @include respond('mobile') {
         padding: 0;
       }
 
       img {
         width: 100%;
       }
+    }
+  }
+
+  .pattern-wave {
+    position: absolute;
+    bottom: 250px;
+    width: 140vw;
+    right: -35vw;
+    transform: rotate(-5deg);
+
+    @include respond('tablet') {
+      padding: 0;
+    }
+
+    @include respond('mobile') {
+      padding: 0;
+      bottom: 620px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .spacer {
+    height: 200px;
+    width: 100%;
+    @include respond('mobile') {
+      height: 0;
     }
   }
 
