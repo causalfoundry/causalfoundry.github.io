@@ -13,7 +13,7 @@ export default [
     imageUrl: "/images/team/dexian.png",
     name: "Dexian Tang",
     role: "CTO & Co-Founder",
-    descritpion: `Dexian is a software and distributed systems engineer, previously a senior AI engineer at Inditex, where he led the design of the Zara Brain AI platform for predicting customer behavior and optimizing supply chains. His prior role in Tokyo, involved scaling data pipelines and optimizing AI processes in the video game industry. Dexian has a background in electrical engineering, conducting research at the Okada Lab in the Tokyo Institute of Technology, resulting in publications and an Excellence Award from the IEICE Electronics Society. He holds an MEng in Electrical Engineering from the Tokyo Institute of Technology and a BEng from the University of Electronic Science and Technology of China.`,
+    descritpion: `Dexian is a software and distributed systems engineer, previously a senior engineer at Inditex. His prior role in Tokyo, involved scaling data pipelines and AI processes in the video game industry. Dexian has a background in electrical engineering, conducting research at the Okada Lab in the Tokyo Institute of Technology, resulting in several publications and an Excellence Award from the IEICE Electronics Society. He holds an MEng in Electrical Engineering from the Tokyo Institute of Technology and a BEng from the University of Electronic Science and Technology of China.`,
     links: {
       linkedin: "https://www.linkedin.com/in/dexian-tang/",
     },
