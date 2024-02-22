@@ -28,14 +28,14 @@ export const sections = [
         imageUrl: "/images/products/analytics1.gif",
         icon: "/images/products/analytics_usecase.png",
         description:
-          "Causal Foundry data pipelines will turn incoming tool usage information into functionality specific traits characterizing meaningful quantities well suited to tackle use cases for patient and condition management, clinical decision support, capacity building and medical supply chain tools",
+          "We have identified the minimum de-identified data needed to be tracked for specific use-cases for improved patient management, disease care, e-learning/training and supply-chain efficiency.",
       },
       {
         title: "Cohorts",
         imageUrl: "/images/products/analytics2.gif",
         icon: "/images/products/analytics_cohort.png",
         description:
-          "Use the resulting traits to easily define cohorts of interest of the different relevant subjects (healthcare facilities and personel, patients, drugs or tests) that will be available throughout the platform to act as basic units of aggregate inspection, modeling and intervention",
+          "Segment your users into relevant groups (healthcare facilities, personnel, patients, drugs, tests, etc.)",
       },
       {
         title: "Dashboards",
@@ -48,7 +48,7 @@ export const sections = [
   {
     title: "Models",
     description:
-      "Easily deploy predictive and recommendation machine learning models to anticipate user behavior, needs and preferences",
+      "Easily deploy machine learning AI to anticipate user behavior, needs and preferences",
     features: [
       {
         title: "Define and deploy models",
