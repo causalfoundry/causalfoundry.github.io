@@ -1,7 +1,7 @@
 .news {
   @include sectionBorder();
   z-index: 2;
-  margin-bottom: 150px;
+  margin-bottom: 160px;
   display: flex;
   flex-direction: column;
 
@@ -19,6 +19,8 @@
     }
 
     .arrow {
+      width: 40px;
+      height: 40px;
       cursor: pointer;
 
       &.left {
@@ -48,12 +50,12 @@
       min-width: calc(33% - 16px);
       display: flex;
       flex-direction: column;
-      gap: 16px;
       transition: 0.1s;
     }
 
     @include respond("tablet") {
       flex-direction: column;
+      gap: 48px;
 
       & .news__content__item {
         min-width: 100%;
@@ -117,17 +119,22 @@
       font-weight: 500;
       font-size: 16px;
       color: #ffffff99;
+      padding: 16px 0;
     }
 
     & .description {
-      font-size: 16px;
-      line-height: 20.8px;
+      font-family: "NotoSansLight";
+      font-size: 18px;
+      line-height: 27px;
     }
 
     & .link {
-      font-size: 16px;
+      font-size: 18px;
+      line-height: 22px;
       font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
+      font-weight: 500;
+      padding: 8px 0 18px;
 
       a {
         color: #8cdfd9;

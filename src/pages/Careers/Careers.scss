@@ -1,56 +1,69 @@
 .careers {
   background: #000;
-
-
   position: relative;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1440px;
+  }
 
   .header {
     padding: 60px 140px 40px 140px;
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       padding-left: 32px;
       padding-right: 32px;
     }
   }
 
+  .circle {
+    position: absolute;
+    top: 0px;
+    left: 45vw;
+
+    @include respond("tablet") {
+      top: 500px;
+      right: -540px;
+
+      img {
+        width: 930px;
+      }
+    }
+
+    @include respond('mobile') {
+      top: unset;
+      bottom: -160px;
+      left: 50vw;
+
+      img {
+        width: 100vw;
+      }
+    }
+  }
+
   .jumbotron {
+    position: relative;
     padding: 330px 502.467px 340px 139px;
 
     display: flex;
     flex-direction: column;
     gap: 32px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding: 330px 121px 340px 121px;
     }
 
-    @include respond('mobile') {
-      padding: 330px 32px 340px 32px;
+    @include respond("mobile") {
+      padding: 120px 32px 340px 32px;
     }
 
-    &::before {
-      position: absolute;
-      content: '';
-      top: 109px;
-      right: -66%;
-      width: 100%;
-      height: 1250px;
-      background-image: url(../../assets/pattern-circle.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-
-      @include respond('mobile') {
-        font-size: 32px;
-        top: 700px;
-      }
-      
-    }
-    
     &__title {
-      max-width: 798.533px;;
-      color: var(--white, #FFF);
-      font-family: 'NeueMachinaRegular';
+      max-width: 798.533px;
+      color: var(--white, #fff);
+      font-family: "NeueMachinaMedium";
       font-size: 58px;
       font-style: normal;
       font-weight: 400;
@@ -59,27 +72,28 @@
 
       z-index: 1;
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         font-size: 32px;
       }
     }
 
     &__description {
       max-width: 691px;
-      color: var(--white, #FFF);
+      color: var(--white, #fff);
 
       /* Desktop/Text Large */
       font-family: NotoSansLight;
-      font-size: 26px;
+      font-size: 24px;
       font-style: normal;
       font-weight: 300;
       line-height: 150%; /* 39px */
 
       z-index: 1;
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         width: unset;
-        font-size: 18px;
+        line-height: 32px;
+        font-size: 20px;
       }
     }
   }
@@ -91,29 +105,28 @@
     flex-direction: column;
     gap: 100px;
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       padding: 160px 32px;
     }
 
     &__title {
       padding-top: 30px;
-      border-top: 1px solid #FFF;
+      border-top: 1px solid #fff;
       margin-bottom: 60px;
 
-      color: var(--white, #FFF);
+      color: var(--white, #fff);
 
       /* Desktop/Header 2 */
-      font-family: 'NeueMachinaRegular';
+      font-family: "NeueMachinaMedium";
       font-size: 44px;
       font-style: normal;
       font-weight: 400;
       line-height: 120%; /* 52.8px */
       letter-spacing: 1.32px;
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         font-size: 32px;
       }
-  
     }
 
     .job {
@@ -122,7 +135,6 @@
       gap: 32px;
       justify-content: space-between;
 
-      
       @include respond('mobile') {
         flex-direction: column;
       }
@@ -137,7 +149,7 @@
       &__title {
         overflow: hidden;
         text-overflow: ellipsis;
-        font-family: 'NeueMachinaRegular';
+        font-family: "NeueMachinaRegular";
         font-size: 26px;
         font-style: normal;
         font-weight: 400;
@@ -145,25 +157,34 @@
         letter-spacing: 1.56px;
         text-transform: uppercase;
 
-        background: var(--Gradient-1, linear-gradient(145deg, #FFF625 -13.26%, #CBEA7F 15.7%, #A7E2BE 55.24%, #98DED9 93.66%));
+        background: var(
+          --Gradient-1,
+          linear-gradient(
+            145deg,
+            #fff625 -13.26%,
+            #cbea7f 15.7%,
+            #a7e2be 55.24%,
+            #98ded9 93.66%
+          )
+        );
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        @include respond('mobile') {
+        @include respond("mobile") {
           font-size: 18px;
         }
       }
 
       &__sub-title {
-        color: var(--white, #FFF);
-        font-family: 'NotoSansItalic';
+        color: var(--white, #fff);
+        font-family: "NotoSansItalic";
         font-size: 20px;
         font-style: italic;
         font-weight: 400;
         line-height: 150%; /* 39px */
 
-        @include respond('mobile') {
+        @include respond("mobile") {
           font-size: 16px;
         }
       }
@@ -177,7 +198,7 @@
       &__description {
         max-width: 786px;
 
-        color: var(--white, #FFF);
+        color: var(--white, #fff);
 
         /* Desktop/Text Large */
         font-family: Noto Sans;
@@ -186,7 +207,6 @@
         font-weight: 400;
         line-height: 150%; /* 39px */
 
-        
         @include respond('mobile') {
           width: unset;
           font-size: 16px;
@@ -202,21 +222,43 @@
         padding: 8px 24px;
 
         border-radius: 36px;
-        border: 1px solid var(--Grey, #9E9E9E);
+        border: 1px solid var(--Grey, #9e9e9e);
 
-        color: var(--white, #FFF);
+        color: var(--white, #fff);
         font-family: Noto Sans;
         font-size: 18px;
         font-style: normal;
         font-weight: 300;
-        line-height: 160%;  /* 28.8px */
+        line-height: 160%; /* 28.8px */
         letter-spacing: 0.18px;
 
-        @include respond('mobile') {
+        @include respond("mobile") {
           width: unset;
           font-size: 14px;
         }
       }
+    }
+  }
+
+  .pattern-wave {
+    padding-top: 70px;
+    position: absolute;
+    bottom: 250px;
+    width: 140vw;
+    right: -35vw;
+    transform: rotate(-5deg);
+
+    @include respond('tablet') {
+      padding: 0;
+    }
+
+    @include respond('mobile') {
+      padding: 0;
+      bottom: 620px;
+    }
+
+    img {
+      width: 100%;
     }
   }
 
@@ -226,10 +268,10 @@
     padding: 30px 0 160px;
     margin: 160px 140px 428px;
 
-    color: var(--white, #FFF);
+    color: var(--white, #fff);
 
     /* Desktop/Text Large */
-    font-family: NotoSansLight;
+    font-family: "NotoSansRegular";
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
@@ -239,11 +281,19 @@
 
     &__info {
       margin-top: 30px;
+      font-family: "NotoSansRegular";
+      font-size: 20px;
+      color: #d1d5db;
+      line-height: 30px;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       margin: 0px 32px;
-      font-size: 14px;
+      font-size: 18px;
+
+      &__info {
+        font-size: 16px;
+      }
     }
 
     a {

@@ -1,18 +1,20 @@
 .footer {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 60px;
   position: relative;
-  z-index: 100;
+  z-index: 9;
 
   &__description {
+    margin-right: 80px;
+
     color: #FFFFFF;
     padding-top: 12px;
     padding-bottom: 16px;
     font-family: 'NotoSansLight';
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 27px;
     text-align: left;
@@ -21,7 +23,7 @@
   &__copyright {
     color: #9E9E9E;
     font-family: 'NotoSansRegular';
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -35,7 +37,7 @@
   &__email {
     font-family: 'WorkSans';
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0.02em;
@@ -46,7 +48,43 @@
     display: flex;
     gap: 25px;
     justify-content: flex-end;
-    padding-bottom: 25px;
+    padding-bottom: 22.5px;
+
+    .link-twitter {
+      width: 27.5px;
+      height: 25px;
+    }
+
+    .link-linkedin {
+      width: 23.5px;
+      height: 23.5px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-right: 80px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &__item {
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #fff;
+    }
   }
 
   @include respond('tablet') {
@@ -60,7 +98,12 @@
       align-items: center;
     }
 
+    &__links {
+      padding-top: 10px;
+    }
+
     &__description {
+      margin: 0;
       color: #FFFFFF;
       font-size: 14px;
       line-height: 21px;
@@ -81,9 +124,28 @@
         text-align: left;
       }
     }
+
+    &__menu {
+      gap: 80px;
+
+      &__row {
+        margin: 0;
+      }
+
+      &__item {
+        text-align: center;
+      }
+    }
   }
 
-  @include respond('smallDesktop') {
-    margin-top: 150px;
+  @include respond('mobile') {
+    &__menu {
+      flex-direction: column;
+      gap: 16px;
+
+      &__row {
+        gap: 16px;
+      }
+    }
   }
 }

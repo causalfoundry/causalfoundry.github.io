@@ -1,20 +1,26 @@
 .app-menu {
-  &__content {
+  &__wrapper {
     position: fixed;
     top: 0;
     left: 0;
-    background: black;
-    width: 80vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;   
+    width: 100vw;
     transform: translateX(-100%);
     transition: transform .3s ease-in-out;
 
     &--open {
       transform: translateX(0);
     }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    width: 80vw;
+    height: 100vh;
   }
 
   &__close {
