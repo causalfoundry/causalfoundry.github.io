@@ -37,11 +37,14 @@
 
           <div class="list">
             <div
-              v-for="item of features"
+              v-for="(item, index) in state.features"
+              :key="index"
               :class="[`item`, { active: item.active }]"
             >
-              <div class="title">{{ item.title }}</div>
-              <div class="description">
+              <div class="title" @click="handleItemClick(index)">
+                {{ item.title }}
+              </div>
+              <div class="description" @click="handleItemClick(index)">
                 {{ item.description }}
               </div>
             </div>
@@ -225,4 +228,17 @@ import AppTitle from "@/components/AppTitle";
 import { features, sections } from "@/data/products";
 
 import "./Product.scss";
+import { reactive, ref } from "vue";
+
+const featuresRef = ref(features);
+
+const state = reactive({
+  features: [...features],
+});
+
+const handleItemClick = (index: number) => {
+  state.features.forEach((feature, i) => {
+    feature.active = i === index;
+  });
+};
 </script>
