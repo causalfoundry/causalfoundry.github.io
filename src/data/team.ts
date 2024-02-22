@@ -3,7 +3,7 @@ export default [
     imageUrl: "/images/team/africa.png",
     name: "África Periáñez",
     role: "CEO & Founder",
-    descritpion: `África Periáñez, CEO and co-founder of Causal Foundry, is an AI entrepreneur dedicated to addressing health inequalities in low- and middle-income countries using data and machine learning. With a Ph.D. in Mathematics and extensive experience, including roles at Inditex and founding benshi.ai and Yokozuna Data, she leads the development of AI products tailored for healthcare professionals and patients. África's expertise spans from academia to industry, with a focus on personalized interventions and robust data collection to drive positive change.`,
+    descritpion: `África is an AI scientist and entrepreneur. África held the role of Chief Analytics Officer at Inditex, leading the AI strategy and bolstering one of the world's fastest supply chains. Previously, she founded Yokozuna Data, an AI firm based in Tokyo to transform videogame industry. África holds a PhD in Mathematics from the University of Reading and Master's degrees in String Theory and Theoretical Physics from CERN and UAM. She served as a Marie Curie EU research fellow at CERN and worked as a scientist at RIKEN and the German Weather Service. África has co-authored over 25 articles.`,
     links: {
       linkedin: "https://www.linkedin.com/in/africaperianez/",
       twitter: "https://twitter.com/aperianez/",
@@ -13,7 +13,7 @@ export default [
     imageUrl: "/images/team/dexian.png",
     name: "Dexian Tang",
     role: "CTO & Co-Founder",
-    descritpion: `Dexian is a software and distributed systems engineer, previously a senior machine learning engineer at Inditex, where he led the design of the Zara Brain AI platform for predicting customer behavior and optimizing supply chains. His prior role at Yokozuna Data involved scaling data pipelines and optimizing machine learning processes in the video game industry. Dexian has a background in electrical engineering, conducting research at the Okada Lab in the Tokyo Institute of Technology, resulting in publications and an Excellence Award from the IEICE Electronics Society. He holds an MEng in Electrical Engineering from the Tokyo Institute of Technology and a BEng from the University of Electronic Science and Technology of China.`,
+    descritpion: `Dexian is a software and distributed systems engineer, previously a senior AI engineer at Inditex, where he led the design of the Zara Brain AI platform for predicting customer behavior and optimizing supply chains. His prior role in Tokyo, involved scaling data pipelines and optimizing AI processes in the video game industry. Dexian has a background in electrical engineering, conducting research at the Okada Lab in the Tokyo Institute of Technology, resulting in publications and an Excellence Award from the IEICE Electronics Society. He holds an MEng in Electrical Engineering from the Tokyo Institute of Technology and a BEng from the University of Electronic Science and Technology of China.`,
     links: {
       linkedin: "https://www.linkedin.com/in/dexian-tang/",
     },
