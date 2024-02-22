@@ -13,7 +13,7 @@
 
       <div class="jumbotron">
         <div class="title">
-          <AppTitle>Reinforcement learning</AppTitle><br />and AI as a Service
+          <AppTitle>Reinforcement Learning<br>and AI</AppTitle> as a Service
         </div>
 
         <div class="description">
