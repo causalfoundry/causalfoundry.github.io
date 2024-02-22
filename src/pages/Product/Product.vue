@@ -82,7 +82,9 @@
           <div class="images">
             <Carousel :items-to-show="1">
               <Slide
-                v-for="feature of section.features"
+                v-for="feature of section.features.filter(
+                  (feat) => feat.imageUrl !== undefined
+                )"
                 :key="feature.imageUrl"
                 class="slide"
               >
