@@ -16,12 +16,12 @@
     padding: 240px 140px 320px;
     margin-bottom: 80px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-top: 120px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
@@ -42,18 +42,22 @@
         position: absolute;
         top: 0;
         left: 0;
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         height: 100%;
-        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
       }
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         top: unset;
         bottom: -15vw;
         left: 50vw;
-  
+
         img {
           width: 100vw;
         }
@@ -61,40 +65,40 @@
     }
 
     .title {
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 58px;
       font-weight: 400;
       line-height: 64px;
       letter-spacing: 0.01em;
       text-align: left;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         font-size: 40px;
       }
-    
-      @include respond('mobile') {
+
+      @include respond("mobile") {
         font-size: 32px;
       }
     }
 
     .description {
-      font-family: 'NotoSansLight';
+      font-family: "NotoSansLight";
       font-size: 26px;
       font-weight: 300;
       line-height: 36px;
       letter-spacing: 0em;
       text-align: left;
       max-width: 691px;
-      
-      margin-top: 32px;
 
-      @include respond('tablet') {
+      margin-top: 70px;
+
+      @include respond("tablet") {
         font-size: 20px;
         line-height: 32px;
         padding-left: 0;
       }
-    
-      @include respond('mobile') {
+
+      @include respond("mobile") {
         font-size: 20px;
         line-height: 32px;
       }
@@ -109,12 +113,12 @@
     flex-direction: column;
     gap: 80px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-bottom: 30px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
@@ -125,18 +129,18 @@
       max-width: 100%;
       border-top: 1px solid #fff;
 
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 44px;
       font-weight: 400;
       line-height: 53px;
       letter-spacing: 0.03em;
       text-align: left;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         font-size: 40px;
       }
-    
-      @include respond('mobile') {
+
+      @include respond("mobile") {
         font-size: 32px;
       }
     }
@@ -166,7 +170,7 @@
           height: 100%;
           object-fit: cover;
 
-          @include respond('mobile') {
+          @include respond("mobile") {
             object-fit: cover;
             object-position: top;
             max-height: 424px;
@@ -182,7 +186,7 @@
         letter-spacing: 0em;
         text-align: left;
 
-        @include respond('mobile') {
+        @include respond("mobile") {
           font-size: 20px;
         }
       }
@@ -197,7 +201,7 @@
 
         margin-bottom: 24px;
 
-        @include respond('mobile') {
+        @include respond("mobile") {
           font-size: 14px;
         }
       }
@@ -207,7 +211,7 @@
         gap: 16px;
 
         img {
-          @include respond('mobile') {
+          @include respond("mobile") {
             width: 30px;
             height: 30px;
           }
@@ -220,7 +224,7 @@
         top: 0;
         height: 100%;
         padding: 27px 15px 64px 25px;
-        background-color: #141C26D9;
+        background-color: #141c26d9;
         box-sizing: border-box;
         transition: 0.3s opacity ease-in-out;
 
@@ -230,8 +234,8 @@
         line-height: 24px;
         letter-spacing: 0em;
         text-align: left;
-              
-        @include respond('mobile') {
+
+        @include respond("mobile") {
           font-size: 14px;
           line-height: 21px;
         }
@@ -247,12 +251,12 @@
     padding-left: $app-side-padding-desktop;
     padding-right: $app-side-padding-desktop;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }

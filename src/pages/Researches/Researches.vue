@@ -16,7 +16,12 @@
 
       <div class="jumbotron">
         <div class="jumbotron__title">
-          We research to build AI products and deploy them reliably
+          Our research to
+          <AppTitle>
+            build<br />
+            and deploy reliable AI <br />
+            products</AppTitle
+          >
         </div>
         <div class="jumbotron__description">
           We develop AI systems and technology based on Reinforcement
@@ -157,6 +162,8 @@
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
+import AppTitle from "@/components/AppTitle";
+
 // import ResearchCard from '@/components/ResearchCard';
 
 // import data from '@/data/researchPapers';

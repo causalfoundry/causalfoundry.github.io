@@ -16,7 +16,7 @@
       >
         <div class="jumbotron landing" :id="Section.Landing">
           <div class="title">
-            <AppTitle>Personalization</AppTitle>
+            <AppTitle>Personalization</AppTitle><br />
             to solve the greatest <br />challenges in healthcare
           </div>
           <div class="description">
