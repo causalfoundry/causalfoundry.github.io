@@ -176,7 +176,6 @@
           @include respond("mobile") {
             object-fit: cover;
             object-position: top;
-            max-height: 424px;
           }
         }
       }
@@ -256,20 +255,20 @@
     margin: 20px 140px 0 140px;
     border-top: 1px solid #fff;
 
-    &__content{
+    &__content {
       display: flex;
       justify-content: space-between;
-      @include respond('mobile') {
+      @include respond("mobile") {
         flex-direction: column;
       }
     }
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       margin-left: $app-side-padding-tablet;
       margin-right: $app-side-padding-tablet;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       margin-left: $app-side-padding-mobile;
       margin-right: $app-side-padding-mobile;
     }
@@ -289,10 +288,10 @@
         align-items: center;
       }
 
-      img{
+      img {
         margin-left: 60px;
 
-        @include respond('mobile') {
+        @include respond("mobile") {
           padding-top: 50px;
           margin: 0 auto;
           width: 80%;
@@ -300,12 +299,11 @@
         }
       }
 
-      @include respond('mobile') {
+      @include respond("mobile") {
         width: 100%;
         font-size: 14px;
         line-height: 21px;
       }
-
     }
 
     &__title {
