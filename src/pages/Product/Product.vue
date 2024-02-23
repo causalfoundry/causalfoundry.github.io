@@ -32,7 +32,10 @@
         <div class="desktop-body">
           <div class="images">
             <div class="image">
-              <img src="../../assets/preview.png" alt="" />
+              <img
+                :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
+                alt=""
+              />
             </div>
           </div>
 
@@ -243,20 +246,20 @@ import "./Product.scss";
 const featuresRef = ref(features);
 const form = ref(null);
 const email = ref("");
+const activeFeatureIndex = ref(0);
 
 const state = reactive({
   features: [...features],
 });
 
 const handleItemClick = (index: number) => {
+  activeFeatureIndex.value = index;
   state.features.forEach((feature, i) => {
     feature.active = i === index;
   });
 };
 
 const handleSendEmail = () => {
-  console.log("value: ", email.value.value);
-
   emailjs
     .send(
       "cf_product_demo",
