@@ -58,7 +58,10 @@
         <div class="mobile-body">
           <div class="images">
             <div class="image">
-              <img src="../../assets/preview.png" alt="" />
+              <img
+                :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
+                alt=""
+              />
             </div>
           </div>
 
