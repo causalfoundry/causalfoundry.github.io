@@ -43,7 +43,7 @@
             <div
               v-for="(item, index) in state.features"
               :key="index"
-              :class="[`item`, { active: item.active }]"
+              :class="[`item`, { active: index === activeFeatureIndex }]"
             >
               <div class="title" @click="handleItemClick(index)">
                 {{ item.title }}
@@ -238,11 +238,12 @@ import AppTitle from "@/components/AppTitle";
 
 import { features, sections } from "@/data/products";
 
-import { reactive, ref } from "vue";
+import { onMounted, onUnmounted, reactive, ref } from "vue";
 import emailjs from "@emailjs/browser";
 
 import "./Product.scss";
 
+const FEATURE_INTERVAL = 10000;
 const featuresRef = ref(features);
 const form = ref(null);
 const email = ref("");
@@ -250,6 +251,17 @@ const activeFeatureIndex = ref(0);
 
 const state = reactive({
   features: [...features],
+});
+
+onMounted(() => {
+  const intervalId = setInterval(() => {
+    activeFeatureIndex.value =
+      (activeFeatureIndex.value + 1) % state.features.length;
+  }, FEATURE_INTERVAL);
+
+  onUnmounted(() => {
+    clearInterval(intervalId);
+  });
 });
 
 const handleItemClick = (index: number) => {
