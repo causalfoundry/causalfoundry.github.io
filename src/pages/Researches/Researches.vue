@@ -15,12 +15,14 @@
       </app-header>
 
       <div class="jumbotron">
-        <div class="jumbotron__title">We research to<AppTitle>  build and deploy reliable AI</AppTitle>
+        <div class="jumbotron__title">We research to<AppTitle> build and deploy reliable AI</AppTitle>
         </div>
         <div class="jumbotron__description">
-          Our research integrates advanced AI algorithms, including reinforcement learning, causal
-          inference, and survival analysis, with robust data frameworks to develop data-driven
-          decision-making strategies and deploy reliable products for predictive analytics.
+          Our research encompasses advanced AI algorithms, including reinforcement learning, causal inference, and
+          survival analysis.
+          <br><br>
+          Robust data frameworks and the results of our research are the foundation of all our work and drives the
+          development of our products.
         </div>
         <div class="hex">
           <img src="../../assets/pattern-hex.png" alt=""/>
