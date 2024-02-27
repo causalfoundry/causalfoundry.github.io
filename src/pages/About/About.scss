@@ -181,7 +181,7 @@
       }
 
       .name {
-        font-family: Noto Sans;
+        font-family: "Noto Sans";
         font-size: 24px;
         font-weight: 600;
         line-height: 31px;
@@ -194,7 +194,7 @@
       }
 
       .role {
-        font-family: Noto Sans;
+        font-family: "Noto Sans";
         font-size: 18px;
         font-weight: 400;
         line-height: 25px;
@@ -230,7 +230,7 @@
         box-sizing: border-box;
         transition: 0.3s opacity ease-in-out;
 
-        font-family: Noto Sans;
+        font-family: "Noto Sans";
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
@@ -274,7 +274,7 @@
     }
 
     &__section {
-      font-family: Noto Sans;
+      font-family: "Noto Sans";
       font-size: 24px;
       font-weight: 300;
       line-height: 36px;
@@ -301,7 +301,7 @@
 
       @include respond("mobile") {
         width: 100%;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 21px;
       }
     }

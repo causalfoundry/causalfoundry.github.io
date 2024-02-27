@@ -202,6 +202,7 @@
                 type="email"
                 name="user_email"
                 placeholder="Your email"
+                style="font-family: Noto Sans, sans-serif; text-decoration: none;"
               />
               <button class="button" type="submit">Send</button>
             </div>
