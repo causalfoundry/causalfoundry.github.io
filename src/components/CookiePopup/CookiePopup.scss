@@ -23,7 +23,7 @@
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
+
     @include respond('mobile') {
       flex-direction: column;
       gap: 24px;
@@ -75,15 +75,15 @@
       cursor: pointer;
       border: none;
       margin: auto 0;
-  
-      font-family: Noto Sans;
+
+      font-family: "Noto Sans";
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
       letter-spacing: 0em;
       text-align: left;
     }
-  
+
     .decline {
       color: #FFFFFF;
       background-color: transparent;
@@ -93,7 +93,7 @@
       border: none;
       margin: auto 0;
 
-      font-family: Noto Sans;
+      font-family: "Noto Sans";
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;

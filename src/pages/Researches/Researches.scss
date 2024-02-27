@@ -189,8 +189,6 @@
 
     @include respond("mobile") {
       padding-bottom: 160px;
-      margin-left: $app-side-padding-mobile;
-      margin-right: $app-side-padding-mobile;
     }
 
     &__title {
@@ -214,9 +212,9 @@
     }
 
     .paragraph {
-      font-family: Noto Sans;
+      font-family: 'NotoSansLight';
       font-size: 24px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 36px;
       letter-spacing: 0em;
       text-align: left;
@@ -229,6 +227,10 @@
       @include respond("tablet") {
         padding-left: 0;
       }
+      @include respond("mobile") {
+        font-size: 20px;
+      }
+
 
       &.big {
         font-family: "NeueMachinaRegular";
@@ -316,7 +318,7 @@
 
         padding: 21.5px 75px 19.5px 32px;
 
-        font-family: Noto Sans;
+        font-family: "Noto Sans";
         font-size: 20px;
         font-weight: 400;
         line-height: 27px;
@@ -333,7 +335,7 @@
       }
 
       .filter {
-        font-family: Noto Sans;
+        font-family: "Noto Sans";
         font-size: 20px;
         font-weight: 400;
         line-height: 27px;
@@ -353,7 +355,7 @@
       }
 
       .view {
-        font-family: Noto Sans;
+        font-family: "Noto Sans";
         font-size: 20px;
         font-weight: 400;
         line-height: 27px;
@@ -398,7 +400,7 @@
         cursor: pointer;
 
         .date {
-          font-family: Noto Sans;
+          font-family: "Noto Sans";
           font-size: 16px;
           font-weight: 500;
           line-height: 14px;
@@ -411,8 +413,7 @@
 
         .title {
           width: 100%;
-
-          font-family: Noto Sans;
+          font-family: "Noto Sans";
           font-size: 20px;
           font-weight: 600;
           line-height: 30px;
@@ -435,8 +436,7 @@
     .no-results {
       display: flex;
       justify-content: center;
-
-      font-family: Noto Sans;
+      font-family: "Noto Sans";
       font-size: 20px;
       font-weight: 400;
       line-height: 30px;
@@ -452,7 +452,7 @@
       display: flex;
 
       .info {
-        font-family: Noto Sans;
+        font-family: "Noto Sans";
         font-size: 20px;
         font-weight: 400;
         line-height: 30px;
@@ -464,7 +464,7 @@
       }
 
       .prev {
-        font-family: Noto Sans;
+        font-family: "Noto Sans";
         font-size: 20px;
         font-weight: 400;
         line-height: 30px;
@@ -499,7 +499,7 @@
       }
 
       .next {
-        font-family: Noto Sans;
+        font-family: "Noto Sans";
         font-size: 20px;
         font-weight: 400;
         line-height: 30px;

@@ -19,7 +19,7 @@
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
+
     @include respond('mobile') {
       padding-top: 120px;
       padding-left: $app-side-padding-mobile;
@@ -71,7 +71,7 @@
     }
 
     .date {
-      font-family: Noto Sans;
+      font-family: "Noto Sans";
       font-size: 26px;
       font-weight: 500;
       line-height: 39px;
@@ -82,7 +82,7 @@
     }
 
     p {
-      // font-family: Noto Sans;
+      // font-family: "Noto Sans";
       font-size: 18px;
       font-weight: 400;
       line-height: 25px;
@@ -93,7 +93,7 @@
     ul {
       display: flex;
       flex-direction: column;
-      // gap: 
+      // gap:
 
       & li > ul {
         margin-top: 24px;
@@ -120,7 +120,7 @@
       padding-top: 16px;
       border-top: 1px solid #fff;
 
-      font-family: Noto Sans;
+      font-family: "Noto Sans";
       font-size: 18px;
       font-weight: 400;
       line-height: 25px;
