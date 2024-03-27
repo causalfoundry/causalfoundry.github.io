@@ -68,6 +68,30 @@
             >
           </div>
         </div>
+
+        <div class="job">
+          <div class="job__titles">
+            <div class="job__title">Machine Learning Engineer</div>
+            <div class="job__sub-title">Barcelona, Full-time</div>
+          </div>
+
+          <div class="job__info">
+            <div class="job__description">
+              We are looking for software engineers with a solid Go/SQL/Python
+              background to join our engineering team to build our machine
+              learning and data infrastructure. You will have the rare
+              opportunity to build resilient and scalable machine learning
+              products from scratch, together with other talented engineers, to
+              achieve equity in health for all people worldwide via cutting-edge
+              ML algorithms.
+            </div>
+            <a
+              target="_blank"
+              href="https://candy-silica-cf0.notion.site/Machine-Learning-Engineer-6e096a586ca04ac79c764f8ca29d8936"
+              ><div class="job__link">Learn more</div></a
+            >
+          </div>
+        </div>
       </div>
       <!-- </intersection-observer> -->
 
@@ -86,7 +110,7 @@
       </div>
 
       <div class="pattern-wave">
-        <img src="../../assets/pattern-wave.png"/>
+        <img src="../../assets/pattern-wave.png" />
       </div>
 
       <app-footer />
