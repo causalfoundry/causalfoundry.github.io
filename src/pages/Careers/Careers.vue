@@ -77,9 +77,9 @@
 
           <div class="job__info">
             <div class="job__description">
-              We are looking for software engineers with a solid Go/SQL/Python
-              background to join our engineering team to build our machine
-              learning and data infrastructure. You will have the rare
+              We seek for machine learning and software engineers with a solid
+              Python/SQL background to join our engineering team to build our
+              machine learning and data infrastructure. You will have the rare
               opportunity to build resilient and scalable machine learning
               products from scratch, together with other talented engineers, to
               achieve equity in health for all people worldwide via cutting-edge
