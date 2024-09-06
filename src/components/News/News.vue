@@ -3,15 +3,29 @@
     <div class="news-header">
       <section-header>Latest News</section-header>
       <div class="controls">
-        <div class="arrow left" :class="{ disabled: sliderIndex === 0 }" @click="decrement"><arrow /></div>
-        <div class="arrow right" :class="{ disabled: sliderIndex === news.length - 3 }" @click="increment"><arrow /></div>
+        <div
+          class="arrow left"
+          :class="{ disabled: sliderIndex === 0 }"
+          @click="decrement"
+        >
+          <arrow />
+        </div>
+        <div
+          class="arrow right"
+          :class="{ disabled: sliderIndex === news.length - 3 }"
+          @click="increment"
+        >
+          <arrow />
+        </div>
       </div>
     </div>
     <div class="news__items">
       <div
         v-for="(news_item, index) in news"
         :key="index"
-        :style="{ transform: `translateX(calc((100% + 32px) * ${-sliderIndex}))` }"
+        :style="{
+          transform: `translateX(calc((100% + 32px) * ${-sliderIndex}))`,
+        }"
         class="news__content__item"
       >
         <div class="image">
@@ -35,14 +49,21 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 import dayjs from "dayjs";
 import SectionHeader from "@/components/SectionHeader";
-import Arrow from '@/assets/arrow.svg';
+import Arrow from "@/assets/arrow.svg";
 
 const sliderIndex = ref(0);
 
 const news = [
+  {
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7234966631154606080",
+    linkText: "Read more on Linkedin",
+    date: dayjs("2024-09-06").format("DD MMM YYYY"),
+    text: `Our team contributed three papers to this year’s conference, and the experience has been nothing short of inspiring. The week was filled with opportunities to learn, grow, and innovate, from engaging in deep scientific discussions to forging new connections.”`,
+    image: "/images/news/kdd.jpg",
+  },
   {
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7120780440478584834/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7120780440478584834%29",
     linkText: "Read more on Linkedin",
@@ -85,11 +106,11 @@ const increment = () => {
   if (sliderIndex.value < news.length - 3) {
     sliderIndex.value++;
   }
-}
+};
 
 const decrement = () => {
   if (sliderIndex.value > 0) {
     sliderIndex.value--;
   }
-}
+};
 </script>
