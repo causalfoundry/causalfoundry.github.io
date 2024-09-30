@@ -58,6 +58,13 @@ const sliderIndex = ref(0);
 
 const news = [
   {
+    link: "https://symposium-2024-webpage.my.canva.site/",
+    linkText: "Read more on symposium web",
+    date: dayjs("2024-09-30").format("DD MMM YYYY"),
+    text: "Our CEO was speaking at Penn Medicine on September 26 in the Nudges in Health Care Symposium",
+    image: "/images/news/nudges_symposium.png",
+  },
+  {
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7234966631154606080",
     linkText: "Read more on Linkedin",
     date: dayjs("2024-09-06").format("DD MMM YYYY"),
@@ -95,7 +102,7 @@ const news = [
     link: "https://www.linkedin.com/posts/medtronic-labs_medtronic-labs-causal-foundry-revolutionizing-activity-7052612498365038592-stCO",
     linkText: "Read more on Linkedin",
     date: dayjs("2023-04-15").format("DD MMM YYYY"),
-    text: `Excited to announce our partnership with <a href="https://www.medtroniclabs.org/" target="_blank">Medtronic Labs</a>. 
+    text: `Excited to announce our partnership with <a href="https://www.medtroniclabs.org/" target="_blank">Medtronic Labs</a>.
            Our goal is to work together to revolutionize healthcare delivery
            models in low and middle-income countries through AI and data-driven insights`,
     image: "/images/news/medtronics.png",
