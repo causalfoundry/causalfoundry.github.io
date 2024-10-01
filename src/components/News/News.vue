@@ -62,7 +62,7 @@ const news = [
     linkText: "Read more on symposium web",
     date: dayjs("2024-09-30").format("DD MMM YYYY"),
     text: "Our CEO was speaking at Penn Medicine on September 26 in the Nudges in Health Care Symposium",
-    image: "/images/news/nudges_symposium.png",
+    image: "/images/news/nudges_square.png",
   },
   {
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7234966631154606080",
