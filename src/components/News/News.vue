@@ -58,6 +58,13 @@ const sliderIndex = ref(0);
 
 const news = [
   {
+    link: "https://www.gavi.org/news/media-room/gavi-harnesses-innovation-mitigate-effects-climate-change-global-health",
+    linkText: "Read more on GAVI",
+    date: dayjs("2024-10-10").format("DD MMM YYYY"),
+    text: "Causal Foundry selected as one of the Gavi, the vaccine alliance INFUSE 2024 Pacesetters cohort to deliver AI-powered innovations that tackle critical global health and immunization challenges",
+    image: "/images/news/gavi.jpg",
+  },
+  {
     link: "https://symposium-2024-webpage.my.canva.site/",
     linkText: "Read more on symposium web",
     date: dayjs("2024-09-30").format("DD MMM YYYY"),
@@ -66,14 +73,14 @@ const news = [
   },
   {
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7234966631154606080",
-    linkText: "Read more on Linkedin",
+    linkText: "Read more on LinkedIn",
     date: dayjs("2024-09-06").format("DD MMM YYYY"),
     text: `Our team contributed three papers to this year’s conference, and the experience has been nothing short of inspiring. The week was filled with opportunities to learn, grow, and innovate, from engaging in deep scientific discussions to forging new connections.`,
     image: "/images/news/kdd.jpg",
   },
   {
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7120780440478584834/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7120780440478584834%29",
-    linkText: "Read more on Linkedin",
+    linkText: "Read more on LinkedIn",
     date: dayjs("2023-10-12").format("DD MMM YYYY"),
     text: `Africa Perianez, co-founder and CEO of Causal Foundry, Inc delivered the keynote at the 40th Takemi Symposium in International Health in Harvard on October 21, on “Digital Health: Opportunities and Challenges for Global Health.`,
     image: "/images/news/how-ai.png",
@@ -90,7 +97,7 @@ const news = [
   },
   {
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7082414780497502209",
-    linkText: "Read more on Linkedin",
+    linkText: "Read more on LinkedIn",
     date: dayjs("2023-08-04").format("DD MMM YYYY"),
     text: `We are thrilled to work with
     <a href="https://www.linkedin.com/company/aide-chemists-ltd/" target="_blank">AIDE CHEMISTS LTD</a>
@@ -100,7 +107,7 @@ const news = [
   },
   {
     link: "https://www.linkedin.com/posts/medtronic-labs_medtronic-labs-causal-foundry-revolutionizing-activity-7052612498365038592-stCO",
-    linkText: "Read more on Linkedin",
+    linkText: "Read more on LinkedIn",
     date: dayjs("2023-04-15").format("DD MMM YYYY"),
     text: `Excited to announce our partnership with <a href="https://www.medtroniclabs.org/" target="_blank">Medtronic Labs</a>.
            Our goal is to work together to revolutionize healthcare delivery
