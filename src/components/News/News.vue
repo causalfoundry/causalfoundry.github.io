@@ -68,7 +68,7 @@ const news = [
     link: "https://www.idmod.org/symposium/current-symposium/",
     linkText: "More information on IDM web",
     date: dayjs("2024-10-02").format("DD MMM YYYY"),
-    text: "Dexian Tang, our CTO presented `Adaptive behavioral AI: Reinforcement learning to enhance healthcare services` at the 2024 IDM Annual Symposium at the Bill & Melinda Gates Foundation Conference Center in Seattle",
+    text: "Dexian Tang, our CTO, presented our work titled `Adaptive behavioral AI: Reinforcement learning to enhance healthcare services` at the 2024 IDM Annual Symposium at the Bill & Melinda Gates Foundation Conference Center in Seattle",
     image: "/images/news/idm.jpg",
   },
   {
