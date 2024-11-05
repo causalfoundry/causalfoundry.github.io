@@ -1,10 +1,10 @@
 name: Build and Deploy
 
-on: 
+on:
   push:
     branches:
       - main
-      
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -31,6 +31,8 @@ jobs:
         uses: actions/configure-pages@v2
 
       - name: Install and Build 🔧
+        env:
+          VITE_SLACK_WEBHOOK: ${{ secrets.VITE_SLACK_WEBHOOK }}
         run: |
           yarn install --frozen-lockfile
           yarn build
@@ -39,7 +41,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: 'dist'
+          path: "dist"
 
   # Deployment job
   deploy:
@@ -48,8 +50,8 @@ jobs:
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
 
     # Deploy to the github-pages environment
     environment:

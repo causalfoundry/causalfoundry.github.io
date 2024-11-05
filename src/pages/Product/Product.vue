@@ -202,7 +202,10 @@
                 type="email"
                 name="user_email"
                 placeholder="Your email"
-                style="font-family: Noto Sans, sans-serif; text-decoration: none;"
+                style="
+                  font-family: Noto Sans, sans-serif;
+                  text-decoration: none;
+                "
               />
               <button class="button" type="submit">Send</button>
             </div>
@@ -276,23 +279,23 @@ const handleItemClick = (index: number) => {
 };
 
 const handleSendEmail = () => {
-  emailjs
-    .send(
-      "cf_product_demo",
-      "cf_product_demo_template",
-      { from_email: email.value ? email.value.value : "" },
-      {
-        publicKey: "C6aUCbUsTMSCimd_x",
-      }
-    )
-    .then(
-      () => {
-        console.log("SUCCESS!");
-        email.value.value = "";
-      },
-      (error) => {
-        console.log("FAILED...", error.text);
-      }
-    );
+  fetch(
+    `https://hooks.slack.com/services/T04AWARHR1A/${
+      import.meta.env.VITE_SLACK_WEBHOOK
+    }`,
+    {
+      method: "POST",
+      body: JSON.stringify({
+        text: `New demo request from ${email.value.value}`,
+      }),
+    }
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Success:", data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 };
 </script>
