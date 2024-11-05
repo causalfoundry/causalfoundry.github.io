@@ -58,6 +58,13 @@ const sliderIndex = ref(0);
 
 const news = [
   {
+    link: "https://www.gavi.org/vaccineswork/multi-armed-bandits-cooking-ai-storm",
+    linkText: "Click here to dive into the story",
+    date: dayjs("2024-11-05").format("DD MMM YYYY"),
+    text: "Gavi, the Vaccine Alliance, Highlights Causal Foundry’s Impact. Read the feature article, “Multi-Armed Bandits Cooking Up an AI Storm,” which showcases how Causal Foundry is harnessing AI to tackle healthcare challenges in low-resource regions..",
+    image: "/images/news/gavi_resize.png",
+  },
+  {
     link: "https://www.gavi.org/news/media-room/gavi-harnesses-innovation-mitigate-effects-climate-change-global-health",
     linkText: "Read more on GAVI",
     date: dayjs("2024-10-10").format("DD MMM YYYY"),
