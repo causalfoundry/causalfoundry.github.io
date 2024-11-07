@@ -58,6 +58,13 @@ const sliderIndex = ref(0);
 
 const news = [
   {
+    link: "https://www.tandfonline.com/doi/full/10.1080/23288604.2024.2387138",
+    linkText: "Read the full article ",
+    date: dayjs("2024-11-07").format("DD MMM YYYY"),
+    text: "We are excited to announce the publication of our latest paper, “The Digital Transformation in Health: How AI Can Improve the Performance of Health Systems,” in the prestigious Health Systems & Reform Journal. This work explores the transformative potential of artificial intelligence in enhancing healthcare system efficiency and accessibility",
+    image: "/images/news/paper_resize.png",
+  },
+  {
     link: "https://www.gavi.org/vaccineswork/multi-armed-bandits-cooking-ai-storm",
     linkText: "Click here to dive into the story",
     date: dayjs("2024-11-05").format("DD MMM YYYY"),
