@@ -41,14 +41,23 @@
 
     <div class="footer__right">
       <div class="footer__links">
-        <a href="https://twitter.com/Causal_Foundry" target="_blank"
-          ><img class="link-twitter" src="../../assets/twitter-logo.png"
-        /></a>
+        <a
+          href="https://bsky.app/profile/causalfoundry.bsky.social"
+          target="_blank"
+        >
+          <font-awesome-icon :icon="['fab', 'bluesky']" class="social-icon" />
+        </a>
+
+        <a href="https://twitter.com/Causal_Foundry" target="_blank">
+          <font-awesome-icon :icon="['fab', 'x-twitter']" class="social-icon" />
+        </a>
+
         <a
           href="https://www.linkedin.com/company/causal-foundry"
           target="_blank"
-          ><img class="link-linkedin" src="../../assets/linkedin-logo.png"
-        /></a>
+        >
+          <font-awesome-icon :icon="['fab', 'linkedin']" class="social-icon" />
+        </a>
       </div>
       <a class="footer__email" :href="`mailto:${EMAIL}`">{{ EMAIL }}</a>
     </div>
