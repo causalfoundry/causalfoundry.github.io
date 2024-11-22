@@ -58,6 +58,13 @@ const sliderIndex = ref(0);
 
 const news = [
   {
+    link: "/files/CausalFoundry_Ecommerce.pdf",
+    linkText: "Download whitepaper",
+    date: dayjs("2024-11-22").format("DD MMM YYYY"),
+    text: "Explore our white paper, where we highlight our collaboration with SwipeRx and demonstrate the transformative impact of implementing AI in their operations",
+    image: "/images/news/whitepaper_swiperx_resized.png",
+  },
+  {
     link: "https://www.tandfonline.com/doi/full/10.1080/23288604.2024.2387138",
     linkText: "Read the full article ",
     date: dayjs("2024-11-07").format("DD MMM YYYY"),
