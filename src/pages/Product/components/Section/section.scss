@@ -1,0 +1,38 @@
+.card {
+  margin: 80px 120px 320px;
+  border-top: 1px solid #fff;
+
+  & > h1 {
+    font-family: "NeueMachinaMedium";
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 16px;
+
+    @include respond("tablet") {
+      font-size: 40px;
+    }
+
+    @include respond("mobile") {
+      font-size: 32px;
+    }
+  }
+
+  .description {
+    font-family: "NotoSansRegular";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #d1d5db;
+
+    margin-bottom: 80px;
+  }
+}

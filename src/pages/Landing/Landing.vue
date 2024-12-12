@@ -40,6 +40,23 @@
         </div>
       </IntersectionObserver>
 
+      <img class="dashboard" :src="`/images/landing/dashboard.png`" alt="" />
+
+      <div class="landing-short-summary">
+        <div
+          v-for="(landing_item, index) in summaries"
+          :key="index"
+          class="landing-short-summary-item"
+        >
+          <div class="landing-short-summary-item__title">
+            {{ landing_item.title }}
+          </div>
+          <div class="landing-short-summary-item__text">
+            {{ landing_item.text }}
+          </div>
+        </div>
+      </div>
+
       <IntersectionObserver
         @intersect="handleIntersect(Section.Problem, $event)"
       >
@@ -136,6 +153,25 @@ import { MOBILE_HEALTH } from "./constants";
 import { PRECISION_MEDICINE } from "./constants";
 
 import "./Landing.scss";
+
+const summaries = [
+  {
+    title: "Predictions",
+    text: "Predict your users' behaviors and unlock targeted action",
+  },
+  {
+    title: "Recommendations",
+    text: "Increase engagement with personalized, just-in-time recommendations tailored to individual needs",
+  },
+  {
+    title: "Adaptive interventions",
+    text: "Personalize nudges to improve engagement",
+  },
+  {
+    title: "Resource allocation",
+    text: "Optimize visits & calls to reach the right patients with restless bandits to ensure no one is left behind",
+  },
+];
 
 const isSectionVisible = ref({
   [Section.Landing]: true,

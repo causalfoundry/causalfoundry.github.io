@@ -166,7 +166,7 @@
     position: relative;
     z-index: 1;
     border-top: 1px solid #fff;
-    margin: 80px 120px 320px;
+    // margin: 80px 120px 320px;
     padding-bottom: 80px;
 
     @include respond("tablet") {
@@ -184,40 +184,6 @@
       .desktop-body {
         flex-direction: row-reverse;
       }
-    }
-
-    .title {
-      font-family: "NeueMachinaMedium";
-      font-size: 44px;
-      font-weight: 400;
-      line-height: 53px;
-      letter-spacing: 0.03em;
-      text-align: left;
-
-      color: #fff;
-      margin-top: 30px;
-      margin-bottom: 16px;
-
-      @include respond("tablet") {
-        font-size: 40px;
-      }
-
-      @include respond("mobile") {
-        font-size: 32px;
-      }
-    }
-
-    .description {
-      font-family: "NotoSansRegular";
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 30px;
-      letter-spacing: 0em;
-      text-align: left;
-
-      color: #d1d5db;
-
-      margin-bottom: 80px;
     }
 
     .desktop-body,
@@ -583,7 +549,7 @@
       display: block;
       width: 100vw;
       height: 100vw;
-      background: linear-gradient(89deg, #000 10.97%, rgba(0, 0, 0, 0.00) 148.23%);
+      background: linear-gradient(89deg, #000 10.97%, rgba(0, 0, 0, 0) 148.23%);
     }
 
     @include respond("mobile") {

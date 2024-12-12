@@ -20,74 +20,78 @@
         </div>
 
         <div class="description">
-          Seamlessly integrate your digital tool to the Causal Foundry platform
-          and unlock the key to personalization
+          {{ PRODUCT_DESCRIPTION }}
         </div>
         <div class="circle top">
           <img src="../../assets/pattern-circle.png" alt="" />
         </div>
       </div>
 
-      <div class="features">
-        <div class="desktop-body">
-          <div class="images">
-            <div class="image">
-              <img
-                :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div class="list">
-            <div
-              v-for="(item, index) in state.features"
-              :key="index"
-              :class="[`item`, { active: index === activeFeatureIndex }]"
-            >
-              <div class="title" @click="handleItemClick(index)">
-                {{ item.title }}
-              </div>
-              <div class="description" @click="handleItemClick(index)">
-                {{ item.description }}
+      <Section title="The AI platform in a nutshell" description="">
+        <div class="features">
+          <div class="desktop-body">
+            <div class="images">
+              <div class="image">
+                <img
+                  :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
+                  alt=""
+                />
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="mobile-body">
-          <div class="images">
-            <div class="image">
-              <img
-                :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div class="list">
-            <Carousel :items-to-show="1">
-              <Slide v-for="item of features" :key="item.title" class="slide">
-                <div class="item active">
-                  <div class="title">{{ item.title }}</div>
-                  <div class="description">
-                    {{ item.description }}
-                  </div>
+            <div class="list">
+              <div
+                v-for="(item, index) in state.features"
+                :key="index"
+                :class="[`item`, { active: index === activeFeatureIndex }]"
+              >
+                <div class="title" @click="handleItemClick(index)">
+                  {{ item.title }}
                 </div>
-              </Slide>
+                <div class="description" @click="handleItemClick(index)">
+                  {{ item.description }}
+                </div>
+              </div>
+            </div>
+          </div>
 
-              <template #addons>
-                <Pagination />
-              </template>
-            </Carousel>
+          <div class="mobile-body">
+            <div class="images">
+              <div class="image">
+                <img
+                  :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="list">
+              <Carousel :items-to-show="1">
+                <Slide v-for="item of features" :key="item.title" class="slide">
+                  <div class="item active">
+                    <div class="title">{{ item.title }}</div>
+                    <div class="description">
+                      {{ item.description }}
+                    </div>
+                  </div>
+                </Slide>
+
+                <template #addons>
+                  <Pagination />
+                </template>
+              </Carousel>
+            </div>
           </div>
         </div>
-      </div>
+      </Section>
 
-      <div v-for="section of sections" class="section">
-        <div class="title">{{ section.title }}</div>
-        <div class="description">{{ section.description }}</div>
-
+      <Section
+        v-for="(section, index) of sections"
+        :key="index"
+        :title="section.title"
+        :description="section.description"
+        className="section"
+      >
         <div class="desktop-body">
           <div class="images">
             <Carousel :items-to-show="1">
@@ -147,7 +151,7 @@
             </Carousel>
           </div>
         </div>
-      </div>
+      </Section>
 
       <div v-if="false" class="testimonials">
         <div class="title">Testimonials</div>
@@ -237,7 +241,6 @@
 
 <script setup lang="ts">
 import { Carousel, Pagination, Slide } from "vue3-carousel";
-
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
@@ -247,6 +250,10 @@ import { features, sections } from "@/data/products";
 
 import { onMounted, onUnmounted, reactive, ref } from "vue";
 import emailjs from "@emailjs/browser";
+
+import Section from "./components/Section/Section.vue";
+
+import { PRODUCT_DESCRIPTION } from "./constants";
 
 import "./Product.scss";
 
