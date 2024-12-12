@@ -1,0 +1,18 @@
+.dynamic-text {
+  display: inline-block;
+  position: relative;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: black;
+  width: 2px;
+  height: 24px;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

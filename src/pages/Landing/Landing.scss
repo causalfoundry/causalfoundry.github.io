@@ -1,4 +1,6 @@
-.hex, .circle, .funded-by__pattern-wave {
+.hex,
+.circle,
+.funded-by__pattern-wave {
   pointer-events: none;
   user-select: none;
 }
@@ -23,7 +25,7 @@
     top: 0px;
     left: 45vw;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       top: 500px;
       right: -540px;
 
@@ -31,8 +33,8 @@
         width: 930px;
       }
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       top: unset;
       left: 50vw;
 
@@ -50,15 +52,15 @@
     padding-left: $app-side-padding-desktop;
     padding-right: 375px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-top: 150px;
       padding-bottom: 800px;
       font-size: 20px;
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-top: 120px;
       font-size: 18px;
       padding-bottom: calc(100vw - 160px);
@@ -70,20 +72,24 @@
       max-width: 800px;
       margin-bottom: 32px;
 
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 58px;
       font-weight: 400;
       line-height: 1.3;
       letter-spacing: 0.01em;
       text-align: left;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         width: 100%;
         font-size: 40px;
       }
-  
-      @include respond('mobile') {
+
+      @include respond("mobile") {
         font-size: 32px;
+      }
+
+      .nowrap {
+        white-space: nowrap;
       }
     }
 
@@ -92,20 +98,20 @@
       z-index: 1;
       max-width: 691px;
 
-      font-family: 'NotoSansLight';
+      font-family: "NotoSansLight";
       font-size: 26px;
       font-weight: 300;
       line-height: 39px;
       letter-spacing: 0em;
       text-align: left;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         width: 100%;
         line-height: 1.6;
         font-size: 24px;
       }
-  
-      @include respond('mobile') {
+
+      @include respond("mobile") {
         width: 90%;
         line-height: 32px;
         font-size: 20px;
@@ -121,13 +127,13 @@
     padding-bottom: 160px;
     border-top: 1px solid #fff;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       margin-left: $app-side-padding-tablet;
       margin-right: $app-side-padding-tablet;
       padding-bottom: 75px;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       margin-left: $app-side-padding-mobile;
       margin-right: $app-side-padding-mobile;
     }
@@ -135,17 +141,17 @@
     .title {
       margin-top: 30px;
 
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 44px;
       font-weight: 400;
       letter-spacing: 0.03em;
       text-align: left;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         font-size: 40px;
       }
-    
-      @include respond('mobile') {
+
+      @include respond("mobile") {
         font-size: 32px;
       }
     }
@@ -154,14 +160,14 @@
       margin-top: 80px;
       padding-left: 304px;
 
-      font-family: 'NotoSansLight';
+      font-family: "NotoSansLight";
       font-size: 26px;
       font-weight: 400;
       line-height: 39px;
       letter-spacing: 0em;
       text-align: left;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         font-size: 20px;
         line-height: 32px;
         padding-left: 0;
@@ -177,13 +183,13 @@
     padding-bottom: 160px;
     border-top: 1px solid #fff;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       margin-left: $app-side-padding-tablet;
       margin-right: $app-side-padding-tablet;
       padding-bottom: 75px;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       margin-left: $app-side-padding-mobile;
       margin-right: $app-side-padding-mobile;
     }
@@ -194,7 +200,7 @@
       top: -50px;
       pointer-events: none;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         top: unset;
         bottom: -40%;
       }
@@ -211,7 +217,7 @@
       width: max(1367px, 100vw);
       left: min(-900px, -50vw);
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         position: relative;
         top: unset;
         left: unset;
@@ -223,17 +229,17 @@
 
     .title {
       margin-top: 30px;
-      font-family: 'NeueMachinaMedium';
+      font-family: "NeueMachinaMedium";
       font-size: 44px;
       font-weight: 400;
       text-align: left;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         font-size: 40px;
         line-height: 1;
       }
-    
-      @include respond('mobile') {
+
+      @include respond("mobile") {
         font-size: 32px;
       }
     }
@@ -242,23 +248,22 @@
       margin: 160px 0;
       padding-left: 304px;
 
-      font-family: 'NotoSansLight';
+      font-family: "NotoSansLight";
       font-size: 26px;
       font-weight: 400;
       line-height: 39px;
       letter-spacing: 0em;
       text-align: left;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         font-size: 20px;
         line-height: 32px;
         margin-top: 80px;
         margin-bottom: 80px;
         padding-left: 0;
       }
-    
-      @include respond('mobile') {
-        
+
+      @include respond("mobile") {
       }
     }
 
@@ -267,21 +272,20 @@
       margin-bottom: 30px;
       padding-left: 500px;
 
-      font-family: 'NeueMachinaRegular';
+      font-family: "NeueMachinaRegular";
       letter-spacing: 1.6px;
       font-size: 28px;
       font-weight: 400;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         font-size: 20px;
         line-height: 32px;
         margin-top: 80px;
         padding-left: 0;
         margin-bottom: 27px;
       }
-    
-      @include respond('mobile') {
-        
+
+      @include respond("mobile") {
       }
     }
 
@@ -290,14 +294,14 @@
       padding-left: 500px;
       max-width: 100%;
 
-      font-family: 'NotoSansLight';
+      font-family: "NotoSansLight";
       font-size: 18px;
       font-weight: 300;
       line-height: 27px;
       letter-spacing: 0em;
       text-align: left;
 
-      @include respond('tablet') {
+      @include respond("tablet") {
         font-size: 18px;
         line-height: 28.8px;
         width: 100%;
@@ -305,8 +309,7 @@
         margin-bottom: 80px;
       }
 
-      @include respond('mobile') {
-        
+      @include respond("mobile") {
       }
     }
   }
@@ -314,12 +317,12 @@
   .news-land {
     padding: 0 140px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
@@ -328,12 +331,12 @@
   .funded-land {
     padding: 0 140px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
@@ -343,16 +346,14 @@
     padding-left: $app-side-padding-desktop;
     padding-right: $app-side-padding-desktop;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
-  
-    @include respond('mobile') {
+
+    @include respond("mobile") {
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
   }
 }
-
-
