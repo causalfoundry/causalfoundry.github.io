@@ -157,15 +157,15 @@ import "./Landing.scss";
 const summaries = [
   {
     title: "Predictions",
-    text: "Predict your users' behaviors and unlock targeted action",
+    text: "Predict users' behaviors and take action beforehand",
   },
   {
     title: "Recommendations",
-    text: "Increase engagement with personalized, just-in-time recommendations tailored to individual needs",
+    text: "Increase sales with personalized, just-in-time recommendations tailored to individual needs",
   },
   {
     title: "Adaptive interventions",
-    text: "Personalize nudges to improve engagement",
+    text: "Contextual bandit-based interventions that enhance engagement and insights for continuous improvement",
   },
   {
     title: "Resource allocation",
