@@ -18,7 +18,8 @@
           <div class="title">
             <AppTitle>Personalized </AppTitle>
             <p>
-              interventions to revolutionaize <br /><DynamicText
+              interventions to revolution<AppTitle>ai</AppTitle>ze
+              <br /><DynamicText
                 :values="[
                   'healthcare',
                   'global health',

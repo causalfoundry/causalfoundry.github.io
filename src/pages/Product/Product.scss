@@ -10,6 +10,70 @@
     width: 1440px;
   }
 
+  .product-image-header {
+    @include respond("mobile") {
+      display: none;
+    }
+  }
+
+  .picture-action-oriented {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .picture-easy-integration {
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+  }
+
+  .picture-notifications {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .picture-llm {
+    position: absolute;
+    width: 401px;
+    height: 334px;
+
+    bottom: 0px;
+    left: 100px;
+  }
+
+  .product-card-matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    width: 200%;
+    position: relative;
+    left: -50%; /* Desplazar hacia la izquierda la mitad de 100vw */
+    // transform: translateX(-25vw); /* Centrar el grid */
+
+    @include respond("mobile") {
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+      transform: unset;
+      width: unset;
+      left: unset;
+      right: unset;
+
+      & > * {
+        //   width: 150%;
+        left: unset !important;
+        right: unset !important;
+      }
+    }
+  }
+
+  img {
+    z-index: 10;
+  }
+
   .jumbotron {
     position: relative;
     z-index: 1;

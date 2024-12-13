@@ -2,7 +2,7 @@
   <div :class="['card', className]">
     <h1>{{ title }}</h1>
     <p class="description">{{ description }}</p>
-    <div class="card-content">
+    <div :class="['card-content', className]">
       <slot></slot>
     </div>
   </div>

@@ -27,6 +27,67 @@
         </div>
       </div>
 
+      <div class="product-image-header">
+        <img :src="`/images/products/header.png`" alt="" />
+      </div>
+
+      <Section title="The all-in-one solution">
+        <div class="product-card-matrix">
+          <ProductCard
+            title="Action-oriented monitoring"
+            description="Easily visualize performance & inform decision-making"
+            shift="780"
+            :style="{ left: '-200px' }"
+          >
+            <img
+              :src="`/images/products/all-in-one/action-oriented-monitoring.png`"
+              alt=""
+              class="picture-action-oriented"
+            />
+          </ProductCard>
+
+          <ProductCard
+            title="Easy Integration"
+            description="We seamlessly connect to your existing services"
+            :style="{ left: '-200px' }"
+          >
+            <img
+              :style="{ 'padding-left': '0px' }"
+              :src="`/images/products/all-in-one/easy-integration.png`"
+              alt=""
+              class="picture-easy-integration"
+            />
+          </ProductCard>
+
+          <ProductCard
+            title="Personalized interventions at scale"
+            description="Quickly put into production your ideas and reach your customers"
+            shift="380"
+            :style="{ right: '-200px' }"
+          >
+            <img
+              :style="{ 'padding-left': '0px' }"
+              :src="`/images/products/all-in-one/notifications.png`"
+              alt=""
+              class="picture-notifications"
+            />
+          </ProductCard>
+
+          <ProductCard
+            title="Quick, accurate answers powered by LLMs"
+            description="Get patient-specific and reliable insights to enhance healthcare delivery"
+            :style="{ right: '-200px' }"
+          >
+            <img
+              :style="{ 'padding-left': '0px' }"
+              :src="`/images/products/all-in-one/llm.png`"
+              alt=""
+              class="picture-llm"
+            />
+          </ProductCard>
+        </div>
+      </Section>
+
       <Section title="The AI platform in a nutshell" description="">
         <div class="features">
           <div class="desktop-body">
@@ -252,6 +313,7 @@ import { onMounted, onUnmounted, reactive, ref } from "vue";
 import emailjs from "@emailjs/browser";
 
 import Section from "./components/Section/Section.vue";
+import ProductCard from "./components/ProductCard";
 
 import { PRODUCT_DESCRIPTION } from "./constants";
 
