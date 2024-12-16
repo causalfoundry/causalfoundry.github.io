@@ -28,7 +28,7 @@
       </div>
 
       <div class="product-image-header">
-        <img :src="`/images/products/header.png`" alt="" />
+        <!-- <img :src="`/images/products/header.png`" alt="" /> -->
       </div>
 
       <Section title="The all-in-one solution">
@@ -36,7 +36,7 @@
           <ProductCard
             title="Action-oriented monitoring"
             description="Easily visualize performance & inform decision-making"
-            shift="780"
+            shift="760"
             :style="{ left: '-200px' }"
           >
             <img
@@ -62,7 +62,7 @@
           <ProductCard
             title="Personalized interventions at scale"
             description="Quickly put into production your ideas and reach your customers"
-            shift="380"
+            shift="360"
             :style="{ right: '-200px' }"
           >
             <img
@@ -88,16 +88,18 @@
         </div>
       </Section>
 
-      <Section title="The AI platform in a nutshell" description="">
-        <div class="features">
-          <div class="desktop-body">
+      <Section
+        title="The AI platform in a nutshell"
+        description=""
+        className="section"
+      >
+        <div class="desktop-body">
+          <div class="features">
             <div class="images">
-              <div class="image">
-                <img
-                  :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
-                  alt=""
-                />
-              </div>
+              <img
+                :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
+                alt=""
+              />
             </div>
 
             <div class="list">
@@ -115,33 +117,33 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="mobile-body">
-            <div class="images">
-              <div class="image">
-                <img
-                  :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
-                  alt=""
-                />
-              </div>
+        <div class="mobile-body">
+          <div class="images">
+            <div class="image">
+              <img
+                :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div class="list">
-              <Carousel :items-to-show="1">
-                <Slide v-for="item of features" :key="item.title" class="slide">
-                  <div class="item active">
-                    <div class="title">{{ item.title }}</div>
-                    <div class="description">
-                      {{ item.description }}
-                    </div>
+          <div class="list">
+            <Carousel :items-to-show="1">
+              <Slide v-for="item of features" :key="item.title" class="slide">
+                <div class="item active">
+                  <div class="title">{{ item.title }}</div>
+                  <div class="description">
+                    {{ item.description }}
                   </div>
-                </Slide>
+                </div>
+              </Slide>
 
-                <template #addons>
-                  <Pagination />
-                </template>
-              </Carousel>
-            </div>
+              <template #addons>
+                <Pagination />
+              </template>
+            </Carousel>
           </div>
         </div>
       </Section>

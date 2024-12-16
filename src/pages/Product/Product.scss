@@ -64,8 +64,8 @@
 
       & > * {
         //   width: 150%;
-        left: unset !important;
-        right: unset !important;
+        //  left: unset !important;
+        // right: unset !important;
       }
     }
   }
@@ -137,15 +137,15 @@
   .features {
     position: relative;
     z-index: 1;
-    padding: 80px 120px 320px;
+    // padding: 80px 120px 320px;
+    display: flex;
+    flex-direction: column;
 
     .images {
       padding: 0 120px;
       margin-bottom: 120px;
       display: flex;
-    }
 
-    .image {
       img {
         width: 100%;
       }
@@ -229,7 +229,7 @@
   .section {
     position: relative;
     z-index: 1;
-    border-top: 1px solid #fff;
+    //border-top: 1px solid #fff;
     // margin: 80px 120px 320px;
     padding-bottom: 80px;
 
@@ -284,16 +284,7 @@
           gap: 12px;
           padding-top: 48px;
 
-          //background-image: url(../../assets/lock_icon.png);
           background-repeat: no-repeat;
-
-          &:nth-child(2) {
-            // background-image: url(../../assets/stats_icon.png);
-          }
-
-          &:nth-child(3) {
-            //  background-image: url(../../assets/code_icon.png);
-          }
 
           .item-icon {
             width: 28px;
@@ -490,7 +481,7 @@
       padding-right: $app-side-padding-mobile;
     }
 
-    .card {
+    .card_old {
       width: 100%;
       border-radius: 16px;
       border: 1.5px solid #4b5563;

@@ -1,8 +1,8 @@
 <template>
-  <div :class="['card', className]">
+  <div :class="['section', className]">
     <h1>{{ title }}</h1>
     <p class="description">{{ description }}</p>
-    <div :class="['card-content', className]">
+    <div :class="['card-content']">
       <slot></slot>
     </div>
   </div>

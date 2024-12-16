@@ -1,6 +1,8 @@
-.card {
+.section {
   margin: 80px 120px 320px;
   border-top: 1px solid #fff;
+  position: relative;
+  z-index: 1;
 
   & > h1 {
     font-family: "NeueMachinaMedium";
@@ -34,5 +36,20 @@
     color: #d1d5db;
 
     margin-bottom: 80px;
+  }
+
+  @include respond("mobile") {
+    margin: 20px;
+  }
+
+  @include respond("tablet") {
+    margin-left: $app-side-padding-tablet;
+    margin-right: $app-side-padding-tablet;
+  }
+
+  @include respond("mobile") {
+    margin-bottom: 160px;
+    margin-left: $app-side-padding-mobile;
+    margin-right: $app-side-padding-mobile;
   }
 }
