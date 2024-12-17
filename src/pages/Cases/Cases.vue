@@ -86,7 +86,7 @@
       </TextImage>
       <div>
         <Quote :text="MOMENTUM_QUOTE_TEXT" :from="MOMENTUM_QUOTE_FROM" />
-        <ShortDescriptionList :items="MOMENTUM_ITEMS" />
+        <ShortDescriptionList :items="MOMENTUM_ITEMS" title="Key features" />
       </div>
     </SuccessCase>
   </div>

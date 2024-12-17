@@ -1,5 +1,6 @@
 <template>
   <div class="short-description-list">
+    {{ title }}
     <div class="short-description-list__container">
       <div
         v-for="(item, index) in items"
@@ -28,9 +29,11 @@ interface Item {
 
 const props = defineProps<{
   items: Item[];
+  title?: string;
+  description?: string;
 }>();
 
 onMounted(() => {
-  console.log("Items recibidos:", props.items);
+  console.log("Items recibidos:", props.description);
 });
 </script>
