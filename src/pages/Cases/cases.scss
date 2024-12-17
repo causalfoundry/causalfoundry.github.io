@@ -20,4 +20,37 @@
       width: 100%;
     }
   }
+
+  .key-app-features-title {
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  .key-app-features {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+
+      img {
+        background-color: #dcdcec;
+        border-radius: 50%;
+        padding: 7px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
 }

@@ -27,6 +27,31 @@
             <img :src="`/images/cases/m2m/phones.png`" />
           </div>
         </template>
+
+        <template #extra-image>
+          <div class="key-app-features-title">Key App Features</div>
+
+          <div class="key-app-features">
+            <div class="key-app-features__item">
+              <img :src="`/images/cases/m2m/calendar_month.png`" />
+              <span> Create, Track and Manage Appointments </span>
+            </div>
+            <div class="key-app-features__item">
+              <img :src="`/images/cases/m2m/bar_chart_4_bars.png`" />
+              <span> Track Personal Progress and KPI </span>
+            </div>
+
+            <div class="key-app-features__item">
+              <img :src="`/images/cases/m2m/ecg_heart.png`" />
+              <span> Manage Clients In a Few Taps </span>
+            </div>
+
+            <div class="key-app-features__item">
+              <img :src="`/images/cases/m2m/bid_landscape.png`" />
+              <span> Track and Manage Peer Mentor Performance </span>
+            </div>
+          </div>
+        </template>
       </TextImage>
 
       <div>
