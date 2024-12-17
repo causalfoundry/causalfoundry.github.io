@@ -1,15 +1,17 @@
 <template>
   <div class="short-description-list">
-    <div
-      v-for="(item, index) in items"
-      :key="index"
-      class="short-description-list__item"
-    >
-      <div class="short-description-list__item__title">
-        {{ item.title }}
-      </div>
-      <div class="short-description-list__item__text">
-        {{ item.text }}
+    <div class="short-description-list__container">
+      <div
+        v-for="(item, index) in items"
+        :key="index"
+        class="short-description-list__container__item"
+      >
+        <div class="short-description-list__container__item__title">
+          {{ item.title }}
+        </div>
+        <div class="short-description-list__container__item__text">
+          {{ item.text }}
+        </div>
       </div>
     </div>
   </div>

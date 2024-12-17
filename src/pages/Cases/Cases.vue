@@ -5,7 +5,7 @@
     </AppHeader>
 
     <SuccessCase title="CASE 1. mothers2mothers">
-      <TextImage :title="M2M_FIRST_TITLE" :text="M2M_FIRST_TEXT">
+      <TextImage :title="M2M_FIRST_TITLE" :text="M2M_FIRST_TEXT" primary>
         <template #image>
           <img :src="`/images/cases/m2m/first.png`" />
         </template>
@@ -29,13 +29,18 @@
         </template>
       </TextImage>
 
-      <Quote :text="M2M_QUOTE_TEXT" :from="M2M_QUOTE_FROM" />
-
-      <ShortDescriptionList :items="M2M_ITEMS" />
+      <div>
+        <Quote :text="M2M_QUOTE_TEXT" :from="M2M_QUOTE_FROM" />
+        <ShortDescriptionList :items="M2M_ITEMS" />
+      </div>
     </SuccessCase>
 
     <SuccessCase title="CASE 2. SwipeRX">
-      <TextImage :title="SWIPERX_FIRST_TITLE" :text="SWIPERX_FIRST_TEXT">
+      <TextImage
+        :title="SWIPERX_FIRST_TITLE"
+        :text="SWIPERX_FIRST_TEXT"
+        primary
+      >
         <template #image>
           <img :src="`/images/cases/swiperx/first.png`" />
         </template>
@@ -56,7 +61,33 @@
           </div>
         </template>
       </TextImage>
+
       <Quote :text="SWIPERX_QUOTE_TEXT" :from="SWIPERX_QUOTE_FROM" />
+    </SuccessCase>
+
+    <SuccessCase title="CASE 3. Momentum">
+      <TextImage
+        :title="MOMENTUM_FIRST_TITLE"
+        :text="MOMENTUM_FIRST_TEXT"
+        reversed
+        primary
+      >
+        <template #image>
+          <img :src="`/images/cases/momentum/aide-chemist.png`" />
+        </template>
+      </TextImage>
+
+      <TextImage :title="MOMENTUM_SECOND_TITLE" :text="MOMENTUM_SECOND_TEXT">
+        <template #image>
+          <div class="">
+            <img :src="`/images/cases/momentum/aide_phones.png`" />
+          </div>
+        </template>
+      </TextImage>
+      <div>
+        <Quote :text="MOMENTUM_QUOTE_TEXT" :from="MOMENTUM_QUOTE_FROM" />
+        <ShortDescriptionList :items="MOMENTUM_ITEMS" />
+      </div>
     </SuccessCase>
   </div>
 </template>
@@ -85,6 +116,13 @@ import {
   M2M_QUOTE_TEXT,
   M2M_QUOTE_FROM,
   M2M_ITEMS,
+  MOMENTUM_ITEMS,
+  MOMENTUM_FIRST_TITLE,
+  MOMENTUM_FIRST_TEXT,
+  MOMENTUM_SECOND_TITLE,
+  MOMENTUM_SECOND_TEXT,
+  MOMENTUM_QUOTE_TEXT,
+  MOMENTUM_QUOTE_FROM,
 } from "./constants";
 
 import "./cases.scss";

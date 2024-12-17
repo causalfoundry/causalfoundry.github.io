@@ -1,7 +1,7 @@
 <template>
   <div class="text-image">
     <div class="body" :class="{ reversed: reversed }">
-      <div class="body__title">
+      <div class="body__title" :class="{ primary: primary }">
         {{ title }}
       </div>
       <div class="body__text">
@@ -27,6 +27,11 @@ const props = defineProps({
     required: true,
   },
   reversed: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+  primary: {
     type: Boolean,
     required: false,
     default: false,
