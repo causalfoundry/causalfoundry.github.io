@@ -1,0 +1,103 @@
+/****************************/
+/*            M2M           */
+/****************************/
+export const M2M_QUOTE_TEXT = `AI has transformed how we work, 
+  allowing us to deliver real-time monitoring, 
+  predictive insights for health workers, 
+  and personalized patient care, 
+  driving better outcomes and truly 
+  enhancing the experience for everyone we serve" `;
+
+export const M2M_QUOTE_FROM = `
+Dr. Kathrin Schmitz – Chief Programmes & Impact Officer
+`;
+
+export const M2M_FIRST_TITLE = "Transforming mothers’ lives";
+export const M2M_FIRST_TEXT = `mothers2mothers (m2m) provides health care 
+to families who needmothers2mothers (m2m) provides health care to families
+ who need it most, delivered by women who know them best, to build healthy, 
+ thriving communities across Africa. m2m employs and trains women living 
+ with HIV as community health workers (CHWs), transforming them into
+  champions who deliver integrated primary health care to their 
+  communities, including HIV prevention and treatment services.\n\n
+
+  Causal Foundry has developed an AI-native application designed to
+   revolutionize the daily work of m2m’s health workers. 
+   AI-driven personalized insights and real-time guidance ensure 
+   health workers can make informed decisions, respond proactively 
+   to health needs, and deliver personalized support, fostering healthier communities.`;
+
+export const M2M_SECOND_TITLE =
+  "Health care for families who need it most, delivered by women who know them best";
+
+export const M2M_SECOND_TEXT = `
+ The Causal Foundry platform organizes clinical 
+ and behavioral logs into AI-ready data, streamlining operations
+ for health workers and empowering their apps
+ with actionable insights for improved care delivery
+ `;
+
+export const M2M_ITEMS = [
+  {
+    title: "Improve Patient Prioritization",
+    text: "Equip CHWs to assess & prioritize high-risk patients, reducing triage time & increasing accuracy",
+  },
+  {
+    title: "Boost Knowledge & Confidence",
+    text: "Enhance CHWs' skills through improved healthcare guidance and personalized assistance",
+  },
+  {
+    title: "Improve Patient Health Outcomes",
+    text: "Use personalized treatment plans to enhance adherence and boost treatment success",
+  },
+  {
+    title: "Scale Digital Tool Adoption",
+    text: "Drive adoption among CHWs, ensuring successful rollout and consistent use of the digital tool​",
+  },
+];
+
+/****************************/
+/*          SWIPERX         */
+/****************************/
+export const SWIPERX_QUOTE_TEXT = `
+We are excited to innovate with Causal Foundry, 
+using AI to improve medicine quality, availability, 
+and affordability across Southeast Asia 
+making a positive impact on the lives of millions” `;
+
+export const SWIPERX_QUOTE_FROM = `
+Farouk Meralli, Founder & CEO at SwipeRx
+`;
+
+export const SWIPERX_FIRST_TITLE = `Next level pharmacy supply chains`;
+
+export const SWIPERX_FIRST_TEXT = `
+SwipeRx is leading digital transformation 
+with solutions for pharmacy supply in Indonesia.
+Together we leverage their digital health tools
+to build pharmacists’ capacity and improve 
+pharmaceutical supply chains. Using their
+order data, Causal Foundry analyzes demand
+across pharmacies, adapting order
+messaging and in-app content to
+influence pharmacists’ ordering behavior and
+prevent stockouts.`;
+
+export const SWIPERX_SECOND_TITLE = "Predicting Engagement & Demand";
+
+export const SWIPERX_SECOND_TEXT = `
+Adopting predictive modelling through forecasting 
+and engagement methods helps us to understand the 
+individualized behaviours of SwipeRx pharmacies in
+Indonesia, both retrospectively and prospectively.\n\n
+The platform is designed to easily deploy adaptive 
+interventions for mobile health solutions. 
+Adaptive interventions imply tailoring to each user
+and their specific needs and context at a particular 
+moment. The interventions are directed at nudging user 
+behavior towards practices that will enhance their 
+performance and result in better health outcomes 
+for their communities. This is tantamount to promoting 
+the right level of meaningful engagement with the 
+different features of the app.
+`;

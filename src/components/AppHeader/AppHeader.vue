@@ -9,6 +9,11 @@
           Products
         </div></router-link
       >
+      <router-link to="/cases"
+        ><div :class="`header__item ${active === 'cases' ? 'active' : ''}`">
+          Cases
+        </div></router-link
+      >
       <router-link to="/research"
         ><div :class="`header__item ${active === 'research' ? 'active' : ''}`">
           Research
@@ -41,6 +46,7 @@ const props = defineProps<{
     | "careers"
     | "research"
     | "products"
+    | "cases"
     | "privacy-policy"
     | "about"
     | "cookie-policy";

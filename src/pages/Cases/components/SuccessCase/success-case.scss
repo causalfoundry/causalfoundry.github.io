@@ -1,0 +1,12 @@
+.success-case {
+  padding: 0 140px 0 140px;
+
+  @include respond("mobile") {
+    padding: 0 5px 0 5px;
+  }
+
+  & > header {
+    border-bottom: 1px solid white;
+    padding-bottom: 16px;
+  }
+}

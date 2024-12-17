@@ -1,0 +1,34 @@
+<template>
+  <div class="short-description-list">
+    <div
+      v-for="(item, index) in items"
+      :key="index"
+      class="short-description-list__item"
+    >
+      <div class="short-description-list__item__title">
+        {{ item.title }}
+      </div>
+      <div class="short-description-list__item__text">
+        {{ item.text }}
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import "./short-description-list.scss";
+import { onMounted } from "vue";
+
+interface Item {
+  title: string;
+  text: string;
+}
+
+const props = defineProps<{
+  items: Item[];
+}>();
+
+onMounted(() => {
+  console.log("Items recibidos:", props.items);
+});
+</script>
