@@ -1,6 +1,5 @@
 <template>
   <div class="short-description-list">
-    {{ title }}
     <div class="short-description-list__container">
       <div
         v-for="(item, index) in items"

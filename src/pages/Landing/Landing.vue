@@ -158,19 +158,19 @@ import "./Landing.scss";
 const summaries = [
   {
     title: "Predictions",
-    text: "Predict users' behaviors and take action beforehand",
+    text: "Predict patient behaviors to influence outcomes",
   },
   {
     title: "Recommendations",
-    text: "Increase sales with personalized, just-in-time recommendations tailored to individual needs",
+    text: "Drive patients and providers to the right content",
   },
   {
     title: "Adaptive interventions",
-    text: "Contextual bandit-based interventions that enhance engagement and insights for continuous improvement",
+    text: "Increase treatment adherence with personalized, just-in-time nudges",
   },
   {
     title: "Resource allocation",
-    text: "Optimize visits & calls to reach the right patients with restless bandits to ensure no one is left behind",
+    text: "Optimize visits & calls to reach the right patients s one is left behind",
   },
 ];
 
