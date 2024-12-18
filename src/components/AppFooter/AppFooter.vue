@@ -62,7 +62,7 @@
       <a class="footer__email" :href="`mailto:${EMAIL}`">{{ EMAIL }}</a>
     </div>
 
-    <p class="footer__copyright__mobile">© 2024 CausalFoundry, Inc.</p>
+    <p class="footer__copyright__mobile">© 2024 CausalFoundry</p>
   </footer>
 </template>
 
