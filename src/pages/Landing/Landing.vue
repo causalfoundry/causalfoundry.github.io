@@ -17,19 +17,18 @@
         <div class="jumbotron landing" :id="Section.Landing">
           <div class="title">
             <AppTitle>Personalized </AppTitle>
-            <p>
-              interventions to revolutionize
-              <br /><DynamicText
-                :values="[
-                  'healthcare',
-                  'global health',
-                  'insurance',
-                  'e-commerce',
-                  'education',
-                  'videogames',
-                ]"
-              />
-            </p>
+
+            interventions to revolutionize
+            <DynamicText
+              :values="[
+                'healthcare',
+                'global health',
+                'insurance',
+                'e-commerce',
+                'education',
+                'videogames',
+              ]"
+            />
           </div>
 
           <div class="description">
@@ -38,25 +37,18 @@
           <div class="circle top">
             <img src="../../assets/pattern-circle.png" alt="" />
           </div>
+
+          <div class="dashboard-view">
+            <img
+              class="dashboard"
+              :src="`/images/landing/dashboard.png`"
+              alt=""
+            />
+          </div>
         </div>
       </IntersectionObserver>
 
-      <img class="dashboard" :src="`/images/landing/dashboard.png`" alt="" />
-
-      <div class="landing-short-summary">
-        <div
-          v-for="(landing_item, index) in summaries"
-          :key="index"
-          class="landing-short-summary-item"
-        >
-          <div class="landing-short-summary-item__title">
-            {{ landing_item.title }}
-          </div>
-          <div class="landing-short-summary-item__text">
-            {{ landing_item.text }}
-          </div>
-        </div>
-      </div>
+      <ShortDescriptionList :items="summaries" />
 
       <IntersectionObserver
         @intersect="handleIntersect(Section.Problem, $event)"
@@ -141,6 +133,7 @@ import AppFooter from "@/components/AppFooter";
 import News from "@/components/News";
 import FundedBy from "@/components/FundedBy";
 import DynamicText from "@/components/DynamicText";
+import ShortDescriptionList from "@/components/ShortDescriptionList";
 import IntersectionObserver from "@/components/IntersectionObserver";
 
 import { Section } from "@/typings/section";
