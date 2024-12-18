@@ -27,21 +27,10 @@
     position: absolute;
     transform: rotate(128.4deg);
     left: 60vw;
-    top: 0;
+    top: 250px;
 
     img {
       max-width: 1100px;
-    }
-
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(218deg, #000 15.86%, rgba(0, 0, 0, 0) 75.4%);
     }
 
     @include respond("mobile") {
@@ -104,9 +93,11 @@
     position: relative;
     padding: 240px 121px 250px 121px;
 
+    background-image: url("/images/research/top.png");
     display: flex;
     flex-direction: column;
     gap: 32px;
+    z-index: 1000000;
 
     @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
@@ -212,7 +203,7 @@
     }
 
     .paragraph {
-      font-family: 'NotoSansLight';
+      font-family: "NotoSansLight";
       font-size: 24px;
       font-weight: 300;
       line-height: 36px;
@@ -230,7 +221,6 @@
       @include respond("mobile") {
         font-size: 20px;
       }
-
 
       &.big {
         font-family: "NeueMachinaRegular";

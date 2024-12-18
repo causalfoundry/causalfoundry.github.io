@@ -1,19 +1,31 @@
 <template>
-  <div class="section"></div>
+  <div :class="['section', className]">
+    <h1>{{ title }}</h1>
+    <p class="description">{{ description }}</p>
+    <div :class="['card-content']">
+      <slot></slot>
+    </div>
+  </div>
 </template>
 
-<script setup lang="ts">
-import { defineProps } from "vue";
+<script>
+import "./section.scss";
 
-import "./Section.scss";
-
-const props = defineProps<{
-  title: string;
-  description: string;
-  item: {
-    imageUrl: string;
-    title: string;
-    description: string;
-  }[];
-}>();
+export default {
+  name: "Section",
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    className: {
+      type: String,
+      required: true,
+    },
+  },
+};
 </script>

@@ -1,0 +1,49 @@
+.quote {
+  background-color: #fed64a;
+
+  padding: 72px 200px 72px 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+  &__text {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    max-width: 1000px;
+
+    color: #000;
+    text-align: center;
+    /* Mobile/H4 20 - Semibold */
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+
+    .quote-symbol {
+      color: #010202;
+      font-family: Georgia, serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 140px;
+      line-height: 20px;
+      margin-top: 15px;
+    }
+  }
+
+  &__from {
+    color: var(--Colors-Gray-Gray-600, #4b5563);
+    /* Mobile/H4 20 - Semibold */
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @include respond("mobile") {
+    padding: 72px 0 72px 0px;
+  }
+}

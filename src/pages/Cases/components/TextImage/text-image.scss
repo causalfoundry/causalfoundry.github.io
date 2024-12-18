@@ -1,0 +1,47 @@
+.text-image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 60px;
+  padding: 30px 0 30px 0;
+
+  & > .body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &.reversed {
+      order: 1;
+    }
+
+    @include respond("mobile") {
+      &.reversed {
+        order: unset;
+      }
+    }
+
+    .body__title {
+      color: var(--White, var(--White, #fff));
+      /* Desktop/H2 44 - Reg */
+      font-family: "NeueMachinaMedium";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 52.8px */
+      letter-spacing: 1.32px;
+
+      &.primary {
+        font-size: 44px;
+      }
+    }
+
+    .body__text {
+      color: #9ca3af;
+      /* Desktop/Body 16 - Reg */
+      font-family: "Noto Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+  }
+}

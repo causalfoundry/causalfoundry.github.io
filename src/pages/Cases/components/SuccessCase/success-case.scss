@@ -1,0 +1,25 @@
+.success-case {
+  margin-top: 100px;
+  max-width: 1200px;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+
+  header {
+    width: 100%;
+    font-size: 24pt;
+  }
+
+  @include respond("mobile") {
+    padding: 0 5px 0 5px;
+    max-width: unset;
+  }
+
+  & > header {
+    border-bottom: 1px solid white;
+    padding-bottom: 16px;
+  }
+}

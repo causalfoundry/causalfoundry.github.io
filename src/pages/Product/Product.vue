@@ -20,36 +20,100 @@
         </div>
 
         <div class="description">
-          Seamlessly integrate your digital tool to the Causal Foundry platform
-          and unlock the key to personalization
+          {{ PRODUCT_DESCRIPTION }}
         </div>
         <div class="circle top">
           <img src="../../assets/pattern-circle.png" alt="" />
         </div>
       </div>
 
-      <div class="features">
+      <div class="product-image-header">
+        <!-- <img :src="`/images/products/header.png`" alt="" /> -->
+      </div>
+
+      <Section title="The all-in-one solution">
+        <div class="product-card-matrix">
+          <ProductCard
+            title="Action-oriented monitoring"
+            description="Easily visualize performance & inform decision-making"
+            shift="760"
+            :style="{ left: '-200px' }"
+          >
+            <img
+              :src="`/images/products/all-in-one/action-oriented-monitoring.png`"
+              alt=""
+              class="picture-action-oriented"
+            />
+          </ProductCard>
+
+          <ProductCard
+            title="Easy Integration"
+            description="We seamlessly connect to your existing services"
+            :style="{ left: '-200px' }"
+          >
+            <img
+              :style="{ 'padding-left': '0px' }"
+              :src="`/images/products/all-in-one/easy-integration.png`"
+              alt=""
+              class="picture-easy-integration"
+            />
+          </ProductCard>
+
+          <ProductCard
+            title="Personalized interventions at scale"
+            description="Quickly put into production your ideas and reach your customers"
+            shift="360"
+            :style="{ right: '-200px' }"
+          >
+            <img
+              :style="{ 'padding-left': '0px' }"
+              :src="`/images/products/all-in-one/notifications.png`"
+              alt=""
+              class="picture-notifications"
+            />
+          </ProductCard>
+
+          <ProductCard
+            title="Quick, accurate answers powered by LLMs"
+            description="Get patient-specific and reliable insights to enhance healthcare delivery"
+            :style="{ right: '-200px' }"
+          >
+            <img
+              :style="{ 'padding-left': '0px' }"
+              :src="`/images/products/all-in-one/llm.png`"
+              alt=""
+              class="picture-llm"
+            />
+          </ProductCard>
+        </div>
+      </Section>
+
+      <Section
+        title="The AI platform in a nutshell"
+        description=""
+        className="section"
+      >
         <div class="desktop-body">
-          <div class="images">
-            <div class="image">
+          <div class="features">
+            <div class="images">
               <img
                 :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
                 alt=""
               />
             </div>
-          </div>
 
-          <div class="list">
-            <div
-              v-for="(item, index) in state.features"
-              :key="index"
-              :class="[`item`, { active: index === activeFeatureIndex }]"
-            >
-              <div class="title" @click="handleItemClick(index)">
-                {{ item.title }}
-              </div>
-              <div class="description" @click="handleItemClick(index)">
-                {{ item.description }}
+            <div class="list">
+              <div
+                v-for="(item, index) in state.features"
+                :key="index"
+                :class="[`item`, { active: index === activeFeatureIndex }]"
+              >
+                <div class="title" @click="handleItemClick(index)">
+                  {{ item.title }}
+                </div>
+                <div class="description" @click="handleItemClick(index)">
+                  {{ item.description }}
+                </div>
               </div>
             </div>
           </div>
@@ -82,12 +146,15 @@
             </Carousel>
           </div>
         </div>
-      </div>
+      </Section>
 
-      <div v-for="section of sections" class="section">
-        <div class="title">{{ section.title }}</div>
-        <div class="description">{{ section.description }}</div>
-
+      <Section
+        v-for="(section, index) of sections"
+        :key="index"
+        :title="section.title"
+        :description="section.description"
+        className="section"
+      >
         <div class="desktop-body">
           <div class="images">
             <Carousel :items-to-show="1">
@@ -147,51 +214,12 @@
             </Carousel>
           </div>
         </div>
-      </div>
+      </Section>
 
-      <div v-if="false" class="testimonials">
-        <div class="title">Testimonials</div>
+      <ProductFooter />
+      <GetInTouch />
 
-        <div class="comments">
-          <div class="comment">
-            <div class="body">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              con Duis aute irure dolor in reprehenderit in.”
-            </div>
-
-            <div class="user">
-              <div class="avatar">
-                <img src="" alt="" />
-              </div>
-              <div class="info">
-                <div class="name">Client Name</div>
-                <div class="role">Role</div>
-              </div>
-            </div>
-          </div>
-          <div class="comment">
-            <div class="body">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              con Duis aute irure dolor in reprehenderit in.”
-            </div>
-
-            <div class="user">
-              <div class="avatar">
-                <img src="" alt="" />
-              </div>
-              <div class="info">
-                <div class="name">Client Name</div>
-                <div class="role">Role</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <!--
       <div class="demo">
         <div class="card">
           <div class="title">Request a Demo</div>
@@ -212,7 +240,7 @@
           </form>
         </div>
       </div>
-
+-->
       <div class="hex">
         <img src="../../assets/pattern-hex.png" alt="" />
       </div>
@@ -237,16 +265,22 @@
 
 <script setup lang="ts">
 import { Carousel, Pagination, Slide } from "vue3-carousel";
-
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 import AppTitle from "@/components/AppTitle";
+import GetInTouch from "@/components/GetInTouch";
 
 import { features, sections } from "@/data/products";
 
 import { onMounted, onUnmounted, reactive, ref } from "vue";
 import emailjs from "@emailjs/browser";
+
+import Section from "./components/Section/Section.vue";
+import ProductCard from "./components/ProductCard";
+import ProductFooter from "./components/ProductFooter";
+
+import { PRODUCT_DESCRIPTION } from "./constants";
 
 import "./Product.scss";
 
