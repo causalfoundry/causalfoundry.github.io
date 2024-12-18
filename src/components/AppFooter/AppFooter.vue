@@ -18,7 +18,7 @@
           ><div class="footer__menu__item">Research</div></router-link
         >
         <a target="_blank" href="https://docs.causalfoundry.ai/"
-          ><div class="footer__menu__item">Docs</div></a
+          ><div class="footer__menu__item">Doc</div></a
         >
       </div>
       <div class="footer__menu__row">
@@ -62,7 +62,7 @@
       <a class="footer__email" :href="`mailto:${EMAIL}`">{{ EMAIL }}</a>
     </div>
 
-    <p class="footer__copyright__mobile">© 2024 CausalFoundry</p>
+    <p class="footer__copyright__mobile">© 2024 CausalFoundry, Inc.</p>
   </footer>
 </template>
 
