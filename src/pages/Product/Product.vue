@@ -259,6 +259,9 @@
         </div>
       </div>
 
+      <GetInTouch />
+
+      <!--
       <div class="demo">
         <div class="card">
           <div class="title">Request a Demo</div>
@@ -279,7 +282,7 @@
           </form>
         </div>
       </div>
-
+-->
       <div class="hex">
         <img src="../../assets/pattern-hex.png" alt="" />
       </div>
@@ -308,6 +311,7 @@ import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 import AppTitle from "@/components/AppTitle";
+import GetInTouch from "@/components/GetInTouch";
 
 import { features, sections } from "@/data/products";
 
