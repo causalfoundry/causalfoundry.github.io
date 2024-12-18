@@ -216,49 +216,7 @@
         </div>
       </Section>
 
-      <div v-if="false" class="testimonials">
-        <div class="title">Testimonials</div>
-
-        <div class="comments">
-          <div class="comment">
-            <div class="body">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              con Duis aute irure dolor in reprehenderit in.”
-            </div>
-
-            <div class="user">
-              <div class="avatar">
-                <img src="" alt="" />
-              </div>
-              <div class="info">
-                <div class="name">Client Name</div>
-                <div class="role">Role</div>
-              </div>
-            </div>
-          </div>
-          <div class="comment">
-            <div class="body">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              con Duis aute irure dolor in reprehenderit in.”
-            </div>
-
-            <div class="user">
-              <div class="avatar">
-                <img src="" alt="" />
-              </div>
-              <div class="info">
-                <div class="name">Client Name</div>
-                <div class="role">Role</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <ProductFooter />
       <GetInTouch />
 
       <!--
@@ -320,6 +278,7 @@ import emailjs from "@emailjs/browser";
 
 import Section from "./components/Section/Section.vue";
 import ProductCard from "./components/ProductCard";
+import ProductFooter from "./components/ProductFooter";
 
 import { PRODUCT_DESCRIPTION } from "./constants";
 
