@@ -114,6 +114,8 @@
             highlighted
           />
         </div>
+
+        <GetInTouch />
       </IntersectionObserver>
 
       <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">
@@ -157,6 +159,7 @@ import DynamicText from "@/components/DynamicText";
 import ShortDescriptionList from "@/components/ShortDescriptionList";
 import BreakableText from "@/components/BreakableText";
 import IntersectionObserver from "@/components/IntersectionObserver";
+import GetInTouch from "@/components/GetInTouch";
 
 import { Section } from "@/typings/section";
 
