@@ -4,12 +4,12 @@ export const LANDING_DESCRIPTION = `
 `;
 
 export const MISSION = `
-    We believe in personalized clinical and behavioral interventions
-    adapted to each individual over generalizable interventions. We
-    build AI products to deliver interventions adapted to the
-    individual’s genes, environment, and habits to ensure each person
-    lives their healthiest possible life. We are committed to making AI
-    technologies available to everyone`;
+We believe in tailored solutions over one-size-fits-all approaches. 
+Our AI products deliver personalized strategies adapted to individual
+preferences, environments, and behaviors, empowering organizations
+to achieve exceptional outcomes. Committed to democratizing AI and
+reinforcement learning, we make transformative technology accessible
+to everyone, driving innovation and delivering personalized success at scale`;
 
 export const PRECISION_NUDGING = `
     Human behavior constitutes the primary mode for activating health
@@ -22,8 +22,8 @@ export const GLOBAL_HEALTH = `
     Our machine learning platform and AI products support equitable
     access to healthcare by using mobile health-based adaptive
     interventions explicitly designed to support health workers and
-    patients in resource-poor settings. Increase testing and
-    surveillance, improve treatment adherence and chronic disease
+    patients in resource-poor settings. \n\n
+    Increase testing and surveillance, improve treatment adherence and chronic disease
     management, boost provider skills and quality of care, and prevent
     drug stockouts in pharmacies and clinics`;
 

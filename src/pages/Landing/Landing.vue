@@ -73,17 +73,17 @@
 
           <div class="small-title"><AppTitle>Global health</AppTitle></div>
           <div class="small-paragraph">
-            {{ GLOBAL_HEALTH }}
+            <BreakableText :text="GLOBAL_HEALTH" />
           </div>
 
           <div class="small-title"><AppTitle>Clinical trials</AppTitle></div>
           <div class="small-paragraph">
-            {{ CLINICAL_TRIALS }}
+            <BreakableText :text="CLINICAL_TRIALS" />
           </div>
 
           <div class="small-title"><AppTitle>Mobile health</AppTitle></div>
           <div class="small-paragraph">
-            {{ MOBILE_HEALTH }}
+            <BreakableText :text="MOBILE_HEALTH" />
           </div>
 
           <div class="gradient-blue">
@@ -134,6 +134,7 @@ import News from "@/components/News";
 import FundedBy from "@/components/FundedBy";
 import DynamicText from "@/components/DynamicText";
 import ShortDescriptionList from "@/components/ShortDescriptionList";
+import BreakableText from "@/components/BreakableText";
 import IntersectionObserver from "@/components/IntersectionObserver";
 
 import { Section } from "@/typings/section";
