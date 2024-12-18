@@ -1,5 +1,6 @@
 .get-in-touch {
   padding: 146px;
+  color: white;
 
   font-family: "Noto Sans";
   font-size: 24px;
@@ -8,6 +9,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &.highlighted {
+    background: linear-gradient(
+        93deg,
+        rgba(48, 17, 241, 0.2) -8.68%,
+        rgba(83, 85, 233, 0.2) 11.72%,
+        rgba(116, 150, 225, 0.2) 38.64%,
+        rgba(134, 186, 221, 0.2) 65.85%,
+        rgba(152, 222, 217, 0.2) 87.98%
+      ),
+      #000;
+  }
 
   & > :first-child {
     font-family: "NeueMachinaMedium";
