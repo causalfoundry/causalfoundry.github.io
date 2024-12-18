@@ -99,7 +99,7 @@
         @intersect="handleIntersect(Section.Achievements, $event)"
       >
         <div :id="Section.Achievements">
-          <ShortDescriptionList :items="achievements" />
+          <ShortDescriptionList :items="achievements" highlighted />
         </div>
       </IntersectionObserver>
 

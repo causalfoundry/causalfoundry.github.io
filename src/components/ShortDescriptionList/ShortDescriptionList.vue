@@ -6,7 +6,10 @@
         :key="index"
         class="short-description-list__container__item"
       >
-        <div class="short-description-list__container__item__title">
+        <div
+          class="short-description-list__container__item__title"
+          :class="{ highlighted: highlighted }"
+        >
           {{ item.title }}
         </div>
         <div class="short-description-list__container__item__text">
@@ -30,9 +33,6 @@ const props = defineProps<{
   items: Item[];
   title?: string;
   description?: string;
+  highlighted?: boolean;
 }>();
-
-onMounted(() => {
-  console.log("Items recibidos:", props.description);
-});
 </script>

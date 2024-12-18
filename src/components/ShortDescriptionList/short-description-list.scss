@@ -31,6 +31,23 @@
       &__title {
         font-size: 24px;
         font-family: "NeueMachinaMedium";
+
+        &.highlighted {
+          font-size: 58px;
+          background: var(
+            --gradient,
+            linear-gradient(
+              180deg,
+              #fff625 0%,
+              #cbea7f 34.5%,
+              #a7e2be 66.5%,
+              #98ded9 100%
+            )
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
 
       &__text {
