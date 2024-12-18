@@ -67,26 +67,33 @@
         @intersect="handleIntersect(Section.Applications, $event)"
       >
         <div class="personalized applications" :id="Section.Applications">
-          <div class="title">Precision Nudging</div>
+          <div class="title">Adaptive AI</div>
 
           <div class="paragraph">
-            {{ PRECISION_NUDGING }}
+            {{ ADAPTIVE_AI }}
           </div>
 
-          <div class="small-title"><AppTitle>Global health</AppTitle></div>
+          <div class="small-title"><AppTitle>Healthcare</AppTitle></div>
           <div class="small-paragraph">
-            <BreakableText :text="GLOBAL_HEALTH" />
+            <BreakableText :text="HEALTHCARE" />
           </div>
 
-          <div class="small-title"><AppTitle>Clinical trials</AppTitle></div>
+          <div class="small-title"><AppTitle>E-Commerce</AppTitle></div>
           <div class="small-paragraph">
-            <BreakableText :text="CLINICAL_TRIALS" />
+            <BreakableText :text="ECOMMERCE" />
           </div>
 
-          <div class="small-title"><AppTitle>Mobile health</AppTitle></div>
+          <div class="small-title"><AppTitle>E-Learning</AppTitle></div>
           <div class="small-paragraph">
-            <BreakableText :text="MOBILE_HEALTH" />
+            <BreakableText :text="ELEARNING" />
           </div>
+
+          <div class="small-title"><AppTitle>Videogames</AppTitle></div>
+          <div class="small-paragraph">
+            <BreakableText :text="VIDEOGAMES" />
+          </div>
+
+          <div class="small-title"><AppTitle>...And Many More!</AppTitle></div>
 
           <div class="gradient-blue">
             <img src="../../assets/gradient-left-blue.png" alt="" />
@@ -155,11 +162,11 @@ import { Section } from "@/typings/section";
 
 import { LANDING_DESCRIPTION } from "./constants";
 import { MISSION } from "./constants";
-import { PRECISION_NUDGING } from "./constants";
-import { GLOBAL_HEALTH } from "./constants";
-import { CLINICAL_TRIALS } from "./constants";
-import { MOBILE_HEALTH } from "./constants";
-import { PRECISION_MEDICINE } from "./constants";
+import { ADAPTIVE_AI } from "./constants";
+import { HEALTHCARE } from "./constants";
+import { ECOMMERCE } from "./constants";
+import { ELEARNING } from "./constants";
+import { VIDEOGAMES } from "./constants";
 
 import "./Landing.scss";
 

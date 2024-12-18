@@ -11,39 +11,38 @@ to achieve exceptional outcomes. Committed to democratizing AI and
 reinforcement learning, we make transformative technology accessible
 to everyone, driving innovation and delivering personalized success at scale`;
 
-export const PRECISION_NUDGING = `
-    Human behavior constitutes the primary mode for activating health
-    improvements, including decisions made by clinicians and their
-    patients. We build software to provide medical care teams and
-    patients with personalized AI support
+export const ADAPTIVE_AI = `
+In the digital era, understanding and supporting user
+behaviors is the key to exceptional outcomes. We build
+software that allows you to deliver personalized AI 
+experiences, empowering users and facilitating data-driven decision-making
 `;
 
-export const GLOBAL_HEALTH = `
-    Our machine learning platform and AI products support equitable
-    access to healthcare by using mobile health-based adaptive
-    interventions explicitly designed to support health workers and
-    patients in resource-poor settings. \n\n
-    Increase testing and surveillance, improve treatment adherence and chronic disease
-    management, boost provider skills and quality of care, and prevent
-    drug stockouts in pharmacies and clinics`;
+export const HEALTHCARE = `
+    Increase the engagement of healthcare professionals 
+    and patients with tailored recommendations and incentives 
+    to support their behaviors and decision-making. 
+    Improve treatment adherence, enhance chronic disease 
+    management, boost provider skills and quality of care, 
+    and prevent drug stockouts in pharmacies and clinics`;
 
-export const CLINICAL_TRIALS = `
-    Our goal is to increase the participation of underrepresented
-    populations in clinical trials with decentralized and adaptive
-    designs. We build AI products that bring the studies closer to
-    real-world situations, and make them safer and more robust. Recruit
-    participants based on the likelihood of completing the study,
-    increase their diversity, and keep them meaningfully engaged with
-    personalized incentives and gamification elements`;
+export const ECOMMERCE = `
+    Boost customer engagement and sales with tailored recommendations
+    and incentives. Drive higher conversion rates, reduce cart abandonment,
+    optimize inventory management, and personalize the shopping experience
+    to increase customer loyalty`;
 
-export const MOBILE_HEALTH = `
-    Our software organizes data from wearables, mobile applications, and
-    other portable devices, turning it into actionable insights through
-    statistical and machine learning. Promote an adequate level of
-    engagement of healthcare professionals and their patients with
-    tailored recommendations and incentives to support their
-    decision-making, condition management, treatment adherence, and
-    capacity building`;
+export const ELEARNING = `
+    Optimize learner engagement and retention with personalized recommendations, 
+    gamification, and adaptive content. Customize learning pathways to meet 
+    individual needs, boosting completion rates and enhancing skill development`;
+
+export const VIDEOGAMES = `
+    Enhance player engagement and retention with personalized recommendations, 
+    incentives, and predictions. Optimize in-game behaviors, drive monetization, 
+    and reduce churn while enhancing gameplay experiences and building long-term 
+    player loyalty
+`;
 
 export const PRECISION_MEDICINE = `
     The ambition of personalized medicine is to design and optimize the
