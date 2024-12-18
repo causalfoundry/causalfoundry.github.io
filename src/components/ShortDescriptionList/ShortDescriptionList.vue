@@ -1,19 +1,28 @@
 <template>
   <div class="short-description-list">
     <div class="short-description-list__container">
-      <div
-        v-for="(item, index) in items"
-        :key="index"
-        class="short-description-list__container__item"
-      >
-        <div
-          class="short-description-list__container__item__title"
-          :class="{ highlighted: highlighted }"
-        >
-          {{ item.title }}
+      <div class="short-description-list__container__title">
+        {{ title }}
+        <div class="short-description-list__container__description">
+          {{ description }}
         </div>
-        <div class="short-description-list__container__item__text">
-          {{ item.text }}
+      </div>
+
+      <div class="short-description-list__container__list">
+        <div
+          v-for="(item, index) in items"
+          :key="index"
+          class="short-description-list__container__list__item"
+        >
+          <div
+            class="short-description-list__container__list__item__title"
+            :class="{ highlighted: highlighted }"
+          >
+            {{ item.title }}
+          </div>
+          <div class="short-description-list__container__list__item__text">
+            {{ item.text }}
+          </div>
         </div>
       </div>
     </div>

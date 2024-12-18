@@ -1,9 +1,4 @@
 .success-case {
-  // padding: 50px 140px 0 50px;
-
-  // margin: 80px 120px 320px 120px;
-  // padding: 0 120px 0 120px;
-
   margin-top: 100px;
   max-width: 1200px;
 
@@ -15,6 +10,7 @@
 
   header {
     width: 100%;
+    font-size: 24pt;
   }
 
   @include respond("mobile") {

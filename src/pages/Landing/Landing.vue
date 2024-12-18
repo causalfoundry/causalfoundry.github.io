@@ -48,7 +48,9 @@
         </div>
       </IntersectionObserver>
 
-      <ShortDescriptionList :items="summaries" />
+      <div class="summaries">
+        <ShortDescriptionList :items="summaries" />
+      </div>
 
       <IntersectionObserver
         @intersect="handleIntersect(Section.Problem, $event)"
@@ -99,7 +101,11 @@
         @intersect="handleIntersect(Section.Achievements, $event)"
       >
         <div :id="Section.Achievements">
-          <ShortDescriptionList :items="achievements" highlighted />
+          <ShortDescriptionList
+            title="Our achievements in 2024"
+            :items="achievements"
+            highlighted
+          />
         </div>
       </IntersectionObserver>
 
@@ -177,7 +183,7 @@ const summaries = [
 ];
 
 const achievements = [
-  { title: "+1M", text: `Revenue generated across all e-commerce partners` },
+  { title: "$ 1M+", text: `Revenue generated across all e-commerce partners` },
   { title: "60K", text: `Personalized nudges sent across all partners` },
   { title: "6-24%", text: `Revenue increase per intervention` },
   { title: "6.4%", text: `Engagement increase with our partner’s app` },

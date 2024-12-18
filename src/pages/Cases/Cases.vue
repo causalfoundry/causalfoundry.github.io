@@ -87,7 +87,15 @@
         </template>
       </TextImage>
 
-      <Quote :text="SWIPERX_QUOTE_TEXT" :from="SWIPERX_QUOTE_FROM" />
+      <div>
+        <Quote :text="SWIPERX_QUOTE_TEXT" :from="SWIPERX_QUOTE_FROM" />
+        <ShortDescriptionList
+          :items="SWIPERX_ITEMS"
+          highlighted
+          title="What we achieved"
+          :description="SWIPERX_ACHIEVEMENTS"
+        />
+      </div>
     </SuccessCase>
 
     <SuccessCase title="CASE 3. Momentum">
@@ -134,6 +142,8 @@ import {
   SWIPERX_FIRST_TEXT,
   SWIPERX_SECOND_TITLE,
   SWIPERX_SECOND_TEXT,
+  SWIPERX_ITEMS,
+  SWIPERX_ACHIEVEMENTS,
   M2M_FIRST_TITLE,
   M2M_FIRST_TEXT,
   M2M_SECOND_TITLE,

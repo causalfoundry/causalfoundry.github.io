@@ -102,6 +102,17 @@ the right level of meaningful engagement with the
 different features of the app.
 `;
 
+export const SWIPERX_ACHIEVEMENTS = `
+Since 2023, we have launched several interventions aimed at supporting 
+SwipeRx’s mission of fostering a connected community of small pharmacies 
+and empowering them in their purchasing decisions. 
+Experimentation has been key to achieving strong impact`;
+
+export const SWIPERX_ITEMS = [
+  { title: "13%", text: "Overall increase in revenue" },
+  { title: "26K", text: "Personalized nudges sent to customers" },
+  { title: "+6.8%", text: "Increase in engagement by nudged customers" },
+];
 /************************************/
 /*              MOMENTUM            */
 /************************************/

@@ -379,4 +379,9 @@
       padding-right: $app-side-padding-mobile;
     }
   }
+
+  .summaries {
+    position: relative;
+    top: -180px;
+  }
 }
