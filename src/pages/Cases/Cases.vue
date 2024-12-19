@@ -122,6 +122,8 @@
         <ShortDescriptionList :items="MOMENTUM_ITEMS" title="Key features" />
       </div>
     </SuccessCase>
+
+    <AppFooter />
   </div>
 </template>
 
@@ -132,6 +134,7 @@ import TextImage from "./components/TextImage";
 import Image from "./components/Image";
 
 import AppHeader from "@/components/AppHeader";
+import AppFooter from "@/components/AppFooter";
 
 import ShortDescriptionList from "@/components/ShortDescriptionList";
 

@@ -20,14 +20,7 @@
 
             interventions to revolutionize
             <DynamicText
-              :values="[
-                'healthcare',
-                'global health',
-                'insurance',
-                'e-commerce',
-                'education',
-                'videogames',
-              ]"
+              :values="['healthcare', 'e-commerce', 'e-learning', 'videogames']"
             />
           </div>
 
@@ -92,8 +85,6 @@
           <div class="small-paragraph">
             <BreakableText :text="VIDEOGAMES" />
           </div>
-
-          <div class="small-title"><AppTitle>...And Many More!</AppTitle></div>
 
           <div class="gradient-blue">
             <img src="../../assets/gradient-left-blue.png" alt="" />
