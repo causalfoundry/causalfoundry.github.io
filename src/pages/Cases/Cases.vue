@@ -130,6 +130,7 @@
       </div>
     </SuccessCase>
 
+    <GetInTouch />
     <AppFooter />
   </div>
 </template>
@@ -147,6 +148,7 @@ import AppMenu from "@/components/AppMenu";
 import AppTitle from "@/components/AppTitle";
 import ShortDescriptionList from "@/components/ShortDescriptionList";
 
+import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
 
 import {
