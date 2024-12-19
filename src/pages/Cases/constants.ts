@@ -13,14 +13,12 @@ Dr. Kathrin Schmitz – Chief Programmes & Impact Officer
 `;
 
 export const M2M_FIRST_TITLE = "Transforming mothers’ lives";
-export const M2M_FIRST_TEXT = `mothers2mothers (m2m) provides health care 
-to families who needmothers2mothers (m2m) provides health care to families
+export const M2M_FIRST_TEXT = `mothers2mothers (m2m) provides health care to families
  who need it most, delivered by women who know them best, to build healthy, 
  thriving communities across Africa. m2m employs and trains women living 
  with HIV as community health workers (CHWs), transforming them into
   champions who deliver integrated primary health care to their 
   communities, including HIV prevention and treatment services.\n\n
-
   Causal Foundry has developed an AI-native application designed to
    revolutionize the daily work of m2m’s health workers. 
    AI-driven personalized insights and real-time guidance ensure 

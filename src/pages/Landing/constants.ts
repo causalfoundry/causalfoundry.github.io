@@ -1,5 +1,5 @@
 export const LANDING_DESCRIPTION = `
-    Deploy and operationalize AI-drive predictions, tailored recommendations, 
+    Deploy and operationalize AI-driven predictions, tailored recommendations, 
     and reinforcement-learning-based adaptive interventions in hours
 `;
 

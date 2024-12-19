@@ -5,7 +5,7 @@
         {{ title }}
       </div>
       <div class="body__text">
-        {{ text }}
+        <BreakableText :text="text" />
       </div>
 
       <slot name="extra-image"></slot>
@@ -16,6 +16,7 @@
 
 <script setup lang="ts">
 import "./text-image.scss";
+import BreakableText from "@/components/BreakableText";
 
 const props = defineProps({
   title: {
