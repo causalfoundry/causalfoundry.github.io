@@ -17,7 +17,6 @@
         <div class="jumbotron landing" :id="Section.Landing">
           <div class="title">
             <AppTitle>Personalized </AppTitle>
-
             interventions to revolutionize
             <DynamicText
               :values="['healthcare', 'e-commerce', 'e-learning', 'videogames']"
@@ -27,6 +26,8 @@
           <div class="description">
             {{ LANDING_DESCRIPTION }}
           </div>
+
+          <Button value="GET IN TOUCH" highlighted />
           <div class="circle top">
             <img src="../../assets/pattern-circle.png" alt="" />
           </div>
@@ -151,6 +152,8 @@ import ShortDescriptionList from "@/components/ShortDescriptionList";
 import BreakableText from "@/components/BreakableText";
 import IntersectionObserver from "@/components/IntersectionObserver";
 import GetInTouch from "@/components/GetInTouch";
+
+import Button from "@/ui-components/button";
 
 import { Section } from "@/typings/section";
 
