@@ -320,6 +320,10 @@
       letter-spacing: 0em;
       text-align: left;
 
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
       @include respond("tablet") {
         font-size: 18px;
         line-height: 28.8px;

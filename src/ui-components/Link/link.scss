@@ -1,0 +1,17 @@
+.cf-link {
+  color: var(--Primary, var(--Primary, #94d5db));
+  /* Button 16-Med */
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  a {
+    text-decoration: none;
+  }
+}

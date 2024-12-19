@@ -70,11 +70,13 @@
           <div class="small-title"><AppTitle>Healthcare</AppTitle></div>
           <div class="small-paragraph">
             <BreakableText :text="HEALTHCARE" />
+            <Link to="/cases" text="Explore" />
           </div>
 
           <div class="small-title"><AppTitle>E-Commerce</AppTitle></div>
           <div class="small-paragraph">
             <BreakableText :text="ECOMMERCE" />
+            <Link to="/cases" text="Explore" />
           </div>
 
           <div class="small-title"><AppTitle>E-Learning</AppTitle></div>
@@ -154,6 +156,7 @@ import IntersectionObserver from "@/components/IntersectionObserver";
 import GetInTouch from "@/components/GetInTouch";
 
 import Button from "@/ui-components/button";
+import Link from "@/ui-components/Link";
 
 import { Section } from "@/typings/section";
 
