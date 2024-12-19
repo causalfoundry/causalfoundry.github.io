@@ -16,6 +16,10 @@
     justify-content: center;
     flex-direction: column;
 
+    @include respond("mobile") {
+      width: 360px;
+    }
+
     .section__header {
       align-self: center;
       justify-self: center;
@@ -79,6 +83,7 @@
   @include respond("mobile") {
     margin: 20px;
     width: unset;
+    width: 360px;
   }
 
   @include respond("tablet") {
