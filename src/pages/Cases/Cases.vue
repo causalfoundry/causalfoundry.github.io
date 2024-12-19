@@ -135,6 +135,7 @@ import Image from "./components/Image";
 
 import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
+import AppMenu from "@/components/AppMenu";
 
 import ShortDescriptionList from "@/components/ShortDescriptionList";
 
