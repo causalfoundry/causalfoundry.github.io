@@ -122,9 +122,32 @@
   .jumbotron {
     position: relative;
     z-index: 1;
-    padding: 336px 121px 320px;
+    padding: 120px 121px 320px;
     display: flex;
     flex-direction: column;
+
+    & > .mobile-image {
+      display: none;
+      width: 100%;
+
+      @include respond("mobile") {
+        display: unset;
+      }
+
+      @include respond("tablet") {
+        display: unset;
+      }
+    }
+
+    & > .desktop-image {
+      @include respond("mobile") {
+        display: none;
+      }
+
+      @include respond("tablet") {
+        display: none;
+      }
+    }
 
     .title {
       margin-bottom: 32px;
@@ -140,6 +163,7 @@
     .description {
       max-width: 691px;
       width: 100%;
+      margin-bottom: 245px;
 
       font-family: "NotoSansLight";
       font-size: 24px;

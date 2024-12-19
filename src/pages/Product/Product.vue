@@ -22,6 +22,10 @@
         <div class="description">
           {{ PRODUCT_DESCRIPTION }}
         </div>
+
+        <img :src="`/images/products/system.png`" class="desktop-image" />
+        <img :src="`/images/products/system-mini.png`" class="mobile-image" />
+
         <div class="circle top">
           <img src="../../assets/pattern-circle.png" alt="" />
         </div>
