@@ -167,19 +167,19 @@ import "./Landing.scss";
 const summaries = [
   {
     title: "Predictions",
-    text: "Predict patient behaviors to influence outcomes",
+    text: "Predict user behaviors and target interventions",
   },
   {
     title: "Recommendations",
-    text: "Drive patients and providers to the right content",
+    text: "Enhance the user experience through personalized content",
   },
   {
     title: "Adaptive interventions",
-    text: "Increase treatment adherence with personalized, just-in-time nudges",
+    text: "Increase user engagement and drive behaviors",
   },
   {
     title: "Resource allocation",
-    text: "Optimize visits & calls to reach the right patients s one is left behind",
+    text: "Optimize incentives & budgeted interventions to maximize their effectiveness",
   },
 ];
 
