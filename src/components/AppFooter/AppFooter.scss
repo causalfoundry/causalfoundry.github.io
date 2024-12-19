@@ -147,6 +147,8 @@
   }
 
   @include respond("mobile") {
+    width: 360px;
+
     &__menu {
       flex-direction: column;
       gap: 16px;
