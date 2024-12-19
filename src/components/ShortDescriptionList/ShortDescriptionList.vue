@@ -1,7 +1,7 @@
 <template>
   <div class="short-description-list">
     <div class="short-description-list__container">
-      <div class="short-description-list__container__title">
+      <div v-if="title" class="short-description-list__container__title">
         {{ title }}
         <div class="short-description-list__container__description">
           {{ description }}
