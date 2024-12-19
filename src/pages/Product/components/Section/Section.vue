@@ -1,7 +1,9 @@
 <template>
-  <div :class="['section', className]">
-    <h1>{{ title }}</h1>
-    <p class="description">{{ description }}</p>
+  <div :class="['section', { unlimited: unlimited }, className]">
+    <div class="section__header">
+      <h1>{{ title }}</h1>
+      <p class="description">{{ description }}</p>
+    </div>
     <div :class="['card-content']">
       <slot></slot>
     </div>
@@ -25,6 +27,10 @@ export default {
     className: {
       type: String,
       required: true,
+    },
+    unlimited: {
+      type: Boolean,
+      required: false,
     },
   },
 };

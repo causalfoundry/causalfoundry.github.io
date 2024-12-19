@@ -1,3 +1,15 @@
+.right-box {
+  border-right: unset;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+}
+
+.left-box {
+  border-left: unset;
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
 .products {
   background-color: #000;
   color: #fff;
@@ -7,7 +19,17 @@
   justify-content: center;
 
   .container {
-    width: 1440px;
+    & > .header {
+      width: 1200px;
+
+      @include respond("mobile") {
+        width: unset;
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .product-image-header {
@@ -48,10 +70,30 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
-    width: 200%;
+    width: 100%;
     position: relative;
-    left: -50%; /* Desplazar hacia la izquierda la mitad de 100vw */
-    // transform: translateX(-25vw); /* Centrar el grid */
+
+    & > :nth-child(1) {
+      @extend .left-box;
+      width: 80%;
+    }
+
+    & > :nth-child(2) {
+      @extend .right-box;
+      width: 120%;
+      left: -20%;
+    }
+
+    & > :nth-child(3) {
+      @extend .left-box;
+      width: 120%;
+    }
+
+    & > :nth-child(4) {
+      @extend .right-box;
+      width: 80%;
+      left: 20%;
+    }
 
     @include respond("mobile") {
       display: flex;
@@ -63,9 +105,12 @@
       right: unset;
 
       & > * {
-        //   width: 150%;
-        //  left: unset !important;
-        // right: unset !important;
+        border-radius: unset;
+        border-left: unset;
+        border-right: unset;
+        width: unset;
+        left: unset;
+        right: unset;
       }
     }
   }

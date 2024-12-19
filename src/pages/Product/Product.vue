@@ -31,13 +31,14 @@
         <!-- <img :src="`/images/products/header.png`" alt="" /> -->
       </div>
 
-      <Section title="The all-in-one solution">
+      <Section
+        title="An End-to-End Solution for AI-Driven Interventions"
+        unlimited
+      >
         <div class="product-card-matrix">
           <ProductCard
             title="Action-oriented monitoring"
             description="Easily visualize performance & inform decision-making"
-            shift="760"
-            :style="{ left: '-200px' }"
           >
             <img
               :src="`/images/products/all-in-one/action-oriented-monitoring.png`"
@@ -49,10 +50,8 @@
           <ProductCard
             title="Easy Integration"
             description="We seamlessly connect to your existing services"
-            :style="{ left: '-200px' }"
           >
             <img
-              :style="{ 'padding-left': '0px' }"
               :src="`/images/products/all-in-one/easy-integration.png`"
               alt=""
               class="picture-easy-integration"
@@ -62,11 +61,8 @@
           <ProductCard
             title="Personalized interventions at scale"
             description="Quickly put into production your ideas and reach your customers"
-            shift="360"
-            :style="{ right: '-200px' }"
           >
             <img
-              :style="{ 'padding-left': '0px' }"
               :src="`/images/products/all-in-one/notifications.png`"
               alt=""
               class="picture-notifications"
@@ -76,10 +72,8 @@
           <ProductCard
             title="Quick, accurate answers powered by LLMs"
             description="Get patient-specific and reliable insights to enhance healthcare delivery"
-            :style="{ right: '-200px' }"
           >
             <img
-              :style="{ 'padding-left': '0px' }"
               :src="`/images/products/all-in-one/llm.png`"
               alt=""
               class="picture-llm"

@@ -1,45 +1,84 @@
 .section {
-  margin: 80px 120px 320px;
-  border-top: 1px solid #fff;
   position: relative;
   z-index: 1;
+  width: 1200px;
+  margin-bottom: 120px;
 
-  & > h1 {
-    font-family: "NeueMachinaMedium";
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 53px;
-    letter-spacing: 0.03em;
-    text-align: left;
+  & > * {
+    width: 100%;
+  }
 
-    color: #fff;
-    margin-top: 30px;
-    margin-bottom: 16px;
+  &.unlimited {
+    margin: unset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-    @include respond("tablet") {
-      font-size: 40px;
+    .section__header {
+      align-self: center;
+      justify-self: center;
+      width: 1200px;
+      display: flex;
+
+      @include respond("tablet") {
+        width: unset;
+      }
     }
 
-    @include respond("mobile") {
-      font-size: 32px;
+    & > h1 {
+      width: 1200px;
+    }
+
+    & > .description {
+      width: 1200px;
     }
   }
 
-  & > .description {
-    font-family: "NotoSansRegular";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
+  &__header {
+    & > h1 {
+      border-top: 1px solid #fff;
+      padding-top: 30px;
 
-    color: #d1d5db;
+      font-family: "NeueMachinaMedium";
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 53px;
+      letter-spacing: 0.03em;
+      text-align: left;
 
-    margin-bottom: 80px;
+      color: #fff;
+      margin-top: 30px;
+      margin-bottom: 16px;
+
+      @include respond("tablet") {
+        font-size: 40px;
+      }
+
+      @include respond("mobile") {
+        font-size: 32px;
+        width: unset;
+      }
+    }
+
+    & > .description {
+      font-family: "NotoSansRegular";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      color: #d1d5db;
+
+      margin-bottom: 80px;
+    }
   }
 
   @include respond("mobile") {
     margin: 20px;
+    width: unset;
   }
 
   @include respond("tablet") {
