@@ -9,6 +9,13 @@
   flex-direction: column;
   align-items: center;
 
+  &__header {
+    height: 800px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+      url("/images/cases/top-hospital.png");
+    background-repeat: no-repeat;
+  }
+
   & > .header {
     width: 1200px;
 

@@ -4,6 +4,13 @@
       <AppMenu />
     </AppHeader>
 
+    <PageHeader :description="PAGE_DESCRIPTION" className="cases__header">
+      <template #title>
+        <AppTitle>Build in Partnership</AppTitle>
+        with Causal Foundry for Healthcare
+      </template>
+    </PageHeader>
+
     <SuccessCase title="CASE 1. mothers2mothers">
       <TextImage :title="M2M_FIRST_TITLE" :text="M2M_FIRST_TEXT" primary>
         <template #image>
@@ -137,7 +144,10 @@ import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
 import AppMenu from "@/components/AppMenu";
 
+import AppTitle from "@/components/AppTitle";
 import ShortDescriptionList from "@/components/ShortDescriptionList";
+
+import PageHeader from "@/components/PageHeader";
 
 import {
   SWIPERX_QUOTE_TEXT,
@@ -162,6 +172,7 @@ import {
   MOMENTUM_SECOND_TEXT,
   MOMENTUM_QUOTE_TEXT,
   MOMENTUM_QUOTE_FROM,
+  PAGE_DESCRIPTION,
 } from "./constants";
 
 import "./cases.scss";

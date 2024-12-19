@@ -173,3 +173,11 @@ with quality healthcare information, helping them navigate their healthcare
 options and ultimately strengthening their engagement with quality 
 providers in their communities.
 `;
+
+export const PAGE_DESCRIPTION = `
+Our clients are transforming healthcare by leveraging advanced AI and
+machine learning to enhance personalization and optimize
+patient-provider interactions. With tailored interventions, real-time
+insights, and LLM-powered assistants, they improve treatment adherence,
+streamline workflows, and address challenges like resource allocation
+and preventive care—ensuring impactful, data-driven healthcare delivery`;
