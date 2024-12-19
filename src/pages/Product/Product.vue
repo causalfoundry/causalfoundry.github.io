@@ -87,7 +87,7 @@
       </Section>
 
       <Section
-        title="The AI platform in a nutshell"
+        title="Our AI platform in a nutshell"
         description=""
         className="section"
       >

@@ -1,5 +1,5 @@
 export const PRODUCT_DESCRIPTION = `
-Seamlessly integrate your digital tool to the Causal Foundry platform and unlock the key to personalization
+Our AI Software Platform brings the power of personalization to your digital tool, unlocking the power of machine learning-driven interventions at scale
 `;
 
 export const featureList = [
