@@ -16,7 +16,7 @@
       <div class="jumbotron">
         <div class="title">
           <AppTitle>Reinforcement Learning<br />and AI</AppTitle>
-          as a Service
+          As A Service
         </div>
 
         <div class="description">
