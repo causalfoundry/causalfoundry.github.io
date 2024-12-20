@@ -63,6 +63,10 @@
 
     bottom: 0px;
     left: 100px;
+
+    @include respond("mobile") {
+      position: relative;
+    }
   }
 
   .product-card-matrix {
