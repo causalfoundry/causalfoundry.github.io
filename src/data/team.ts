@@ -22,7 +22,7 @@ export default [
     {
         imageUrl: "/images/team/enric.png",
         name: "Enric Jané",
-        role: "CSO",
+        role: "Chief Strategy Officer",
         descritpion: `Dr. Enric Jané has over 15 years of experience in global health. In his previous role at the Gates Foundation, Dr. Jané worked on improving primary health care, expanding community health worker systems, utilizing information technologies, and increasing funding for child survival strategies. With a diverse background, including roles in Mozambique and Spain, Dr. Jané holds an MD, BSc in Physics, PhD from the University of Barcelona, and an MSc in Biomedical Engineering from Columbia University.`,
         links: {
             linkedin: "https://www.linkedin.com/in/enricjane/",
@@ -31,7 +31,7 @@ export default [
     {
         imageUrl: "/images/team/sumiko.png",
         name: "Sumiko Tanaka",
-        role: "CSO",
+        role: "Chief Operations Officer",
         descritpion: `Sumiko manages partnerships and operations to support the mission of advancing AI for all. Her career in international relations began during her undergraduate studies at the University of Washington, leading to a UN internship in New York and a dual master’s degree in diplomacy and strategic negotiations in Paris. She has supported international organizations across Africa, Asia, and Latin America and spent eight years in leadership roles at a company serving global health-focused nonprofits.`,
         links: {
             linkedin: "https://www.linkedin.com/in/sumiko-tanaka-pusch/",
