@@ -719,7 +719,8 @@
     &.bottom {
       transform: rotate(-47deg);
       top: unset;
-      bottom: 700px;
+      bottom: 2500px; // Just testing
+      opacity: 0.3;
 
       @include respond("mobile") {
         // display: none;
