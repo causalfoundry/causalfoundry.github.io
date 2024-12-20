@@ -33,6 +33,7 @@ import { EMAIL } from "@/data";
 const MENU_ITEMS = [
   { title: "Home", href: `/` },
   { title: "Products", href: "/products" },
+  { title: "Cases", href: "/cases" },
   { title: "Research", href: "/research" },
   { title: "Docs", href: "https://docs.causalfoundry.ai/", target: "_blank" },
   { title: "About", href: "/about" },
