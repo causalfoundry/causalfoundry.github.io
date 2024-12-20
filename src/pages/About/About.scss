@@ -341,4 +341,60 @@
       padding-right: $app-side-padding-mobile;
     }
   }
+
+  .about-section {
+    margin: 20px 140px 0 140px;
+    width: unset;
+  }
+
+  .values {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+
+    .value {
+      background-color: green;
+      flex: 1;
+      padding: 10px;
+      opacity: 0.8;
+      background: url("/images/about/programmer.png");
+
+      &__title {
+        font-family: "NeueMachinaMedium";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 16px;
+      }
+
+      &__subtitle {
+        font-family: "Noto Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      &:nth-child(1) {
+        height: 400px;
+        background-position: 500px 0;
+      }
+
+      &:nth-child(2) {
+        height: 450px;
+      }
+
+      &:nth-child(3) {
+        height: 500px;
+      }
+
+      &:nth-child(4) {
+        height: 550px;
+      }
+    }
+  }
 }
