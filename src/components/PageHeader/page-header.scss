@@ -6,6 +6,12 @@
 
   .mid-container {
     width: 700px;
+
+    @include respond("mobile") {
+      //  width: 360px;
+      width: 100%;
+      padding: 10px;
+    }
   }
 
   &__title {
@@ -17,6 +23,10 @@
     letter-spacing: 0.01em;
     text-align: left;
     width: 1200px;
+
+    @include respond("mobile") {
+      width: unset;
+    }
   }
 
   &__description {
@@ -27,5 +37,10 @@
     letter-spacing: 0em;
     text-align: left;
     width: 1200px;
+
+    @include respond("mobile") {
+      width: unset;
+      line-height: 30px;
+    }
   }
 }

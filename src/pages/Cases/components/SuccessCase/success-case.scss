@@ -14,8 +14,10 @@
   }
 
   @include respond("mobile") {
-    padding: 0 5px 0 5px;
+    margin: 0 auto;
     max-width: unset;
+    box-sizing: border-box;
+    padding: 0 5px 0 5px;
   }
 
   & > header {
