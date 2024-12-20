@@ -27,7 +27,7 @@
             {{ LANDING_DESCRIPTION }}
           </div>
 
-          <Button value="GET IN TOUCH" highlighted />
+          <Button value="GET IN TOUCH" highlighted @click="handleRedirect" />
           <div class="circle top">
             <img src="../../assets/pattern-circle.png" alt="" />
           </div>
@@ -142,6 +142,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
 import AppMenu from "@/components/AppMenu";
 import AppTitle from "@/components/AppTitle";
@@ -169,6 +170,8 @@ import { ELEARNING } from "./constants";
 import { VIDEOGAMES } from "./constants";
 
 import "./Landing.scss";
+
+const router = useRouter();
 
 const summaries = [
   {
@@ -204,6 +207,10 @@ const isSectionVisible = ref({
   [Section.News]: false,
   [Section.FundedBy]: false,
 });
+
+function handleRedirect(event: MouseEvent) {
+  router.push("/contact");
+}
 
 const handleIntersect = (
   section: Section,

@@ -9,6 +9,7 @@ import Cases from "./pages/Cases/Cases.vue";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy.vue";
 import About from "./pages/About/About.vue";
 import CookiePolicy from "./pages/CookiePolicy/CookiePolicy.vue";
+import GetInTouchPage from "./pages/GetInTouch/GetInTouchPage.vue";
 
 import CookiePageWrapper from "./components/CookiePageWrapper/CookiePageWrapper.vue";
 
@@ -42,6 +43,7 @@ const routes = [
       { path: "/privacy", component: PrivacyPolicy },
       { path: "/about", component: About },
       { path: "/cookies", component: CookiePolicy },
+      { path: "/contact", component: GetInTouchPage },
     ],
   },
   // ...jobs.map((job) => ({

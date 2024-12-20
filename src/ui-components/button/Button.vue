@@ -1,5 +1,5 @@
 <template>
-  <button class="cf-button" @click="handleClick" :value="value">
+  <button class="cf-button" @click="handleClick" :value="value" type="submit">
     <slot>{{ value }}</slot>
   </button>
 </template>
@@ -16,6 +16,7 @@ const props = defineProps<{
 const emit = defineEmits(["click"]);
 
 const handleClick = () => {
+  console.log("[aec] [button] click...");
   emit("click");
   props.onClick?.();
 };

@@ -5,8 +5,14 @@
 @import "variables";
 @import "mixins";
 
+html,
+body {
+  height: 100%;
+}
+
 #app {
   position: relative;
+  height: 100%;
 }
 
 .app {
@@ -20,11 +26,11 @@
     right: -$app-side-padding-desktop;
     bottom: 0;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       right: -$app-side-padding-tablet;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       right: -$app-side-padding-mobile;
     }
   }
@@ -37,11 +43,11 @@
     top: 0;
     left: -$app-side-padding-desktop;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       left: -$app-side-padding-tablet;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       left: -$app-side-padding-mobile;
     }
   }
@@ -54,11 +60,11 @@
     right: -35vw;
     transform: rotate(-5deg);
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       padding: 0;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       padding: 0;
       bottom: 620px;
     }
@@ -67,14 +73,13 @@
       width: 100%;
     }
   }
-
 }
 
 .header {
   &__slot {
     display: none;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       display: block;
     }
   }

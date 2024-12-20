@@ -1,0 +1,110 @@
+.get-in-touch-page {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-family: "NeueMachinaMedium";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    color: var(--Text-Primary, #fff);
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 80px;
+  }
+
+  & > .header {
+    width: 1200px;
+    @include respond("mobile") {
+      width: unset;
+    }
+  }
+
+  & > footer {
+    max-width: 1200px;
+    margin-top: 200px;
+  }
+
+  & > :nth-child(2) {
+    flex: 1 1 auto;
+  }
+
+  .form-container {
+    width: 360px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 8px;
+
+    &__elements {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+
+      button {
+        width: 167px;
+      }
+    }
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    color: var(--colors-gray-dark-mode-100, #f3f4f6);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: white;
+
+    border-radius: 6px;
+    border: 1px solid var(--Primary, #94d5db);
+    background: var(--Suface-primary, #12121b);
+    box-shadow: 0px 0px 6px 0px rgba(148, 213, 219, 0.25);
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+}

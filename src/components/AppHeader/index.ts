@@ -1,4 +1,4 @@
-import AppHeader from './AppHeader.vue'
-import './AppHeader.scss'
+import AppHeader from "./AppHeader.vue";
+import "./AppHeader.scss";
 
-export default AppHeader
+export default AppHeader;
