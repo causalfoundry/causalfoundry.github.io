@@ -282,7 +282,7 @@
   }
 
   .spacer {
-    height: 200px;
+    height: 400px;
     width: 100%;
     @include respond("mobile") {
       height: 0;

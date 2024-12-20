@@ -1,17 +1,6 @@
 <template>
   <div class="research">
     <div class="container">
-      <!-- <img
-        src="../../assets/gradient-top-yellow.png"
-        class="app__gradient-top-yellow"
-      />
-
-      <img
-        src="../../assets/gradient-top-blue.png"
-        class="app__gradient-top-blue"
-      />
-
--->
       <app-header current-page="research">
         <app-menu />
       </app-header>
@@ -152,48 +141,5 @@ import AppFooter from "@/components/AppFooter";
 import AppTitle from "@/components/AppTitle";
 import GetInTouch from "@/components/GetInTouch";
 
-// import ResearchCard from '@/components/ResearchCard';
-// import data from '@/data/researchPapers';
 import "./Researches.scss";
-
-// const searchQuery = ref('');
-
-// const listView = ref(false);
-
-// function toggleView() {
-//   listView.value = !listView.value;
-// }
-
-// const filtered = computed(() =>
-//   data.filter(({ title }) => title.toLocaleLowerCase().includes(searchQuery.value.toLocaleLowerCase())));
-// const total = computed(() => filtered.value.length);
-// const currentPage = ref(0);
-// const pageSize = computed(() => listView.value ? 4 : 3);
-// const startRange = computed(() => currentPage.value * pageSize.value + 1);
-// const endRange = computed(() => Math.min(currentPage.value * pageSize.value + pageSize.value, total.value));
-// const toRender = computed(() => filtered.value.slice(
-//   currentPage.value * pageSize.value,
-//   currentPage.value * pageSize.value + pageSize.value
-// ));
-// const maxPage = computed(() => Math.ceil(total.value / pageSize.value - 1));
-
-// watch(listView, () => {
-//   currentPage.value = 0;
-// });
-
-// watch(searchQuery, () => {
-//   currentPage.value = 0;
-// });
-
-// function nextPage() {
-//   if (currentPage.value < maxPage.value) {
-//     currentPage.value++;
-//   }
-// }
-
-// function prevPage() {
-//   if (currentPage.value > 0) {
-//     currentPage.value--;
-//   }
-// }
 </script>
