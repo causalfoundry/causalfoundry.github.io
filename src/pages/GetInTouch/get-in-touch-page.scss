@@ -10,6 +10,12 @@
   display: flex;
   align-items: center;
 
+  @include respond("mobile") {
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
   &__title {
     font-family: "NeueMachinaMedium";
     font-size: 58px;
@@ -44,8 +50,11 @@
   .form-container {
     width: 360px;
     margin: 0 auto;
-    padding: 1rem;
     border-radius: 8px;
+
+    @include respond("mobile") {
+      width: 100%;
+    }
 
     &__elements {
       display: flex;
@@ -97,7 +106,6 @@
     display: block;
     width: 100%;
     padding: 0.5rem;
-    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
