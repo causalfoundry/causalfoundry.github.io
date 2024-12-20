@@ -1,5 +1,5 @@
 <template>
-  <div class="text-image">
+  <div class="text-image" :class="className">
     <div class="body" :class="{ reversed: reversed }">
       <div class="body__title" :class="{ primary: primary }">
         {{ title }}
@@ -23,6 +23,11 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  className: {
+    type: String,
+    required: false,
+    default: "",
+  },
   text: {
     type: String,
     required: true,
@@ -38,4 +43,5 @@ const props = defineProps({
     default: false,
   },
 });
+console.log("[aec] ", props.className);
 </script>

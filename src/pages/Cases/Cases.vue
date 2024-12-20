@@ -117,14 +117,18 @@
         </template>
       </TextImage>
 
-      <TextImage :title="MOMENTUM_SECOND_TITLE" :text="MOMENTUM_SECOND_TEXT">
+      <TextImage
+        :title="MOMENTUM_SECOND_TITLE"
+        :text="MOMENTUM_SECOND_TEXT"
+        className="momentum-text-image"
+      >
         <template #image>
-          <div class="">
+          <div class="momentum-images">
             <img :src="`/images/cases/momentum/aide_phones.png`" />
           </div>
         </template>
       </TextImage>
-      <div>
+      <div class="momentum-footer">
         <Quote :text="MOMENTUM_QUOTE_TEXT" :from="MOMENTUM_QUOTE_FROM" />
         <ShortDescriptionList :items="MOMENTUM_ITEMS" title="Key features" />
       </div>
