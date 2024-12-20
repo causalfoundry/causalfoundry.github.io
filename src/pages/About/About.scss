@@ -150,7 +150,7 @@
 
     .members {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 80px 32px;
     }
 
@@ -231,9 +231,9 @@
         transition: 0.3s opacity ease-in-out;
 
         font-family: "Noto Sans";
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 22px;
         letter-spacing: 0em;
         text-align: left;
 
