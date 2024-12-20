@@ -129,7 +129,7 @@ export const sections = [
     features: [
       {
         title: "Comprehensive Data Collection",
-        imageUrl: "/images/products/llm1.gif",
+        imageUrl: "/images/products/integration1.png",
 
         icon: "/images/products/search.png",
         description:
@@ -137,6 +137,8 @@ export const sections = [
       },
       {
         title: "Interventions Without App Changes",
+        imageUrl: "/images/products/createnudge1.png",
+
         icon: "/images/products/chat.png",
         description:
           "Send personalized interventions and updates effortlessly, without requiring modifications to the original app",
