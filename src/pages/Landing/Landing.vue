@@ -16,11 +16,21 @@
       >
         <div class="jumbotron landing" :id="Section.Landing">
           <div class="title">
-            <AppTitle>Personalized </AppTitle>
-            interventions to revolutionize
-            <DynamicText
-              :values="['healthcare', 'e-commerce', 'e-learning', 'videogames']"
-            />
+            <div class="title__item">
+              <AppTitle>Personalized </AppTitle> interventions <br />
+            </div>
+
+            <div class="title__item">to revolutionize</div>
+            <div class="title__item">
+              <DynamicText
+                :values="[
+                  'healthcare',
+                  'e-commerce',
+                  'e-learning',
+                  'videogames',
+                ]"
+              />
+            </div>
           </div>
 
           <div class="description">
