@@ -6,6 +6,7 @@
 
   .mid-container {
     width: 700px;
+    color: white;
 
     @include respond("mobile") {
       //  width: 360px;
