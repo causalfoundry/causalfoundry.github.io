@@ -15,21 +15,18 @@
   color: #fff;
   position: relative;
 
-  display: flex;
   justify-content: center;
 
-  .container {
-    & > .header {
-      width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-      @include respond("mobile") {
-        width: unset;
-      }
+  & > .header {
+    width: 1200px;
+
+    @include respond("mobile") {
+      width: unset;
     }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .product-image-header {

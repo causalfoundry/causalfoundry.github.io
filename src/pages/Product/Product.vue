@@ -1,223 +1,222 @@
 <template>
   <div class="products">
-    <div class="container">
-      <img
-        src="../../assets/gradient-top-yellow.png"
-        class="app__gradient-top-yellow"
-      />
-      <img
-        src="../../assets/gradient-top-blue.png"
-        class="app__gradient-top-blue"
-      />
-      <AppHeader current-page="products">
-        <AppMenu />
-      </AppHeader>
+    <img
+      src="../../assets/gradient-top-yellow.png"
+      class="app__gradient-top-yellow"
+    />
+    <img
+      src="../../assets/gradient-top-blue.png"
+      class="app__gradient-top-blue"
+    />
+    <AppHeader current-page="products">
+      <AppMenu />
+    </AppHeader>
 
-      <div class="jumbotron">
-        <div class="title">
-          <AppTitle>Reinforcement Learning<br /></AppTitle>
-          As A Service
-        </div>
-
-        <div class="description">
-          {{ PRODUCT_DESCRIPTION }}
-        </div>
-
-        <img :src="`/images/products/system.png`" class="desktop-image" />
-        <img :src="`/images/products/system-mini.png`" class="mobile-image" />
-
-        <div class="circle top">
-          <img src="../../assets/pattern-circle.png" alt="" />
-        </div>
+    <div class="jumbotron">
+      <div class="title">
+        <AppTitle>Reinforcement Learning<br /></AppTitle>
+        As A Service
       </div>
 
-      <div class="product-image-header">
-        <!-- <img :src="`/images/products/header.png`" alt="" /> -->
+      <div class="description">
+        {{ PRODUCT_DESCRIPTION }}
       </div>
 
-      <Section
-        title="An End-to-End Solution for AI-Driven Interventions"
-        unlimited
-      >
-        <div class="product-card-matrix">
-          <ProductCard
-            title="Action-oriented monitoring"
-            description="Easily visualize performance & inform decision-making"
-          >
-            <img
-              :src="`/images/products/all-in-one/action-oriented-monitoring.png`"
-              alt=""
-              class="picture-action-oriented"
-            />
-          </ProductCard>
+      <img :src="`/images/products/system.png`" class="desktop-image" />
+      <img :src="`/images/products/system-mini.png`" class="mobile-image" />
 
-          <ProductCard
-            title="Easy Integration"
-            description="We seamlessly connect to your existing services"
-          >
-            <img
-              :src="`/images/products/all-in-one/easy-integration.png`"
-              alt=""
-              class="picture-easy-integration"
-            />
-          </ProductCard>
+      <div class="circle top">
+        <img src="../../assets/pattern-circle.png" alt="" />
+      </div>
+    </div>
 
-          <ProductCard
-            title="Personalized interventions at scale"
-            description="Quickly put into production your ideas and reach your customers"
-          >
-            <img
-              :src="`/images/products/all-in-one/notifications.png`"
-              alt=""
-              class="picture-notifications"
-            />
-          </ProductCard>
+    <div class="product-image-header">
+      <!-- <img :src="`/images/products/header.png`" alt="" /> -->
+    </div>
 
-          <ProductCard
-            title="Quick, accurate answers powered by LLMs"
-            description="Get patient-specific and reliable insights to enhance healthcare delivery"
-          >
-            <img
-              :src="`/images/products/all-in-one/llm.png`"
-              alt=""
-              class="picture-llm"
-            />
-          </ProductCard>
-        </div>
-      </Section>
+    <Section
+      title="An End-to-End Solution for AI-Driven Interventions"
+      unlimited
+    >
+      <div class="product-card-matrix">
+        <ProductCard
+          title="Action-oriented monitoring"
+          description="Easily visualize performance & inform decision-making"
+        >
+          <img
+            :src="`/images/products/all-in-one/action-oriented-monitoring.png`"
+            alt=""
+            class="picture-action-oriented"
+          />
+        </ProductCard>
 
-      <Section
-        title="Our AI platform in a nutshell"
-        description=""
-        className="section"
-      >
-        <div class="desktop-body">
-          <div class="features">
-            <div class="images">
-              <img
-                :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
-                alt=""
-              />
-            </div>
+        <ProductCard
+          title="Easy Integration"
+          description="We seamlessly connect to your existing services"
+        >
+          <img
+            :src="`/images/products/all-in-one/easy-integration.png`"
+            alt=""
+            class="picture-easy-integration"
+          />
+        </ProductCard>
 
-            <div class="list">
-              <div
-                v-for="(item, index) in state.features"
-                :key="index"
-                :class="[`item`, { active: index === activeFeatureIndex }]"
-              >
-                <div class="title" @click="handleItemClick(index)">
-                  {{ item.title }}
-                </div>
-                <div class="description" @click="handleItemClick(index)">
-                  {{ item.description }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProductCard
+          title="Personalized interventions at scale"
+          description="Quickly put into production your ideas and reach your customers"
+        >
+          <img
+            :src="`/images/products/all-in-one/notifications.png`"
+            alt=""
+            class="picture-notifications"
+          />
+        </ProductCard>
 
-        <div class="mobile-body">
+        <ProductCard
+          title="Quick, accurate answers powered by LLMs"
+          description="Get patient-specific and reliable insights to enhance healthcare delivery"
+        >
+          <img
+            :src="`/images/products/all-in-one/llm.png`"
+            alt=""
+            class="picture-llm"
+          />
+        </ProductCard>
+      </div>
+    </Section>
+
+    <Section
+      title="Our AI platform in a nutshell"
+      description=""
+      className="section"
+    >
+      <div class="desktop-body">
+        <div class="features">
           <div class="images">
-            <div class="image">
-              <img
-                :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
-                alt=""
-              />
-            </div>
+            <img
+              :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
+              alt=""
+            />
           </div>
 
           <div class="list">
-            <Carousel :items-to-show="1">
-              <Slide v-for="item of features" :key="item.title" class="slide">
-                <div class="item active">
-                  <div class="title">{{ item.title }}</div>
-                  <div class="description">
-                    {{ item.description }}
-                  </div>
-                </div>
-              </Slide>
-
-              <template #addons>
-                <Pagination />
-              </template>
-            </Carousel>
-          </div>
-        </div>
-      </Section>
-
-      <Section
-        v-for="(section, index) of sections"
-        :key="index"
-        :title="section.title"
-        :description="section.description"
-        className="section"
-      >
-        <div class="desktop-body">
-          <div class="images">
-            <Carousel :items-to-show="1">
-              <Slide
-                v-for="feature of section.features.filter(
-                  (feat) => feat.imageUrl !== undefined
-                )"
-                :key="feature.imageUrl"
-                class="slide"
-              >
-                <div class="image">
-                  <img :src="feature.imageUrl" alt="" />
-                </div>
-              </Slide>
-
-              <template #addons>
-                <Pagination />
-              </template>
-            </Carousel>
-          </div>
-
-          <div class="features-list">
-            <div v-for="feature of section.features" class="item">
-              <img class="item-icon" :src="feature.icon" />
-              <div class="title">{{ feature.title }}</div>
-              <div class="description">
-                {{ feature.description }}
+            <div
+              v-for="(item, index) in state.features"
+              :key="index"
+              :class="[`item`, { active: index === activeFeatureIndex }]"
+            >
+              <div class="title" @click="handleItemClick(index)">
+                {{ item.title }}
+              </div>
+              <div class="description" @click="handleItemClick(index)">
+                {{ item.description }}
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="mobile-body">
-          <div class="features-list">
-            <Carousel :items-to-show="1">
-              <Slide
-                v-for="feature of section.features"
-                :key="feature.title"
-                class="slide"
-              >
-                <div class="mobile-slide">
-                  <div class="image">
-                    <img :src="feature.imageUrl" alt="" />
-                  </div>
-                  <div class="item">
-                    <div class="title">{{ feature.title }}</div>
-                    <div class="description">
-                      {{ feature.description }}
-                    </div>
-                  </div>
-                </div>
-              </Slide>
-
-              <template #addons>
-                <Pagination />
-              </template>
-            </Carousel>
+      <div class="mobile-body">
+        <div class="images">
+          <div class="image">
+            <img
+              :src="`/images/products/features/product_preview_${activeFeatureIndex}.png`"
+              alt=""
+            />
           </div>
         </div>
-      </Section>
 
-      <ProductFooter />
-      <GetInTouch />
+        <div class="list">
+          <Carousel :items-to-show="1">
+            <Slide v-for="item of features" :key="item.title" class="slide">
+              <div class="item active">
+                <div class="title">{{ item.title }}</div>
+                <div class="description">
+                  {{ item.description }}
+                </div>
+              </div>
+            </Slide>
 
-      <!--
+            <template #addons>
+              <Pagination />
+            </template>
+          </Carousel>
+        </div>
+      </div>
+    </Section>
+
+    <Section
+      v-for="(section, index) of sections"
+      :key="index"
+      :title="section.title"
+      :description="section.description"
+      className="section"
+    >
+      <div class="desktop-body">
+        <div class="images">
+          <Carousel :items-to-show="1">
+            <Slide
+              v-for="feature of section.features.filter(
+                (feat) => feat.imageUrl !== undefined
+              )"
+              :key="feature.imageUrl"
+              class="slide"
+            >
+              <div class="image">
+                <img :src="feature.imageUrl" alt="" />
+              </div>
+            </Slide>
+
+            <template #addons>
+              <Pagination />
+            </template>
+          </Carousel>
+        </div>
+
+        <div class="features-list">
+          <div v-for="feature of section.features" class="item">
+            <img class="item-icon" :src="feature.icon" />
+            <div class="title">{{ feature.title }}</div>
+            <div class="description">
+              {{ feature.description }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-body">
+        <div class="features-list">
+          <Carousel :items-to-show="1">
+            <Slide
+              v-for="feature of section.features"
+              :key="feature.title"
+              class="slide"
+            >
+              <div class="mobile-slide">
+                <div class="image">
+                  <img :src="feature.imageUrl" alt="" />
+                </div>
+                <div class="item">
+                  <div class="title">{{ feature.title }}</div>
+                  <div class="description">
+                    {{ feature.description }}
+                  </div>
+                </div>
+              </div>
+            </Slide>
+
+            <template #addons>
+              <Pagination />
+            </template>
+          </Carousel>
+        </div>
+      </div>
+    </Section>
+
+    <ProductFooter />
+    <GetInTouch />
+
+    <!--
       <div class="demo">
         <div class="card">
           <div class="title">Request a Demo</div>
@@ -239,25 +238,24 @@
         </div>
       </div>
 -->
-      <div class="hex">
-        <img src="../../assets/pattern-hex.png" alt="" />
-      </div>
-
-      <div class="circle bottom">
-        <img src="../../assets/pattern-circle.png" alt="" />
-      </div>
-
-      <AppFooter />
-
-      <img
-        src="../../assets/gradient-bottom-yellow.png"
-        class="app__gradient-bottom-yellow"
-      />
-      <img
-        src="../../assets/gradient-bottom-blue.png"
-        class="app__gradient-bottom-blue"
-      />
+    <div class="hex">
+      <img src="../../assets/pattern-hex.png" alt="" />
     </div>
+
+    <div class="circle bottom">
+      <img src="../../assets/pattern-circle.png" alt="" />
+    </div>
+
+    <AppFooter />
+
+    <img
+      src="../../assets/gradient-bottom-yellow.png"
+      class="app__gradient-bottom-yellow"
+    />
+    <img
+      src="../../assets/gradient-bottom-blue.png"
+      class="app__gradient-bottom-blue"
+    />
   </div>
 </template>
 
