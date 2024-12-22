@@ -17,6 +17,7 @@
   }
 
   &__title {
+    margin-top: 147px;
     font-family: "NeueMachinaMedium";
     font-size: 58px;
     font-style: normal;
@@ -97,9 +98,14 @@
     color: white;
 
     border-radius: 6px;
-    border: 1px solid var(--Primary, #94d5db);
+    border: 1px solid var(--Input-Outline, #59595f);
     background: var(--Suface-primary, #12121b);
-    box-shadow: 0px 0px 6px 0px rgba(148, 213, 219, 0.25);
+    //  box-shadow: 0px 0px 6px 0px rgba(148, 213, 219, 0.25);
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--Primary, #94d5db);
+    }
   }
 
   button {
