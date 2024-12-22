@@ -1,152 +1,138 @@
 <template>
   <div class="landing2">
-    <div class="container">
-      <img
-        src="../../assets/gradient-top-yellow.png"
-        class="app__gradient-top-yellow"
-      />
-      <img
-        src="../../assets/gradient-top-blue.png"
-        class="app__gradient-top-blue"
-      />
-      <AppHeader current-page="landing"><AppMenu /></AppHeader>
+    <img
+      src="../../assets/gradient-top-yellow.png"
+      class="app__gradient-top-yellow"
+    />
+    <img
+      src="../../assets/gradient-top-blue.png"
+      class="app__gradient-top-blue"
+    />
+    <AppHeader current-page="landing"><AppMenu /></AppHeader>
 
-      <IntersectionObserver
-        @intersect="handleIntersect(Section.Landing, $event)"
-      >
-        <div class="jumbotron landing" :id="Section.Landing">
-          <div class="title">
-            <div class="title__item">
-              <AppTitle>Personalized </AppTitle> interventions <br />
-            </div>
-
-            <div class="title__item">to revolutionize</div>
-            <div class="title__item">
-              <DynamicText
-                :values="[
-                  'healthcare',
-                  'e-commerce',
-                  'e-learning',
-                  'videogames',
-                ]"
-              />
-            </div>
+    <IntersectionObserver @intersect="handleIntersect(Section.Landing, $event)">
+      <div class="jumbotron landing" :id="Section.Landing">
+        <div class="title">
+          <div class="title__item">
+            <AppTitle>Personalized </AppTitle> interventions <br />
           </div>
 
-          <div class="description">
-            {{ LANDING_DESCRIPTION }}
-          </div>
-
-          <Button value="GET IN TOUCH" highlighted @click="handleRedirect" />
-          <div class="circle top">
-            <img src="../../assets/pattern-circle.png" alt="" />
-          </div>
-
-          <div class="dashboard-view">
-            <img
-              class="dashboard"
-              :src="`/images/landing/dashboard.png`"
-              alt=""
+          <div class="title__item">to revolutionize</div>
+          <div class="title__item">
+            <DynamicText
+              :values="['healthcare', 'e-commerce', 'e-learning', 'videogames']"
             />
           </div>
         </div>
-      </IntersectionObserver>
 
-      <div class="summaries">
-        <ShortDescriptionList :items="summaries" />
-      </div>
-
-      <IntersectionObserver
-        @intersect="handleIntersect(Section.Problem, $event)"
-      >
-        <div class="mission problem" :id="Section.Problem">
-          <div class="title">Mission</div>
-          <div class="paragraph">
-            {{ MISSION }}
-          </div>
+        <div class="description">
+          {{ LANDING_DESCRIPTION }}
         </div>
-      </IntersectionObserver>
 
-      <IntersectionObserver
-        @intersect="handleIntersect(Section.Applications, $event)"
-      >
-        <div class="personalized applications" :id="Section.Applications">
-          <div class="title">Adaptive AI</div>
-
-          <div class="paragraph">
-            {{ ADAPTIVE_AI }}
-          </div>
-
-          <div class="small-title"><AppTitle>Healthcare</AppTitle></div>
-          <div class="small-paragraph">
-            <BreakableText :text="HEALTHCARE" />
-            <Link to="/cases" text="Explore" />
-          </div>
-
-          <div class="small-title"><AppTitle>E-Commerce</AppTitle></div>
-          <div class="small-paragraph">
-            <BreakableText :text="ECOMMERCE" />
-            <Link to="/cases" text="Explore" />
-          </div>
-
-          <div class="small-title"><AppTitle>E-Learning</AppTitle></div>
-          <div class="small-paragraph">
-            <BreakableText :text="ELEARNING" />
-          </div>
-
-          <div class="small-title"><AppTitle>Videogames</AppTitle></div>
-          <div class="small-paragraph">
-            <BreakableText :text="VIDEOGAMES" />
-          </div>
-
-          <div class="gradient-blue">
-            <img src="../../assets/gradient-left-blue.png" alt="" />
-          </div>
-          <div class="hex">
-            <img src="../../assets/pattern-hex.png" alt="" />
-          </div>
+        <Button value="GET IN TOUCH" highlighted @click="handleRedirect" />
+        <div class="circle top">
+          <img src="../../assets/pattern-circle.png" alt="" />
         </div>
-      </IntersectionObserver>
 
-      <IntersectionObserver
-        @intersect="handleIntersect(Section.Achievements, $event)"
-      >
-        <div :id="Section.Achievements">
-          <ShortDescriptionList
-            title="Our achievements in 2024"
-            :items="achievements"
-            highlighted
+        <div class="dashboard-view">
+          <img
+            class="dashboard"
+            :src="`/images/landing/dashboard.png`"
+            alt=""
           />
         </div>
+      </div>
+    </IntersectionObserver>
 
-        <GetInTouch />
-      </IntersectionObserver>
-
-      <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">
-        <div class="news-land" :id="Section.News">
-          <News />
-        </div>
-      </IntersectionObserver>
-
-      <IntersectionObserver
-        @intersect="handleIntersect(Section.FundedBy, $event)"
-      >
-        <div class="funded-land" :id="Section.FundedBy">
-          <FundedBy />
-        </div>
-      </IntersectionObserver>
-
-      <AppFooter />
-
-      <img
-        src="../../assets/gradient-bottom-yellow.png"
-        class="app__gradient-bottom-yellow"
-      />
-      <img
-        src="../../assets/gradient-bottom-blue.png"
-        class="app__gradient-bottom-blue"
-      />
+    <div class="summaries">
+      <ShortDescriptionList :items="summaries" />
     </div>
+
+    <IntersectionObserver @intersect="handleIntersect(Section.Problem, $event)">
+      <div class="mission problem landing-section" :id="Section.Problem">
+        <div class="title">Mission</div>
+        <div class="paragraph">
+          {{ MISSION }}
+        </div>
+      </div>
+    </IntersectionObserver>
+
+    <IntersectionObserver
+      @intersect="handleIntersect(Section.Applications, $event)"
+    >
+      <div
+        class="personalized applications landing-section"
+        :id="Section.Applications"
+      >
+        <div class="title">Adaptive AI</div>
+
+        <div class="paragraph">
+          {{ ADAPTIVE_AI }}
+        </div>
+
+        <div class="small-title"><AppTitle>Healthcare</AppTitle></div>
+        <div class="small-paragraph">
+          <BreakableText :text="HEALTHCARE" />
+          <Link to="/cases" text="Explore" />
+        </div>
+
+        <div class="small-title"><AppTitle>E-Commerce</AppTitle></div>
+        <div class="small-paragraph">
+          <BreakableText :text="ECOMMERCE" />
+          <Link to="/cases" text="Explore" />
+        </div>
+
+        <div class="small-title"><AppTitle>E-Learning</AppTitle></div>
+        <div class="small-paragraph">
+          <BreakableText :text="ELEARNING" />
+        </div>
+
+        <div class="small-title"><AppTitle>Videogames</AppTitle></div>
+        <div class="small-paragraph">
+          <BreakableText :text="VIDEOGAMES" />
+        </div>
+
+        <div class="gradient-blue">
+          <img src="../../assets/gradient-left-blue.png" alt="" />
+        </div>
+        <div class="hex">
+          <img src="../../assets/pattern-hex.png" alt="" />
+        </div>
+      </div>
+    </IntersectionObserver>
+
+    <ShortDescriptionList
+      title="Our achievements in 2024"
+      :items="achievements"
+      highlighted
+    />
+
+    <GetInTouch />
+
+    <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">
+      <div class="news-land" :id="Section.News">
+        <News />
+      </div>
+    </IntersectionObserver>
+
+    <IntersectionObserver
+      @intersect="handleIntersect(Section.FundedBy, $event)"
+    >
+      <div class="funded-land" :id="Section.FundedBy">
+        <FundedBy />
+      </div>
+    </IntersectionObserver>
+
+    <AppFooter />
+
+    <img
+      src="../../assets/gradient-bottom-yellow.png"
+      class="app__gradient-bottom-yellow"
+    />
+    <img
+      src="../../assets/gradient-bottom-blue.png"
+      class="app__gradient-bottom-blue"
+    />
   </div>
 </template>
 

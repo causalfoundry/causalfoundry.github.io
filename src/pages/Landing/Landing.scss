@@ -13,6 +13,28 @@
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  & > .header {
+    width: 1200px;
+
+    @include respond("mobile") {
+      width: unset;
+    }
+  }
+
+  .landing-section {
+    max-width: 1200px;
+
+    @include respond("mobile") {
+      /* margin: 0 auto;
+      max-width: unset;
+      box-sizing: border-box;
+      padding: auto;
+      */
+    }
+  }
 
   .dashboard-view {
     display: flex;
@@ -29,12 +51,6 @@
         width: 100%;
       }
     }
-  }
-
-  .container {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1440px;
   }
 
   .circle {
@@ -426,6 +442,7 @@
 
   .summaries {
     position: relative;
+    width: 100%;
     top: -180px;
   }
 }
