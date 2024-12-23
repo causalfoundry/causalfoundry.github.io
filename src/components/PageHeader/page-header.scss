@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
 
+  @include respond("mobile") {
+    background-size: contain;
+  }
+
   .mid-container {
     width: 700px;
     color: white;
@@ -12,6 +16,7 @@
       //  width: 360px;
       width: 100%;
       padding: 10px;
+      box-sizing: border-box;
     }
   }
 
