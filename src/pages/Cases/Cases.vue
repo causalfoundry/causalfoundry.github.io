@@ -164,6 +164,11 @@
     </SuccessCase>
 
     <GetInTouch />
+    <img
+      src="/src/assets/pattern-wave.png"
+      class="product-footer__pattern-wave"
+      alt="Wave Pattern"
+    />
     <AppFooter />
   </div>
 </template>
