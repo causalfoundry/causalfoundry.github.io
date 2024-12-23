@@ -283,6 +283,10 @@
   .about-section {
     margin: 20px 140px 0 140px;
     width: unset;
+
+    @include respond("mobile") {
+      margin: 20px 50px 0 50px;
+    }
   }
 
   .our-story {
@@ -319,7 +323,7 @@
       letter-spacing: 0em;
       text-align: left;
       color: #d1d5db;
-      flex: 1; /* Each column takes up equal space */
+      flex: 1;
 
       &:last-child {
         display: flex;
@@ -384,10 +388,12 @@
     overflow: hidden;
     position: relative;
     opacity: 1;
+    @include respond("mobile") {
+     flex-direction: column;
+    }
+
 
     .value {
-      background-color: green;
-      flex: 1;
       padding: 37px;
       background-repeat: no-repeat;
       background-size: cover;
@@ -409,7 +415,6 @@
         font-weight: 400;
       }
 
-
       &:nth-child(1) {
         height: 475px;
         background-image: url("/images/about/about_culture_img1.png");
@@ -429,8 +434,42 @@
         height: 725px;
         background-image: url("/images/about/about_culture_img4.png");
       }
+
+      @include respond("mobile") {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          height: auto;
+          width: auto;
+          box-sizing: border-box;
+          position: relative;
+          border-radius: 16px;
+          border: 1.5px solid var(--Colors-Gray-Gray-600, #4b5563);
+          background: linear-gradient(
+                          93deg,
+                          rgba(48, 17, 241, 0.16) -8.68%,
+                          rgba(83, 85, 233, 0.16) 11.72%,
+                          rgba(116, 150, 225, 0.16) 38.64%,
+                          rgba(134, 186, 221, 0.16) 65.85%,
+                          rgba(152, 222, 217, 0.16) 87.98%
+          ),
+          #000;
+        }
+
+        &__title {
+          font-size: 20px;
+        }
+
+        &__subtitle {
+          font-size: 14px;
+        }
+      }
     }
   }
+
+
+
 
   .footer {
     padding-left: $app-side-padding-desktop;
