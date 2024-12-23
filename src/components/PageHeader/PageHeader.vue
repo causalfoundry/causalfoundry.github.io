@@ -5,13 +5,15 @@
     </div>
     <div class="page-header__description">
       <div class="mid-container">
-        {{ description }}
+        <BreakableText :text="description" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import BreakableText from "@/components/BreakableText";
+
 import "./page-header.scss";
 
 const props = defineProps({
