@@ -13,8 +13,12 @@
   justify-content: center;
   align-items: center;
   padding-top: 80px;
-  padding-bottom: 320px;
   width: 100%;
+
+  @include respond("mobile") {
+    padding-bottom: 100px;
+  }
+
 
   &__items {
     display: flex;
@@ -26,6 +30,7 @@
     }
 
     & > * {
+      flex: 1; // Makes each column take equal space
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -84,5 +89,22 @@
       justify-content: center;
       align-items: center;
     }
+  }
+
+  &__pattern-wave {
+    position: relative;
+    bottom: 10px;
+    left: 120px;
+    width: 150%;
+    margin-top: -180px;
+    transform: rotate(1deg);
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+
+    @include respond("mobile") {
+      display: none;
+    }
+
   }
 }
