@@ -8,6 +8,6 @@ const props = defineProps<{
 }>();
 
 function formatText(text: string): string {
-  return text.replace(/\n\n/g, "<br /><br />");
+  return (text || "").replace(/\n\n/g, "<br /><br />");
 }
 </script>
