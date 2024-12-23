@@ -10,9 +10,6 @@
       </template>
     </PageHeader>
 
-    <div class="hex">
-      <img src="../../assets/pattern-hex.png" alt="" />
-    </div>
     <div class="diagram">
       <div class="diagram__title">Reinforcement Learning</div>
       <div class="paragraph">
