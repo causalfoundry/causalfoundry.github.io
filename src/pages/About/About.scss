@@ -280,6 +280,11 @@
     }
   }
 
+  .about-section {
+    margin: 20px 140px 0 140px;
+    width: unset;
+  }
+
   .our-story {
     max-width: 1200px;
     position: relative;
@@ -365,6 +370,65 @@
     width: 100%;
     @include respond("mobile") {
       height: 0;
+    }
+  }
+
+  .values {
+    display: flex;
+    max-width: 1200px;
+    gap: 20px;
+    margin-bottom: 120px;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+
+    .value {
+      background-color: green;
+      flex: 1;
+      padding: 37px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      &__title {
+        font-family: "NeueMachinaMedium";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 16px;
+      }
+
+      &__subtitle {
+        font-family: "Noto Sans";
+        font-size: 18px;
+        line-height: 140%;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+
+      &:nth-child(1) {
+        height: 475px;
+        background-image: url("/images/about/about_culture_img1.png");
+      }
+
+      &:nth-child(2) {
+        height: 550px;
+        background-image: url("/images/about/about_culture_img2.png");
+      }
+
+      &:nth-child(3) {
+        height: 640px;
+        background-image: url("/images/about/about_culture_img3.png");
+      }
+
+      &:nth-child(4) {
+        height: 725px;
+        background-image: url("/images/about/about_culture_img4.png");
+      }
     }
   }
 
