@@ -4,7 +4,7 @@
       <app-menu />
     </app-header>
 
-    <PageHeader :description="PAGE_DESCRIPTION" className="research__header">
+    <PageHeader :description="SECTION_DESCRIPTION" className="research__header">
       <template #title>
         We research to<AppTitle> build and deploy reliable AI</AppTitle>
       </template>
@@ -132,5 +132,6 @@ import GetInTouch from "@/components/GetInTouch";
 
 import PageHeader from "@/components/PageHeader";
 
+import { SECTION_DESCRIPTION } from "./constants";
 import "./Researches.scss";
 </script>
