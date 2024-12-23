@@ -15,6 +15,11 @@
       url("/images/cases/top-hospital.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include respond("mobile") {
+      background-image: unset;
+      height: unset;
+    }
   }
 
   & > .header {

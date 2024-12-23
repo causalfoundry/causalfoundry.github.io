@@ -4,7 +4,11 @@
       <AppMenu />
     </AppHeader>
 
-    <PageHeader :description="PAGE_DESCRIPTION" className="cases__header">
+    <PageHeader
+      :description="PAGE_DESCRIPTION"
+      className="cases__header"
+      image="/images/cases/top-hospital.png"
+    >
       <template #title>
         <AppTitle>Build in Partnership</AppTitle>
         with Causal Foundry for Healthcare
