@@ -346,6 +346,14 @@
     }
   }
 
+  .spacer {
+    height: 400px;
+    width: 100%;
+    @include respond("mobile") {
+      height: 0;
+    }
+  }
+
   .footer {
     padding-left: $app-side-padding-desktop;
     padding-right: $app-side-padding-desktop;
