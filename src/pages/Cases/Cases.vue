@@ -16,6 +16,14 @@
     </PageHeader>
 
     <SuccessCase title="CASE 1. mothers2mothers">
+      <Logos>
+        <template #first>
+          <img :src="`/images/cases/cf-logo.png`" />
+        </template>
+        <template #second>
+          <img :src="`/images/cases/m2m/logo.png`" />
+        </template>
+      </Logos>
       <TextImage :title="M2M_FIRST_TITLE" :text="M2M_FIRST_TEXT" primary>
         <template #image>
           <img :src="`/images/cases/m2m/first.png`" />
@@ -72,6 +80,14 @@
     </SuccessCase>
 
     <SuccessCase title="CASE 2. SwipeRX">
+      <Logos>
+        <template #first>
+          <img :src="`/images/cases/cf-logo.png`" />
+        </template>
+        <template #second>
+          <img :src="`/images/cases/swiperx/logo.png`" />
+        </template>
+      </Logos>
       <TextImage
         :title="SWIPERX_FIRST_TITLE"
         :text="SWIPERX_FIRST_TEXT"
@@ -110,6 +126,14 @@
     </SuccessCase>
 
     <SuccessCase title="CASE 3. Momentum">
+      <Logos>
+        <template #first>
+          <img :src="`/images/cases/cf-logo.png`" />
+        </template>
+        <template #second>
+          <img :src="`/images/cases/momentum/logo.png`" />
+        </template>
+      </Logos>
       <TextImage
         :title="MOMENTUM_FIRST_TITLE"
         :text="MOMENTUM_FIRST_TEXT"
@@ -158,6 +182,8 @@ import ShortDescriptionList from "@/components/ShortDescriptionList";
 
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
+
+import Logos from "./components/Logos";
 
 import {
   SWIPERX_QUOTE_TEXT,
