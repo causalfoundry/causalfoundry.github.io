@@ -5,40 +5,41 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, onBeforeUnmount, ref, Ref } from 'vue'
+import { onMounted, onBeforeUnmount, ref, Ref } from "vue";
 
-const targetEl = ref()
+const targetEl = ref();
 
-const emit = defineEmits(['intersect'])
+const emit = defineEmits(["intersect"]);
 const props = defineProps({
-  threshold: { type: Number, default: 0.1 }
-})
+  threshold: { type: Number, default: 0.1 },
+});
 
-const observer: Ref<IntersectionObserver | undefined> = ref(undefined)
+const observer: Ref<IntersectionObserver | undefined> = ref(undefined);
 
 const unobserve = () => {
   if (observer.value) {
-    observer.value.unobserve(targetEl.value)
-    observer.value = undefined
+    observer.value.unobserve(targetEl.value);
+    observer.value = undefined;
   }
-}
+};
 onMounted(() => {
   observer.value = new IntersectionObserver(
-    entries => {
-      emit('intersect', entries[0])
+    (entries) => {
+      emit("intersect", entries[0]);
     },
     {
       root: null,
-      rootMargin: '0px',
-      threshold: props.threshold
-    })
+      rootMargin: "0px",
+      threshold: props.threshold,
+    }
+  );
 
   if (targetEl.value) {
-    observer.value.observe(targetEl.value)
+    observer.value.observe(targetEl.value);
   }
-})
+});
 
 onBeforeUnmount(() => {
-  unobserve()
-})
+  unobserve();
+});
 </script>

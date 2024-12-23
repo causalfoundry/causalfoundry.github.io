@@ -115,13 +115,9 @@
       </div>
     </IntersectionObserver>
 
-    <IntersectionObserver
-      @intersect="handleIntersect(Section.FundedBy, $event)"
-    >
-      <div class="funded-land" :id="Section.FundedBy">
-        <FundedBy />
-      </div>
-    </IntersectionObserver>
+    <div class="funded-land" :id="Section.FundedBy">
+      <FundedBy />
+    </div>
 
     <AppFooter />
 

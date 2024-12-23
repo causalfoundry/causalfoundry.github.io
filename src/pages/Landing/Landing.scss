@@ -203,7 +203,7 @@
     position: relative;
     z-index: 1;
     margin: 0 140px;
-    margin-top: 160px;
+    margin-top: 60px;
     padding-bottom: 160px;
     border-top: 1px solid #fff;
 
@@ -413,6 +413,8 @@
 
   .funded-land {
     padding: 0 140px;
+    width: 100%;
+    max-width: 1200px;
 
     @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
