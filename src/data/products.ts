@@ -115,7 +115,7 @@ export const sections = [
       },
       {
         title: "Seamless Data Interaction with LLMs",
-        imageUrl: "/images/products/llm2.gif",
+        //imageUrl: "/images/products/llm2.gif",
         icon: "/images/products/speech_to_text.png",
         description:
           "Our LLM-powered solution provides an intuitive text-based interface to interact with your data. Users can query datasets, obtain insights, and generate real-time summaries to support decision-making and workflow optimization—all through a simple conversational interface",
