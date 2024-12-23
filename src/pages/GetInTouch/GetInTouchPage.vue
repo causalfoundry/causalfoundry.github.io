@@ -1,5 +1,15 @@
 <template>
   <div class="get-in-touch-page">
+
+    <img
+        src="../../assets/gradient-top-yellow.png"
+        class="app__gradient-top-yellow"
+    />
+    <img
+        src="../../assets/gradient-top-blue.png"
+        class="app__gradient-top-blue"
+    />
+
     <AppHeader>
       <AppMenu />
     </AppHeader>
@@ -15,27 +25,28 @@
       <form @submit.prevent="handleSubmit">
         <div class="form-container__elements">
           <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" v-model="form.name" required />
+            <label for="name">Name</label>
+            <input type="text" id="name" v-model="form.name" required placeholder="Enter Name" />
           </div>
 
           <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" v-model="form.email" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" v-model="form.email" required placeholder="Enter Email" />
           </div>
 
           <div class="form-group">
-            <label for="phone">Phone Number (optional):</label>
-            <input type="tel" id="phone" v-model="form.phone" />
+            <label for="phone">Phone Number (optional)</label>
+            <input type="tel" id="phone" v-model="form.phone"  placeholder="Enter Phone Number" />
           </div>
 
           <div class="form-group">
-            <label for="message">Message:</label>
+            <label for="message">Message</label>
             <textarea
               id="message"
               v-model="form.message"
               required
               rows="5"
+              placeholder="Type your message here..."
             ></textarea>
           </div>
         </div>
@@ -44,6 +55,11 @@
         </div>
       </form>
     </div>
+
+    <div class="hex">
+      <img src="../../assets/pattern-hex.png" alt="" />
+    </div>
+
     <AppFooter />
   </div>
 </template>

@@ -22,6 +22,11 @@
         </div>
       </div>
     </div>
+    <img
+        src="../../../../assets/pattern-wave.png"
+        class="product-footer__pattern-wave"
+        alt="Wave Pattern"
+    />
   </div>
 </template>
 

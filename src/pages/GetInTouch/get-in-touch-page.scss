@@ -2,12 +2,10 @@
   background-color: #000;
   color: #fff;
   position: relative;
-  width: 100%;
   display: flex;
+  padding-bottom: 40px;
   flex-direction: column;
-  position: relative;
   justify-content: center;
-  display: flex;
   align-items: center;
 
   @include respond("mobile") {
@@ -30,6 +28,7 @@
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 80px;
+    line-height: 130%;
   }
 
   & > .header {
@@ -60,7 +59,7 @@
     &__elements {
       display: flex;
       flex-direction: column;
-      gap: 32px;
+      gap: 25px;
     }
 
     &__button {
@@ -68,7 +67,7 @@
       justify-content: center;
 
       button {
-        width: 167px;
+        width: 197px;
       }
     }
   }
@@ -86,7 +85,6 @@
     line-height: 20px; /* 142.857% */
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: bold;
   }
 
   input,
@@ -96,6 +94,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     color: white;
+    font-family: "Open Sans";
 
     border-radius: 6px;
     border: 1px solid var(--Input-Outline, #59595f);
@@ -116,9 +115,27 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: "Open Sans";
   }
 
   button:hover {
     background-color: #0056b3;
   }
+
+  .hex {
+    img {
+      width: min(1167px, 50vw);
+    }
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    top: 200px;
+    width: max(1367px, 100vw);
+    left: min(-450px, 80vw);
+
+    @include respond("tablet") {
+      display: none;
+    }
+  }
+
 }
