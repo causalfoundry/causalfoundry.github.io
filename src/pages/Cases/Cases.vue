@@ -32,6 +32,7 @@
         :title="M2M_SECOND_TITLE"
         :text="M2M_SECOND_TEXT"
         :reversed="true"
+        className="charm-text-image"
       >
         <template #image>
           <div class="images_phones">
@@ -65,7 +66,7 @@
         </template>
       </TextImage>
 
-      <div>
+      <div class="m2m-footer">
         <Quote :text="M2M_QUOTE_TEXT" :from="M2M_QUOTE_FROM" />
         <ShortDescriptionList :items="M2M_ITEMS" />
       </div>

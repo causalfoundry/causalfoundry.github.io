@@ -26,7 +26,7 @@ export const M2M_FIRST_TEXT = `mothers2mothers (m2m) provides health care to fam
    to health needs, and deliver personalized support, fostering healthier communities.`;
 
 export const M2M_SECOND_TITLE =
-  "Health care for families who need it most, delivered by women who know them best";
+  "Healthcare for families who need it most, delivered by women who know them best";
 
 export const M2M_SECOND_TEXT = `
  The Causal Foundry platform organizes clinical 

@@ -31,8 +31,11 @@
   }
   .images_phones {
     position: relative;
-    top: -100px;
-    clip-path: inset(0 0 20% 0);
+    left: -150px;
+  }
+  .momentum-images {
+    position: relative;
+    right: -10px;
   }
 
   .image-big-phones {
@@ -74,11 +77,20 @@
     }
   }
 
+  .m2m-footer,
   .momentum-footer {
     margin-top: -102px;
   }
 
   .momentum-text-image {
     padding: unset;
+  }
+
+  .charm-text-image {
+    padding: unset;
+  }
+
+  .momentum-footer {
+    margin-top: -102px;
   }
 }
