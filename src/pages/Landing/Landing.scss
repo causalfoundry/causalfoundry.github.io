@@ -28,11 +28,8 @@
     max-width: 1200px;
 
     @include respond("mobile") {
-      /* margin: 0 auto;
-      max-width: unset;
+      padding: 20px;
       box-sizing: border-box;
-      padding: auto;
-      */
     }
   }
 
@@ -216,6 +213,7 @@
     @include respond("mobile") {
       margin-left: $app-side-padding-mobile;
       margin-right: $app-side-padding-mobile;
+      padding: unset;
     }
 
     .title {
@@ -344,6 +342,8 @@
       }
 
       @include respond("mobile") {
+        box-sizing: border-box;
+        padding: 20px;
       }
     }
 
@@ -365,6 +365,8 @@
       }
 
       @include respond("mobile") {
+        padding: 20px;
+        box-sizing: border-box;
       }
     }
 
@@ -393,6 +395,8 @@
       }
 
       @include respond("mobile") {
+        padding: 20px;
+        box-sizing: border-box;
       }
     }
   }
