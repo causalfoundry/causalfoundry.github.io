@@ -97,6 +97,9 @@
       </div>
     </div>
 
+    <GetInTouch highlighted />
+    <div class="spacer"></div>
+
     <AppFooter />
 
     <img
@@ -122,4 +125,5 @@ import { ABOUT_DESCRIPTION } from "./constants";
 import team from "@/data/team";
 
 import "./About.scss";
+import GetInTouch from "@/components/GetInTouch";
 </script>
