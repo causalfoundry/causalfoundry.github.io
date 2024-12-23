@@ -20,6 +20,18 @@
     }
   }
 
+  &__mobile-background {
+    display: none;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include respond("mobile") {
+      display: unset;
+    }
+  }
+
   &__title {
     font-family: "NeueMachinaMedium";
 

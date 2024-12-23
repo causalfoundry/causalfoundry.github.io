@@ -12,7 +12,11 @@
       <AppMenu />
     </AppHeader>
 
-    <PageHeader :description="ABOUT_DESCRIPTION" className="about__header">
+    <PageHeader
+      :description="ABOUT_DESCRIPTION"
+      className="about__header"
+      image="/images/about/top.png"
+    >
       <template #title> <AppTitle>AI</AppTitle> for everyone </template>
     </PageHeader>
 
