@@ -36,10 +36,11 @@
           blending their deep understanding of machine learning with the
           fast-paced world of fashion retail and supply chain.
           <br /><br />
-          2020 marked a transformative year for África and Dexian. Together they
-          transitioned their focus to a domain with profound global impact – AI
-          for global health. Since then, they have been relentless in pushing
-          the boundaries of what AI can achieve and who can access it.
+          2020 marked a transformative year for África and Dexian. África and
+          Dexian transitioned their focus to a domain with profound global
+          impact – AI for global health. Since then, they have been relentless
+          in pushing the boundaries of what AI can achieve, especially in
+          addressing health.
           <br /><br />
           Our journey, from revolutionizing the gaming industry in Tokyo to
           pioneering AI-driven global health initiatives, reflects our
