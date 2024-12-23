@@ -2,7 +2,6 @@
   background: #000;
   position: relative;
   overflow: hidden;
-
   display: flex;
   justify-content: center;
 
@@ -23,6 +22,7 @@
     position: absolute;
     top: 0px;
     left: 45vw;
+    z-index: -1;
 
     @include respond("tablet") {
       top: 500px;
@@ -251,6 +251,7 @@
     bottom: 250px;
     width: 140vw;
     right: -35vw;
+    z-index: -1;
     transform: rotate(-5deg);
 
     @include respond("tablet") {

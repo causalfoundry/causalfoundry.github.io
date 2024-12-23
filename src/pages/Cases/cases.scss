@@ -29,7 +29,15 @@
       width: unset;
     }
   }
-  .images_phones {
+  .m2m-dashboard img {
+    @include respond("mobile") {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .images-phones {
     position: relative;
     left: -150px;
   }

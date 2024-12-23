@@ -32,7 +32,9 @@
 
       <Image>
         <template #image>
-          <img :src="`/images/cases/m2m/dashboard.png`" />
+          <div class="m2m-dashboard">
+            <img :src="`/images/cases/m2m/dashboard.png`" />
+          </div>
         </template>
       </Image>
 
@@ -43,7 +45,7 @@
         className="charm-text-image"
       >
         <template #image>
-          <div class="images_phones">
+          <div class="images-phones">
             <img :src="`/images/cases/m2m/phones.png`" />
           </div>
         </template>
