@@ -4,7 +4,11 @@
       <app-menu />
     </app-header>
 
-    <PageHeader :description="SECTION_DESCRIPTION" className="research__header">
+    <PageHeader
+      :description="SECTION_DESCRIPTION"
+      className="research__header"
+      image="/images/research/top.png"
+    >
       <template #title>
         We research to<AppTitle> build and deploy reliable AI</AppTitle>
       </template>
