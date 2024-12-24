@@ -4,96 +4,89 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  color: #fff;
 
   .container {
     width: 1440px;
   }
 
-  .header {
-    padding: 60px 140px 40px 140px;
+  & > .header {
+    width: 1200px;
 
     @include respond("mobile") {
-      padding-left: 32px;
-      padding-right: 32px;
+      width: unset;
     }
   }
 
   .circle {
     position: absolute;
-    top: 0px;
-    left: 45vw;
+    top: -50px;
+    left: 49vw;
     z-index: -1;
 
     @include respond("tablet") {
-      top: 500px;
-      right: -540px;
-
-      img {
-        width: 930px;
-      }
+      display: none;
     }
 
     @include respond("mobile") {
-      top: unset;
-      bottom: -160px;
-      left: 50vw;
-
-      img {
-        width: 100vw;
-      }
+      display: none;
     }
   }
 
   .jumbotron {
     position: relative;
-    padding: 330px 502.467px 340px 139px;
-
+    z-index: 10;
+    padding: 270px 121px 330px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
 
-    @include respond("tablet") {
-      padding: 330px 121px 340px 121px;
-    }
-
-    @include respond("mobile") {
-      padding: 120px 32px 340px 32px;
-    }
-
-    &__title {
-      max-width: 798.533px;
-      color: var(--white, #fff);
+    .title {
+      margin-bottom: 32px;
       font-family: "NeueMachinaMedium";
       font-size: 58px;
-      font-style: normal;
       font-weight: 400;
-      line-height: 1.3;
-      letter-spacing: 0.58px;
+      line-height: 64px;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
 
-      z-index: 1;
+    .description {
+      max-width: 691px;
+      width: 100%;
+      font-family: "NotoSansLight";
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 39px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 250px;
 
       @include respond("mobile") {
-        font-size: 32px;
+        margin-bottom: 50px;
       }
     }
 
-    &__description {
-      max-width: 691px;
-      color: var(--white, #fff);
+    @include respond("tablet") {
+      padding: 280px 60px 60px;
+    }
 
-      /* Desktop/Text Large */
-      font-family: NotoSansLight;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 150%; /* 39px */
+    @include respond("mobile") {
+      padding: 120px 60px 60px;
 
-      z-index: 1;
+      .title {
+        font-family: "NeueMachinaMedium";
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38px;
+        text-align: left;
+      }
 
-      @include respond("mobile") {
-        width: unset;
-        line-height: 32px;
+      .description {
+        font-family: "NotoSansLight";
         font-size: 20px;
+        line-height: 32px;
+        font-weight: 300;
+        text-align: left;
       }
     }
   }
@@ -105,8 +98,13 @@
     flex-direction: column;
     gap: 100px;
 
+
+    @include respond("tablet") {
+      padding: 160px 60px;
+    }
+
     @include respond("mobile") {
-      padding: 160px 32px;
+      padding: 160px 60px;
     }
 
     &__title {
@@ -270,19 +268,14 @@
 
   &__culture {
     border-top: 1px solid #fff;
-
     padding: 30px 0 160px;
-    margin: 160px 140px 428px;
-
+    margin: 160px 140px 180px;
     color: var(--white, #fff);
-
-    /* Desktop/Text Large */
     font-family: "NotoSansRegular";
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 39px */
-
     z-index: 1;
 
     &__info {
@@ -293,21 +286,53 @@
       line-height: 30px;
     }
 
-    @include respond("mobile") {
-      margin: 0px 32px;
-      font-size: 18px;
+    @include respond("tablet") {
+      padding: 30px 0 160px;
+      margin: 80px;
+    }
 
+    @include respond("mobile") {
+      margin: 60px;
+      font-size: 18px;
       &__info {
         font-size: 16px;
       }
     }
-
     a {
       color: white;
     }
   }
 
   .footer {
-    padding: 107px 70px 80px;
+    padding: 180px 70px 80px;
+
+    @include respond("tablet") {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+
+    @include respond("mobile") {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+    }
   }
+
+
+  &__pattern-wave {
+    position: relative;
+    bottom: 10px;
+    left: -420px;
+    width: 200%;
+    margin-top: -180px;
+    transform: rotate(1deg);
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+
+    @include respond("mobile") {
+      display: none;
+    }
+
+  }
+
 }

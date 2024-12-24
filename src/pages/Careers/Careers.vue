@@ -10,26 +10,26 @@
           class="app__gradient-top-blue"
       />
 
-      <app-header current-page="careers">
-        <app-menu/>
-      </app-header>
+      <AppHeader current-page="careers">
+        <AppMenu />
+      </AppHeader>
 
-      <!-- <intersection-observer @intersect="handleIntersect(Section.Jumbotron, $event)"> -->
       <div class="jumbotron">
-        <div class="jumbotron__title">
-          <app-title>AI for Equity:</app-title>
-          Build the Unbuilt with Us
+        <div class="title">
+          <AppTitle>AI for Equity:</AppTitle>
+          Build the<br />Unbuilt with Us
         </div>
-        <div class="jumbotron__description">
+
+        <div class="description">
           We are at the forefront of crafting advanced machine learning software
           to reshape global equity. Join us to pioneer new frontiers and shape a
           future where technology empowers all
         </div>
+
         <div class="circle top">
-          <img src="../../assets/pattern-circle.png" alt=""/>
+          <img src="../../assets/pattern-circle.png" alt="" />
         </div>
       </div>
-      <!-- </intersection-observer> -->
 
       <!-- <intersection-observer @intersect="handleIntersect(Section.Jobs, $event)"> -->
       <div class="jobs">
@@ -131,7 +131,13 @@
         <img src="../../assets/pattern-wave.png"/>
       </div>
 
-      <app-footer/>
+      <img
+          src="/src/assets/pattern-wave.png"
+          class="careers__pattern-wave"
+          alt="Wave Pattern"
+      />
+
+      <AppFooter />
 
       <img
           src="../../assets/gradient-bottom-yellow.png"
@@ -151,5 +157,4 @@ import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 import AppTitle from "@/components/AppTitle";
 import "./Careers.scss";
-
 </script>

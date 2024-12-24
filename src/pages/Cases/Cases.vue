@@ -168,7 +168,7 @@
     <GetInTouch />
     <img
       src="/src/assets/pattern-wave.png"
-      class="product-footer__pattern-wave"
+      class="cases__pattern-wave"
       alt="Wave Pattern"
     />
     <AppFooter />
