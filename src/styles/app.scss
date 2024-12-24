@@ -7,7 +7,8 @@
 
 html,
 body {
-  height: 100%;
+  overflow: auto; /* Ensure scrolling is allowed */
+  height: auto; /* Ensure the height is not restricted */
 }
 
 #app {

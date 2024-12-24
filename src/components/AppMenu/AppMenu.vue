@@ -64,7 +64,6 @@
 import { ref } from "vue";
 import HamburgerMenuIcon from "@/assets/hamburger-menu.svg";
 import CrossIcon from "@/assets/cross.svg";
-import { EMAIL } from "@/data";
 
 const MENU_ITEMS = [
   { title: "Home", href: `/` },
@@ -80,7 +79,7 @@ const MENU_ITEMS = [
   { title: "Docs", href: "https://docs.causalfoundry.ai/", target: "_blank" },
   { title: "About", href: "/about" },
   { title: "Careers", href: "/careers" },
-  { title: "Contact", href: `mailto:${EMAIL}` },
+  { title: "Contact", href: `/contact` },
 ];
 
 const open = ref(false);
