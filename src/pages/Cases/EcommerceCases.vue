@@ -5,84 +5,18 @@
     </AppHeader>
 
     <PageHeader
-      :description="PAGE_DESCRIPTION"
-      className="cases__header"
-      image="/images/cases/top-hospital.png"
+      :description="ECOMMERCE_PAGE_DESCRIPTION"
+      :showButton="true"
+      className="cases__ecommerce_header"
+      image="/images/cases/header_ecommerce.png"
     >
       <template #title>
         <AppTitle>Build in Partnership</AppTitle>
-        with Causal Foundry for Healthcare
+        with Causal Foundry for E-Commerce
       </template>
     </PageHeader>
 
-    <SuccessCase title="CASE 1. mothers2mothers">
-      <Logos>
-        <template #first>
-          <img :src="`/images/cases/cf-logo.png`" />
-        </template>
-        <template #second>
-          <img :src="`/images/cases/m2m/logo.png`" />
-        </template>
-      </Logos>
-      <TextImage :title="M2M_FIRST_TITLE" :text="M2M_FIRST_TEXT" primary>
-        <template #image>
-          <img :src="`/images/cases/m2m/first.png`" />
-        </template>
-      </TextImage>
-
-      <Image>
-        <template #image>
-          <div class="m2m-dashboard">
-            <img :src="`/images/cases/m2m/dashboard.png`" />
-          </div>
-        </template>
-      </Image>
-
-      <TextImage
-        :title="M2M_SECOND_TITLE"
-        :text="M2M_SECOND_TEXT"
-        :reversed="true"
-        className="charm-text-image"
-      >
-        <template #image>
-          <div class="images-phones">
-            <img :src="`/images/cases/m2m/phones.png`" />
-          </div>
-        </template>
-
-        <template #extra-image>
-          <div class="key-app-features-title">Key App Features</div>
-
-          <div class="key-app-features">
-            <div class="key-app-features__item">
-              <img :src="`/images/cases/m2m/calendar_month.png`" />
-              <span> Create, Track and Manage Appointments </span>
-            </div>
-            <div class="key-app-features__item">
-              <img :src="`/images/cases/m2m/bar_chart_4_bars.png`" />
-              <span> Track Personal Progress and KPI </span>
-            </div>
-
-            <div class="key-app-features__item">
-              <img :src="`/images/cases/m2m/ecg_heart.png`" />
-              <span> Manage Clients In a Few Taps </span>
-            </div>
-
-            <div class="key-app-features__item">
-              <img :src="`/images/cases/m2m/bid_landscape.png`" />
-              <span> Track and Manage Peer Mentor Performance </span>
-            </div>
-          </div>
-        </template>
-      </TextImage>
-
-      <div class="m2m-footer">
-        <Quote :text="M2M_QUOTE_TEXT" :from="M2M_QUOTE_FROM" />
-        <ShortDescriptionList :items="M2M_ITEMS" />
-      </div>
-    </SuccessCase>
-
-    <SuccessCase title="CASE 2. SwipeRX">
+    <SuccessCase title="CASE 1. SwipeRX">
       <Logos>
         <template #first>
           <img :src="`/images/cases/cf-logo.png`" />
@@ -125,43 +59,6 @@
           title="What we achieved"
           :description="SWIPERX_ACHIEVEMENTS"
         />
-      </div>
-    </SuccessCase>
-
-    <SuccessCase title="CASE 3. Momentum">
-      <Logos>
-        <template #first>
-          <img :src="`/images/cases/cf-logo.png`" />
-        </template>
-        <template #second>
-          <img :src="`/images/cases/momentum/logo.png`" />
-        </template>
-      </Logos>
-      <TextImage
-        :title="MOMENTUM_FIRST_TITLE"
-        :text="MOMENTUM_FIRST_TEXT"
-        reversed
-        primary
-      >
-        <template #image>
-          <img :src="`/images/cases/momentum/aide-chemist.png`" />
-        </template>
-      </TextImage>
-
-      <TextImage
-        :title="MOMENTUM_SECOND_TITLE"
-        :text="MOMENTUM_SECOND_TEXT"
-        className="momentum-text-image"
-      >
-        <template #image>
-          <div class="momentum-images">
-            <img :src="`/images/cases/momentum/aide_phones.png`" />
-          </div>
-        </template>
-      </TextImage>
-      <div class="momentum-footer">
-        <Quote :text="MOMENTUM_QUOTE_TEXT" :from="MOMENTUM_QUOTE_FROM" />
-        <ShortDescriptionList :items="MOMENTUM_ITEMS" title="Key features" />
       </div>
     </SuccessCase>
 
@@ -225,7 +122,7 @@ import {
   MOMENTUM_SECOND_TEXT,
   MOMENTUM_QUOTE_TEXT,
   MOMENTUM_QUOTE_FROM,
-  PAGE_DESCRIPTION,
+  PAGE_DESCRIPTION, ECOMMERCE_PAGE_DESCRIPTION,
 } from "./constants";
 
 import "./cases.scss";

@@ -73,13 +73,13 @@
         <div class="small-title"><AppTitle>Healthcare</AppTitle></div>
         <div class="small-paragraph">
           <BreakableText :text="HEALTHCARE" />
-          <Link to="/cases" text="Explore" />
+          <Link to="/cases/healthcare" text="Explore" />
         </div>
 
         <div class="small-title"><AppTitle>E-Commerce</AppTitle></div>
         <div class="small-paragraph">
           <BreakableText :text="ECOMMERCE" />
-          <Link to="/cases" text="Explore" />
+          <Link to="/cases/e-commerce" text="Explore" />
         </div>
 
         <div class="small-title"><AppTitle>E-Learning</AppTitle></div>
