@@ -14,22 +14,22 @@
         <app-menu/>
       </app-header>
 
-      <!-- <intersection-observer @intersect="handleIntersect(Section.Jumbotron, $event)"> -->
       <div class="jumbotron">
-        <div class="jumbotron__title">
-          <app-title>AI for Equity:</app-title>
-          Build the Unbuilt with Us
+        <div class="title">
+          <AppTitle>AI for Equity:</AppTitle>
+          Build the<br />Unbuilt with Us
         </div>
-        <div class="jumbotron__description">
+
+        <div class="description">
           We are at the forefront of crafting advanced machine learning software
           to reshape global equity. Join us to pioneer new frontiers and shape a
           future where technology empowers all
         </div>
+
         <div class="circle top">
-          <img src="../../assets/pattern-circle.png" alt=""/>
+          <img src="../../assets/pattern-circle.png" alt="" />
         </div>
       </div>
-      <!-- </intersection-observer> -->
 
       <!-- <intersection-observer @intersect="handleIntersect(Section.Jobs, $event)"> -->
       <div class="jobs">
@@ -151,5 +151,6 @@ import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 import AppTitle from "@/components/AppTitle";
 import "./Careers.scss";
+import {PRODUCT_DESCRIPTION} from "@/pages/Product/constants";
 
 </script>
