@@ -307,11 +307,13 @@
     padding: 180px 70px 80px;
 
     @include respond("tablet") {
+      padding-top: 20px;
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
     }
 
     @include respond("mobile") {
+      padding-top: 20px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
@@ -330,7 +332,11 @@
     user-select: none;
 
     @include respond("mobile") {
-      display: none;
+      position: absolute;
+      bottom: 720px;
+      width: 150%;
+      left: 0;
+      margin-top: 10px;
     }
 
   }
