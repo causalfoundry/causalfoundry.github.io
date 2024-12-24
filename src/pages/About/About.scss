@@ -369,8 +369,29 @@
     }
   }
 
+  .pattern-wave {
+    position: absolute;
+    bottom: 250px;
+    width: 140vw;
+    right: -35vw;
+    transform: rotate(-5deg);
+
+    @include respond("tablet") {
+      padding: 0;
+    }
+
+    @include respond("mobile") {
+      padding: 0;
+      bottom: 720px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
   .spacer {
-    height: 400px;
+    height: 630px;
     width: 100%;
     @include respond("mobile") {
       height: 0;

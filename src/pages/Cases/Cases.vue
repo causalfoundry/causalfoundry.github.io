@@ -166,12 +166,22 @@
     </SuccessCase>
 
     <GetInTouch />
+    <div class="spacer"></div>
     <img
       src="/src/assets/pattern-wave.png"
       class="cases__pattern-wave"
       alt="Wave Pattern"
     />
     <AppFooter />
+
+    <img
+        src="../../assets/gradient-bottom-yellow.png"
+        class="app__gradient-bottom-yellow"
+    />
+    <img
+        src="../../assets/gradient-bottom-blue.png"
+        class="app__gradient-bottom-blue"
+    />
   </div>
 </template>
 
