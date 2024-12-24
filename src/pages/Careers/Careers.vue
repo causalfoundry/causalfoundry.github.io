@@ -10,9 +10,9 @@
           class="app__gradient-top-blue"
       />
 
-      <app-header current-page="careers">
-        <app-menu/>
-      </app-header>
+      <AppHeader current-page="careers">
+        <AppMenu />
+      </AppHeader>
 
       <div class="jumbotron">
         <div class="title">
@@ -131,7 +131,13 @@
         <img src="../../assets/pattern-wave.png"/>
       </div>
 
-      <app-footer/>
+      <img
+          src="/src/assets/pattern-wave.png"
+          class="careers__pattern-wave"
+          alt="Wave Pattern"
+      />
+
+      <AppFooter />
 
       <img
           src="../../assets/gradient-bottom-yellow.png"
@@ -151,6 +157,4 @@ import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 import AppTitle from "@/components/AppTitle";
 import "./Careers.scss";
-import {PRODUCT_DESCRIPTION} from "@/pages/Product/constants";
-
 </script>

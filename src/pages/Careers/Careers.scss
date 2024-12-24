@@ -10,19 +10,18 @@
     width: 1440px;
   }
 
-  .header {
-    padding: 60px 140px 40px 140px;
+  & > .header {
+    width: 1200px;
 
     @include respond("mobile") {
-      padding-left: 60px;
-      padding-right: 60px;
+      width: unset;
     }
   }
 
   .circle {
     position: absolute;
-    top: 0px;
-    left: 45vw;
+    top: -50px;
+    left: 49vw;
     z-index: -1;
 
     @include respond("tablet") {
@@ -36,14 +35,13 @@
 
   .jumbotron {
     position: relative;
-    z-index: 1;
-    padding: 270px 121px 320px;
+    z-index: 10;
+    padding: 270px 121px 330px;
     display: flex;
     flex-direction: column;
 
     .title {
       margin-bottom: 32px;
-
       font-family: "NeueMachinaMedium";
       font-size: 58px;
       font-weight: 400;
@@ -55,14 +53,13 @@
     .description {
       max-width: 691px;
       width: 100%;
-      margin-bottom: 245px;
-
       font-family: "NotoSansLight";
       font-size: 24px;
       font-weight: 400;
       line-height: 39px;
       letter-spacing: 0em;
       text-align: left;
+      margin-bottom: 250px;
 
       @include respond("mobile") {
         margin-bottom: 50px;
@@ -70,15 +67,11 @@
     }
 
     @include respond("tablet") {
-      padding-left: 60px;
-      padding-right: 60px;
+      padding: 280px 60px 60px;
     }
 
     @include respond("mobile") {
-      padding-left: 60px;
-      padding-right: 60px;
-      padding-top: 120px;
-      padding-bottom: 60px;
+      padding: 120px 60px 60px;
 
       .title {
         font-family: "NeueMachinaMedium";
@@ -104,6 +97,11 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
+
+
+    @include respond("tablet") {
+      padding: 160px 60px;
+    }
 
     @include respond("mobile") {
       padding: 160px 60px;
@@ -270,19 +268,14 @@
 
   &__culture {
     border-top: 1px solid #fff;
-
     padding: 30px 0 160px;
     margin: 160px 140px 180px;
-
     color: var(--white, #fff);
-
-    /* Desktop/Text Large */
     font-family: "NotoSansRegular";
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 39px */
-
     z-index: 1;
 
     &__info {
@@ -293,21 +286,53 @@
       line-height: 30px;
     }
 
+    @include respond("tablet") {
+      padding: 30px 0 160px;
+      margin: 80px;
+    }
+
     @include respond("mobile") {
       margin: 60px;
       font-size: 18px;
-
       &__info {
         font-size: 16px;
       }
     }
-
     a {
       color: white;
     }
   }
 
   .footer {
-    padding: 107px 70px 80px;
+    padding: 180px 70px 80px;
+
+    @include respond("tablet") {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+    }
+
+    @include respond("mobile") {
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+    }
   }
+
+
+  &__pattern-wave {
+    position: relative;
+    bottom: 10px;
+    left: -420px;
+    width: 200%;
+    margin-top: -180px;
+    transform: rotate(1deg);
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+
+    @include respond("mobile") {
+      display: none;
+    }
+
+  }
+
 }

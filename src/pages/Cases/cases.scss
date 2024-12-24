@@ -101,4 +101,22 @@
   .momentum-footer {
     margin-top: -102px;
   }
+
+  &__pattern-wave {
+    position: relative;
+    bottom: 10px;
+    left: 120px;
+    width: 150%;
+    margin-top: -180px;
+    transform: rotate(1deg);
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+
+    @include respond("mobile") {
+      display: none;
+    }
+
+  }
+
 }
