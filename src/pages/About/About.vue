@@ -122,6 +122,9 @@
 
     <GetInTouch highlighted/>
     <div class="spacer"></div>
+    <div class="pattern-wave">
+      <img src="../../assets/pattern-wave.png" />
+    </div>
 
     <AppFooter/>
 

@@ -110,7 +110,7 @@
     <div class="pattern-wave">
       <img src="../../assets/pattern-wave.png" />
     </div>
-    <app-footer />
+    <AppFooter />
     <img
       src="../../assets/gradient-bottom-yellow.png"
       class="app__gradient-bottom-yellow"

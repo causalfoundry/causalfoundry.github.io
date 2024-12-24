@@ -102,6 +102,16 @@
     margin-top: -102px;
   }
 
+
+
+  .spacer {
+    height: 180px;
+    width: 100%;
+    @include respond("mobile") {
+      height: 0;
+    }
+  }
+
   &__pattern-wave {
     position: relative;
     bottom: 10px;
