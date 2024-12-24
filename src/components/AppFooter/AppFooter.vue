@@ -26,7 +26,7 @@
           ><div class="footer__menu__item">About</div></router-link
         >
         <a target="_blank" href="https://docs.causalfoundry.ai/"
-          ><div class="footer__menu__item">Doc</div></a
+          ><div class="footer__menu__item">Docs</div></a
         >
       </div>
       <div class="footer__menu__row">
