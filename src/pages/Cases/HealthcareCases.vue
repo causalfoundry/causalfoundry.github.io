@@ -5,9 +5,10 @@
     </AppHeader>
 
     <PageHeader
-      :description="PAGE_DESCRIPTION"
-      className="cases__header"
-      image="/images/cases/top-hospital.png"
+      :description="HEALTHCARE_PAGE_DESCRIPTION"
+      :showButton="true"
+      className="cases__healthcare_header"
+      image="/images/cases/header_healthcare.png"
     >
       <template #title>
         <AppTitle>Build in Partnership</AppTitle>
@@ -82,53 +83,7 @@
       </div>
     </SuccessCase>
 
-    <SuccessCase title="CASE 2. SwipeRX">
-      <Logos>
-        <template #first>
-          <img :src="`/images/cases/cf-logo.png`" />
-        </template>
-        <template #second>
-          <img :src="`/images/cases/swiperx/logo.png`" />
-        </template>
-      </Logos>
-      <TextImage
-        :title="SWIPERX_FIRST_TITLE"
-        :text="SWIPERX_FIRST_TEXT"
-        primary
-      >
-        <template #image>
-          <img :src="`/images/cases/swiperx/first.png`" />
-        </template>
-      </TextImage>
-
-      <TextImage
-        :title="SWIPERX_SECOND_TITLE"
-        :text="SWIPERX_SECOND_TEXT"
-        reversed
-      >
-        <template #extra-image>
-          <img :src="`/images/cases/swiperx/chart.png`" />
-        </template>
-
-        <template #image>
-          <div class="image-big-phones">
-            <img :src="`/images/cases/swiperx/bigphones.png`" />
-          </div>
-        </template>
-      </TextImage>
-
-      <div>
-        <Quote :text="SWIPERX_QUOTE_TEXT" :from="SWIPERX_QUOTE_FROM" />
-        <ShortDescriptionList
-          :items="SWIPERX_ITEMS"
-          highlighted
-          title="What we achieved"
-          :description="SWIPERX_ACHIEVEMENTS"
-        />
-      </div>
-    </SuccessCase>
-
-    <SuccessCase title="CASE 3. Momentum">
+    <SuccessCase title="CASE 2. Momentum">
       <Logos>
         <template #first>
           <img :src="`/images/cases/cf-logo.png`" />
@@ -225,7 +180,7 @@ import {
   MOMENTUM_SECOND_TEXT,
   MOMENTUM_QUOTE_TEXT,
   MOMENTUM_QUOTE_FROM,
-  PAGE_DESCRIPTION,
+  PAGE_DESCRIPTION, HEALTHCARE_PAGE_DESCRIPTION,
 } from "./constants";
 
 import "./cases.scss";

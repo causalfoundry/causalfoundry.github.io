@@ -9,12 +9,26 @@
   flex-direction: column;
   align-items: center;
 
-  &__header {
+  &__healthcare_header {
     height: 800px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-      url("/images/cases/top-hospital.png");
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+      url("/images/cases/header_healthcare.png");
+      //url("/images/cases/header_healthcare.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+
+    @include respond("mobile") {
+      background-image: unset;
+      height: unset;
+    }
+  }
+
+  &__ecommerce_header {
+    height: 800px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.5)),
+    url("/images/cases/header_ecommerce.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include respond("mobile") {
       background-image: unset;

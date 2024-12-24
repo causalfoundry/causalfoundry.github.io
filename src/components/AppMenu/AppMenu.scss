@@ -3,10 +3,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;   
+    height: 100vh;
     width: 100vw;
     transform: translateX(-100%);
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 
     &--open {
       transform: translateX(0);
@@ -31,7 +31,7 @@
 
   &__nav {
     width: 80%;
-    
+
     ul {
       list-style: none;
       font-family: 'NeueMachinaRegular';
@@ -44,17 +44,23 @@
 
         &:hover {
           opacity: 0.8;
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
         }
 
         a {
           text-decoration: none;
           color: white;
         }
+
+        .app-menu__dropdown-button {
+          text-transform: uppercase;
+          font-family: 'NeueMachinaRegular';
+          font-size: 20px;
+        }
       }
     }
   }
-    
+
   &__button {
     background: none;
     border: none;
@@ -62,7 +68,55 @@
 
     &:hover {
       opacity: 0.8;
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
+  }
+
+  &__dropdown {
+    position: relative;
+  }
+
+  &__dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    margin-left: -8px; // not optimal but works
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  &__arrow {
+    margin-left: 8px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__submenu {
+    position: relative;
+    background: black;
+    list-style: none;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+  }
+
+  &__submenu li {
+    margin-top: 20px;
+    padding: 12px 12px;
+    margin-bottom: 20px !important;
+  }
+
+  &__submenu li a {
+    text-decoration: none;
+    color: white;
   }
 }

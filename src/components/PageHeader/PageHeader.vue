@@ -10,7 +10,11 @@
       <div class="mid-container">
         <BreakableText :text="description" />
       </div>
+      <div v-if="showButton" class="contact-button">
+        <Button value="GET IN TOUCH" @click="handleButtonClick" />
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -18,6 +22,13 @@
 import BreakableText from "@/components/BreakableText";
 
 import "./page-header.scss";
+import Button from "@/ui-components/button";
+import {useRouter} from "vue-router";
+
+const router = useRouter();
+function handleButtonClick(event: MouseEvent) {
+  router.push("/contact");
+}
 
 const props = defineProps({
   description: {
@@ -31,6 +42,10 @@ const props = defineProps({
   className: {
     type: String,
     required: false,
+  },
+  showButton: {
+    type: Boolean,
+    default: false,
   },
 });
 </script>
