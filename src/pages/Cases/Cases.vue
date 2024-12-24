@@ -166,7 +166,6 @@
     </SuccessCase>
 
     <GetInTouch />
-    <div class="spacer"></div>
     <img
       src="/src/assets/pattern-wave.png"
       class="cases__pattern-wave"
