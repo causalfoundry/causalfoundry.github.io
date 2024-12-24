@@ -109,11 +109,11 @@
 
     <GetInTouch />
 
-    <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">
+<!--    <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">-->
       <div class="news-land" :id="Section.News">
         <News />
       </div>
-    </IntersectionObserver>
+<!--    </IntersectionObserver>-->
 
     <div class="funded-land" :id="Section.FundedBy">
       <FundedBy />
