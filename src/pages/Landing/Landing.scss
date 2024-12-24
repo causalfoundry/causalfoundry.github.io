@@ -3,7 +3,6 @@
 .funded-by__pattern-wave {
   pointer-events: none;
   user-select: none;
-  z-index: -1;
 }
 
 .landing2 {
@@ -11,7 +10,6 @@
   color: #fff;
   scroll-behavior: smooth;
   position: relative;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -53,6 +51,7 @@
 
   .circle {
     position: absolute;
+    z-index: -1;
     top: 0px;
     left: 45vw;
 
@@ -295,6 +294,7 @@
       top: 200px;
       width: max(1367px, 100vw);
       left: min(-900px, -50vw);
+      z-index: -1;
 
       @include respond("tablet") {
         position: relative;
