@@ -498,10 +498,6 @@
         <ul>
           <li>By email: connect@causalfoundry.ai</li>
         </ul>
-
-        <div class="generated-by">
-          Generated using TermsFeed Privacy Policy Generator
-        </div>
       </div>
 
       <AppFooter />
