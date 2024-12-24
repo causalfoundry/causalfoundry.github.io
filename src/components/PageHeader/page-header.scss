@@ -48,6 +48,10 @@
 
     @include respond("mobile") {
       width: unset;
+      margin-top: 20px;
+      font-size: 50px;
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
     }
   }
 
@@ -64,6 +68,11 @@
     @include respond("mobile") {
       width: unset;
       line-height: 30px;
+      font-size: 18px;
+      margin-bottom: 50px;
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
     }
+
   }
 }

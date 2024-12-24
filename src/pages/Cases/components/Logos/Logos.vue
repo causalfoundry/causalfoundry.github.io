@@ -1,8 +1,13 @@
 <template>
   <div class="case-logos">
-    <slot name="first"></slot>
+    <div class="clogos">
+      <slot name="first"></slot>
+    </div>
     <span>&</span>
-    <slot name="second"></slot>
+    <div class="clogos">
+      <slot name="second"></slot>
+    </div>
+
   </div>
 </template>
 

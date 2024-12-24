@@ -2,9 +2,7 @@
   background-color: #000;
   color: #fff;
   position: relative;
-
   justify-content: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,8 +10,8 @@
   &__healthcare_header {
     height: 800px;
     background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
-      url("/images/cases/header_healthcare.png");
-      //url("/images/cases/header_healthcare.png");
+    url("/images/cases/header_healthcare.png");
+    //url("/images/cases/header_healthcare.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -25,7 +23,7 @@
 
   &__ecommerce_header {
     height: 800px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
     url("/images/cases/header_ecommerce.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +41,7 @@
       width: unset;
     }
   }
+
   .m2m-dashboard img {
     @include respond("mobile") {
       width: 100%;
@@ -55,6 +54,7 @@
     position: relative;
     left: -150px;
   }
+
   .momentum-images {
     position: relative;
     right: -10px;

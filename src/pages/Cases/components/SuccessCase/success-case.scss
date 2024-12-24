@@ -14,10 +14,18 @@
   }
 
   @include respond("mobile") {
-    margin: 0 auto;
+    margin: 50px auto;
+    padding-left: $app-side-padding-mobile;
+    padding-right: $app-side-padding-mobile;
     max-width: unset;
     box-sizing: border-box;
-    padding: 0 5px 0 5px;
+    gap: 100px;
+
+    header {
+      width: 100%;
+      font-size: 20pt;
+    }
+
   }
 
   & > header {
