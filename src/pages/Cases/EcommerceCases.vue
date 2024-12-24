@@ -62,6 +62,43 @@
       </div>
     </SuccessCase>
 
+    <SuccessCase title="CASE 2. Momentum">
+      <Logos>
+        <template #first>
+          <img :src="`/images/cases/cf-logo.png`" />
+        </template>
+        <template #second>
+          <img :src="`/images/cases/momentum/logo.png`" />
+        </template>
+      </Logos>
+      <TextImage
+          :title="MOMENTUM_FIRST_TITLE"
+          :text="MOMENTUM_FIRST_TEXT"
+          reversed
+          primary
+      >
+        <template #image>
+          <img :src="`/images/cases/momentum/aide-chemist.png`" />
+        </template>
+      </TextImage>
+
+      <TextImage
+          :title="MOMENTUM_SECOND_TITLE"
+          :text="MOMENTUM_SECOND_TEXT"
+          className="momentum-text-image"
+      >
+        <template #image>
+          <div class="momentum-images">
+            <img :src="`/images/cases/momentum/aide_phones.png`" />
+          </div>
+        </template>
+      </TextImage>
+      <div class="momentum-footer">
+        <Quote :text="MOMENTUM_QUOTE_TEXT" :from="MOMENTUM_QUOTE_FROM" />
+        <ShortDescriptionList :items="MOMENTUM_ITEMS" title="Key features" />
+      </div>
+    </SuccessCase>
+
     <GetInTouch />
     <img
       src="/src/assets/pattern-wave.png"
@@ -108,6 +145,11 @@ import {
   SWIPERX_ITEMS,
   SWIPERX_ACHIEVEMENTS,
   ECOMMERCE_PAGE_DESCRIPTION,
+  MOMENTUM_FIRST_TITLE,
+  MOMENTUM_FIRST_TEXT,
+  MOMENTUM_SECOND_TITLE,
+  MOMENTUM_SECOND_TEXT,
+  MOMENTUM_QUOTE_TEXT, MOMENTUM_QUOTE_FROM, MOMENTUM_ITEMS,
 } from "./constants";
 
 import "./cases.scss";

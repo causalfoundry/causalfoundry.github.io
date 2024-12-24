@@ -10,7 +10,9 @@
 
       <slot name="extra-image"></slot>
     </div>
-    <slot name="image"></slot>
+    <div class="main_image">
+      <slot name="image"></slot>
+    </div>
   </div>
 </template>
 
