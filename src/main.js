@@ -44,6 +44,10 @@ const routes = [
             {path: "/contact", component: GetInTouchPage},
         ],
     },
+    {
+        path: "/:catchAll(.*)", // Catch all undefined routes
+        redirect: "/", // Redirect to home page
+    }
     // ...jobs.map((job) => ({
     //   path: `/careers/${job.key}`, component: Job, props: { jobDetails: job },
     // }))

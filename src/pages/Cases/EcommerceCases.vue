@@ -85,7 +85,6 @@
 import Quote from "./components/Quote";
 import SuccessCase from "./components/SuccessCase";
 import TextImage from "./components/TextImage";
-import Image from "./components/Image";
 
 import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
@@ -108,21 +107,7 @@ import {
   SWIPERX_SECOND_TEXT,
   SWIPERX_ITEMS,
   SWIPERX_ACHIEVEMENTS,
-  M2M_FIRST_TITLE,
-  M2M_FIRST_TEXT,
-  M2M_SECOND_TITLE,
-  M2M_SECOND_TEXT,
-  M2M_QUOTE_TEXT,
-  M2M_QUOTE_FROM,
-  M2M_ITEMS,
-  MOMENTUM_ITEMS,
-  MOMENTUM_FIRST_TITLE,
-  MOMENTUM_FIRST_TEXT,
-  MOMENTUM_SECOND_TITLE,
-  MOMENTUM_SECOND_TEXT,
-  MOMENTUM_QUOTE_TEXT,
-  MOMENTUM_QUOTE_FROM,
-  PAGE_DESCRIPTION, ECOMMERCE_PAGE_DESCRIPTION,
+  ECOMMERCE_PAGE_DESCRIPTION,
 } from "./constants";
 
 import "./cases.scss";
