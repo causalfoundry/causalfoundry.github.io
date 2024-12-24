@@ -107,7 +107,7 @@
         reversed
       >
         <template #extra-image>
-          <img :src="`/images/cases/swiperx/chart.png`" />
+          <img :src="`/images/cases/swiperx/chart2.png`" />
         </template>
 
         <template #image>
