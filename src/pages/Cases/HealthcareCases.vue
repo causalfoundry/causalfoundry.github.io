@@ -11,7 +11,7 @@
       image="/images/cases/header_healthcare.png"
     >
       <template #title>
-        <AppTitle>Build in Partnership</AppTitle>
+        <AppTitle>Built in Partnership</AppTitle>
         with Causal Foundry for Healthcare
       </template>
     </PageHeader>
