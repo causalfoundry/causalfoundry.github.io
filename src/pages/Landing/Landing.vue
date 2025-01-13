@@ -48,15 +48,6 @@
       <ShortDescriptionList :items="summaries" />
     </div>
 
-    <IntersectionObserver @intersect="handleIntersect(Section.Problem, $event)">
-      <div class="mission problem landing-section" :id="Section.Problem">
-        <div class="title">Mission</div>
-        <div class="paragraph">
-          {{ MISSION }}
-        </div>
-      </div>
-    </IntersectionObserver>
-
     <IntersectionObserver
       @intersect="handleIntersect(Section.Applications, $event)"
     >
@@ -109,11 +100,11 @@
 
     <GetInTouch />
 
-<!--    <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">-->
-      <div class="news-land" :id="Section.News">
-        <News />
-      </div>
-<!--    </IntersectionObserver>-->
+    <!--    <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">-->
+    <div class="news-land" :id="Section.News">
+      <News />
+    </div>
+    <!--    </IntersectionObserver>-->
 
     <div class="funded-land" :id="Section.FundedBy">
       <FundedBy />
@@ -154,7 +145,6 @@ import Link from "@/ui-components/Link";
 import { Section } from "@/typings/section";
 
 import { LANDING_DESCRIPTION } from "./constants";
-import { MISSION } from "./constants";
 import { ADAPTIVE_AI } from "./constants";
 import { HEALTHCARE } from "./constants";
 import { ECOMMERCE } from "./constants";
