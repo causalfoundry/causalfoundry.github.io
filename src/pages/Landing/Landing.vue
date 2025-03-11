@@ -20,7 +20,10 @@
 
           <div class="title__item">{{ $t("landing.titles.main_third") }}</div>
           <div class="title__item">
-            <DynamicText :values="dynamicTitles" />
+            <DynamicText
+              v-if="dynamicTitles.length > 0"
+              :values="dynamicTitles"
+            />
           </div>
         </div>
 
