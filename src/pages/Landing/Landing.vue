@@ -14,19 +14,18 @@
       <div class="jumbotron landing" :id="Section.Landing">
         <div class="title">
           <div class="title__item">
-            <AppTitle>Personalized </AppTitle> interventions <br />
+            <AppTitle>{{ $t("landing.titles.main_first") }} </AppTitle>
+            {{ $t("landing.titles.main_second") }} <br />
           </div>
 
-          <div class="title__item">to revolutionize</div>
+          <div class="title__item">{{ $t("landing.titles.main_third") }}</div>
           <div class="title__item">
-            <DynamicText
-              :values="['healthcare', 'e-commerce', 'e-learning', 'videogames']"
-            />
+            <DynamicText :values="dynamicTitles" />
           </div>
         </div>
 
         <div class="description">
-          {{ LANDING_DESCRIPTION }}
+          {{ $t("landing.landingDescription") }}
         </div>
 
         <Button value="GET IN TOUCH" highlighted @click="handleRedirect" />
@@ -55,32 +54,42 @@
         class="personalized applications landing-section"
         :id="Section.Applications"
       >
-        <div class="title">Adaptive AI</div>
-
-        <div class="paragraph">
-          {{ ADAPTIVE_AI }}
+        <div class="title">
+          <AppTitle>{{ $t("landing.titles.adaptiveAi") }}</AppTitle>
         </div>
 
-        <div class="small-title"><AppTitle>Healthcare</AppTitle></div>
+        <div class="paragraph">
+          {{ $t("landing.adaptiveAi") }}
+        </div>
+
+        <div class="small-title">
+          <AppTitle>{{ $t("landing.titles.healthcare") }}</AppTitle>
+        </div>
         <div class="small-paragraph">
-          <BreakableText :text="HEALTHCARE" />
+          <BreakableText :text="$t('landing.healthcare')" />
           <Link to="/cases/healthcare" text="Explore" />
         </div>
 
-        <div class="small-title"><AppTitle>E-Commerce</AppTitle></div>
+        <div class="small-title">
+          <AppTitle>{{ $t("landing.titles.ecommerce") }}</AppTitle>
+        </div>
         <div class="small-paragraph">
-          <BreakableText :text="ECOMMERCE" />
+          <BreakableText :text="$t('landing.ecommerce')" />
           <Link to="/cases/e-commerce" text="Explore" />
         </div>
 
-        <div class="small-title"><AppTitle>E-Learning</AppTitle></div>
+        <div class="small-title">
+          <AppTitle>{{ $t("landing.titles.elearning") }}</AppTitle>
+        </div>
         <div class="small-paragraph">
-          <BreakableText :text="ELEARNING" />
+          <BreakableText :text="$t('landing.elearning')" />
         </div>
 
-        <div class="small-title"><AppTitle>Videogames</AppTitle></div>
+        <div class="small-title">
+          <AppTitle>{{ $t("landing.titles.videogames") }}</AppTitle>
+        </div>
         <div class="small-paragraph">
-          <BreakableText :text="VIDEOGAMES" />
+          <BreakableText :text="$t('landing.videogames')" />
         </div>
 
         <div class="gradient-blue">
@@ -93,7 +102,7 @@
     </IntersectionObserver>
 
     <ShortDescriptionList
-      title="Our achievements in 2024"
+      :title="$t('landing.achievements.title')"
       :items="achievements"
       highlighted
     />
@@ -124,8 +133,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useRouter } from "vue-router";
+import { onMounted } from "vue";
+import { useI18n } from "vue-i18n";
 
 import AppMenu from "@/components/AppMenu";
 import AppTitle from "@/components/AppTitle";
@@ -144,42 +155,96 @@ import Link from "@/ui-components/Link";
 
 import { Section } from "@/typings/section";
 
-import { LANDING_DESCRIPTION } from "./constants";
-import { ADAPTIVE_AI } from "./constants";
-import { HEALTHCARE } from "./constants";
-import { ECOMMERCE } from "./constants";
-import { ELEARNING } from "./constants";
-import { VIDEOGAMES } from "./constants";
-
 import "./Landing.scss";
 
 const router = useRouter();
 
-const summaries = [
-  {
-    title: "Predictions",
-    text: "Predict user behaviors and target interventions",
-  },
-  {
-    title: "Recommendations",
-    text: "Enhance the user experience through personalized content",
-  },
-  {
-    title: "Adaptive interventions",
-    text: "Increase user engagement and drive behaviors",
-  },
-  {
-    title: "Resource allocation",
-    text: "Optimize incentives & budgeted interventions to maximize their effectiveness",
-  },
-];
+const { locale, messages, t } = useI18n();
 
-const achievements = [
-  { title: "$ 1M+", text: `Revenue generated across all e-commerce partners` },
-  { title: "60K", text: `Personalized nudges sent across all partners` },
-  { title: "24%", text: `Revenue increase per intervention` },
-  { title: "6.4%", text: `Engagement increase with our partner’s app` },
-];
+const translationsLoaded = ref(false);
+
+async function loadTranslations() {
+  const lang = locale.value;
+  try {
+    const translations = await import(`./locales/${lang}.ts`);
+    messages.value[lang] = { ...messages.value[lang], ...translations.default };
+    translationsLoaded.value = true;
+  } catch (error) {
+    console.error(
+      `Failed to load translations for ${lang}, falling back to English:`,
+      error
+    );
+    try {
+      const fallbackTranslations = await import(`./locales/en.ts`);
+      messages.value[lang] = {
+        ...messages.value[lang],
+        ...fallbackTranslations.default,
+      };
+      translationsLoaded.value = true;
+    } catch (fallbackError) {
+      console.error(`Failed to load fallback translations:`, fallbackError);
+    }
+  }
+}
+
+onMounted(loadTranslations);
+
+const dynamicTitles = computed(() => {
+  if (!translationsLoaded.value) return [];
+
+  return [
+    t("landing.titles.main_dynamic_healthcare"),
+    t("landing.titles.main_dynamic_ecommerce"),
+    t("landing.titles.main_dynamic_elearning"),
+    t("landing.titles.main_dynamic_videogames"),
+  ];
+});
+
+const summaries = computed(() => {
+  if (!translationsLoaded.value) return [];
+
+  return [
+    {
+      title: t("landing.summaries.predictions.title"),
+      text: t("landing.summaries.predictions.text"),
+    },
+    {
+      title: t("landing.summaries.recommendations.title"),
+      text: t("landing.summaries.recommendations.text"),
+    },
+    {
+      title: t("landing.summaries.adaptiveInterventions.title"),
+      text: t("landing.summaries.adaptiveInterventions.text"),
+    },
+    {
+      title: t("landing.summaries.resourceAllocation.title"),
+      text: t("landing.summaries.resourceAllocation.text"),
+    },
+  ];
+});
+
+const achievements = computed(() => {
+  if (!translationsLoaded.value) return [];
+
+  return [
+    {
+      title: "$ 1M+",
+      text: t("landing.achievements.revenue"),
+    },
+    {
+      title: "60K",
+      text: t("landing.achievements.nudges"),
+    },
+    {
+      title: "24%",
+      text: t("landing.achievements.revenueIncrease"),
+    },
+    {
+      title: "6.4%",
+      text: t("landing.achievements.engagementIncrease"),
+    },
+  ];
+});
 
 const isSectionVisible = ref({
   [Section.Landing]: true,

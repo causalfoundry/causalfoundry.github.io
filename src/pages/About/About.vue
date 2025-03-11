@@ -18,8 +18,8 @@
       image="/images/about/top.png"
     >
       <template #title>
-        <AppTitle>AI</AppTitle>
-        for everyone
+        <AppTitle>{{ AI }}</AppTitle>
+        {{ EVERYONE }}
       </template>
     </PageHeader>
 
@@ -35,7 +35,7 @@
     </Section>
 
     <div class="our-story">
-      <div class="our-story__title">Mission</div>
+      <div class="our-story__title">{{ MISSION_TITLE }}</div>
       <div class="our-story__content">
         <div class="our-story__section">
           {{ MISSION }}
@@ -44,7 +44,7 @@
     </div>
 
     <div class="team">
-      <div class="title">Our Executive Team</div>
+      <div class="title">{{ TEAM_TITLE }}</div>
       <div class="members">
         <div v-for="member of team" class="member">
           <div class="avatar">
@@ -115,7 +115,15 @@ import AppTitle from "@/components/AppTitle";
 
 import PageHeader from "@/components/PageHeader";
 
-import { ABOUT_DESCRIPTION, values, MISSION } from "./constants";
+import {
+  ABOUT_DESCRIPTION,
+  values,
+  MISSION,
+  MISSION_TITLE,
+  TEAM_TITLE,
+  AI,
+  EVERYONE,
+} from "./constants";
 import team from "@/data/team";
 
 import "./About.scss";
