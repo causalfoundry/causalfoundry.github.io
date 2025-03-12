@@ -1,13 +1,18 @@
 import { ref, onMounted, computed } from "vue";
 import { useI18n } from "vue-i18n";
+import { useRoute } from "vue-router";
 
 const defaultLang = "en";
 
 export function useTranslations(basePath: string) {
   const { locale, messages } = useI18n();
+  const route = useRoute();
   const translationsLoaded = ref(false);
+
   const loadTranslations = async () => {
-    const lang = locale.value;
+    const lang = Array.isArray(route.params.lang)
+      ? route.params.lang[0]
+      : route.params.lang || locale.value;
 
     try {
       const translations = await import(`${basePath}/locales/${lang}.ts`);
@@ -17,10 +22,6 @@ export function useTranslations(basePath: string) {
       };
       translationsLoaded.value = true;
     } catch (error) {
-      console.error(
-        `Failed to load translations for ${lang}, falling back to English:`,
-        error
-      );
       try {
         const fallbackTranslations = await import(
           `${basePath}/locales/${defaultLang}.ts`
@@ -36,11 +37,16 @@ export function useTranslations(basePath: string) {
       }
     }
   };
+
   onMounted(loadTranslations);
 
-  const currentTranslations = computed(
-    () => messages.value[locale.value] || messages.value[defaultLang]
-  );
+  const currentTranslations = computed(() => {
+    const lang = Array.isArray(route.params.lang)
+      ? route.params.lang[0]
+      : route.params.lang || locale.value;
+
+    return messages.value[lang] || messages.value[defaultLang];
+  });
 
   return {
     translationsLoaded,

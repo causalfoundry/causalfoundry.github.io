@@ -35,24 +35,24 @@ library.add(faLinkedin, faXTwitter, faBluesky);
 
 const routes = [
   {
-    path: "/",
+    path: "/:lang(en|es|jp)?",
     component: CookiePageWrapper,
     children: [
-      { path: "/", component: Landing },
-      { path: "/careers", component: Careers },
-      { path: "/research", component: Research },
-      { path: "/products", component: Product },
-      { path: "/cases/healthcare", component: HealthcareCases },
-      { path: "/cases/e-commerce", component: EcommerceCases },
-      { path: "/privacy", component: PrivacyPolicy },
-      { path: "/about", component: About },
-      { path: "/cookies", component: CookiePolicy },
-      { path: "/contact", component: GetInTouchPage },
+      { path: "", component: Landing },
+      { path: "careers", component: Careers },
+      { path: "research", component: Research },
+      { path: "products", component: Product },
+      { path: "cases/healthcare", component: HealthcareCases },
+      { path: "cases/e-commerce", component: EcommerceCases },
+      { path: "privacy", component: PrivacyPolicy },
+      { path: "about", component: About },
+      { path: "cookies", component: CookiePolicy },
+      { path: "contact", component: GetInTouchPage },
     ],
   },
   {
-    path: "/:catchAll(.*)", // Catch all undefined routes
-    redirect: "/", // Redirect to home page
+    path: "/:catchAll(.*)",
+    redirect: "/",
   },
   // ...jobs.map((job) => ({
   //   path: `/careers/${job.key}`, component: Job, props: { jobDetails: job },
