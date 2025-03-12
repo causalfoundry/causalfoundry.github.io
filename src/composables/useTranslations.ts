@@ -15,17 +15,26 @@ export function useTranslations(basePath: string) {
       : route.params.lang || locale.value;
 
     try {
+      const fallbackTranslations = await import(
+        `${basePath}/locales/${defaultLang}.ts`
+      );
       const translations = await import(`${basePath}/locales/${lang}.ts`);
+
       messages.value[lang] = {
+        ...fallbackTranslations.default,
         ...messages.value[lang],
         ...translations.default,
       };
+
+      console.log("[aec] messages: ", messages.value[lang]);
+
       translationsLoaded.value = true;
     } catch (error) {
       try {
         const fallbackTranslations = await import(
           `${basePath}/locales/${defaultLang}.ts`
         );
+
         messages.value[defaultLang] = {
           ...messages.value[defaultLang],
           ...fallbackTranslations.default,
