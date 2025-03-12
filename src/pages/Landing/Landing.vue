@@ -143,7 +143,7 @@
 
 <script setup lang="ts">
 import { useTranslations } from "@/composables/useTranslations";
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { useRouter } from "vue-router";
 
 import AppMenu from "@/components/AppMenu";
@@ -169,50 +169,62 @@ const { currentTranslations: messages } = useTranslations("../pages/Landing");
 
 const router = useRouter();
 
-const dynamicTitles = computed(() => [
-  messages?.landing?.titles?.main_dynamic_healthcare,
-  messages?.landing?.titles?.main_dynamic_ecommerce,
-  messages?.landing?.titles?.main_dynamic_elearning,
-  messages?.landing?.titles?.main_dynamic_videogames,
-]);
+const dynamicTitles = ref([]);
+const summaries = ref([]);
+const achievements = ref([]);
 
-const summaries = computed(() => [
-  {
-    title: messages?.landing?.summaries?.predictions?.title,
-    text: messages?.landing?.summaries?.predictions?.text,
-  },
-  {
-    title: messages?.landing?.summaries?.recommendations?.title,
-    text: messages?.landing?.summaries?.recommendations?.text,
-  },
-  {
-    title: messages?.landing?.summaries?.adaptiveInterventions?.title,
-    text: messages?.landing?.summaries?.adaptiveInterventions?.text,
-  },
-  {
-    title: messages?.landing?.summaries?.resourceAllocation?.title,
-    text: messages?.landing?.summaries?.resourceAllocation?.text,
-  },
-]);
+watch(
+  () => messages.value,
+  (newMessages) => {
+    if (newMessages) {
+      dynamicTitles.value = [
+        newMessages.landing?.titles?.main_dynamic_healthcare,
+        newMessages.landing?.titles?.main_dynamic_ecommerce,
+        newMessages.landing?.titles?.main_dynamic_elearning,
+        newMessages.landing?.titles?.main_dynamic_videogames,
+      ];
 
-const achievements = computed(() => [
-  {
-    title: "$ 1M+",
-    text: messages?.landing?.achievements?.revenue,
+      summaries.value = [
+        {
+          title: newMessages.landing?.summaries?.predictions?.title,
+          text: newMessages.landing?.summaries?.predictions?.text,
+        },
+        {
+          title: newMessages.landing?.summaries?.recommendations?.title,
+          text: newMessages.landing?.summaries?.recommendations?.text,
+        },
+        {
+          title: newMessages.landing?.summaries?.adaptiveInterventions?.title,
+          text: newMessages.landing?.summaries?.adaptiveInterventions?.text,
+        },
+        {
+          title: newMessages.landing?.summaries?.resourceAllocation?.title,
+          text: newMessages.landing?.summaries?.resourceAllocation?.text,
+        },
+      ];
+
+      achievements.value = [
+        {
+          title: "$ 1M+",
+          text: newMessages.landing?.achievements?.revenue,
+        },
+        {
+          title: "60K",
+          text: newMessages.landing?.achievements?.nudges,
+        },
+        {
+          title: "24%",
+          text: newMessages.landing?.achievements?.revenueIncrease,
+        },
+        {
+          title: "6.4%",
+          text: newMessages.landing?.achievements?.engagementIncrease,
+        },
+      ];
+    }
   },
-  {
-    title: "60K",
-    text: messages?.landing?.achievements?.nudges,
-  },
-  {
-    title: "24%",
-    text: messages?.landing?.achievements?.revenueIncrease,
-  },
-  {
-    title: "6.4%",
-    text: messages?.landing?.achievements?.engagementIncrease,
-  },
-]);
+  { immediate: true }
+);
 
 const isSectionVisible = ref({
   [Section.Landing]: true,
