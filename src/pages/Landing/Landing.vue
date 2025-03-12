@@ -14,11 +14,13 @@
       <div class="jumbotron landing" :id="Section.Landing">
         <div class="title">
           <div class="title__item">
-            <AppTitle>{{ $t("landing.titles.main_first") }} </AppTitle>
-            {{ $t("landing.titles.main_second") }} <br />
+            <AppTitle>{{ messages?.landing?.titles?.main_first }} </AppTitle>
+            {{ messages?.landing?.titles?.main_second }} <br />
           </div>
 
-          <div class="title__item">{{ $t("landing.titles.main_third") }}</div>
+          <div class="title__item">
+            {{ messages?.landing?.titles?.main_third }}
+          </div>
           <div class="title__item">
             <DynamicText
               v-if="dynamicTitles.length > 0"
@@ -28,10 +30,14 @@
         </div>
 
         <div class="description">
-          {{ $t("landing.landingDescription") }}
+          {{ messages?.landing?.landingDescription }}
         </div>
 
-        <Button value="GET IN TOUCH" highlighted @click="handleRedirect" />
+        <Button
+          :value="messages?.landing?.buttonText"
+          highlighted
+          @click="handleRedirect"
+        />
         <div class="circle top">
           <img src="../../assets/pattern-circle.png" alt="" />
         </div>
@@ -58,41 +64,41 @@
         :id="Section.Applications"
       >
         <div class="title">
-          <AppTitle>{{ $t("landing.titles.adaptiveAi") }}</AppTitle>
+          <AppTitle>{{ messages?.landing?.titles?.adaptiveAi }}</AppTitle>
         </div>
 
         <div class="paragraph">
-          {{ $t("landing.adaptiveAi") }}
+          {{ messages?.landing?.adaptiveAi }}
         </div>
 
         <div class="small-title">
-          <AppTitle>{{ $t("landing.titles.healthcare") }}</AppTitle>
+          <AppTitle>{{ messages?.landing?.titles?.healthcare }}</AppTitle>
         </div>
         <div class="small-paragraph">
-          <BreakableText :text="$t('landing.healthcare')" />
-          <Link to="/cases/healthcare" text="Explore" />
+          <BreakableText :text="messages?.landing?.healthcare" />
+          <Link to="/cases/healthcare" :text="messages?.landing?.exploreText" />
         </div>
 
         <div class="small-title">
-          <AppTitle>{{ $t("landing.titles.ecommerce") }}</AppTitle>
+          <AppTitle>{{ messages?.landing?.titles?.ecommerce }}</AppTitle>
         </div>
         <div class="small-paragraph">
-          <BreakableText :text="$t('landing.ecommerce')" />
-          <Link to="/cases/e-commerce" text="Explore" />
+          <BreakableText :text="messages?.landing?.ecommerce" />
+          <Link to="/cases/e-commerce" :text="messages?.landing?.exploreText" />
         </div>
 
         <div class="small-title">
-          <AppTitle>{{ $t("landing.titles.elearning") }}</AppTitle>
+          <AppTitle>{{ messages?.landing?.titles?.elearning }}</AppTitle>
         </div>
         <div class="small-paragraph">
-          <BreakableText :text="$t('landing.elearning')" />
+          <BreakableText :text="messages?.landing?.elearning" />
         </div>
 
         <div class="small-title">
-          <AppTitle>{{ $t("landing.titles.videogames") }}</AppTitle>
+          <AppTitle>{{ messages?.landing?.titles?.videogames }}</AppTitle>
         </div>
         <div class="small-paragraph">
-          <BreakableText :text="$t('landing.videogames')" />
+          <BreakableText :text="messages?.landing?.videogames" />
         </div>
 
         <div class="gradient-blue">
@@ -105,7 +111,7 @@
     </IntersectionObserver>
 
     <ShortDescriptionList
-      :title="$t('landing.achievements.title')"
+      :title="messages?.landing?.achievements?.title"
       :items="achievements"
       highlighted
     />
@@ -136,10 +142,9 @@
 </template>
 
 <script setup lang="ts">
+import { useTranslations } from "@/composables/useTranslations";
 import { ref, computed } from "vue";
 import { useRouter } from "vue-router";
-import { onMounted } from "vue";
-import { useI18n } from "vue-i18n";
 
 import AppMenu from "@/components/AppMenu";
 import AppTitle from "@/components/AppTitle";
@@ -160,94 +165,54 @@ import { Section } from "@/typings/section";
 
 import "./Landing.scss";
 
+const { currentTranslations: messages } = useTranslations("../pages/Landing");
+
 const router = useRouter();
 
-const { locale, messages, t } = useI18n();
+const dynamicTitles = computed(() => [
+  messages?.landing?.titles?.main_dynamic_healthcare,
+  messages?.landing?.titles?.main_dynamic_ecommerce,
+  messages?.landing?.titles?.main_dynamic_elearning,
+  messages?.landing?.titles?.main_dynamic_videogames,
+]);
 
-const translationsLoaded = ref(false);
+const summaries = computed(() => [
+  {
+    title: messages?.landing?.summaries?.predictions?.title,
+    text: messages?.landing?.summaries?.predictions?.text,
+  },
+  {
+    title: messages?.landing?.summaries?.recommendations?.title,
+    text: messages?.landing?.summaries?.recommendations?.text,
+  },
+  {
+    title: messages?.landing?.summaries?.adaptiveInterventions?.title,
+    text: messages?.landing?.summaries?.adaptiveInterventions?.text,
+  },
+  {
+    title: messages?.landing?.summaries?.resourceAllocation?.title,
+    text: messages?.landing?.summaries?.resourceAllocation?.text,
+  },
+]);
 
-async function loadTranslations() {
-  const lang = locale.value;
-  try {
-    const translations = await import(`./locales/${lang}.ts`);
-    messages.value[lang] = { ...messages.value[lang], ...translations.default };
-    translationsLoaded.value = true;
-  } catch (error) {
-    console.error(
-      `Failed to load translations for ${lang}, falling back to English:`,
-      error
-    );
-    try {
-      const fallbackTranslations = await import(`./locales/en.ts`);
-      messages.value[lang] = {
-        ...messages.value[lang],
-        ...fallbackTranslations.default,
-      };
-      translationsLoaded.value = true;
-    } catch (fallbackError) {
-      console.error(`Failed to load fallback translations:`, fallbackError);
-    }
-  }
-}
-
-onMounted(loadTranslations);
-
-const dynamicTitles = computed(() => {
-  if (!translationsLoaded.value) return [];
-
-  return [
-    t("landing.titles.main_dynamic_healthcare"),
-    t("landing.titles.main_dynamic_ecommerce"),
-    t("landing.titles.main_dynamic_elearning"),
-    t("landing.titles.main_dynamic_videogames"),
-  ];
-});
-
-const summaries = computed(() => {
-  if (!translationsLoaded.value) return [];
-
-  return [
-    {
-      title: t("landing.summaries.predictions.title"),
-      text: t("landing.summaries.predictions.text"),
-    },
-    {
-      title: t("landing.summaries.recommendations.title"),
-      text: t("landing.summaries.recommendations.text"),
-    },
-    {
-      title: t("landing.summaries.adaptiveInterventions.title"),
-      text: t("landing.summaries.adaptiveInterventions.text"),
-    },
-    {
-      title: t("landing.summaries.resourceAllocation.title"),
-      text: t("landing.summaries.resourceAllocation.text"),
-    },
-  ];
-});
-
-const achievements = computed(() => {
-  if (!translationsLoaded.value) return [];
-
-  return [
-    {
-      title: "$ 1M+",
-      text: t("landing.achievements.revenue"),
-    },
-    {
-      title: "60K",
-      text: t("landing.achievements.nudges"),
-    },
-    {
-      title: "24%",
-      text: t("landing.achievements.revenueIncrease"),
-    },
-    {
-      title: "6.4%",
-      text: t("landing.achievements.engagementIncrease"),
-    },
-  ];
-});
+const achievements = computed(() => [
+  {
+    title: "$ 1M+",
+    text: messages?.landing?.achievements?.revenue,
+  },
+  {
+    title: "60K",
+    text: messages?.landing?.achievements?.nudges,
+  },
+  {
+    title: "24%",
+    text: messages?.landing?.achievements?.revenueIncrease,
+  },
+  {
+    title: "6.4%",
+    text: messages?.landing?.achievements?.engagementIncrease,
+  },
+]);
 
 const isSectionVisible = ref({
   [Section.Landing]: true,
