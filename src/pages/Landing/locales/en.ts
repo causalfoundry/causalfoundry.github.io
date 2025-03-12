@@ -1,5 +1,6 @@
 export default {
   landing: {
+    exploreText: "Explore",
     landingDescription: `Deploy and operationalize AI-driven predictions, tailored recommendations, 
     and reinforcement-learning-based adaptive interventions in hours`,
 
