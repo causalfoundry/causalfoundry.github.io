@@ -263,10 +263,20 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watchEffect } from "vue";
-import { onMounted, onUnmounted, reactive } from "vue";
+import {
+  computed,
+  ref,
+  watchEffect,
+  onMounted,
+  onUnmounted,
+  reactive,
+} from "vue";
+import {} from "vue";
+import { useI18n } from "vue-i18n";
 
 import { Carousel, Pagination, Slide } from "vue3-carousel";
+
+import emailjs from "@emailjs/browser";
 
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
@@ -276,12 +286,9 @@ import GetInTouch from "@/components/GetInTouch";
 
 import { features, sections } from "@/data/products";
 
-import emailjs from "@emailjs/browser";
-
 import Section from "./components/Section/Section.vue";
 import ProductCard from "./components/ProductCard";
 import ProductFooter from "./components/ProductFooter";
-import { useI18n } from "vue-i18n";
 
 import { PRODUCT_DESCRIPTION } from "./constants";
 
@@ -313,7 +320,7 @@ const loadTranslations = async (lang) => {
       error
     );
     try {
-      const fallbackTranslations = await import(`./locales/en.ts`);
+      const fallbackTranslations = await import(`./locales/jp.ts`);
       return fallbackTranslations.default;
     } catch (fallbackError) {
       return {};
