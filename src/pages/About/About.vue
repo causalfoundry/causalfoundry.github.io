@@ -13,19 +13,23 @@
     </AppHeader>
 
     <PageHeader
-      :description="ABOUT_DESCRIPTION"
+      :description="messages?.about?.description"
       className="about__header"
       image="/images/about/top.png"
     >
       <template #title>
-        <AppTitle>{{ AI }}</AppTitle>
-        {{ EVERYONE }}
+        <AppTitle>{{ messages?.about?.ai }}</AppTitle>
+        {{ messages?.about?.everyone }}
       </template>
     </PageHeader>
 
     <Section title="Our Culture" description="" className="about-section">
       <div class="values">
-        <div v-for="value of values" class="value" v-bind:key="value.title">
+        <div
+          v-for="value of messages?.about?.values"
+          class="value"
+          v-bind:key="value.title"
+        >
           <div class="value__title">
             {{ value.title }}
           </div>
@@ -35,18 +39,22 @@
     </Section>
 
     <div class="our-story">
-      <div class="our-story__title">{{ MISSION_TITLE }}</div>
+      <div class="our-story__title">{{ messages?.about?.missionTitle }}</div>
       <div class="our-story__content">
         <div class="our-story__section">
-          {{ MISSION }}
+          {{ messages?.about?.mission }}
         </div>
       </div>
     </div>
 
     <div class="team">
-      <div class="title">{{ TEAM_TITLE }}</div>
+      <div class="title">{{ messages?.about?.teamTitle }}</div>
       <div class="members">
-        <div v-for="member of team" class="member">
+        <div
+          v-for="member of messages?.about?.team"
+          class="member"
+          :key="member.name"
+        >
           <div class="avatar">
             <img :src="member.imageUrl" alt="" />
             <div class="description">{{ member.descritpion }}</div>
@@ -108,6 +116,8 @@
 </template>
 
 <script setup lang="ts">
+import { useTranslations } from "@/composables/useTranslations";
+
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
@@ -115,18 +125,10 @@ import AppTitle from "@/components/AppTitle";
 
 import PageHeader from "@/components/PageHeader";
 
-import {
-  ABOUT_DESCRIPTION,
-  values,
-  MISSION,
-  MISSION_TITLE,
-  TEAM_TITLE,
-  AI,
-  EVERYONE,
-} from "./constants";
-import team from "@/data/team";
-
-import "./About.scss";
 import GetInTouch from "@/components/GetInTouch";
 import Section from "@/pages/Product/components/Section/Section.vue";
+
+import "./About.scss";
+
+const { currentTranslations: messages } = useTranslations("../pages/About");
 </script>
