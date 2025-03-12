@@ -5,7 +5,7 @@
     </AppHeader>
 
     <PageHeader
-      :description="ECOMMERCE_PAGE_DESCRIPTION"
+      :description="messages?.cases?.descriptions?.ecommerce"
       :showButton="true"
       className="cases__ecommerce_header"
       image="/images/cases/header_ecommerce.png"
@@ -16,7 +16,7 @@
       </template>
     </PageHeader>
 
-    <SuccessCase title="CASE 1. SwipeRX">
+    <SuccessCase :title="messages?.cases?.swiperx?.firstSection?.title">
       <Logos>
         <template #first>
           <img :src="`/images/cases/cf-logo.png`" />
@@ -26,8 +26,8 @@
         </template>
       </Logos>
       <TextImage
-        :title="SWIPERX_FIRST_TITLE"
-        :text="SWIPERX_FIRST_TEXT"
+        :title="messages?.cases?.swiperx?.firstSection?.title"
+        :text="messages?.cases?.swiperx?.firstSection?.text"
         primary
       >
         <template #image>
@@ -36,8 +36,8 @@
       </TextImage>
 
       <TextImage
-        :title="SWIPERX_SECOND_TITLE"
-        :text="SWIPERX_SECOND_TEXT"
+        :title="messages?.cases?.swiperx?.secondSection?.title"
+        :text="messages?.cases?.swiperx?.secondSection?.text"
         reversed
       >
         <template #extra-image>
@@ -52,17 +52,20 @@
       </TextImage>
 
       <div>
-        <Quote :text="SWIPERX_QUOTE_TEXT" :from="SWIPERX_QUOTE_FROM" />
+        <Quote
+          :text="messages?.cases?.swiperx?.quote?.text"
+          :from="messages?.cases?.swiperx?.quote?.from"
+        />
         <ShortDescriptionList
-          :items="SWIPERX_ITEMS"
+          :items="messages?.cases?.swiperx?.items"
           highlighted
           title="What we achieved"
-          :description="SWIPERX_ACHIEVEMENTS"
+          :description="messages?.cases?.swiperx?.achievements"
         />
       </div>
     </SuccessCase>
 
-    <SuccessCase title="CASE 2. Momentum">
+    <SuccessCase :title="messages?.cases?.momentum?.firstSection?.title">
       <Logos>
         <template #first>
           <img :src="`/images/cases/cf-logo.png`" />
@@ -72,10 +75,10 @@
         </template>
       </Logos>
       <TextImage
-          :title="MOMENTUM_FIRST_TITLE"
-          :text="MOMENTUM_FIRST_TEXT"
-          reversed
-          primary
+        :title="messages?.cases?.momentum?.firstSection?.title"
+        :text="messages?.cases?.momentum?.firstSection?.text"
+        reversed
+        primary
       >
         <template #image>
           <img :src="`/images/cases/momentum/aide-chemist.png`" />
@@ -83,9 +86,9 @@
       </TextImage>
 
       <TextImage
-          :title="MOMENTUM_SECOND_TITLE"
-          :text="MOMENTUM_SECOND_TEXT"
-          className="momentum-text-image"
+        :title="messages?.cases?.momentum?.secondSection?.title"
+        :text="messages?.cases?.momentum?.secondSection?.text"
+        className="momentum-text-image"
       >
         <template #image>
           <div class="momentum-images">
@@ -94,8 +97,14 @@
         </template>
       </TextImage>
       <div class="momentum-footer">
-        <Quote :text="MOMENTUM_QUOTE_TEXT" :from="MOMENTUM_QUOTE_FROM" />
-        <ShortDescriptionList :items="MOMENTUM_ITEMS" title="Key features" />
+        <Quote
+          :text="messages?.cases?.momentum?.quote?.text"
+          :from="messages?.cases?.momentum?.quote?.from"
+        />
+        <ShortDescriptionList
+          :items="messages?.cases?.momentum?.items"
+          title="Key features"
+        />
       </div>
     </SuccessCase>
 
@@ -108,17 +117,19 @@
     <AppFooter />
 
     <img
-        src="../../assets/gradient-bottom-yellow.png"
-        class="app__gradient-bottom-yellow"
+      src="../../assets/gradient-bottom-yellow.png"
+      class="app__gradient-bottom-yellow"
     />
     <img
-        src="../../assets/gradient-bottom-blue.png"
-        class="app__gradient-bottom-blue"
+      src="../../assets/gradient-bottom-blue.png"
+      class="app__gradient-bottom-blue"
     />
   </div>
 </template>
 
 <script setup lang="ts">
+import { useTranslations } from "@/composables/useTranslations";
+
 import Quote from "./components/Quote";
 import SuccessCase from "./components/SuccessCase";
 import TextImage from "./components/TextImage";
@@ -135,22 +146,7 @@ import PageHeader from "@/components/PageHeader";
 
 import Logos from "./components/Logos";
 
-import {
-  SWIPERX_QUOTE_TEXT,
-  SWIPERX_QUOTE_FROM,
-  SWIPERX_FIRST_TITLE,
-  SWIPERX_FIRST_TEXT,
-  SWIPERX_SECOND_TITLE,
-  SWIPERX_SECOND_TEXT,
-  SWIPERX_ITEMS,
-  SWIPERX_ACHIEVEMENTS,
-  ECOMMERCE_PAGE_DESCRIPTION,
-  MOMENTUM_FIRST_TITLE,
-  MOMENTUM_FIRST_TEXT,
-  MOMENTUM_SECOND_TITLE,
-  MOMENTUM_SECOND_TEXT,
-  MOMENTUM_QUOTE_TEXT, MOMENTUM_QUOTE_FROM, MOMENTUM_ITEMS,
-} from "./constants";
-
 import "./cases.scss";
+
+const { currentTranslations: messages } = useTranslations("../pages/Cases");
 </script>

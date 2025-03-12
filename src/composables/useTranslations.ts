@@ -6,7 +6,6 @@ const defaultLang = "jp";
 export function useTranslations(basePath: string) {
   const { locale, messages } = useI18n();
   const translationsLoaded = ref(false);
-
   const loadTranslations = async () => {
     const lang = locale.value;
 
