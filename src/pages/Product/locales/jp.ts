@@ -77,7 +77,7 @@ export default {
         ],
       },
       {
-        title: "Models",
+        title: "モデル",
         description:
           "予測およびレコメンド機械学習モデルを簡単に導入し、ユーザーの行動やニーズ、好みを的確に予測。",
         features: [
