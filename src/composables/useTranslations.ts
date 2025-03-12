@@ -1,7 +1,7 @@
 import { ref, onMounted, computed } from "vue";
 import { useI18n } from "vue-i18n";
 
-const defaultLang = "jp";
+const defaultLang = "en";
 
 export function useTranslations(basePath: string) {
   const { locale, messages } = useI18n();
