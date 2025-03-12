@@ -277,6 +277,7 @@ import { useI18n } from "vue-i18n";
 import { Carousel, Pagination, Slide } from "vue3-carousel";
 
 import emailjs from "@emailjs/browser";
+import { useTranslations } from "@/composables/useTranslations";
 
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
@@ -304,34 +305,7 @@ const state = reactive({
   features: [...features],
 });
 
-const { locale, t } = useI18n();
-
-const translationsLoaded = ref(false);
-
-const messages = ref({});
-
-const loadTranslations = async (lang) => {
-  try {
-    const translations = await import(`./locales/${lang}.ts`);
-    return translations.default;
-  } catch (error) {
-    console.error(
-      `Failed to load translations for ${lang}, falling back to English:`,
-      error
-    );
-    try {
-      const fallbackTranslations = await import(`./locales/jp.ts`);
-      return fallbackTranslations.default;
-    } catch (fallbackError) {
-      return {};
-    }
-  }
-};
-
-// Observamos los cambios en `locale`
-watchEffect(async () => {
-  messages.value = await loadTranslations(locale.value);
-});
+const { currentTranslations: messages } = useTranslations("../pages/Product");
 
 onMounted(() => {
   const intervalId = setInterval(() => {

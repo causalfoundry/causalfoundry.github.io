@@ -5,20 +5,20 @@
     </app-header>
 
     <PageHeader
-      :description="SECTION_DESCRIPTION"
+      :description="messages?.research?.sectionDescription"
       className="research__header"
       image="/images/research/top.png"
     >
       <template #title>
-        {{ MAIN_TITLE_FIRST }}
-        <AppTitle>{{ MAIN_TITLE_SECOND }}</AppTitle>
+        {{ messages?.research?.mainTitleFirst }}
+        <AppTitle>{{ messages?.research?.mainTitleSecond }}</AppTitle>
       </template>
     </PageHeader>
 
     <div class="diagram">
-      <div class="diagram__title">{{ RL_TITLE }}</div>
+      <div class="diagram__title">{{ messages?.research?.rlTitle }}</div>
       <div class="paragraph">
-        {{ RL_DESCRIPTION }}
+        {{ messages?.research?.rlDescription }}
       </div>
 
       <div class="diagram__image">
@@ -30,18 +30,20 @@
     </div>
 
     <div class="diagram">
-      <div class="diagram__title">{{ BEHAVIORAL_TITLE }}</div>
+      <div class="diagram__title">
+        {{ messages?.research?.behavioralTitle }}
+      </div>
 
       <div class="paragraph">
-        {{ BEHAVIORAL_DESCRIPTION }}
+        {{ messages?.research?.behavioralDescription }}
       </div>
     </div>
 
     <div class="diagram">
-      <div class="diagram__title">{{ LLM_TITLE }}</div>
+      <div class="diagram__title">{{ messages?.research?.llmTitle }}</div>
 
       <div class="paragraph">
-        {{ LLM_DESCRIPTION }}
+        {{ messages?.research?.llmDescription }}
       </div>
 
       <div class="diagram__image">
@@ -54,10 +56,10 @@
     </div>
 
     <div class="diagram survival">
-      <div class="diagram__title">{{ SURVIVAL_TITLE }}</div>
+      <div class="diagram__title">{{ messages?.research?.survivalTitle }}</div>
 
       <div class="paragraph">
-        {{ SURVIVAL_DESCRIPTION }}
+        {{ messages?.research?.survivalDescription }}
       </div>
 
       <div class="diagram__image">
@@ -84,7 +86,9 @@
 </template>
 
 <script lang="ts" setup>
-// import { computed, ref, watch } from 'vue';
+import { ref, watchEffect } from "vue";
+import { useI18n } from "vue-i18n";
+import { useTranslations } from "@/composables/useTranslations";
 
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
@@ -94,18 +98,9 @@ import GetInTouch from "@/components/GetInTouch";
 
 import PageHeader from "@/components/PageHeader";
 
-import {
-  SECTION_DESCRIPTION,
-  RL_TITLE,
-  RL_DESCRIPTION,
-  BEHAVIORAL_TITLE,
-  BEHAVIORAL_DESCRIPTION,
-  LLM_TITLE,
-  LLM_DESCRIPTION,
-  SURVIVAL_TITLE,
-  SURVIVAL_DESCRIPTION,
-  MAIN_TITLE_FIRST,
-  MAIN_TITLE_SECOND,
-} from "./constants";
 import "./Researches.scss";
+
+const { currentTranslations: messages } = useTranslations(
+  "../pages/Researches"
+);
 </script>
