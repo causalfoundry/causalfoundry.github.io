@@ -21,11 +21,9 @@
           <div class="title__item">
             {{ messages?.landing?.titles?.main_third }}
           </div>
+
           <div class="title__item">
-            <DynamicText
-              v-if="dynamicTitles.length > 0"
-              :values="dynamicTitles"
-            />
+            <DynamicText :values="dynamicTitles" />
           </div>
         </div>
 
