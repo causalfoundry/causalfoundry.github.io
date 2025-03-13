@@ -2,19 +2,31 @@
   background-color: #000;
   color: #fff;
   position: relative;
-
   justify-content: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  &__header {
+  &__healthcare_header {
     height: 800px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-      url("/images/cases/top-hospital.png");
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url("/images/cases/header_healthcare.png");
+    //url("/images/cases/header_healthcare.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+
+    @include respond("mobile") {
+      background-image: unset;
+      height: unset;
+    }
+  }
+
+  &__ecommerce_header {
+    height: 800px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url("/images/cases/header_ecommerce.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include respond("mobile") {
       background-image: unset;
@@ -29,10 +41,20 @@
       width: unset;
     }
   }
-  .images_phones {
+
+  .m2m-dashboard img {
+    @include respond("mobile") {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .images-phones {
     position: relative;
     left: -150px;
   }
+
   .momentum-images {
     position: relative;
     right: -10px;
@@ -93,4 +115,22 @@
   .momentum-footer {
     margin-top: -102px;
   }
+
+  &__pattern-wave {
+    position: relative;
+    bottom: 10px;
+    left: 120px;
+    width: 150%;
+    margin-top: -180px;
+    transform: rotate(1deg);
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+
+    @include respond("mobile") {
+      display: none;
+    }
+
+  }
+
 }

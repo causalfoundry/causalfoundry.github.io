@@ -20,6 +20,10 @@
     }
   }
 
+  .contact-button {
+    margin-top: 32px;
+  }
+
   &__mobile-background {
     display: none;
     img {
@@ -35,7 +39,7 @@
   &__title {
     font-family: "NeueMachinaMedium";
 
-    font-size: 58px;
+    font-size: 56px;
     font-weight: 400;
     line-height: 64px;
     letter-spacing: 0.01em;
@@ -44,12 +48,17 @@
 
     @include respond("mobile") {
       width: unset;
+      margin-top: 20px;
+      font-size: 50px;
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
     }
   }
 
   &__description {
     font-family: "NotoSansLight";
-    font-size: 24px;
+    margin-top: 32px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 39px;
     letter-spacing: 0em;
@@ -59,6 +68,11 @@
     @include respond("mobile") {
       width: unset;
       line-height: 30px;
+      font-size: 18px;
+      margin-bottom: 50px;
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
     }
+
   }
 }

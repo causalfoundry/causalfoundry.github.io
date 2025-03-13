@@ -306,7 +306,7 @@
 
     @include respond("mobile") {
       padding: 0;
-      bottom: 620px;
+      bottom: 720px;
     }
 
     img {
@@ -315,7 +315,7 @@
   }
 
   .spacer {
-    height: 400px;
+    height: 500px;
     width: 100%;
     @include respond("mobile") {
       height: 0;

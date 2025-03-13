@@ -9,11 +9,21 @@
           Products
         </div></router-link
       >
-      <router-link to="/cases"
-        ><div :class="`header__item ${active === 'cases' ? 'active' : ''}`">
-          Cases
-        </div></router-link
+      <!-- Dropdown menu for Cases -->
+      <div
+          class="header__item header__dropdown"
+          :class="{ active: active === 'cases' }"
       >
+        <div>Cases</div>
+        <div class="dropdown-menu">
+          <router-link to="/cases/healthcare">
+            <div class="dropdown-item">Healthcare</div>
+          </router-link>
+          <router-link to="/cases/e-commerce">
+            <div class="dropdown-item">E-Commerce</div>
+          </router-link>
+        </div>
+      </div>
       <router-link to="/research"
         ><div :class="`header__item ${active === 'research' ? 'active' : ''}`">
           Research

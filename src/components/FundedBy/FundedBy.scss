@@ -3,6 +3,12 @@
   padding-top: 160px;
   height: 1060px;
 
+  @include respond("mobile") {
+    height: 700px;
+    padding-left: $app-side-padding-mobile;
+    padding-right: $app-side-padding-mobile;
+  }
+
   &__header {
     border-top: 1px solid #FFFFFF;
     padding-top: 30px;
@@ -44,16 +50,15 @@
       object-fit: contain;
     }
   }
-  
+
   &__pattern-wave {
     position: absolute;
     width: 150vw;
-    bottom: 150px;
+    bottom: 120px;
     right: -55vw;
-    transform: rotate(-10deg);
 
     @include respond("tablet") {
-      bottom: 30px;
+      bottom: 20px;
       width: 200%;
       right: -55%;
     }

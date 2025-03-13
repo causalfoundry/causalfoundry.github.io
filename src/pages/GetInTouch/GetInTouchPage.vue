@@ -10,9 +10,7 @@
         class="app__gradient-top-blue"
     />
 
-    <AppHeader>
-      <AppMenu />
-    </AppHeader>
+    <AppHeader><AppMenu /></AppHeader>
 
     <div class="get-in-touch-page__title">
       <AppTitle>Get in Touch</AppTitle>
@@ -50,7 +48,7 @@
             ></textarea>
           </div>
         </div>
-        <div class="form-container__button">
+        <div class="form-container__send_button">
           <Button value="SEND MESSAGE" />
         </div>
       </form>

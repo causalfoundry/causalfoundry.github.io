@@ -174,10 +174,19 @@ options and ultimately strengthening their engagement with quality
 providers in their communities.
 `;
 
-export const PAGE_DESCRIPTION = `
-Our clients are transforming healthcare by leveraging advanced AI and
-machine learning to enhance personalization and optimize
-patient-provider interactions. With tailored interventions, real-time
-insights, and LLM-powered assistants, they improve treatment adherence,
-streamline workflows, and address challenges like resource allocation
+export const HEALTHCARE_PAGE_DESCRIPTION =
+    `Our clients are transforming healthcare by leveraging advanced AI and 
+machine learning to enhance personalization and optimize 
+patient-provider interactions. With tailored interventions, real-time 
+insights, and LLM-powered assistants, they improve treatment adherence, 
+streamline workflows, and address challenges like resource allocation 
 and preventive care—ensuring impactful, data-driven healthcare delivery`;
+
+export const ECOMMERCE_PAGE_DESCRIPTION =
+    `Our clients are boosting customer experiences with AI-driven 
+personalization. By optimizing product recommendations, predicting 
+demand, and reducing cart abandonment, the platform boosts 
+conversions and loyalty. Seamlessly integrated with existing 
+systems, it delivers actionable insights, dynamic interventions, 
+and tailored content, empowering businesses to achieve success 
+and stay ahead in highly competitive markets`;

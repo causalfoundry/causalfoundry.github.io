@@ -2,7 +2,6 @@
   padding: 146px 0;
   color: white;
   width: 100%;
-
   font-family: "Noto Sans";
   font-size: 24px;
   font-style: normal;
@@ -43,7 +42,8 @@
   }
 
   @include respond("mobile") {
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 90%;
+    padding-left: $app-side-padding-mobile;
+    padding-right: $app-side-padding-mobile;
   }
 }

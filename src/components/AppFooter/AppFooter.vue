@@ -14,19 +14,19 @@
         <router-link to="/research"
           ><div class="footer__menu__item">Research</div></router-link
         >
-        <router-link to="/cases"
-          ><div class="footer__menu__item">Cases</div></router-link
+        <router-link to="/careers"
+        ><div class="footer__menu__item">Careers</div></router-link
         >
+<!--        <router-link to="/cases"-->
+<!--          ><div class="footer__menu__item">Cases</div></router-link-->
+<!--        >-->
       </div>
       <div class="footer__menu__row">
         <router-link to="/about"
           ><div class="footer__menu__item">About</div></router-link
         >
         <a target="_blank" href="https://docs.causalfoundry.ai/"
-          ><div class="footer__menu__item">Doc</div></a
-        >
-        <router-link to="/careers"
-          ><div class="footer__menu__item">Careers</div></router-link
+          ><div class="footer__menu__item">Docs</div></a
         >
       </div>
       <div class="footer__menu__row">
