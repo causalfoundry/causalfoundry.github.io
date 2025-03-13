@@ -3,14 +3,6 @@ export const LANDING_DESCRIPTION = `
     and reinforcement-learning-based adaptive interventions in hours
 `;
 
-export const MISSION = `
-We believe in tailored solutions over one-size-fits-all approaches. 
-Our AI products deliver personalized strategies adapted to individual
-preferences, environments, and behaviors, empowering organizations
-to achieve exceptional outcomes. Committed to democratizing AI and
-reinforcement learning, we make transformative technology accessible
-to everyone, driving innovation and delivering personalized success at scale`;
-
 export const ADAPTIVE_AI = `
 In the digital era, understanding and supporting user
 behaviors is the key to exceptional outcomes. We build

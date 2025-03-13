@@ -6,9 +6,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, watch } from "vue";
 
-// Recibimos las propiedades directamente usando defineProps
 const props = defineProps<{
   values: string[];
 }>();
@@ -20,20 +19,25 @@ const typingSpeed = 200;
 const eraseSpeed = 50;
 const delayBeforeErase = 1000;
 
-// Función para alternar entre los valores
+const typeInterval = ref<number | null>(null);
+
 const typeAndEraseText = () => {
   const value = props.values[currentIndex.value];
   let charIndex = 0;
+  clearInterval(typeInterval.value!);
 
-  // Escribir el texto
-  const typeInterval = setInterval(() => {
+  typeInterval.value = setInterval(() => {
+    if (!value) {
+      return;
+    }
+
     currentText.value += value[charIndex];
     charIndex++;
 
     if (charIndex === value.length) {
-      clearInterval(typeInterval);
+      clearInterval(typeInterval.value!);
+      typeInterval.value = null;
 
-      // Esperar un tiempo antes de borrar el texto
       setTimeout(() => {
         eraseText();
       }, delayBeforeErase);
@@ -41,7 +45,6 @@ const typeAndEraseText = () => {
   }, typingSpeed);
 };
 
-// Función para borrar el texto
 const eraseText = () => {
   let charIndex = currentText.value.length;
 
@@ -52,15 +55,25 @@ const eraseText = () => {
     if (charIndex === 0) {
       clearInterval(eraseInterval);
 
-      // Cambiar al siguiente valor y empezar de nuevo
       currentIndex.value = (currentIndex.value + 1) % props.values.length;
       typeAndEraseText();
     }
   }, eraseSpeed);
 };
 
-// Iniciar el efecto de escritura
-onMounted(() => {
-  typeAndEraseText();
-});
+const clearTypeInterval = () => {
+  if (typeInterval.value !== null) {
+    clearInterval(typeInterval.value);
+    typeInterval.value = null;
+  }
+};
+
+watch(
+  () => props.values,
+  (newValues) => {
+    if (newValues && newValues.every((value) => value !== undefined)) {
+      typeAndEraseText();
+    }
+  }
+);
 </script>

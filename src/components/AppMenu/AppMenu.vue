@@ -4,8 +4,8 @@
   </button>
 
   <div
-      :class="['app-menu__wrapper', { 'app-menu__wrapper--open': open }]"
-      @click="handleClick"
+    :class="['app-menu__wrapper', { 'app-menu__wrapper--open': open }]"
+    @click="handleClick"
   >
     <div class="app-menu__content">
       <button class="app-menu__close app-menu__button" @click="open = false">
@@ -13,45 +13,52 @@
       </button>
       <nav class="app-menu__nav">
         <ul>
-          <li v-for="item in MENU_ITEMS" :key="item.title" class="app-menu__item">
+          <li
+            v-for="item in MENU_ITEMS"
+            :key="item.titleKey"
+            class="app-menu__item"
+          >
             <div v-if="item.submenu" class="app-menu__dropdown">
               <button
-                  class="app-menu__dropdown-button"
-                  @click="toggleDropdown(item.title)"
+                class="app-menu__dropdown-button"
+                @click="toggleDropdown(item.titleKey)"
               >
-                <span>{{ item.title }}</span>
+                <span>{{ messages?.common[item.titleKey] }}</span>
                 <span
-                    :class="['app-menu__arrow', { 'app-menu__arrow--open': dropdownOpen === item.title }]"
+                  :class="[
+                    'app-menu__arrow',
+                    { 'app-menu__arrow--open': dropdownOpen === item.titleKey },
+                  ]"
                 >
                   ▼
                 </span>
               </button>
               <ul
-                  v-if="dropdownOpen === item.title"
-                  class="app-menu__submenu"
+                v-if="dropdownOpen === item.titleKey"
+                class="app-menu__submenu"
               >
                 <li
-                    v-for="subItem in item.submenu"
-                    :key="subItem.title"
-                    class="app-menu__submenu-item"
+                  v-for="subItem in item.submenu"
+                  :key="subItem.titleKey"
+                  class="app-menu__submenu-item"
                 >
                   <a
-                      :href="subItem.href"
-                      :target="subItem.target"
-                      @click="open = false"
+                    :href="subItem.href"
+                    :target="subItem.target"
+                    @click="open = false"
                   >
-                    {{ subItem.title }}
+                    {{ messages?.common[subItem.titleKey] }}
                   </a>
                 </li>
               </ul>
             </div>
             <a
-                v-else
-                :href="item.href"
-                :target="item.target"
-                @click="open = false"
+              v-else
+              :href="item.href"
+              :target="item.target"
+              @click="open = false"
             >
-              {{ item.title }}
+              {{ messages?.common[item.titleKey] }}
             </a>
           </li>
         </ul>
@@ -61,29 +68,36 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import HamburgerMenuIcon from "@/assets/hamburger-menu.svg";
 import CrossIcon from "@/assets/cross.svg";
+import { useTranslations } from "@/composables/useTranslations";
 
 const MENU_ITEMS = [
-  { title: "Home", href: `/` },
-  { title: "Products", href: "/products" },
+  { titleKey: "home", href: `/` },
+  { titleKey: "products", href: "/products" },
   {
-    title: "Cases",
+    titleKey: "cases",
     submenu: [
-      { title: "Healthcare", href: "/cases/healthcare" },
-      { title: "E-Commerce", href: "/cases/e-commerce" },
+      { titleKey: "healthcare", href: "/cases/healthcare" },
+      { titleKey: "e-commerce", href: "/cases/e-commerce" },
     ],
   },
-  { title: "Research", href: "/research" },
-  { title: "Docs", href: "https://docs.causalfoundry.ai/", target: "_blank" },
-  { title: "About", href: "/about" },
-  { title: "Careers", href: "/careers" },
-  { title: "Contact", href: `/contact` },
+  { titleKey: "research", href: "/research" },
+  {
+    titleKey: "docs",
+    href: "https://docs.causalfoundry.ai/",
+    target: "_blank",
+  },
+  { titleKey: "about", href: "/about" },
+  { titleKey: "careers", href: "/careers" },
+  { titleKey: "contact", href: `/contact` },
 ];
 
 const open = ref(false);
 const dropdownOpen = ref<string | null>(null);
+
+const { currentTranslations: messages } = useTranslations("../");
 
 function handleClick(e: MouseEvent) {
   const asDiv = e.target as HTMLDivElement;
@@ -97,4 +111,6 @@ function handleClick(e: MouseEvent) {
 function toggleDropdown(title: string) {
   dropdownOpen.value = dropdownOpen.value === title ? null : title;
 }
+
+console.log("[aec] [messages] ", messages?.common);
 </script>

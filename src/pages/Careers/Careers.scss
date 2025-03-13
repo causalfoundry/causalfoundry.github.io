@@ -48,6 +48,7 @@
       line-height: 64px;
       letter-spacing: 0.01em;
       text-align: left;
+      max-width: 750px;
     }
 
     .description {
@@ -97,7 +98,6 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
-
 
     @include respond("tablet") {
       padding: 160px 60px;
@@ -319,7 +319,6 @@
     }
   }
 
-
   &__pattern-wave {
     position: relative;
     bottom: 10px;
@@ -338,7 +337,5 @@
       left: 0;
       margin-top: 10px;
     }
-
   }
-
 }

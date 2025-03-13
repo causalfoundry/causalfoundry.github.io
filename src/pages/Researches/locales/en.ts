@@ -1,15 +1,17 @@
-export const MAIN_TITLE_FIRST = "We research to ";
-export const MAIN_TITLE_SECOND = "build and deploy reliable AI";
+export default {
+  research: {
+    mainTitleFirst: "We research to ",
+    mainTitleSecond: "build and deploy reliable AI",
 
-export const SECTION_DESCRIPTION = `
+    sectionDescription: `
 Our research encompasses advanced AI algorithms, including reinforcement
 learning, causal inference, and survival analysis.
 \n
 Robust data frameworks and the results of our research are the
-foundation of all our work and drives the development of our products.`;
+foundation of all our work and drives the development of our products.`,
 
-export const RL_TITLE = "Reinforcement Learning";
-export const RL_DESCRIPTION = `Reinforcement learning is a computational approach to understanding and automating goal-directed learning and decision-making without requiring
+    rlTitle: "Reinforcement Learning",
+    rlDescription: `Reinforcement learning is a computational approach to understanding and automating goal-directed learning and decision-making without requiring
 exemplary supervision or complete models of an environment in order to
 achieve long-term goals.
 \n\n
@@ -22,10 +24,10 @@ bandits, and restless bandits for outcome optimization in applications
 with strong budget constraints. This allows us to develop practical
 solutions that make optimizing choices in dynamic complex scenarios,
 based on feedback, select contextual data and forecasts of alternative
-outcomes.`;
+outcomes.`,
 
-export const BEHAVIORAL_TITLE = "Behavioral and Clinical Embeddings";
-export const BEHAVIORAL_DESCRIPTION = `
+    behavioralTitle: "Behavioral and Clinical Embeddings",
+    behavioralDescription: `
 Embeddings are numerical representations of items, users, or behaviors
 in a high-dimensional space. These representations capture the essential
 characteristics and relationships of the data.
@@ -37,10 +39,10 @@ personalized recommendations and predictions. Specifically, we use
 semi-supervised methods to map entities such as products, clinical and
 user's behavior into numerical vectors in a high-dimensional space, that
 retain semantic relations and bring utility to downstream tasks.
-`;
+`,
 
-export const LLM_TITLE = "Large Language Models";
-export const LLM_DESCRIPTION = `
+    llmTitle: "Large Language Models",
+    llmDescription: `
 This research direction examines the use of Large Language Models (LLMs)
 to streamline access to pertinent analytical information on our
 platform. We experiment with the reasoning and tool use capabilities of
@@ -48,10 +50,10 @@ generalist LLMs endowed with curated data access in order to improve
 experience for uses on both ends: better personalized recommendations
 for the application user, and enhanced discovery of deeper insights into
 the data for the analyst.
-`;
+`,
 
-export const SURVIVAL_TITLE = "Survival Analysis";
-export const SURVIVAL_DESCRIPTION = `
+    survivalTitle: "Survival Analysis",
+    survivalDescription: `
 Survival analysis, often referred to as time-to-event analysis, is
 dedicated to studying the time period leading up to the occurrence of
 certain events and event-risk factor identification. Our research is
@@ -64,4 +66,11 @@ clinical embedding training and design of timely and adaptive
 decision-making system. Furthermore, risk-based early-warning signals
 and continuous cross-validation enable efficient data collection,
 increased responsiveness and richer feature representation.
-`;
+`,
+    images: {
+      rl: "rl",
+      llm: "llm",
+      survival: "survival",
+    },
+  },
+};

@@ -14,12 +14,12 @@
 
     <div class="jumbotron">
       <div class="title">
-        <AppTitle>Reinforcement Learning<br /></AppTitle>
-        As A Service
+        <AppTitle>{{ messages?.product?.title_first }}<br /></AppTitle>
+        {{ messages?.product?.title_second }}
       </div>
 
       <div class="description">
-        {{ PRODUCT_DESCRIPTION }}
+        {{ messages?.product?.description }}
       </div>
 
       <img :src="`/images/products/system.png`" class="desktop-image" />
@@ -34,14 +34,13 @@
       <!-- <img :src="`/images/products/header.png`" alt="" /> -->
     </div>
 
-    <Section
-      title="An End-to-End Solution for AI-Driven Interventions"
-      unlimited
-    >
+    <Section :title="messages?.product?.matrix?.title" unlimited>
       <div class="product-card-matrix">
         <ProductCard
-          title="Action-oriented monitoring"
-          description="Easily visualize performance & inform decision-making"
+          :title="messages?.product?.matrix?.cards?.monitoring?.title"
+          :description="
+            messages?.product?.matrix?.cards?.monitoring?.description
+          "
         >
           <img
             :src="`/images/products/all-in-one/action-oriented-monitoring.png`"
@@ -51,8 +50,10 @@
         </ProductCard>
 
         <ProductCard
-          title="Easy Integration"
-          description="We seamlessly connect to your existing services"
+          :title="messages?.product?.matrix?.cards?.integration?.title"
+          :description="
+            messages?.product?.matrix?.cards?.integration?.description
+          "
         >
           <img
             :src="`/images/products/all-in-one/easy-integration.png`"
@@ -62,8 +63,10 @@
         </ProductCard>
 
         <ProductCard
-          title="Personalized interventions at scale"
-          description="Quickly put into production your ideas and reach your customers"
+          :title="messages?.product?.matrix?.cards?.notifications?.title"
+          :description="
+            messages?.product?.matrix?.cards?.notifications?.description
+          "
         >
           <img
             :src="`/images/products/all-in-one/notifications.png`"
@@ -73,8 +76,8 @@
         </ProductCard>
 
         <ProductCard
-          title="Quick, accurate answers powered by LLMs"
-          description="Get patient-specific and reliable insights to enhance healthcare delivery"
+          :title="messages?.product?.matrix?.cards?.llm?.title"
+          :description="messages?.product?.matrix?.cards?.llm?.description"
         >
           <img
             :src="`/images/products/all-in-one/llm.png`"
@@ -86,8 +89,8 @@
     </Section>
 
     <Section
-      title="Our AI platform in a nutshell"
-      description=""
+      :title="messages?.product?.features?.title"
+      :description="messages?.product?.features?.description"
       className="section"
     >
       <div class="desktop-body">
@@ -146,7 +149,7 @@
     </Section>
 
     <Section
-      v-for="(section, index) of sections"
+      v-for="(section, index) of messages?.product?.sections"
       :key="index"
       :title="section.title"
       :description="section.description"
@@ -260,7 +263,22 @@
 </template>
 
 <script setup lang="ts">
+import {
+  computed,
+  ref,
+  watchEffect,
+  onMounted,
+  onUnmounted,
+  reactive,
+} from "vue";
+import {} from "vue";
+import { useI18n } from "vue-i18n";
+
 import { Carousel, Pagination, Slide } from "vue3-carousel";
+
+import emailjs from "@emailjs/browser";
+import { useTranslations } from "@/composables/useTranslations";
+
 import AppHeader from "@/components/AppHeader";
 import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
@@ -268,9 +286,6 @@ import AppTitle from "@/components/AppTitle";
 import GetInTouch from "@/components/GetInTouch";
 
 import { features, sections } from "@/data/products";
-
-import { onMounted, onUnmounted, reactive, ref } from "vue";
-import emailjs from "@emailjs/browser";
 
 import Section from "./components/Section/Section.vue";
 import ProductCard from "./components/ProductCard";
@@ -289,6 +304,8 @@ const activeFeatureIndex = ref(0);
 const state = reactive({
   features: [...features],
 });
+
+const { currentTranslations: messages } = useTranslations("../pages/Product");
 
 onMounted(() => {
   const intervalId = setInterval(() => {

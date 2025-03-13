@@ -1,7 +1,7 @@
 <template>
   <section class="news">
     <div class="news-header">
-      <section-header>Latest News</section-header>
+      <section-header>{{ messages?.news?.title }}</section-header>
       <div class="controls">
         <div
           class="arrow left"
@@ -53,6 +53,7 @@ import { ref } from "vue";
 import dayjs from "dayjs";
 import SectionHeader from "@/components/SectionHeader";
 import Arrow from "@/assets/arrow.svg";
+import { useTranslations } from "@/composables/useTranslations";
 
 const sliderIndex = ref(0);
 
@@ -155,4 +156,6 @@ const decrement = () => {
     sliderIndex.value--;
   }
 };
+
+const { currentTranslations: messages } = useTranslations("../components/News");
 </script>

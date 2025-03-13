@@ -8,28 +8,35 @@
       src="../../assets/gradient-top-blue.png"
       class="app__gradient-top-blue"
     />
+
     <AppHeader current-page="landing"><AppMenu /></AppHeader>
 
     <IntersectionObserver @intersect="handleIntersect(Section.Landing, $event)">
       <div class="jumbotron landing" :id="Section.Landing">
         <div class="title">
           <div class="title__item">
-            <AppTitle>Personalized </AppTitle> interventions <br />
+            <AppTitle>{{ messages?.landing?.titles?.main_first }} </AppTitle>
+            {{ messages?.landing?.titles?.main_second }} <br />
           </div>
 
-          <div class="title__item">to revolutionize</div>
           <div class="title__item">
-            <DynamicText
-              :values="['healthcare', 'e-commerce', 'e-learning', 'videogames']"
-            />
+            {{ messages?.landing?.titles?.main_third }}
+          </div>
+
+          <div class="title__item">
+            <DynamicText :values="dynamicTitles" />
           </div>
         </div>
 
         <div class="description">
-          {{ LANDING_DESCRIPTION }}
+          {{ messages?.landing?.landingDescription }}
         </div>
 
-        <Button value="GET IN TOUCH" highlighted @click="handleRedirect" />
+        <Button
+          :value="messages?.common?.getInTouch"
+          highlighted
+          @click="handleRedirect"
+        />
         <div class="circle top">
           <img src="../../assets/pattern-circle.png" alt="" />
         </div>
@@ -37,7 +44,7 @@
         <div class="dashboard-view">
           <img
             class="dashboard"
-            :src="`/images/landing/dashboard.png`"
+            :src="`/images/landing/${messages?.landing?.images?.dashboard}.png`"
             alt=""
           />
         </div>
@@ -48,15 +55,6 @@
       <ShortDescriptionList :items="summaries" />
     </div>
 
-    <IntersectionObserver @intersect="handleIntersect(Section.Problem, $event)">
-      <div class="mission problem landing-section" :id="Section.Problem">
-        <div class="title">Mission</div>
-        <div class="paragraph">
-          {{ MISSION }}
-        </div>
-      </div>
-    </IntersectionObserver>
-
     <IntersectionObserver
       @intersect="handleIntersect(Section.Applications, $event)"
     >
@@ -64,32 +62,42 @@
         class="personalized applications landing-section"
         :id="Section.Applications"
       >
-        <div class="title">Adaptive AI</div>
+        <div class="title">
+          <AppTitle>{{ messages?.landing?.titles?.adaptiveAi }}</AppTitle>
+        </div>
 
         <div class="paragraph">
-          {{ ADAPTIVE_AI }}
+          {{ messages?.landing?.adaptiveAi }}
         </div>
 
-        <div class="small-title"><AppTitle>Healthcare</AppTitle></div>
+        <div class="small-title">
+          <AppTitle>{{ messages?.landing?.titles?.healthcare }}</AppTitle>
+        </div>
         <div class="small-paragraph">
-          <BreakableText :text="HEALTHCARE" />
-          <Link to="/cases/healthcare" text="Explore" />
+          <BreakableText :text="messages?.landing?.healthcare" />
+          <Link to="/cases/healthcare" :text="messages?.common?.exploreText" />
         </div>
 
-        <div class="small-title"><AppTitle>E-Commerce</AppTitle></div>
+        <div class="small-title">
+          <AppTitle>{{ messages?.landing?.titles?.ecommerce }}</AppTitle>
+        </div>
         <div class="small-paragraph">
-          <BreakableText :text="ECOMMERCE" />
-          <Link to="/cases/e-commerce" text="Explore" />
+          <BreakableText :text="messages?.landing?.ecommerce" />
+          <Link to="/cases/e-commerce" :text="messages?.common?.exploreText" />
         </div>
 
-        <div class="small-title"><AppTitle>E-Learning</AppTitle></div>
+        <div class="small-title">
+          <AppTitle>{{ messages?.landing?.titles?.elearning }}</AppTitle>
+        </div>
         <div class="small-paragraph">
-          <BreakableText :text="ELEARNING" />
+          <BreakableText :text="messages?.landing?.elearning" />
         </div>
 
-        <div class="small-title"><AppTitle>Videogames</AppTitle></div>
+        <div class="small-title">
+          <AppTitle>{{ messages?.landing?.titles?.videogames }}</AppTitle>
+        </div>
         <div class="small-paragraph">
-          <BreakableText :text="VIDEOGAMES" />
+          <BreakableText :text="messages?.landing?.videogames" />
         </div>
 
         <div class="gradient-blue">
@@ -102,18 +110,18 @@
     </IntersectionObserver>
 
     <ShortDescriptionList
-      title="Our achievements in 2024"
+      :title="messages?.landing?.achievements?.title"
       :items="achievements"
       highlighted
     />
 
     <GetInTouch />
 
-<!--    <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">-->
-      <div class="news-land" :id="Section.News">
-        <News />
-      </div>
-<!--    </IntersectionObserver>-->
+    <!--    <IntersectionObserver @intersect="handleIntersect(Section.News, $event)">-->
+    <div class="news-land" :id="Section.News">
+      <News />
+    </div>
+    <!--    </IntersectionObserver>-->
 
     <div class="funded-land" :id="Section.FundedBy">
       <FundedBy />
@@ -133,7 +141,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { useTranslations } from "@/composables/useTranslations";
+import { ref, computed, watch } from "vue";
 import { useRouter } from "vue-router";
 
 import AppMenu from "@/components/AppMenu";
@@ -153,43 +162,69 @@ import Link from "@/ui-components/Link";
 
 import { Section } from "@/typings/section";
 
-import { LANDING_DESCRIPTION } from "./constants";
-import { MISSION } from "./constants";
-import { ADAPTIVE_AI } from "./constants";
-import { HEALTHCARE } from "./constants";
-import { ECOMMERCE } from "./constants";
-import { ELEARNING } from "./constants";
-import { VIDEOGAMES } from "./constants";
-
 import "./Landing.scss";
+
+const { currentTranslations: messages, currentLang } =
+  useTranslations("../pages/Landing");
 
 const router = useRouter();
 
-const summaries = [
-  {
-    title: "Predictions",
-    text: "Predict user behaviors and target interventions",
-  },
-  {
-    title: "Recommendations",
-    text: "Enhance the user experience through personalized content",
-  },
-  {
-    title: "Adaptive interventions",
-    text: "Increase user engagement and drive behaviors",
-  },
-  {
-    title: "Resource allocation",
-    text: "Optimize incentives & budgeted interventions to maximize their effectiveness",
-  },
-];
+const dynamicTitles = ref([]);
+const summaries = ref([]);
+const achievements = ref([]);
 
-const achievements = [
-  { title: "$ 1M+", text: `Revenue generated across all e-commerce partners` },
-  { title: "60K", text: `Personalized nudges sent across all partners` },
-  { title: "24%", text: `Revenue increase per intervention` },
-  { title: "6.4%", text: `Engagement increase with our partner’s app` },
-];
+watch(
+  () => messages.value,
+  (newMessages) => {
+    if (newMessages) {
+      dynamicTitles.value = [
+        newMessages.landing?.titles?.main_dynamic_healthcare,
+        newMessages.landing?.titles?.main_dynamic_ecommerce,
+        newMessages.landing?.titles?.main_dynamic_elearning,
+        newMessages.landing?.titles?.main_dynamic_videogames,
+      ];
+
+      summaries.value = [
+        {
+          title: newMessages.landing?.summaries?.predictions?.title,
+          text: newMessages.landing?.summaries?.predictions?.text,
+        },
+        {
+          title: newMessages.landing?.summaries?.recommendations?.title,
+          text: newMessages.landing?.summaries?.recommendations?.text,
+        },
+        {
+          title: newMessages.landing?.summaries?.adaptiveInterventions?.title,
+          text: newMessages.landing?.summaries?.adaptiveInterventions?.text,
+        },
+        {
+          title: newMessages.landing?.summaries?.resourceAllocation?.title,
+          text: newMessages.landing?.summaries?.resourceAllocation?.text,
+        },
+      ];
+
+      achievements.value = [
+        {
+          title: "$ 1M+",
+          text: newMessages.landing?.achievements?.revenue,
+        },
+        {
+          title: "60K",
+          text: newMessages.landing?.achievements?.nudges,
+        },
+        {
+          title: "24%",
+          text: newMessages.landing?.achievements?.revenueIncrease,
+        },
+        {
+          title: "6.4%",
+          text: newMessages.landing?.achievements?.engagementIncrease,
+        },
+      ];
+    }
+  },
+  { immediate: true }
+);
 
 const isSectionVisible = ref({
   [Section.Landing]: true,
