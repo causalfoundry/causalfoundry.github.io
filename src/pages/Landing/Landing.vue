@@ -8,6 +8,7 @@
       src="../../assets/gradient-top-blue.png"
       class="app__gradient-top-blue"
     />
+
     <AppHeader current-page="landing"><AppMenu /></AppHeader>
 
     <IntersectionObserver @intersect="handleIntersect(Section.Landing, $event)">
@@ -32,7 +33,7 @@
         </div>
 
         <Button
-          :value="messages?.landing?.buttonText"
+          :value="messages?.common?.getInTouch"
           highlighted
           @click="handleRedirect"
         />

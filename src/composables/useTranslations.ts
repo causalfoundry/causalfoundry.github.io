@@ -15,12 +15,16 @@ export function useTranslations(basePath: string) {
       : route.params.lang || locale.value;
 
     try {
+      const commonTranslations = await import(`../locales/${defaultLang}.ts`);
+
       const fallbackTranslations = await import(
         `${basePath}/locales/${defaultLang}.ts`
       );
+
       const translations = await import(`${basePath}/locales/${lang}.ts`);
 
       messages.value[lang] = {
+        ...commonTranslations.default,
         ...fallbackTranslations.default,
         ...messages.value[lang],
         ...translations.default,
