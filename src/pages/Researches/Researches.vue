@@ -22,7 +22,7 @@
       </div>
 
       <div class="diagram__image">
-        <img src="../../assets/research_diagram.png" />
+        <img :src="`/images/research/${messages?.research?.images?.rl}.png`" />
       </div>
       <div class="circle">
         <img src="../../assets/pattern-circle.png" alt="" />
@@ -47,7 +47,7 @@
       </div>
 
       <div class="diagram__image">
-        <img src="../../assets/research_diagram_2.png" />
+        <img :src="`/images/research/${messages?.research?.images?.llm}.png`" />
       </div>
 
       <div class="hex bottom">
@@ -63,7 +63,9 @@
       </div>
 
       <div class="diagram__image">
-        <img src="../../assets/research_diagram_3.png" />
+        <img
+          :src="`/images/research/${messages?.research?.images?.survival}.png`"
+        />
       </div>
     </div>
 

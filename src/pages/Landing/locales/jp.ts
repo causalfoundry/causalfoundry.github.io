@@ -82,5 +82,8 @@ export default {
       elearning: "E-Learning",
       videogames: "Videogames",
     },
+    images: {
+      dashboard: "dashboard_jp",
+    },
   },
 };

@@ -13,5 +13,9 @@ export default {
     about: "約",
     careers: "キャリア",
     contact: "連絡先",
+    healthcare: "ヘルスケア",
+    "e-commerce": "Eコマース",
+    privacy: "プライバシー",
+    cookies: "クッキー",
   },
 };

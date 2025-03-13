@@ -44,7 +44,7 @@
         <div class="dashboard-view">
           <img
             class="dashboard"
-            :src="`/images/landing/dashboard.png`"
+            :src="`/images/landing/${messages?.landing?.images?.dashboard}.png`"
             alt=""
           />
         </div>
@@ -164,7 +164,8 @@ import { Section } from "@/typings/section";
 
 import "./Landing.scss";
 
-const { currentTranslations: messages } = useTranslations("../pages/Landing");
+const { currentTranslations: messages, currentLang } =
+  useTranslations("../pages/Landing");
 
 const router = useRouter();
 

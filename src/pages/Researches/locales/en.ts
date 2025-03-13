@@ -67,5 +67,10 @@ decision-making system. Furthermore, risk-based early-warning signals
 and continuous cross-validation enable efficient data collection,
 increased responsiveness and richer feature representation.
 `,
+    images: {
+      rl: "rl",
+      llm: "llm",
+      survival: "survival",
+    },
   },
 };

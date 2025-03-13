@@ -13,5 +13,9 @@ export default {
     about: "About",
     careers: "Careers",
     contact: "Contact",
+    healthcare: "Healthcare",
+    "e-commerce": "E-commerce",
+    privacy: "Privacy",
+    cookies: "Cookies",
   },
 };

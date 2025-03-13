@@ -8,33 +8,47 @@
 
     <div class="footer__menu">
       <div class="footer__menu__row">
-        <router-link to="/products"
-          ><div class="footer__menu__item">Products</div></router-link
+        <router-link :to="`/${currentLang}/products`"
+          ><div class="footer__menu__item">
+            {{ messages?.common?.products }}
+          </div></router-link
         >
-        <router-link to="/research"
-          ><div class="footer__menu__item">Research</div></router-link
+        <router-link :to="`/${currentLang}/research`"
+          ><div class="footer__menu__item">
+            {{ messages?.common?.research }}
+          </div></router-link
         >
-        <router-link to="/careers"
-        ><div class="footer__menu__item">Careers</div></router-link
+        <router-link :to="`/${currentLang}/careers`"
+          ><div class="footer__menu__item">
+            {{ messages?.common?.careers }}
+          </div></router-link
         >
-<!--        <router-link to="/cases"-->
-<!--          ><div class="footer__menu__item">Cases</div></router-link-->
-<!--        >-->
+        <!--        <router-link to="/cases"-->
+        <!--          ><div class="footer__menu__item">Cases</div></router-link-->
+        <!--        >-->
       </div>
       <div class="footer__menu__row">
-        <router-link to="/about"
-          ><div class="footer__menu__item">About</div></router-link
+        <router-link :to="`/${currentLang}/about`"
+          ><div class="footer__menu__item">
+            {{ messages?.common?.about }}
+          </div></router-link
         >
-        <a target="_blank" href="https://docs.causalfoundry.ai/"
-          ><div class="footer__menu__item">Docs</div></a
+        <a target="_blank" href="`https://docs.causalfoundry.ai/`"
+          ><div class="footer__menu__item">
+            {{ messages?.common?.docs }}
+          </div></a
         >
       </div>
       <div class="footer__menu__row">
-        <router-link to="/privacy"
-          ><div class="footer__menu__item">Privacy</div></router-link
+        <router-link :to="`/${currentLang}/privacy`"
+          ><div class="footer__menu__item">
+            {{ messages?.common?.privacy }}
+          </div></router-link
         >
-        <router-link to="/cookies"
-          ><div class="footer__menu__item">Cookies</div></router-link
+        <router-link :to="`/${currentLang}/cookies`"
+          ><div class="footer__menu__item">
+            {{ messages?.common?.cookies }}
+          </div></router-link
         >
       </div>
     </div>
@@ -68,4 +82,15 @@
 
 <script lang="ts" setup>
 import { EMAIL } from "@/data";
+import { useRoute } from "vue-router";
+import { useTranslations } from "@/composables/useTranslations";
+
+const { currentTranslations: messages } = useTranslations(
+  "../components/AppFooter"
+);
+
+const route = useRoute();
+const currentLang = Array.isArray(route.params.lang)
+  ? route.params.lang[0]
+  : route.params.lang || "en"; // Default to 'en' if no lang is specified
 </script>

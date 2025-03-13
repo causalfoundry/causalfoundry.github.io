@@ -9,11 +9,11 @@ export function useTranslations(basePath: string) {
   const route = useRoute();
   const translationsLoaded = ref(false);
 
-  const loadTranslations = async () => {
-    const lang = Array.isArray(route.params.lang)
-      ? route.params.lang[0]
-      : route.params.lang || locale.value;
+  const lang = Array.isArray(route.params.lang)
+    ? route.params.lang[0]
+    : route.params.lang || locale.value;
 
+  const loadTranslations = async () => {
     try {
       const commonTranslations = await import(`../locales/${defaultLang}.ts`);
 
@@ -67,5 +67,6 @@ export function useTranslations(basePath: string) {
     translationsLoaded,
     messages,
     currentTranslations,
+    currentLang: lang,
   };
 }

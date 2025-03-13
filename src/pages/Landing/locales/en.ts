@@ -88,5 +88,8 @@ experiences, empowering users and facilitating data-driven decision-making`,
       elearning: "E-Learning",
       videogames: "Videogames",
     },
+    images: {
+      dashboard: "dashboard",
+    },
   },
 };
