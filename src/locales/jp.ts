@@ -17,5 +17,6 @@ export default {
     "e-commerce": "Eコマース",
     privacy: "プライバシー",
     cookies: "クッキー",
+    footerTitle: "大規模なAIとパーソナライゼーション",
   },
 };

@@ -17,5 +17,6 @@ export default {
     "e-commerce": "E-commerce",
     privacy: "Privacy",
     cookies: "Cookies",
+    footerTitle: "AI & personalization at scale",
   },
 };
