@@ -6,7 +6,7 @@
     <div class="header__links">
       <router-link :to="`/${currentLang}/products`">
         <div :class="`header__item ${active === 'products' ? 'active' : ''}`">
-          Products
+          {{ messages?.common["products"] }}
         </div>
       </router-link>
       <!-- Dropdown menu for Cases -->
@@ -14,32 +14,36 @@
         class="header__item header__dropdown"
         :class="{ active: active === 'cases' }"
       >
-        <div>Cases</div>
+        <div>{{ messages?.common["cases"] }}</div>
         <div class="dropdown-menu">
           <router-link :to="`/${currentLang}/cases/healthcare`">
-            <div class="dropdown-item">Healthcare</div>
+            <div class="dropdown-item">
+              {{ messages?.common["healthcare"] }}
+            </div>
           </router-link>
           <router-link :to="`/${currentLang}/cases/e-commerce`">
-            <div class="dropdown-item">E-Commerce</div>
+            <div class="dropdown-item">
+              {{ messages?.common["e-commerce"] }}
+            </div>
           </router-link>
         </div>
       </div>
       <router-link :to="`/${currentLang}/research`">
         <div :class="`header__item ${active === 'research' ? 'active' : ''}`">
-          Research
+          {{ messages?.common["research"] }}
         </div>
       </router-link>
       <a target="_blank" href="https://docs.causalfoundry.ai/">
-        <div class="header__item">Docs</div>
+        <div class="header__item">{{ messages?.common["docs"] }}</div>
       </a>
       <router-link :to="`/${currentLang}/about`">
         <div :class="`header__item ${active === 'about' ? 'active' : ''}`">
-          About
+          {{ messages?.common["about"] }}
         </div>
       </router-link>
       <router-link :to="`/${currentLang}/careers`">
         <div :class="`header__item ${active === 'careers' ? 'active' : ''}`">
-          Careers
+          {{ messages?.common["careers"] }}
         </div>
       </router-link>
     </div>
@@ -51,6 +55,11 @@
 
 <script setup lang="ts">
 import { useRoute } from "vue-router";
+import { useTranslations } from "@/composables/useTranslations";
+
+const { currentTranslations: messages } = useTranslations(
+  "../components/AppHeader"
+);
 
 const props = defineProps<{
   currentPage:

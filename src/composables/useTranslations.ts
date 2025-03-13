@@ -30,20 +30,22 @@ export function useTranslations(basePath: string) {
         ...translations.default,
       };
 
-      console.log("[aec] messages: ", messages.value[lang]);
-
       translationsLoaded.value = true;
     } catch (error) {
       try {
+        const commonTranslations = await import(`../locales/${defaultLang}.ts`);
+
         const fallbackTranslations = await import(
           `${basePath}/locales/${defaultLang}.ts`
         );
 
         messages.value[defaultLang] = {
+          ...commonTranslations.default,
           ...messages.value[defaultLang],
           ...fallbackTranslations.default,
         };
 
+        console.log("[aec] [using fallback]: ", messages.value[defaultLang]);
         translationsLoaded.value = true;
       } catch (fallbackError) {
         console.error(`Failed to load fallback translations:`, fallbackError);

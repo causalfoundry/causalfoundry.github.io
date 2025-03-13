@@ -75,7 +75,7 @@
         </div>
         <div class="small-paragraph">
           <BreakableText :text="messages?.landing?.healthcare" />
-          <Link to="/cases/healthcare" :text="messages?.landing?.exploreText" />
+          <Link to="/cases/healthcare" :text="messages?.common?.exploreText" />
         </div>
 
         <div class="small-title">
@@ -83,7 +83,7 @@
         </div>
         <div class="small-paragraph">
           <BreakableText :text="messages?.landing?.ecommerce" />
-          <Link to="/cases/e-commerce" :text="messages?.landing?.exploreText" />
+          <Link to="/cases/e-commerce" :text="messages?.common?.exploreText" />
         </div>
 
         <div class="small-title">
