@@ -8,7 +8,7 @@ export default {
           and personalized patient care, 
           driving better outcomes and truly 
           enhancing the experience for everyone we serve" `,
-        from: `Dr. Kathrin Schmitz – Chief Programmes & Impact Officer`,
+        from: `Dr. Kathrin Schmitz - Chief Programmes & Impact Officer`,
       },
       firstSection: {
         title: "Transforming mothers' lives",
@@ -47,7 +47,7 @@ export default {
         },
         {
           title: "Scale Digital Tool Adoption",
-          text: "Drive adoption among CHWs, ensuring successful rollout and consistent use of the digital tool​",
+          text: "Drive adoption among CHWs, ensuring successful rollout and consistent use of the digital tool",
         },
       ],
     },
@@ -155,6 +155,20 @@ export default {
         },
       ],
     },
+    titles: {
+      ecommerce: {
+        first: "Built in Partnership",
+        second: " with Causal Foundry for E-Commerce",
+      },
+      healthcare: {
+        first: "Built in Partnership",
+        second: " with Causal Foundry for Healthcare",
+      },
+      government: {
+        first: "Public Service Transformation: ",
+        second: "Leveraging Machine Learning for Societal Impact",
+      },
+    },
     descriptions: {
       healthcare: `Our clients are transforming healthcare by leveraging advanced AI and 
         machine learning to enhance personalization and optimize 
@@ -169,6 +183,7 @@ export default {
         systems, it delivers actionable insights, dynamic interventions, 
         and tailored content, empowering businesses to achieve success 
         and stay ahead in highly competitive markets`,
+      government: `Leveraging Machine Learning for Societal Impact`,
     },
   },
 };

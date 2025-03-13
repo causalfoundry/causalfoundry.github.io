@@ -11,8 +11,10 @@
       image="/images/cases/header_ecommerce.png"
     >
       <template #title>
-        <AppTitle>Built in Partnership</AppTitle>
-        with Causal Foundry for E-Commerce
+        <AppTitle>
+          {{ messages?.cases?.titles?.ecommerce?.first }}
+        </AppTitle>
+        {{ messages?.cases?.titles?.ecommerce?.second }}
       </template>
     </PageHeader>
 

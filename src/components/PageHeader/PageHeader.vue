@@ -11,10 +11,12 @@
         <BreakableText :text="description" />
       </div>
       <div v-if="showButton" class="contact-button">
-        <Button value="GET IN TOUCH" @click="handleButtonClick" />
+        <Button
+          :value="messages?.common?.getInTouch"
+          @click="handleButtonClick"
+        />
       </div>
     </div>
-
   </div>
 </template>
 
@@ -23,7 +25,8 @@ import BreakableText from "@/components/BreakableText";
 
 import "./page-header.scss";
 import Button from "@/ui-components/button";
-import {useRouter} from "vue-router";
+import { useTranslations } from "@/composables/useTranslations";
+import { useRouter } from "vue-router";
 
 const router = useRouter();
 function handleButtonClick(event: MouseEvent) {
@@ -48,4 +51,6 @@ const props = defineProps({
     default: false,
   },
 });
+
+const { currentTranslations: messages } = useTranslations("../");
 </script>

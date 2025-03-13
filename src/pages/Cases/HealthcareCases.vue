@@ -11,8 +11,10 @@
       image="/images/cases/header_healthcare.png"
     >
       <template #title>
-        <AppTitle>Built in Partnership</AppTitle>
-        with Causal Foundry for Healthcare
+        <AppTitle>
+          {{ messages?.cases?.titles?.healthcare?.first }}
+        </AppTitle>
+        {{ messages?.cases?.titles?.healthcare?.second }}
       </template>
     </PageHeader>
 
