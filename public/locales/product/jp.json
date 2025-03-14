@@ -1,10 +1,10 @@
 {
   "product": {
-    "title_first": "Reinforcement Learning",
-    "title_second": "As A Service",
+    "title_first": "強化学習",
+    "title_second": "サービスとして",
     "description": "当社のAIソフトウェアプラットフォームは、お使いのデジタルツールにパーソナライズ機能を組み込み、機械学習を活用した大規模な介入を可能にします。",
     "features": {
-      "title": "Our AI platform in a nutshell",
+      "title": "当社AIプラットフォームの概要",
       "features": {
         "trackAndLabel": {
           "title": "データの追跡とラベル付け",
@@ -21,23 +21,23 @@
       }
     },
     "matrix": {
-      "title": "An End-to-End Solution for AI-Driven Interventions",
+      "title": "AIを活用した介入を支える包括的なソリューション",
       "cards": {
         "monitoring": {
-          "title": "Action-oriented monitoring",
-          "description": "Easily visualize performance & inform decision-making"
+          "title": "アクションにつながるモニタリング",
+          "description": "パフォーマンスを簡単に可視化し、意思決定を支援"
         },
         "integration": {
-          "title": "Easy Integration",
-          "description": "We seamlessly connect to your existing services"
+          "title": "簡単な統合",
+          "description": "既存のサービスとシームレスに接続"
         },
         "notifications": {
-          "title": "Personalized interventions at scale",
-          "description": "Quickly put into production your ideas and reach your customers"
+          "title": "大規模展開が可能な顧客一人ひとりに対応する介入施策",
+          "description": "アイデアを迅速に実用化し、顧客へ届けることが可能です。"
         },
         "llm": {
-          "title": "Quick, accurate answers powered by LLMs",
-          "description": "Get patient-specific and reliable insights to enhance healthcare delivery"
+          "title": "LLMが実現する迅速かつ正確な回答",
+          "description": "患者ごとの確かな分析結果を活用し、医療の質を向上"
         }
       }
     },
@@ -154,23 +154,23 @@
       }
     ],
     "footer": {
-      "title": "End-to-End Products",
-      "description": "Need a tailored app or custom software? Our expert team is here to create the perfect solution for your unique needs",
+      "title": "開発から導入まで一貫対応のプロダクト",
+      "description": "カスタムアプリや専用ソフトウェアが必要ですか？当社の専門チームが、お客様のニーズに最適なソリューションを開発します。",
       "items": [
         {
-          "title": "Designed for AI",
+          "title": "AIが最適な形で機能するシステム設計",
           "icon": "/images/products/e2e/ia.png",
-          "text": "Our apps are designed with AI interventions at their core and are integrated with our AI platform, enabling you to unlock actionable insights and personalization at scale"
+          "text": "当社のアプリは、AIを活用したデータ分析とパーソナライズ機能を中核に設計され、当社のAIプラットフォームと統合されています。リアルタイムで実用的な分析結果を提供し、大規模展開にも対応。"
         },
         {
-          "title": "Cutting-Edge User Experience",
+          "title": "最先端のユーザー体験",
           "icon": "/images/products/e2e/user.png",
-          "text": "We leverage the latest tech stack and modern design principles, all backed by extensive research in user experience, to create intuitive, high-performance tools that drive engagement and efficiency"
+          "text": "最新の技術基盤とデザイン原則を取り入れ、UXリサーチに基づいた直感的で高性能なツールを開発。ユーザーのエンゲージメントと業務効率を最大化します。"
         },
         {
-          "title": "Ready for Interoperability",
+          "title": "高い相互運用性",
           "icon": "/images/products/e2e/interop.png",
-          "text": "Our solutions support seamless data sharing with other systems, adhering to industry standards for integration and scalability"
+          "text": "業界標準に準拠し、他のシステムとのデータ共有や統合をシームレスに実現"
         }
       ]
     }
