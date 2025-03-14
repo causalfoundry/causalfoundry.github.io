@@ -104,7 +104,7 @@
 
           <div class="list">
             <div
-              v-for="(item, index) in state.features"
+              v-for="(item, index) in messages?.product?.features"
               :key="index"
               :class="[`item`, { active: index === activeFeatureIndex }]"
             >
