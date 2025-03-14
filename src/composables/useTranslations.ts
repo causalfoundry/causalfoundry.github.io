@@ -15,40 +15,50 @@ export function useTranslations(basePath: string) {
 
   const loadTranslations = async () => {
     try {
-      const commonTranslations = await import(`../locales/${defaultLang}.ts`);
+      const fallbackTranslations = await fetch(
+        `/locales/${basePath}/${defaultLang}.json`
+      ).then((res) => res.json());
 
-      const fallbackTranslations = await import(
-        `${basePath}/locales/${defaultLang}.ts`
+      const commonTranslations = await fetch(`/locales/${lang}.json`).then(
+        (res) => res.json()
       );
 
-      const translations = await import(`${basePath}/locales/${lang}.ts`);
+      const translations = await fetch(
+        `/locales/${basePath}/${lang}.json`
+      ).then((res) => res.json());
 
       messages.value[lang] = {
-        ...commonTranslations.default,
-        ...fallbackTranslations.default,
+        ...commonTranslations,
+        ...fallbackTranslations,
         ...messages.value[lang],
-        ...translations.default,
+        ...translations,
       };
 
       translationsLoaded.value = true;
     } catch (error) {
       try {
-        const commonTranslations = await import(`../locales/${defaultLang}.ts`);
+        const commonTranslations = await fetch(
+          `/locales/${defaultLang}.json`
+        ).then((res) => res.json());
 
-        const fallbackTranslations = await import(
-          `${basePath}/locales/${defaultLang}.ts`
-        );
+        const fallbackTranslations = await fetch(
+          `./locales/${basePath}/${defaultLang}.json`
+        ).then((res) => res.json());
 
         messages.value[defaultLang] = {
-          ...commonTranslations.default,
+          ...commonTranslations,
           ...messages.value[defaultLang],
-          ...fallbackTranslations.default,
+          ...fallbackTranslations,
         };
 
-        console.log("[aec] [using fallback]: ", messages.value[defaultLang]);
         translationsLoaded.value = true;
       } catch (fallbackError) {
-        console.error(`Failed to load fallback translations:`, fallbackError);
+        console.error(
+          `Failed to load fallback translations:`,
+          defaultLang,
+          basePath,
+          fallbackError
+        );
       }
     }
   };

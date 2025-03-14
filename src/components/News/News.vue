@@ -157,5 +157,5 @@ const decrement = () => {
   }
 };
 
-const { currentTranslations: messages } = useTranslations("../components/News");
+const { currentTranslations: messages } = useTranslations("news");
 </script>

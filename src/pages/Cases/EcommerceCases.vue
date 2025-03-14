@@ -150,5 +150,5 @@ import Logos from "./components/Logos";
 
 import "./cases.scss";
 
-const { currentTranslations: messages } = useTranslations("../pages/Cases");
+const { currentTranslations: messages } = useTranslations("cases");
 </script>

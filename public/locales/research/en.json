@@ -1,0 +1,20 @@
+{
+  "research": {
+    "mainTitleFirst": "We research to ",
+    "mainTitleSecond": "build and deploy reliable AI",
+    "sectionDescription": "Our research encompasses advanced AI algorithms, including reinforcement\nlearning, causal inference, and survival analysis.\n\nRobust data frameworks and the results of our research are the\nfoundation of all our work and drives the development of our products.",
+    "rlTitle": "Reinforcement Learning",
+    "rlDescription": "Reinforcement learning is a computational approach to understanding and automating goal-directed learning and decision-making without requiring\nexemplary supervision or complete models of an environment in order to\nachieve long-term goals.\n\n\nThe principal direction of our research focuses on designing methods and\nmechanisms for optimizing digital products experience and user outcomes.\nThis includes approaches from reinforcement learning with emphasis on\nsample efficiency, and explainable AI including causal inference.\nExamples include feature space pruning for linear and deep contextual\nbandits, and restless bandits for outcome optimization in applications\nwith strong budget constraints. This allows us to develop practical\nsolutions that make optimizing choices in dynamic complex scenarios,\nbased on feedback, select contextual data and forecasts of alternative\noutcomes.",
+    "behavioralTitle": "Behavioral and Clinical Embeddings",
+    "behavioralDescription": "Embeddings are numerical representations of items, users, or behaviors\nin a high-dimensional space. These representations capture the essential\ncharacteristics and relationships of the data.\n\n\nOur second research direction aims at leveraging the data curated on our\nplatform to learn rich representations that encapsulate the key patterns\nuseful for profiling clinical and behavioral dimensions of users, and\npersonalized recommendations and predictions. Specifically, we use\nsemi-supervised methods to map entities such as products, clinical and\nuser's behavior into numerical vectors in a high-dimensional space, that\nretain semantic relations and bring utility to downstream tasks.",
+    "llmTitle": "Large Language Models",
+    "llmDescription": "This research direction examines the use of Large Language Models (LLMs)\nto streamline access to pertinent analytical information on our\nplatform. We experiment with the reasoning and tool use capabilities of\ngeneralist LLMs endowed with curated data access in order to improve\nexperience for uses on both ends: better personalized recommendations\nfor the application user, and enhanced discovery of deeper insights into\nthe data for the analyst.",
+    "survivalTitle": "Survival Analysis",
+    "survivalDescription": "Survival analysis, often referred to as time-to-event analysis, is\ndedicated to studying the time period leading up to the occurrence of\ncertain events and event-risk factor identification. Our research is\ncentered on merging individual-level survival analysis predictions with\nreinforcement learning algorithms as contextual information, including\nthe uncertainty associated with these survival predictions.\n\n\nThe findings are integrated into our platform in both behavioral and\nclinical embedding training and design of timely and adaptive\ndecision-making system. Furthermore, risk-based early-warning signals\nand continuous cross-validation enable efficient data collection,\nincreased responsiveness and richer feature representation.",
+    "images": {
+      "rl": "rl",
+      "llm": "llm",
+      "survival": "survival"
+    }
+  }
+}

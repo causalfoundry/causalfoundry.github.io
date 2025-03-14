@@ -85,9 +85,7 @@ import { EMAIL } from "@/data";
 import { useRoute } from "vue-router";
 import { useTranslations } from "@/composables/useTranslations";
 
-const { currentTranslations: messages } = useTranslations(
-  "../components/AppFooter"
-);
+const { currentTranslations: messages } = useTranslations("");
 
 const route = useRoute();
 const currentLang = Array.isArray(route.params.lang)

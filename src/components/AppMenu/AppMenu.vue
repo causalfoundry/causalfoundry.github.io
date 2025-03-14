@@ -97,7 +97,7 @@ const MENU_ITEMS = [
 const open = ref(false);
 const dropdownOpen = ref<string | null>(null);
 
-const { currentTranslations: messages } = useTranslations("../");
+const { currentTranslations: messages } = useTranslations("");
 
 function handleClick(e: MouseEvent) {
   const asDiv = e.target as HTMLDivElement;

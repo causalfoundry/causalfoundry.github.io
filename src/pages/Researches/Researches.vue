@@ -102,7 +102,5 @@ import PageHeader from "@/components/PageHeader";
 
 import "./Researches.scss";
 
-const { currentTranslations: messages } = useTranslations(
-  "../pages/Researches"
-);
+const { currentTranslations: messages } = useTranslations("research");
 </script>

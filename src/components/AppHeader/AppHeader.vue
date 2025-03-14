@@ -14,16 +14,16 @@
         class="header__item header__dropdown"
         :class="{ active: active === 'cases' }"
       >
-        <div>{{ messages?.common["cases"] }}</div>
+        <div>{{ messages?.common?.cases }}</div>
         <div class="dropdown-menu">
           <router-link :to="`/${currentLang}/cases/healthcare`">
             <div class="dropdown-item">
-              {{ messages?.common["healthcare"] }}
+              {{ messages?.common?.healthcare }}
             </div>
           </router-link>
           <router-link :to="`/${currentLang}/cases/e-commerce`">
             <div class="dropdown-item">
-              {{ messages?.common["e-commerce"] }}
+              {{ messages?.common?.["e-commerce"] }}
             </div>
           </router-link>
         </div>
@@ -34,7 +34,7 @@
         </div>
       </router-link>
       <a target="_blank" href="https://docs.causalfoundry.ai/">
-        <div class="header__item">{{ messages?.common["docs"] }}</div>
+        <div class="header__item">{{ messages?.common?.["docs"] }}</div>
       </a>
       <router-link :to="`/${currentLang}/about`">
         <div :class="`header__item ${active === 'about' ? 'active' : ''}`">
@@ -57,9 +57,9 @@
 import { useRoute } from "vue-router";
 import { useTranslations } from "@/composables/useTranslations";
 
-const { currentTranslations: messages } = useTranslations(
-  "../components/AppHeader"
-);
+const { currentTranslations: messages } = useTranslations("");
+
+console.log("[aec] [messages] ", messages);
 
 const props = defineProps<{
   currentPage:

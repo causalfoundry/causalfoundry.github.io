@@ -305,7 +305,7 @@ const state = reactive({
   features: [...features],
 });
 
-const { currentTranslations: messages } = useTranslations("../pages/Product");
+const { currentTranslations: messages } = useTranslations("product");
 
 onMounted(() => {
   const intervalId = setInterval(() => {

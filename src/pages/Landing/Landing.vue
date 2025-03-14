@@ -165,7 +165,7 @@ import { Section } from "@/typings/section";
 import "./Landing.scss";
 
 const { currentTranslations: messages, currentLang } =
-  useTranslations("../pages/Landing");
+  useTranslations("landing");
 
 const router = useRouter();
 

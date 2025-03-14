@@ -108,5 +108,5 @@ import AppTitle from "@/components/AppTitle";
 
 import "./Careers.scss";
 
-const { currentTranslations: messages } = useTranslations("../pages/Careers");
+const { currentTranslations: messages } = useTranslations("careers");
 </script>

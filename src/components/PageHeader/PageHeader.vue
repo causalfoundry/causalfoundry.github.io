@@ -52,5 +52,5 @@ const props = defineProps({
   },
 });
 
-const { currentTranslations: messages } = useTranslations("../");
+const { currentTranslations: messages } = useTranslations("");
 </script>

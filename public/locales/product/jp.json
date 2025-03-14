@@ -1,0 +1,178 @@
+{
+  "product": {
+    "title_first": "Reinforcement Learning",
+    "title_second": "As A Service",
+    "description": "当社のAIソフトウェアプラットフォームは、お使いのデジタルツールにパーソナライズ機能を組み込み、機械学習を活用した大規模な介入を可能にします。",
+    "features": {
+      "title": "Our AI platform in a nutshell",
+      "features": {
+        "trackAndLabel": {
+          "title": "データの追跡とラベル付け",
+          "description": "当社の機械学習対応SDKは、医療提供者向けおよび患者向けのモバイルヘルスアプリやプラットフォームにシームレスに統合可能です。アプリの利用から得られる行動データや臨床情報を正確にトラッキングし、AIが活用しやすい形で最適に管理します。"
+        },
+        "learn": {
+          "title": "学習",
+          "description": "当社の用途別データパイプラインとモデルは、入力データを分析し、重要な知見を導き出すことで、過去の傾向を把握し、未来の予測を可能にします。これにより、医療提供者と患者のニーズや状況の変化を的確に捉え、最適な対応を実現します。"
+        },
+        "nudge": {
+          "title": "働きかけ / ナッジ",
+          "description": "蓄積されたデータを活用し、パーソナライズされたレコメンド、インセンティブ、コンテンツ、ワークフローを通じて最適なアクションを実行。ユーザーが必要とするタイミングで最適なサポートを提供し、当社のSDKを介して直接デバイスへ届けます。"
+        }
+      }
+    },
+    "matrix": {
+      "title": "An End-to-End Solution for AI-Driven Interventions",
+      "cards": {
+        "monitoring": {
+          "title": "Action-oriented monitoring",
+          "description": "Easily visualize performance & inform decision-making"
+        },
+        "integration": {
+          "title": "Easy Integration",
+          "description": "We seamlessly connect to your existing services"
+        },
+        "notifications": {
+          "title": "Personalized interventions at scale",
+          "description": "Quickly put into production your ideas and reach your customers"
+        },
+        "llm": {
+          "title": "Quick, accurate answers powered by LLMs",
+          "description": "Get patient-specific and reliable insights to enhance healthcare delivery"
+        }
+      }
+    },
+    "sections": [
+      {
+        "title": "インサイト",
+        "description": "データを可視化し、行動の傾向を把握、リスクを評価し、パフォーマンスを測定。",
+        "features": [
+          {
+            "title": "意味のある特性",
+            "imageUrl": "/images/products/analytics1.gif",
+            "icon": "/images/products/analytics_usecase.png",
+            "description": "データパイプラインを活用し、アプリの利用データや入力データをユーザーごとの予測、強化学習、リソース配分アルゴリズムに最適化された特性へと変換。"
+          },
+          {
+            "title": "コホート（分類グループ）",
+            "imageUrl": "/images/products/analytics2.gif",
+            "icon": "/images/products/analytics_cohort.png",
+            "description": "ユーザーグループを簡単に設定し、行動の分析、エンゲージメントのモニタリング、成果の長期的な評価をスムーズに実施。コホート分析を活用してユーザー体験を最適化し、施策の効果を最大限に引き出します。"
+          },
+          {
+            "title": "ダッシュボード",
+            "icon": "/images/products/analytics_dashboard.png",
+            "description": "カスタマイズ可能なダッシュボードで、重要な指標をリアルタイムに追跡。ユーザーグループ（コホート）を比較し、傾向やパターンを分析することで、行動特性を把握し、データに基づいた意思決定をサポートします。"
+          }
+        ]
+      },
+      {
+        "title": "モデル",
+        "description": "予測およびレコメンド機械学習モデルを簡単に導入し、ユーザーの行動やニーズ、好みを的確に予測。",
+        "features": [
+          {
+            "title": "デプロイ",
+            "imageUrl": "/images/products/models1.gif",
+            "icon": "/images/products/models_define.png",
+            "description": "レコメンド、ユーザー行動分析、需要予測に対応した機械学習モデルを、わずか数ステップで選択・導入。直感的なUIから最先端のアルゴリズムにアクセスでき、コーディング不要でワンクリック導入が可能です。"
+          },
+          {
+            "title": "パフォーマンスの追跡",
+            "imageUrl": "/images/products/models2.gif",
+            "icon": "/images/products/models_track.png",
+            "description": "包括的な検証ツールを活用し、稼働中のモデルのパフォーマンスを測定・比較。トレードオフを評価し、ユースケースに最適なモデルを特定。さらに、パフォーマンスの低下を迅速に検出し、最適な状態を維持できます。"
+          },
+          {
+            "title": "アウトプットの活用",
+            "imageUrl": "/images/products/models3.gif",
+            "icon": "/images/products/models_traits.png",
+            "description": "モデルの出力を活用し、レコメンドや予測の精度だけでなく、その不確実性も考慮したデータ特性を生成。    これらの特性をプラットフォーム全体で活用し、ユーザーグループ（コホート）の定義や施策の最適化を実現します。"
+          }
+        ]
+      },
+      {
+        "title": "介入",
+        "description": "強化学習を活用し、ユーザーの変化する行動やニーズに柔軟に対応。最適な施策を実行します。",
+        "features": [
+          {
+            "title": "デプロイ",
+            "imageUrl": "/images/products/interventions1.gif",
+            "icon": "/images/products/intervention_icon.png",
+            "description": "強化学習アルゴリズムを活用し、最適化された施策を簡単に設計・導入。パーソナライズに特化したニューラルバンディット、知識抽出向けのリニアバンディット、リソース配分を最適化するレストレスバンディットなど、多彩な手法を活用可能です。AIによるユーザー誘導（ナッジ）を、わずか数分でデプロイできます。"
+          },
+          {
+            "title": "実験",
+            "imageUrl": "/images/products/interventions2.gif",
+            "icon": "/images/products/intervention_experimentation.png",
+            "description": "介入施策を安全にテストし、現状と比較する実験を実施。プラットフォームは、完全ランダム化、適応型試験、単一または複数の割り当て、クラスターランダム化、ペアワイズマッチングなど、多様な実験デザインに対応。デジタル試験を活用し、リスクを最小限に抑えながら、統計的な精度を最大化します。"
+          },
+          {
+            "title": "影響の測定と追跡",
+            "icon": "/images/products/intervention_metrics.png",
+            "description": "高度な統計分析を活用し、介入施策の効果をリアルタイムでモニタリング。どのユーザーや状況で最も効果があるかを把握し、継続的な最適化を行いながら、データに基づいた意思決定を実現します。"
+          }
+        ]
+      },
+      {
+        "title": "大規模言語モデル",
+        "description": "自然言語を使って、データや施策の結果、予測、分析結果にアクセスでき、さらに介入施策の送信も可能。",
+        "features": [
+          {
+            "title": "信頼できるアシスタント",
+            "imageUrl": "/images/products/llm1.gif",
+            "icon": "/images/products/llm_icon_1.png",
+            "description": "デジタルアプリにアシスタントを統合し、直感的なチャットボット形式で、ユーザーに信頼性の高いリアルタイムサポートを提供します。"
+          },
+          {
+            "title": "LLMとのシームレスなデータ連携",
+            "icon": "/images/products/speech_to_text.png",
+            "description": "当社のLLM搭載ソリューションは、直感的なテキストベースのインターフェースを提供。ユーザーは、データの検索や分析結果の取得、リアルタイムの要約を通じて、意思決定やワークフローの最適化をスムーズに行えます。すべてをシンプルな対話型インターフェースで実現します。"
+          }
+        ]
+      },
+      {
+        "title": "デジタルアプリへの統合",
+        "description": "高度なAI機能を簡単に既存のアプリケーションに統合し、スムーズな動作と拡張性の高い機能を実現します。",
+        "features": [
+          {
+            "title": "包括的なデータ収集",
+            "imageUrl": "/images/products/integration1.png",
+            "icon": "/images/products/search.png",
+            "description": "医療からゲームまで、さまざまな分野で豊富な行動データや利用データを収集し、価値ある分析結果を導き出して、業務改善やユーザー体験の向上につなげます。"
+          },
+          {
+            "title": "アプリの変更なしでの介入",
+            "imageUrl": "/images/products/createnudge1.png",
+            "icon": "/images/products/chat.png",
+            "description": "元のアプリを変更せずに、パーソナライズされた施策や最新情報をスムーズに配信。"
+          },
+          {
+            "title": "あらゆる技術スタックに柔軟に対応 ",
+            "icon": "/images/products/intervention_metrics.png",
+            "description": "当社のソフトウェア開発キット（SDK）は、主要なテクノロジースタックに対応した設計により、あらゆるデジタル環境にスムーズに統合可能。システムの運用を妨げることなく、簡単に導入できます。"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "title": "End-to-End Products",
+      "description": "Need a tailored app or custom software? Our expert team is here to create the perfect solution for your unique needs",
+      "items": [
+        {
+          "title": "Designed for AI",
+          "icon": "/images/products/e2e/ia.png",
+          "text": "Our apps are designed with AI interventions at their core and are integrated with our AI platform, enabling you to unlock actionable insights and personalization at scale"
+        },
+        {
+          "title": "Cutting-Edge User Experience",
+          "icon": "/images/products/e2e/user.png",
+          "text": "We leverage the latest tech stack and modern design principles, all backed by extensive research in user experience, to create intuitive, high-performance tools that drive engagement and efficiency"
+        },
+        {
+          "title": "Ready for Interoperability",
+          "icon": "/images/products/e2e/interop.png",
+          "text": "Our solutions support seamless data sharing with other systems, adhering to industry standards for integration and scalability"
+        }
+      ]
+    }
+  }
+}

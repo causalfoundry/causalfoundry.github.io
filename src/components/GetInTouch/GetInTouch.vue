@@ -20,7 +20,7 @@ import { useTranslations } from "@/composables/useTranslations";
 
 const router = useRouter();
 
-const { currentTranslations } = useTranslations("../");
+const { currentTranslations } = useTranslations("");
 
 function handleButtonClick(event: MouseEvent) {
   router.push("/contact");
