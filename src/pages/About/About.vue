@@ -130,5 +130,5 @@ import Section from "@/pages/Product/components/Section/Section.vue";
 
 import "./About.scss";
 
-const { currentTranslations: messages } = useTranslations("../pages/About");
+const { currentTranslations: messages } = useTranslations("about");
 </script>
