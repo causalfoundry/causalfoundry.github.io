@@ -28,10 +28,10 @@ export function useTranslations(basePath: string) {
       ).then((res) => res.json());
 
       messages.value[lang] = {
+        ...fallbackTranslations,
         ...commonTranslations,
         ...messages.value[lang],
         ...translations,
-        ...fallbackTranslations,
       };
 
       translationsLoaded.value = true;

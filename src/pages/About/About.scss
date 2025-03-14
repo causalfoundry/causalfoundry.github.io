@@ -179,6 +179,14 @@
       }
     }
 
+    .description {
+      font-family: Open Sans;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 37.5px;
+      letter-spacing: 3%;
+    }
+
     .members {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -410,9 +418,8 @@
     position: relative;
     opacity: 1;
     @include respond("mobile") {
-     flex-direction: column;
+      flex-direction: column;
     }
-
 
     .value {
       padding: 37px;
@@ -469,14 +476,14 @@
           border-radius: 16px;
           border: 1.5px solid var(--Colors-Gray-Gray-600, #4b5563);
           background: linear-gradient(
-                          93deg,
-                          rgba(48, 17, 241, 0.16) -8.68%,
-                          rgba(83, 85, 233, 0.16) 11.72%,
-                          rgba(116, 150, 225, 0.16) 38.64%,
-                          rgba(134, 186, 221, 0.16) 65.85%,
-                          rgba(152, 222, 217, 0.16) 87.98%
-          ),
-          #000;
+              93deg,
+              rgba(48, 17, 241, 0.16) -8.68%,
+              rgba(83, 85, 233, 0.16) 11.72%,
+              rgba(116, 150, 225, 0.16) 38.64%,
+              rgba(134, 186, 221, 0.16) 65.85%,
+              rgba(152, 222, 217, 0.16) 87.98%
+            ),
+            #000;
         }
 
         &__title {
@@ -489,9 +496,6 @@
       }
     }
   }
-
-
-
 
   .footer {
     padding-left: $app-side-padding-desktop;

@@ -23,6 +23,14 @@
       </template>
     </PageHeader>
 
+    <Section
+      :title="messages?.about?.approach?.title"
+      description=""
+      className="about-section"
+    >
+      <div>{{ messages?.about?.approach?.text }}</div>
+    </Section>
+
     <Section title="Our Culture" description="" className="about-section">
       <div class="values">
         <div
@@ -38,20 +46,12 @@
       </div>
     </Section>
 
-    <div class="our-story">
-      <div class="our-story__title">{{ messages?.about?.missionTitle }}</div>
-      <div class="our-story__content">
-        <div class="our-story__section">
-          {{ messages?.about?.mission }}
-        </div>
-      </div>
-    </div>
-
     <div class="team">
-      <div class="title">{{ messages?.about?.teamTitle }}</div>
+      <div class="title">{{ messages?.about?.team?.title }}</div>
+      <div class="description">{{ messages?.about?.team?.description }}</div>
       <div class="members">
         <div
-          v-for="member of messages?.about?.team"
+          v-for="member of messages?.about?.team?.members"
           class="member"
           :key="member.name"
         >
