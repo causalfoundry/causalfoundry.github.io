@@ -5,69 +5,77 @@
     </AppHeader>
 
     <PageHeader
-      :description="messages?.cases?.descriptions?.healthcare"
+      :description="messages?.cases?.descriptions?.government"
       :showButton="true"
-      className="cases__healthcare_header"
-      image="/images/cases/header_healthcare.png"
+      className="cases__government_header"
+      image="/images/cases/header_government.png"
     >
       <template #title>
         <AppTitle>
-          {{ messages?.cases?.titles?.healthcare?.first }}
+          {{ messages?.cases?.titles?.government?.first }}
         </AppTitle>
-        {{ messages?.cases?.titles?.healthcare?.second }}
+
+        <div class="cases__government_header__subtitle">
+          {{ messages?.cases?.titles?.government?.second?.split(" ")[0] }}
+          <br />
+          {{
+            messages?.cases?.titles?.government?.second
+              .split(" ")
+              .slice(1, 3)
+              .join(" ")
+          }}
+          <br />
+          {{
+            messages?.cases?.titles?.government?.second
+              .split(" ")
+              .slice(3)
+              .join(" ")
+          }}
+        </div>
       </template>
     </PageHeader>
 
-    <SuccessCase :title="messages?.cases?.m2m?.title">
+    <SuccessCase :title="messages?.cases?.rssb?.title">
       <Logos>
         <template #first>
           <img :src="`/images/cases/cf-logo.png`" />
         </template>
         <template #second>
-          <img :src="`/images/cases/m2m/logo.png`" />
+          <img :src="`/images/cases/rssb/logo.png`" />
         </template>
       </Logos>
       <TextImage
-        :title="messages?.cases?.m2m?.firstSection?.title"
-        :text="messages?.cases?.m2m?.firstSection?.text"
+        :title="messages?.cases?.rssb?.firstSection?.title"
+        :text="messages?.cases?.rssb?.firstSection?.text"
         primary
       >
         <template #image>
-          <img :src="`/images/cases/m2m/first.png`" />
+          <img :src="`/images/cases/rssb/social-icon.png`" />
         </template>
       </TextImage>
 
-      <Image>
-        <template #image>
-          <div class="m2m-dashboard">
-            <img :src="`/images/cases/m2m/dashboard.png`" />
-          </div>
-        </template>
-      </Image>
-
       <TextImage
-        :title="messages?.cases?.m2m?.secondSection?.title"
-        :text="messages?.cases?.m2m?.secondSection?.text"
+        :title="messages?.cases?.rssb?.secondSection?.title"
+        :text="messages?.cases?.rssb?.secondSection?.text"
         :reversed="true"
         className="charm-text-image"
       >
         <template #image>
-          <div class="images-phones">
-            <img :src="`/images/cases/m2m/phones.png`" />
+          <div class="">
+            <img :src="`/images/cases/rssb/diagram_engagement.png`" />
           </div>
         </template>
 
         <template #extra-image>
-          <div class="key-app-features-title">Key App Features</div>
-
-          <div class="key-app-features">
+          <div class="key-app-items">
             <div
-              class="key-app-features__item"
-              v-for="(item, index) in messages?.cases?.m2m?.items"
+              class="key-app-items__item"
+              v-for="(item, index) in messages?.cases?.rssb?.features"
               :key="index"
             >
-              <img :src="`/images/cases/m2m/${item.icon}`" />
-              <span> {{ item.text }} </span>
+              <ul>
+                <li>{{ item }}</li>
+              </ul>
             </div>
           </div>
         </template>
@@ -75,10 +83,13 @@
 
       <div class="m2m-footer">
         <Quote
-          :text="messages?.cases?.m2m?.quote?.text"
-          :from="messages?.cases?.m2m?.quote?.from"
+          :text="messages?.cases?.rssb?.quote?.text"
+          :from="messages?.cases?.rssb?.quote?.from"
         />
-        <ShortDescriptionList :items="messages?.cases?.m2m?.items" />
+        <ShortDescriptionList
+          :items="messages?.cases?.rssb?.items"
+          :title="messages?.cases?.rssb?.itemsTitle"
+        />
       </div>
     </SuccessCase>
 

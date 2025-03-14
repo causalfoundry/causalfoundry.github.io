@@ -1,6 +1,7 @@
 {
   "cases": {
     "m2m": {
+      "title": "CASE 1. mothers2mothers",
       "quote": {
         "text": "AI has transformed how we work, allowing us to deliver real-time monitoring, predictive insights for health workers, and personalized patient care, driving better outcomes and truly enhancing the experience for everyone we serve",
         "from": "Dr. Kathrin Schmitz - Chief Programmes & Impact Officer"
@@ -33,6 +34,7 @@
       ]
     },
     "swiperx": {
+      "title": "CASE 1. SwipeRx",
       "quote": {
         "text": "We are excited to innovate with Causal Foundry, using AI to improve medicine quality, availability, and affordability across Southeast Asia making a positive impact on the lives of millions",
         "from": "Farouk Meralli, Founder & CEO at SwipeRx"
@@ -62,6 +64,7 @@
       ]
     },
     "momentum": {
+      "title": "CASE 2. Momentum",
       "quote": {
         "text": "The profound insights gained from this partnership enhance the efficiency of our operations and enable us to monitor our interventions in healthcare delivery with clarity and purpose. I am delighted that our collaboration will allow Ghanaians to witness the direct benefits of AI in healthcare",
         "from": "Abigail Abora, CEO and Co-Founder of Aide Chemists"
@@ -93,6 +96,45 @@
         }
       ]
     },
+    "rssb": {
+      "title": "CASE 1. RSSB",
+      "quote": {
+        "text": "Partnering with Causal Foundry has enabled us to leverage our data to design a more sustainable and efficient healthcare financing model”",
+        "from": "Dr. Regis Hitimana, Chief Benefits Officer, RSSB"
+      },
+      "firstSection": {
+        "title": "Supporting Rwanda’s Healthcare Reform with RSSB",
+        "text": "Rwanda’s Social Security Board (RSSB) plays a critical role in financing primary healthcare services. Causal Foundry is supporting the design, rollout and monitoring of a major health financing reform affecting  the 1,000+ health centers and health posts in the country"
+      },
+      "secondSection": {
+        "title": "Predicting Engagement & Demand",
+        "text": "Casual Foundry has extracted insights from RSSB's large dataset of patient-level provider claims to analyze health service utilization and consultation costs, design the capitation formula, and build real-time monitoring systems to support quality healthcare provision."
+      },
+      "features": [
+        "Deep data analysis on the Intelligent Health Benefits System (IHBS)",
+        "Data-driven design of the capitation model",
+        "A monitoring  system with outlier detection"
+      ],
+      "itemsTitle": "How We Support Goverments",
+      "items": [
+        {
+          "title": "Predictions",
+          "text": "Responsive systems that predict changes in service demand"
+        },
+        {
+          "title": "Monitoring",
+          "text": "Automated detection of anomalies in service delivery"
+        },
+        {
+          "title": "Adaptive Interventions",
+          "text": "Enhance healthcare worker productivity"
+        },
+        {
+          "title": "Resource Allocantion",
+          "text": "Optimally assign resources for the highest impact"
+        }
+      ]
+    },
     "titles": {
       "ecommerce": {
         "first": "Built in Partnership",
@@ -110,7 +152,7 @@
     "descriptions": {
       "healthcare": "Our clients are transforming healthcare by leveraging advanced AI and machine learning to enhance personalization and optimize patient-provider interactions. With tailored interventions, real-time insights, and LLM-powered assistants, they improve treatment adherence, streamline workflows, and address challenges like resource allocation and preventive care—ensuring impactful, data-driven healthcare delivery",
       "ecommerce": "Our clients are boosting customer experiences with AI-driven personalization. By optimizing product recommendations, predicting demand, and reducing cart abandonment, the platform boosts conversions and loyalty. Seamlessly integrated with existing systems, it delivers actionable insights, dynamic interventions, and tailored content, empowering businesses to achieve success and stay ahead in highly competitive markets",
-      "government": "Leveraging Machine Learning for Societal Impact"
+      "government": ""
     }
   }
 }

@@ -26,6 +26,11 @@
               {{ messages?.common?.["e-commerce"] }}
             </div>
           </router-link>
+          <router-link :to="`/${currentLang}/cases/government`">
+            <div class="dropdown-item">
+              {{ messages?.common?.["government"] }}
+            </div>
+          </router-link>
         </div>
       </div>
       <router-link :to="`/${currentLang}/research`">

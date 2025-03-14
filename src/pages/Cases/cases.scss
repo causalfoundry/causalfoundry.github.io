@@ -7,10 +7,30 @@
   flex-direction: column;
   align-items: center;
 
+  &__government_header {
+    height: 800px;
+    background: url("/images/cases/header_government.png");
+    //url("/images/cases/header_healthcare.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include respond("mobile") {
+      background-image: unset;
+      height: unset;
+    }
+
+    &__subtitle {
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 1%;
+    }
+  }
+
   &__healthcare_header {
     height: 800px;
     background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
-    url("/images/cases/header_healthcare.png");
+      url("/images/cases/header_healthcare.png");
     //url("/images/cases/header_healthcare.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +44,7 @@
   &__ecommerce_header {
     height: 800px;
     background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
-    url("/images/cases/header_ecommerce.png");
+      url("/images/cases/header_ecommerce.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -66,7 +86,43 @@
     }
   }
 
-  .key-app-features-title {
+  .key-app-items {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      font-family: Noto Sans;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 33px;
+      letter-spacing: 0%;
+      list-style: none;
+      position: relative;
+      padding-left: 1.5em;
+
+      background: linear-gradient(
+        145.39deg,
+        #fff625 -13.26%,
+        #ccea7f 15.7%,
+        #a7e2be 55.24%,
+        #98ded9 93.66%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0.5em;
+        color: #98ded9;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .key-app-items-title {
     font-family: "Noto Sans";
     font-size: 20px;
     font-style: normal;
@@ -84,6 +140,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 25.2px */
+
     &__item {
       display: flex;
       align-items: center;
@@ -130,7 +187,5 @@
     @include respond("mobile") {
       display: none;
     }
-
   }
-
 }
