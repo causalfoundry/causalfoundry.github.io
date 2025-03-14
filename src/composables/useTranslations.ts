@@ -29,9 +29,9 @@ export function useTranslations(basePath: string) {
 
       messages.value[lang] = {
         ...commonTranslations,
-        ...fallbackTranslations,
         ...messages.value[lang],
         ...translations,
+        ...fallbackTranslations,
       };
 
       translationsLoaded.value = true;
