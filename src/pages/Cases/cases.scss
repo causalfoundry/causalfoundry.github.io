@@ -10,7 +10,6 @@
   &__government_header {
     height: 800px;
     background: url("/images/cases/header_government.png");
-    //url("/images/cases/header_healthcare.png");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -29,9 +28,8 @@
 
   &__healthcare_header {
     height: 800px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
       url("/images/cases/header_healthcare.png");
-    //url("/images/cases/header_healthcare.png");
     background-repeat: no-repeat;
     background-size: cover;
 
