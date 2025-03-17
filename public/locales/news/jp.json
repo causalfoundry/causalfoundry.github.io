@@ -1,67 +1,69 @@
 {
   "news": {
     "title": "最新のニュース",
+    "dateFormat": "YYYY年MM月DD日",
+
     "items": [
       {
         "link": "/files/CausalFoundry_Ecommerce.pdf",
         "linkText": "ホワイトペーパーをダウンロード",
-        "date": "22 Nov 2024",
+        "date": "2024-11-22",
         "text": "Explore our white paper, where we highlight our collaboration with SwipeRx and demonstrate the transformative impact of implementing AI in their operations",
         "image": "/images/news/whitepaper_swiperx_resized.png"
       },
       {
         "link": "https://www.tandfonline.com/doi/full/10.1080/23288604.2024.2387138",
         "linkText": "全文を読む ",
-        "date": "07 Nov 2024",
+        "date": "2024-11-07",
         "text": "「デジタルヘルスの変革：AIが医療システムの効率とアクセス性をどう向上させるか」についての最新論文が、権威ある『Health Systems & Reform』誌に掲載されました。",
         "image": "/images/news/paper_resize.png"
       },
       {
         "link": "https://www.gavi.org/vaccineswork/multi-armed-bandits-cooking-ai-storm",
         "linkText": "クリックして記事を読む",
-        "date": "05 Nov 2024",
+        "date": "2024-11-05",
         "text": "Gaviワクチンアライアンスが、資源の乏しい地域における医療課題の解決に向けたCausal FoundryのAI活用の取り組みを特集。詳しくは特集記事『Multi-Armed Bandits Cooking Up an AI Storm』をご覧ください。",
         "image": "/images/news/gavi_resize.png"
       },
       {
         "link": "https://www.gavi.org/news/media-room/gavi-harnesses-innovation-mitigate-effects-climate-change-global-health",
         "linkText": "GAVIで詳細を読む",
-        "date": "10 Oct 2024",
+        "date": "2024-10-10",
         "text": "Causal Foundryが、Gaviワクチンアライアンスの『INFUSE 2024 Pacesetters（革新をリードする組織）』に選出されました。AIを活用した公衆衛生とワクチン接種分野での革新的な取り組みが評価されました。",
         "image": "/images/news/gavi.jpg"
       },
       {
         "link": "https://www.idmod.org/symposium/current-symposium/",
         "linkText": "IDM公式サイトで詳細を見る",
-        "date": "02 Oct 2024",
+        "date": "2024-10-02",
         "text": "当社CTO デクシアン・タン（Dexian Tang）が、シアトルのビル＆メリンダ・ゲイツ財団カンファレンスセンターで開催されたIDM年次シンポジウムにて、「適応型行動AI：強化学習による医療サービスの最適化」について講演しました。",
         "image": "/images/news/idm.jpg"
       },
       {
         "link": "https://symposium-2024-webpage.my.canva.site/",
         "linkText": "シンポジウムの公式サイトで詳細を読む",
-        "date": "30 Sep 2024",
+        "date": "2024-09-30",
         "text": "当社CEOが9月26日、Penn Medicine主催の「Nudges in Health Care Symposium」に登壇しました。",
         "image": "/images/news/nudges_square.png"
       },
       {
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:7234966631154606080",
         "linkText": "LinkedInで詳細を読む",
-        "date": "06 Sep 2024",
+        "date": "2024-09-06",
         "text": "当社チームが今年のKDDカンファレンスに3本の論文を発表。科学的な深い議論や新たなつながりを通じ、刺激的な1週間を過ごしました。",
         "image": "/images/news/kdd.jpg"
       },
       {
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:7120780440478584834/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7120780440478584834%29",
         "linkText": "Read more on LinkedIn",
-        "date": "12 Oct 2023",
+        "date": "2023-10-12",
         "text": "当社CEO アフリカ・ペリアニェス（África Perianez）が、ハーバード大学で開催された第40回Takemi Symposium in International Healthにて「デジタルヘルス：グローバルヘルスの機会と課題」について基調講演を行いました。",
         "image": "/images/news/how-ai.png"
       },
       {
         "link": "https://twitter.com/Causal_Foundry/status/1701606748568822099?s=20",
         "linkText": "X（旧Twitter）で読む",
-        "date": "12 Sep 2023",
+        "date": "2023-09-12",
         "text": "Causal Foundryは、<a href=\"http://Google.org\" target=\"_blank\">Google.org</a>の『AI for the Global Goals Grant Portfolio』に選ばれました！\n               AIを活用した患者ケアアプリを開発し、アフリカの最前線で働く医療従事者を支援します。 他の受賞者については、こちらをご覧ください。  <a href=\"http://g.co/ai/globalgoals\">here</a>",
         "image": "/images/news/google.png",
         "credits": "Photo by E. Nsapu"
@@ -69,14 +71,14 @@
       {
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:7082414780497502209",
         "linkText": "LinkedInで詳細を読む",
-        "date": "04 Aug 2023",
+        "date": "2023-08-04",
         "text": "<a href=\"https://www.linkedin.com/company/aide-chemists-ltd/\" target=\"_blank\">AIDE CHEMISTS LTD</a>と連携し、AIネイティブの「e薬局」アプリを共同開発。医薬品と医療アドバイスへのアクセスを革新します。",
         "image": "/images/news/aidechemist.png"
       },
       {
         "link": "https://www.linkedin.com/posts/medtronic-labs_medtronic-labs-causal-foundry-revolutionizing-activity-7052612498365038592-stCO",
         "linkText": "LinkedInで詳細を読む",
-        "date": "15 Apr 2023",
+        "date": "2023-04-15",
         "text": "<a href=\"https://www.medtroniclabs.org/\" target=\"_blank\">Medtronic Labs</a>.\n               との連携を発表できることを喜ばしく思います。私たちの目標は、AIとデータ駆動型のインサイトを活用し、低・中所得国における医療提供モデルを革新することです。",
         "image": "/images/news/medtronics.png"
       }

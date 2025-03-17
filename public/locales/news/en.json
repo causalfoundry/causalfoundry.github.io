@@ -1,6 +1,8 @@
 {
   "news": {
     "title": "Latest News",
+    "dateFormat": "YYYY-MM-DD",
+
     "items": [
       {
         "link": "/files/CausalFoundry_Ecommerce.pdf",

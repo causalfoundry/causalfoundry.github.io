@@ -36,7 +36,9 @@
             {{ news_item.credits }}
           </div>
         </div>
-        <div class="date">{{ dayjs(news_item.date).format("YYYY-MM-DD") }}</div>
+        <div class="date">
+          {{ dayjs(news_item.date).format(messages.news.dateFormat) }}
+        </div>
         <div class="description" v-html="news_item.text"></div>
         <div class="link">
           <a :href="news_item.link" target="_blank">
