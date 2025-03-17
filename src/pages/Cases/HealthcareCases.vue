@@ -58,7 +58,9 @@
         </template>
 
         <template #extra-image>
-          <div class="key-app-features-title">Key App Features</div>
+          <div class="key-app-features-title">
+            {{ messages?.cases?.m2m?.keyAppFeatures }}
+          </div>
 
           <div class="key-app-features">
             <div
