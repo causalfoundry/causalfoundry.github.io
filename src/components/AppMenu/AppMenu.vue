@@ -69,29 +69,38 @@
 
 <script lang="ts" setup>
 import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
+
 import HamburgerMenuIcon from "@/assets/hamburger-menu.svg";
 import CrossIcon from "@/assets/cross.svg";
 import { useTranslations } from "@/composables/useTranslations";
 
+const route = useRoute();
+
+const currentLang = Array.isArray(route.params.lang)
+  ? route.params.lang[0]
+  : route.params.lang || "en"; // Default to 'en' if no lang is specified
+
 const MENU_ITEMS = [
-  { titleKey: "home", href: `/` },
-  { titleKey: "products", href: "/products" },
+  { titleKey: "home", href: `/${currentLang}/` },
+  { titleKey: "products", href: `/${currentLang}/products` },
   {
     titleKey: "cases",
     submenu: [
-      { titleKey: "healthcare", href: "/cases/healthcare" },
-      { titleKey: "e-commerce", href: "/cases/e-commerce" },
+      { titleKey: "healthcare", href: `/${currentLang}/cases/healthcare` },
+      { titleKey: "e-commerce", href: `/${currentLang}/cases/e-commerce` },
+      { titleKey: "government", href: `/${currentLang}/cases/government` },
     ],
   },
-  { titleKey: "research", href: "/research" },
+  { titleKey: "research", href: `/${currentLang}/research` },
   {
     titleKey: "docs",
     href: "https://docs.causalfoundry.ai/",
     target: "_blank",
   },
-  { titleKey: "about", href: "/about" },
-  { titleKey: "careers", href: "/careers" },
-  { titleKey: "contact", href: `/contact` },
+  { titleKey: "about", href: `/${currentLang}/about` },
+  { titleKey: "careers", href: `/${currentLang}/careers` },
+  { titleKey: "contact", href: `/${currentLang}/contact` },
 ];
 
 const open = ref(false);
@@ -111,6 +120,4 @@ function handleClick(e: MouseEvent) {
 function toggleDropdown(title: string) {
   dropdownOpen.value = dropdownOpen.value === title ? null : title;
 }
-
-console.log("[aec] [messages] ", messages?.common);
 </script>
