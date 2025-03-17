@@ -51,6 +51,24 @@
           {{ messages?.common["careers"] }}
         </div>
       </router-link>
+
+      <div class="header__item">
+        <div class="header__lang">
+          <a
+            href="#"
+            @click.prevent="changeLanguage('en')"
+            :class="{ 'header__lang-selected': currentLang === 'en' }"
+            >en</a
+          >
+          |
+          <a
+            href="#"
+            @click.prevent="changeLanguage('jp')"
+            :class="{ 'header__lang-selected': currentLang === 'jp' }"
+            >日本語
+          </a>
+        </div>
+      </div>
     </div>
     <div class="header__slot">
       <slot />
@@ -59,12 +77,11 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { useTranslations } from "@/composables/useTranslations";
 
 const { currentTranslations: messages } = useTranslations("");
-
-console.log("[aec] [messages] ", messages);
+const router = useRouter();
 
 const props = defineProps<{
   currentPage:
@@ -80,7 +97,15 @@ const props = defineProps<{
 
 const active = props.currentPage;
 const route = useRoute();
+
 const currentLang = Array.isArray(route.params.lang)
   ? route.params.lang[0]
   : route.params.lang || "en"; // Default to 'en' if no lang is specified
+
+// Function to handle language change
+const changeLanguage = (lang: string) => {
+  const newPath = `/${lang}${route.path.substring(3)}`;
+  // Use window.location to force a full page refresh
+  window.location.href = newPath;
+};
 </script>

@@ -5,11 +5,11 @@
   display: flex;
   justify-content: space-between;
 
-  @include respond('tablet') {
+  @include respond("tablet") {
     padding: 60px 50px;
   }
 
-  @include respond('mobile') {
+  @include respond("mobile") {
     padding: 60px 32px;
     height: 25px;
     align-items: center;
@@ -18,11 +18,11 @@
   &__logo {
     width: 300px;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       width: 250px;
     }
 
-    @include respond('mobile') {
+    @include respond("mobile") {
       width: 200px;
     }
   }
@@ -31,9 +31,22 @@
     text-decoration: none;
   }
 
+  .header__lang {
+    font-size: smaller;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .header__lang-selected {
+      font-weight: 700;
+    }
+  }
+
   &__item {
-    color: var(--white, #FFF);
-    font-family: 'NotoSansRegular';
+    color: var(--white, #fff);
+    font-family: "NotoSansRegular";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -49,12 +62,12 @@
 
     text-transform: uppercase;
 
-    @include respond('tablet') {
+    @include respond("tablet") {
       display: none;
     }
 
     &.active {
-      font-family: 'NotoSansBold';
+      font-family: "NotoSansBold";
       font-weight: 700;
       border-bottom: 1px solid #fff;
     }
@@ -75,8 +88,8 @@
     top: 100%;
     left: -100px;
     min-width: 250px;
-    background-color: #2A2A32;
-    border: 1px solid #59595F;
+    background-color: #2a2a32;
+    border: 1px solid #59595f;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -105,6 +118,6 @@
   }
 
   .dropdown-item:hover {
-    background-color: #59595F;
+    background-color: #59595f;
   }
 }
