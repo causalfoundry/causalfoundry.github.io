@@ -116,22 +116,22 @@
         {
           "title": "インテリジェント医療給付システム（IHBS）の詳細データ分析",
           "text": [
-            "Tracks patient visits, diagnoses, services, personnel, and prescriptions across the 1,000+ PH C facilities since 2023",
-            "20m+ visits per year to 6m+ patients, with detailed patient-level service delivery information including diagnosis and 80m+ procedures, prescriptions, all tests per year"
+            "2023年以降、1,000以上のPHC施設における患者の訪問、診断、サービス、スタッフ、処方箋を追跡",
+            "年間2,000万件以上の訪問があり、600万人以上の患者に対して、診断や年間8000万件以上の手続き、処方箋、すべての検査を含む詳細な患者レベルのサービス提供情報を提供"
           ]
         },
         {
           "title": "データ駆動型のキャピテーションモデル設計",
           "text": [
-            "Developed a capitation formula that ensures a stable transition for health facilities, preventing system disruptions.",
-            "The model has the flexibility to accommodate both basic and advanced health centers under a unified scheme"
+            "医療施設の安定した移行を保証し、システムの混乱を防ぐキャピテーションの公式を開発しました。",
+            "このモデルは、基本的および高度な医療センターの両方を統一されたスキームで対応できる柔軟性を持っています"
           ]
         },
         {
           "title": "異常値検出機能を備えた監視システム",
           "text": [
-            "Tracked key indicators such facility utilization, service delivery, and test rates per visit.",
-            "Implemented advanced algorithms to detect outliers and anomalies using time- series and cross-sectional analysis."
+            "施設の利用状況、サービス提供、訪問ごとの検査率などの主要指標を追跡しました。",
+            "時系列および断面分析を使用して外れ値や異常を検出する高度なアルゴリズムを実装しました。"
           ]
         }
       ],
