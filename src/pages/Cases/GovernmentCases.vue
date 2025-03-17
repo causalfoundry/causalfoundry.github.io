@@ -65,21 +65,16 @@
             <img :src="`/images/cases/rssb/diagram_engagement.png`" />
           </div>
         </template>
-
-        <template #extra-image>
-          <div class="key-app-items">
-            <div
-              class="key-app-items__item"
-              v-for="(item, index) in messages?.cases?.rssb?.features"
-              :key="index"
-            >
-              <ul>
-                <li>{{ item }}</li>
-              </ul>
-            </div>
-          </div>
-        </template>
       </TextImage>
+
+      <div class="feature-items">
+        <CultureItem
+          v-for="(item, index) in messages?.cases?.rssb?.features"
+          :key="index"
+          :title="item.title"
+          :text="item.text"
+        />
+      </div>
 
       <div class="m2m-footer">
         <Quote
@@ -129,6 +124,7 @@ import ShortDescriptionList from "@/components/ShortDescriptionList";
 
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
+import CultureItem from "@/pages/About/components/CultureItem/CultureItem";
 
 import Logos from "./components/Logos";
 

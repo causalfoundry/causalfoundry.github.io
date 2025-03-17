@@ -107,6 +107,7 @@
         "text": "Partnering with Causal Foundry has enabled us to leverage our data to design a more sustainable and efficient healthcare financing model”",
         "from": "Dr. Regis Hitimana, Chief Benefits Officer, RSSB"
       },
+
       "firstSection": {
         "title": "Supporting Rwanda’s Healthcare Reform with RSSB",
         "text": "Rwanda’s Social Security Board (RSSB) plays a critical role in financing primary healthcare services. Causal Foundry is supporting the design, rollout and monitoring of a major health financing reform affecting  the 1,000+ health centers and health posts in the country"
@@ -116,9 +117,18 @@
         "text": "Casual Foundry has extracted insights from RSSB's large dataset of patient-level provider claims to analyze health service utilization and consultation costs, design the capitation formula, and build real-time monitoring systems to support quality healthcare provision."
       },
       "features": [
-        "Deep data analysis on the Intelligent Health Benefits System (IHBS)",
-        "Data-driven design of the capitation model",
-        "A monitoring  system with outlier detection"
+        {
+          "title": "Deep data analysis on the Intelligent Health Benefits System (IHBS)",
+          "text": "Tracks patient visits, diagnoses, services, personnel, and prescriptions across the 1,000+ PH C facilities since 2023 . 20m+ visits per year to 6m+ patients, with detailed patient-level service delivery information including diagnosis and 80m+ procedures, prescriptions, all tests per year"
+        },
+        {
+          "title": "Data-driven design of the capitation model for Health Centers",
+          "text": "Developed a capitation formula that ensures a stable transition for health facilities, preventing system disruptions. \n The model has the flexibility to accommodate both basic and advanced health centers under a unified scheme"
+        },
+        {
+          "title": "A monitoring  system with outlier detection",
+          "text": "Tracked key indicators such facility utilization, service delivery, and test rates per visit. Implemented advanced algorithms to detect outliers and anomalies using time- series and cross-sectional analysis."
+        }
       ],
       "itemsTitle": "How We Support Goverments",
       "items": [
