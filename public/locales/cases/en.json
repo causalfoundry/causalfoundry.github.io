@@ -17,19 +17,23 @@
       "items": [
         {
           "title": "Improve Patient Prioritization",
-          "text": "Equip CHWs to assess & prioritize high-risk patients, reducing triage time & increasing accuracy"
+          "text": "Equip CHWs to assess & prioritize high-risk patients, reducing triage time & increasing accuracy",
+          "icon": "calendar_month.png"
         },
         {
           "title": "Boost Knowledge & Confidence",
-          "text": "Enhance CHWs' skills through improved healthcare guidance and personalized assistance"
+          "text": "Enhance CHWs' skills through improved healthcare guidance and personalized assistance",
+          "icon": "bar_chart_4_bars.png"
         },
         {
           "title": "Improve Patient Health Outcomes",
-          "text": "Use personalized treatment plans to enhance adherence and boost treatment success"
+          "text": "Use personalized treatment plans to enhance adherence and boost treatment success",
+          "icon": "ecg_heart.png"
         },
         {
           "title": "Scale Digital Tool Adoption",
-          "text": "Drive adoption among CHWs, ensuring successful rollout and consistent use of the digital tool"
+          "text": "Drive adoption among CHWs, ensuring successful rollout and consistent use of the digital tool",
+          "icon": "bid_landscape.png"
         }
       ]
     },

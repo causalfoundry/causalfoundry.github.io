@@ -8,7 +8,7 @@
       :description="messages?.cases?.descriptions?.healthcare"
       :showButton="true"
       className="cases__healthcare_header"
-      image="/images/cases/header_healthcare_new.png"
+      image="/images/cases/header_healthcare.png"
     >
       <template #title>
         <AppTitle>
