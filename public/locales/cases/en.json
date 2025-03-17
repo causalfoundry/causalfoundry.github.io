@@ -120,7 +120,8 @@
         {
           "title": "Deep data analysis on the Intelligent Health Benefits System (IHBS)",
           "text": [
-            "Tracks patient visits, diagnoses, services, personnel, and prescriptions across the 1,000+ PH C facilities since 2023 . 20m+ visits per year to 6m+ patients, with detailed patient-level service delivery information including diagnosis and 80m+ procedures, prescriptions, all tests per year"
+            "Tracks patient visits, diagnoses, services, personnel, and prescriptions across the 1,000+ PH C facilities since 2023",
+            "20m+ visits per year to 6m+ patients, with detailed patient-level service delivery information including diagnosis and 80m+ procedures, prescriptions, all tests per year"
           ]
         },
         {
