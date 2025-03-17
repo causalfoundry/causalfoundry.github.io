@@ -290,10 +290,17 @@
 
   .about-section {
     margin: 20px 140px 0 140px;
-    width: unset;
+    width: 1200px;
+
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 37.5px;
+    letter-spacing: 0%;
 
     @include respond("mobile") {
       margin: 20px 50px 0 50px;
+      width: unset;
     }
   }
 

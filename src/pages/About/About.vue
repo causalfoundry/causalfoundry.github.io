@@ -24,11 +24,11 @@
     </PageHeader>
 
     <Section
-      :title="messages?.about?.approach?.title"
+      :title="messages?.about?.missionTitle"
       description=""
       className="about-section"
     >
-      <div>{{ messages?.about?.approach?.text }}</div>
+      <div>{{ messages?.about?.mission }}</div>
     </Section>
 
     <Section title="Our Culture" description="" className="about-section">
@@ -57,7 +57,7 @@
         >
           <div class="avatar">
             <img :src="member.imageUrl" alt="" />
-            <div class="description">{{ member.descritpion }}</div>
+            <div class="description">{{ member.description }}</div>
           </div>
           <div class="info">
             <div class="name">{{ member.name }}</div>
@@ -126,7 +126,7 @@ import AppTitle from "@/components/AppTitle";
 import PageHeader from "@/components/PageHeader";
 
 import GetInTouch from "@/components/GetInTouch";
-import Section from "@/pages/Product/components/Section/Section.vue";
+import Section from "@/components/Section/Section.vue";
 
 import "./About.scss";
 

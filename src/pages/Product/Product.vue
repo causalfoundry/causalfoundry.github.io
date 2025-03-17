@@ -284,10 +284,10 @@ import AppMenu from "@/components/AppMenu";
 import AppFooter from "@/components/AppFooter";
 import AppTitle from "@/components/AppTitle";
 import GetInTouch from "@/components/GetInTouch";
+import Section from "@/components/Section";
 
 import { features, sections } from "@/data/products";
 
-import Section from "./components/Section/Section.vue";
 import ProductCard from "./components/ProductCard";
 import ProductFooter from "./components/ProductFooter";
 

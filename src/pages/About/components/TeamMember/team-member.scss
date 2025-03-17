@@ -1,0 +1,92 @@
+.member {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .info {
+    padding: 16px;
+  }
+
+  .avatar {
+    position: relative;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include respond("mobile") {
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+  }
+
+  .name {
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    @include respond("mobile") {
+      font-size: 20px;
+    }
+  }
+
+  .role {
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 24px;
+
+    @include respond("mobile") {
+      font-size: 14px;
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 16px;
+
+    img {
+      @include respond("mobile") {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .description {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 27px 15px 64px 25px;
+    background-color: #141c26d9;
+    box-sizing: border-box;
+    transition: 0.3s opacity ease-in-out;
+
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+
+    @include respond("mobile") {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  &:hover .description {
+    opacity: 1;
+  }
+}
