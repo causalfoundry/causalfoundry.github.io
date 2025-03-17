@@ -4,6 +4,17 @@
   background-color: #131313;
   border-radius: 16px;
 
+  & > ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li.single-item {
+      list-style-type: none;
+    }
+  }
+
   &__title {
     font-family: NeueMachinaMedium;
     font-weight: 400;
@@ -24,7 +35,7 @@
   }
 
   &__text {
-    font-family: Open Sans;
+    font-family: Noto Sans;
     font-weight: 300;
     font-size: 22px;
     line-height: 33px;

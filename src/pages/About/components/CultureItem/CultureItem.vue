@@ -1,7 +1,16 @@
 <template>
   <div class="culture-item">
     <h3 class="culture-item__title">{{ title }}</h3>
-    <p class="culture-item__text">{{ text }}</p>
+    <ul>
+      <li
+        class="culture-item__text"
+        v-for="(item, index) in text"
+        :key="index"
+        :class="{ 'single-item': text.length === 1 }"
+      >
+        {{ item }}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -9,8 +18,7 @@
 import "./culture-item.scss";
 interface Props {
   title: string;
-  text: string;
+  text: string[];
 }
-
 defineProps<Props>();
 </script>
