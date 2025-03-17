@@ -94,18 +94,19 @@
           {
             "title": "Deploy",
             "imageUrl": "/images/products/interventions1.gif",
-            "icon": "/images/products/interventions_define.png",
+            "icon": "/images/products/intervention_icon.png",
             "description": "Easily deploy predictive and recommendation machine learning models to anticipate user behavior, needs and preferences"
           },
           {
             "title": "Experiment",
             "imageUrl": "/images/products/interventions2.gif",
-            "icon": "/images/products/interventions_experimentation.png",
+            "icon": "/images/products/intervention_experimentation.png",
+
             "description": "Safely test interventions by running experiments against the status quo. The platform supports diverse experimental designs—fully randomized or adaptive, single or multiple assignments, cluster randomization, and pairwise matching—enabling digital trials that minimize risk and maximize statistical power"
           },
           {
             "title": "Measure and Track Impact",
-            "icon": "/images/products/interventions_metrics.png",
+            "icon": "/images/products/intervention_metrics.png",
             "description": "Monitor interventions in near real-time with advanced statistical analyses to measure their impact. Gain insights into which users and contexts benefit most, ensuring continuous optimization and data-driven decision-making"
           }
         ]
