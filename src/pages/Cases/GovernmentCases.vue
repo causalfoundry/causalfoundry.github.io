@@ -35,7 +35,7 @@
       </template>
     </PageHeader>
 
-    <SuccessCase :title="messages?.cases?.rssb?.title">
+    <SuccessCase :title="messages?.cases?.rssb?.title" className="cases__rssb">
       <Logos>
         <template #first>
           <img :src="`/images/cases/cf-logo.png`" />
@@ -58,7 +58,7 @@
         :title="messages?.cases?.rssb?.secondSection?.title"
         :text="messages?.cases?.rssb?.secondSection?.text"
         :reversed="true"
-        className="charm-text-image"
+        className="rssb-text-image"
       >
         <template #image>
           <div class="">
