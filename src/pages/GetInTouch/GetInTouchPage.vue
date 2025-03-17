@@ -1,13 +1,12 @@
 <template>
   <div class="get-in-touch-page">
-
     <img
-        src="../../assets/gradient-top-yellow.png"
-        class="app__gradient-top-yellow"
+      src="../../assets/gradient-top-yellow.png"
+      class="app__gradient-top-yellow"
     />
     <img
-        src="../../assets/gradient-top-blue.png"
-        class="app__gradient-top-blue"
+      src="../../assets/gradient-top-blue.png"
+      class="app__gradient-top-blue"
     />
 
     <AppHeader><AppMenu /></AppHeader>
@@ -24,17 +23,34 @@
         <div class="form-container__elements">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" v-model="form.name" required placeholder="Enter Name" />
+            <input
+              type="text"
+              id="name"
+              v-model="form.name"
+              required
+              placeholder="Enter Name"
+            />
           </div>
 
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" v-model="form.email" required placeholder="Enter Email" />
+            <input
+              type="email"
+              id="email"
+              v-model="form.email"
+              required
+              placeholder="Enter Email"
+            />
           </div>
 
           <div class="form-group">
             <label for="phone">Phone Number (optional)</label>
-            <input type="tel" id="phone" v-model="form.phone"  placeholder="Enter Phone Number" />
+            <input
+              type="tel"
+              id="phone"
+              v-model="form.phone"
+              placeholder="Enter Phone Number"
+            />
           </div>
 
           <div class="form-group">
@@ -85,8 +101,6 @@ const form = ref({
 const submitted = ref(false);
 
 const handleSubmit = () => {
-  // Reset the form after submission (optional)
-
   fetch(
     `https://hooks.slack.com/services/T04AWARHR1A/${
       import.meta.env.VITE_SLACK_WEBHOOK
@@ -100,9 +114,18 @@ const handleSubmit = () => {
       }),
     }
   )
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("Success:", data);
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      // Reset form values after successful submission
+      form.value = {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      };
+      submitted.value = true;
     })
     .catch((error) => {
       console.error("Error:", error);
