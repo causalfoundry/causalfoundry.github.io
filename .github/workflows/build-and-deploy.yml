@@ -44,7 +44,7 @@ jobs:
           # Upload entire repository
           path: "dist"
       - name: Listar artefactos disponibles
-          run: ls -la ${{ github.workspace }}
+        run: ls -la ${{ github.workspace }}
 
   # Deployment job
   deploy:
