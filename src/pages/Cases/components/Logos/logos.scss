@@ -10,13 +10,10 @@
   font-weight: 700;
   line-height: normal;
 
-
   @include respond("mobile") {
     gap: 20px;
     font-size: 18px;
     justify-content: flex-start;
     transform: scale(0.8);
-    margin-left: -10%;
   }
-
 }

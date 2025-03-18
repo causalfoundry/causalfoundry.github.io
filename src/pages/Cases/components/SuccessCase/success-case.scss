@@ -25,7 +25,6 @@
       width: 100%;
       font-size: 20pt;
     }
-
   }
 
   & > header {
@@ -34,7 +33,11 @@
   }
 
   & > :nth-child(2) {
-    align-self: baseline;
+    align-self: flex-start;
+
+    @include respond("mobile") {
+      align-self: unset;
+    }
     margin-top: -90px;
   }
 }
