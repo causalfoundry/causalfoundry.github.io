@@ -1,5 +1,5 @@
 <template>
-  <div class="quote">
+  <div :class="['quote', customClass]">
     <div class="quote__text">
       <span class="quote-symbol">“</span>
       {{ text }}
@@ -22,6 +22,10 @@ const props = defineProps({
   from: {
     type: String,
     required: true,
+  },
+  customClass: {
+    type: String,
+    required: false,
   },
 });
 </script>

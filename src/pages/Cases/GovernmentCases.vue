@@ -101,6 +101,7 @@
         <Quote
           :text="messages?.cases?.rssb?.quote?.text"
           :from="messages?.cases?.rssb?.quote?.from"
+          customClass="colored-background"
         />
         <ShortDescriptionList
           :items="messages?.cases?.rssb?.items"

@@ -7,6 +7,20 @@
   flex-direction: column;
   align-items: center;
 
+  .colored-background {
+    background: linear-gradient(
+      145.39deg,
+      #fff625 -13.26%,
+      #ccea7f 15.7%,
+      #a7e2be 55.24%,
+      #98ded9 93.66%
+    );
+  }
+
+  .blue-background {
+    background: #94d5db;
+  }
+
   .section-text {
     font-family: Open Sans;
     font-weight: 300;

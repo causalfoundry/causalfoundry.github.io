@@ -102,6 +102,7 @@
         <Quote
           :text="messages?.cases?.momentum?.quote?.text"
           :from="messages?.cases?.momentum?.quote?.from"
+          customClass="blue-background"
         />
         <ShortDescriptionList
           :items="messages?.cases?.momentum?.items"
