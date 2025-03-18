@@ -11,26 +11,36 @@
       image="/images/cases/header_government.png"
     >
       <template #title>
-        <AppTitle>
-          {{ messages?.cases?.titles?.government?.first }}
-        </AppTitle>
-
         <div class="cases__government_header__subtitle">
-          {{ messages?.cases?.titles?.government?.second?.split(" ")[0] }}
-          <br />
           {{
-            messages?.cases?.titles?.government?.second
+            messages?.cases?.titles?.government?.first
               .split(" ")
-              .slice(1, 3)
+              .slice(0, 2)
               .join(" ")
           }}
           <br />
           {{
-            messages?.cases?.titles?.government?.second
+            messages?.cases?.titles?.government?.first
               .split(" ")
-              .slice(3)
+              .slice(2)
               .join(" ")
           }}
+
+          <AppTitle>
+            {{
+              messages?.cases?.titles?.government?.second
+                .split(" ")
+                .splice(0, 1)
+                .join(" ")
+            }}
+            <br />
+            {{
+              messages?.cases?.titles?.government?.second
+                .split(" ")
+                .splice(1)
+                .join(" ")
+            }}
+          </AppTitle>
         </div>
       </template>
     </PageHeader>
