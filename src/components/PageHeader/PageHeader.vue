@@ -1,6 +1,6 @@
 <template>
   <div class="page-header" :class="[className ? className : '']">
-    <div class="page-header__mobile-background">
+    <div v-if="image" class="page-header__mobile-background">
       <img :src="image" />
     </div>
     <div class="page-header__title">
