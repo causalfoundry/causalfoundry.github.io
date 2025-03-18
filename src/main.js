@@ -53,8 +53,12 @@ const routes = [
     ],
   },
   {
+    path: "/",
+    redirect: "/en",
+  },
+  {
     path: "/:catchAll(.*)",
-    redirect: "/",
+    redirect: "/en",
   },
   // ...jobs.map((job) => ({
   //   path: `/careers/${job.key}`, component: Job, props: { jobDetails: job },
@@ -68,6 +72,17 @@ const router = createRouter({
     // always scroll to top
     return { top: 0 };
   },
+});
+
+// Añadir un guard de navegación global
+router.beforeEach((to, from, next) => {
+  const langPattern = /^\/(en|es|jp)/;
+  if (!langPattern.test(to.path)) {
+    // Si la ruta no tiene un prefijo de idioma, redirigir a la misma ruta con "en"
+    next({ path: `/en${to.path}` });
+  } else {
+    next();
+  }
 });
 
 const app = createApp({
