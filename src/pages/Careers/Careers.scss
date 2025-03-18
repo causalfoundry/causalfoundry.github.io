@@ -3,12 +3,10 @@
   position: relative;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   color: #fff;
-
-  .container {
-    width: 1440px;
-  }
 
   & > .header {
     width: 1200px;
@@ -18,77 +16,22 @@
     }
   }
 
-  .circle {
-    position: absolute;
-    top: -50px;
-    left: 49vw;
-    z-index: -1;
-
-    @include respond("tablet") {
-      display: none;
-    }
-
-    @include respond("mobile") {
-      display: none;
-    }
+  .careers-header {
+    margin-top: 200px;
+    margin-bottom: 200px;
   }
 
-  .jumbotron {
-    position: relative;
-    z-index: 10;
-    padding: 270px 121px 330px;
-    display: flex;
-    flex-direction: column;
-
-    .title {
-      margin-bottom: 32px;
-      font-family: "NeueMachinaMedium";
-      font-size: 58px;
-      font-weight: 400;
-      line-height: 64px;
-      letter-spacing: 0.01em;
-      text-align: left;
-      max-width: 750px;
-    }
-
-    .description {
-      max-width: 691px;
-      width: 100%;
-      font-family: "NotoSansLight";
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 39px;
-      letter-spacing: 0em;
-      text-align: left;
-      margin-bottom: 250px;
-
-      @include respond("mobile") {
-        margin-bottom: 50px;
-      }
-    }
+  .circle {
+    position: absolute;
+    top: 10vh;
+    left: 59vw;
 
     @include respond("tablet") {
-      padding: 280px 60px 60px;
+      display: none;
     }
 
     @include respond("mobile") {
-      padding: 120px 60px 60px;
-
-      .title {
-        font-family: "NeueMachinaMedium";
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 38px;
-        text-align: left;
-      }
-
-      .description {
-        font-family: "NotoSansLight";
-        font-size: 20px;
-        line-height: 32px;
-        font-weight: 300;
-        text-align: left;
-      }
+      display: none;
     }
   }
 
@@ -322,7 +265,6 @@
   &__pattern-wave {
     position: relative;
     bottom: 10px;
-    left: -420px;
     width: 200%;
     margin-top: -180px;
     transform: rotate(1deg);
