@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer__left">
       <img class="footer__logo" src="../../assets/footer-logo.png" />
-      <div class="footer__description">AI & personalization at scale</div>
+      <div class="footer__description">{{ messages?.common?.footerTitle }}</div>
       <p class="footer__copyright">© 2025 CausalFoundry, Inc.</p>
     </div>
 
