@@ -58,6 +58,7 @@
         &__title {
           font-size: 24px;
           font-family: "NeueMachinaMedium";
+          min-height: calc(2 * 24px);
 
           &.highlighted {
             font-size: 58px;
