@@ -132,7 +132,7 @@
           ]
         },
         {
-          "title": "A monitoring  system with outlier detection",
+          "title": "A monitoring system with outlier detection",
           "text": [
             "Tracked key indicators such facility utilization, service delivery, and test rates per visit.",
             "Implemented advanced algorithms to detect outliers and anomalies using time- series and cross-sectional analysis."
