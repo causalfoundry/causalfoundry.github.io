@@ -153,7 +153,14 @@
           "title": "リソース配分",
           "text": "最適なリソース割り当てを実施し、最大限の効果を創出"
         }
-      ]
+      ],
+      "approach": {
+        "title": "Our approach",
+        "texts": [
+          "We extract insights from large government datasets to analyze service utilization, design optimal delivery models, and build real-time monitoring systems that support quality public service provision.",
+          "Our system tracks users interactions, service delivery metrics, personnel performance, and resource allocation across hundreds of government facilities. We process millions of transactions yearly, with detailed service delivery information including demographic data and procedural outcomes."
+        ]
+      }
     },
     "titles": {
       "ecommerce": {

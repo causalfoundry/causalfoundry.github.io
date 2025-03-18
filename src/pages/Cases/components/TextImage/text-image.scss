@@ -14,7 +14,6 @@
     }
 
     @include respond("mobile") {
-
       margin-top: -80px;
 
       &.reversed {
@@ -41,7 +40,7 @@
       color: #9ca3af;
       /* Desktop/Body 16 - Reg */
       font-family: "Noto Sans";
-      font-size: 16px;
+      font-size: 22px;
       font-style: normal;
       font-weight: 400;
       line-height: 150%; /* 24px */
@@ -49,7 +48,6 @@
   }
 
   @include respond("mobile") {
-
     .main_image {
       display: unset;
       img {
@@ -58,5 +56,4 @@
       }
     }
   }
-
 }
