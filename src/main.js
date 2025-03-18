@@ -1,6 +1,5 @@
 import { createApp, h } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
-import { createI18n } from "vue-i18n";
 
 import Landing from "./pages/Landing/Landing.vue";
 import Careers from "./pages/Careers/Careers.vue";
