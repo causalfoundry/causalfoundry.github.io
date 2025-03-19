@@ -157,23 +157,23 @@
       "approach": {
         "title": "Our approach",
         "texts": [
-          "We extract insights from large government datasets to analyze service utilization, design optimal delivery models, and build real-time monitoring systems that support quality public service provision.",
-          "Our system tracks users interactions, service delivery metrics, personnel performance, and resource allocation across hundreds of government facilities. We process millions of transactions yearly, with detailed service delivery information including demographic data and procedural outcomes."
+          "政府の大規模データを分析し、医療サービスの利用状況を把握。最適な医療提供モデルを設計し、リアルタイム監視システムを構築することで、公的医療サービスの質を向上。",
+          "全国数百の政府系医療施設におけるユーザー行動、サービス提供状況、医療従事者のパフォーマンス、リソース配分を追跡。 年間数百万件の医療データを処理し、人口統計や治療結果を含む詳細な医療提供情報を管理しています。"
         ]
       }
     },
     "titles": {
       "ecommerce": {
-        "first": "Built in Partnership",
-        "second": " with Causal Foundry for E-Commerce"
+        "first": "Causal Foundryと",
+        "second": " パートナーシップを組みeコマースのために開発"
       },
       "healthcare": {
-        "first": "Built in Partnership",
-        "second": " with Causal Foundry for Healthcare"
+        "first": "Causal Foundryと",
+        "second": "パートナーシップを組みヘルスケアのために開発"
       },
       "government": {
-        "first": "Leveraging Machine Learning for",
-        "second": "Public Service Transformation"
+        "first": "機械学習を活用した公共サービスの変革で: ",
+        "second": "社会にインパクトを"
       }
     },
     "descriptions": {
