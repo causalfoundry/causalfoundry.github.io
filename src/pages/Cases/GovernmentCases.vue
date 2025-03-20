@@ -11,35 +11,11 @@
       image="/images/cases/header_government.png"
     >
       <template #title>
-        <div class="cases__government_header__subtitle">
-          {{
-            messages?.cases?.titles?.government?.first
-              .split(" ")
-              .slice(0, 2)
-              .join(" ")
-          }}
-          <br />
-          {{
-            messages?.cases?.titles?.government?.first
-              .split(" ")
-              .slice(2)
-              .join(" ")
-          }}
+        <div>
+          {{ messages?.cases?.titles?.government?.first }}
 
           <AppTitle>
-            {{
-              messages?.cases?.titles?.government?.second
-                .split(" ")
-                .splice(0, 1)
-                .join(" ")
-            }}
-            <br />
-            {{
-              messages?.cases?.titles?.government?.second
-                .split(" ")
-                .splice(1)
-                .join(" ")
-            }}
+            {{ messages?.cases?.titles?.government?.second }}
           </AppTitle>
         </div>
       </template>

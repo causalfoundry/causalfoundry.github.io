@@ -48,8 +48,9 @@
 
     @include respond("mobile") {
       width: unset;
+      font-size: 40px;
+      line-height: 44px;
       margin-top: 20px;
-      font-size: 50px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
@@ -73,6 +74,5 @@
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
-
   }
 }

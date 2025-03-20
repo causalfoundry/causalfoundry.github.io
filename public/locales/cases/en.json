@@ -102,7 +102,7 @@
       ]
     },
     "rssb": {
-      "title": "CASE 1. RSSB",
+      "title": "CASE 1. Rwanda Social Security Board (RSSB)",
       "quote": {
         "text": "Partnering with Causal Foundry has enabled us to leverage our data to design a more sustainable and efficient healthcare financing model”",
         "from": "Dr. Regis Hitimana, Chief Benefits Officer, RSSB"
@@ -183,7 +183,7 @@
     "descriptions": {
       "healthcare": "Our clients are transforming healthcare by leveraging advanced AI and machine learning to enhance personalization and optimize patient-provider interactions. With tailored interventions, real-time insights, and LLM-powered assistants, they improve treatment adherence, streamline workflows, and address challenges like resource allocation and preventive care—ensuring impactful, data-driven healthcare delivery",
       "ecommerce": "Our clients are boosting customer experiences with AI-driven personalization. By optimizing product recommendations, predicting demand, and reducing cart abandonment, the platform boosts conversions and loyalty. Seamlessly integrated with existing systems, it delivers actionable insights, dynamic interventions, and tailored content, empowering businesses to achieve success and stay ahead in highly competitive markets",
-      "government": ""
+      "government": "We extract insights from large government datasets to analyze service utilization, design optimal delivery models, and build real-time monitoring systems that support quality public service provision. Our system tracks users interactions, service delivery metrics, personnel performance, and resource allocation across hundreds of government facilities. We process millions of transactions yearly, with detailed service delivery information including demographic data and procedural outcomes."
     }
   }
 }
