@@ -45,17 +45,6 @@
       </template>
     </PageHeader>
 
-    <SuccessCase :title="messages?.cases?.rssb?.approach?.title">
-      <div class="section-text">
-        <div
-          v-for="(text, index) in messages?.cases?.rssb?.approach?.texts"
-          :key="index"
-        >
-          {{ text }}
-        </div>
-      </div>
-    </SuccessCase>
-
     <SuccessCase :title="messages?.cases?.rssb?.title" className="cases__rssb">
       <Logos>
         <template #first>
@@ -96,19 +85,33 @@
           :text="item.text"
         />
       </div>
+    </SuccessCase>
 
-      <div class="m2m-footer">
-        <Quote
-          :text="messages?.cases?.rssb?.quote?.text"
-          :from="messages?.cases?.rssb?.quote?.from"
-          customClass="colored-background"
-        />
-        <ShortDescriptionList
-          :items="messages?.cases?.rssb?.items"
-          :title="messages?.cases?.rssb?.itemsTitle"
-        />
+    <SuccessCase
+      :title="messages?.cases?.rssb?.approach?.title"
+      className="government-approach"
+    >
+      <div class="section-text">
+        <div
+          v-for="(text, index) in messages?.cases?.rssb?.approach?.texts"
+          :key="index"
+        >
+          {{ text }}
+        </div>
       </div>
     </SuccessCase>
+
+    <div class="government-footer">
+      <Quote
+        :text="messages?.cases?.rssb?.quote?.text"
+        :from="messages?.cases?.rssb?.quote?.from"
+        customClass="colored-background"
+      />
+      <ShortDescriptionList
+        :items="messages?.cases?.rssb?.items"
+        :title="messages?.cases?.rssb?.itemsTitle"
+      />
+    </div>
 
     <GetInTouch />
     <img

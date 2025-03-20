@@ -1,5 +1,5 @@
 <template>
-  <div class="success-case">
+  <div class="success-case" :class="className">
     <header>{{ title }}</header>
     <slot></slot>
   </div>
