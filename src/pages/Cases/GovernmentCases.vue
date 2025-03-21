@@ -63,20 +63,6 @@
       </div>
     </SuccessCase>
 
-    <SuccessCase
-      :title="messages?.cases?.rssb?.approach?.title"
-      className="government-approach"
-    >
-      <div class="section-text">
-        <div
-          v-for="(text, index) in messages?.cases?.rssb?.approach?.texts"
-          :key="index"
-        >
-          {{ text }}
-        </div>
-      </div>
-    </SuccessCase>
-
     <div class="government-footer">
       <Quote
         :text="messages?.cases?.rssb?.quote?.text"
