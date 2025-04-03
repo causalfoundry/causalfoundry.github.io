@@ -1,0 +1,49 @@
+.matrix {
+  width: 1200px;
+
+  box-sizing: border-box;
+  text-align: center;
+  border-top: 1px solid #000;
+  margin-bottom: 32px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 42px; /* 190.909% */
+  letter-spacing: 0.22px;
+
+  .matrix__header {
+    margin-bottom: 64px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: 0.36px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    & > li {
+      border-radius: 8px;
+      background: #0d0d0d;
+      padding: 10px;
+
+      display: flex;
+      width: 365px;
+      height: 103px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  }
+}
