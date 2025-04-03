@@ -1,5 +1,5 @@
 <template>
-  <div class="cases">
+  <div class="cases gaming">
     <AppHeader current-page="cases">
       <AppMenu />
     </AppHeader>
@@ -46,6 +46,16 @@
 
     <Matrix />
 
+    <div class="gaming__cards">
+      <CultureItem
+        v-for="(item, index) in messages?.cases?.gaming?.cards"
+        :key="index"
+        :title="item.title"
+        :text="item.text"
+        :icon="item.icon"
+      />
+    </div>
+
     <GetInTouch />
     <img
       src="/src/assets/pattern-wave.png"
@@ -82,7 +92,7 @@ import ShortDescriptionList from "@/components/ShortDescriptionList";
 
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
-import CultureItem from "@/pages/About/components/CultureItem/CultureItem";
+import CultureItem from "@/components/CultureItem/CultureItem";
 
 import Logos from "./components/Logos";
 
@@ -91,6 +101,7 @@ import PrecisionPlayerTargeting from "./components/PrecisionPlayerTargeting";
 import Matrix from "./components/Matrix";
 
 import "./cases.scss";
+import "./gaming.scss";
 
 const { currentTranslations: messages } = useTranslations("cases");
 </script>

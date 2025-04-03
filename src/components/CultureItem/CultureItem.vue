@@ -11,6 +11,7 @@
         {{ item }}
       </li>
     </ul>
+    <img :src="icon" alt="icon" class="culture-item__icon" />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import "./culture-item.scss";
 interface Props {
   title: string;
   text: string[];
+  icon?: string;
 }
 defineProps<Props>();
 </script>

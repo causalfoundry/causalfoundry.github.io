@@ -210,7 +210,37 @@
           "Reengagement potential",
           "Spending potential (conversion, LTV) and patterns"
         ]
-      }
+      },
+      "cards": [
+        {
+          "title": "Competitive Play",
+          "text": [
+            "Fair matchmaking based on skill, experience, and playstyle."
+          ],
+          "icon": "/images/cases/gaming/competitive_play.png"
+        },
+        {
+          "title": "Cooperative Play",
+          "text": [
+            "Pair players who complement each other’s abilities and engagement style."
+          ],
+          "icon": "/images/cases/gaming/cooperative_play.png"
+        },
+        {
+          "title": "Social Matching",
+          "text": [
+            "Connect players likely to form lasting friendships or guilds."
+          ],
+          "icon": "/images/cases/gaming/social_matching.png"
+        },
+        {
+          "title": "Monetization Matching",
+          "text": [
+            "Strategically pair spenders and non-spenders to maximize in-game purchases."
+          ],
+          "icon": "/images/cases/gaming/monetization_matching.png"
+        }
+      ]
     },
     "titles": {
       "ecommerce": {

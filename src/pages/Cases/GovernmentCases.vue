@@ -111,7 +111,7 @@ import ShortDescriptionList from "@/components/ShortDescriptionList";
 
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
-import CultureItem from "@/pages/About/components/CultureItem/CultureItem";
+import CultureItem from "@/components/CultureItem/CultureItem";
 
 import Logos from "./components/Logos";
 
