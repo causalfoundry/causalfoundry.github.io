@@ -1,0 +1,30 @@
+.side-text-section {
+  max-width: 1200px;
+
+  display: flex;
+  gap: 119px;
+  justify-content: space-between;
+
+  &__title {
+    flex: 1;
+    color: var(--Text-Primary, #fff);
+    font-family: "NeueMachinaMedium";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43.2px; /* 120% */
+    letter-spacing: 0.36px;
+    min-width: 500px;
+  }
+
+  &__text {
+    flex: 2;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 33px; /* 150% */
+    letter-spacing: 0.22px;
+  }
+}

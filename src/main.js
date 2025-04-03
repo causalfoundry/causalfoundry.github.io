@@ -29,6 +29,7 @@ import {
 import HealthcareCases from "@/pages/Cases/HealthcareCases.vue";
 import EcommerceCases from "@/pages/Cases/EcommerceCases.vue";
 import GovernmentCases from "@/pages/Cases/GovernmentCases.vue";
+import GamingCases from "@/pages/Cases/GamingCases.vue";
 import i18n from "./locales";
 
 library.add(faLinkedin, faXTwitter, faBluesky);
@@ -45,6 +46,7 @@ const routes = [
       { path: "cases/healthcare", component: HealthcareCases },
       { path: "cases/e-commerce", component: EcommerceCases },
       { path: "cases/government", component: GovernmentCases },
+      { path: "cases/gaming", component: GamingCases },
       { path: "privacy", component: PrivacyPolicy },
       { path: "about", component: About },
       { path: "cookies", component: CookiePolicy },

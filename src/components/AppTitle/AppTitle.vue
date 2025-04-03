@@ -1,5 +1,5 @@
 <template>
-  <span class="app-title">
+  <div class="app-title">
     <slot />
-  </span>
+  </div>
 </template>

@@ -31,6 +31,11 @@
               {{ messages?.common?.["government"] }}
             </div>
           </router-link>
+          <router-link :to="`/${currentLang}/cases/gaming`">
+            <div class="dropdown-item">
+              {{ messages?.common?.["gaming"] }}
+            </div>
+          </router-link>
         </div>
       </div>
       <router-link :to="`/${currentLang}/research`">

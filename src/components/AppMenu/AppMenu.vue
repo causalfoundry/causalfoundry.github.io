@@ -90,6 +90,7 @@ const MENU_ITEMS = [
       { titleKey: "healthcare", href: `/${currentLang}/cases/healthcare` },
       { titleKey: "e-commerce", href: `/${currentLang}/cases/e-commerce` },
       { titleKey: "government", href: `/${currentLang}/cases/government` },
+      { titleKey: "gaming", href: `/${currentLang}/cases/gaming` },
     ],
   },
   { titleKey: "research", href: `/${currentLang}/research` },
