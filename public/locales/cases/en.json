@@ -241,43 +241,46 @@
           "icon": "/images/cases/gaming/monetization_matching.png"
         }
       ],
-      "items": [
-        {
-          "title": "Personalized Offers & Dynamic Pricing",
-          "text": [
-            "Tailored discounts, IAP bundles, and exclusive deals",
-            "Personalized time-sensitive and event-based pricing"
-          ]
-        },
-        {
-          "title": "Personalized Ad Targeting",
-          "text": [
-            "Improve CTR",
-            "Optimize rewards and ad frequency and placement"
-          ]
-        },
-        {
-          "title": "Adaptive In-Game Economy",
-          "text": [
-            "Adjust in-game currency availability",
-            "Optimize battle pass, loot box, and subscription model"
-          ]
-        },
-        {
-          "title": "Reward-Based Monetization",
-          "text": [
-            "Customized gifting and progression-based incentives",
-            "Personalized spend-based unlocks"
-          ]
-        },
-        {
-          "title": "Smart Monetization Matching",
-          "text": [
-            "Create social and competitive incentives for spending",
-            "Encourage aspirational purchases"
-          ]
-        }
-      ]
+      "items": {
+        "title": "Revenue Potential for Developers",
+        "values": [
+          {
+            "title": "Personalized Offers & Dynamic Pricing",
+            "text": [
+              "Tailored discounts, IAP bundles, and exclusive deals",
+              "Personalized time-sensitive and event-based pricing"
+            ]
+          },
+          {
+            "title": "Personalized Ad Targeting",
+            "text": [
+              "Improve CTR",
+              "Optimize rewards and ad frequency and placement"
+            ]
+          },
+          {
+            "title": "Adaptive In-Game Economy",
+            "text": [
+              "Adjust in-game currency availability",
+              "Optimize battle pass, loot box, and subscription model"
+            ]
+          },
+          {
+            "title": "Reward-Based Monetization",
+            "text": [
+              "Customized gifting and progression-based incentives",
+              "Personalized spend-based unlocks"
+            ]
+          },
+          {
+            "title": "Smart Monetization Matching",
+            "text": [
+              "Create social and competitive incentives for spending",
+              "Encourage aspirational purchases"
+            ]
+          }
+        ]
+      }
     },
     "titles": {
       "ecommerce": {

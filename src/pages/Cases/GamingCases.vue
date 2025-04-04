@@ -21,59 +21,64 @@
       </template>
     </PageHeader>
 
-    <SideTextSection
-      :title="messages?.cases?.gaming?.sectionExperiences?.title"
-      :text="messages?.cases?.gaming?.sectionExperiences?.text"
-    />
+    <div class="gaming__content">
+      <SideTextSection
+        :title="messages?.cases?.gaming?.sectionExperiences?.title"
+        :text="messages?.cases?.gaming?.sectionExperiences?.text"
+      />
 
-    <SideTextSection
-      :title="messages?.cases?.gaming?.adaptiveGaming?.title"
-      :text="messages?.cases?.gaming?.adaptiveGaming?.text"
-      :highlightedIndices="
-        messages?.cases?.gaming?.adaptiveGaming?.highlightedTitleItems
-      "
-    />
+      <PrecisionPlayerTargeting />
 
-    <SideTextSection
-      :title="messages?.cases?.gaming?.smartMonetization?.title"
-      :text="messages?.cases?.gaming?.smartMonetization?.text"
-      :highlightedIndices="
-        messages?.cases?.gaming?.smartMonetization?.highlightedTitleItems
-      "
-    />
+      <SideTextSection
+        :title="messages?.cases?.gaming?.adaptiveGaming?.title"
+        :text="messages?.cases?.gaming?.adaptiveGaming?.text"
+        :highlightedIndices="
+          messages?.cases?.gaming?.adaptiveGaming?.highlightedTitleItems
+        "
+      />
 
-    <PrecisionPlayerTargeting />
+      <div class="gaming__cards">
+        <CultureItem
+          v-for="(item, index) in messages?.cases?.gaming?.cards"
+          :key="index"
+          :title="item.title"
+          :text="item.text"
+          :icon="item.icon"
+        />
+      </div>
 
-    <Matrix />
+      <SideTextSection
+        :title="messages?.cases?.gaming?.smartMonetization?.title"
+        :text="messages?.cases?.gaming?.smartMonetization?.text"
+        :highlightedIndices="
+          messages?.cases?.gaming?.smartMonetization?.highlightedTitleItems
+        "
+      />
 
-    <div class="gaming__cards">
-      <CultureItem
-        v-for="(item, index) in messages?.cases?.gaming?.cards"
-        :key="index"
-        :title="item.title"
-        :text="item.text"
-        :icon="item.icon"
+      <Matrix />
+
+      <CollapsibleItems
+        :items="messages?.cases?.gaming?.items.values"
+        :title="messages?.cases?.gaming?.items.title"
+      />
+
+      <GetInTouch />
+      <img
+        src="/src/assets/pattern-wave.png"
+        class="cases__pattern-wave"
+        alt="Wave Pattern"
+      />
+      <AppFooter />
+
+      <img
+        src="../../assets/gradient-bottom-yellow.png"
+        class="app__gradient-bottom-yellow"
+      />
+      <img
+        src="../../assets/gradient-bottom-blue.png"
+        class="app__gradient-bottom-blue"
       />
     </div>
-
-    <CollapsibleItems :items="messages?.cases?.gaming?.items" />
-
-    <GetInTouch />
-    <img
-      src="/src/assets/pattern-wave.png"
-      class="cases__pattern-wave"
-      alt="Wave Pattern"
-    />
-    <AppFooter />
-
-    <img
-      src="../../assets/gradient-bottom-yellow.png"
-      class="app__gradient-bottom-yellow"
-    />
-    <img
-      src="../../assets/gradient-bottom-blue.png"
-      class="app__gradient-bottom-blue"
-    />
   </div>
 </template>
 
@@ -102,6 +107,7 @@ import SideTextSection from "./components/SideTextSection";
 import PrecisionPlayerTargeting from "./components/PrecisionPlayerTargeting";
 import Matrix from "./components/Matrix";
 import CollapsibleItems from "./components/CollapsibleItems";
+
 import "./cases.scss";
 import "./gaming.scss";
 
