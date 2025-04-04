@@ -1,0 +1,74 @@
+.collapsible-list {
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 92px 99px;
+  border-radius: 16px;
+  background: #0d0d0d;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .collapsible-item {
+    cursor: pointer;
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 37px; /* 148% */
+    letter-spacing: 0.25px;
+
+    padding: 33px 41px;
+    border-radius: 16px;
+    background: linear-gradient(
+      145deg,
+      #fff625 -13.26%,
+      #cbea7f 15.7%,
+      #a7e2be 55.24%,
+      #98ded9 93.66%
+    );
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #0d0d0d;
+      margin: 1px;
+      border-radius: 15px;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      color: inherit;
+      margin-top: 50px;
+
+      li {
+        list-style-type: disc;
+        list-style-position: inside;
+        font-size: 0.8em;
+      }
+    }
+
+    .title {
+      position: relative;
+      z-index: 3;
+      color: inherit;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .collapsible-item:last-child {
+    border-bottom: none;
+  }
+}
