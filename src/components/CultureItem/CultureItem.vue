@@ -11,7 +11,7 @@
         {{ item }}
       </li>
     </ul>
-    <img :src="icon" alt="icon" class="culture-item__icon" />
+    <img v-if="icon" :src="icon" alt="icon" class="culture-item__icon" />
   </div>
 </template>
 
