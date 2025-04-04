@@ -42,6 +42,28 @@
     margin-bottom: 70px;
   }
 
+  &__gaming_header {
+    height: 800px;
+    background: #000;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+      url("/images/cases/header_gaming_dark.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    @include respond("mobile") {
+      background-image: unset;
+      height: unset;
+    }
+
+    &__subtitle {
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 1%;
+    }
+  }
+
   &__government_header {
     height: 800px;
     background: url("/images/cases/header_government.png");
