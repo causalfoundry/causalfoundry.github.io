@@ -5,6 +5,13 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-bottom: 70px;
+
+    @include respond("mobile") {
+      width: unset;
+      display: unset;
+      width: unset;
+      margin: 0px 20px;
+    }
   }
 
   &__content {
@@ -12,6 +19,10 @@
     flex-direction: column;
     gap: 100px;
     align-items: center;
+
+    @include respond("mobile") {
+      width: 100%;
+    }
   }
 
   &__subtitle {

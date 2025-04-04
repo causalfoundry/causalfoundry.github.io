@@ -13,6 +13,11 @@
   line-height: 42px; /* 190.909% */
   letter-spacing: 0.22px;
 
+  @include respond("mobile") {
+    width: unset;
+    margin: 0px 20px;
+  }
+
   .matrix__header {
     margin-bottom: 64px;
     font-size: 36px;
@@ -44,6 +49,10 @@
       align-content: center;
       gap: 10px;
       flex-wrap: wrap;
+
+      @include respond("mobile") {
+        width: 100%;
+      }
     }
   }
 }

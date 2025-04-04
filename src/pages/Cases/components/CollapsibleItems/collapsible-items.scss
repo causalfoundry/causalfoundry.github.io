@@ -1,6 +1,11 @@
 .collapsible-list {
   width: 1200px;
 
+  @include respond("mobile") {
+    width: unset;
+    margin: 0px 20px;
+  }
+
   &__items {
     box-sizing: border-box;
     padding: 92px 99px;
@@ -9,6 +14,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include respond("mobile") {
+      background: unset;
+      padding: 0px;
+    }
 
     &__title {
       position: relative;

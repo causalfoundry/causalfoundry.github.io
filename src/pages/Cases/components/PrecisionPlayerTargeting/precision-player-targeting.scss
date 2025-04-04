@@ -19,6 +19,12 @@
   justify-content: space-between;
   gap: 26px;
 
+  @include respond("mobile") {
+    display: unset;
+    width: unset;
+    padding: 32px 20px;
+  }
+
   &__left {
     width: 495px;
 
@@ -38,6 +44,10 @@
       font-weight: 300;
       line-height: 37px; /* 148% */
       letter-spacing: 0.25px;
+
+      @include respond("mobile") {
+        width: unset;
+      }
     }
   }
 
