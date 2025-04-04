@@ -13,4 +13,13 @@
     gap: 100px;
     align-items: center;
   }
+
+  &__subtitle {
+    font-family: "NeueMachinaMedium";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43.2px; /* 120% */
+    letter-spacing: 0.36px;
+  }
 }

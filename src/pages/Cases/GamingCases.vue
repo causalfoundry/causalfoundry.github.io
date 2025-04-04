@@ -5,18 +5,22 @@
     </AppHeader>
 
     <PageHeader
-      :description="messages?.cases?.descriptions?.gaming"
+      description=""
       :showButton="true"
       className="cases__gaming_header"
       image="/images/cases/gaming_header.jpg"
     >
       <template #title>
         <div>
-          {{ messages?.cases?.titles?.gaming?.first }}
-
           <AppTitle>
-            {{ messages?.cases?.titles?.gaming?.second }}
+            {{ messages?.cases?.titles?.gaming?.first }}
           </AppTitle>
+        </div>
+      </template>
+
+      <template #subtitle>
+        <div class="gaming__subtitle">
+          {{ messages?.cases?.descriptions?.gaming }}
         </div>
       </template>
     </PageHeader>

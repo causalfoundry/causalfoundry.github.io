@@ -6,6 +6,9 @@
     <div class="page-header__title">
       <div class="mid-container"><slot name="title"></slot></div>
     </div>
+    <div class="page-header__subtitle">
+      <div class="mid-container"><slot name="subtitle"></slot></div>
+    </div>
     <div class="page-header__description">
       <div class="mid-container">
         <BreakableText :text="description" />
