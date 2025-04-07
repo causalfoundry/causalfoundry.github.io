@@ -66,6 +66,8 @@
         :title="messages?.cases?.gaming?.items.title"
       />
 
+      <GameDistribution />
+
       <GetInTouch />
       <img
         src="/src/assets/pattern-wave.png"
@@ -111,6 +113,7 @@ import SideTextSection from "./components/SideTextSection";
 import PrecisionPlayerTargeting from "./components/PrecisionPlayerTargeting";
 import Matrix from "./components/Matrix";
 import CollapsibleItems from "./components/CollapsibleItems";
+import GameDistribution from "./components/GameDistribution";
 
 import "./cases.scss";
 import "./gaming.scss";

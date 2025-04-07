@@ -280,6 +280,9 @@
             ]
           }
         ]
+      },
+      "distribution": {
+        "title": "Personalization for Game Distribution Platforms"
       }
     },
     "titles": {
