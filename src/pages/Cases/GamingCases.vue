@@ -8,7 +8,7 @@
       description=""
       :showButton="true"
       className="cases__gaming_header"
-      image="/images/cases/gaming_header.jpg"
+      image="/images/cases/header_gaming_dark.png"
     >
       <template #title>
         <div>
