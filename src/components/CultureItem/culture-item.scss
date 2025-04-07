@@ -48,6 +48,10 @@
     font-size: 22px;
     line-height: 33px;
     letter-spacing: 0%;
+
+    @include respond("mobile") {
+      width: 70%;
+    }
   }
 
   &__icon {
