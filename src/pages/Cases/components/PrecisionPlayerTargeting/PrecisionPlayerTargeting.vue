@@ -3,12 +3,12 @@
     <div class="precision-player-targeting__left">
       <AppTitle>
         <div class="precision-player-targeting__title">
-          {{ messages?.cases?.gaming?.precisionPlayerTargeting?.title }}
+          {{ messages?.precisionPlayerTargeting?.title || "" }}
         </div>
       </AppTitle>
 
       <div class="precision-player-targeting__subtitle">
-        {{ messages?.cases?.gaming?.precisionPlayerTargeting?.subtitle }}
+        {{ messages?.precisionPlayerTargeting?.subtitle }}
       </div>
 
       <div class="precision-player-targeting__logo">
@@ -19,8 +19,7 @@
     <div class="items">
       <ul>
         <li
-          v-for="item in messages?.cases?.gaming?.precisionPlayerTargeting
-            ?.items"
+          v-for="item in messages?.precisionPlayerTargeting?.items || []"
           :key="item"
         >
           {{ item }}
@@ -38,5 +37,5 @@ import AppTitle from "@/components/AppTitle/AppTitle.vue";
 
 import "./precision-player-targeting.scss";
 
-const { currentTranslations: messages } = useTranslations("cases");
+const { currentTranslations: messages } = useTranslations("cases/gaming");
 </script>

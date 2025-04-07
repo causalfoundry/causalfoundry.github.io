@@ -13,37 +13,35 @@
       <template #title>
         <div>
           <AppTitle>
-            {{ messages?.cases?.titles?.gaming?.first }}
+            {{ messages?.mainTitles?.first }}
           </AppTitle>
         </div>
       </template>
 
       <template #subtitle>
         <div class="gaming__subtitle">
-          {{ messages?.cases?.descriptions?.gaming }}
+          {{ messages?.description }}
         </div>
       </template>
     </PageHeader>
 
     <div class="gaming__content">
       <SideTextSection
-        :title="messages?.cases?.gaming?.sectionExperiences?.title"
-        :text="messages?.cases?.gaming?.sectionExperiences?.text"
+        :title="messages?.sectionExperiences?.title"
+        :text="messages?.sectionExperiences?.text"
       />
 
       <PrecisionPlayerTargeting />
 
       <SideTextSection
-        :title="messages?.cases?.gaming?.adaptiveGaming?.title"
-        :text="messages?.cases?.gaming?.adaptiveGaming?.text"
-        :highlightedIndices="
-          messages?.cases?.gaming?.adaptiveGaming?.highlightedTitleItems
-        "
+        :title="messages?.adaptiveGaming?.title"
+        :text="messages?.adaptiveGaming?.text"
+        :highlightedIndices="messages?.adaptiveGaming?.highlightedTitleItems"
       />
 
       <div class="gaming__cards">
         <CultureItem
-          v-for="(item, index) in messages?.cases?.gaming?.cards"
+          v-for="(item, index) in messages?.cards"
           :key="index"
           :title="item.title"
           :text="item.text"
@@ -52,18 +50,16 @@
       </div>
 
       <SideTextSection
-        :title="messages?.cases?.gaming?.smartMonetization?.title"
-        :text="messages?.cases?.gaming?.smartMonetization?.text"
-        :highlightedIndices="
-          messages?.cases?.gaming?.smartMonetization?.highlightedTitleItems
-        "
+        :title="messages?.smartMonetization?.title"
+        :text="messages?.smartMonetization?.text"
+        :highlightedIndices="messages?.smartMonetization?.highlightedTitleItems"
       />
 
       <Matrix />
 
       <CollapsibleItems
-        :items="messages?.cases?.gaming?.items.values"
-        :title="messages?.cases?.gaming?.items.title"
+        :items="messages?.items?.values || []"
+        :title="messages?.items?.title || ''"
       />
 
       <GameDistribution />
@@ -118,5 +114,5 @@ import GameDistribution from "./components/GameDistribution";
 import "./cases.scss";
 import "./gaming.scss";
 
-const { currentTranslations: messages } = useTranslations("cases");
+const { currentTranslations: messages } = useTranslations("cases/gaming");
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="game-distribution">
-    <SecondaryTitle :value="messages.cases.gaming.distribution.title" />
+    <SecondaryTitle :value="messages?.distribution?.title" />
 
     <img
       src="/images/cases/gaming/game-distribution.png"
@@ -14,5 +14,6 @@ import { useTranslations } from "@/composables/useTranslations";
 import SecondaryTitle from "@/components/SecondaryTitle";
 
 import "./game-distribution.scss";
-const { currentTranslations: messages } = useTranslations("cases");
+
+const { currentTranslations: messages } = useTranslations("cases/gaming");
 </script>

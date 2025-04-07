@@ -3,14 +3,14 @@
     <div class="matrix__header">
       <AppTitle>
         <span class="matrix__title">
-          {{ messages?.cases?.gaming?.personalizedContent?.title }}
+          {{ messages?.personalizedContent?.title }}
         </span>
       </AppTitle>
     </div>
 
     <ul>
       <li
-        v-for="item in messages?.cases?.gaming?.personalizedContent?.items"
+        v-for="item in messages?.personalizedContent?.items || []"
         :key="item"
       >
         {{ item }}
@@ -27,5 +27,5 @@ import AppTitle from "@/components/AppTitle/AppTitle.vue";
 
 import "./matrix.scss";
 
-const { currentTranslations: messages } = useTranslations("cases");
+const { currentTranslations: messages } = useTranslations("cases/gaming");
 </script>
