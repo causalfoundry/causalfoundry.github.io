@@ -1,0 +1,42 @@
+.up-button {
+  width: 53px;
+  height: 53px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  transform: rotate(-12.329deg);
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+  background: var(
+    --Gradient-1,
+    linear-gradient(
+      145deg,
+      #fff625 -13.26%,
+      #cbea7f 15.7%,
+      #a7e2be 55.24%,
+      #98ded9 93.66%
+    )
+  );
+
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    text-align: left;
+    color: black;
+  }
+}

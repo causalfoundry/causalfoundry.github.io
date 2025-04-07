@@ -64,6 +64,8 @@
 
       <GameDistribution />
 
+      <UpButton />
+
       <GetInTouch />
       <img
         src="/src/assets/pattern-wave.png"
@@ -110,6 +112,7 @@ import PrecisionPlayerTargeting from "./components/PrecisionPlayerTargeting";
 import Matrix from "./components/Matrix";
 import CollapsibleItems from "./components/CollapsibleItems";
 import GameDistribution from "./components/GameDistribution";
+import UpButton from "@/components/UpButton";
 
 import "./cases.scss";
 import "./gaming.scss";
