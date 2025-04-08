@@ -31,10 +31,10 @@
 
     @include respond("mobile") {
       display: unset;
+      padding: 32px;
 
       img {
         border-radius: 16px;
-        width: 80%;
       }
     }
   }
