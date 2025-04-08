@@ -13,9 +13,7 @@
     color: white;
 
     @include respond("mobile") {
-      //  width: 360px;
       width: 100%;
-      padding: 10px;
       box-sizing: border-box;
     }
   }
@@ -33,6 +31,11 @@
 
     @include respond("mobile") {
       display: unset;
+
+      img {
+        border-radius: 16px;
+        width: 80%;
+      }
     }
   }
 
@@ -51,9 +54,14 @@
       font-size: 40px;
       line-height: 44px;
       margin-top: 20px;
+      margin-bottom: 20px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
+  }
+
+  &__subtitle {
+    padding: 0 32px;
   }
 
   &__description {

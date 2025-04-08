@@ -34,6 +34,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import "./collapsible-items.scss";
+
 import AppTitle from "@/components/AppTitle";
 
 const props = defineProps<{

@@ -1,14 +1,13 @@
 <template>
   <div class="page-header" :class="[className ? className : '']">
-    <div v-if="image" class="page-header__mobile-background">
-      <img :src="image" />
-    </div>
     <div class="page-header__title">
       <div class="mid-container"><slot name="title"></slot></div>
     </div>
+
     <div class="page-header__subtitle">
       <div class="mid-container"><slot name="subtitle"></slot></div>
     </div>
+
     <div class="page-header__description">
       <div class="mid-container">
         <BreakableText :text="description" />
@@ -20,16 +19,22 @@
         />
       </div>
     </div>
+
+    <div v-if="image" class="page-header__mobile-background">
+      <img :src="image" />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useRouter } from "vue-router";
+
+import Button from "@/ui-components/button";
+
 import BreakableText from "@/components/BreakableText";
+import { useTranslations } from "@/composables/useTranslations";
 
 import "./page-header.scss";
-import Button from "@/ui-components/button";
-import { useTranslations } from "@/composables/useTranslations";
-import { useRouter } from "vue-router";
 
 const router = useRouter();
 function handleButtonClick(event: MouseEvent) {
