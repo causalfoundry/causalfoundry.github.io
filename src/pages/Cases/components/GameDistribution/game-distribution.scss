@@ -11,10 +11,22 @@
 
   box-sizing: border-box;
 
+  &__image-mobile {
+    display: none;
+  }
+
   @include respond("mobile") {
     width: unset;
     padding: 32px 20px;
     margin: 0 20px;
+
+    &__image {
+      display: none;
+    }
+
+    &__image-mobile {
+      display: block;
+    }
   }
 
   img {

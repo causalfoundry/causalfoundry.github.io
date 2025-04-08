@@ -5,6 +5,13 @@
     <img
       src="/images/cases/gaming/game-distribution.png"
       alt="Game Distribution"
+      class="game-distribution__image"
+    />
+
+    <img
+      src="/images/cases/gaming/game-distribution-mobile.png"
+      alt="Game Distribution"
+      class="game-distribution__image-mobile"
     />
   </div>
 </template>
