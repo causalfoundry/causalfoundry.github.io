@@ -1,0 +1,72 @@
+{
+  "header": {
+    "title": "AI to Improve Healthcare Delivery",
+    "subtitle": "Increase engagement and performance through personalization."
+  },
+  "sectionAdapts": {
+    "title": "AI that learns and adapts to patient behavior",
+    "text": "Our platform uses adaptive AI to personalize every interaction — from reminders to behavior nudges — making care more engaging, relevant, and timely for each individual. By analyzing evolving patient data, we optimize communication, timing, and channels to improve health outcomes while reducing dropouts."
+  },
+  "sectionEmpowering": {
+    "title": "Empowering Health Providers to Achieve More",
+    "text": "We equip healthcare workers and teams with adaptive tools that streamline triage, optimize workflows, and deliver smart guidance — reducing time waste and enabling more effective, proactive care. Our models evolve based on feedback, outcomes, and local context."
+  },
+  "sectionOptimizing": {
+    "title": "Optimizing Health Operations and Supply Chains",
+    "text": "Our demand-aware models help healthcare systems anticipate service volumes, supply usage, and workforce needs — reducing inefficiencies and ensuring continuity of care. This translates into cost savings and improved reliability, even in complex or low-resource settings."
+  },
+  "sectionTransforming": {
+    "title": "Transforming Patient Engagement with Adaptive AI",
+    "subtitle": "Based on individual patient clinical information, behaviors and predictions",
+    "items": [
+      "Treatment adherence",
+      "Appointment attendance",
+      "Sustained engagement",
+      "Health risk predictions",
+      "Healthy behaviors",
+      "Recommendation systems",
+      "Loyalty to care programs"
+    ]
+  },
+  "sectionEfficiency": {
+    "title": "AI that improves efficiency",
+    "subtitle": "Leveraging provider-level behaviors and clinical guidelines",
+    "items": [
+      "Triage and risk prediction",
+      "Clinical decision support",
+      "Intelligent care coordination",
+      "Referral optimization",
+      "Process automation",
+      "Clinical quality metrics"
+    ]
+  },
+  "sectionInsights": {
+    "title": "AI-powered insight to plan and deliver better",
+    "subtitle": "Extract insights from your data to drive efficiencies",
+    "items": [
+      {
+        "title": "Demand Prediction",
+        "text": "Anticipate service or product needs before they arise, reducing missed opportunities and shortages"
+      },
+      {
+        "title": "Inventory Optimization",
+        "text": "Balance stock levels with real-time demand to avoid overstock, delays, and lost revenue."
+      },
+      {
+        "title": "Waste Reduction",
+        "text": "Eliminate inefficiencies by aligning supply and operations with actual usage patterns."
+      },
+      {
+        "title": "Workforce Planning",
+        "text": "Deploy the right staff at the right time with AI-driven forecasts of service or sales load."
+      }
+    ]
+  },
+  "cites": [
+    {
+      "text": "“AI has transformed how we work, allowing us to deliver real-time monitoring, predictive insights for health workers, and personalized patient care, driving better outcomes and truly enhancing the experience for everyone we serve”",
+      "name": "Dr. Kathrin Schmitz",
+      "position": "Chief Programmes & Impact Officer"
+    }
+  ]
+}

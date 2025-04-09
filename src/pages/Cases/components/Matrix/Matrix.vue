@@ -3,16 +3,17 @@
     <div class="matrix__header">
       <AppTitle>
         <span class="matrix__title">
-          {{ messages?.personalizedContent?.title }}
+          {{ title }}
         </span>
       </AppTitle>
+
+      <div class="matrix__subtitle">
+        {{ subtitle }}
+      </div>
     </div>
 
     <ul>
-      <li
-        v-for="item in messages?.personalizedContent?.items || []"
-        :key="item"
-      >
+      <li v-for="item in items" :key="item">
         {{ item }}
       </li>
     </ul>
@@ -27,5 +28,19 @@ import AppTitle from "@/components/AppTitle/AppTitle.vue";
 
 import "./matrix.scss";
 
-const { currentTranslations: messages } = useTranslations("cases/gaming");
+// Define las propiedades que el componente recibirá
+const props = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  items: {
+    type: Array,
+    required: true,
+  },
+  subtitle: {
+    type: String,
+    required: false,
+  },
+});
 </script>

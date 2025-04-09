@@ -1,11 +1,15 @@
 .page-header {
   display: flex;
-  gap: 32px;
+  //gap: 32px;
   flex-direction: column;
   justify-content: center;
+  width: 1200px;
 
   @include respond("mobile") {
     background-size: contain;
+    gap: 32px;
+    margin-top: 64px;
+    width: unset;
   }
 
   .mid-container {
@@ -47,14 +51,12 @@
     line-height: 64px;
     letter-spacing: 0.01em;
     text-align: left;
-    width: 1200px;
 
     @include respond("mobile") {
       width: unset;
       font-size: 40px;
       line-height: 44px;
       margin-top: 20px;
-      margin-bottom: 20px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }
@@ -68,7 +70,6 @@
 
   &__description {
     font-family: "NotoSansLight";
-    margin-top: 32px;
     font-size: 20px;
     font-weight: 400;
     line-height: 39px;
@@ -80,7 +81,6 @@
       width: unset;
       line-height: 30px;
       font-size: 18px;
-      margin-bottom: 50px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
     }

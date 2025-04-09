@@ -1,74 +1,76 @@
 <template>
-  <div class="cases gaming">
-    <AppHeader current-page="cases" class="gaming__header">
+  <div class="cases healthcare-landing">
+    <AppHeader current-page="cases" class="healthcare-landing__header">
       <AppMenu />
     </AppHeader>
 
-    <div class="gaming__container">
+    <div class="healthcare-landing__container">
       <PageHeader
         description=""
         :showButton="true"
-        className="cases__gaming_header"
-        image="/images/cases/gaming/game-header-mobile.jpg"
+        className="cases__healthcare-landing_header"
+        image="/images/cases/header_healthcare.png"
       >
         <template #title>
           <div>
             <AppTitle>
-              {{ messages?.mainTitles?.first }}
+              {{ messages?.header?.title }}
             </AppTitle>
           </div>
         </template>
 
         <template #subtitle>
-          <div class="gaming__subtitle">
-            {{ messages?.description }}
+          <div class="healthcare-landing__subtitle">
+            {{ messages?.header?.subtitle }}
           </div>
         </template>
       </PageHeader>
 
-      <div class="gaming__content">
+      <div class="healthcare-landing__content">
         <SideTextSection
-          :title="messages?.sectionExperiences?.title"
-          :text="messages?.sectionExperiences?.text"
+          :title="messages?.sectionAdapts?.title"
+          :text="messages?.sectionAdapts?.text"
+          :highlightedIndices="[]"
         />
 
-        <PrecisionPlayerTargeting />
-
-        <SideTextSection
-          :title="messages?.adaptiveGaming?.title"
-          :text="messages?.adaptiveGaming?.text"
-          :highlightedIndices="messages?.adaptiveGaming?.highlightedTitleItems"
+        <ItemsWithSummary
+          :title="messages?.sectionTransforming?.title"
+          :subtitle="messages?.sectionTransforming?.subtitle"
+          :items="messages?.sectionTransforming?.items"
         />
 
-        <div class="gaming__cards">
-          <CultureItem
-            v-for="(item, index) in messages?.cards"
-            :key="index"
-            :title="item.title"
-            :text="item.text"
-            :icon="item.icon"
-          />
-        </div>
-
         <SideTextSection
-          :title="messages?.smartMonetization?.title"
-          :text="messages?.smartMonetization?.text"
-          :highlightedIndices="
-            messages?.smartMonetization?.highlightedTitleItems
-          "
+          :title="messages?.sectionEmpowering?.title"
+          :text="messages?.sectionEmpowering?.text"
+          :highlightedIndices="[]"
         />
 
         <Matrix
-          :title="messages?.personalizedContent?.title || ''"
-          :items="messages?.personalizedContent?.items || []"
+          :title="messages?.sectionEfficiency?.title || ''"
+          :items="messages?.sectionEfficiency?.items || []"
+          :subtitle="messages?.sectionEfficiency?.subtitle || ''"
         />
 
-        <CollapsibleItems
-          :items="messages?.items?.values || []"
-          :title="messages?.items?.title || ''"
+        <SideTextSection
+          :title="messages?.sectionOptimizing?.title"
+          :text="messages?.sectionOptimizing?.text"
+          :highlightedIndices="[]"
         />
 
-        <GameDistribution />
+        <div class="healthcare-landing__cards">
+          <AppTitle>
+            {{ messages?.sectionInsights?.title }}
+          </AppTitle>
+
+          <div class="healthcare-landing__cards-items">
+            <CultureItem
+              v-for="(item, index) in messages?.sectionInsights?.items"
+              :key="index"
+              :title="item.title"
+              :text="item.text"
+            />
+          </div>
+        </div>
 
         <UpButton />
 
@@ -120,9 +122,10 @@ import Matrix from "./components/Matrix";
 import CollapsibleItems from "./components/CollapsibleItems";
 import GameDistribution from "./components/GameDistribution";
 import UpButton from "@/components/UpButton";
+import ItemsWithSummary from "./components/ItemsWithSummary";
 
 import "./cases.scss";
-import "./gaming.scss";
+import "./healthcare-landing.scss";
 
-const { currentTranslations: messages } = useTranslations("cases/gaming");
+const { currentTranslations: messages } = useTranslations("cases/healthcare");
 </script>
