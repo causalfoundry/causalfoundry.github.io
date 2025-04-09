@@ -110,14 +110,6 @@
     }
   }
 
-  & > .header {
-    width: 1200px;
-
-    @include respond("mobile") {
-      width: unset;
-    }
-  }
-
   .m2m-dashboard img {
     @include respond("mobile") {
       width: 100%;

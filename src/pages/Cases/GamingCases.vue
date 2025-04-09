@@ -1,87 +1,91 @@
 <template>
   <div class="cases gaming">
-    <AppHeader current-page="cases">
+    <AppHeader current-page="cases" class="gaming__header">
       <AppMenu />
     </AppHeader>
 
-    <PageHeader
-      description=""
-      :showButton="true"
-      className="cases__gaming_header"
-      image="/images/cases/gaming/game-header-mobile.jpg"
-    >
-      <template #title>
-        <div>
-          <AppTitle>
-            {{ messages?.mainTitles?.first }}
-          </AppTitle>
+    <div class="gaming__container">
+      <PageHeader
+        description=""
+        :showButton="true"
+        className="cases__gaming_header"
+        image="/images/cases/gaming/game-header-mobile.jpg"
+      >
+        <template #title>
+          <div>
+            <AppTitle>
+              {{ messages?.mainTitles?.first }}
+            </AppTitle>
+          </div>
+        </template>
+
+        <template #subtitle>
+          <div class="gaming__subtitle">
+            {{ messages?.description }}
+          </div>
+        </template>
+      </PageHeader>
+
+      <div class="gaming__content">
+        <SideTextSection
+          :title="messages?.sectionExperiences?.title"
+          :text="messages?.sectionExperiences?.text"
+        />
+
+        <PrecisionPlayerTargeting />
+
+        <SideTextSection
+          :title="messages?.adaptiveGaming?.title"
+          :text="messages?.adaptiveGaming?.text"
+          :highlightedIndices="messages?.adaptiveGaming?.highlightedTitleItems"
+        />
+
+        <div class="gaming__cards">
+          <CultureItem
+            v-for="(item, index) in messages?.cards"
+            :key="index"
+            :title="item.title"
+            :text="item.text"
+            :icon="item.icon"
+          />
         </div>
-      </template>
 
-      <template #subtitle>
-        <div class="gaming__subtitle">
-          {{ messages?.description }}
-        </div>
-      </template>
-    </PageHeader>
+        <SideTextSection
+          :title="messages?.smartMonetization?.title"
+          :text="messages?.smartMonetization?.text"
+          :highlightedIndices="
+            messages?.smartMonetization?.highlightedTitleItems
+          "
+        />
 
-    <div class="gaming__content">
-      <SideTextSection
-        :title="messages?.sectionExperiences?.title"
-        :text="messages?.sectionExperiences?.text"
-      />
+        <Matrix />
 
-      <PrecisionPlayerTargeting />
+        <CollapsibleItems
+          :items="messages?.items?.values || []"
+          :title="messages?.items?.title || ''"
+        />
 
-      <SideTextSection
-        :title="messages?.adaptiveGaming?.title"
-        :text="messages?.adaptiveGaming?.text"
-        :highlightedIndices="messages?.adaptiveGaming?.highlightedTitleItems"
-      />
+        <GameDistribution />
 
-      <div class="gaming__cards">
-        <CultureItem
-          v-for="(item, index) in messages?.cards"
-          :key="index"
-          :title="item.title"
-          :text="item.text"
-          :icon="item.icon"
+        <UpButton />
+
+        <GetInTouch />
+        <img
+          src="/src/assets/pattern-wave.png"
+          class="cases__pattern-wave"
+          alt="Wave Pattern"
+        />
+        <AppFooter />
+
+        <img
+          src="../../assets/gradient-bottom-yellow.png"
+          class="app__gradient-bottom-yellow"
+        />
+        <img
+          src="../../assets/gradient-bottom-blue.png"
+          class="app__gradient-bottom-blue"
         />
       </div>
-
-      <SideTextSection
-        :title="messages?.smartMonetization?.title"
-        :text="messages?.smartMonetization?.text"
-        :highlightedIndices="messages?.smartMonetization?.highlightedTitleItems"
-      />
-
-      <Matrix />
-
-      <CollapsibleItems
-        :items="messages?.items?.values || []"
-        :title="messages?.items?.title || ''"
-      />
-
-      <GameDistribution />
-
-      <UpButton />
-
-      <GetInTouch />
-      <img
-        src="/src/assets/pattern-wave.png"
-        class="cases__pattern-wave"
-        alt="Wave Pattern"
-      />
-      <AppFooter />
-
-      <img
-        src="../../assets/gradient-bottom-yellow.png"
-        class="app__gradient-bottom-yellow"
-      />
-      <img
-        src="../../assets/gradient-bottom-blue.png"
-        class="app__gradient-bottom-blue"
-      />
     </div>
   </div>
 </template>
