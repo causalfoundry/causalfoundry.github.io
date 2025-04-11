@@ -1,7 +1,7 @@
 <template>
   <div class="cite-card">
     <div class="cite-card__header">
-      <img :src="`/images/cases/m2m/logo.png`" />
+      <img :src="logo" />
     </div>
 
     <div class="cite-card__info">
@@ -32,6 +32,10 @@ const props = defineProps({
     required: true,
   },
   org: {
+    type: String,
+    required: true,
+  },
+  logo: {
     type: String,
     required: true,
   },

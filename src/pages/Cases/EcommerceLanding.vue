@@ -71,6 +71,7 @@
             :text="messages?.cites?.[0]?.text"
             :who="messages?.cites?.[0]?.name"
             :org="messages?.cites?.[0]?.position"
+            logo="/images/cases/swiperx/logo.png"
           />
         </div>
 

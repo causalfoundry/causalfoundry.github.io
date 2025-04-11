@@ -31,9 +31,9 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 60px 40px;
     background: #0d0d0d;
     border-radius: 16px;
     padding: 100px;
