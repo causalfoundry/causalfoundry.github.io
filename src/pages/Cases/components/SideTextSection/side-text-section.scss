@@ -1,15 +1,15 @@
 .side-text-section {
   max-width: 1200px;
-
-  display: flex;
-  gap: 119px;
+  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
 
   border-top: 1px solid #fff;
   padding-top: 32px;
 
   @include respond("mobile") {
-    display: unset;
+    display: block;
     padding: 0px 20px;
   }
 

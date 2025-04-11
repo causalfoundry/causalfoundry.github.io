@@ -15,9 +15,9 @@
   border-radius: 16px;
   background: #0d0d0d;
 
-  display: flex;
-  justify-content: space-between;
-  gap: 26px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
 
   @include respond("mobile") {
     display: unset;
