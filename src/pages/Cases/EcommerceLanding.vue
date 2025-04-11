@@ -72,6 +72,8 @@
             :who="messages?.cites?.[0]?.name"
             :org="messages?.cites?.[0]?.position"
             logo="/images/cases/swiperx/logo.png"
+            backgroundColor="#0B196D"
+            color="#fff"
           />
         </div>
 
