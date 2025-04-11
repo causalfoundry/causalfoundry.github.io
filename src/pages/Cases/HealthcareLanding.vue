@@ -58,9 +58,26 @@
         />
 
         <div class="healthcare-landing__cards">
-          <AppTitle>
-            {{ messages?.sectionInsights?.title }}
-          </AppTitle>
+          <div class="healthcare-landing__cards__title">
+            <AppTitle>
+              {{ messages?.sectionInsights?.title }}
+            </AppTitle>
+            <div class="healthcare-landing__cards__subtitle">
+              {{
+                messages?.sectionInsights?.subtitle
+                  .split(" ")
+                  .slice(0, 5)
+                  .join(" ")
+              }}
+              <br />
+              {{
+                messages?.sectionInsights?.subtitle
+                  .split(" ")
+                  .slice(5)
+                  .join(" ")
+              }}
+            </div>
+          </div>
 
           <div class="healthcare-landing__cards-items">
             <CultureItem
@@ -72,9 +89,18 @@
           </div>
         </div>
 
+        <div class="healthcare-landing__section">
+          <CiteCard
+            :text="messages?.cites[0].text"
+            :who="messages?.cites[0].name"
+            :org="messages?.cites[0].position"
+          />
+        </div>
+
         <UpButton />
 
         <GetInTouch />
+
         <img
           src="/src/assets/pattern-wave.png"
           class="cases__pattern-wave"
@@ -123,6 +149,7 @@ import CollapsibleItems from "./components/CollapsibleItems";
 import GameDistribution from "./components/GameDistribution";
 import UpButton from "@/components/UpButton";
 import ItemsWithSummary from "./components/ItemsWithSummary";
+import CiteCard from "./components/CiteCard/CiteCard.vue";
 
 import "./cases.scss";
 import "./healthcare-landing.scss";

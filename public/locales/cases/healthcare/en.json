@@ -69,5 +69,12 @@
         ]
       }
     ]
-  }
+  },
+  "cites": [
+    {
+      "text": "“AI has transformed how we work, allowing us to deliver real-time monitoring, predictive insights for health workers, and personalized patient care, driving better outcomes and truly enhancing the experience for everyone we serve”",
+      "name": "Dr. Kathrin Schmitz",
+      "position": "Chief Programmes & Impact Officer"
+    }
+  ]
 }

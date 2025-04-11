@@ -1,0 +1,40 @@
+.cite-card {
+  display: grid;
+  grid-template-rows: auto 1fr; // La primera fila es para la cabecera, la segunda para las columnas
+  grid-template-columns: 200px 1fr; // La primera columna ocupa 150px, la segunda el resto del espacio
+
+  border-radius: 16px;
+  background: #9a95c5;
+  column-gap: 45px;
+  row-gap: 45px;
+  padding: 96px;
+  padding-top: 42px;
+
+  color: black;
+
+  &__header {
+    grid-column: 1 / -1; // La cabecera ocupa todo el ancho
+  }
+
+  &__info {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.2px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__text {
+    font-family: "Open Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.28px;
+  }
+}
