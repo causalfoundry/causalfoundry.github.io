@@ -91,9 +91,9 @@
 
         <div class="healthcare-landing__section">
           <CiteCard
-            :text="messages?.cites[0].text"
-            :who="messages?.cites[0].name"
-            :org="messages?.cites[0].position"
+            :text="messages?.cites?.[0]?.text"
+            :who="messages?.cites?.[0]?.name"
+            :org="messages?.cites?.[0]?.position"
           />
         </div>
 

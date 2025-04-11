@@ -4,14 +4,7 @@
   align-items: center;
 
   &__header {
-    position: fixed;
-    width: 1200px;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-
     box-sizing: border-box;
-    padding: 32px 32px;
 
     @include respond("mobile") {
       background-color: black;
