@@ -1,72 +1,72 @@
 {
   "header": {
-    "title": "AI to Improve Healthcare Delivery",
-    "subtitle": "Increase engagement and performance through personalization."
+    "title": "AIで、より良い医療の提供を",
+    "subtitle": "パーソナライズによって、患者エンゲージメントと医療成果を最大化"
   },
   "sectionAdapts": {
-    "title": "AI that learns and adapts to patient behavior",
-    "text": "Our platform uses adaptive AI to personalize every interaction — from reminders to behavior nudges — making care more engaging, relevant, and timely for each individual. By analyzing evolving patient data, we optimize communication, timing, and channels to improve health outcomes while reducing dropouts."
+    "title": "患者の行動に“適応”するAI",
+    "text": "当社のプラットフォームは、リマインダーから行動の後押しまで、あらゆる接点をパーソナライズ。日々変化する患者データに基づいて、コミュニケーションの内容やタイミング、届け方を最適化し、患者が途中で離脱しないようサポートします。一人ひとりに寄り添ったケアの提供により、健康状態の改善と成果の最大化を実現します。"
   },
   "sectionEmpowering": {
-    "title": "Empowering Health Providers to Achieve More",
-    "text": "We equip healthcare workers and teams with adaptive tools that streamline triage, optimize workflows, and deliver smart guidance — reducing time waste and enabling more effective, proactive care. Our models evolve based on feedback, outcomes, and local context."
+    "title": "医療従事者の力を、もっと引き出す",
+    "text": "トリアージや業務フローを最適化し、必要なガイダンスをスマートに提供。現場の無駄を減らし、より迅速で効果的なケアを実現します。モデルは現場のフィードバックや成果、地域ごとの特性に応じて常に進化します。"
   },
   "sectionOptimizing": {
-    "title": "Optimizing Health Operations and Supply Chains",
-    "text": "Our demand-aware models help healthcare systems anticipate service volumes, supply usage, and workforce needs — reducing inefficiencies and ensuring continuity of care. This translates into cost savings and improved reliability, even in complex or low-resource settings."
+    "title": "医療現場とサプライチェーンを最適化",
+    "text": "需要を先読みするAIモデルで、サービス提供量・物資使用・スタッフ配置を予測。リソースのムダを削減し、限られた環境でもケアの継続性と信頼性を確保します。"
   },
   "sectionTransforming": {
-    "title": "Transforming Patient Engagement with Adaptive AI",
-    "subtitle": "Based on individual patient clinical information, behaviors and predictions",
+    "title": "AIが変える、患者とのつながり方",
+    "subtitle": "臨床データ・行動履歴・予測に基づくパーソナライズで、エンゲージメントを強化",
     "items": [
-      "Treatment adherence",
-      "Appointment attendance",
-      "Sustained engagement",
-      "Health risk predictions",
-      "Healthy behaviors",
-      "Recommendation systems",
-      "Loyalty to care programs"
+      "治療継続の促進",
+      "アポイントの履行率向上",
+      "長期的なエンゲージメント",
+      "健康リスクの予測",
+      "健康的な行動の定着",
+      "おすすめの最適化 ",
+      "ケアプログラムへのロイヤルティ向上"
     ]
   },
   "sectionEfficiency": {
-    "title": "AI that improves efficiency",
-    "subtitle": "Leveraging provider-level behaviors and clinical guidelines",
+    "title": "業務効率を高めるAI",
+    "subtitle": "現場での行動データと臨床ガイドラインを活用",
     "items": [
-      "Triage and risk prediction",
-      "Clinical decision support",
-      "Intelligent care coordination",
-      "Referral optimization",
-      "Process automation",
-      "Clinical quality metrics"
+      "トリアージとリスク予測",
+      "臨床意思決定のサポート",
+      "チームで行う患者支援の最適化",
+      "紹介プロセスの最適化 ",
+      "手続きの自動化",
+      "臨床の品質指標の可視化"
     ]
   },
   "sectionInsights": {
-    "title": "AI-powered insight to plan and deliver better",
-    "subtitle": "Extract insights from your data to drive efficiencies",
+    "title": "データを活用した、最適な医療の計画と実行",
+    "subtitle": "自社のデータからインサイトを引き出し、効率と成果を向上",
     "items": [
       {
-        "title": "Demand Prediction",
-        "text": "Anticipate service or product needs before they arise, reducing missed opportunities and shortages"
+        "title": "需要予測",
+        "text": ["先回りしてニーズを把握し、機会損失や供給不足を防止"]
       },
       {
-        "title": "Inventory Optimization",
-        "text": "Balance stock levels with real-time demand to avoid overstock, delays, and lost revenue."
+        "title": "在庫最適化",
+        "text": ["需要に即した在庫管理で、過剰在庫や遅延、売上損失を回避"]
       },
       {
-        "title": "Waste Reduction",
-        "text": "Eliminate inefficiencies by aligning supply and operations with actual usage patterns."
+        "title": "ムダの削減",
+        "text": ["実際の使用傾向に合わせて供給と運用を調整"]
       },
       {
-        "title": "Workforce Planning",
-        "text": "Deploy the right staff at the right time with AI-driven forecasts of service or sales load."
+        "title": "スタッフ配置計画",
+        "text": ["サービス負荷や販売量を予測し、最適な人員配置を支援"]
       }
     ]
   },
   "cites": [
     {
-      "text": "“AI has transformed how we work, allowing us to deliver real-time monitoring, predictive insights for health workers, and personalized patient care, driving better outcomes and truly enhancing the experience for everyone we serve”",
-      "name": "Dr. Kathrin Schmitz",
-      "position": "Chief Programmes & Impact Officer"
+      "text": "“AIの進化により、私たちの働き方は大きく変わりました。リアルタイムのモニタリングや医療従事者向けの予測分析により、患者一人ひとりに最適なケアを提供し、医療の質を向上させます。これにより、すべての関係者にとって、より安心で充実した医療体験を実現します。”",
+      "name": "カトリン・シュミッツ博士（Dr. Kathrin Schmitz）",
+      "position": "チーフ・プログラム＆インパクト・オフィサー"
     }
   ]
 }

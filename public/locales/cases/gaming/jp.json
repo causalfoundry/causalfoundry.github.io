@@ -1,120 +1,117 @@
 {
   "sectionExperiences": {
-    "title": "Adaptive AI Transforms Gaming Experiences ",
-    "text": "Adaptive AI transforms gaming experiences by dynamically responding to individual player behavior, creating personalized journeys that evolve in real-time. By analyzing player profiles across multiple dimensions—from skill level and play patterns to social preferences and spending habits—these systems can intelligently adjust almost every aspect of gameplay"
+    "title": "ゲーム体験を変える、適応型AIの力 ",
+    "text": "リアルタイムにプレイヤーの行動を分析し、一人ひとりに合わせてゲーム体験を進化させる──それが適応型AI。スキルレベルやプレイスタイル、ソーシャル傾向や課金習慣など、あらゆる側面からプレイヤーを理解し、ゲームのあらゆる要素をパーソナライズします。"
   },
   "adaptiveGaming": {
-    "title": "Adaptive Gaming: Personalizing Player Experiences for Long-Term Engagement",
+    "title": "適応型ゲーミング: プレイヤーごとに最適化された体験で、長期的なエンゲージメントを育む",
     "highlightedTitleItems": [0, 1],
-    "text": "Whether through smart matchmaking that pairs competitive players based on skill, customizing difficulty curves that maintain optimal challenge, or tailoring rewards and story progression to individual preferences, adaptive interventions ensure each player experiences the game in ways uniquely matched to their needs. This personalization extends beyond just gameplay mechanics to encompass UI optimization, targeted offers, and even social connections, ultimately creating more engaging, satisfying experiences that keep players invested for the long term."
+    "text": "スキルに基づくスマートマッチング、適切な難易度の調整、好みに応じた報酬やストーリー展開──こうした介入が、プレイヤー一人ひとりに合った“ちょうどいい”ゲーム体験を実現します。UI最適化、ターゲットオファー、ソーシャル連携まで含めた全体設計で、ゲームへの没入度と満足度を高め、長期的な継続プレイへと導きます。"
   },
   "smartMonetization": {
-    "title": "Smart Monetization: How Adaptive AI Personalizes Revenue Strategies in Gaming",
+    "title": "スマートマネタイゼーション: プレイヤーごとに最適化された収益戦略",
     "highlightedTitleItems": [0, 1],
-    "text": "Adaptive AI revolutionizes game monetization by creating personalized revenue strategies tailored to individual player preferences and behaviors. This intelligent approach transforms traditional one-size-fits-all monetization into a sophisticated ecosystem of targeted opportunities. Players receive customized offers with dynamic pricing based on their unique engagement patterns, while ad targeting optimizes both timing and relevance to improve click-through rates. The system intelligently adjusts in-game economies, customizing currency availability and optimizing subscription models based on player interaction. Through reward-based incentives and spend-based unlocks, monetization becomes an organic part of progression. Meanwhile, smart monetization matching creates social and competitive incentives that encourage aspirational purchases, all working together to enhance player satisfaction while maximizing"
+    "text": "適応型AIが、プレイヤーの好みや行動に基づいた収益戦略を自動生成。これまでの“一律”課金モデルから、プレイヤーごとに最適化された収益エコシステムへ。動的プライシングによるオファー、最適なタイミングでの広告表示、プレイヤーの行動に応じたゲーム内経済の調整──すべてが自然な流れで収益へとつながります。"
   },
   "personalizedContent": {
-    "title": "Personalize Player Experience!",
+    "title": "プレイヤー体験をパーソナライズ！",
     "items": [
-      "Next item or reward",
-      "Dynamic difficulty adjustment",
-      "Next level/stage/challenge",
-      "Adaptive NPC behavior",
-      "Customized tutorial/onboarding",
-      "Targeted in-game rewards",
-      "Next NPC interaction",
-      "Optimized UI/menus",
-      "Recommended quest/path",
-      "Dynamic story progression",
-      "Personalized game mode suggestions",
-      "Smart allocation of discounts & offers"
+      "次に手に入るアイテムや報酬の提案",
+      "プレイヤーに応じた難易度の自動調整",
+      "次のステージ・チャレンジの最適化",
+      "プレイスタイルに合わせて変化するNPCの行動",
+      "プレイヤーごとにカスタマイズされたチュートリアル／導入体験",
+      "行動傾向に応じたゲーム内報酬のパーソナライズ",
+      "次に登場するNPCとのインタラクションを最適化",
+      "UI／メニューの自動最適化",
+      "好みに応じたおすすめクエスト／ルートの提示",
+      "プレイヤーごとに変化するストーリー展開",
+      "プレイスタイルに合わせたゲームモードの提案",
+      "割引や特典の最適配分によるオファー設計"
     ]
   },
   "precisionPlayerTargeting": {
-    "title": "Precision Player Targeting for Boosted Engagement & Retention",
-    "subtitle": "Based on individual player behavioral profile observed and predicted",
+    "title": " 精度の高いプレイヤーターゲティングで、エンゲージメントと継続率を最大化",
+    "subtitle": "観測データと予測データに基づく、プレイヤー行動プロファイルの活用",
     "items": [
-      "Lifecycle & engagement",
-      "Playing skills & patterns",
-      "Reengagement potential",
-      "Churn Risk",
-      "Social Profile",
-      "Reengagement potential",
-      "Spending potential (conversion, LTV) and patterns"
+      "プレイヤーのライフサイクルとエンゲージメント状況",
+      "スキルレベルやプレイスタイルの傾向",
+      "再エンゲージメントの可能性（復帰しやすさ）",
+      "離脱リスク",
+      "ソーシャル傾向・交流スタイル",
+      "課金ポテンシャル（LTV・コンバージョン率）とその傾向"
     ]
   },
   "cards": [
     {
-      "title": "Competitive Play",
-      "text": ["Fair matchmaking based on skill, experience, and playstyle."],
+      "title": " 競技プレイ ",
+      "text": [" スキル・経験・スタイルをもとに公正なマッチングを実現 "],
       "icon": "/images/cases/gaming/competitive_play.png"
     },
     {
-      "title": "Cooperative Play",
-      "text": [
-        "Pair players who complement each other’s abilities and engagement style."
-      ],
+      "title": " 協力プレイ ",
+      "text": [" 相互補完できるプレイヤー同士を組み合わせ "],
       "icon": "/images/cases/gaming/cooperative_play.png"
     },
     {
-      "title": "Social Matching",
-      "text": ["Connect players likely to form lasting friendships or guilds."],
+      "title": " ソーシャルマッチング ",
+      "text": [
+        " 友情やギルドなど長期的な関係が築けそうなプレイヤーを自然につなぐ "
+      ],
       "icon": "/images/cases/gaming/social_matching.png"
     },
     {
-      "title": "Monetization Matching",
-      "text": [
-        "Strategically pair spenders and non-spenders to maximize in-game purchases."
-      ],
+      "title": " マネタイズ・マッチング ",
+      "text": ["課金傾向に応じてプレイヤーを組み合わせ、購入促進へ"],
       "icon": "/images/cases/gaming/monetization_matching.png"
     }
   ],
   "items": {
-    "title": "Revenue Potential for Developers",
+    "title": " 開発者にとっての収益可能性 ",
     "values": [
       {
-        "title": "Personalized Offers & Dynamic Pricing",
+        "title": " パーソナライズされたオファーと動的価格設定 ",
         "text": [
-          "Tailored discounts, IAP bundles, and exclusive deals",
-          "Personalized time-sensitive and event-based pricing"
+          "イムセール、IAPバンドル、限定特典など",
+          "パーソナライズされたイベント連動型・期間限定型の価格提案"
         ]
       },
       {
-        "title": "Personalized Ad Targeting",
+        "title": " ターゲット広告のパーソナライズ ",
         "text": [
-          "Improve CTR",
-          "Optimize rewards and ad frequency and placement"
+          " 広告CTR（クリック率）向上 ",
+          "最適な報酬バランス・頻度・表示位置を自動調整"
         ]
       },
       {
-        "title": "Adaptive In-Game Economy",
+        "title": "適応型ゲーム内エコノミー",
         "text": [
-          "Adjust in-game currency availability",
-          "Optimize battle pass, loot box, and subscription model"
+          "ゲーム内通貨供給量の最適化",
+          "バトルパス／ガチャ／サブスクリプション設計の最適化"
         ]
       },
       {
-        "title": "Reward-Based Monetization",
+        "title": "リワードベースのマネタイズ",
         "text": [
-          "Customized gifting and progression-based incentives",
-          "Personalized spend-based unlocks"
+          "行動ベースでカスタマイズされた報酬とアンロック設計",
+          "課金に応じた個別アンロックの設計"
         ]
       },
       {
-        "title": "Smart Monetization Matching",
+        "title": "スマートマネタイズマッチング",
         "text": [
-          "Create social and competitive incentives for spending",
-          "Encourage aspirational purchases"
+          "課金を促すソーシャル・競争的なインセンティブの創出",
+          "憧れ消費（アスピレーショナル購入）を促進"
         ]
       }
     ]
   },
   "distribution": {
-    "title": "Personalization for Game Distribution Platforms"
+    "title": "配信プラットフォームにおけるユーザー体験のパーソナライズ "
   },
   "mainTitles": {
-    "first": "Adaptive AI for Videogames",
+    "first": "ゲーム体験を進化させる、適応型AI",
     "second": ""
   },
-  "description": "Personalize player experience & improve game dynamics"
+  "description": " プレイヤー体験のパーソナライズ × ゲームダイナミクスの最適化 "
 }
