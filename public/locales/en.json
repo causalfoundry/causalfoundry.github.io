@@ -19,6 +19,32 @@
     "healthcare-landing": "Healthcare Landing",
     "privacy": "Privacy",
     "cookies": "Cookies",
-    "footerTitle": "AI & personalization at scale"
+    "footerTitle": "AI & personalization at scale",
+    "useCases": [
+      {
+        "category": "Healthcare",
+        "company": "mothers2mothers(m2m)",
+        "text": "Transforming mothers' lives in Africa",
+        "image": "/images/cases/summary/m2m.png"
+      },
+      {
+        "category": "E-Commerce",
+        "company": "SwipeRx",
+        "text": "Next level pharmacy supply chains",
+        "image": "/images/cases/summary/swiperrx.png"
+      },
+      {
+        "category": "E-Commerce",
+        "company": "Momentum",
+        "text": "Empowering community pharmacies",
+        "image": "/images/cases/summary/momentum.png"
+      },
+      {
+        "category": "Government",
+        "company": "RSSB",
+        "text": "Supporting Rwanda's Healthcare Reform",
+        "image": "/images/cases/summary/rssb.png"
+      }
+    ]
   }
 }

@@ -100,6 +100,10 @@
           />
         </div>
 
+        <div class="healthcare-landing__section">
+          <UseCases :items="messages?.common?.useCases" />
+        </div>
+
         <UpButton />
 
         <GetInTouch />
@@ -153,6 +157,7 @@ import GameDistribution from "./components/GameDistribution";
 import UpButton from "@/components/UpButton";
 import ItemsWithSummary from "./components/ItemsWithSummary";
 import CiteCard from "./components/CiteCard/CiteCard.vue";
+import UseCases from "./components/UseCases";
 
 import "./cases.scss";
 import "./healthcare-landing.scss";

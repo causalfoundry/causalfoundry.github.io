@@ -1,0 +1,59 @@
+.use-cases {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  gap: 20px;
+  text-align: left;
+
+  &__item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__image {
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  &__details {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__category {
+    display: block;
+    color: #9ca3af;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__company {
+    font-weight: bold;
+    display: block;
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__text {
+    margin-top: 5px;
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+  }
+}

@@ -5,6 +5,9 @@
   gap: 119px;
   justify-content: space-between;
 
+  border-top: 1px solid #fff;
+  padding-top: 32px;
+
   @include respond("mobile") {
     display: unset;
     padding: 0px 20px;
