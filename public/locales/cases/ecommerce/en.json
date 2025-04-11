@@ -1,0 +1,63 @@
+{
+  "header": {
+    "title": "AI to Personalize Every Transaction",
+    "subtitle": "Boost sales, engagement, conversions, and retention through personalization."
+  },
+  "sectionDrivesCustomer": {
+    "title": "AI That Learns What Drives Each Customer to Act",
+    "text": "Our platform uses adaptive AI to optimize engagement at every touchpoint, from personalized promotions to dynamic product recommendations. By continuously learning from user interactions, purchase patterns, and context, the system adapts in real time to improve conversion and loyalty. We have already helped e-commerce platforms increase conversion and engagement through personalized nudges and tailored product offers."
+  },
+  "sectionTeamFocus": {
+    "title": "Enabling Teams to Focus on What Matters",
+    "text": "Our platform helps marketing and operations teams reduce guesswork and iterate faster by automating decision points and delivering actionable insights. Campaigns adapt automatically based on performance feedback, segment behavior, and seasonal trends, so teams can focus on strategy rather than rule-tuning."
+  },
+  "sectionForecasting": {
+    "title": "Forecasting Demand, Managing Inventory, Driving Efficiency",
+    "text": "Our models predict product demand across different regions, customer segments, and time periods—helping operations teams minimize stockouts, control overstock, and enhance fulfillment processes. Whether you’re managing a retail network, a digital marketplace, or direct-to-consumer logistics, adaptive AI transforms uncertainty into an opportunity."
+  },
+  "sectionTransforming": {
+    "title": "Transforming Customer Engagement with Adaptive AI",
+    "subtitle": "Powered by AI insights on behavior, preferences, and customer-level predictions",
+    "items": [
+      "Personalized product recommendations",
+      "Promotion targeting and A/B testing",
+      "In-app engagement and retentiont",
+      "Customer lifecycle value prediction",
+      "Churn prevention and loyalty triggers",
+      "Cart abandonment recovery",
+      "Context-aware messaging"
+    ]
+  },
+  "sectionMarketing": {
+    "title": "AI to Streamline Marketing and Operations",
+    "subtitle": "Boost experimentation and optimization of business strategies",
+    "items": [
+      "Automated experimentation and targeting",
+      "Smart budget allocation across campaigns",
+      "Dynamic content optimization",
+      "Conversion funnel diagnostics",
+      "Performance feedback loops across channels",
+      "Scalable personalization without added overhead"
+    ]
+  },
+
+  "sectionInsights": {
+    "title": "AI to Optimize the E-commerce Supply Chain",
+    "subtitle": "Extract insights from your data to drive efficiencies",
+    "items": [
+      "Demand prediction by SKU, category, or segment",
+      "Smart inventory planning and replenishment",
+      "Promotion-linked logistics planning",
+      "Avoiding under/overstock losses",
+      "Returns forecasting and risk-based shipping policies",
+      "Real-time supply chain anomaly detection"
+    ]
+  },
+  "cites": [
+    {
+      "text": "“We are excited to innovate with Causal Foundry, using AI to improve medicine quality, availability, and affordability across Southeast Asia making a positive impact on the lives of millions””",
+      "name": "Farouk Meralli",
+      "position": "Founder & CEO at SwipeRx"
+    }
+  ]
+}

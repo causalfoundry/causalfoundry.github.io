@@ -41,6 +41,11 @@
               {{ messages?.common?.["healthcare-landing"] }}
             </div>
           </router-link>
+          <router-link :to="`/${currentLang}/cases/ecommerce-landing`">
+            <div class="dropdown-item">
+              {{ messages?.common?.["ecommerce-landing"] }}
+            </div>
+          </router-link>
         </div>
       </div>
       <router-link :to="`/${currentLang}/research`">
