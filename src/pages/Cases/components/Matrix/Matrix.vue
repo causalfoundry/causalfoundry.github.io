@@ -14,7 +14,7 @@
 
     <ul>
       <li v-for="item in items" :key="item">
-        {{ item }}
+        <div class="matrix__item">{{ item }}</div>
       </li>
     </ul>
   </div>

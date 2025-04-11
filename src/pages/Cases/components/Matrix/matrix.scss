@@ -50,6 +50,12 @@
       gap: 10px;
       flex-wrap: wrap;
 
+      .matrix__item {
+        border-top: 1px solid #fff;
+        padding-top: 15px;
+        width: 80%;
+      }
+
       @include respond("mobile") {
         width: 100%;
       }
