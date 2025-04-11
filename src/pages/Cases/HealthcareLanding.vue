@@ -1,6 +1,9 @@
 <template>
   <div class="cases healthcare-landing">
-    <AppHeader current-page="cases" class="healthcare-landing__header">
+    <AppHeader
+      current-page="cases"
+      class="healthcare-landing__header healtchare__header"
+    >
       <AppMenu />
     </AppHeader>
 
@@ -8,7 +11,7 @@
       <PageHeader
         description=""
         :showButton="true"
-        className="cases__healthcare-landing_header"
+        className="cases__healthcare_header"
         image="/images/cases/header_healthcare.png"
       >
         <template #title>
