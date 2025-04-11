@@ -34,6 +34,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    background: #0d0d0d;
+    border-radius: 16px;
+    padding: 100px;
+    box-sizing: border-box;
 
     & > li {
       border-radius: 8px;
@@ -41,12 +45,12 @@
       padding: 10px;
 
       display: flex;
-      width: 365px;
+      width: 300px;
       height: 103px;
       padding: 10px;
       justify-content: center;
-      align-items: center;
-      align-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
       gap: 10px;
       flex-wrap: wrap;
 
