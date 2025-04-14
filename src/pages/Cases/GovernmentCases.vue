@@ -1,6 +1,9 @@
 <template>
   <div class="cases">
-    <AppHeader current-page="cases">
+    <AppHeader
+      current-page="cases"
+      class="healthcare-landing__header healtchare__header"
+    >
       <AppMenu />
     </AppHeader>
 
