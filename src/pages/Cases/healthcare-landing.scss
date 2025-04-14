@@ -43,6 +43,10 @@
     width: 1200px;
     gap: 64px;
 
+    @include respond("mobile") {
+      padding: 20px;
+    }
+
     &__title {
       font-family: "NeueMachinaMedium";
       text-align: center;
