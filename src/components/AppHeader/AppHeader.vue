@@ -9,7 +9,6 @@
           {{ messages?.common["products"] }}
         </div>
       </router-link>
-      <!-- Dropdown menu for Cases -->
       <div
         class="header__item header__dropdown"
         :class="{ active: active === 'cases' }"
