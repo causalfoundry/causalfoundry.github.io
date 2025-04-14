@@ -1,22 +1,21 @@
 <template>
-  <div
-    class="cite-card"
-    :style="{ backgroundColor: backgroundColor, color: color }"
-  >
-    <div class="cite-card__header">
-      <img :src="logo" />
-    </div>
-
-    <div class="cite-card__text">
-      {{ text }}
-    </div>
-
-    <div class="cite-card__info">
-      <div>
-        {{ who }}
+  <div class="cite-card" :style="{ color: color }">
+    <div class="cite-card__container">
+      <div class="cite-card__container__header">
+        <img :src="logo" />
       </div>
-      <div>
-        {{ org }}
+
+      <div class="cite-card__container__text">
+        {{ text }}
+      </div>
+
+      <div class="cite-card__container__info">
+        <div>
+          {{ who }}
+        </div>
+        <div>
+          {{ org }}
+        </div>
       </div>
     </div>
   </div>

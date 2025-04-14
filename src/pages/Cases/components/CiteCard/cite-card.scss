@@ -1,57 +1,75 @@
 .cite-card {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 200px 1fr;
-  grid-template-areas:
-    "logo logo"
-    "info content";
-
   border-radius: 16px;
-  background: #9a95c5;
-  column-gap: 45px;
-  row-gap: 45px;
-  padding: 96px;
-  padding-top: 42px;
-
-  color: black;
+  background: linear-gradient(
+    145deg,
+    #fff625 -13.26%,
+    #cbea7f 15.7%,
+    #a7e2be 55.24%,
+    #98ded9 93.66%
+  );
+  padding: 1px;
 
   @include respond("mobile") {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-    padding: 20px;
     margin: 20px;
   }
 
-  &__header {
-    grid-area: logo;
-  }
+  &__container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      "logo logo"
+      "info content";
 
-  &__info {
-    grid-area: info;
-    font-family: "Open Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px; /* 120% */
-    letter-spacing: 0.2px;
+    border-radius: 16px;
+    column-gap: 45px;
+    row-gap: 45px;
+    padding: 96px;
+    padding-top: 42px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+    border: 1px solid transparent;
+    border-radius: 14px;
 
-  &__text {
-    grid-area: content;
-    font-family: "Open Sans";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 42px; /* 150% */
-    letter-spacing: 0.28px;
-  }
+    background-color: black;
+    color: white;
 
-  &__logo {
-    grid-area: logo;
+    @include respond("mobile") {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+      padding: 20px;
+    }
+
+    &__header {
+      grid-area: logo;
+    }
+
+    &__info {
+      grid-area: info;
+      font-family: "Open Sans";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 120% */
+      letter-spacing: 0.2px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__text {
+      grid-area: content;
+      font-family: "Open Sans";
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 42px; /* 150% */
+      letter-spacing: 0.28px;
+    }
+
+    &__logo {
+      grid-area: logo;
+    }
   }
 }
