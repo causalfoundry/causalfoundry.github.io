@@ -26,25 +26,29 @@
         "category": "Healthcare",
         "company": "mothers2mothers(m2m)",
         "text": "Transforming mothers' lives in Africa",
-        "image": "/images/cases/summary/m2m.png"
+        "image": "/images/cases/summary/m2m.png",
+        "link": "/en/cases/healthcare#m2m"
       },
       {
         "category": "E-Commerce",
         "company": "SwipeRx",
         "text": "Next level pharmacy supply chains",
-        "image": "/images/cases/summary/swiperrx.png"
+        "image": "/images/cases/summary/swiperrx.png",
+        "link": "/en/cases/e-commerce#swiperx"
       },
       {
         "category": "E-Commerce",
         "company": "Momentum",
         "text": "Empowering community pharmacies",
-        "image": "/images/cases/summary/momentum.png"
+        "image": "/images/cases/summary/momentum.png",
+        "link": "/en/cases/e-commerce#momentum"
       },
       {
         "category": "Government",
         "company": "RSSB",
         "text": "Supporting Rwanda's Healthcare Reform",
-        "image": "/images/cases/summary/rssb.png"
+        "image": "/images/cases/summary/rssb.png",
+        "link": "/en/cases/government#rssb"
       }
     ]
   }

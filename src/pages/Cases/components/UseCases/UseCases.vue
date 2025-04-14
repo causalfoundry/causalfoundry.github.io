@@ -1,7 +1,10 @@
 <template>
   <div class="use-cases">
     <div v-for="(item, index) in items" :key="index" class="use-cases__item">
-      <img :src="item.image" alt="Use case image" class="use-cases__image" />
+      <a :href="item.link" class="use-cases__link">
+        <img :src="item.image" alt="Use case image" class="use-cases__image" />
+      </a>
+
       <div class="use-cases__details">
         <span class="use-cases__category">{{ item.category }}</span>
         <span class="use-cases__company">{{ item.company }}</span>
@@ -21,6 +24,7 @@ interface UseCaseItem {
   category: string;
   company: string;
   text: string;
+  link: string;
 }
 
 const props = defineProps<{

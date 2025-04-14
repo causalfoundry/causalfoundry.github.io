@@ -20,6 +20,36 @@
     "e-commerce": "Eコマース",
     "privacy": "プライバシー",
     "cookies": "クッキー",
-    "footerTitle": "大規模なAIとパーソナライゼーション"
+    "footerTitle": "大規模なAIとパーソナライゼーション",
+    "useCases": [
+      {
+        "category": "Healthcare",
+        "company": "mothers2mothers(m2m)",
+        "text": "Transforming mothers' lives in Africa",
+        "image": "/images/cases/summary/m2m.png",
+        "link": "/jp/cases/healthcare#m2m"
+      },
+      {
+        "category": "E-Commerce",
+        "company": "SwipeRx",
+        "text": "Next level pharmacy supply chains",
+        "image": "/images/cases/summary/swiperrx.png",
+        "link": "/jp/cases/e-commerce#swiperx"
+      },
+      {
+        "category": "E-Commerce",
+        "company": "Momentum",
+        "text": "Empowering community pharmacies",
+        "image": "/images/cases/summary/momentum.png",
+        "link": "/jp/cases/e-commerce#momentum"
+      },
+      {
+        "category": "Government",
+        "company": "RSSB",
+        "text": "Supporting Rwanda's Healthcare Reform",
+        "image": "/images/cases/summary/rssb.png",
+        "link": "/jp/cases/government#rssb"
+      }
+    ]
   }
 }
