@@ -77,7 +77,8 @@
     display: flex;
     flex-direction: column;
     gap: 150px;
-
+    padding: 20px;
+    box-sizing: border-box;
     align-items: center;
 
     @include respond("mobile") {

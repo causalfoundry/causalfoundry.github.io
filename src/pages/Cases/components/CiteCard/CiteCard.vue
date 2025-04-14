@@ -7,6 +7,10 @@
       <img :src="logo" />
     </div>
 
+    <div class="cite-card__text">
+      {{ text }}
+    </div>
+
     <div class="cite-card__info">
       <div>
         {{ who }}
@@ -14,10 +18,6 @@
       <div>
         {{ org }}
       </div>
-    </div>
-
-    <div class="cite-card__text">
-      {{ text }}
     </div>
   </div>
 </template>
