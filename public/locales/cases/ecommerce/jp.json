@@ -1,62 +1,62 @@
 {
   "header": {
-    "title": "AI to Personalize Every Transaction",
-    "subtitle": "Boost sales, engagement, conversions, and retention through personalization."
+    "title": "すべての取引をパーソナライズするAI",
+    "subtitle": " パーソナライズで、売上・エンゲージメント・コンバージョン・リテンションを最大化"
   },
   "sectionDrivesCustomer": {
-    "title": "AI That Learns What Drives Each Customer to Act",
-    "text": "Our platform uses adaptive AI to optimize engagement at every touchpoint, from personalized promotions to dynamic product recommendations. By continuously learning from user interactions, purchase patterns, and context, the system adapts in real time to improve conversion and loyalty. We have already helped e-commerce platforms increase conversion and engagement through personalized nudges and tailored product offers."
+    "title": " 一人ひとりの「行動の決め手」を学習するAI",
+    "text": " 当社のプラットフォームは、パーソナライズされたプロモーションや動的な商品レコメンドなど、あらゆるタッチポイントでのエンゲージメントを最適化。ユーザーの行動・購買パターン・状況に応じてリアルタイムに学習・対応し、コンバージョンとロイヤルティの向上を実現します。実際に複数のECプラットフォームで、個別最適なナッジや商品提案により、エンゲージメントと購入率の大幅な向上を支援しています。 "
   },
   "sectionTeamFocus": {
-    "title": "Enabling Teams to Focus on What Matters",
-    "text": "Our platform helps marketing and operations teams reduce guesswork and iterate faster by automating decision points and delivering actionable insights. Campaigns adapt automatically based on performance feedback, segment behavior, and seasonal trends, so teams can focus on strategy rather than rule-tuning."
+    "title": "チームが“本当に重要なこと”に集中できる環境へ",
+    "text": "マーケティングやオペレーションの意思決定を自動化し、インサイトを即アクションへ。キャンペーンはパフォーマンス・セグメントの行動・季節性に応じて自動で最適化されるため、チームは複雑なルール設定ではなく、戦略そのものに集中できます。"
   },
   "sectionForecasting": {
-    "title": "Forecasting Demand, Managing Inventory, Driving Efficiency",
-    "text": "Our models predict product demand across different regions, customer segments, and time periods—helping operations teams minimize stockouts, control overstock, and enhance fulfillment processes. Whether you’re managing a retail network, a digital marketplace, or direct-to-consumer logistics, adaptive AI transforms uncertainty into an opportunity."
+    "title": "需要予測から在庫管理まで、EC業務を効率化",
+    "text": "地域・セグメント・時期ごとに商品の需要を予測し、過剰在庫や品切れを最小限に。リテールネットワーク、マーケットプレイス、D2C物流のいずれにも対応し、不確実性を“機会”へと変えるAIを提供します。"
   },
   "sectionTransforming": {
-    "title": "Transforming Customer Engagement with Adaptive AI",
-    "subtitle": "Powered by AI insights on behavior, preferences, and customer-level predictions",
+    "title": "適応型AIで変わるカスタマーエンゲージメント",
+    "subtitle": "ユーザーの行動・好み・予測データに基づくインサイト",
     "items": [
-      "Personalized product recommendations",
-      "Promotion targeting and A/B testing",
-      "In-app engagement and retentiont",
-      "Customer lifecycle value prediction",
-      "Churn prevention and loyalty triggers",
-      "Cart abandonment recovery",
-      "Context-aware messaging"
+      "パーソナライズされた商品レコメンド",
+      "プロモーションのターゲティングとA/Bテスト",
+      "アプリ内での継続利用と再来訪の促進",
+      "顧客ライフタイムバリュー（LTV）の予測",
+      "離脱防止とロイヤルティ強化のトリガー設計",
+      "カゴ落ち対策（リカバリー）",
+      "状況に応じた最適なメッセージ配信"
     ]
   },
   "sectionMarketing": {
-    "title": "AI to Streamline Marketing and Operations",
-    "subtitle": "Boost experimentation and optimization of business strategies",
+    "title": "マーケティングとオペレーションの最適化をAIで加速",
+    "subtitle": "戦略の実験と最適化を、より速く・より確実に",
     "items": [
-      "Automated experimentation and targeting",
-      "Smart budget allocation across campaigns",
-      "Dynamic content optimization",
-      "Conversion funnel diagnostics",
-      "Performance feedback loops across channels",
-      "Scalable personalization without added overhead"
+      "ターゲティング＆A/Bテストの自動化",
+      "キャンペーンごとの予算配分をスマートに最適化",
+      "ユーザーごとに最適化されるコンテンツ表示",
+      "コンバージョンファネルの診断と改善",
+      "チャネル横断でのパフォーマンスフィードバック",
+      "運用負荷なくスケールできるパーソナライズ設計"
     ]
   },
   "sectionInsights": {
-    "title": "AI to Optimize the E-commerce Supply Chain",
-    "subtitle": "Extract insights from your data to drive efficiencies",
+    "title": " ECサプライチェーンの最適化をAIで実現",
+    "subtitle": "データから導くインサイトで、効率と安定性を両立",
     "items": [
-      "Demand prediction by SKU, category, or segment",
-      "Smart inventory planning and replenishment",
-      "Promotion-linked logistics planning",
-      "Avoiding under/overstock losses",
-      "Returns forecasting and risk-based shipping policies",
-      "Real-time supply chain anomaly detection"
+      "SKU／カテゴリ／セグメントごとの需要予測",
+      "スマートな在庫計画と自動補充",
+      "プロモーションに連動した物流最適化",
+      "欠品・過剰在庫による損失の回避",
+      "返品予測とリスクに応じた配送ポリシー",
+      "リアルタイムでのサプライチェーン異常検知"
     ]
   },
   "cites": [
     {
-      "text": "“We are excited to innovate with Causal Foundry, using AI to improve medicine quality, availability, and affordability across Southeast Asia making a positive impact on the lives of millions””",
-      "name": "Farouk Meralli",
-      "position": "Founder & CEO at SwipeRx"
+      "text": "“Causal Foundryと協力し、AIを活用してイノベーションを起こすことで、東南アジア全域で医薬品の品質と供給を改善し、手頃な価格を実現しました。これにより、何百万人もの生活に良い影響を与えられていることを大変うれしく思います。””",
+      "name": "ファルーク・メラリ（Farouk Meralli）",
+      "position": "SwipeRx 創業者兼CEO"
     }
   ]
 }
