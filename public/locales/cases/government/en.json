@@ -1,0 +1,97 @@
+{
+  "header": {
+    "title": "Public Service Transformation ",
+    "subtitle": "Leveraging Machine Learning for Societal Impact"
+  },
+  "sectionLearns": {
+    "title": "AI that Learns and Adapts to Public Needs",
+    "text": [
+      "Our platform helps governments personalize service delivery, optimize resource allocation, and continuously improve system performance. From adaptive interventions to predictive analytics, we empower agencies to respond to evolving citizen behavior, policy priorities, and system inefficiencies — all grounded in real-world data.",
+      "By analyzing high-frequency public service data, we help governments design smarter policies, flag anomalies in real time, and implement reforms with confidence."
+    ]
+  },
+  "sectionDataDriven": {
+    "title": "Data-Driven Models for Public Service Optimization",
+    "text": [
+      "We extract insights from large government datasets to analyze service utilization, design optimal delivery models, and build real-time monitoring systems that support quality public service provision.",
+      "Our system tracks users interactions, service delivery metrics, personnel performance, and resource allocation across hundreds of government facilities. We process millions of transactions yearly, with detailed service delivery information including demographic data and procedural outcomes."
+    ]
+  },
+  "sectionSupport": {
+    "title": "How Causal Foundry Support Goverments",
+    "subtitle": "",
+    "items": [
+      {
+        "title": "Predictions",
+        "text": ["Responsive systems that predict changes in service demand"]
+      },
+      {
+        "title": "Monitoring",
+        "text": ["Automated detection of anomalies in service delivery"]
+      },
+      {
+        "title": "Adaptive Intervention",
+        "text": ["Enhance healthcare worker productivity"]
+      },
+      {
+        "title": "Resource Allocation",
+        "text": ["Optimally assign resources for the highest impact"]
+      }
+    ]
+  },
+  "sectionTransforming": {
+    "title": "Transforming Public Service Delivery with Adaptive AI",
+    "subtitle": "Rooted in national data systems and public sector needs",
+    "items": [
+      {
+        "title": "Capitation Reform Modeling",
+        "text": [
+          "Analyze millions of patient visits and claims to create equitable, data-driven financing formulas for public health systems"
+        ]
+      },
+      {
+        "title": "Real-Time Monitoring Systems",
+        "text": [
+          "Track utilization, prescription patterns, test delivery rates, and operational anomalies across 1,000+ health centers using time-series and cross-sectional analytics"
+        ]
+      },
+      {
+        "title": "Resource Allocation Optimization",
+        "text": [
+          "Dynamically recommend staffing, supplies, or outreach strategies for facilities and frontline workers based on demand forecasts"
+        ]
+      },
+      {
+        "title": "Anomaly Detection & Fraud Monitoring",
+        "text": [
+          "Automatically flag unusual billing, prescription behaviors, or sudden drops in service delivery to support audits and supervision"
+        ]
+      },
+      {
+        "title": "Predictive Service Demand Modeling",
+        "text": [
+          "Forecast where health, education, or social protection needs will spike based on behavioral patterns and historical usage"
+        ]
+      },
+      {
+        "title": "Frontline Worker Augmentation",
+        "text": [
+          "Guide community health workers with daily prioritization tools, AI-generated summaries, and recommendations personalized to household needs"
+        ]
+      },
+      {
+        "title": "Integrated Adaptive Interventions",
+        "text": [
+          "Personalize SMS, chatbot, or app-based nudges to increase attendance, improve treatment adherence, or encourage healt hy behaviors"
+        ]
+      }
+    ]
+  },
+  "cites": [
+    {
+      "text": "“Partnering with Causal Foundry has enabled us to leverage our data to design a more sustainable and efficient healthcare financing model””",
+      "name": "Dr. Regis Hitimana",
+      "position": "Chief Benefits Officer, RSSB"
+    }
+  ]
+}

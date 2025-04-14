@@ -32,6 +32,7 @@ import GovernmentCases from "@/pages/Cases/GovernmentCases.vue";
 import GamingCases from "@/pages/Cases/GamingCases.vue";
 import HealthcareLanding from "@/pages/Cases/HealthcareLanding.vue";
 import EcommerceLanding from "@/pages/Cases/EcommerceLanding.vue";
+import GovernmentLanding from "@/pages/Cases/GovernmentLanding.vue";
 import i18n from "./locales";
 
 library.add(faLinkedin, faXTwitter, faBluesky);
@@ -51,6 +52,7 @@ const routes = [
       { path: "cases/gaming", component: GamingCases },
       { path: "cases/healthcare-landing", component: HealthcareLanding },
       { path: "cases/ecommerce-landing", component: EcommerceLanding },
+      { path: "cases/government-landing", component: GovernmentLanding },
       { path: "privacy", component: PrivacyPolicy },
       { path: "about", component: About },
       { path: "cookies", component: CookiePolicy },
