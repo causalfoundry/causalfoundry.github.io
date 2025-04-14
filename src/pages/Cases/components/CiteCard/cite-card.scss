@@ -2,6 +2,9 @@
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "logo logo"
+    "info content";
 
   border-radius: 16px;
   background: #9a95c5;
@@ -21,10 +24,11 @@
   }
 
   &__header {
-    grid-column: 1 / -1;
+    grid-area: logo;
   }
 
   &__info {
+    grid-area: info;
     font-family: "Open Sans";
     font-size: 20px;
     font-style: normal;
@@ -38,11 +42,16 @@
   }
 
   &__text {
+    grid-area: content;
     font-family: "Open Sans";
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: 42px; /* 150% */
     letter-spacing: 0.28px;
+  }
+
+  &__logo {
+    grid-area: logo;
   }
 }
