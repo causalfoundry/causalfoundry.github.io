@@ -30,7 +30,7 @@
               expandedItems.includes(item.title) ? "−" : "+"
             }}</span>
           </div>
-          <p v-if="expandedItems.includes(item.title)" class="item-text">
+          <p class="item-text">
             {{ item.text }}
           </p>
         </li>

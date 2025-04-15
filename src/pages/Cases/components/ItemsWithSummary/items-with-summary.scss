@@ -116,12 +116,19 @@
         .item-text {
           margin-top: 12px;
           padding-left: 12px;
-          transition: max-height 0.3s ease;
           font-size: 18px;
+
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition: max-height 0.6s ease-in-out, opacity 0.4s ease-in-out;
         }
 
         &.expanded {
-          // Puedes añadir estilos adicionales para el estado expandido si lo deseas
+          .item-text {
+            max-height: 500px;
+            opacity: 1;
+          }
         }
       }
     }
