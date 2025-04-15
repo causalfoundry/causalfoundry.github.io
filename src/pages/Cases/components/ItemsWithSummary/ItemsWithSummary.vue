@@ -26,7 +26,7 @@
         >
           <div class="item-header">
             <strong>{{ item.title }}</strong>
-            <span class="toggle-icon">{{
+            <span v-if="item.text" class="toggle-icon">{{
               expandedItems.includes(item.title) ? "−" : "+"
             }}</span>
           </div>
