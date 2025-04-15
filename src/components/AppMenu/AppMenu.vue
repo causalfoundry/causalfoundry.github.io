@@ -87,9 +87,18 @@ const MENU_ITEMS = [
   {
     titleKey: "cases",
     submenu: [
-      { titleKey: "healthcare", href: `/${currentLang}/cases/healthcare` },
-      { titleKey: "e-commerce", href: `/${currentLang}/cases/e-commerce` },
-      { titleKey: "government", href: `/${currentLang}/cases/government` },
+      {
+        titleKey: "healthcare",
+        href: `/${currentLang}/cases/healthcare-landing`,
+      },
+      {
+        titleKey: "e-commerce",
+        href: `/${currentLang}/cases/ecommerce-landing`,
+      },
+      {
+        titleKey: "government",
+        href: `/${currentLang}/cases/government-landing`,
+      },
       { titleKey: "gaming", href: `/${currentLang}/cases/gaming` },
     ],
   },

@@ -15,21 +15,6 @@
       >
         <div>{{ messages?.common?.cases }}</div>
         <div class="dropdown-menu">
-          <router-link :to="`/${currentLang}/cases/healthcare`">
-            <div class="dropdown-item">
-              {{ messages?.common?.healthcare }}
-            </div>
-          </router-link>
-          <router-link :to="`/${currentLang}/cases/e-commerce`">
-            <div class="dropdown-item">
-              {{ messages?.common?.["e-commerce"] }}
-            </div>
-          </router-link>
-          <router-link :to="`/${currentLang}/cases/government`">
-            <div class="dropdown-item">
-              {{ messages?.common?.["government"] }}
-            </div>
-          </router-link>
           <router-link :to="`/${currentLang}/cases/gaming`">
             <div class="dropdown-item">
               {{ messages?.common?.["gaming"] }}
@@ -37,17 +22,17 @@
           </router-link>
           <router-link :to="`/${currentLang}/cases/healthcare-landing`">
             <div class="dropdown-item">
-              {{ messages?.common?.["healthcare-landing"] }}
+              {{ messages?.common?.["healthcare"] }}
             </div>
           </router-link>
           <router-link :to="`/${currentLang}/cases/ecommerce-landing`">
             <div class="dropdown-item">
-              {{ messages?.common?.["ecommerce-landing"] }}
+              {{ messages?.common?.["e-commerce"] }}
             </div>
           </router-link>
           <router-link :to="`/${currentLang}/cases/government-landing`">
             <div class="dropdown-item">
-              {{ messages?.common?.["government-landing"] }}
+              {{ messages?.common?.["government"] }}
             </div>
           </router-link>
         </div>
