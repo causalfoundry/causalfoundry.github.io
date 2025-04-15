@@ -45,45 +45,31 @@
     "items": [
       {
         "title": "Capitation Reform Modeling",
-        "text": [
-          "Analyze millions of patient visits and claims to create equitable, data-driven financing formulas for public health systems"
-        ]
+        "text": "Analyze millions of patient visits and claims to create equitable, data-driven financing formulas for public health systems"
       },
       {
         "title": "Real-Time Monitoring Systems",
-        "text": [
-          "Track utilization, prescription patterns, test delivery rates, and operational anomalies across 1,000+ health centers using time-series and cross-sectional analytics"
-        ]
+        "text": "Track utilization, prescription patterns, test delivery rates, and operational anomalies across 1,000+ health centers using time-series and cross-sectional analytics"
       },
       {
         "title": "Resource Allocation Optimization",
-        "text": [
-          "Dynamically recommend staffing, supplies, or outreach strategies for facilities and frontline workers based on demand forecasts"
-        ]
+        "text": "Dynamically recommend staffing, supplies, or outreach strategies for facilities and frontline workers based on demand forecasts"
       },
       {
         "title": "Anomaly Detection & Fraud Monitoring",
-        "text": [
-          "Automatically flag unusual billing, prescription behaviors, or sudden drops in service delivery to support audits and supervision"
-        ]
+        "text": "Automatically flag unusual billing, prescription behaviors, or sudden drops in service delivery to support audits and supervision"
       },
       {
         "title": "Predictive Service Demand Modeling",
-        "text": [
-          "Forecast where health, education, or social protection needs will spike based on behavioral patterns and historical usage"
-        ]
+        "text": "Forecast where health, education, or social protection needs will spike based on behavioral patterns and historical usage"
       },
       {
         "title": "Frontline Worker Augmentation",
-        "text": [
-          "Guide community health workers with daily prioritization tools, AI-generated summaries, and recommendations personalized to household needs"
-        ]
+        "text": "Guide community health workers with daily prioritization tools, AI-generated summaries, and recommendations personalized to household needs"
       },
       {
         "title": "Integrated Adaptive Interventions",
-        "text": [
-          "Personalize SMS, chatbot, or app-based nudges to increase attendance, improve treatment adherence, or encourage healt hy behaviors"
-        ]
+        "text": "Personalize SMS, chatbot, or app-based nudges to increase attendance, improve treatment adherence, or encourage healt hy behaviors"
       }
     ]
   },

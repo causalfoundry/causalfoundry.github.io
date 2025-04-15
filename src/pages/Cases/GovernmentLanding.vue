@@ -39,9 +39,7 @@
         <ItemsWithSummary
           :title="messages?.sectionTransforming?.title"
           :subtitle="messages?.sectionTransforming?.subtitle"
-          :items="
-            messages?.sectionTransforming?.items.map((item) => item.title)
-          "
+          :items="messages?.sectionTransforming?.items"
         />
 
         <SideTextSection

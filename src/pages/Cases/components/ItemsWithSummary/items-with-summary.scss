@@ -71,14 +71,58 @@
     letter-spacing: 0.22px;
 
     ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
-      margin: 0;
 
-      & > li {
+      li {
+        margin-bottom: 10px;
         border-top: 1px solid #fff;
-        padding-top: 10px;
+
+        cursor: pointer;
         margin-bottom: 32px;
+
+        &:hover {
+          border-image: linear-gradient(
+              145deg,
+              #fff625 -13.26%,
+              #cbea7f 15.7%,
+              #a7e2be 55.24%,
+              #98ded9 93.66%
+            )
+            1;
+        }
+
+        &.expanded {
+          border-image: linear-gradient(
+              145deg,
+              #fff625 -13.26%,
+              #cbea7f 15.7%,
+              #a7e2be 55.24%,
+              #98ded9 93.66%
+            )
+            1;
+        }
+
+        .item-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .toggle-icon {
+          font-size: 32px;
+        }
+
+        .item-text {
+          margin-top: 12px;
+          padding-left: 12px;
+          transition: max-height 0.3s ease;
+          font-size: 18px;
+        }
+
+        &.expanded {
+          // Puedes añadir estilos adicionales para el estado expandido si lo deseas
+        }
       }
     }
   }

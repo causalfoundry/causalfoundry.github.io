@@ -19,13 +19,34 @@
     "title": "Transforming Patient Engagement with Adaptive AI",
     "subtitle": "Based on individual patient clinical information, behaviors and predictions",
     "items": [
-      "Treatment adherence",
-      "Appointment attendance",
-      "Sustained engagement",
-      "Health risk predictions",
-      "Healthy behaviors",
-      "Recommendation systems",
-      "Loyalty to care programs"
+      {
+        "title": "Treatment adherence",
+        "text": ""
+      },
+      {
+        "title": "Appointment attendance",
+        "text": ""
+      },
+      {
+        "title": "Sustained engagement",
+        "text": ""
+      },
+      {
+        "title": "Health risk predictions",
+        "text": ""
+      },
+      {
+        "title": "Healthy behaviors",
+        "text": ""
+      },
+      {
+        "title": "Recommendation systems",
+        "text": ""
+      },
+      {
+        "title": "Loyalty to care programs",
+        "text": ""
+      }
     ]
   },
   "sectionEfficiency": {

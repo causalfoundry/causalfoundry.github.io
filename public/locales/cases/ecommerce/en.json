@@ -19,13 +19,34 @@
     "title": "Transforming Customer Engagement with Adaptive AI",
     "subtitle": "Powered by AI insights on behavior, preferences, and customer-level predictions",
     "items": [
-      "Personalized product recommendations",
-      "Promotion targeting and A/B testing",
-      "In-app engagement and retentiont",
-      "Customer lifecycle value prediction",
-      "Churn prevention and loyalty triggers",
-      "Cart abandonment recovery",
-      "Context-aware messaging"
+      {
+        "title": "Personalized product recommendations",
+        "text": ""
+      },
+      {
+        "title": "Promotion targeting and A/B testing",
+        "text": ""
+      },
+      {
+        "title": "In-app engagement and retention",
+        "text": ""
+      },
+      {
+        "title": "Customer lifecycle value prediction",
+        "text": ""
+      },
+      {
+        "title": "Churn prevention and loyalty triggers",
+        "text": ""
+      },
+      {
+        "title": "Cart abandonment recovery",
+        "text": ""
+      },
+      {
+        "title": "Context-aware messaging",
+        "text": ""
+      }
     ]
   },
   "sectionMarketing": {
@@ -55,7 +76,7 @@
   },
   "cites": [
     {
-      "text": "“We are excited to innovate with Causal Foundry, using AI to improve medicine quality, availability, and affordability across Southeast Asia making a positive impact on the lives of millions””",
+      "text": "“We are excited to innovate with Causal Foundry, using AI to improve medicine quality, availability, and affordability across Southeast Asia making a positive impact on the lives of millions”",
       "name": "Farouk Meralli",
       "position": "Founder & CEO at SwipeRx"
     }
