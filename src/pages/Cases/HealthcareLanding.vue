@@ -1,13 +1,13 @@
 <template>
-  <div class="cases healthcare-landing">
+  <div class="cases cases-landing">
     <AppHeader
       current-page="cases"
-      class="healthcare-landing__header healtchare__header"
+      class="cases-landing__header healtchare__header"
     >
       <AppMenu />
     </AppHeader>
 
-    <div class="healthcare-landing__container">
+    <div class="cases-landing__container">
       <PageHeader
         description=""
         :showButton="true"
@@ -23,13 +23,13 @@
         </template>
 
         <template #subtitle>
-          <div class="healthcare-landing__subtitle">
+          <div class="cases-landing__subtitle">
             {{ messages?.header?.subtitle }}
           </div>
         </template>
       </PageHeader>
 
-      <div class="healthcare-landing__content">
+      <div class="cases-landing__content">
         <SideTextSection
           :title="messages?.sectionAdapts?.title"
           :text="messages?.sectionAdapts?.text"
@@ -60,12 +60,12 @@
           :highlightedIndices="[]"
         />
 
-        <div class="healthcare-landing__cards">
-          <div class="healthcare-landing__cards__title">
+        <div class="cases-landing__cards">
+          <div class="cases-landing__cards__title">
             <AppTitle>
               {{ messages?.sectionInsights?.title }}
             </AppTitle>
-            <div class="healthcare-landing__cards__subtitle">
+            <div class="cases-landing__cards__subtitle">
               {{
                 messages?.sectionInsights?.subtitle
                   .split(" ")
@@ -82,7 +82,7 @@
             </div>
           </div>
 
-          <div class="healthcare-landing__cards-items">
+          <div class="cases-landing__cards-items">
             <CultureItem
               v-for="(item, index) in messages?.sectionInsights?.items"
               :key="index"
@@ -92,7 +92,7 @@
           </div>
         </div>
 
-        <div class="healthcare-landing__section">
+        <div class="cases-landing__section">
           <CiteCard
             :text="messages?.cites?.[0]?.text"
             :who="messages?.cites?.[0]?.name"
@@ -101,7 +101,7 @@
           />
         </div>
 
-        <div class="healthcare-landing__section">
+        <div class="cases-landing__section">
           <UseCases :items="messages?.common?.useCases" />
         </div>
 
@@ -161,7 +161,7 @@ import CiteCard from "./components/CiteCard/CiteCard.vue";
 import UseCases from "./components/UseCases";
 
 import "./cases.scss";
-import "./healthcare-landing.scss";
+import "./cases-landing.scss";
 
 const { currentTranslations: messages } = useTranslations("cases/healthcare");
 </script>

@@ -1,13 +1,13 @@
 <template>
-  <div class="cases ecommerce-landing">
+  <div class="cases cases-landing">
     <AppHeader
       current-page="cases"
-      class="ecommerce-landing__header ecommerce__header"
+      class="cases-landing__header ecommerce__header"
     >
       <AppMenu />
     </AppHeader>
 
-    <div class="ecommerce-landing__container">
+    <div class="cases-landing__container">
       <PageHeader
         description=""
         :showButton="true"
@@ -23,13 +23,13 @@
         </template>
 
         <template #subtitle>
-          <div class="ecommerce-landing__subtitle">
+          <div class="cases-landing__subtitle">
             {{ messages?.header?.subtitle }}
           </div>
         </template>
       </PageHeader>
 
-      <div class="ecommerce-landing__content">
+      <div class="cases-landing__content">
         <SideTextSection
           :title="messages?.sectionDrivesCustomer?.title"
           :text="messages?.sectionDrivesCustomer?.text"
@@ -66,7 +66,7 @@
           :subtitle="messages?.sectionInsights?.subtitle || ''"
         />
 
-        <div class="ecommerce-landing__section">
+        <div class="cases-landing__section">
           <CiteCard
             :text="messages?.cites?.[0]?.text"
             :who="messages?.cites?.[0]?.name"
@@ -77,7 +77,7 @@
           />
         </div>
 
-        <div class="ecommerce-landing__section">
+        <div class="cases-landing__section">
           <UseCases :items="messages?.common?.useCases" />
         </div>
 
@@ -137,7 +137,7 @@ import CiteCard from "./components/CiteCard/CiteCard.vue";
 import UseCases from "./components/UseCases";
 
 import "./cases.scss";
-import "./ecommerce-landing.scss";
+import "./cases-landing.scss";
 
 const { currentTranslations: messages } = useTranslations("cases/ecommerce");
 </script>

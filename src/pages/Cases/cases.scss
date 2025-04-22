@@ -110,6 +110,20 @@
     }
   }
 
+  &__government_header {
+    height: 800px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+      url("/images/cases/header_government.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -100px 0;
+
+    @include respond("mobile") {
+      background-image: unset;
+      height: unset;
+    }
+  }
+
   .m2m-dashboard img {
     @include respond("mobile") {
       width: 100%;
