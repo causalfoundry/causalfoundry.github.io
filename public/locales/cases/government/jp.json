@@ -1,97 +1,97 @@
 {
   "header": {
-    "title": "Public Service Transformation ",
-    "subtitle": "Leveraging Machine Learning for Societal Impact"
+    "title": "公共サービスをAIでアップデート",
+    "subtitle": "機械学習の力で、社会課題にインパクトを。"
   },
   "sectionLearns": {
-    "title": "AI that Learns and Adapts to Public Needs",
+    "title": "変化する市民ニーズに適応するAI",
     "text": [
-      "Our platform helps governments personalize service delivery, optimize resource allocation, and continuously improve system performance. From adaptive interventions to predictive analytics, we empower agencies to respond to evolving citizen behavior, policy priorities, and system inefficiencies — all grounded in real-world data.",
-      "By analyzing high-frequency public service data, we help governments design smarter policies, flag anomalies in real time, and implement reforms with confidence."
+      "当社のプラットフォームは、公共サービスの提供をパーソナライズ、リソース配分を最適化し、システム全体のパフォーマンスを継続的に向上させます。市民の行動、政策の優先度、運用上の課題といった変化に応じて、適応的な介入や予測分析を通じて、より的確な意思決定を支援します。",
+      "高頻度で収集される公共データを分析することで、よりスマートな政策設計やリアルタイムの異常検知を可能にし、改革の実行力を高めます。"
     ]
   },
   "sectionDataDriven": {
-    "title": "Data-Driven Models for Public Service Optimization",
+    "title": "データを活用した公共サービスの最適化",
     "text": [
-      "We extract insights from large government datasets to analyze service utilization, design optimal delivery models, and build real-time monitoring systems that support quality public service provision.",
-      "Our system tracks users interactions, service delivery metrics, personnel performance, and resource allocation across hundreds of government facilities. We process millions of transactions yearly, with detailed service delivery information including demographic data and procedural outcomes."
+      "Causal Foundryは、政府が保有する膨大なデータから有用なインサイトを抽出。サービス利用状況の可視化、最適な提供モデルの設計、リアルタイムモニタリングの構築を支援します。",
+      "当社のシステムは、数百の公共機関にわたるユーザー行動、サービス提供指標、職員のパフォーマンス、リソース配分を追跡。年間数百万件の取引データを処理し、人口統計や提供結果も含めた詳細な情報を分析します。"
     ]
   },
   "sectionSupport": {
-    "title": "How Causal Foundry Support Goverments",
+    "title": "Causal Foundryによる行政支援",
     "subtitle": "",
     "items": [
       {
-        "title": "Predictions",
-        "text": ["Responsive systems that predict changes in service demand"]
+        "title": "需要予測",
+        "text": ["サービス需要の変化を先読みし、柔軟に対応するシステムを構築"]
       },
       {
-        "title": "Monitoring",
-        "text": ["Automated detection of anomalies in service delivery"]
+        "title": "監視",
+        "text": ["サービス提供の異常を自動検知し、迅速な対応を可能に"]
       },
       {
-        "title": "Adaptive Intervention",
-        "text": ["Enhance healthcare worker productivity"]
+        "title": "適応的な介入支援",
+        "text": ["医療・福祉職員の生産性向上をサポート"]
       },
       {
-        "title": "Resource Allocation",
-        "text": ["Optimally assign resources for the highest impact"]
+        "title": "リソース配分の最適化",
+        "text": ["最大の効果を得られるよう、人的・物的リソースを賢く配分"]
       }
     ]
   },
   "sectionTransforming": {
-    "title": "Transforming Public Service Delivery with Adaptive AI",
-    "subtitle": "Rooted in national data systems and public sector needs",
+    "title": "公共サービスの質と効率を高める、適応型AIの力",
+    "subtitle": "国家レベルのデータ基盤と現場のニーズに根ざした実装。",
     "items": [
       {
-        "title": "Capitation Reform Modeling",
+        "title": "人頭払い制度（Capitation）の改革モデル",
         "text": [
-          "Analyze millions of patient visits and claims to create equitable, data-driven financing formulas for public health systems"
+          "何百万件もの患者訪問と請求データを分析し、公平でデータ駆動型の医療財政モデルを設計"
         ]
       },
       {
-        "title": "Real-Time Monitoring Systems",
+        "title": "リアルタイム監視システム",
         "text": [
-          "Track utilization, prescription patterns, test delivery rates, and operational anomalies across 1,000+ health centers using time-series and cross-sectional analytics"
+          "1,000を超える医療機関で、サービス利用状況、処方傾向、検査の提供状況、運用上の異常を時系列・横断的に追跡"
         ]
       },
       {
-        "title": "Resource Allocation Optimization",
+        "title": "リソース配分の最適化",
         "text": [
-          "Dynamically recommend staffing, supplies, or outreach strategies for facilities and frontline workers based on demand forecasts"
+          "需要予測に基づいて、施設や現場スタッフへの人員・物資・アウトリーチ戦略を提案"
         ]
       },
       {
-        "title": "Anomaly Detection & Fraud Monitoring",
+        "title": "異常検知と不正監視",
         "text": [
-          "Automatically flag unusual billing, prescription behaviors, or sudden drops in service delivery to support audits and supervision"
+          "請求・処方・利用頻度の異常を自動検出し、監査や改善アクションを支援"
         ]
       },
       {
-        "title": "Predictive Service Demand Modeling",
+        "title": "サービス需要の予測モデリング",
         "text": [
-          "Forecast where health, education, or social protection needs will spike based on behavioral patterns and historical usage"
+          "医療、教育、社会保障などのニーズが急増するエリアを行動パターンや履歴から予測"
         ]
       },
       {
-        "title": "Frontline Worker Augmentation",
+        "title": "現場スタッフ支援",
         "text": [
-          "Guide community health workers with daily prioritization tools, AI-generated summaries, and recommendations personalized to household needs"
+          "コミュニティヘルスワーカーに対して、日々の優先順位付け、AIによる要約、家庭ごとの推奨アクションを提示"
         ]
       },
       {
-        "title": "Integrated Adaptive Interventions",
+        "title": "一人ひとりに最適化された介入",
         "text": [
-          "Personalize SMS, chatbot, or app-based nudges to increase attendance, improve treatment adherence, or encourage healt hy behaviors"
+          " SMS、チャットボット、アプリ通知などのパーソナライズを通じて、来院率向上、治療継続、健康行動の促進を実現 "
         ]
       }
     ]
   },
   "cites": [
     {
-      "text": "“Partnering with Causal Foundry has enabled us to leverage our data to design a more sustainable and efficient healthcare financing model””",
-      "name": "Dr. Regis Hitimana",
-      "position": "Chief Benefits Officer, RSSB"
+      "text": "“Causal Foundryとの提携により、データを活用して、より持続可能で効率的な医療財政モデルを設計できるようになりました。””",
+      "name": "レジス・ヒティマナ（Regis Hitimana）博士",
+      "position": "ルワンダ社会保障庁（RSSB） 給付部門最高責任者（Chief Benefits Officer）"
     }
   ]
 }
