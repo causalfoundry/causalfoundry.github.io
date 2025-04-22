@@ -109,7 +109,6 @@
 import { useTranslations } from "@/composables/useTranslations";
 
 import Quote from "./components/Quote";
-import SuccessCase from "./components/SuccessCase";
 import TextImage from "./components/TextImage";
 import Image from "./components/Image";
 

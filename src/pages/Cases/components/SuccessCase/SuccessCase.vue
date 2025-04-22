@@ -1,5 +1,5 @@
 <template>
-  <div class="success-case" :class="className">
+  <div class="success-case" :class="className" :id="id">
     <header>{{ title }}</header>
     <slot></slot>
   </div>
@@ -23,6 +23,10 @@ const props = defineProps({
     default: 0,
   },
   className: {
+    type: String,
+    required: true,
+  },
+  id: {
     type: String,
     required: true,
   },

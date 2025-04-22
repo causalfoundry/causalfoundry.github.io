@@ -21,7 +21,7 @@
       </template>
     </PageHeader>
 
-    <SuccessCase :title="messages?.cases?.swiperx?.title">
+    <SuccessCase :title="messages?.cases?.swiperx?.title" id="swiperx">
       <Logos>
         <template #first>
           <img :src="`/images/cases/cf-logo.png`" />
@@ -70,7 +70,7 @@
       </div>
     </SuccessCase>
 
-    <SuccessCase :title="messages?.cases?.momentum?.title">
+    <SuccessCase :title="messages?.cases?.momentum?.title" id="momentum">
       <Logos>
         <template #first>
           <img :src="`/images/cases/cf-logo.png`" />
