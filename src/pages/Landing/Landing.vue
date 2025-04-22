@@ -93,13 +93,6 @@
         </div>
 
         <div class="small-title">
-          <AppTitle>{{ messages?.landing?.titles?.elearning }}</AppTitle>
-        </div>
-        <div class="small-paragraph">
-          <BreakableText :text="messages?.landing?.elearning" />
-        </div>
-
-        <div class="small-title">
           <AppTitle>{{ messages?.landing?.titles?.videogames }}</AppTitle>
         </div>
         <div class="small-paragraph">
