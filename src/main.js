@@ -26,13 +26,13 @@ import {
   faLinkedin,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import HealthcareCases from "@/pages/Cases/HealthcareCases.vue";
-import EcommerceCases from "@/pages/Cases/EcommerceCases.vue";
-import GovernmentCases from "@/pages/Cases/GovernmentCases.vue";
-import GamingCases from "@/pages/Cases/GamingCases.vue";
-import HealthcareLanding from "@/pages/Cases/HealthcareLanding.vue";
-import EcommerceLanding from "@/pages/Cases/EcommerceLanding.vue";
-import GovernmentLanding from "@/pages/Cases/GovernmentLanding.vue";
+import HealthcareCases from "@/pages/Cases/healthcare/HealthcareCases.vue";
+import EcommerceCases from "@/pages/Cases/ecommerce/EcommerceCases.vue";
+import GovernmentCases from "@/pages/Cases/government/GovernmentCases.vue";
+import GamingCases from "@/pages/Cases/gaming/GamingCases.vue";
+import HealthcareLanding from "@/pages/Cases/healthcare/HealthcareLanding.vue";
+import EcommerceLanding from "@/pages/Cases/ecommerce/EcommerceLanding.vue";
+import GovernmentLanding from "@/pages/Cases/government/GovernmentLanding.vue";
 import i18n from "./locales";
 
 library.add(faLinkedin, faXTwitter, faBluesky);

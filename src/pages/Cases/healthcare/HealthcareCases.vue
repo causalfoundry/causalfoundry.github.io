@@ -96,11 +96,11 @@
     <AppFooter />
 
     <img
-      src="../../assets/gradient-bottom-yellow.png"
+      src="/src/assets/gradient-bottom-yellow.png"
       class="app__gradient-bottom-yellow"
     />
     <img
-      src="../../assets/gradient-bottom-blue.png"
+      src="/src/assets/gradient-bottom-blue.png"
       class="app__gradient-bottom-blue"
     />
   </div>
@@ -109,24 +109,21 @@
 <script setup lang="ts">
 import { useTranslations } from "@/composables/useTranslations";
 
-import Quote from "./components/Quote";
-import SuccessCase from "./components/SuccessCase";
-import TextImage from "./components/TextImage";
-import Image from "./components/Image";
-
 import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
 import AppMenu from "@/components/AppMenu";
-
 import AppTitle from "@/components/AppTitle";
 import ShortDescriptionList from "@/components/ShortDescriptionList";
-
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
 
-import Logos from "./components/Logos";
+import Logos from "../components/Logos";
+import Quote from "../components/Quote";
+import SuccessCase from "../components/SuccessCase";
+import TextImage from "../components/TextImage";
+import Image from "../components/Image";
 
-import "./cases.scss";
+import "../cases.scss";
 
 const { currentTranslations: messages } = useTranslations("cases");
 </script>

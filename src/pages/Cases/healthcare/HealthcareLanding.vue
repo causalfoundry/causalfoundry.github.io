@@ -11,8 +11,8 @@
       <PageHeader
         description=""
         :showButton="true"
-        className="cases__government_header"
-        image="/images/cases/header_government.png"
+        className="cases__healthcare_header"
+        image="/images/cases/header_healthcare.png"
       >
         <template #title>
           <div>
@@ -31,8 +31,8 @@
 
       <div class="cases-landing__content">
         <SideTextSection
-          :title="messages?.sectionLearns?.title"
-          :text="messages?.sectionLearns?.text.join('\n')"
+          :title="messages?.sectionAdapts?.title"
+          :text="messages?.sectionAdapts?.text"
           :highlightedIndices="[]"
         />
 
@@ -43,21 +43,48 @@
         />
 
         <SideTextSection
-          :title="messages?.sectionDataDriven?.title"
-          :text="messages?.sectionDataDriven?.text"
+          :title="messages?.sectionEmpowering?.title"
+          :text="messages?.sectionEmpowering?.text"
+          :highlightedIndices="[]"
+        />
+
+        <Matrix
+          :title="messages?.sectionEfficiency?.title || ''"
+          :items="messages?.sectionEfficiency?.items || []"
+          :subtitle="messages?.sectionEfficiency?.subtitle || ''"
+        />
+
+        <SideTextSection
+          :title="messages?.sectionOptimizing?.title"
+          :text="messages?.sectionOptimizing?.text"
           :highlightedIndices="[]"
         />
 
         <div class="cases-landing__cards">
           <div class="cases-landing__cards__title">
             <AppTitle>
-              {{ messages?.sectionSupport?.title }}
+              {{ messages?.sectionInsights?.title }}
             </AppTitle>
+            <div class="cases-landing__cards__subtitle">
+              {{
+                messages?.sectionInsights?.subtitle
+                  .split(" ")
+                  .slice(0, 5)
+                  .join(" ")
+              }}
+              <br />
+              {{
+                messages?.sectionInsights?.subtitle
+                  .split(" ")
+                  .slice(5)
+                  .join(" ")
+              }}
+            </div>
           </div>
 
           <div class="cases-landing__cards-items">
             <CultureItem
-              v-for="(item, index) in messages?.sectionSupport?.items"
+              v-for="(item, index) in messages?.sectionInsights?.items"
               :key="index"
               :title="item.title"
               :text="item.text"
@@ -70,7 +97,7 @@
             :text="messages?.cites?.[0]?.text"
             :who="messages?.cites?.[0]?.name"
             :org="messages?.cites?.[0]?.position"
-            logo="/images/cases/rssb/logo.png"
+            logo="/images/cases/m2m/logo.png"
           />
         </div>
 
@@ -90,11 +117,11 @@
         <AppFooter />
 
         <img
-          src="../../assets/gradient-bottom-yellow.png"
+          src="/src/assets/gradient-bottom-yellow.png"
           class="app__gradient-bottom-yellow"
         />
         <img
-          src="../../assets/gradient-bottom-blue.png"
+          src="/src/assets/gradient-bottom-blue.png"
           class="app__gradient-bottom-blue"
         />
       </div>
@@ -104,11 +131,6 @@
 
 <script setup lang="ts">
 import { useTranslations } from "@/composables/useTranslations";
-
-import Quote from "./components/Quote";
-import SuccessCase from "./components/SuccessCase";
-import TextImage from "./components/TextImage";
-import Image from "./components/Image";
 
 import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
@@ -120,21 +142,25 @@ import ShortDescriptionList from "@/components/ShortDescriptionList";
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
 import CultureItem from "@/components/CultureItem/CultureItem";
-
-import Logos from "./components/Logos";
-
-import SideTextSection from "./components/SideTextSection";
-import PrecisionPlayerTargeting from "./components/PrecisionPlayerTargeting";
-import Matrix from "./components/Matrix";
-import CollapsibleItems from "./components/CollapsibleItems";
-import GameDistribution from "./components/GameDistribution";
 import UpButton from "@/components/UpButton";
-import ItemsWithSummary from "./components/ItemsWithSummary";
-import CiteCard from "./components/CiteCard/CiteCard.vue";
-import UseCases from "./components/UseCases";
 
-import "./cases.scss";
-import "./cases-landing.scss";
+import Logos from "../components/Logos";
 
-const { currentTranslations: messages } = useTranslations("cases/government");
+import SideTextSection from "../components/SideTextSection";
+import PrecisionPlayerTargeting from "../components/PrecisionPlayerTargeting";
+import Matrix from "../components/Matrix";
+import CollapsibleItems from "../components/CollapsibleItems";
+import GameDistribution from "../components/GameDistribution";
+import ItemsWithSummary from "../components/ItemsWithSummary";
+import CiteCard from "../components/CiteCard/CiteCard.vue";
+import UseCases from "../components/UseCases";
+import Quote from "../components/Quote";
+import SuccessCase from "../components/SuccessCase";
+import TextImage from "../components/TextImage";
+import Image from "../components/Image";
+
+import "../cases.scss";
+import "../cases-landing.scss";
+
+const { currentTranslations: messages } = useTranslations("cases/healthcare");
 </script>
