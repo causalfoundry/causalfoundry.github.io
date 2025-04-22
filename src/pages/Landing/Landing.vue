@@ -75,7 +75,10 @@
         </div>
         <div class="small-paragraph">
           <BreakableText :text="messages?.landing?.healthcare" />
-          <Link to="/cases/healthcare" :text="messages?.common?.exploreText" />
+          <Link
+            to="/cases/healthcare-landing"
+            :text="messages?.common?.exploreText"
+          />
         </div>
 
         <div class="small-title">
@@ -83,7 +86,10 @@
         </div>
         <div class="small-paragraph">
           <BreakableText :text="messages?.landing?.ecommerce" />
-          <Link to="/cases/e-commerce" :text="messages?.common?.exploreText" />
+          <Link
+            to="/cases/ecommerce-landing"
+            :text="messages?.common?.exploreText"
+          />
         </div>
 
         <div class="small-title">
@@ -98,6 +104,7 @@
         </div>
         <div class="small-paragraph">
           <BreakableText :text="messages?.landing?.videogames" />
+          <Link to="/cases/gaming" :text="messages?.common?.exploreText" />
         </div>
 
         <div class="gradient-blue">
