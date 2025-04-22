@@ -38,5 +38,9 @@
     font-weight: 300;
     line-height: 33px; /* 150% */
     letter-spacing: 0.22px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }

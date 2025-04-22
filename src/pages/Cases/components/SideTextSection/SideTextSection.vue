@@ -22,7 +22,12 @@
       </div>
     </div>
     <div class="side-text-section__text">
-      <p>{{ text }}</p>
+      <template v-if="Array.isArray(text)">
+        <p v-for="(paragraph, index) in text" :key="`paragraph-${index}`">
+          {{ paragraph }}
+        </p>
+      </template>
+      <p v-else>{{ text }}</p>
     </div>
   </div>
 </template>
