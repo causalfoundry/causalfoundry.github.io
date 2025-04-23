@@ -126,7 +126,6 @@ import UpButton from "@/components/UpButton";
 import Logos from "../components/Logos";
 
 import SideTextSection from "../components/SideTextSection";
-import PrecisionPlayerTargeting from "../components/PrecisionPlayerTargeting";
 import Matrix from "../components/Matrix";
 import CollapsibleItems from "../components/CollapsibleItems";
 import GameDistribution from "../components/GameDistribution";

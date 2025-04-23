@@ -34,7 +34,11 @@
           :text="messages?.sectionExperiences?.text"
         />
 
-        <PrecisionPlayerTargeting />
+        <ItemsWithSummary
+          :title="messages?.precisionPlayerTargeting?.title"
+          :subtitle="messages?.precisionPlayerTargeting?.subtitle"
+          :items="messages?.precisionPlayerTargeting?.items"
+        />
 
         <SideTextSection
           :title="messages?.adaptiveGaming?.title"
@@ -117,11 +121,11 @@ import CultureItem from "@/components/CultureItem/CultureItem";
 import Logos from "../components/Logos";
 
 import SideTextSection from "../components/SideTextSection";
-import PrecisionPlayerTargeting from "../components/PrecisionPlayerTargeting";
 import Matrix from "../components/Matrix";
 import CollapsibleItems from "../components/CollapsibleItems";
 import GameDistribution from "../components/GameDistribution";
 import UpButton from "@/components/UpButton";
+import ItemsWithSummary from "../components/ItemsWithSummary";
 
 import "../cases.scss";
 import "./gaming.scss";

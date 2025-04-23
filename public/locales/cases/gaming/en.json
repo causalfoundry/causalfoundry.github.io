@@ -37,13 +37,34 @@
     "title": "Precision Player Targeting for Boosted Engagement & Retention",
     "subtitle": "Based on individual player behavioral profile observed and predicted",
     "items": [
-      "Lifecycle & engagement",
-      "Playing skills & patterns",
-      "Reengagement potential",
-      "Churn Risk",
-      "Social Profile",
-      "Reengagement potential",
-      "Spending potential (conversion, LTV) and patterns"
+      {
+        "title": "Lifecycle & engagement",
+        "text": ""
+      },
+      {
+        "title": "Playing skills & patterns",
+        "text": ""
+      },
+      {
+        "title": "Reengagement potential",
+        "text": ""
+      },
+      {
+        "title": "Churn Risk",
+        "text": ""
+      },
+      {
+        "title": "Social Profile",
+        "text": ""
+      },
+      {
+        "title": "Reengagement potential",
+        "text": ""
+      },
+      {
+        "title": "Spending potential (conversion, LTV) and patterns",
+        "text": ""
+      }
     ]
   },
   "cards": [
@@ -55,7 +76,7 @@
     {
       "title": "Cooperative Play",
       "text": [
-        "Pair players who complement each other’s abilities and engagement style."
+        "Pair players who complement each other's abilities and engagement style."
       ],
       "icon": "/images/cases/gaming/cooperative_play.png"
     },
