@@ -29,10 +29,12 @@
       </PageHeader>
 
       <div class="gaming__content">
-        <SideTextSection
-          :title="messages?.sectionExperiences?.title"
-          :text="messages?.sectionExperiences?.text"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.sectionExperiences?.title"
+            :text="messages?.sectionExperiences?.text"
+          />
+        </div>
 
         <ItemsWithSummary
           :title="messages?.precisionPlayerTargeting?.title"
@@ -40,11 +42,15 @@
           :items="messages?.precisionPlayerTargeting?.items"
         />
 
-        <SideTextSection
-          :title="messages?.adaptiveGaming?.title"
-          :text="messages?.adaptiveGaming?.text"
-          :highlightedIndices="messages?.adaptiveGaming?.highlightedTitleItems"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.adaptiveGaming?.title"
+            :text="messages?.adaptiveGaming?.text"
+            :highlightedIndices="
+              messages?.adaptiveGaming?.highlightedTitleItems
+            "
+          />
+        </div>
 
         <div class="gaming__cards">
           <CultureItem
@@ -56,25 +62,31 @@
           />
         </div>
 
-        <SideTextSection
-          :title="messages?.smartMonetization?.title"
-          :text="messages?.smartMonetization?.text"
-          :highlightedIndices="
-            messages?.smartMonetization?.highlightedTitleItems
-          "
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.smartMonetization?.title"
+            :text="messages?.smartMonetization?.text"
+            :highlightedIndices="
+              messages?.smartMonetization?.highlightedTitleItems
+            "
+          />
+        </div>
 
         <Matrix
           :title="messages?.personalizedContent?.title || ''"
           :items="messages?.personalizedContent?.items || []"
         />
 
-        <CollapsibleItems
-          :items="messages?.items?.values || []"
-          :title="messages?.items?.title || ''"
-        />
+        <div class="cases-landing__section">
+          <CollapsibleItems
+            :items="messages?.items?.values || []"
+            :title="messages?.items?.title || ''"
+          />
+        </div>
 
-        <GameDistribution />
+        <div class="cases-landing__section">
+          <GameDistribution />
+        </div>
 
         <UpButton />
 
