@@ -8,6 +8,8 @@
 
     @include respond("mobile") {
       width: unset;
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 
@@ -54,6 +56,11 @@
       font-weight: 400;
       line-height: 43.2px; /* 120% */
       letter-spacing: 0.36px;
+
+      @include respond("mobile") {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
     }
 
     & > :first-child {

@@ -30,11 +30,13 @@
       </PageHeader>
 
       <div class="cases-landing__content">
-        <SideTextSection
-          :title="messages?.sectionAdapts?.title"
-          :text="messages?.sectionAdapts?.text"
-          :highlightedIndices="[]"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.sectionAdapts?.title"
+            :text="messages?.sectionAdapts?.text"
+            :highlightedIndices="[]"
+          />
+        </div>
 
         <ItemsWithSummary
           :title="messages?.sectionTransforming?.title"
@@ -42,11 +44,13 @@
           :items="messages?.sectionTransforming?.items"
         />
 
-        <SideTextSection
-          :title="messages?.sectionEmpowering?.title"
-          :text="messages?.sectionEmpowering?.text"
-          :highlightedIndices="[]"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.sectionEmpowering?.title"
+            :text="messages?.sectionEmpowering?.text"
+            :highlightedIndices="[]"
+          />
+        </div>
 
         <Matrix
           :title="messages?.sectionEfficiency?.title || ''"
@@ -54,13 +58,15 @@
           :subtitle="messages?.sectionEfficiency?.subtitle || ''"
         />
 
-        <SideTextSection
-          :title="messages?.sectionOptimizing?.title"
-          :text="messages?.sectionOptimizing?.text"
-          :highlightedIndices="[]"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.sectionOptimizing?.title"
+            :text="messages?.sectionOptimizing?.text"
+            :highlightedIndices="[]"
+          />
+        </div>
 
-        <div class="cases-landing__cards">
+        <div class="cases-landing__section">
           <div class="cases-landing__cards__title">
             <AppTitle>
               {{ messages?.sectionInsights?.title }}
