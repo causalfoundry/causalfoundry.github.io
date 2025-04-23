@@ -42,7 +42,7 @@
   }
 
   @include respond("mobile") {
-    width: 90%;
+    width: 80%;
     padding-left: $app-side-padding-mobile;
     padding-right: $app-side-padding-mobile;
   }
