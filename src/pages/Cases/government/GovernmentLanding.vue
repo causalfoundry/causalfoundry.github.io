@@ -32,11 +32,13 @@
       </PageHeader>
 
       <div class="cases-landing__content">
-        <SideTextSection
-          :title="messages?.sectionLearns?.title"
-          :text="messages?.sectionLearns?.text.join('\n')"
-          :highlightedIndices="[]"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.sectionLearns?.title"
+            :text="messages?.sectionLearns?.text.join('\n')"
+            :highlightedIndices="[]"
+          />
+        </div>
 
         <ItemsWithSummary
           :title="messages?.sectionTransforming?.title"
@@ -44,11 +46,13 @@
           :items="messages?.sectionTransforming?.items"
         />
 
-        <SideTextSection
-          :title="messages?.sectionDataDriven?.title"
-          :text="messages?.sectionDataDriven?.text"
-          :highlightedIndices="[]"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.sectionDataDriven?.title"
+            :text="messages?.sectionDataDriven?.text"
+            :highlightedIndices="[]"
+          />
+        </div>
 
         <div class="cases-landing__cards">
           <div class="cases-landing__cards__title">

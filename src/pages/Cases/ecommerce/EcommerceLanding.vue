@@ -30,11 +30,13 @@
       </PageHeader>
 
       <div class="cases-landing__content">
-        <SideTextSection
-          :title="messages?.sectionDrivesCustomer?.title"
-          :text="messages?.sectionDrivesCustomer?.text"
-          :highlightedIndices="[]"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.sectionDrivesCustomer?.title"
+            :text="messages?.sectionDrivesCustomer?.text"
+            :highlightedIndices="[]"
+          />
+        </div>
 
         <ItemsWithSummary
           :title="messages?.sectionTransforming?.title"
@@ -42,11 +44,13 @@
           :items="messages?.sectionTransforming?.items"
         />
 
-        <SideTextSection
-          :title="messages?.sectionTeamFocus?.title"
-          :text="messages?.sectionTeamFocus?.text"
-          :highlightedIndices="[]"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.sectionTeamFocus?.title"
+            :text="messages?.sectionTeamFocus?.text"
+            :highlightedIndices="[]"
+          />
+        </div>
 
         <Matrix
           :title="messages?.sectionMarketing?.title || ''"
@@ -54,11 +58,13 @@
           :subtitle="messages?.sectionMarketing?.subtitle || ''"
         />
 
-        <SideTextSection
-          :title="messages?.sectionForecasting?.title"
-          :text="messages?.sectionForecasting?.text"
-          :highlightedIndices="[]"
-        />
+        <div class="cases-landing__section">
+          <SideTextSection
+            :title="messages?.sectionForecasting?.title"
+            :text="messages?.sectionForecasting?.text"
+            :highlightedIndices="[]"
+          />
+        </div>
 
         <Matrix
           :title="messages?.sectionInsights?.title || ''"

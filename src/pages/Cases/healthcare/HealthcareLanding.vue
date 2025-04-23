@@ -66,7 +66,7 @@
           />
         </div>
 
-        <div class="cases-landing__section">
+        <div class="cases-landing__cards">
           <div class="cases-landing__cards__title">
             <AppTitle>
               {{ messages?.sectionInsights?.title }}
