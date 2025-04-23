@@ -24,7 +24,9 @@
 
         <template #subtitle>
           <div class="cases-landing__subtitle">
-            {{ messages?.header?.subtitle }}
+            {{ messages?.header?.subtitle.split(" ").slice(0, 3).join(" ") }}
+            <br />
+            {{ messages?.header?.subtitle.split(" ").slice(3).join(" ") }}
           </div>
         </template>
       </PageHeader>

@@ -21,7 +21,9 @@
 
         <template #subtitle>
           <div class="gaming__subtitle">
-            {{ messages?.description }}
+            {{ messages?.description.split(" ").slice(0, 3).join(" ") }}
+            <br />
+            {{ messages?.description.split(" ").slice(3).join(" ") }}
           </div>
         </template>
       </PageHeader>
