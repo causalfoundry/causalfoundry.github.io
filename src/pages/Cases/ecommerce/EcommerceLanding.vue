@@ -42,7 +42,14 @@
           :title="messages?.sectionTransforming?.title"
           :subtitle="messages?.sectionTransforming?.subtitle"
           :items="messages?.sectionTransforming?.items"
-        />
+        >
+          <template #image>
+            <img
+              :src="`/images/cases/ecommerce/e-commerce-items.png`"
+              alt="Causal Foundry"
+            />
+          </template>
+        </ItemsWithSummary>
 
         <div class="cases-landing__section">
           <SideTextSection

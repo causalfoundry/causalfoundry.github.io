@@ -40,7 +40,14 @@
           :title="messages?.precisionPlayerTargeting?.title"
           :subtitle="messages?.precisionPlayerTargeting?.subtitle"
           :items="messages?.precisionPlayerTargeting?.items"
-        />
+        >
+          <template #image>
+            <img
+              :src="`/images/cases/gaming/01_games.png`"
+              alt="Causal Foundry"
+            />
+          </template>
+        </ItemsWithSummary>
 
         <div class="cases-landing__section">
           <SideTextSection

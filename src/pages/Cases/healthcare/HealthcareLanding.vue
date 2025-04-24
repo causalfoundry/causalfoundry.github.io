@@ -49,6 +49,13 @@
               {{ messages?.sectionTransforming?.title }}
             </HealthcareTitle>
           </template>
+
+          <template #image>
+            <img
+              :src="`/images/cases/healthcare/healthcare-items.png`"
+              alt="Causal Foundry"
+            />
+          </template>
         </ItemsWithSummary>
 
         <div class="cases-landing__section">

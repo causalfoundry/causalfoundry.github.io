@@ -14,7 +14,7 @@
       </div>
 
       <div class="items-with-summary__logo">
-        <img :src="`/images/cases/gaming/01_games.png`" alt="Causal Foundry" />
+        <slot name="image" />
       </div>
     </div>
 

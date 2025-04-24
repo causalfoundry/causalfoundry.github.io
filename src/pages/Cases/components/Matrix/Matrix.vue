@@ -9,7 +9,7 @@
         </AppTitle>
       </slot>
 
-      <div class="matrix__subtitle">
+      <div class="matrix__subtitle" v-if="subtitle">
         {{ subtitle.split(" ").slice(0, 3).join(" ") }}
         <br />
         {{ subtitle.split(" ").slice(3).join(" ") }}
