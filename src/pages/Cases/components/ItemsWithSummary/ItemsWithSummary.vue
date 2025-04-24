@@ -1,11 +1,13 @@
 <template>
   <div class="items-with-summary">
     <div class="items-with-summary__left">
-      <AppTitle>
-        <div class="items-with-summary__title">
-          {{ title || "" }}
-        </div>
-      </AppTitle>
+      <div class="items-with-summary__title">
+        <slot name="title">
+          <AppTitle>
+            {{ title || "" }}
+          </AppTitle>
+        </slot>
+      </div>
 
       <div class="items-with-summary__subtitle">
         {{ subtitle }}
@@ -64,6 +66,10 @@ const props = defineProps({
   items: {
     type: Array as () => Item[],
     required: true,
+  },
+  borderColor: {
+    type: String,
+    required: false,
   },
 });
 

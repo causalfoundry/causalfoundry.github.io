@@ -1,5 +1,5 @@
 <template>
-  <div class="cite-card" :style="{ color: color }">
+  <div class="cite-card" :style="{ color: color, background: borderColor }">
     <div class="cite-card__container">
       <div class="cite-card__container__header">
         <img :src="logo" />
@@ -41,9 +41,9 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  backgroundColor: {
+  borderColor: {
     type: String,
-    required: true,
+    required: false,
   },
   color: {
     type: String,

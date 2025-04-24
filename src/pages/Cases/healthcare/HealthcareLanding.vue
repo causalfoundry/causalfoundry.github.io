@@ -16,9 +16,9 @@
       >
         <template #title>
           <div>
-            <AppTitle>
+            <HealthcareTitle>
               {{ messages?.header?.title }}
-            </AppTitle>
+            </HealthcareTitle>
           </div>
         </template>
 
@@ -42,7 +42,14 @@
           :title="messages?.sectionTransforming?.title"
           :subtitle="messages?.sectionTransforming?.subtitle"
           :items="messages?.sectionTransforming?.items"
-        />
+          borderColor="#8cdfd9"
+        >
+          <template #title>
+            <HealthcareTitle>
+              {{ messages?.sectionTransforming?.title }}
+            </HealthcareTitle>
+          </template>
+        </ItemsWithSummary>
 
         <div class="cases-landing__section">
           <SideTextSection
@@ -56,7 +63,13 @@
           :title="messages?.sectionEfficiency?.title || ''"
           :items="messages?.sectionEfficiency?.items || []"
           :subtitle="messages?.sectionEfficiency?.subtitle || ''"
-        />
+        >
+          <template #title>
+            <HealthcareTitle>
+              {{ messages?.sectionEfficiency?.title }}
+            </HealthcareTitle>
+          </template>
+        </Matrix>
 
         <div class="cases-landing__section">
           <SideTextSection
@@ -68,9 +81,9 @@
 
         <div class="cases-landing__cards">
           <div class="cases-landing__cards__title">
-            <AppTitle>
+            <HealthcareTitle>
               {{ messages?.sectionInsights?.title }}
-            </AppTitle>
+            </HealthcareTitle>
             <div class="cases-landing__cards__subtitle">
               {{
                 messages?.sectionInsights?.subtitle
@@ -94,7 +107,13 @@
               :key="index"
               :title="item.title"
               :text="item.text"
-            />
+            >
+              <template #title>
+                <HealthcareTitle>
+                  {{ item.title }}
+                </HealthcareTitle>
+              </template>
+            </CultureItem>
           </div>
         </div>
 
@@ -104,6 +123,7 @@
             :who="messages?.cites?.[0]?.name"
             :org="messages?.cites?.[0]?.position"
             logo="/images/cases/m2m/logo.png"
+            borderColor="#8cdfd9"
           />
         </div>
 
@@ -142,7 +162,6 @@ import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
 import AppMenu from "@/components/AppMenu";
 
-import AppTitle from "@/components/AppTitle";
 import ShortDescriptionList from "@/components/ShortDescriptionList";
 
 import GetInTouch from "@/components/GetInTouch";
@@ -163,6 +182,7 @@ import Quote from "../components/Quote";
 import SuccessCase from "../components/SuccessCase";
 import TextImage from "../components/TextImage";
 import Image from "../components/Image";
+import HealthcareTitle from "../components/HealthcareTitle";
 
 import "../cases.scss";
 import "../cases-landing.scss";

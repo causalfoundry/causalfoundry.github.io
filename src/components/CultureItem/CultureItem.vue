@@ -1,6 +1,12 @@
 <template>
   <div class="culture-item">
-    <h3 class="culture-item__title">{{ title }}</h3>
+    <div class="culture-item__title">
+      <slot name="title">
+        <AppTitle>
+          {{ title }}
+        </AppTitle>
+      </slot>
+    </div>
     <ul>
       <li
         class="culture-item__text"
@@ -17,6 +23,8 @@
 
 <script setup lang="ts">
 import "./culture-item.scss";
+
+import AppTitle from "@/components/AppTitle";
 interface Props {
   title: string;
   text: string[];

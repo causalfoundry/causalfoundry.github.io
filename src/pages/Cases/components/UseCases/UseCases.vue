@@ -1,6 +1,8 @@
 <template>
   <div class="use-cases-container">
-    <div class="use-cases-container__title">Our use cases</div>
+    <div class="use-cases-container__title">
+      {{ messages?.common?.useCasesTitle }}
+    </div>
 
     <div class="use-cases">
       <div v-for="(item, index) in items" :key="index" class="use-cases__item">
@@ -24,7 +26,7 @@
 
 <script setup lang="ts">
 import { defineProps } from "vue";
-
+import { useTranslations } from "@/composables/useTranslations";
 import "./use-cases.scss";
 
 interface UseCaseItem {
@@ -38,4 +40,6 @@ interface UseCaseItem {
 const props = defineProps<{
   items: UseCaseItem[];
 }>();
+
+const { currentTranslations: messages } = useTranslations("");
 </script>

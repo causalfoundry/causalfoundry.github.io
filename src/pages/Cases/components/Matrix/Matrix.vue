@@ -1,11 +1,13 @@
 <template>
   <div class="matrix">
     <div class="matrix__header">
-      <AppTitle>
-        <span class="matrix__title">
-          {{ title }}
-        </span>
-      </AppTitle>
+      <slot name="title">
+        <AppTitle>
+          <span class="matrix__title">
+            {{ title }}
+          </span>
+        </AppTitle>
+      </slot>
 
       <div class="matrix__subtitle">
         {{ subtitle }}
