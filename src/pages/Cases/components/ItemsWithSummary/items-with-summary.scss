@@ -55,6 +55,12 @@
         width: unset;
       }
     }
+
+    .items-with-summary__logo {
+      img {
+        max-width: 300px;
+      }
+    }
   }
 
   .items {
