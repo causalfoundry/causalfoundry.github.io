@@ -10,7 +10,9 @@
       </slot>
 
       <div class="matrix__subtitle">
-        {{ subtitle }}
+        {{ subtitle.split(" ").slice(0, 3).join(" ") }}
+        <br />
+        {{ subtitle.split(" ").slice(3).join(" ") }}
       </div>
     </div>
 
@@ -30,7 +32,6 @@ import AppTitle from "@/components/AppTitle/AppTitle.vue";
 
 import "./matrix.scss";
 
-// Define las propiedades que el componente recibirá
 const props = defineProps({
   title: {
     type: String,
