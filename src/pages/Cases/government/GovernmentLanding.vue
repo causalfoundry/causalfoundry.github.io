@@ -12,7 +12,7 @@
         description=""
         :showButton="true"
         className="cases__government_header"
-        image="/images/cases/header_government.png"
+        image="/images/cases/header_government_landing.png"
       >
         <template #title>
           <div>

@@ -148,6 +148,7 @@ import ItemsWithSummary from "../components/ItemsWithSummary";
 
 import "../cases.scss";
 import "./gaming.scss";
+import "../cases-landing.scss";
 
 const { currentTranslations: messages } = useTranslations("cases/gaming");
 </script>
