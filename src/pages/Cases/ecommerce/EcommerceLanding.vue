@@ -14,6 +14,9 @@
         className="cases__ecommerce_header"
         image="/images/cases/header_ecommerce.png"
       >
+        <template #button>
+          <Button :value="messages?.linkText" @click="handleButtonClick" />
+        </template>
         <template #title>
           <div>
             <AppTitle>
@@ -29,7 +32,7 @@
         </template>
       </PageHeader>
 
-      <div class="cases-landing__content">
+      <div class="cases-landing__content" id="content">
         <div class="cases-landing__section">
           <SideTextSection
             :title="messages?.sectionDrivesCustomer?.title"
@@ -120,7 +123,7 @@
 
 <script setup lang="ts">
 import { useTranslations } from "@/composables/useTranslations";
-
+import { useRouter } from "vue-router";
 import Quote from "./components/Quote";
 import TextImage from "./components/TextImage";
 import Image from "./components/Image";
@@ -146,9 +149,15 @@ import UpButton from "@/components/UpButton";
 import ItemsWithSummary from "../components/ItemsWithSummary";
 import CiteCard from "../components/CiteCard/CiteCard.vue";
 import UseCases from "../components/UseCases";
-
+import Button from "@/ui-components/button";
 import "../cases.scss";
 import "../cases-landing.scss";
 
 const { currentTranslations: messages } = useTranslations("cases/ecommerce");
+
+const router = useRouter();
+
+function handleButtonClick(event: MouseEvent) {
+  document.getElementById("content")?.scrollIntoView({ behavior: "smooth" });
+}
 </script>
