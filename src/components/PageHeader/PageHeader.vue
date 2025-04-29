@@ -13,10 +13,12 @@
         <BreakableText :text="description" />
       </div>
       <div v-if="showButton" class="contact-button">
-        <Button
-          :value="messages?.common?.getInTouch"
-          @click="handleButtonClick"
-        />
+        <slot name="button">
+          <Button
+            :value="messages?.common?.getInTouch"
+            @click="handleButtonClick"
+          />
+        </slot>
       </div>
     </div>
 
@@ -37,6 +39,7 @@ import { useTranslations } from "@/composables/useTranslations";
 import "./page-header.scss";
 
 const router = useRouter();
+
 function handleButtonClick(event: MouseEvent) {
   router.push("/contact");
 }

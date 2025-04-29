@@ -14,6 +14,10 @@
         className="cases__government_header"
         image="/images/cases/header_government_landing.png"
       >
+        <template #button>
+          <Button :value="messages?.linkText" @click="handleButtonClick" />
+        </template>
+
         <template #title>
           <div>
             <AppTitle>
@@ -31,7 +35,7 @@
         </template>
       </PageHeader>
 
-      <div class="cases-landing__content">
+      <div class="cases-landing__content" id="content">
         <div class="cases-landing__section">
           <SideTextSection
             :title="messages?.sectionLearns?.title"
@@ -117,6 +121,7 @@
 
 <script setup lang="ts">
 import { useTranslations } from "@/composables/useTranslations";
+import { useRouter } from "vue-router";
 
 import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
@@ -143,9 +148,16 @@ import Quote from "../components/Quote";
 import SuccessCase from "../components/SuccessCase";
 import TextImage from "../components/TextImage";
 import Image from "../components/Image";
+import Button from "@/ui-components/button";
 
 import "../cases.scss";
 import "../cases-landing.scss";
+
+const router = useRouter();
+
+function handleButtonClick(event: MouseEvent) {
+  document.getElementById("content")?.scrollIntoView({ behavior: "smooth" });
+}
 
 const { currentTranslations: messages } = useTranslations("cases/government");
 </script>
