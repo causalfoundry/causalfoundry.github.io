@@ -55,6 +55,14 @@
         </div>
 
         <div class="cases-landing__section">
+          <LabelCard
+            :text="messages?.cardDemand?.text"
+            :startIndex="messages?.cardDemand?.startIndex"
+            :endIndex="messages?.cardDemand?.endIndex"
+          />
+        </div>
+
+        <div class="cases-landing__section">
           <SideTextSection
             :title="messages?.sectionOrchestration?.title"
             :text="messages?.sectionOrchestration?.text"

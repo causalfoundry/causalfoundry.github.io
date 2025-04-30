@@ -19,5 +19,10 @@
       "With human-in-the-loop oversight baked into every decision, your operations remain agile, accountable, and ready to learn from the field."
     ]
   },
-  "linkText": "Let’s talk and boost your supply chain together"
+  "linkText": "Let’s talk and boost your supply chain together",
+  "cardDemand": {
+    "text": "Anticipate demand, plan proactively, and respond intelligently—our adaptive AI platform aligns forecasting, allocation, and human oversight to keep your supply chain one step ahead",
+    "startIndex": 0,
+    "endIndex": 7
+  }
 }
