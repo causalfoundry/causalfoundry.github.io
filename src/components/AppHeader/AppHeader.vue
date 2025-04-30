@@ -35,6 +35,11 @@
               {{ messages?.common?.["government"] }}
             </div>
           </router-link>
+          <router-link :to="`/${currentLang}/cases/supplychain-landing`">
+            <div class="dropdown-item">
+              {{ messages?.common?.["supplychain"] }}
+            </div>
+          </router-link>
         </div>
       </div>
       <router-link :to="`/${currentLang}/research`">

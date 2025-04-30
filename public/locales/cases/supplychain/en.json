@@ -1,0 +1,28 @@
+{
+  "header": {
+    "title": "Smarter Supply Chains with Adaptive AI",
+    "subtitle": "Increase efficiency, visibility, and resilience across every link in the supply chain"
+  },
+  "sectionEcosystem": {
+    "title": "Transforming Supply Chains into Intelligent, Adaptive Ecosystems with AI",
+    "text": [
+      "Our platform applies adaptive AI to continuously optimize supply chain operations—from forecasting demand to managing inventory and streamlining fulfillment. By learning from real-time data and behavioral patterns, our system delivers context-aware recommendations that evolve with each interaction.",
+      "Whether it’s automating restocks, preventing stockouts, or dynamically allocating resources, our AI tailors interventions to the unique needs of each warehouse, outlet, and customer. With a focus on personalization, performance, and predictive accuracy, we turn supply chains into intelligent ecosystems—driving better decisions, reducing waste, and maximizing uptime where it matters most.",
+      "By analyzing high-frequency public service data, we help governments design smarter policies, flag anomalies in real time, and implement reforms with confidence."
+    ]
+  },
+  "sectionOrchestration": {
+    "title": "Orchestrate smarter delivery and return flows with adaptive, multi-directional logistics.",
+    "text": [
+      "Our platform powers intelligent distribution by optimizing every leg of the journey—outbound, transfer, and reverse—through real-time adaptive routing, expiry-aware logistics,  and cold chain sensitivity",
+      "Whether you’re managing a hub-and-spoke network or planning equitable round trips to remote sites, we help you synchronize deliveries, transfers, and returns in a single optimized cycle. From minimizing refrigeration time to dynamically rerouting based on traffic and weather, our system reduces waste, improves delivery timing, and enhances service coverage.",
+      "With human-in-the-loop oversight baked into every decision, your operations remain agile, accountable, and ready to learn from the field."
+    ]
+  },
+  "cardForecast": {
+    "text": "Forecast smarter, react faster, and stay in control—our adaptive AI platform empowers supply chains to understand demand, plan predictively, act rapidly, and integrate human insight for lasting resilience",
+    "startIndex": 0,
+    "endIndex": 7
+  },
+  "linkText": "Let’s talk and boost your supply chain together"
+}
