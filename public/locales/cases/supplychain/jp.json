@@ -19,10 +19,43 @@
       "With human-in-the-loop oversight baked into every decision, your operations remain agile, accountable, and ready to learn from the field."
     ]
   },
-  "linkText": "Let’s talk and boost your supply chain together",
+  "cardForecast": {
+    "text": "Forecast smarter, react faster, and stay in control—our adaptive AI platform empowers supply chains to understand demand, plan predictively, act rapidly, and integrate human insight for lasting resilience",
+    "startIndex": 0,
+    "endIndex": 7
+  },
   "cardDemand": {
     "text": "Anticipate demand, plan proactively, and respond intelligently—our adaptive AI platform aligns forecasting, allocation, and human oversight to keep your supply chain one step ahead",
     "startIndex": 0,
-    "endIndex": 7
-  }
+    "endIndex": 6
+  },
+  "sectionNumbered": {
+    "items": [
+      {
+        "title": "Smarter Inventory Management",
+        "text": [
+          "Restocking reminders based on real-time and forecasted demand",
+          "Personalized product discovery via data-driven recommendations",
+          "Image-based stock monitoring to automate low-inventory detection and streamline reordering"
+        ]
+      },
+      {
+        "title": "Personalization to Boost Engagement",
+        "text": [
+          "Dynamic recommendations, discounts, and incentives tailored to each customer",
+          "Context-aware messaging: pick the right time and frequency, the right content and the right channel",
+          "Adaptive UI to surface customer-specific relevant products and promotions to increase discovery and reduce cart abandonment"
+        ]
+      },
+      {
+        "title": "Gamification & Loyalty",
+        "text": [
+          "Behavior-driven incentives to promote timely reordering and smart stock levels",
+          "Personalized \"quests\" that encourage exploration and engagement",
+          "Integrated loyalty programs that reward"
+        ]
+      }
+    ]
+  },
+  "linkText": "Let’s talk and boost your supply chain together"
 }

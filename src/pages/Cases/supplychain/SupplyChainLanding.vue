@@ -1,5 +1,5 @@
 <template>
-  <div class="cases cases-landing">
+  <div class="cases cases-landing supply-chain-landing">
     <AppHeader
       current-page="cases"
       class="cases-landing__header supplychain__header"
@@ -52,6 +52,16 @@
             :startIndex="messages?.cardForecast?.startIndex"
             :endIndex="messages?.cardForecast?.endIndex"
           />
+        </div>
+
+        <div class="cases-landing__section supplychain-cards">
+          <CultureItem
+            v-for="(item, index) in messages?.sectionNumbered?.items"
+            :key="index"
+            :title="item.title"
+            :text="item.text"
+          >
+          </CultureItem>
         </div>
 
         <div class="cases-landing__section">
@@ -133,7 +143,7 @@ import LabelCard from "../components/LabelCard/LabelCard.vue";
 
 import "../cases.scss";
 import "../cases-landing.scss";
-
+import "./supply-chain-landing.scss";
 const router = useRouter();
 
 function handleButtonClick(event: MouseEvent) {
