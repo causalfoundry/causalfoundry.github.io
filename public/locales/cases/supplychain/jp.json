@@ -57,5 +57,14 @@
       }
     ]
   },
+  "sectionAnticipate": {
+    "title": "Anticipate needs and demand shifts and position stock intelillently to stay ahead",
+    "items": [
+      "Understand Demand",
+      "Predictive Planning",
+      "Human Oversight",
+      "Rapid Reaction"
+    ]
+  },
   "linkText": "Let’s talk and boost your supply chain together"
 }
