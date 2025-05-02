@@ -1,25 +1,21 @@
 <template>
-  <div class="items-with-summary">
-    <div class="items-with-summary__left">
-      <div class="items-with-summary__title">
-        <slot name="title">
-          <AppTitle>
-            {{ title || "" }}
-          </AppTitle>
-        </slot>
+  <div class="items-with-summary-boxed">
+    <div class="items-with-summary-boxed__left">
+      <div class="items-with-summary-boxed__title">
+        {{ title || "" }}
       </div>
 
-      <div class="items-with-summary__subtitle">
+      <div class="items-with-summary-boxed__subtitle">
         {{ subtitle }}
       </div>
 
-      <div class="items-with-summary__logo">
+      <div class="items-with-summary-boxed__logo">
         <slot name="image" />
       </div>
     </div>
 
     <div class="items">
-      <ul class="items-list">
+      <ul class="main-items-list">
         <li
           class="main-item-list"
           v-for="item in items"
@@ -53,7 +49,7 @@ import { useTranslations } from "@/composables/useTranslations";
 
 import AppTitle from "@/components/AppTitle/AppTitle.vue";
 
-import "./items-with-summary.scss";
+import "./items-with-summary-boxed.scss";
 
 interface Item {
   title: string;

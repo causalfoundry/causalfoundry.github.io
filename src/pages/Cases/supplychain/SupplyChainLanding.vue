@@ -73,14 +73,15 @@
         </div>
 
         <div class="cases-landing__section">
-          <ItemsWithSummary
-            subtitle=""
+          <ItemsWithSummaryBoxed
+            :title="messages?.sectionAnticipateNeeds?.title"
+            :subtitle="messages?.sectionAnticipateNeeds?.subtitle"
             :items="messages?.sectionAnticipateNeeds?.items"
           >
             <template #title>
               {{ messages?.sectionAnticipateNeeds?.title }}
             </template>
-          </ItemsWithSummary>
+          </ItemsWithSummaryBoxed>
         </div>
 
         <div class="cases-landing__section">
@@ -141,7 +142,7 @@ import SideTextSection from "../components/SideTextSection";
 import Matrix from "../components/Matrix";
 import CollapsibleItems from "../components/CollapsibleItems";
 import GameDistribution from "../components/GameDistribution";
-import ItemsWithSummary from "../components/ItemsWithSummary";
+import ItemsWithSummaryBoxed from "../components/ItemsWithSummaryBoxed";
 import CiteCard from "../components/CiteCard/CiteCard.vue";
 import UseCases from "../components/UseCases";
 import Quote from "../components/Quote";
@@ -155,6 +156,7 @@ import LabelCard from "../components/LabelCard/LabelCard.vue";
 import "../cases.scss";
 import "../cases-landing.scss";
 import "./supply-chain-landing.scss";
+
 const router = useRouter();
 
 function handleButtonClick(event: MouseEvent) {
