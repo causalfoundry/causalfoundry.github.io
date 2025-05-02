@@ -19,7 +19,7 @@
     </div>
 
     <div class="items">
-      <ul class="items-list">
+      <ul class="main-items-list">
         <li
           class="main-item-list"
           v-for="item in items"

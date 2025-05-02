@@ -1,0 +1,35 @@
+.one-column-block {
+  .one-column-block {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .with-top-border {
+    border-top: 1px solid #fff;
+    padding-top: 32px;
+  }
+
+  .title {
+    color: var(--Text-Primary, #fff);
+    font-family: "PP Neue Machina";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px; /* 120% */
+    letter-spacing: 0.32px;
+  }
+
+  .subtitle {
+    color: var(--Text-Primary, #fff);
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+  }
+
+  .content {
+    width: 100%;
+  }
+}

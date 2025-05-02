@@ -95,5 +95,36 @@
       }
     ]
   },
+  "sectionOptimizeFulfillment": {
+    "title": "Optimize Fulfillment",
+    "subtitle": "Enable multi-directional distribution with intelligent delivery, transfer, and reverse logistics routing",
+    "items": [
+      {
+        "title": "Closed-loop multi-stop route optimization with reverse flows:",
+        "text": "forward distribution, inter-site rebalancing, and return of waste/expired goods in a single round-trip"
+      },
+      {
+        "title": "Dynamic routing that adapts in real-time",
+        "subtitle": "to weather disruptions, traffic and road conditions"
+      },
+      {
+        "title": "Cold chain-sensitive routing",
+        "subtitle": "to minimize time out of refrigeration and reduce spoilage risk"
+      },
+      {
+        "title": "Equitable round-trip planning:",
+        "subtitle": "activate equity constraints to make sure nobody is left behind—especially for remote or underserved locations and prioritize both timely delivery and waste collection"
+      },
+      {
+        "title": "Human-in-the-loop systems",
+        "subtitle": "for oversight, trust, and continuous learning"
+      },
+      {
+        "title": "Expiry aware reverse logistics",
+        "subtitle": "retrieval of near-expiry stock and enable just-in-time redistribution of short-dated items where demand is high"
+      }
+    ]
+  },
+
   "linkText": "Let’s talk and boost your supply chain together"
 }
