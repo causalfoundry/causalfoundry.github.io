@@ -93,6 +93,14 @@
         </div>
 
         <div class="cases-landing__section">
+          <MatrixOfCards
+            :items="messages?.sectionOptimizeFulfillment?.items"
+            :title="messages?.sectionOptimizeFulfillment?.title"
+            :subtitle="messages?.sectionOptimizeFulfillment?.subtitle"
+          />
+        </div>
+
+        <div class="cases-landing__section">
           <UseCases :items="messages?.common?.useCases" />
         </div>
 
@@ -152,7 +160,7 @@ import Image from "../components/Image";
 import Button from "@/ui-components/button";
 
 import LabelCard from "../components/LabelCard/LabelCard.vue";
-
+import MatrixOfCards from "../components/MatrixOfCards/MatrixOfCards.vue";
 import "../cases.scss";
 import "../cases-landing.scss";
 import "./supply-chain-landing.scss";

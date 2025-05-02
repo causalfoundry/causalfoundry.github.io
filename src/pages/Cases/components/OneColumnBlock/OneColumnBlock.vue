@@ -1,8 +1,8 @@
 <template>
   <div class="one-column-block" :class="{ 'with-top-border': showTopBorder }">
-    <h2 class="title">{{ title }}</h2>
-    <p class="subtitle">{{ subtitle }}</p>
-    <div class="content">
+    <h2 class="one-column-block__title">{{ title }}</h2>
+    <p class="one-column-block__subtitle">{{ subtitle }}</p>
+    <div class="one-column-block__content">
       <slot></slot>
     </div>
   </div>

@@ -105,23 +105,23 @@
       },
       {
         "title": "Dynamic routing that adapts in real-time",
-        "subtitle": "to weather disruptions, traffic and road conditions"
+        "text": "to weather disruptions, traffic and road conditions"
       },
       {
         "title": "Cold chain-sensitive routing",
-        "subtitle": "to minimize time out of refrigeration and reduce spoilage risk"
+        "text": "to minimize time out of refrigeration and reduce spoilage risk"
       },
       {
         "title": "Equitable round-trip planning:",
-        "subtitle": "activate equity constraints to make sure nobody is left behind—especially for remote or underserved locations and prioritize both timely delivery and waste collection"
+        "text": "activate equity constraints to make sure nobody is left behind—especially for remote or underserved locations and prioritize both timely delivery and waste collection"
       },
       {
         "title": "Human-in-the-loop systems",
-        "subtitle": "for oversight, trust, and continuous learning"
+        "text": "for oversight, trust, and continuous learning"
       },
       {
         "title": "Expiry aware reverse logistics",
-        "subtitle": "retrieval of near-expiry stock and enable just-in-time redistribution of short-dated items where demand is high"
+        "text": "retrieval of near-expiry stock and enable just-in-time redistribution of short-dated items where demand is high"
       }
     ]
   },
