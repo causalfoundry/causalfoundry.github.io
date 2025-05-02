@@ -29,6 +29,12 @@
     "startIndex": 0,
     "endIndex": 6
   },
+  "cardOptimize": {
+    "text": "Optimize Your Workforce with Precision —our adaptive AI forecasts staffing needs, reallocates personnel in real time, and ensures the right people are in the right place to maintain service continuity and reduce burnout",
+    "startIndex": 0,
+    "endIndex": 5
+  },
+
   "sectionNumbered": {
     "items": [
       {
@@ -122,6 +128,29 @@
       {
         "title": "Expiry aware reverse logistics",
         "text": "retrieval of near-expiry stock and enable just-in-time redistribution of short-dated items where demand is high"
+      }
+    ]
+  },
+  "sectionOptimizeWorkforce": {
+    "title": "Optimize Workforce",
+    "subtitle": "Dimension your teams wisely and deploy them efficiently",
+
+    "items": [
+      {
+        "title": "",
+        "text": "Forecast staffing needs based on demand, location activity, and service complexity"
+      },
+      {
+        "title": "",
+        "text": "Balance operational efficiency with overhead costs by dynamically reallocating personnel as conditions evolve"
+      },
+      {
+        "title": "",
+        "text": "Receive real-time recommendations to place the right people in the right roles at the right time"
+      },
+      {
+        "title": "",
+        "text": "Improve service continuity and avoid burnout by anticipating bottlenecks and redistributing workloads"
       }
     ]
   },

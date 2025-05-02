@@ -101,6 +101,22 @@
         </div>
 
         <div class="cases-landing__section">
+          <LabelCard
+            :text="messages?.cardOptimize?.text"
+            :startIndex="messages?.cardOptimize?.startIndex"
+            :endIndex="messages?.cardOptimize?.endIndex"
+          />
+        </div>
+
+        <div class="cases-landing__section">
+          <MatrixOfCards
+            :items="messages?.sectionOptimizeWorkforce?.items"
+            :title="messages?.sectionOptimizeWorkforce?.title"
+            :subtitle="messages?.sectionOptimizeWorkforce?.subtitle"
+          />
+        </div>
+
+        <div class="cases-landing__section">
           <UseCases :items="messages?.common?.useCases" />
         </div>
 
