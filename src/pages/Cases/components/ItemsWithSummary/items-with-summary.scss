@@ -77,11 +77,20 @@
     line-height: 42px; /* 190.909% */
     letter-spacing: 0.22px;
 
-    ul {
+    .secondary-item-list {
+      list-style-type: disc;
+      padding-left: 20px;
+
+      & > li {
+        margin-bottom: 10px;
+      }
+    }
+
+    .main-items-list {
       list-style-type: none;
       padding: 0;
 
-      li {
+      & > .main-item-list {
         margin-bottom: 10px;
         border-top: 1px solid #fff;
 

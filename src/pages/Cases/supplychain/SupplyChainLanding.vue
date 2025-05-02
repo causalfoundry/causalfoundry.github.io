@@ -73,6 +73,17 @@
         </div>
 
         <div class="cases-landing__section">
+          <ItemsWithSummary
+            subtitle=""
+            :items="messages?.sectionAnticipateNeeds?.items"
+          >
+            <template #title>
+              {{ messages?.sectionAnticipateNeeds?.title }}
+            </template>
+          </ItemsWithSummary>
+        </div>
+
+        <div class="cases-landing__section">
           <SideTextSection
             :title="messages?.sectionOrchestration?.title"
             :text="messages?.sectionOrchestration?.text"

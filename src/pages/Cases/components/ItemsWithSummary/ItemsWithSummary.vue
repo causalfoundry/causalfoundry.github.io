@@ -19,8 +19,9 @@
     </div>
 
     <div class="items">
-      <ul>
+      <ul class="main-items-list">
         <li
+          class="main-item-list"
           v-for="item in items"
           :key="item.title"
           @click="toggleItem(item)"
@@ -32,9 +33,14 @@
               expandedItems.includes(item.title) ? "−" : "+"
             }}</span>
           </div>
-          <p class="item-text">
-            {{ item.text }}
-          </p>
+          <div class="item-text">
+            <p v-if="!Array.isArray(item.text)">{{ item.text }}</p>
+            <ul class="secondary-item-list" v-else>
+              <li v-for="(textItem, index) in item.text" :key="index">
+                {{ textItem }}
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
@@ -51,7 +57,7 @@ import "./items-with-summary.scss";
 
 interface Item {
   title: string;
-  text: string;
+  text: string | string[];
 }
 
 const props = defineProps({

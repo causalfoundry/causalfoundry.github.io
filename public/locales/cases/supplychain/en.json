@@ -57,6 +57,38 @@
       }
     ]
   },
-
+  "sectionAnticipateNeeds": {
+    "title": "Anticipate needs and demand shifts and position stock intelligently to stay ahead",
+    "items": [
+      {
+        "title": "Understand Demand",
+        "text": [
+          "Identify key demand drivers across time, location, and site/customer segments",
+          "Learn how contextual factors -seasonality, weather, campaigns- impact demand dynamics"
+        ]
+      },
+      {
+        "title": "Predictive Planning",
+        "text": [
+          "Probabilistic forecast demand across multiple time horizons",
+          "Scenario-based what-if simulations to guide strategic and tactical decisions",
+          "Recommended data-driven distribution plans aligned with predicted demand and strategic goals"
+        ]
+      },
+      {
+        "title": "Human Oversight",
+        "text": [
+          "Human-in-the-loop workflows ensure trust, transparency, and adaptability",
+          "Visibility on the field decisions serves as indirect feedback to improve model based stock allocation decisions over time"
+        ]
+      },
+      {
+        "title": "Rapid Reaction",
+        "text": [
+          "Automatically reoptimze stock levels and allocations when conditions shift"
+        ]
+      }
+    ]
+  },
   "linkText": "Let’s talk and boost your supply chain together"
 }
