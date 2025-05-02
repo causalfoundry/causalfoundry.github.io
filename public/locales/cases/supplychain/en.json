@@ -63,6 +63,7 @@
     "items": [
       {
         "title": "Understand Demand",
+        "icon": "/images/cases/supplychain/understand-demand-icon.svg",
         "text": [
           "Identify key demand drivers across time, location, and site/customer segments",
           "Learn how contextual factors -seasonality, weather, campaigns- impact demand dynamics"
@@ -70,6 +71,7 @@
       },
       {
         "title": "Predictive Planning",
+        "icon": "/images/cases/supplychain/predictive-planning-icon.svg",
         "text": [
           "Probabilistic forecast demand across multiple time horizons",
           "Scenario-based what-if simulations to guide strategic and tactical decisions",
@@ -78,6 +80,7 @@
       },
       {
         "title": "Human Oversight",
+        "icon": "/images/cases/supplychain/human-oversight-icon.svg",
         "text": [
           "Human-in-the-loop workflows ensure trust, transparency, and adaptability",
           "Visibility on the field decisions serves as indirect feedback to improve model based stock allocation decisions over time"
@@ -85,6 +88,7 @@
       },
       {
         "title": "Rapid Reaction",
+        "icon": "/images/cases/supplychain/rapid-reaction-icon.svg",
         "text": [
           "Automatically reoptimze stock levels and allocations when conditions shift"
         ]

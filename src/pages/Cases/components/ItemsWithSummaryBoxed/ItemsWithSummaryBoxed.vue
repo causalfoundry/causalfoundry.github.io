@@ -24,6 +24,7 @@
           :class="{ expanded: expandedItems.includes(item.title) }"
         >
           <div class="item-header">
+            <img v-if="item.icon" :src="item.icon" alt="icon" />
             <strong>{{ item.title }}</strong>
             <span v-if="item.text" class="toggle-icon">{{
               expandedItems.includes(item.title) ? "−" : "+"
@@ -53,6 +54,7 @@ import "./items-with-summary-boxed.scss";
 
 interface Item {
   title: string;
+  icon?: string;
   text: string | string[];
 }
 

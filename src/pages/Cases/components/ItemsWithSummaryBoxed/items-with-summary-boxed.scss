@@ -40,7 +40,7 @@
 
     .items-with-summary-boxed__subtitle {
       font-family: "Open Sans";
-      width: 350px;
+      width: 450px;
       font-size: 25px;
       font-style: normal;
       font-weight: 300;
@@ -94,9 +94,6 @@
         cursor: pointer;
         background-color: #0d0d0d;
         border-radius: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
         &:hover {
           border-image: linear-gradient(
@@ -122,8 +119,13 @@
 
         .item-header {
           display: flex;
-          justify-content: space-between;
+          //  justify-content: space-between;
           align-items: center;
+          gap: 44px;
+
+          & > :last-child {
+            margin-left: auto;
+          }
         }
 
         .toggle-icon {
