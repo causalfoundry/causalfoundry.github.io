@@ -19,6 +19,10 @@
       "With human-in-the-loop oversight baked into every decision, your operations remain agile, accountable, and ready to learn from the field."
     ]
   },
+  "sectionOptimizeDemand": {
+    "title": "Optimize Demand",
+    "subtitle": "Personalize the ordering experience and streamline inventory decisions to increase customer loyalty"
+  },
   "cardForecast": {
     "text": "Forecast smarter, react faster, and stay in control—our adaptive AI platform empowers supply chains to understand demand, plan predictively, act rapidly, and integrate human insight for lasting resilience",
     "startIndex": 0,
@@ -29,6 +33,12 @@
     "startIndex": 0,
     "endIndex": 6
   },
+  "cardOptimize": {
+    "text": "Optimize Your Workforce with Precision —our adaptive AI forecasts staffing needs, reallocates personnel in real time, and ensures the right people are in the right place to maintain service continuity and reduce burnout",
+    "startIndex": 0,
+    "endIndex": 5
+  },
+
   "sectionNumbered": {
     "items": [
       {
@@ -57,20 +67,13 @@
       }
     ]
   },
-  "sectionAnticipate": {
-    "title": "Anticipate needs and demand shifts and position stock intelillently to stay ahead",
-    "items": [
-      "Understand Demand",
-      "Predictive Planning",
-      "Human Oversight",
-      "Rapid Reaction"
-    ]
-  },
   "sectionAnticipateNeeds": {
-    "title": "Anticipate needs and demand shifts and position stock intelligently to stay ahead",
+    "title": "Anticipate Demand",
+    "subtitle": "Anticipate needs and demand shifts and position stock intelligently to stay ahead",
     "items": [
       {
         "title": "Understand Demand",
+        "icon": "/images/cases/supplychain/understand-demand-icon.svg",
         "text": [
           "Identify key demand drivers across time, location, and site/customer segments",
           "Learn how contextual factors -seasonality, weather, campaigns- impact demand dynamics"
@@ -78,6 +81,7 @@
       },
       {
         "title": "Predictive Planning",
+        "icon": "/images/cases/supplychain/predictive-planning-icon.svg",
         "text": [
           "Probabilistic forecast demand across multiple time horizons",
           "Scenario-based what-if simulations to guide strategic and tactical decisions",
@@ -86,6 +90,7 @@
       },
       {
         "title": "Human Oversight",
+        "icon": "/images/cases/supplychain/human-oversight-icon.svg",
         "text": [
           "Human-in-the-loop workflows ensure trust, transparency, and adaptability",
           "Visibility on the field decisions serves as indirect feedback to improve model based stock allocation decisions over time"
@@ -93,11 +98,75 @@
       },
       {
         "title": "Rapid Reaction",
+        "icon": "/images/cases/supplychain/rapid-reaction-icon.svg",
         "text": [
           "Automatically reoptimze stock levels and allocations when conditions shift"
         ]
       }
     ]
   },
+  "sectionOptimizeFulfillment": {
+    "title": "Optimize Fulfillment",
+    "subtitle": "Enable multi-directional distribution with intelligent delivery, transfer, and reverse logistics routing",
+    "items": [
+      {
+        "title": "Closed-loop multi-stop route optimization with reverse flows:",
+        "text": "forward distribution, inter-site rebalancing, and return of waste/expired goods in a single round-trip"
+      },
+      {
+        "title": "Dynamic routing that adapts in real-time",
+        "text": "to weather disruptions, traffic and road conditions"
+      },
+      {
+        "title": "Cold chain-sensitive routing",
+        "text": "to minimize time out of refrigeration and reduce spoilage risk"
+      },
+      {
+        "title": "Equitable round-trip planning:",
+        "text": "activate equity constraints to make sure nobody is left behind—especially for remote or underserved locations and prioritize both timely delivery and waste collection"
+      },
+      {
+        "title": "Human-in-the-loop systems",
+        "text": "for oversight, trust, and continuous learning"
+      },
+      {
+        "title": "Expiry aware reverse logistics",
+        "text": "retrieval of near-expiry stock and enable just-in-time redistribution of short-dated items where demand is high"
+      }
+    ]
+  },
+  "sectionOptimizeWorkforce": {
+    "title": "Optimize Workforce",
+    "subtitle": "Dimension your teams wisely and deploy them efficiently",
+    "items": [
+      {
+        "title": "",
+        "text": "Forecast staffing needs based on demand, location activity, and service complexity",
+        "icon": "/images/cases/supplychain/forecast.png"
+      },
+      {
+        "title": "",
+        "text": "Balance operational efficiency with overhead costs by dynamically reallocating personnel as conditions evolve",
+        "icon": "/images/cases/supplychain/balance.png"
+      },
+      {
+        "title": "",
+        "text": "Receive real-time recommendations to place the right people in the right roles at the right time",
+        "icon": "/images/cases/supplychain/real-time.png"
+      },
+      {
+        "title": "",
+        "text": "Improve service continuity and avoid burnout by anticipating bottlenecks and redistributing workloads",
+        "icon": "/images/cases/supplychain/workloads.png"
+      }
+    ]
+  },
+  "cites": [
+    {
+      "text": "“We are excited to innovate with Causal Foundry, using AI to improve medicine quality, availability, and affordability across Southeast Asia making a positive impact on the lives of millions”",
+      "name": "Farouk Meralli",
+      "position": "Founder & CEO at SwipeRx"
+    }
+  ],
   "linkText": "Let’s talk and boost your supply chain together"
 }
