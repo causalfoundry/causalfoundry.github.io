@@ -1,4 +1,9 @@
 .one-column-block {
+  @include respond("mobile") {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
   &.with-top-border {
     border-top: 1px solid #fff;
     padding-top: 32px;
@@ -25,6 +30,10 @@
     letter-spacing: 0.22px;
     margin-bottom: 96px;
     max-width: 600px;
+
+    @include respond("mobile") {
+      max-width: 90%;
+    }
   }
 
   &__content {

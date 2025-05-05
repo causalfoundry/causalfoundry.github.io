@@ -5,6 +5,12 @@
 
   width: 100%;
 
+  @include respond("mobile") {
+    width: 100%;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+
   .cards-grid {
     display: grid;
     grid-template-columns: repeat(
@@ -13,5 +19,19 @@
     );
     gap: 24px;
     margin-top: 32px;
+
+    &__card {
+      @include respond("mobile") {
+        width: 90%;
+      }
+    }
+
+    @include respond("mobile") {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      --card-min-width: 40px;
+    }
   }
 }

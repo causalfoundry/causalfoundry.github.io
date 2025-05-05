@@ -125,7 +125,7 @@
           </MatrixOfCards>
         </div>
 
-        <div class="cases-landing__section">
+        <div class="cases-landing__section" v-if="false">
           <LabelCard
             :text="messages?.cardOptimize?.text"
             :startIndex="messages?.cardOptimize?.startIndex"
@@ -133,7 +133,7 @@
           />
         </div>
 
-        <div class="cases-landing__section">
+        <div class="cases-landing__section" v-if="false">
           <MatrixOfCards
             :items="messages?.sectionOptimizeWorkforce?.items"
             :title="messages?.sectionOptimizeWorkforce?.title"
@@ -150,7 +150,7 @@
           </MatrixOfCards>
         </div>
 
-        <div class="cases-landing__section">
+        <div class="cases-landing__section" v-if="false">
           <CiteCard
             :text="messages?.cites?.[0]?.text"
             :who="messages?.cites?.[0]?.name"

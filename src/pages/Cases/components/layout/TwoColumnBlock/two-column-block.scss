@@ -1,4 +1,8 @@
 .two-column-block {
+  @include respond("mobile") {
+    margin: 20px;
+  }
+
   &.with-top-border {
     border-top: 1px solid #fff;
     padding-top: 32px;
@@ -40,6 +44,10 @@
     font-weight: 300;
     line-height: 33px;
     letter-spacing: 0.22px;
+
+    @include respond("mobile") {
+      flex-direction: column;
+    }
 
     & > * {
       flex: 1;
