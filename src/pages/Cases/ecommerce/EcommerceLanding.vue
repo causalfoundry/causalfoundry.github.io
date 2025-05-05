@@ -124,27 +124,18 @@
 <script setup lang="ts">
 import { useTranslations } from "@/composables/useTranslations";
 import { useRouter } from "vue-router";
-import Quote from "./components/Quote";
-import TextImage from "./components/TextImage";
-import Image from "./components/Image";
 
 import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
 import AppMenu from "@/components/AppMenu";
 
 import AppTitle from "@/components/AppTitle";
-import ShortDescriptionList from "@/components/ShortDescriptionList";
 
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
-import CultureItem from "@/components/CultureItem/CultureItem";
-
-import Logos from "./components/Logos";
 
 import SideTextSection from "../components/SideTextSection";
 import Matrix from "../components/Matrix";
-import CollapsibleItems from "../components/CollapsibleItems";
-import GameDistribution from "../components/GameDistribution";
 import UpButton from "@/components/UpButton";
 import ItemsWithSummary from "../components/ItemsWithSummary";
 import CiteCard from "../components/CiteCard/CiteCard.vue";

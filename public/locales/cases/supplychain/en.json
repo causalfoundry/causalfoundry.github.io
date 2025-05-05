@@ -157,6 +157,12 @@
       }
     ]
   },
-
+  "cites": [
+    {
+      "text": "“We are excited to innovate with Causal Foundry, using AI to improve medicine quality, availability, and affordability across Southeast Asia making a positive impact on the lives of millions”",
+      "name": "Farouk Meralli",
+      "position": "Founder & CEO at SwipeRx"
+    }
+  ],
   "linkText": "Let’s talk and boost your supply chain together"
 }

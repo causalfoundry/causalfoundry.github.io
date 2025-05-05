@@ -130,6 +130,17 @@
         </div>
 
         <div class="cases-landing__section">
+          <CiteCard
+            :text="messages?.cites?.[0]?.text"
+            :who="messages?.cites?.[0]?.name"
+            :org="messages?.cites?.[0]?.position"
+            logo="/images/cases/swiperx/logo.png"
+            backgroundColor="#0B196D"
+            color="#fff"
+          />
+        </div>
+
+        <div class="cases-landing__section">
           <UseCases :items="messages?.common?.useCases" />
         </div>
 
@@ -169,7 +180,7 @@ import AppTitle from "@/components/AppTitle";
 
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
-import CultureItem from "@/components/CultureItem/CultureItem";
+import CultureItem from "@/components/CultureItem";
 import UpButton from "@/components/UpButton";
 
 import SideTextSection from "../components/SideTextSection";
@@ -181,6 +192,8 @@ import LabelCard from "../components/LabelCard/LabelCard.vue";
 import MatrixOfCards from "../components/MatrixOfCards/MatrixOfCards.vue";
 import TitledCard from "../components/TitledCard/TitledCard.vue";
 import ImageCard from "../components/ImageCard/ImageCard.vue";
+import CiteCard from "../components/CiteCard/CiteCard.vue";
+
 import "../cases.scss";
 import "../cases-landing.scss";
 import "./supply-chain-landing.scss";
