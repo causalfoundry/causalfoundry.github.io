@@ -100,6 +100,10 @@ const MENU_ITEMS = [
         href: `/${currentLang}/cases/government-landing`,
       },
       { titleKey: "gaming", href: `/${currentLang}/cases/gaming` },
+      {
+        titleKey: "supplychain",
+        href: `/${currentLang}/cases/supplychain-landing`,
+      },
     ],
   },
   { titleKey: "research", href: `/${currentLang}/research` },
