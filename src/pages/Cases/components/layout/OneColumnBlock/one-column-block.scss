@@ -1,5 +1,5 @@
 .one-column-block {
-  .with-top-border {
+  &.with-top-border {
     border-top: 1px solid #fff;
     padding-top: 32px;
   }
