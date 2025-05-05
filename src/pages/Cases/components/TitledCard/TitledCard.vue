@@ -12,6 +12,7 @@
 
 <script setup lang="ts">
 import AppTitle from "@/components/AppTitle/AppTitle.vue";
+
 import "./title-card.scss";
 
 defineOptions({

@@ -1,0 +1,27 @@
+.image-card {
+  background-color: #0d0d0d;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  gap: 40px;
+  position: relative;
+  min-height: 120px;
+  padding: 32px;
+  padding-right: 80px;
+
+  &__image {
+    img {
+      width: 50px;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px; /* 150% */
+    letter-spacing: 0.2px;
+  }
+}

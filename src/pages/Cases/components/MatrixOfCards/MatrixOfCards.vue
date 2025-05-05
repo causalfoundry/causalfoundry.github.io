@@ -1,5 +1,5 @@
 <template>
-  <div class="matrix-of-cards">
+  <div class="matrix-of-cards" :style="cardWidthStyle">
     <OneColumnBlock
       v-if="title || subtitle"
       :title="title"
@@ -49,6 +49,17 @@ export default {
             typeof item === "object" && "title" in item && "text" in item
         );
       },
+    },
+    cardMinWidth: {
+      type: String,
+      default: "300px",
+    },
+  },
+  computed: {
+    cardWidthStyle() {
+      return {
+        "--card-min-width": this.cardMinWidth,
+      };
     },
   },
 };

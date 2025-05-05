@@ -117,9 +117,14 @@
             :items="messages?.sectionOptimizeWorkforce?.items"
             :title="messages?.sectionOptimizeWorkforce?.title"
             :subtitle="messages?.sectionOptimizeWorkforce?.subtitle"
+            cardMinWidth="400px"
           >
             <template #card="{ item }">
-              <TitledCard :title="item.title" :text="item.text" />
+              <ImageCard
+                :title="item.title"
+                :text="item.text"
+                :icon="item.icon"
+              />
             </template>
           </MatrixOfCards>
         </div>
@@ -161,32 +166,21 @@ import AppFooter from "@/components/AppFooter";
 import AppMenu from "@/components/AppMenu";
 
 import AppTitle from "@/components/AppTitle";
-import ShortDescriptionList from "@/components/ShortDescriptionList";
 
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
 import CultureItem from "@/components/CultureItem/CultureItem";
 import UpButton from "@/components/UpButton";
 
-import Logos from "../components/Logos";
-
 import SideTextSection from "../components/SideTextSection";
-import Matrix from "../components/Matrix";
-import CollapsibleItems from "../components/CollapsibleItems";
-import GameDistribution from "../components/GameDistribution";
 import ItemsWithSummaryBoxed from "../components/ItemsWithSummaryBoxed";
-import CiteCard from "../components/CiteCard/CiteCard.vue";
 import UseCases from "../components/UseCases";
-import Quote from "../components/Quote";
-import SuccessCase from "../components/SuccessCase";
-import TextImage from "../components/TextImage";
-import Image from "../components/Image";
 import Button from "@/ui-components/button";
 
 import LabelCard from "../components/LabelCard/LabelCard.vue";
 import MatrixOfCards from "../components/MatrixOfCards/MatrixOfCards.vue";
 import TitledCard from "../components/TitledCard/TitledCard.vue";
-
+import ImageCard from "../components/ImageCard/ImageCard.vue";
 import "../cases.scss";
 import "../cases-landing.scss";
 import "./supply-chain-landing.scss";

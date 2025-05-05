@@ -134,23 +134,26 @@
   "sectionOptimizeWorkforce": {
     "title": "Optimize Workforce",
     "subtitle": "Dimension your teams wisely and deploy them efficiently",
-
     "items": [
       {
         "title": "",
-        "text": "Forecast staffing needs based on demand, location activity, and service complexity"
+        "text": "Forecast staffing needs based on demand, location activity, and service complexity",
+        "icon": "/images/cases/supplychain/forecast.png"
       },
       {
         "title": "",
-        "text": "Balance operational efficiency with overhead costs by dynamically reallocating personnel as conditions evolve"
+        "text": "Balance operational efficiency with overhead costs by dynamically reallocating personnel as conditions evolve",
+        "icon": "/images/cases/supplychain/balance.png"
       },
       {
         "title": "",
-        "text": "Receive real-time recommendations to place the right people in the right roles at the right time"
+        "text": "Receive real-time recommendations to place the right people in the right roles at the right time",
+        "icon": "/images/cases/supplychain/real-time.png"
       },
       {
         "title": "",
-        "text": "Improve service continuity and avoid burnout by anticipating bottlenecks and redistributing workloads"
+        "text": "Improve service continuity and avoid burnout by anticipating bottlenecks and redistributing workloads",
+        "icon": "/images/cases/supplychain/workloads.png"
       }
     ]
   },
