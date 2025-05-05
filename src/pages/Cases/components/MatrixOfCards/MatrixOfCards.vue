@@ -21,7 +21,7 @@
 
 <script>
 import AppTitle from "@/components/AppTitle/AppTitle.vue";
-import OneColumnBlock from "../OneColumnBlock/OneColumnBlock.vue";
+import OneColumnBlock from "../layout/OneColumnBlock/OneColumnBlock.vue";
 
 import "./matrix-of-cards.scss";
 

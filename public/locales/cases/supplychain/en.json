@@ -19,6 +19,10 @@
       "With human-in-the-loop oversight baked into every decision, your operations remain agile, accountable, and ready to learn from the field."
     ]
   },
+  "sectionOptimizeDemand": {
+    "title": "Optimize Demand",
+    "subtitle": "Personalize the ordering experience and streamline inventory decisions to increase customer loyalty"
+  },
   "cardForecast": {
     "text": "Forecast smarter, react faster, and stay in control—our adaptive AI platform empowers supply chains to understand demand, plan predictively, act rapidly, and integrate human insight for lasting resilience",
     "startIndex": 0,

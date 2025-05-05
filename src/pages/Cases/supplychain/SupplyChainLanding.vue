@@ -54,6 +54,27 @@
           />
         </div>
 
+        <div class="cases-landing__section">
+          <TwoColumnBlock
+            :title="messages?.sectionOptimizeDemand?.title"
+            :showTopBorder="true"
+            subtitle=""
+          >
+            <template #left>
+              <div>
+                {{ messages?.sectionOptimizeDemand?.subtitle }}
+              </div>
+            </template>
+            <template #right>
+              <img
+                width="300px"
+                src="/images/cases/supplychain/supply.png"
+                alt="Demand"
+              />
+            </template>
+          </TwoColumnBlock>
+        </div>
+
         <div class="cases-landing__section supplychain-cards">
           <CultureItem
             v-for="(item, index) in messages?.sectionNumbered?.items"
@@ -193,6 +214,7 @@ import MatrixOfCards from "../components/MatrixOfCards/MatrixOfCards.vue";
 import TitledCard from "../components/TitledCard/TitledCard.vue";
 import ImageCard from "../components/ImageCard/ImageCard.vue";
 import CiteCard from "../components/CiteCard/CiteCard.vue";
+import TwoColumnBlock from "../components/layout/TwoColumnBlock/TwoColumnBlock.vue";
 
 import "../cases.scss";
 import "../cases-landing.scss";
