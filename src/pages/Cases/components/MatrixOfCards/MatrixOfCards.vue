@@ -12,14 +12,7 @@
           :key="index"
           class="cards-grid__card"
         >
-          <div class="cards-grid__card__title">
-            <AppTitle v-if="item.title">{{ item.title }}</AppTitle>
-          </div>
-          <div class="cards-grid__card__text">
-            <p v-if="item.text" class="cards-grid__card__text">
-              {{ item.text }}
-            </p>
-          </div>
+          <slot name="card" :item="item" :index="index" />
         </div>
       </div>
     </OneColumnBlock>

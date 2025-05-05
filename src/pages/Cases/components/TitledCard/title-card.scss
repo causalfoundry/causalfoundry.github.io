@@ -1,0 +1,35 @@
+.titled-card {
+  background-color: #0d0d0d;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  min-height: 250px;
+
+  &__title {
+    font-family: "Open Sans" !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 150% */
+    letter-spacing: 0.22px;
+  }
+
+  &__text {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px; /* 150% */
+    letter-spacing: 0.18px;
+
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    padding: 0px 24px;
+  }
+}

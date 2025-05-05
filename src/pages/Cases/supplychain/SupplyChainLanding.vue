@@ -97,7 +97,11 @@
             :items="messages?.sectionOptimizeFulfillment?.items"
             :title="messages?.sectionOptimizeFulfillment?.title"
             :subtitle="messages?.sectionOptimizeFulfillment?.subtitle"
-          />
+          >
+            <template #card="{ item }">
+              <TitledCard :title="item.title" :text="item.text" />
+            </template>
+          </MatrixOfCards>
         </div>
 
         <div class="cases-landing__section">
@@ -113,7 +117,11 @@
             :items="messages?.sectionOptimizeWorkforce?.items"
             :title="messages?.sectionOptimizeWorkforce?.title"
             :subtitle="messages?.sectionOptimizeWorkforce?.subtitle"
-          />
+          >
+            <template #card="{ item }">
+              <TitledCard :title="item.title" :text="item.text" />
+            </template>
+          </MatrixOfCards>
         </div>
 
         <div class="cases-landing__section">
@@ -177,6 +185,8 @@ import Button from "@/ui-components/button";
 
 import LabelCard from "../components/LabelCard/LabelCard.vue";
 import MatrixOfCards from "../components/MatrixOfCards/MatrixOfCards.vue";
+import TitledCard from "../components/TitledCard/TitledCard.vue";
+
 import "../cases.scss";
 import "../cases-landing.scss";
 import "./supply-chain-landing.scss";
