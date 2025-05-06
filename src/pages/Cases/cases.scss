@@ -116,7 +116,6 @@
       url("/images/cases/header_supply_chain.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -100px 0;
 
     @include respond("mobile") {
       background-image: unset;
