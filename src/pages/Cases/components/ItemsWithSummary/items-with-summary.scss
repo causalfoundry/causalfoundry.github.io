@@ -60,6 +60,16 @@
       img {
         max-width: 300px;
       }
+
+      @include respond("mobile") {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+
+        img {
+          max-width: 200px;
+        }
+      }
     }
   }
 
@@ -96,6 +106,10 @@
 
         cursor: pointer;
         margin-bottom: 32px;
+
+        @include respond("mobile") {
+          margin-bottom: unset;
+        }
 
         &:hover {
           border-image: linear-gradient(
