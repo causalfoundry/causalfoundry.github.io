@@ -23,8 +23,14 @@
     flex-direction: column;
     gap: 10px;
 
+    margin-bottom: 180px;
+
     li.single-item {
       list-style-type: none;
+    }
+
+    @include respond("mobile") {
+      margin-bottom: 20px;
     }
   }
 
