@@ -51,6 +51,7 @@
 
     @include respond("mobile") {
       padding: 20px;
+      gap: unset;
     }
 
     & > li {
@@ -76,6 +77,7 @@
 
       @include respond("mobile") {
         width: 100%;
+        height: unset;
       }
     }
   }

@@ -167,39 +167,28 @@
 
 <script setup lang="ts">
 import { useTranslations } from "@/composables/useTranslations";
-import { useRouter } from "vue-router";
 
 import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
 import AppMenu from "@/components/AppMenu";
 
-import ShortDescriptionList from "@/components/ShortDescriptionList";
-
 import GetInTouch from "@/components/GetInTouch";
 import PageHeader from "@/components/PageHeader";
-import CultureItem from "@/components/CultureItem/CultureItem";
+//import CultureItem from "@/components/CultureItem/CultureItem";
 import UpButton from "@/components/UpButton";
-
-import Logos from "../components/Logos";
 
 import SideTextSection from "../components/SideTextSection";
 import Matrix from "../components/Matrix";
-import CollapsibleItems from "../components/CollapsibleItems";
-import GameDistribution from "../components/GameDistribution";
 import ItemsWithSummary from "../components/ItemsWithSummary";
 import CiteCard from "../components/CiteCard/CiteCard.vue";
 import UseCases from "../components/UseCases";
-import Quote from "../components/Quote";
-import SuccessCase from "../components/SuccessCase";
-import TextImage from "../components/TextImage";
-import Image from "../components/Image";
 import HealthcareTitle from "../components/HealthcareTitle";
 import Button from "@/ui-components/button";
 
+import CultureItem from "@/components/CultureItem";
+
 import "../cases.scss";
 import "../cases-landing.scss";
-
-const router = useRouter();
 
 function handleButtonClick(event: MouseEvent) {
   document.getElementById("content")?.scrollIntoView({ behavior: "smooth" });

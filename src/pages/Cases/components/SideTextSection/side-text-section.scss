@@ -26,6 +26,7 @@
     margin-right: 100px;
     @include respond("mobile") {
       min-width: unset;
+      margin-bottom: 20px;
     }
   }
 
