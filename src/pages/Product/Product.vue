@@ -313,6 +313,7 @@ onMounted(() => {
       (activeFeatureIndex.value + 1) % state.features.length;
   }, FEATURE_INTERVAL);
 
+
   onUnmounted(() => {
     clearInterval(intervalId);
   });
