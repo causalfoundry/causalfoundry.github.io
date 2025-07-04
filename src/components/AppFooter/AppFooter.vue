@@ -51,6 +51,9 @@
           </div></router-link
         >
       </div>
+      <div class="footer__menu__row">
+        <img class="footer__stamp" src="../../../public/images/stamps/pyme_innovadora_meic-EN_web.png" />
+      </div>
     </div>
 
     <div class="footer__right">

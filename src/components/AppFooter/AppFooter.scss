@@ -37,6 +37,10 @@
     }
   }
 
+  &__stamp {
+    width: 120px;
+  }
+
   &__email {
     font-family: "WorkSans";
     color: #ffffff;
@@ -68,6 +72,11 @@
         }
       }
     }
+  }
+
+  &__left,
+  &__right {
+    align-self: flex-start;
   }
 
   &__menu {
@@ -150,6 +159,14 @@
 
   @include respond("mobile") {
     width: 360px;
+
+    &__left,
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+    }
 
     &__menu {
       flex-direction: column;
