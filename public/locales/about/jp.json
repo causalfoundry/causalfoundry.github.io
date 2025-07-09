@@ -69,6 +69,7 @@
     },
     "location": {
       "title": "オフィス",
+      "googleMapsButton": "グーグルマップを見る",
       "places": [
         {
           "imageUrl": "/images/locations/barcelona.png",

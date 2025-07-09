@@ -474,9 +474,13 @@
     }
 
     .google-maps-button .icon {
-      font-size: 1.2em;
-      line-height: 1;
+      width: 24px;
+      height: 24px;
+      aspect-ratio: 1/1;
     }
+  }
+  .icon {
+    margin-left: 10px;
   }
 
   .about-section {

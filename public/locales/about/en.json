@@ -76,6 +76,7 @@
     "everyone": "for everyone",
     "location": {
       "title": "Our Offices",
+      "googleMapsButton": "View Google Maps",
       "places": [
         {
           "imageUrl": "/images/locations/barcelona.png",

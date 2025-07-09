@@ -121,8 +121,8 @@
                   rel="noopener noreferrer"
                   class="google-maps-button"
               >
-                View Google Maps
-                <span class="icon">↗</span>
+                {{ messages?.about?.location?.googleMapsButton }}
+                <img class="icon" src="/images/locations/maps_button_icon.svg" alt="Google Maps icon" width="18" height="18" />
               </a>
             </div>
           </div>
