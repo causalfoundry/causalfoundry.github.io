@@ -142,7 +142,7 @@
     width: 100%;
     position: relative;
     z-index: 1;
-    padding: 0 140px 320px;
+    padding: 0 140px 140px;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -150,12 +150,14 @@
     @include respond("tablet") {
       padding-left: $app-side-padding-tablet;
       padding-right: $app-side-padding-tablet;
+      width: unset;
     }
 
     @include respond("mobile") {
       padding-bottom: 30px;
       padding-left: $app-side-padding-mobile;
       padding-right: $app-side-padding-mobile;
+      width: unset;
     }
 
     .title {
@@ -191,13 +193,34 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 80px 32px;
+      align-items: stretch;
     }
 
     .member {
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      height: 100%;
+    }
+
+    .info {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .links {
+      margin-top: auto;
+      display: flex;
+      gap: 16px;
+    }
+
+    .member {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 100%; // Make all team cards stretch to same height
+      justify-content: flex-start;
 
       .info {
         padding: 16px;
@@ -205,15 +228,14 @@
 
       .avatar {
         position: relative;
-        height: 100%;
+        align-items: start;
 
         img {
           width: 100%;
-          height: 100%;
+          aspect-ratio: 1/1.5;
           object-fit: cover;
 
           @include respond("mobile") {
-            object-fit: cover;
             object-position: top;
           }
         }
@@ -285,6 +307,175 @@
       &:hover .description {
         opacity: 1;
       }
+    }
+  }
+
+  .location {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 0 140px 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    @include respond("tablet") {
+      padding-left: $app-side-padding-tablet;
+      padding-right: $app-side-padding-tablet;
+      width: unset;
+    }
+
+    @include respond("mobile") {
+      padding-bottom: 30px;
+      padding-left: $app-side-padding-mobile;
+      padding-right: $app-side-padding-mobile;
+      width: unset;
+    }
+
+    .title {
+      padding-top: 30px;
+      max-width: 100%;
+      border-top: 1px solid #fff;
+
+      font-family: "NeueMachinaMedium";
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 53px;
+      letter-spacing: 0.03em;
+      text-align: left;
+
+      @include respond("tablet") {
+        font-size: 40px;
+      }
+
+      @include respond("mobile") {
+        font-size: 32px;
+      }
+    }
+
+    .description {
+      font-family: Open Sans;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 37.5px;
+      letter-spacing: 3%;
+    }
+
+    .places {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 80px 32px;
+      align-items: stretch;
+    }
+
+    .place {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .info {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .maps-link {
+      margin-top: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+
+    .landmark {
+      position: relative;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @include respond("mobile") {
+          object-position: top;
+        }
+      }
+    }
+
+    .name {
+      font-family: "NeueMachinaMedium";
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0em;
+      text-align: left;
+      background: var(--Gradient-1, linear-gradient(145deg, #FFF625 -13.26%, #CBEA7F 15.7%, #A7E2BE 55.24%, #98DED9 93.66%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-top: 32px;
+      line-height: 1.2;
+
+      @include respond("mobile") {
+        font-size: 20px;
+      }
+    }
+
+    .address {
+      font-family: "Noto Sans";
+      text-align: left;
+      color: #FFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 33px;
+      letter-spacing: 0.2px;
+
+      margin-top: 32px;
+      margin-bottom: 24px;
+
+      @include respond("mobile") {
+        font-size: 14px;
+      }
+    }
+
+    .maps-link {
+      display: flex;
+      justify-content: flex-start; // Align to left
+      align-items: flex-end; // Align to bottom if possible
+      flex: 1 0 auto;
+      width: 100%;
+      padding: 0;
+      margin-top: 32px;
+    }
+
+    .google-maps-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem; /* spacing between text & arrow */
+
+      background-color: #0a0a0a; /* dark background */
+      color: #ffffff;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+
+      padding: 16px 28px;
+      border-radius: 12px;
+
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .google-maps-button:hover {
+      background-color: #1a1a1a;
+    }
+
+    .google-maps-button .icon {
+      font-size: 1.2em;
+      line-height: 1;
     }
   }
 

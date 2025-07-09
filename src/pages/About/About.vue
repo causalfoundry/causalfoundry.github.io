@@ -96,6 +96,40 @@
       </div>
     </div>
 
+    <div class="location">
+      <div class="title">{{ messages?.about?.location?.title }}</div>
+      <div class="places">
+        <div
+            v-for="member of messages?.about?.location?.places"
+            class="place"
+            :key="member.name"
+        >
+          <div class="landmark">
+            <img :src="member.imageUrl" alt="" />
+          </div>
+          <div class="info">
+            <div class="name">
+              <span>{{ member.city }}</span><br/>
+              <span>{{ member.country }}</span>
+            </div>
+            <div class="address">{{ member.address }}</div>
+            <div class="maps-link">
+              <a
+                  v-if="member.links.googleMaps"
+                  :href="member.links.googleMaps"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="google-maps-button"
+              >
+                View Google Maps
+                <span class="icon">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <GetInTouch highlighted />
     <div class="spacer"></div>
     <div class="pattern-wave">

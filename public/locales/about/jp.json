@@ -66,6 +66,38 @@
           }
         }
       ]
+    },
+    "location": {
+      "title": "オフィス",
+      "places": [
+        {
+          "imageUrl": "/images/locations/barcelona.png",
+          "city": "スペイン（本社）",
+          "country": "バルセロナ",
+          "address": "Pg. de St. Joan, 72, L'Eixample\n08009 Barcelona,\nSpain",
+          "links": {
+            "googleMaps": "https://maps.app.goo.gl/11PuuqwxQCku8u9R8"
+          }
+        },
+        {
+          "imageUrl": "/images/locations/tokyo.png",
+          "city": "日本",
+          "country": "東京",
+          "address": "東京都渋谷区恵比寿南1丁目1番1号ヒューマックス恵比寿ビル\n〒150-0022 ,\n日本",
+          "links": {
+            "googleMaps": "https://maps.app.goo.gl/RdXB5CuW8F2xJ3Sv9"
+          }
+        },
+        {
+          "imageUrl": "/images/locations/delaware.png",
+          "city": "米国",
+          "country": "デラウェア州",
+          "address": "4 Peddlers Row, Newark,\nDE 19702,\nUSA",
+          "links": {
+            "googleMaps": "https://maps.app.goo.gl/wKTaNHtRsiYfUGHV7"
+          }
+        }
+      ]
     }
   }
 }

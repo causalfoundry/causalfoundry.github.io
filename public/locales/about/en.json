@@ -73,6 +73,38 @@
     "missionTitle": "Mission",
     "teamTitle": "Our Executive Team",
     "ai": "AI",
-    "everyone": "for everyone"
+    "everyone": "for everyone",
+    "location": {
+      "title": "Our Offices",
+      "places": [
+        {
+          "imageUrl": "/images/locations/barcelona.png",
+          "city": "Barcelona Office (HQ),",
+          "country": "Spain",
+          "address": "Pg. de St. Joan, 72, L'Eixample, 08009 Barcelona, Spain",
+          "links": {
+            "googleMaps": "https://maps.app.goo.gl/11PuuqwxQCku8u9R8"
+          }
+        },
+        {
+          "imageUrl": "/images/locations/tokyo.png",
+          "city": "Tokyo Office,",
+          "country": "Japan",
+          "address": "Humax Ebisu Bldg., \n1 Chome-1-1 Ebisuminami, \nShibuya, Tokyo 150-0022, \nJapan",
+          "links": {
+            "googleMaps": "https://maps.app.goo.gl/RdXB5CuW8F2xJ3Sv9"
+          }
+        },
+        {
+          "imageUrl": "/images/locations/delaware.png",
+          "city": "Delaware Office,",
+          "country": "USA",
+          "address": "4 Peddlers Row, Newark, \nDE 19702, \nUSA",
+          "links": {
+            "googleMaps": "https://maps.app.goo.gl/wKTaNHtRsiYfUGHV7"
+          }
+        }
+      ]
+    }
   }
 }
