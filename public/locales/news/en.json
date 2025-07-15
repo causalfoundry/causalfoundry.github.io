@@ -5,6 +5,13 @@
 
     "items": [
       {
+        "link": "https://www.linkedin.com/posts/causal-foundry_japanese-follows-english-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AF%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%BE%8C%E3%81%AB%E7%B6%9A%E3%81%8D%E3%81%BE%E3%81%99-activity-7348580797001461760-RMdn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB8Q9BUBYNtFqdwQn-y8ZqucHHfZddo2KrY",
+        "linkText": "Read more on LinkedIn",
+        "date": "2025-07-09",
+        "text": "We’re excited to announce the opening of Causal Foundry’s new office in Tokyo. Japan’s strong culture of innovation and technical excellence makes it the ideal location for this next chapter. We’re proud to collaborate with leading Japanese companies to co-create human-centered, data-driven solutions that scale globally",
+        "image": "/images/news/tokyo_office.png"
+      },
+      {
         "link": "/files/CausalFoundry_Ecommerce.pdf",
         "linkText": "Download whitepaper",
         "date": "2024-11-22",

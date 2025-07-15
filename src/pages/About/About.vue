@@ -113,18 +113,18 @@
               <span>{{ member.country }}</span>
             </div>
             <div class="address">{{ member.address }}</div>
-            <div class="maps-link">
-              <a
-                  v-if="member.links.googleMaps"
-                  :href="member.links.googleMaps"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="google-maps-button"
-              >
-                {{ messages?.about?.location?.googleMapsButton }}
-                <img class="icon" src="/images/locations/maps_button_icon.svg" alt="Google Maps icon" width="18" height="18" />
-              </a>
-            </div>
+<!--            <div class="maps-link">-->
+<!--              <a-->
+<!--                  v-if="member.links.googleMaps"-->
+<!--                  :href="member.links.googleMaps"-->
+<!--                  target="_blank"-->
+<!--                  rel="noopener noreferrer"-->
+<!--                  class="google-maps-button"-->
+<!--              >-->
+<!--                {{ messages?.about?.location?.googleMapsButton }}-->
+<!--                <img class="icon" src="/images/locations/maps_button_icon.svg" alt="Google Maps icon" width="18" height="18" />-->
+<!--              </a>-->
+<!--            </div>-->
           </div>
         </div>
       </div>
